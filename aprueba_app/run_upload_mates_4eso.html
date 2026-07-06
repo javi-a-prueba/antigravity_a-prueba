@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Carga Masiva — Matemáticas 4º ESO</title>
+    <style>
+        body { font-family: monospace; background: #0B0E14; color: #00f2fe; padding: 2rem; }
+        h1 { color: #ff8c00; margin-bottom: 1rem; }
+        #log { white-space: pre-wrap; line-height: 1.6; }
+        .ok  { color: #00fa9a; }
+        .err { color: #ff4b4b; }
+        .info{ color: #b8b8d0; }
+    </style>
+</head>
+<body>
+    <h1>🚀 Carga Masiva — Matemáticas 4º ESO</h1>
+    <p id="status" style="color:#ffd700;">Iniciando carga…</p>
+    <div id="log"></div>
+
+    <script type="module">
+    import { db, doc, setDoc } from './firebase-config.js';
+
+    const logEl = document.getElementById('log');
+    const status = document.getElementById('status');
+
+    function log(msg, cls='info') {
+        logEl.innerHTML += `<span class="${cls}">${msg}\n</span>`;
+    }
+
+    const mapNivel = {
+        'Fácil': 'bronce',
+        'Básica': 'bronce',
+        'Media': 'plata',
+        'Difícil': 'oro',
+        'Alta': 'oro',
+        'Superior': 'supernova'
+    };
+
+    async function uploadAll() {
+        try {
+            log("Cargando JSON de Matemáticas 4º ESO...", 'info');
+            const response = await fetch('./mates_4eso.json');
+            const ejercicios = await response.json();
+            
+            let ok = 0, err = 0;
+            log(`Comenzando subida de ${ejercicios.length} ejercicios a Firestore...`, 'info');
+
+            for (const ejercicio of ejercicios) {
+                if (ejercicio.dificultad && mapNivel[ejercicio.dificultad]) {
+                    ejercicio.nivel = mapNivel[ejercicio.dificultad];
+                    delete ejercicio.dificultad;
+                }
+
+                let temaId = 'tema_desconocido';
+                if (ejercicio.bloque) {
+                    const match = ejercicio.bloque.match(/\d+/);
+                    if (match) {
+                        temaId = `tema_${match[0]}`;
+                    }
+                }
+                ejercicio.tema_id = temaId;
+
+                const docId = `m_4eso_${ejercicio.id}`;
+                const docRef = doc(db, 'ejercicios_base', docId);
+
+                try {
+                    await setDoc(docRef, ejercicio);
+                    log(`✅ Subido: ${docId}`, 'ok');
+                    ok++;
+                } catch(e) {
+                    log(`❌ Error subiendo ${docId}: ${e.message}`, 'err');
+                    err++;
+                }
+            }
+            
+            status.innerHTML = `<span style="color:#00fa9a">🎯 ¡Carga completa! ${ok} OK, ${err} Errores.</span>`;
+        } catch (error) {
+            status.innerHTML = `<span style="color:#ff4b4b">💥 Error fatal al leer JSON: ${error.message}</span>`;
+        }
+    }
+
+    uploadAll();
+    </script>
+</body>
+</html>

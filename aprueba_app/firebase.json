@@ -1,0 +1,20 @@
+{
+  "functions": {
+    "source": "functions"
+  },
+  "firestore": {
+    "database": "(default)",
+    "location": "eur3",
+    "rules": "firestore.rules",
+    "indexes": "firestore.indexes.json"
+  },
+  "auth": {
+    "providers": {
+      "emailPassword": true,
+      "googleSignIn": {
+        "oAuthBrandDisplayName": "A-PRUEBA",
+        "supportEmail": "apruebasitioweb@gmail.com"
+      }
+    }
+  }
+}

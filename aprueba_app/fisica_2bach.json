@@ -1,0 +1,1592 @@
+[
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 101,
+    "dificultad": "Fácil",
+    "bloque": "T1: Movimiento Armónico Simple",
+    "enunciado": "Una partícula describe un Movimiento Armónico Simple (MAS) según la ecuación $x(t) = 0.5 \\sin(4\\pi t + \\pi/2)$ (en unidades del SI). Determina la amplitud, la frecuencia angular, el periodo y la frecuencia del movimiento.",
+    "resolucion_latex": "Comparando con la ecuación general $x(t) = A \\sin(\\omega t + \\phi_0)$:\\nAmplitud: $A = 0.5 \\text{ m}$.\\nFrecuencia angular: $\\omega = 4\\pi \\text{ rad/s}$.\\nPeriodo: $T = \\frac{2\\pi}{\\omega} = \\frac{2\\pi}{4\\pi} = 0.5 \\text{ s}$.\\nFrecuencia: $f = \\frac{1}{T} = \\frac{1}{0.5} = 2 \\text{ Hz}$.",
+    "pista": "Compara la expresión dada con la ecuación general del MAS y lee directamente sus parámetros.",
+    "formula": "$$T = \\frac{2\\pi}{\\omega} = \\frac{2\\pi}{4\\pi} = 0.5 \\text{ s}$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 102,
+    "dificultad": "Fácil",
+    "bloque": "T1: Movimiento Armónico Simple",
+    "enunciado": "Un muelle de constante elástica $k = 200 \\text{ N/m}$ tiene sujeto un bloque de $2 \\text{ kg}$ que oscila horizontalmente sin rozamiento. Si la amplitud es de $10 \\text{ cm}$, calcula la energía mecánica del sistema.",
+    "resolucion_latex": "En un MAS, la energía mecánica es constante e igual a la energía potencial elástica máxima:\\n$$E_m = \\frac{1}{2} k A^2$$\\nPasamos la amplitud a metros: $A = 0.1 \\text{ m}$.\\n$$E_m = \\frac{1}{2} \\cdot 200 \\cdot (0.1)^2 = 100 \\cdot 0.01 = 1 \\text{ J}$$\\nLa energía mecánica es de $1 \\text{ Julio}$.",
+    "pista": "Compara la expresión dada con la ecuación general del MAS y lee directamente sus parámetros.",
+    "formula": "$$E_m = \\frac{1}{2} k A^2$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 103,
+    "dificultad": "Fácil",
+    "bloque": "T1: Movimiento Armónico Simple",
+    "enunciado": "Un oscilador armónico realiza $120$ oscilaciones por minuto. Calcula su frecuencia en hercios (Hz) y su frecuencia angular en rad/s.",
+    "resolucion_latex": "La frecuencia es el número de oscilaciones por segundo:\\n$$f = \\frac{120 \\text{ oscilaciones}}{60 \\text{ s}} = 2 \\text{ Hz}$$\\nLa frecuencia angular ($\\omega$) se calcula como:\\n$$\\omega = 2\\pi f$$\\n$$\\omega = 2\\pi \\cdot 2 = 4\\pi \\text{ rad/s}$$",
+    "pista": "Compara la expresión dada con la ecuación general del MAS y lee directamente sus parámetros.",
+    "formula": "$$\\omega = 2\\pi f$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 104,
+    "dificultad": "Media",
+    "bloque": "T1: Movimiento Armónico Simple",
+    "enunciado": "Un péndulo simple tiene un periodo de $2 \\text{ s}$ en la superficie de la Tierra ($g = 9.8 \\text{ m/s}^2$). ¿Cuál será su periodo si lo llevamos a la superficie de la Luna, donde la gravedad es un sexto de la terrestre?",
+    "resolucion_latex": "La fórmula del periodo de un péndulo es $T = 2\\pi \\sqrt{\\frac{L}{g}}$.\\nEn la Luna, $g_L = \\frac{g}{6}$. Sustituimos en la fórmula:\\n$$T_L = 2\\pi \\sqrt{\\frac{L}{g/6}} = 2\\pi \\sqrt{6 \\frac{L}{g}} = \\sqrt{6} \\cdot \\left(2\\pi \\sqrt{\\frac{L}{g}}\\right)$$\\nComo el paréntesis es el periodo en la Tierra ($2 \\text{ s}$):\\n$$T_L = \\sqrt{6} \\cdot 2 \\approx 2.45 \\cdot 2 = 4.9 \\text{ s}$$\\nEl periodo en la Luna será de $4.9 \\text{ segundos}$.",
+    "pista": "El periodo del péndulo depende de la longitud y de la gravedad, no de la masa.",
+    "formula": "$$T_L = 2\\pi \\sqrt{\\frac{L}{g/6}} = 2\\pi \\sqrt{6 \\frac{L}{g}} = \\sqrt{6} \\cdot \\left(2\\pi \\sqrt{\\frac{L}{g}}\\right)$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 105,
+    "dificultad": "Media",
+    "bloque": "T1: Movimiento Armónico Simple",
+    "enunciado": "La velocidad de una partícula que realiza un MAS es de $3 \\text{ m/s}$ cuando pasa por la posición de equilibrio. Si su amplitud es de $0.5 \\text{ m}$, calcula su aceleración máxima.",
+    "resolucion_latex": "La velocidad al pasar por el equilibrio es la velocidad máxima: $v_{max} = A \\omega$.\\nDespejamos la frecuencia angular:\\n$$3 = 0.5 \\cdot \\omega \\implies \\omega = \\frac{3}{0.5} = 6 \\text{ rad/s}$$\\nLa aceleración máxima se calcula con la fórmula $a_{max} = A \\omega^2$:\\n$$a_{max} = 0.5 \\cdot (6)^2 = 0.5 \\cdot 36 = 18 \\text{ m/s}^2$$",
+    "pista": "Compara la expresión dada con la ecuación general del MAS y lee directamente sus parámetros.",
+    "formula": "$$a_{max} = 0.5 \\cdot (6)^2 = 0.5 \\cdot 36 = 18 \\text{ m/s}^2$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 106,
+    "dificultad": "Media",
+    "bloque": "T1: Movimiento Armónico Simple",
+    "enunciado": "Un bloque de masa $m$ realiza un MAS unido a un muelle. ¿En qué posiciones (en función de la amplitud $A$) la energía cinética del bloque es exactamente igual a su energía potencial elástica?",
+    "resolucion_latex": "Sabemos que la energía mecánica se conserva: $E_m = E_c + E_p$.\\nSi nos piden que $E_c = E_p$, entonces:\\n$$E_m = E_p + E_p = 2E_p$$\\nSustituimos las fórmulas de la energía mecánica y potencial elástica:\\n$$\\frac{1}{2} k A^2 = 2 \\left( \\frac{1}{2} k x^2 \\right)$$\\nCancelamos $\\frac{1}{2} k$ en ambos lados:\\n$$A^2 = 2x^2 \\implies x^2 = \\frac{A^2}{2}$$\\n$$x = \\pm \\frac{A}{\\sqrt{2}} = \\pm \\frac{A\\sqrt{2}}{2}$$\\nOcurre en $x \\approx \\pm 0.707 A$.",
+    "pista": "Compara la expresión dada con la ecuación general del MAS y lee directamente sus parámetros.",
+    "formula": "$$E_m = E_p + E_p = 2E_p$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 107,
+    "dificultad": "Difícil",
+    "bloque": "T1: Movimiento Armónico Simple",
+    "enunciado": "Un objeto de $0.2 \\text{ kg}$ describe un MAS horizontal. En el instante $t = 0$, se encuentra en $x = 4 \\text{ cm}$ con una velocidad de $-15 \\text{ cm/s}$. Si su frecuencia angular es $\\omega = 5 \\text{ rad/s}$, determina la amplitud y la fase inicial del movimiento (asumiendo la forma seno).",
+    "resolucion_latex": "Usamos las ecuaciones de posición y velocidad: $x(t) = A \\sin(\\omega t + \\phi_0)$ y $v(t) = A\\omega \\cos(\\omega t + \\phi_0)$.\\nEvaluamos en $t=0$ (en metros y m/s):\\n1) $0.04 = A \\sin(\\phi_0)$\\n2) $-0.15 = A(5) \\cos(\\phi_0) \\implies -0.03 = A \\cos(\\phi_0)$\\nDividimos la ecuación 1 entre la 2 para hallar la fase:\\n$$\\frac{A \\sin(\\phi_0)}{A \\cos(\\phi_0)} = \\frac{0.04}{-0.03} \\implies \\tan(\\phi_0) = -1.33$$\\n$$\\phi_0 = \\arctan(-1.33) \\approx 2.21 \\text{ rad } (126.8^\\circ) \\text{ (en el 2º cuadrante porque sen>0 y cos<0)}$$\\nPara hallar la amplitud, elevamos al cuadrado 1 y 2 y sumamos ($A^2\\sin^2 + A^2\\cos^2 = A^2$):\\n$$A^2 = 0.04^2 + (-0.03)^2 = 0.0016 + 0.0009 = 0.0025$$\\n$$A = \\sqrt{0.0025} = 0.05 \\text{ m } (5 \\text{ cm})$$",
+    "pista": "Compara la expresión dada con la ecuación general del MAS y lee directamente sus parámetros.",
+    "formula": "$$A = \\sqrt{0.0025} = 0.05 \\text{ m } (5 \\text{ cm})$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 108,
+    "dificultad": "Difícil",
+    "bloque": "T1: Movimiento Armónico Simple",
+    "enunciado": "Un bloque de $1 \\text{ kg}$ cuelga en reposo de un muelle vertical estirándolo $9.8 \\text{ cm}$. Desde esa posición de equilibrio, se tira de él $5 \\text{ cm}$ hacia abajo y se suelta. Calcula la energía cinética máxima que alcanzará durante la oscilación.",
+    "resolucion_latex": "Primero hallamos la constante elástica con la deformación estática (equilibrio $P = F_e$):\\n$$mg = k \\Delta y \\implies 1 \\cdot 9.8 = k \\cdot 0.098 \\implies k = \\frac{9.8}{0.098} = 100 \\text{ N/m}$$\\nLa amplitud del MAS vertical es el estiramiento extra desde el equilibrio: $A = 5 \\text{ cm} = 0.05 \\text{ m}$.\\nEn un MAS vertical, si medimos desde la posición de equilibrio estático, la energía se trata igual que en el caso horizontal:\\n$$E_{c, max} = E_m = \\frac{1}{2} k A^2$$\\n$$E_{c, max} = \\frac{1}{2} \\cdot 100 \\cdot (0.05)^2 = 50 \\cdot 0.0025 = 0.125 \\text{ J}$$",
+    "pista": "En el MAS la energía mecánica se conserva y suele ser máxima como energía potencial en los extremos.",
+    "formula": "$$E_{c, max} = E_m = \\frac{1}{2} k A^2$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 109,
+    "dificultad": "Difícil",
+    "bloque": "T1: Movimiento Armónico Simple",
+    "enunciado": "Una masa de $3 \\text{ kg}$ se mueve con MAS sobre un eje. Cuando su elongación es $x_1 = 2 \\text{ cm}$, su velocidad es $v_1 = -4 \\text{ m/s}$. Cuando su elongación es $x_2 = -4 \\text{ cm}$, su velocidad es $v_2 = 2 \\text{ m/s}$. Halla la amplitud del movimiento.",
+    "resolucion_latex": "Usamos la relación independiente del tiempo entre velocidad y posición: $v^2 = \\omega^2 (A^2 - x^2)$.\\nPlanteamos un sistema de ecuaciones (pasando $x$ a metros):\\n1) $(-4)^2 = \\omega^2 (A^2 - 0.02^2) \\implies 16 = \\omega^2 (A^2 - 0.0004)$\\n2) $(2)^2 = \\omega^2 (A^2 - (-0.04)^2) \\implies 4 = \\omega^2 (A^2 - 0.0016)$\\nDividimos la ecuación 1 entre la ecuación 2 para eliminar $\\omega^2$:\\n$$\\frac{16}{4} = \\frac{A^2 - 0.0004}{A^2 - 0.0016}$$\\n$$4(A^2 - 0.0016) = A^2 - 0.0004$$\\n$$4A^2 - 0.0064 = A^2 - 0.0004$$\\n$$3A^2 = 0.0060 \\implies A^2 = 0.0020$$\\n$$A = \\sqrt{0.0020} \\approx 0.0447 \\text{ m } (4.47 \\text{ cm})$$",
+    "pista": "Compara la expresión dada con la ecuación general del MAS y lee directamente sus parámetros.",
+    "formula": "$$A = \\sqrt{0.0020} \\approx 0.0447 \\text{ m } (4.47 \\text{ cm})$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 110,
+    "dificultad": "Superior",
+    "bloque": "T1: Movimiento Armónico Simple",
+    "enunciado": "*(Reto Supernova)*: Un alumno sostiene que en un MAS vertical, al actuar la gravedad constantemente, la fuerza restauradora es diferente a un MAS horizontal y, por tanto, la frecuencia de oscilación cambia. Demuestra matemáticamente por qué el alumno se equivoca y prueba que el periodo es independiente de la gravedad.",
+    "resolucion_latex": "Consideremos el muelle sin carga con longitud $L_0$. Al colgar la masa, se estira hasta una nueva posición de equilibrio $y_{eq}$ donde $\\sum F = 0$:\\n$$mg - k y_{eq} = 0 \\implies mg = k y_{eq} \\quad \\text{(Ec. 1)}$$\\nDefinimos una nueva coordenada de oscilación $y'$ medida desde este equilibrio ($y = y_{eq} + y'$).\\nLa fuerza total en cualquier instante es: $F_{net} = mg - k(y_{eq} + y')$.\\nAplicando la distributiva: $F_{net} = mg - k y_{eq} - k y'$.\\nPor la (Ec. 1), sabemos que $mg - k y_{eq} = 0$. Por tanto, se anulan:\\n$$F_{net} = -k y'$$\\nLa ecuación dinámica es $m \\cdot a = -k y'$, que es exactamente idéntica a la del MAS horizontal ($F = -kx$). La gravedad solo desplaza el punto de equilibrio, pero no afecta a la constante efectiva ni al periodo $T = 2\\pi\\sqrt{\\frac{m}{k}}$.",
+    "pista": "Relaciona elongación, velocidad, aceleración y energía usando las ecuaciones del MAS.",
+    "formula": "$$F_{net} = -k y'$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 111,
+    "dificultad": "Fácil",
+    "bloque": "T2: Gravitación",
+    "enunciado": "Sabiendo que la distancia media de la Tierra al Sol es de $1 \\text{ UA}$ (Unidad Astronómica) y su periodo orbital es de $1 \\text{ año}$, calcula la distancia media al Sol de un asteroide que tarda $8 \\text{ años}$ en completar una órbita.",
+    "resolucion_latex": "Aplicamos la Tercera Ley de Kepler: $\\frac{T_1^2}{R_1^3} = \\frac{T_2^2}{R_2^3}$.\\nSustituimos los datos de la Tierra ($T_1 = 1$, $R_1 = 1$) y los del asteroide ($T_2 = 8$):\\n$$\\frac{1^2}{1^3} = \\frac{8^2}{R_2^3}$$\\n$$1 = \\frac{64}{R_2^3} \\implies R_2^3 = 64$$\\nCalculamos la raíz cúbica:\\n$$R_2 = \\sqrt[3]{64} = 4 \\text{ UA}$$",
+    "pista": "Usa la tercera ley de Kepler comparando el objeto con una órbita conocida.",
+    "formula": "$$R_2 = \\sqrt[3]{64} = 4 \\text{ UA}$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 112,
+    "dificultad": "Fácil",
+    "bloque": "T2: Gravitación",
+    "enunciado": "Calcula la fuerza de atracción gravitatoria entre el Sol ($M = 1.99 \\times 10^{30} \\text{ kg}$) y la Tierra ($m = 5.97 \\times 10^{24} \\text{ kg}$), separados por una distancia de $1.5 \\times 10^{11} \\text{ m}$. ($G = 6.67 \\times 10^{-11} \\text{ N m}^2/\\text{kg}^2$).",
+    "resolucion_latex": "Aplicamos directamente la Ley de Gravitación Universal de Newton:\\n$$F = G \\frac{M \\cdot m}{r^2}$$\\nSustituimos los valores:\\n$$F = (6.67 \\times 10^{-11}) \\frac{(1.99 \\times 10^{30}) \\cdot (5.97 \\times 10^{24})}{(1.5 \\times 10^{11})^2}$$\\n$$F = (6.67 \\times 10^{-11}) \\frac{1.188 \\times 10^{55}}{2.25 \\times 10^{22}}$$\\n$$F \\approx 3.52 \\times 10^{22} \\text{ N}$$",
+    "pista": "Aplica la ley de gravitación universal y recuerda pasar todas las distancias a metros.",
+    "formula": "$$F = G \\frac{M \\cdot m}{r^2}$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 113,
+    "dificultad": "Fácil",
+    "bloque": "T2: Gravitación",
+    "enunciado": "Determina la aceleración de la gravedad ($g$) en la superficie de Marte, sabiendo que su masa es $6.42 \\times 10^{23} \\text{ kg}$ y su radio es $3390 \\text{ km}$.",
+    "resolucion_latex": "La intensidad del campo gravitatorio en la superficie se calcula como $g = G \\frac{M}{R^2}$.\\nPasamos el radio a metros: $R = 3390 \\times 10^3 = 3.39 \\times 10^6 \\text{ m}$.\\nSustituimos:\\n$$g = (6.67 \\times 10^{-11}) \\frac{6.42 \\times 10^{23}}{(3.39 \\times 10^6)^2}$$\\n$$g = \\frac{4.28 \\times 10^{13}}{1.149 \\times 10^{13}}$$\\n$$g \\approx 3.72 \\text{ m/s}^2$$",
+    "pista": "Plantea la conservación de la energía o la ley gravitatoria según se trate de órbitas, trabajo o campo.",
+    "formula": "$$g = \\frac{4.28 \\times 10^{13}}{1.149 \\times 10^{13}}$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 114,
+    "dificultad": "Media",
+    "bloque": "T2: Gravitación",
+    "enunciado": "Un satélite de telecomunicaciones orbita la Tierra en un movimiento circular a una altitud de $400 \\text{ km}$ sobre la superficie. Calcula su velocidad orbital. (Datos Tierra: $M = 5.97 \\times 10^{24} \\text{ kg}$, $R = 6370 \\text{ km}$).",
+    "resolucion_latex": "Primero hallamos el radio orbital (distancia desde el centro de la Tierra):\\n$$r = R_T + h = 6370 + 400 = 6770 \\text{ km} = 6.77 \\times 10^6 \\text{ m}$$\\nPara mantener la órbita, la fuerza gravitatoria actúa como fuerza centrípeta:\\n$$G \\frac{M \\cdot m}{r^2} = m \\frac{v^2}{r} \\implies v = \\sqrt{\\frac{GM}{r}}$$\\n$$v = \\sqrt{\\frac{(6.67 \\times 10^{-11})(5.97 \\times 10^{24})}{6.77 \\times 10^6}} = \\sqrt{\\frac{3.98 \\times 10^{14}}{6.77 \\times 10^6}}$$\\n$$v = \\sqrt{58818316} \\approx 7669 \\text{ m/s}$$\\n(Aprox. $7.67 \\text{ km/s}$).",
+    "pista": "Plantea la conservación de la energía o la ley gravitatoria según se trate de órbitas, trabajo o campo.",
+    "formula": "$$r = R_T + h = 6370 + 400 = 6770 \\text{ km} = 6.77 \\times 10^6 \\text{ m}$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 115,
+    "dificultad": "Media",
+    "bloque": "T2: Gravitación",
+    "enunciado": "Calcula el trabajo que realiza el campo gravitatorio terrestre al trasladar una masa de $10 \\text{ kg}$ desde el infinito hasta una distancia equivalente al doble del radio terrestre ($2R_T$) desde el centro de la Tierra.",
+    "resolucion_latex": "El trabajo conservativo es la variación negativa de la energía potencial: $W = -\\Delta E_p = E_{p, inicial} - E_{p, final}$.\\nEn el infinito, la energía potencial es cero ($E_{p, i} = 0$).\\nCalculamos la $E_{p, f}$ en $r = 2R_T = 2(6.37 \\times 10^6) = 1.274 \\times 10^7 \\text{ m}$:\\n$$E_{p, f} = -G \\frac{M_T \\cdot m}{r} = -(6.67 \\times 10^{-11}) \\frac{(5.97 \\times 10^{24})(10)}{1.274 \\times 10^7}$$\\n$$E_{p, f} = -3.12 \\times 10^8 \\text{ J}$$\\nEl trabajo será:\\n$$W = 0 - (-3.12 \\times 10^8) = 3.12 \\times 10^8 \\text{ J}$$\\n(El signo positivo indica que el trabajo lo realiza el propio campo a favor del movimiento).",
+    "pista": "Iguala los módulos de los campos creados por cada masa y analiza sus sentidos.",
+    "formula": "$$E_{p, f} = -3.12 \\times 10^8 \\text{ J}$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 116,
+    "dificultad": "Media",
+    "bloque": "T2: Gravitación",
+    "enunciado": "Calcula la velocidad de escape desde la superficie de un planeta esférico que tiene el doble de masa que la Tierra y la mitad de su radio. Da el resultado en función de la velocidad de escape de la Tierra ($v_e$).",
+    "resolucion_latex": "La fórmula de la velocidad de escape en la Tierra es $v_e = \\sqrt{\\frac{2GM_T}{R_T}}$.\\nPara el nuevo planeta, $M_P = 2M_T$ y $R_P = \\frac{R_T}{2}$.\\nSustituimos estos valores en la fórmula genérica:\\n$$v_{e, P} = \\sqrt{\\frac{2G(2M_T)}{R_T/2}}$$\\nReorganizamos las fracciones (el $2$ del denominador pasa al numerador multiplicando):\\n$$v_{e, P} = \\sqrt{\\frac{4(2GM_T)}{R_T}} = \\sqrt{4 \\cdot \\frac{2GM_T}{R_T}}$$\\nSacamos el $4$ de la raíz como un $2$:\\n$$v_{e, P} = 2 \\sqrt{\\frac{2GM_T}{R_T}} = 2 v_e$$\\nLa velocidad de escape será exactamente el doble que en la Tierra.",
+    "pista": "Usa conservación de la energía mecánica imponiendo energía total nula en el infinito.",
+    "formula": "$$v_{e, P} = \\sqrt{\\frac{2G(2M_T)}{R_T/2}}$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 117,
+    "dificultad": "Difícil",
+    "bloque": "T2: Gravitación",
+    "enunciado": "Un satélite artificial de $500 \\text{ kg}$ describe una órbita circular a $2000 \\text{ km}$ sobre la superficie terrestre. Si queremos que pase a una órbita de $4000 \\text{ km}$ de altitud, calcula la energía extra que los motores deben aportar al satélite.",
+    "resolucion_latex": "Radios orbitales: $r_1 = R_T + 2000 = 8.37 \\times 10^6 \\text{ m}$. $r_2 = R_T + 4000 = 10.37 \\times 10^6 \\text{ m}$.\\nLa energía mecánica total en órbita circular es $E_m = -\\frac{GMm}{2r}$.\\nCalculamos la energía necesaria ($W = \\Delta E_m$):\\n$$W = E_{m, 2} - E_{m, 1} = -\\frac{GMm}{2r_2} - \\left(-\\frac{GMm}{2r_1}\\right) = \\frac{GMm}{2} \\left(\\frac{1}{r_1} - \\frac{1}{r_2}\\right)$$\\nSustituimos datos ($GM = 3.98 \\times 10^{14}$):\\n$$W = \\frac{(3.98 \\times 10^{14})(500)}{2} \\left(\\frac{1}{8.37 \\times 10^6} - \\frac{1}{10.37 \\times 10^6}\\right)$$\\n$$W = 9.95 \\times 10^{16} \\left(1.194 \\times 10^{-7} - 9.643 \\times 10^{-8}\\right)$$\\n$$W = 9.95 \\times 10^{16} (2.297 \\times 10^{-8}) \\approx 2.28 \\times 10^9 \\text{ J}$$",
+    "pista": "Plantea la conservación de la energía o la ley gravitatoria según se trate de órbitas, trabajo o campo.",
+    "formula": "$$W = E_{m, 2} - E_{m, 1} = -\\frac{GMm}{2r_2} - \\left(-\\frac{GMm}{2r_1}\\right) = \\frac{GMm}{2} \\left(\\frac{1}{r_1} - \\frac{1}{r_2}\\right)$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 118,
+    "dificultad": "Difícil",
+    "bloque": "T2: Gravitación",
+    "enunciado": "Dos masas puntuales, $m_1 = 4 \\text{ kg}$ y $m_2 = 9 \\text{ kg}$, están separadas una distancia de $5 \\text{ m}$. ¿En qué punto exacto del segmento que las une el campo gravitatorio total es nulo?",
+    "resolucion_latex": "Sea $x$ la distancia desde $m_1$ al punto nulo. La distancia desde $m_2$ será $(5 - x)$.\\nPara que el campo sea nulo, las intensidades generadas por ambas masas deben ser iguales en módulo ($g_1 = g_2$):\\n$$G \\frac{m_1}{x^2} = G \\frac{m_2}{(5 - x)^2}$$\\nCancelamos $G$ y sustituimos las masas:\\n$$\\frac{4}{x^2} = \\frac{9}{(5 - x)^2}$$\\nAplicamos raíz cuadrada en ambos lados para simplificar:\\n$$\\frac{2}{x} = \\frac{3}{5 - x}$$\\nResolvemos multiplicando en cruz:\\n$$2(5 - x) = 3x \\implies 10 - 2x = 3x$$\\n$$10 = 5x \\implies x = 2 \\text{ m}$$\\nEl campo es nulo a $2 \\text{ m}$ de la masa de $4 \\text{ kg}$.",
+    "pista": "Iguala los módulos de los campos creados por cada masa y analiza sus sentidos.",
+    "formula": "$$\\frac{2}{x} = \\frac{3}{5 - x}$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 119,
+    "dificultad": "Difícil",
+    "bloque": "T2: Gravitación",
+    "enunciado": "Se lanza verticalmente un proyectil desde la superficie terrestre. Despreciando el rozamiento del aire, calcula qué velocidad inicial mínima es necesaria para que alcance una altitud máxima igual al radio de la Tierra ($h = R_T$).",
+    "resolucion_latex": "Por conservación de la energía mecánica entre la superficie ($r_1 = R_T$) y la altura máxima ($r_2 = R_T + R_T = 2R_T$, donde $v=0$):\\n$$E_{c, 1} + E_{p, 1} = E_{c, 2} + E_{p, 2}$$\\n$$\\frac{1}{2} m v^2 - G \\frac{M_T \\cdot m}{R_T} = 0 - G \\frac{M_T \\cdot m}{2R_T}$$\\nCancelamos la masa $m$ del proyectil:\\n$$\\frac{1}{2} v^2 = G \\frac{M_T}{R_T} - G \\frac{M_T}{2R_T} = \\frac{1}{2} G \\frac{M_T}{R_T}$$\\nCancelamos el $\\frac{1}{2}$:\\n$$v^2 = \\frac{GM_T}{R_T} \\implies v = \\sqrt{\\frac{GM_T}{R_T}}$$\\nSustituimos datos:\\n$$v = \\sqrt{\\frac{(6.67 \\times 10^{-11})(5.98 \\times 10^{24})}{6.37 \\times 10^6}} = \\sqrt{6.26 \\times 10^7} \\approx 7912 \\text{ m/s}$$",
+    "pista": "Plantea la conservación de la energía o la ley gravitatoria según se trate de órbitas, trabajo o campo.",
+    "formula": "$$v^2 = \\frac{GM_T}{R_T} \\implies v = \\sqrt{\\frac{GM_T}{R_T}}$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 120,
+    "dificultad": "Superior",
+    "bloque": "T2: Gravitación",
+    "enunciado": "*(Reto Supernova)*: Demuestra matemáticamente que, para un satélite en órbita circular estable alrededor de un planeta, su Energía Cinética es exactamente la mitad del valor absoluto de su Energía Potencial ($E_c = \\frac{1}{2}|E_p|$), y deduce de ahí el valor de la Energía Mecánica total en función de $E_p$.",
+    "resolucion_latex": "Condición de órbita circular estable (Fuerza Gravitatoria = Fuerza Centrípeta):\\n$$G \\frac{M \\cdot m}{r^2} = m \\frac{v^2}{r}$$\\nMultiplicamos ambos lados por $r$:\\n$$G \\frac{M \\cdot m}{r} = m v^2$$\\nAhora, dividimos ambos lados entre $2$ para construir la expresión de la energía cinética en el lado derecho:\\n$$\\frac{1}{2} G \\frac{M \\cdot m}{r} = \\frac{1}{2} m v^2$$\\nEl lado derecho es $E_c$. El lado izquierdo es $-\\frac{1}{2} E_p$ (ya que $E_p = -G \\frac{M \\cdot m}{r}$).\\nPor tanto: $E_c = -\\frac{1}{2} E_p$, lo que implica que $E_c = \\frac{1}{2} |E_p|$.\\nCalculamos la Energía Mecánica total ($E_m = E_c + E_p$):\\n$$E_m = \\left(-\\frac{1}{2} E_p\\right) + E_p = \\frac{1}{2} E_p$$\\nEsto demuestra que un cuerpo ligado gravitacionalmente en órbita tiene una energía total que es la mitad de su energía potencial (y por tanto negativa, lo que indica que está 'atrapado').",
+    "pista": "El potencial gravitatorio es escalar y siempre negativo tomando cero en el infinito.",
+    "formula": "$$G \\frac{M \\cdot m}{r} = m v^2$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 301,
+    "dificultad": "Fácil",
+    "bloque": "Tema 3: Estudio del Campo Gravitatorio",
+    "enunciado": "Calcula la intensidad del campo gravitatorio ($\\vec{g}$) en la superficie de un planeta esférico que tiene el doble de masa que la Tierra y la mitad de su radio. (Dato: $g_{Tierra} = 9.8 \\text{ m/s}^2$).",
+    "resolucion_latex": "La expresión del campo es:\\n$$g_P = \\frac{G M_P}{R_P^2} = \\frac{G(2M_T)}{(0.5 R_T)^2} = \\frac{G(2M_T)}{0.25 R_T^2} = 8\\left(\\frac{G M_T}{R_T^2}\\right) = 8 \\cdot 9.8 = 78.4 \\text{ m/s}^2$$",
+    "pista": "Iguala los módulos de los campos creados por cada masa y analiza sus sentidos.",
+    "formula": "$$g_P = \\frac{G M_P}{R_P^2} = \\frac{G(2M_T)}{(0.5 R_T)^2} = \\frac{G(2M_T)}{0.25 R_T^2} = 8\\left(\\frac{G M_T}{R_T^2}\\right) = 8 \\cdot 9.8 = 78.4 \\text{ m/s}^2$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 302,
+    "dificultad": "Fácil",
+    "bloque": "Tema 3: Estudio del Campo Gravitatorio",
+    "enunciado": "Determina el trabajo que realiza el campo gravitatorio terrestre para trasladar una masa de 10 kg desde una distancia de $2R_T$ desde el centro de la Tierra hasta la superficie terrestre ($R_T$). Expresa el resultado en función de $G, M_T, R_T$.",
+    "resolucion_latex": "Trabajo conservativo:\\n$$W_{A \\to B} = -\\Delta E_p = E_{p,A} - E_{p,B}$$\\nPosiciones: $r_A = 2R_T$, $r_B = R_T$.\\n$$W = \\left(-\\frac{G M_T m}{2R_T}\\right) - \\left(-\\frac{G M_T m}{R_T}\\right) = \\frac{G M_T m}{R_T} - \\frac{G M_T m}{2R_T} = \\frac{G M_T m}{2R_T}$$\\nSustituyendo $m = 10$ kg:\\n$$W = \\frac{5 G M_T}{R_T} \\text{ J } \\quad \\text{(Trabajo motor, positivo)}$$",
+    "pista": "Iguala los módulos de los campos creados por cada masa y analiza sus sentidos.",
+    "formula": "$$W_{A \\to B} = -\\Delta E_p = E_{p,A} - E_{p,B}$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 303,
+    "dificultad": "Fácil",
+    "bloque": "Tema 3: Estudio del Campo Gravitatorio",
+    "enunciado": "Calcula el potencial gravitatorio creado por una masa de 50 kg a una distancia de 2 metros. (Dato: $G = 6.67 \\times 10^{-11} \\text{ N m}^2/\\text{kg}^2$).",
+    "resolucion_latex": "Aplicamos la ecuación del potencial escalar:\\n$$V = -\\frac{GM}{r} = -\\frac{(6.67 \\times 10^{-11}) \\cdot 50}{2} = -1.667 \\times 10^{-9} \\text{ J/kg}$$",
+    "pista": "El potencial gravitatorio es escalar y siempre negativo tomando cero en el infinito.",
+    "formula": "$$V = -\\frac{GM}{r} = -\\frac{(6.67 \\times 10^{-11}) \\cdot 50}{2} = -1.667 \\times 10^{-9} \\text{ J/kg}$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 304,
+    "dificultad": "Media",
+    "bloque": "Tema 3: Estudio del Campo Gravitatorio",
+    "enunciado": "Dos masas puntuales $m_1 = 4 \\text{ kg}$ y $m_2 = 9 \\text{ kg}$ están separadas por una distancia de 10 m. Calcula en qué punto de la línea que las une el campo gravitatorio resultante es nulo.",
+    "resolucion_latex": "Igualamos los módulos de los campos individuales ($g_1 = g_2$):\\n$$\\frac{G m_1}{x^2} = \\frac{G m_2}{(10-x)^2} \\implies \\frac{4}{x^2} = \\frac{9}{(10-x)^2}$$\\nTomamos raíz cuadrada en ambos lados:\\n$$\\frac{2}{x} = \\frac{3}{10-x} \\implies 20 - 2x = 3x \\implies 5x = 20 \\implies x = 4 \\text{ m}$$\\nEl campo se anula a $4 \\text{ m}$ de distancia de la masa $m_1$.",
+    "pista": "Iguala los módulos de los campos creados por cada masa y analiza sus sentidos.",
+    "formula": "$$\\frac{G m_1}{x^2} = \\frac{G m_2}{(10-x)^2} \\implies \\frac{4}{x^2} = \\frac{9}{(10-x)^2}$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 305,
+    "dificultad": "Media",
+    "bloque": "Tema 3: Estudio del Campo Gravitatorio",
+    "enunciado": "Se tienen tres masas puntuales idénticas de 10 kg situadas en tres de los vértices de un cuadrado de lado 2 m. Calcula el potencial gravitatorio en el cuarto vértice libre.",
+    "resolucion_latex": "Distancia a los dos vértices contiguos: $r_1 = r_2 = 2 \\text{ m}$. Distancia al vértice diagonal opuesto: $r_3 = \\sqrt{2^2 + 2^2} = \\sqrt{8} \\approx 2.83 \\text{ m}$.\\nEl potencial total es la suma escalar:\\n$$V = V_1 + V_2 + V_3 = -\\frac{GM}{r_1} - \\frac{GM}{r_2} - \\frac{GM}{r_3}$$\\n$$V = -G(10)\\left(\\frac{1}{2} + \\frac{1}{2} + \\frac{1}{\\sqrt{8}}\\right) = -10G(1 + 0.353) = -13.53G \\approx -9.02 \\times 10^{-10} \\text{ J/kg}$$",
+    "pista": "El potencial gravitatorio es escalar y siempre negativo tomando cero en el infinito.",
+    "formula": "$$V = V_1 + V_2 + V_3 = -\\frac{GM}{r_1} - \\frac{GM}{r_2} - \\frac{GM}{r_3}$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 306,
+    "dificultad": "Media",
+    "bloque": "Tema 3: Estudio del Campo Gravitatorio",
+    "enunciado": "Una masa de 2 kg se desplaza desde un punto A, donde el potencial gravitatorio es de $-50 \\text{ J/kg}$, hasta un punto B, donde el potencial es de $-20 \\text{ J/kg}$. ¿Qué trabajo realiza el campo gravitatorio? ¿El movimiento ha sido natural o forzado?",
+    "resolucion_latex": "Trabajo del campo:\\n$$W = -m\\Delta V = m(V_A - V_B)$$\\n$$W = 2 \\cdot (-50 - (-20)) = 2 \\cdot (-30) = -60 \\text{ J}$$\\nAl dar un resultado **negativo**, significa que el trabajo es resistente; por lo tanto, el movimiento ha sido **forzado** (un agente externo ha aportado energía para subir el cuerpo en contra del campo).",
+    "pista": "El potencial gravitatorio es escalar y siempre negativo tomando cero en el infinito.",
+    "formula": "$$W = -m\\Delta V = m(V_A - V_B)$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 307,
+    "dificultad": "Difícil",
+    "bloque": "Tema 3: Estudio del Campo Gravitatorio",
+    "enunciado": "Considera la Tierra esférica ($M_T = 5.98 \\times 10^{24} \\text{ kg}$, $R_T = 6370 \\text{ km}$).\\na) Calcula el potencial gravitatorio en un punto situado a una altitud $h = R_T$ sobre la superficie terrestre.\\nb) Si lanzamos verticalmente hacia arriba un cohete de 2000 kg desde la superficie terrestre con una velocidad de 8 km/s, ¿qué altura máxima alcanzará? (Desprecia el rozamiento).",
+    "resolucion_latex": "a) Distancia total al centro: $r = R_T + h = 2R_T = 1.274 \\times 10^7 \\text{ m}$.\\n$$V = -\\frac{G M_T}{r} = -\\frac{(6.67 \\times 10^{-11})(5.98 \\times 10^{24})}{1.274 \\times 10^7} \\approx -3.13 \\times 10^7 \\text{ J/kg}$$\\nb) Aplicamos Conservación de la Energía Mecánica ($E_{m,1} = E_{m,2}$):\\n$$\\frac{1}{2}mv^2 - \\frac{G M_T m}{R_T} = -\\frac{G M_T m}{r_2}$$\\n$$\\frac{1}{2}(8000)^2 - \\frac{(6.67 \\times 10^{-11})(5.98 \\times 10^{24})}{6.37 \\times 10^6} = -\\frac{G M_T}{r_2}$$\\n$$3.2 \\times 10^7 - 6.26 \\times 10^7 = -\\frac{3.98 \\times 10^{14}}{r_2} \\implies -3.06 \\times 10^7 = -\\frac{3.98 \\times 10^{14}}{r_2}$$\\n$$r_2 \\approx 1.3 \\times 10^7 \\text{ m} \\implies h = r_2 - R_T \\approx 6.63 \\times 10^6 \\text{ m}$$",
+    "pista": "El potencial gravitatorio es escalar y siempre negativo tomando cero en el infinito.",
+    "formula": "$$\\frac{1}{2}mv^2 - \\frac{G M_T m}{R_T} = -\\frac{G M_T m}{r_2}$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 308,
+    "dificultad": "Difícil",
+    "bloque": "Tema 3: Estudio del Campo Gravitatorio",
+    "enunciado": "Calcula qué velocidad mínima vertical se le debe proporcionar a un objeto situado en la superficie de la Luna para que escape de su atracción gravitatoria. (Datos: $M_L = 7.35 \\times 10^{22} \\text{ kg}$, $R_L = 1737 \\text{ km}$).",
+    "resolucion_latex": "Condición de escape ($E_{m,sup} = 0$):\\n$$\\frac{1}{2}mv_e^2 - \\frac{G M_L m}{R_L} = 0 \\implies v_e = \\sqrt{\\frac{2 G M_L}{R_L}}$$\\n$$v_e = \\sqrt{\\frac{2(6.67 \\cdot 10^{-11})(7.35 \\cdot 10^{22})}{1.737 \\cdot 10^6}} = \\sqrt{5.64 \\cdot 10^6} \\approx 2375 \\text{ m/s}$$",
+    "pista": "Usa conservación de la energía mecánica imponiendo energía total nula en el infinito.",
+    "formula": "$$\\frac{1}{2}mv_e^2 - \\frac{G M_L m}{R_L} = 0 \\implies v_e = \\sqrt{\\frac{2 G M_L}{R_L}}$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 309,
+    "dificultad": "Superior",
+    "bloque": "Tema 3: Estudio del Campo Gravitatorio",
+    "enunciado": "¿Es posible que en una región del espacio el campo gravitatorio $\\vec{g}$ sea nulo y, sin embargo, el potencial gravitatorio $V$ sea distinto de cero? ¿Y al revés, que el potencial sea nulo pero el campo no? Razona tu respuesta con ejemplos de sistemas de masas puntuales.",
+    "resolucion_latex": "1) **¿$\\vec{g}=0$ y $V \\neq 0$? SÍ**. En el punto medio geométrico que separa a dos masas idénticas, los vectores de intensidad de campo tienen la misma magnitud pero sentidos opuestos, anulándose por completo. Sin embargo, el potencial es un escalar y se suma de forma neta dando un valor negativo distinto de cero.\\n2) **¿$V=0$ y $\\vec{g} \\neq 0$? NO**. Al ser la masa una magnitud estrictamente positiva, los potenciales individuales creados por partículas siempre son negativos ($-GM/r$). No existe ninguna distribución geométrica que permita sumar términos negativos y dar cero, a menos que nos distanciemos hasta el infinito.",
+    "pista": "El potencial gravitatorio es escalar y siempre negativo tomando cero en el infinito.",
+    "formula": "$$\\vec{g} \\neq 0$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 401,
+    "dificultad": "Fácil",
+    "bloque": "Tema 4: Dinámica Orbital",
+    "enunciado": "Un satélite orbita la Tierra a una altitud $h$ de la superficie de modo que su radio orbital es $2R_T$. Calcula su velocidad orbital. ($M_T = 5.98 \\times 10^{24} \\text{ kg}$, $R_T = 6370 \\text{ km}$).",
+    "resolucion_latex": "Igualamos Fuerza Gravitatoria y Fuerza Centrípeta ($F_g = F_c$):\\n$$\\frac{G M_T m}{r^2} = m \\frac{v_o^2}{r} \\implies v_o = \\sqrt{\\frac{G M_T}{r}}$$\\nEl radio orbital es $r = 2R_T = 1.274 \\times 10^7 \\text{ m}$.\\n$$v_o = \\sqrt{\\frac{(6.67 \\times 10^{-11})(5.98 \\times 10^{24})}{1.274 \\times 10^7}} \\approx 5595 \\text{ m/s}$$",
+    "pista": "En órbitas circulares iguala la fuerza gravitatoria con la fuerza centrípeta.",
+    "formula": "$$\\frac{G M_T m}{r^2} = m \\frac{v_o^2}{r} \\implies v_o = \\sqrt{\\frac{G M_T}{r}}$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 402,
+    "dificultad": "Fácil",
+    "bloque": "Tema 4: Dinámica Orbital",
+    "enunciado": "Deduce teóricamente la expresión de la velocidad de escape $v_e$ desde la superficie de un planeta de masa $M$ y radio $R$.",
+    "resolucion_latex": "Aplicamos el Principio de Conservación de la Energía Mecánica entre la superficie del planeta y el infinito ($E_{m,sup} = E_{m,\\infty}$):\\n$$\\frac{1}{2}mv_e^2 - \\frac{GMm}{R} = 0 + 0 \\implies \\frac{1}{2}mv_e^2 = \\frac{GMm}{R}$$\\nCancelamos la masa menor $m$ y despejamos la velocidad de escape:\\n$$v_e = \\sqrt{\\frac{2GM}{R}}$$",
+    "pista": "La velocidad de escape se deduce imponiendo energía mecánica total igual a cero.",
+    "formula": "$$v_e = \\sqrt{\\frac{2GM}{R}}$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 403,
+    "dificultad": "Fácil",
+    "bloque": "Tema 4: Dinámica Orbital",
+    "enunciado": "Calcula el periodo de revolución de un satélite que orbitara la Tierra a una altura casi nula (rasante a la superficie), asumiendo que no hay rozamiento atmosférico.",
+    "resolucion_latex": "Órbita rasante implica que $r \\approx R_T = 6370 \\text{ km} = 6.37 \\cdot 10^6 \\text{ m}$. Usamos la Tercera Ley de Kepler deducida:\\n$$T^2 = \\frac{4\\pi^2 r^3}{G M_T} \\implies T = \\sqrt{\\frac{4\\pi^2 r^3}{G M_T}}$$\\n$$T = \\sqrt{\\frac{4\\pi^2(6.37 \\cdot 10^6)^3}{6.67 \\cdot 10^{-11} \\cdot 5.98 \\cdot 10^{24}}} = \\sqrt{2.56 \\cdot 10^7} \\approx 5060 \\text{ s } \\approx 84.3 \\text{ min}$$",
+    "pista": "Relaciona el periodo orbital con el radio mediante la forma dinámica de la tercera ley de Kepler.",
+    "formula": "$$T^2 = \\frac{4\\pi^2 r^3}{G M_T} \\implies T = \\sqrt{\\frac{4\\pi^2 r^3}{G M_T}}$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 404,
+    "dificultad": "Media",
+    "bloque": "Tema 4: Dinámica Orbital",
+    "enunciado": "Demuestra que la energía mecánica de un satélite que describe una órbita circular es la mitad de su energía potencial ($E_m = \\frac{1}{2}E_p$).",
+    "resolucion_latex": "A partir del equilibrio dinámico orbital, sabemos que $v^2 = \\frac{GM}{r}$.\\nSustituimos en la Energía Cinética: $E_c = \\frac{1}{2}mv^2 = \\frac{GMm}{2r}$.\\nLa Energía Potencial es $E_p = -\\frac{GMm}{r}$.\\nCalculamos la Energía Mecánica total:\\n$$E_m = E_c + E_p = \\frac{GMm}{2r} - \\frac{GMm}{r} = -\\frac{GMm}{2r}$$\\nComo $-\\frac{GMm}{2r} = \\frac{1}{2}\\left(-\\frac{GMm}{r}\\right)$, queda demostrado que: $E_m = \\frac{1}{2}E_p$.",
+    "pista": "En una órbita circular, la energía mecánica vale la mitad de la energía potencial.",
+    "formula": "$$E_m = E_c + E_p = \\frac{GMm}{2r} - \\frac{GMm}{r} = -\\frac{GMm}{2r}$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 405,
+    "dificultad": "Media",
+    "bloque": "Tema 4: Dinámica Orbital",
+    "enunciado": "Un satélite de 200 kg se encuentra en órbita circular con una energía mecánica total de $-5 \\times 10^9 \\text{ J}$. Calcula el radio de su órbita.",
+    "resolucion_latex": "Por la demostración anterior, $E_m = -\\frac{G M_T m}{2r}$. Despejamos el radio $r$:\\n$$r = -\\frac{G M_T m}{2 E_m}$$\\n$$r = -\\frac{(6.67 \\cdot 10^{-11})(5.98 \\cdot 10^{24})(200)}{2 \\cdot (-5 \\cdot 10^9)} = \\frac{7.98 \\cdot 10^{16}}{10^{10}} \\approx 7.98 \\cdot 10^6 \\text{ m}$$",
+    "pista": "En una órbita circular, la energía mecánica vale la mitad de la energía potencial.",
+    "formula": "$$r = -\\frac{G M_T m}{2 E_m}$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 406,
+    "dificultad": "Media",
+    "bloque": "Tema 4: Dinámica Orbital",
+    "enunciado": "¿Qué variación de energía cinética experimenta un satélite de 100 kg si pasa de orbitar a una distancia de $2R_T$ del centro de la Tierra a orbitar a una distancia de $3R_T$?",
+    "resolucion_latex": "La energía cinética orbital es $E_c = \\frac{G M_T m}{2r}$.\\nEn $r_1 = 2R_T \\implies E_{c1} = \\frac{G M_T m}{4R_T}$. En $r_2 = 3R_T \\implies E_{c2} = \\frac{G M_T m}{6R_T}$.\\nCalculamos la variación (Final - Inicial):\\n$$\\Delta E_c = E_{c2} - E_{c1} = \\frac{G M_T m}{R_T} \\left(\\frac{1}{6} - \\frac{1}{4}\\right) = -\\frac{G M_T m}{12R_T}$$\\n(El signo negativo confirma que el satélite reduce su velocidad y pierde energía cinética al alejarse).",
+    "pista": "En una órbita circular, la energía mecánica vale la mitad de la energía potencial.",
+    "formula": "$$\\Delta E_c = E_{c2} - E_{c1} = \\frac{G M_T m}{R_T} \\left(\\frac{1}{6} - \\frac{1}{4}\\right) = -\\frac{G M_T m}{12R_T}$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 407,
+    "dificultad": "Difícil",
+    "bloque": "Tema 4: Dinámica Orbital",
+    "enunciado": "Un satélite artificial de 500 kg describe una órbita circular alrededor de la Tierra a una velocidad de 6 km/s.\\na) Determina el radio de la órbita.\\nb) Calcula el trabajo que deben realizar los motores del satélite para pasarlo a otra órbita circular cuyo radio sea el doble que el de la primera.",
+    "resolucion_latex": "a) Como $v_o = \\sqrt{\\frac{G M_T}{r}} \\implies r = \\frac{G M_T}{v_o^2}$:\\n$$r = \\frac{(6.67 \\cdot 10^{-11})(5.98 \\cdot 10^{24})}{6000^2} \\approx 1.108 \\cdot 10^7 \\text{ m}$$\\nb) El trabajo no conservativo es la variación de energía mecánica ($W = E_{m2} - E_{m1}$), donde $r_2 = 2r_1$:\\n$$W = -\\frac{G M_T m}{2r_2} - \\left(-\\frac{G M_T m}{2r_1}\\right) = -\\frac{G M_T m}{4r_1} + \\frac{G M_T m}{2r_1} = \\frac{G M_T m}{4r_1}$$\\n$$W = \\frac{(6.67 \\cdot 10^{-11})(5.98 \\cdot 10^{24})(500)}{4 \\cdot 1.108 \\cdot 10^7} \\approx 4.5 \\times 10^9 \\text{ J}$$",
+    "pista": "En una órbita circular, la energía mecánica vale la mitad de la energía potencial.",
+    "formula": "$$W = -\\frac{G M_T m}{2r_2} - \\left(-\\frac{G M_T m}{2r_1}\\right) = -\\frac{G M_T m}{4r_1} + \\frac{G M_T m}{2r_1} = \\frac{G M_T m}{4r_1}$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 408,
+    "dificultad": "Difícil",
+    "bloque": "Tema 4: Dinámica Orbital",
+    "enunciado": "Se desea situar un satélite de telecomunicaciones en órbita geoestacionaria. Calcula el radio orbital y la velocidad orbital de dicho satélite. (El periodo debe ser de 24 h).",
+    "resolucion_latex": "Pasamos el periodo a segundos: $T = 24 \\text{ h} = 86400 \\text{ s}$.\\nPor la Tercera Ley de Kepler despejamos el radio orbital:\\n$$r = \\sqrt[3]{\\frac{G M_T T^2}{4\\pi^2}} = \\sqrt[3]{\\frac{(6.67 \\cdot 10^{-11})(5.98 \\times 10^{24})(86400^2)}{4\\pi^2}} \\approx 4.22 \\times 10^7 \\text{ m}$$\\nCalculamos su velocidad orbital lineal:\\n$$v = \\frac{2\\pi r}{T} = \\frac{2\\pi(4.22 \\times 10^7)}{86400} \\approx 3070 \\text{ m/s}$$",
+    "pista": "Relaciona el periodo orbital con el radio mediante la forma dinámica de la tercera ley de Kepler.",
+    "formula": "$$v = \\frac{2\\pi r}{T} = \\frac{2\\pi(4.22 \\times 10^7)}{86400} \\approx 3070 \\text{ m/s}$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 409,
+    "dificultad": "Superior",
+    "bloque": "Tema 4: Dinámica Orbital",
+    "enunciado": "Un asteroide se dirige directamente hacia la Tierra. Cuando está a una distancia de $10R_T$ de la superficie terrestre, su velocidad coincide exactamente con la velocidad de escape en ese mismo punto. ¿Con qué velocidad impactará contra la superficie de la Tierra? (Desprecia el rozamiento atmosférico).",
+    "resolucion_latex": "Por definición, poseer exactamente la velocidad de escape en un punto del espacio implica que la Energía Mecánica total del sistema es estrictamente cero ($E_m = 0$).\\nComo no hay rozamiento, la energía mecánica se conserva a lo largo de toda la trayectoria de caída. Por tanto, en el instante del impacto en la superficie, la energía sigue siendo cero:\\n$$E_{m,superficie} = 0 \\implies \\frac{1}{2}mv_{impacto}^2 - \\frac{G M_T m}{R_T} = 0$$\\n$$v_{impacto} = \\sqrt{\\frac{2 G M_T}{R_T}}$$\\nEl asteroide impactará exactamente con el valor de la velocidad de escape medido en la superficie de la Tierra.",
+    "pista": "La velocidad de escape se deduce imponiendo energía mecánica total igual a cero.",
+    "formula": "$$v_{impacto} = \\sqrt{\\frac{2 G M_T}{R_T}}$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 501,
+    "dificultad": "Fácil",
+    "bloque": "Tema 5: Campo Eléctrico",
+    "enunciado": "Calcula el módulo de la fuerza de repulsión electrostática entre dos cargas puntuales iguales de $2 \\text{ } \\mu\\text{C}$ separadas por una distancia de $30 \\text{ cm}$ en el vacío. (Dato: $K = 9 \\times 10^9 \\text{ N m}^2/\\text{C}^2$).",
+    "resolucion_latex": "Aplicamos la Ley de Coulomb:\\n$$F = K \\frac{|q_1 \\cdot q_2|}{r^2}$$\\nPasamos las cargas a Culombios ($2 \\times 10^{-6} \\text{ C}$) y la distancia a metros ($0.3 \\text{ m}$):\\n$$F = (9 \\times 10^9) \\frac{(2 \\times 10^{-6})(2 \\times 10^{-6})}{(0.3)^2}$$\\n$$F = (9 \\times 10^9) \\frac{4 \\times 10^{-12}}{0.09} = \\frac{0.036}{0.09} = 0.4 \\text{ N}$$",
+    "pista": "Aplica la ley de Coulomb usando cargas en culombios y distancia en metros.",
+    "formula": "$$F = K \\frac{|q_1 \\cdot q_2|}{r^2}$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 502,
+    "dificultad": "Fácil",
+    "bloque": "Tema 5: Campo Eléctrico",
+    "enunciado": "Determina la intensidad del campo eléctrico creado por una carga puntual de $-5 \\text{ nC}$ a una distancia de $10 \\text{ cm}$. ¿Hacia dónde apunta el vector campo eléctrico?",
+    "resolucion_latex": "Módulo del campo eléctrico:\\n$$E = K \\frac{|Q|}{r^2}$$\\nSustituimos $Q = 5 \\times 10^{-9} \\text{ C}$ y $r = 0.1 \\text{ m}$:\\n$$E = (9 \\times 10^9) \\frac{5 \\times 10^{-9}}{(0.1)^2} = \\frac{45}{0.01} = 4500 \\text{ N/C}$$\\nAl ser la carga generadora negativa, el vector campo eléctrico apunta radialmente **hacia la carga**.",
+    "pista": "El campo eléctrico es vectorial: iguala módulos y cuida el sentido de cada contribución.",
+    "formula": "$$E = K \\frac{|Q|}{r^2}$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 503,
+    "dificultad": "Fácil",
+    "bloque": "Tema 5: Campo Eléctrico",
+    "enunciado": "Calcula el trabajo que realiza el campo eléctrico para trasladar un protón ($q = 1.6 \\times 10^{-19} \\text{ C}$) desde un punto A, donde el potencial es $100 \\text{ V}$, hasta un punto B, donde el potencial es $40 \\text{ V}$.",
+    "resolucion_latex": "El trabajo conservativo del campo se calcula como:\\n$$W_{A \\to B} = -q \\cdot \\Delta V = q(V_A - V_B)$$\\n$$W_{A \\to B} = (1.6 \\times 10^{-19}) \\cdot (100 - 40) = (1.6 \\times 10^{-19}) \\cdot 60$$\\n$$W_{A \\to B} = 9.6 \\times 10^{-18} \\text{ J}$$\\nEl trabajo es positivo, por lo que lo realiza espontáneamente el propio campo.",
+    "pista": "El campo eléctrico es vectorial: iguala módulos y cuida el sentido de cada contribución.",
+    "formula": "$$W_{A \\to B} = -q \\cdot \\Delta V = q(V_A - V_B)$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 504,
+    "dificultad": "Media",
+    "bloque": "Tema 5: Campo Eléctrico",
+    "enunciado": "Dos cargas puntuales $q_1 = 4 \\text{ } \\mu\\text{C}$ y $q_2 = 9 \\text{ } \\mu\\text{C}$ están separadas $10 \\text{ cm}$. ¿En qué punto del segmento que las une el campo eléctrico resultante es nulo?",
+    "resolucion_latex": "Sea $x$ la distancia desde $q_1$ al punto nulo. La distancia desde $q_2$ será $(0.1 - x)$. Para que se anule, los módulos deben ser iguales:\\n$$K \\frac{q_1}{x^2} = K \\frac{q_2}{(0.1 - x)^2}$$\\nCancelamos $K$ y sustituimos en microculombios (la unidad se cancela):\\n$$\\frac{4}{x^2} = \\frac{9}{(0.1 - x)^2}$$\\nAplicamos raíz cuadrada a ambos lados:\\n$$\\frac{2}{x} = \\frac{3}{0.1 - x}$$\\n$$2(0.1 - x) = 3x \\implies 0.2 - 2x = 3x \\implies 5x = 0.2 \\implies x = 0.04 \\text{ m}$$\\nEl campo es nulo a $4 \\text{ cm}$ de $q_1$.",
+    "pista": "El campo eléctrico es vectorial: iguala módulos y cuida el sentido de cada contribución.",
+    "formula": "$$\\frac{2}{x} = \\frac{3}{0.1 - x}$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 505,
+    "dificultad": "Media",
+    "bloque": "Tema 5: Campo Eléctrico",
+    "enunciado": "Un electrón ($m = 9.1 \\times 10^{-31} \\text{ kg}$, $q = -1.6 \\times 10^{-19} \\text{ C}$) se abandona en reposo en el seno de un campo eléctrico uniforme de $500 \\text{ N/C}$. Calcula la velocidad que adquiere tras recorrer $2 \\text{ cm}$.",
+    "resolucion_latex": "Fuerza eléctrica: $F = |q| \\cdot E = (1.6 \\times 10^{-19}) \\cdot 500 = 8 \\times 10^{-17} \\text{ N}$.\\nPor la 2ª Ley de Newton, la aceleración es:\\n$$a = \\frac{F}{m} = \\frac{8 \\times 10^{-17}}{9.1 \\times 10^{-31}} \\approx 8.79 \\times 10^{13} \\text{ m/s}^2$$\\nAplicamos cinemática (MRUA) sin tiempo: $v^2 = v_0^2 + 2a \\cdot \\Delta x$.\\n$$v^2 = 0 + 2(8.79 \\times 10^{13})(0.02) = 3.516 \\times 10^{12}$$\\n$$v = \\sqrt{3.516 \\times 10^{12}} \\approx 1.87 \\times 10^6 \\text{ m/s}$$",
+    "pista": "El campo eléctrico es vectorial: iguala módulos y cuida el sentido de cada contribución.",
+    "formula": "$$v = \\sqrt{3.516 \\times 10^{12}} \\approx 1.87 \\times 10^6 \\text{ m/s}$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 506,
+    "dificultad": "Media",
+    "bloque": "Tema 5: Campo Eléctrico",
+    "enunciado": "Tres cargas de $2 \\text{ nC}$ están situadas en los vértices de un triángulo equilátero de lado $3 \\text{ m}$. Calcula el potencial eléctrico en el centro geométrico (baricentro) del triángulo.",
+    "resolucion_latex": "La distancia del vértice al centro geométrico en un triángulo equilátero es $r = \\frac{L}{\\sqrt{3}}$:\\n$$r = \\frac{3}{\\sqrt{3}} = \\sqrt{3} \\text{ m}$$\\nEl potencial es escalar, por lo que sumamos los tres aportes directamente:\\n$$V = 3 \\cdot \\left(K \\frac{q}{r}\\right)$$\\n$$V = 3 \\cdot \\frac{(9 \\times 10^9)(2 \\times 10^{-9})}{\\sqrt{3}} = \\frac{54}{\\sqrt{3}} = 18\\sqrt{3} \\approx 31.18 \\text{ V}$$",
+    "pista": "El potencial es escalar y el trabajo del campo se obtiene con la diferencia de potencial.",
+    "formula": "$$V = 3 \\cdot \\left(K \\frac{q}{r}\\right)$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 507,
+    "dificultad": "Difícil",
+    "bloque": "Tema 5: Campo Eléctrico",
+    "enunciado": "Una esfera conductora de $10 \\text{ cm}$ de radio tiene una carga neta de $4 \\text{ } \\mu\\text{C}$. Utilizando el Teorema de Gauss, determina el módulo del campo eléctrico en su superficie y en un punto situado a $5 \\text{ cm}$ de su centro.",
+    "resolucion_latex": "Por el Teorema de Gauss ($\\Phi = \\oint \\vec{E} \\cdot d\\vec{S} = \\frac{Q_{int}}{\\varepsilon_0}$):\\n1) En la superficie ($r = 0.1 \\text{ m}$), toda la carga está en el interior de la superficie gaussiana. El comportamiento es el de una carga puntual en el centro:\\n$$E = K \\frac{Q}{R^2} = (9 \\times 10^9) \\frac{4 \\times 10^{-6}}{(0.1)^2} = \\frac{36000}{0.01} = 3.6 \\times 10^6 \\text{ N/C}$$\\n2) En $r = 0.05 \\text{ m}$ (en el interior del conductor). En equilibrio electrostático, la carga se acumula exclusivamente en la superficie exterior. Por tanto, la carga interior es cero ($Q_{int} = 0$).\\n$$E_{interior} = 0 \\text{ N/C}$$",
+    "pista": "El campo eléctrico es vectorial: iguala módulos y cuida el sentido de cada contribución.",
+    "formula": "$$E_{interior} = 0 \\text{ N/C}$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 508,
+    "dificultad": "Difícil",
+    "bloque": "Tema 5: Campo Eléctrico",
+    "enunciado": "Una bolita de $5 \\text{ g}$ de masa y carga $q$ cuelga de un hilo formando un péndulo. Al aplicar un campo eléctrico horizontal uniforme de $2000 \\text{ N/C}$, el hilo se desvía hasta alcanzar el equilibrio formando un ángulo de $30^\\circ$ con la vertical. Calcula el valor de la carga $q$.",
+    "resolucion_latex": "En equilibrio, se anulan las fuerzas en los dos ejes.\\nEje Y (vertical): $T \\cos(30^\\circ) = m \\cdot g \\implies T = \\frac{m \\cdot g}{\\cos(30^\\circ)}$.\\nEje X (horizontal): $T \\sin(30^\\circ) = F_e = q \\cdot E$.\\nDividiendo ambas ecuaciones (X entre Y) eliminamos la tensión:\\n$$\\tan(30^\\circ) = \\frac{q \\cdot E}{m \\cdot g} \\implies q = \\frac{m \\cdot g \\cdot \\tan(30^\\circ)}{E}$$\\nSustituimos datos ($m = 0.005 \\text{ kg}$):\\n$$q = \\frac{0.005 \\cdot 9.8 \\cdot \\tan(30^\\circ)}{2000} = \\frac{0.049 \\cdot 0.577}{2000} \\approx 1.41 \\times 10^{-5} \\text{ C} \\text{ } (14.1 \\text{ } \\mu\\text{C})$$",
+    "pista": "El campo eléctrico es vectorial: iguala módulos y cuida el sentido de cada contribución.",
+    "formula": "$$\\tan(30^\\circ) = \\frac{q \\cdot E}{m \\cdot g} \\implies q = \\frac{m \\cdot g \\cdot \\tan(30^\\circ)}{E}$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 509,
+    "dificultad": "Difícil",
+    "bloque": "Tema 5: Campo Eléctrico",
+    "enunciado": "Se dispara un protón con una velocidad de $5 \\times 10^6 \\text{ m/s}$ directamente hacia otro protón que está fijo en el origen de coordenadas. Si inicialmente estaba muy lejos (infinito), ¿cuál será la distancia mínima de acercamiento entre ellos?",
+    "resolucion_latex": "Aplicamos Conservación de la Energía Mecánica entre el infinito y el punto de distancia mínima (donde la velocidad del protón se hace cero por la repulsión, $v=0$):\\n$$E_{m,\\infty} = E_{m,min} \\implies E_{c,\\infty} + E_{p,\\infty} = E_{c,min} + E_{p,min}$$\\n$$\\frac{1}{2} m_p v^2 + 0 = 0 + K \\frac{e \\cdot e}{r_{min}}$$\\nDespejamos $r_{min}$:\\n$$r_{min} = \\frac{2 K e^2}{m_p v^2}$$\\nSustituimos constantes ($m_p = 1.67 \\times 10^{-27}$, $e = 1.6 \\times 10^{-19}$):\\n$$r_{min} = \\frac{2(9 \\times 10^9)(1.6 \\times 10^{-19})^2}{(1.67 \\times 10^{-27})(5 \\times 10^6)^2} = \\frac{4.608 \\times 10^{-28}}{4.175 \\times 10^{-14}} \\approx 1.1 \\times 10^{-14} \\text{ m}$$",
+    "pista": "Distingue entre campo, potencial, fuerza y energía antes de sustituir datos.",
+    "formula": "$$E_{m,\\infty} = E_{m,min} \\implies E_{c,\\infty} + E_{p,\\infty} = E_{c,min} + E_{p,min}$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 510,
+    "dificultad": "Superior",
+    "bloque": "Tema 5: Campo Eléctrico",
+    "enunciado": "*(Reto Supernova)*: Un alumno sostiene que, combinando adecuadamente tres cargas positivas, es posible crear un patrón donde las líneas de campo eléctrico formen un círculo cerrado alrededor del centro. Demuestra matemáticamente, utilizando la circulación del campo eléctrico, por qué esto es una imposibilidad física absoluta en electrostática.",
+    "resolucion_latex": "El alumno viola uno de los postulados fundamentales de la electrostática. La fuerza eléctrica generada por cargas en reposo es una **fuerza conservativa**.\\nMatemáticamente, la condición de campo conservativo exige que el trabajo realizado a lo largo de cualquier trayectoria cerrada ($L$) sea idénticamente cero. Expresado como integral de línea (circulación):\\n$$\\oint_L \\vec{E} \\cdot d\\vec{l} = 0$$\\nSi las líneas de campo formaran un círculo cerrado, existiría una trayectoria (ese mismo círculo) donde el vector campo $\\vec{E}$ sería siempre tangente y paralelo al vector desplazamiento $d\\vec{l}$.\\nEn ese caso, el producto escalar $\\vec{E} \\cdot d\\vec{l} = E \\cdot dl \\cdot \\cos(0) = E \\cdot dl$ sería estrictamente positivo en todo punto.\\nLa integral $\\oint E \\cdot dl$ daría un valor distinto de cero, violando la condición de campo conservativo. Por tanto, las líneas de campo electrostático **jamás** pueden cerrarse sobre sí mismas; nacen en las cargas positivas y mueren en las negativas o en el infinito.",
+    "pista": "El campo eléctrico es vectorial: iguala módulos y cuida el sentido de cada contribución.",
+    "formula": "$$\\oint_L \\vec{E} \\cdot d\\vec{l} = 0$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 601,
+    "dificultad": "Fácil",
+    "bloque": "Tema 6: Campo Magnético",
+    "enunciado": "Un electrón entra a una velocidad de $3 \\times 10^6 \\text{ m/s}$ perpendicularmente a un campo magnético uniforme de $0.5 \\text{ T}$. Calcula el módulo de la fuerza magnética que experimenta.",
+    "resolucion_latex": "Aplicamos la Ley de Lorentz para el módulo de la fuerza:\\n$$F = |q| \\cdot v \\cdot B \\cdot \\sin(\\alpha)$$\\nComo entra perpendicularmente, $\\alpha = 90^\\circ$ y $\\sin(90^\\circ) = 1$.\\n$$F = (1.6 \\times 10^{-19}) \\cdot (3 \\times 10^6) \\cdot 0.5 \\cdot 1 = 2.4 \\times 10^{-13} \\text{ N}$$",
+    "pista": "La fuerza magnética depende del seno del ángulo entre velocidad y campo.",
+    "formula": "$$F = |q| \\cdot v \\cdot B \\cdot \\sin(\\alpha)$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 602,
+    "dificultad": "Fácil",
+    "bloque": "Tema 6: Campo Magnético",
+    "enunciado": "Un hilo recto de $2 \\text{ m}$ de longitud por el que circula una corriente de $5 \\text{ A}$ se sitúa en un campo magnético uniforme de $0.4 \\text{ T}$ formando un ángulo de $30^\\circ$ con el campo. Calcula la fuerza magnética sobre el hilo.",
+    "resolucion_latex": "Aplicamos la Ley de Laplace:\\n$$F = I \\cdot L \\cdot B \\cdot \\sin(\\alpha)$$\\nSustituimos los datos:\\n$$F = 5 \\cdot 2 \\cdot 0.4 \\cdot \\sin(30^\\circ)$$\\n$$F = 4 \\cdot 0.5 = 2 \\text{ N}$$",
+    "pista": "La fuerza magnética depende del seno del ángulo entre velocidad y campo.",
+    "formula": "$$F = I \\cdot L \\cdot B \\cdot \\sin(\\alpha)$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 603,
+    "dificultad": "Fácil",
+    "bloque": "Tema 6: Campo Magnético",
+    "enunciado": "Calcula la intensidad del campo magnético creado por un hilo conductor rectilíneo muy largo por el que circulan $10 \\text{ A}$, a una distancia de $5 \\text{ cm}$ del hilo. (Dato: $\\mu_0 = 4\\pi \\times 10^{-7} \\text{ T m/A}$).",
+    "resolucion_latex": "Aplicamos la Ley de Biot-Savart para un hilo infinito:\\n$$B = \\frac{\\mu_0 \\cdot I}{2\\pi \\cdot d}$$\\nPasamos la distancia a metros ($0.05 \\text{ m}$):\\n$$B = \\frac{(4\\pi \\times 10^{-7}) \\cdot 10}{2\\pi \\cdot 0.05} = \\frac{2 \\times 10^{-7} \\cdot 10}{0.05} = \\frac{2 \\times 10^{-6}}{0.05}$$\\n$$B = 4 \\times 10^{-5} \\text{ T}$$",
+    "pista": "Usa la fuerza magnética sobre un conductor y aplica la regla de la mano derecha.",
+    "formula": "$$B = \\frac{\\mu_0 \\cdot I}{2\\pi \\cdot d}$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 604,
+    "dificultad": "Media",
+    "bloque": "Tema 6: Campo Magnético",
+    "enunciado": "Un protón describe una órbita circular de $20 \\text{ cm}$ de radio en un campo magnético perpendicular de $0.8 \\text{ T}$. Calcula la velocidad del protón. ($m_p = 1.67 \\times 10^{-27} \\text{ kg}$, $q = 1.6 \\times 10^{-19} \\text{ C}$).",
+    "resolucion_latex": "En un movimiento circular perpendicular, la fuerza magnética actúa como fuerza centrípeta ($F_m = F_c$):\\n$$q \\cdot v \\cdot B = m \\frac{v^2}{R} \\implies R = \\frac{m \\cdot v}{q \\cdot B}$$\\nDespejamos la velocidad $v$:\\n$$v = \\frac{q \\cdot B \\cdot R}{m}$$\\n$$v = \\frac{(1.6 \\times 10^{-19}) \\cdot 0.8 \\cdot 0.2}{1.67 \\times 10^{-27}} = \\frac{2.56 \\times 10^{-20}}{1.67 \\times 10^{-27}} \\approx 1.53 \\times 10^7 \\text{ m/s}$$",
+    "pista": "Si la velocidad es perpendicular al campo, la fuerza magnética actúa como fuerza centrípeta.",
+    "formula": "$$v = \\frac{q \\cdot B \\cdot R}{m}$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 605,
+    "dificultad": "Media",
+    "bloque": "Tema 6: Campo Magnético",
+    "enunciado": "En un selector de velocidades, un haz de iones atraviesa sin desviarse una región donde existen un campo eléctrico de $2 \\times 10^4 \\text{ V/m}$ y un campo magnético de $0.05 \\text{ T}$, perpendiculares entre sí y a la velocidad. Calcula la velocidad de los iones.",
+    "resolucion_latex": "Para que un ion no se desvíe en un selector, la fuerza eléctrica y la magnética deben anularse vectorialmente, siendo iguales en módulo y opuestas en sentido ($F_e = F_m$):\\n$$q \\cdot E = q \\cdot v \\cdot B$$\\nCancelamos la carga $q$ (el selector funciona para cualquier masa y carga):\\n$$v = \\frac{E}{B} = \\frac{2 \\times 10^4}{0.05} = 4 \\times 10^5 \\text{ m/s}$$",
+    "pista": "Identifica primero la dirección relativa entre velocidad, corriente y campo magnético.",
+    "formula": "$$q \\cdot E = q \\cdot v \\cdot B$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 606,
+    "dificultad": "Media",
+    "bloque": "Tema 6: Campo Magnético",
+    "enunciado": "Dos hilos paralelos infinitos están separados por una distancia de $10 \\text{ cm}$. Por ellos circulan corrientes de $I_1 = 5 \\text{ A}$ e $I_2 = 8 \\text{ A}$ en el mismo sentido. Calcula la fuerza por unidad de longitud entre ellos e indica si es atractiva o repulsiva.",
+    "resolucion_latex": "La fuerza magnética entre dos hilos por unidad de longitud es:\\n$$\\frac{F}{L} = \\frac{\\mu_0 \\cdot I_1 \\cdot I_2}{2\\pi \\cdot d}$$\\nSustituimos:\\n$$\\frac{F}{L} = \\frac{(4\\pi \\times 10^{-7}) \\cdot 5 \\cdot 8}{2\\pi \\cdot 0.1} = \\frac{2 \\times 10^{-7} \\cdot 40}{0.1} = 8 \\times 10^{-5} \\text{ N/m}$$\\nComo las corrientes circulan en el **mismo sentido**, los hilos generan campos que se atraen mutuamente. La fuerza es **atractiva**.",
+    "pista": "La fuerza magnética depende del seno del ángulo entre velocidad y campo.",
+    "formula": "$$\\frac{F}{L} = \\frac{\\mu_0 \\cdot I_1 \\cdot I_2}{2\\pi \\cdot d}$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 607,
+    "dificultad": "Difícil",
+    "bloque": "Tema 6: Campo Magnético",
+    "enunciado": "Un ión de masa desconocida y carga $+e$ es acelerado desde el reposo mediante una diferencia de potencial de $1000 \\text{ V}$. Luego entra perpendicularmente en un campo magnético de $0.2 \\text{ T}$ describiendo un arco de $15 \\text{ cm}$ de radio. Determina la masa del ión.",
+    "resolucion_latex": "1) Aceleración (Energía Eléctrica = Energía Cinética):\\n$$q \\cdot \\Delta V = \\frac{1}{2} m v^2 \\implies v^2 = \\frac{2 q \\Delta V}{m}$$\\n2) Órbita magnética ($R = \\frac{mv}{qB}$):\\n$$v = \\frac{q \\cdot B \\cdot R}{m} \\implies v^2 = \\frac{q^2 B^2 R^2}{m^2}$$\\n3) Igualamos ambas expresiones de $v^2$ para eliminar la velocidad:\\n$$\\frac{2 q \\Delta V}{m} = \\frac{q^2 B^2 R^2}{m^2}$$\\nSimplificamos $m$ y $q$, y despejamos la masa $m$:\\n$$m = \\frac{q \\cdot B^2 \\cdot R^2}{2 \\Delta V}$$\\n$$m = \\frac{(1.6 \\times 10^{-19}) \\cdot (0.2)^2 \\cdot (0.15)^2}{2 \\cdot 1000} = \\frac{1.44 \\times 10^{-22}}{2000} = 7.2 \\times 10^{-26} \\text{ kg}$$",
+    "pista": "Si la velocidad es perpendicular al campo, la fuerza magnética actúa como fuerza centrípeta.",
+    "formula": "$$m = \\frac{q \\cdot B^2 \\cdot R^2}{2 \\Delta V}$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 608,
+    "dificultad": "Difícil",
+    "bloque": "Tema 6: Campo Magnético",
+    "enunciado": "Un electrón penetra en un campo magnético uniforme $\\vec{B} = 0.5\\vec{i} \\text{ T}$ con una velocidad $\\vec{v} = (2\\times 10^6\\vec{i} + 3\\times 10^6\\vec{j}) \\text{ m/s}$. Deduce el tipo de trayectoria y calcula el 'paso de hélice' (distancia de avance en el eje X tras una vuelta completa).",
+    "resolucion_latex": "La velocidad tiene dos componentes: una paralela al campo ($v_x = 2\\times 10^6$, movimiento rectilíneo uniforme) y otra perpendicular ($v_y = 3\\times 10^6$, movimiento circular uniforme). La composición es una **trayectoria helicoidal**.\\nEl radio del giro depende de $v_{\\perp}$ ($v_y$):\\n$$R = \\frac{m v_y}{q B} = \\frac{(9.1 \\times 10^{-31}) \\cdot (3 \\times 10^6)}{(1.6 \\times 10^{-19}) \\cdot 0.5} \\approx 3.41 \\times 10^{-5} \\text{ m}$$\\nEl periodo de rotación es $T = \\frac{2\\pi R}{v_y} = \\frac{2\\pi m}{q B}$:\\n$$T = \\frac{2\\pi (9.1 \\times 10^{-31})}{(1.6 \\times 10^{-19}) \\cdot 0.5} \\approx 7.15 \\times 10^{-11} \\text{ s}$$\\nEl paso de hélice (p) es el avance longitudinal ($v_x$) durante ese tiempo $T$:\\n$$p = v_x \\cdot T = (2 \\times 10^6) \\cdot (7.15 \\times 10^{-11}) \\approx 1.43 \\times 10^{-4} \\text{ m } (0.143 \\text{ mm})$$",
+    "pista": "La fuerza magnética depende del seno del ángulo entre velocidad y campo.",
+    "formula": "$$p = v_x \\cdot T = (2 \\times 10^6) \\cdot (7.15 \\times 10^{-11}) \\approx 1.43 \\times 10^{-4} \\text{ m } (0.143 \\text{ mm})$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 609,
+    "dificultad": "Difícil",
+    "bloque": "Tema 6: Campo Magnético",
+    "enunciado": "Una espira rectangular de lados $a = 10 \\text{ cm}$ y $b = 5 \\text{ cm}$ por la que circula una intensidad de $2 \\text{ A}$, está situada en un campo magnético uniforme de $0.3 \\text{ T}$. Calcula el momento de fuerzas (par motor) máximo que puede experimentar.",
+    "resolucion_latex": "El área de la espira es $S = a \\cdot b = 0.1 \\cdot 0.05 = 0.005 \\text{ m}^2$.\\nEl momento de fuerza sobre una espira es:\\n$$\\vec{\\tau} = \\vec{m} \\times \\vec{B} \\implies \\tau = N \\cdot I \\cdot S \\cdot B \\cdot \\sin(\\alpha)$$\\ndonde el vector momento magnético $\\vec{m}$ es perpendicular a la superficie.\\nEl par máximo ocurre cuando la espira está paralela al campo ($\\alpha = 90^\\circ$ respecto al vector normal):\\n$$\\tau_{max} = 1 \\cdot 2 \\cdot 0.005 \\cdot 0.3 \\cdot 1 = 0.003 \\text{ N m}$$",
+    "pista": "La fuerza magnética depende del seno del ángulo entre velocidad y campo.",
+    "formula": "$$\\vec{\\tau} = \\vec{m} \\times \\vec{B} \\implies \\tau = N \\cdot I \\cdot S \\cdot B \\cdot \\sin(\\alpha)$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 610,
+    "dificultad": "Superior",
+    "bloque": "Tema 6: Campo Magnético",
+    "enunciado": "*(Reto Supernova)*: Demuestra mediante el uso de vectores y el concepto de trabajo físico por qué un campo magnético estático es absolutamente incapaz de modificar la energía cinética de una partícula cargada libre, independientemente de su intensidad.",
+    "resolucion_latex": "El trabajo realizado por una fuerza para cambiar la energía cinética viene dado por el Teorema de las Fuerzas Vivas:\\n$$W = \\int \\vec{F}_m \\cdot d\\vec{r} = \\int \\vec{F}_m \\cdot \\vec{v} \\cdot dt$$\\nSustituimos la Fuerza de Lorentz ($\\vec{F}_m = q(\\vec{v} \\times \\vec{B})$) en el producto escalar del trabajo:\\n$$W = \\int [q(\\vec{v} \\times \\vec{B})] \\cdot \\vec{v} \\cdot dt$$\\nPor la definición matemática del producto vectorial, el vector resultante de $(\\vec{v} \\times \\vec{B})$ es siempre, y en todo momento, estrictamente **perpendicular** tanto a $\\vec{v}$ como a $\\vec{B}$.\\nPor la definición geométrica del producto escalar, el producto de dos vectores perpendiculares es cero. Es decir:\\n$$(\\vec{v} \\times \\vec{B}) \\cdot \\vec{v} = 0$$\\nPor tanto, el trabajo $W = 0$, lo que implica que $\\Delta E_c = 0$. El campo magnético solo puede alterar la dirección de la velocidad, pero jamás su módulo (rapidez), por lo que es incapaz de aportar o restar energía cinética.",
+    "pista": "Identifica primero la dirección relativa entre velocidad, corriente y campo magnético.",
+    "formula": "$$W = \\int \\vec{F}_m \\cdot d\\vec{r} = \\int \\vec{F}_m \\cdot \\vec{v} \\cdot dt$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 701,
+    "dificultad": "Fácil",
+    "bloque": "Tema 7: Inducción Electromagnética",
+    "enunciado": "Una espira circular de $10 \\text{ cm}$ de radio se encuentra en un campo magnético uniforme de $0.5 \\text{ T}$. Calcula el flujo magnético que atraviesa la espira si el plano de la espira es perpendicular a las líneas de campo.",
+    "resolucion_latex": "El área de la espira es $S = \\pi R^2 = \\pi (0.1)^2 = 0.01\\pi \\text{ m}^2$.\\nSi el plano es perpendicular al campo, el vector superficie $\\vec{S}$ (que es normal al plano) es paralelo al campo $\\vec{B}$. El ángulo entre ellos es $\\alpha = 0^\\circ$.\\nFlujo magnético:\\n$$\\Phi = B \\cdot S \\cdot \\cos(\\alpha)$$\\n$$\\Phi = 0.5 \\cdot (0.01\\pi) \\cdot \\cos(0^\\circ) = 0.005\\pi \\approx 0.0157 \\text{ Wb (Weber)}$$",
+    "pista": "El flujo magnético depende del campo, la superficie y el ángulo con la normal.",
+    "formula": "$$\\Phi = B \\cdot S \\cdot \\cos(\\alpha)$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 702,
+    "dificultad": "Fácil",
+    "bloque": "Tema 7: Inducción Electromagnética",
+    "enunciado": "Una bobina de 50 espiras está sometida a un flujo magnético que pasa de $0.2 \\text{ Wb}$ a $0.8 \\text{ Wb}$ en un tiempo de $0.1 \\text{ s}$. Calcula la Fuerza Electromotriz (fem) media inducida.",
+    "resolucion_latex": "Aplicamos la Ley de Faraday-Lenz para la fem media:\\n$$\\epsilon_m = -N \\frac{\\Delta \\Phi}{\\Delta t}$$\\nCalculamos la variación de flujo: $\\Delta \\Phi = \\Phi_f - \\Phi_i = 0.8 - 0.2 = 0.6 \\text{ Wb}$.\\nSustituimos:\\n$$\\epsilon_m = -50 \\frac{0.6}{0.1} = -50 \\cdot 6 = -300 \\text{ V}$$\\nLa fem media inducida tiene un valor absoluto de $300 \\text{ V}$ (el signo negativo indica el sentido según la Ley de Lenz).",
+    "pista": "El flujo magnético depende del campo, la superficie y el ángulo con la normal.",
+    "formula": "$$\\epsilon_m = -N \\frac{\\Delta \\Phi}{\\Delta t}$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 703,
+    "dificultad": "Fácil",
+    "bloque": "Tema 7: Inducción Electromagnética",
+    "enunciado": "Una varilla metálica de $40 \\text{ cm}$ de longitud se desliza a una velocidad constante de $5 \\text{ m/s}$ sobre unos raíles en forma de U, perpendicularmente a un campo magnético de $1.2 \\text{ T}$. Calcula la fem inducida en los extremos de la varilla.",
+    "resolucion_latex": "La fem inducida por el movimiento de un conductor rectilíneo en un campo magnético perpendicular es:\\n$$\\epsilon = B \\cdot L \\cdot v$$\\nSustituimos los datos (pasando la longitud a metros):\\n$$\\epsilon = 1.2 \\cdot 0.40 \\cdot 5 = 1.2 \\cdot 2 = 2.4 \\text{ V}$$",
+    "pista": "La fem inducida aparece cuando cambia el flujo magnético con el tiempo.",
+    "formula": "$$\\epsilon = B \\cdot L \\cdot v$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 704,
+    "dificultad": "Media",
+    "bloque": "Tema 7: Inducción Electromagnética",
+    "enunciado": "El flujo magnético que atraviesa una espira de $5 \\text{ } \\Omega$ de resistencia varía con el tiempo según la expresión $\\Phi(t) = 3t^2 - 4t + 2$ (en el SI). Calcula la intensidad de la corriente eléctrica inducida en el instante $t = 2 \\text{ s}$.",
+    "resolucion_latex": "Primero calculamos la fem instantánea derivando el flujo respecto al tiempo (Ley de Faraday):\\n$$\\epsilon(t) = -\\frac{d\\Phi}{dt} = -(6t - 4)$$\\nEvaluamos en $t = 2 \\text{ s}$:\\n$$\\epsilon(2) = -(6(2) - 4) = -(12 - 4) = -8 \\text{ V}$$\\nAplicamos la Ley de Ohm ($I = \\frac{|\\epsilon|}{R}$) para hallar la intensidad:\\n$$I = \\frac{8}{5} = 1.6 \\text{ A}$$",
+    "pista": "El flujo magnético depende del campo, la superficie y el ángulo con la normal.",
+    "formula": "$$I = \\frac{8}{5} = 1.6 \\text{ A}$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 705,
+    "dificultad": "Media",
+    "bloque": "Tema 7: Inducción Electromagnética",
+    "enunciado": "Una espira rectangular de $20 \\text{ cm}^2$ gira a $3000 \\text{ rpm}$ en un campo magnético uniforme de $0.8 \\text{ T}$. Determina la expresión de la fuerza electromotriz alterna inducida en función del tiempo.",
+    "resolucion_latex": "Pasamos la velocidad angular a rad/s:\\n$$\\omega = 3000 \\frac{\\text{rev}}{\\text{min}} \\cdot \\frac{2\\pi \\text{ rad}}{1 \\text{ rev}} \\cdot \\frac{1 \\text{ min}}{60 \\text{ s}} = 100\\pi \\text{ rad/s}$$\\nEl área es $S = 20 \\times 10^{-4} = 2 \\times 10^{-3} \\text{ m}^2$.\\nEl flujo magnético es $\\Phi(t) = B \\cdot S \\cdot \\cos(\\omega t)$.\\nLa fem es la derivada negativa del flujo:\\n$$\\epsilon(t) = -\\frac{d}{dt} [B \\cdot S \\cdot \\cos(\\omega t)] = B \\cdot S \\cdot \\omega \\cdot \\sin(\\omega t)$$\\nSustituimos valores:\\n$$\\epsilon(t) = (0.8) \\cdot (2 \\times 10^{-3}) \\cdot (100\\pi) \\cdot \\sin(100\\pi t)$$\\n$$\\epsilon(t) = 0.16\\pi \\sin(100\\pi t) \\text{ V}$$",
+    "pista": "La fem inducida aparece cuando cambia el flujo magnético con el tiempo.",
+    "formula": "$$\\omega = 3000 \\frac{\\text{rev}}{\\text{min}} \\cdot \\frac{2\\pi \\text{ rad}}{1 \\text{ rev}} \\cdot \\frac{1 \\text{ min}}{60 \\text{ s}} = 100\\pi \\text{ rad/s}$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 706,
+    "dificultad": "Media",
+    "bloque": "Tema 7: Inducción Electromagnética",
+    "enunciado": "Justifica mediante la Ley de Lenz el sentido de la corriente inducida en una espira circular horizontal si dejamos caer un imán por su eje central con el Polo Norte mirando hacia abajo.",
+    "resolucion_latex": "Según la Ley de Lenz, la corriente inducida se opone siempre a la causa que la produce (la variación del flujo magnético).\\n1) Al acercarse el Polo Norte cayendo, el flujo magnético hacia abajo a través de la espira está **aumentando**.\\n2) Para oponerse a este aumento, la espira debe generar un campo magnético inducido que apunte hacia **arriba** (repeliendo al imán como si la cara superior fuera otro Polo Norte).\\n3) Aplicando la regla de la mano derecha (pulgar hacia arriba), los dedos nos indican que la corriente inducida debe circular en sentido **antihorario** (vista desde arriba).",
+    "pista": "La fem inducida aparece cuando cambia el flujo magnético con el tiempo.",
+    "formula": "$$\\varepsilon=-\\frac{d\\Phi}{dt}$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 707,
+    "dificultad": "Difícil",
+    "bloque": "Tema 7: Inducción Electromagnética",
+    "enunciado": "Una varilla de $10 \\text{ cm}$ de longitud se mueve por unos raíles conductores en forma de U en una región con un campo magnético de $0.5 \\text{ T}$ perpendicular al circuito. Si la resistencia total del circuito es de $2 \\text{ } \\Omega$ y sobre la varilla aplicamos una fuerza externa de $0.05 \\text{ N}$, ¿qué velocidad límite constante alcanzará la varilla?",
+    "resolucion_latex": "Cuando la varilla alcanza velocidad constante, la Fuerza Externa y la Fuerza Magnética de frenado se igualan ($F_{ext} = F_m$).\\nSabemos que $F_m = I \\cdot L \\cdot B$.\\nPor la Ley de Ohm, la corriente es $I = \\frac{\\epsilon}{R}$, y la fem es $\\epsilon = B \\cdot L \\cdot v$.\\nSustituyendo todo:\\n$$F_m = \\left(\\frac{B \\cdot L \\cdot v}{R}\\right) \\cdot L \\cdot B = \\frac{B^2 \\cdot L^2 \\cdot v}{R}$$\\nIgualamos a la Fuerza externa y despejamos la velocidad $v$:\\n$$F_{ext} = \\frac{B^2 \\cdot L^2 \\cdot v}{R} \\implies v = \\frac{F_{ext} \\cdot R}{B^2 \\cdot L^2}$$\\nSustituimos los datos ($L = 0.1 \\text{ m}$):\\n$$v = \\frac{0.05 \\cdot 2}{(0.5)^2 \\cdot (0.1)^2} = \\frac{0.1}{0.25 \\cdot 0.01} = \\frac{0.1}{0.0025} = 40 \\text{ m/s}$$",
+    "pista": "Aplica Faraday-Lenz y fija el signo según la oposición al cambio de flujo.",
+    "formula": "$$F_m = \\left(\\frac{B \\cdot L \\cdot v}{R}\\right) \\cdot L \\cdot B = \\frac{B^2 \\cdot L^2 \\cdot v}{R}$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 708,
+    "dificultad": "Difícil",
+    "bloque": "Tema 7: Inducción Electromagnética",
+    "enunciado": "Una espira cuadrada de lado $L = 0.5 \\text{ m}$ se encuentra perpendicular a un campo magnético variable en el tiempo según $B(t) = 2 \\sin(\\pi t)$. Calcula el valor de la fem máxima que se puede inducir en la espira.",
+    "resolucion_latex": "El área de la espira es $S = L^2 = 0.25 \\text{ m}^2$.\\nEl flujo magnético es $\\Phi(t) = B(t) \\cdot S \\cdot \\cos(0^\\circ)$:\\n$$\\Phi(t) = 0.25 \\cdot 2 \\sin(\\pi t) = 0.5 \\sin(\\pi t)$$\\nCalculamos la fem derivando el flujo:\\n$$\\epsilon(t) = -\\frac{d\\Phi}{dt} = -0.5 \\cdot \\pi \\cdot \\cos(\\pi t)$$\\nEl valor máximo de la fem se obtiene cuando el coseno vale 1 (o -1):\\n$$\\epsilon_{max} = 0.5\\pi \\approx 1.57 \\text{ V}$$",
+    "pista": "La fem inducida aparece cuando cambia el flujo magnético con el tiempo.",
+    "formula": "$$\\epsilon_{max} = 0.5\\pi \\approx 1.57 \\text{ V}$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 709,
+    "dificultad": "Difícil",
+    "bloque": "Tema 7: Inducción Electromagnética",
+    "enunciado": "Un transformador ideal (rendimiento 100%) tiene $N_1 = 500$ espiras en el primario y $N_2 = 50$ espiras en el secundario. Si lo conectamos a un enchufe de $230 \\text{ V}$ y al secundario le conectamos una resistencia de $10 \\text{ } \\Omega$, ¿cuál es la intensidad de corriente que circula por el circuito primario?",
+    "resolucion_latex": "1) Relación de voltajes del transformador:\\n$$\\frac{V_1}{N_1} = \\frac{V_2}{N_2} \\implies V_2 = V_1 \\frac{N_2}{N_1} = 230 \\frac{50}{500} = 23 \\text{ V}$$\\n2) Por la Ley de Ohm, calculamos la intensidad en el circuito secundario:\\n$$I_2 = \\frac{V_2}{R} = \\frac{23}{10} = 2.3 \\text{ A}$$\\n3) En un transformador ideal, la potencia se conserva ($P_1 = P_2 \\implies V_1 \\cdot I_1 = V_2 \\cdot I_2$):\\n$$I_1 = I_2 \\frac{V_2}{V_1} = 2.3 \\frac{23}{230} = 2.3 \\cdot 0.1 = 0.23 \\text{ A}$$",
+    "pista": "Aplica Faraday-Lenz y fija el signo según la oposición al cambio de flujo.",
+    "formula": "$$I_2 = \\frac{V_2}{R} = \\frac{23}{10} = 2.3 \\text{ A}$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 710,
+    "dificultad": "Superior",
+    "bloque": "Tema 7: Inducción Electromagnética",
+    "enunciado": "*(Reto Supernova)*: Cuando un flujo magnético varía con el tiempo, se genera una corriente en una espira en reposo sin necesidad de pilas. Sabiendo que los electrones solo se mueven si hay un campo eléctrico $\\vec{E}$, deduce la implicación matemática y conceptual que tiene la inducción sobre las reglas del Campo Eléctrico que aprendimos en electrostática (Tema 5).",
+    "resolucion_latex": "En electrostática (cargas en reposo), el campo eléctrico es **conservativo**, lo que significa que el trabajo en una trayectoria cerrada (circulación) es nulo: $\\oint \\vec{E} \\cdot d\\vec{l} = 0$. Por tanto, en un anillo conductor no hay corriente permanente.\\nSin embargo, la Ley de Faraday establece que una variación de flujo magnético induce una fem (trabajo por unidad de carga). Matemáticamente:\\n$$\\epsilon = \\oint \\vec{E}_{inducido} \\cdot d\\vec{l} = -\\frac{d\\Phi_B}{dt}$$\\nSi hay variación de flujo magnético, la integral cerrada de este nuevo campo eléctrico **NO es cero**. Esto significa que un campo magnético variable en el tiempo engendra un **Campo Eléctrico No Conservativo** (cuyas líneas de campo sí forman lazos cerrados). Esta es la base de las ecuaciones de Maxwell que unifican el electromagnetismo.",
+    "pista": "El flujo magnético depende del campo, la superficie y el ángulo con la normal.",
+    "formula": "$$\\epsilon = \\oint \\vec{E}_{inducido} \\cdot d\\vec{l} = -\\frac{d\\Phi_B}{dt}$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 801,
+    "dificultad": "Fácil",
+    "bloque": "Tema 8: Ondas Electromagnéticas",
+    "enunciado": "Calcula la longitud de onda en el vacío de la emisora de radio Los 40 Principales, que emite a una frecuencia de $93.9 \\text{ MHz}$. (Dato: $c = 3 \\times 10^8 \\text{ m/s}$).",
+    "resolucion_latex": "Pasamos la frecuencia a Hercios (Hz): $f = 93.9 \\times 10^6 \\text{ Hz}$.\\nLa relación entre la velocidad de la luz, frecuencia y longitud de onda es $c = \\lambda \\cdot f$.\\nDespejamos $\\lambda$:\\n$$\\lambda = \\frac{c}{f} = \\frac{3 \\times 10^8}{93.9 \\times 10^6} = \\frac{300}{93.9} \\approx 3.19 \\text{ m}$$",
+    "pista": "Usa que las ondas electromagnéticas se propagan en el vacío a la velocidad de la luz.",
+    "formula": "$$\\lambda = \\frac{c}{f} = \\frac{3 \\times 10^8}{93.9 \\times 10^6} = \\frac{300}{93.9} \\approx 3.19 \\text{ m}$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 802,
+    "dificultad": "Fácil",
+    "bloque": "Tema 8: Ondas Electromagnéticas",
+    "enunciado": "En una onda electromagnética que se propaga por el vacío, el campo eléctrico tiene una amplitud máxima de $150 \\text{ V/m}$. Calcula la amplitud máxima del campo magnético oscilante asociado.",
+    "resolucion_latex": "En una onda electromagnética (OEM), los módulos de los campos eléctrico y magnético están relacionados en todo instante por la velocidad de la luz:\\n$$E_0 = c \\cdot B_0$$\\nDespejamos el campo magnético:\\n$$B_0 = \\frac{E_0}{c} = \\frac{150}{3 \\times 10^8} = 5 \\times 10^{-7} \\text{ T}$$",
+    "pista": "Usa que las ondas electromagnéticas se propagan en el vacío a la velocidad de la luz.",
+    "formula": "$$E_0 = c \\cdot B_0$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 803,
+    "dificultad": "Fácil",
+    "bloque": "Tema 8: Ondas Electromagnéticas",
+    "enunciado": "Un rayo de luz amarilla tiene una longitud de onda de $580 \\text{ nm}$ en el vacío. Si penetra en un bloque de vidrio cuyo índice de refracción es $n = 1.52$, calcula a qué velocidad viajará la luz por el interior del vidrio.",
+    "resolucion_latex": "El índice de refracción relaciona la velocidad de la luz en el vacío con la velocidad en el medio material: $n = \\frac{c}{v}$.\\nDespejamos la velocidad en el vidrio ($v$):\\n$$v = \\frac{c}{n} = \\frac{3 \\times 10^8}{1.52} \\approx 1.97 \\times 10^8 \\text{ m/s}$$",
+    "pista": "Usa que las ondas electromagnéticas se propagan en el vacío a la velocidad de la luz.",
+    "formula": "$$v = \\frac{c}{n} = \\frac{3 \\times 10^8}{1.52} \\approx 1.97 \\times 10^8 \\text{ m/s}$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 804,
+    "dificultad": "Media",
+    "bloque": "Tema 8: Ondas Electromagnéticas",
+    "enunciado": "La componente del campo eléctrico de una OEM que viaja por el vacío viene dada por $E(x,t) = 60 \\sin(4 \\pi \\times 10^{14} t - kx)$ (en el SI). Determina el número de onda $k$ y el vector del campo magnético si se propaga en el eje +X y vibra en el eje Y.",
+    "resolucion_latex": "1) Frecuencia angular: $\\omega = 4\\pi \\times 10^{14} \\text{ rad/s}$.\\nEn el vacío, la velocidad de propagación es $c = \\frac{\\omega}{k} \\implies k = \\frac{\\omega}{c}$.\\n$$k = \\frac{4\\pi \\times 10^{14}}{3 \\times 10^8} = \\frac{4\\pi}{3} \\times 10^6 \\text{ rad/m}$$\\n2) Amplitud de B: $B_0 = \\frac{E_0}{c} = \\frac{60}{3 \\times 10^8} = 2 \\times 10^{-7} \\text{ T}$.\\n3) El campo $\\vec{B}$ es perpendicular a $\\vec{E}$ y a la velocidad $\\vec{v}$ (regla de la mano derecha $\\vec{E} \\times \\vec{B} \\propto \\vec{v}$). Si $\\vec{v}$ es $+i$ y $\\vec{E}$ es $j$, entonces $\\vec{B}$ debe vibrar en $k$ (eje Z).\\n$$\\vec{B}(x,t) = 2 \\times 10^{-7} \\sin(4 \\pi \\times 10^{14} t - \\frac{4\\pi}{3} 10^6 x) \\vec{k} \\text{ T}$$",
+    "pista": "Usa que las ondas electromagnéticas se propagan en el vacío a la velocidad de la luz.",
+    "formula": "$$k = \\frac{4\\pi \\times 10^{14}}{3 \\times 10^8} = \\frac{4\\pi}{3} \\times 10^6 \\text{ rad/m}$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 805,
+    "dificultad": "Media",
+    "bloque": "Tema 8: Ondas Electromagnéticas",
+    "enunciado": "En las telecomunicaciones 5G, se emplean frecuencias alrededor de los $3.5 \\text{ GHz}$. Calcula la energía que transporta un único fotón de esta onda. (Dato: Constante de Planck $h = 6.63 \\times 10^{-34} \\text{ J s}$).",
+    "resolucion_latex": "Pasamos la frecuencia a Hercios: $f = 3.5 \\text{ GHz} = 3.5 \\times 10^9 \\text{ Hz}$.\\nAplicamos la Ecuación de Planck para la energía de un fotón:\\n$$E = h \\cdot f$$\\n$$E = (6.63 \\times 10^{-34}) \\cdot (3.5 \\times 10^9) = 23.205 \\times 10^{-25} \\approx 2.32 \\times 10^{-24} \\text{ J}$$",
+    "pista": "Relaciona la energía del fotón con su frecuencia y con la longitud de onda.",
+    "formula": "$$E = h \\cdot f$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 806,
+    "dificultad": "Media",
+    "bloque": "Tema 8: Ondas Electromagnéticas",
+    "enunciado": "La sonda Perseverance se encuentra en Marte. Durante una maniobra, la Tierra y Marte están separados por una distancia de $225$ millones de kilómetros. ¿Cuánto tiempo de retraso hay entre que un ingeniero de la NASA envía una señal de radio y el robot la recibe?",
+    "resolucion_latex": "Las ondas de radio son ondas electromagnéticas, por lo que viajan a la velocidad de la luz en el vacío ($c = 3 \\times 10^8 \\text{ m/s}$ o $300,000 \\text{ km/s}$).\\nDistancia $d = 225 \\times 10^6 \\text{ km} = 2.25 \\times 10^{11} \\text{ m}$.\\nTiempo de vuelo, $t = \\frac{d}{c}$:\\n$$t = \\frac{2.25 \\times 10^{11}}{3 \\times 10^8} = 0.75 \\times 10^3 = 750 \\text{ s}$$\\nEl retraso es de $750 \\text{ segundos}$ (exactamente 12.5 minutos).",
+    "pista": "Usa que las ondas electromagnéticas se propagan en el vacío a la velocidad de la luz.",
+    "formula": "$$t = \\frac{2.25 \\times 10^{11}}{3 \\times 10^8} = 0.75 \\times 10^3 = 750 \\text{ s}$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 807,
+    "dificultad": "Difícil",
+    "bloque": "Tema 8: Ondas Electromagnéticas",
+    "enunciado": "El puntero láser rojo de un profesor tiene una longitud de onda de $650 \\text{ nm}$ y en el vidrio de una ventana viaja a $2 \\times 10^8 \\text{ m/s}$. Calcula la frecuencia del láser en el vacío y la longitud de onda dentro del cristal.",
+    "resolucion_latex": "1) La frecuencia de una onda EM depende del emisor y **no cambia** al cambiar de medio. La hallamos en el vacío:\\n$$f = \\frac{c}{\\lambda_{vacío}} = \\frac{3 \\times 10^8}{650 \\times 10^{-9}} \\approx 4.61 \\times 10^{14} \\text{ Hz}$$\\n2) En el cristal, la velocidad disminuye, por lo que la longitud de onda se 'comprime' proporcionalmente ($v = \\lambda_{cristal} \\cdot f$):\\n$$\\lambda_{cristal} = \\frac{v}{f} = \\frac{2 \\times 10^8}{4.61 \\times 10^{14}} \\approx 4.33 \\times 10^{-7} \\text{ m} = 433 \\text{ nm}$$",
+    "pista": "Usa que las ondas electromagnéticas se propagan en el vacío a la velocidad de la luz.",
+    "formula": "$$f = \\frac{c}{\\lambda_{vacío}} = \\frac{3 \\times 10^8}{650 \\times 10^{-9}} \\approx 4.61 \\times 10^{14} \\text{ Hz}$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 808,
+    "dificultad": "Difícil",
+    "bloque": "Tema 8: Ondas Electromagnéticas",
+    "enunciado": "Sabiendo que la Intensidad Media de una onda electromagnética (energía que llega por metro cuadrado en cada segundo) es $I = \\frac{E_0 \\cdot B_0}{2 \\mu_0}$. Calcula la intensidad media que emite una antena de telefonía si el campo eléctrico máximo registrado a 10 metros de ella es $3 \\text{ V/m}$. (Dato: $\\mu_0 = 4\\pi \\times 10^{-7} \\text{ T m/A}$).",
+    "resolucion_latex": "Hallamos primero el campo magnético máximo asociado:\\n$$B_0 = \\frac{E_0}{c} = \\frac{3}{3 \\times 10^8} = 10^{-8} \\text{ T}$$\\nSustituimos en la fórmula de la Intensidad Media (vector de Poynting promediado):\\n$$I = \\frac{3 \\cdot 10^{-8}}{2 \\cdot (4\\pi \\times 10^{-7})} = \\frac{3 \\times 10^{-8}}{8\\pi \\times 10^{-7}} = \\frac{3}{80\\pi}$$\\n$$I \\approx 0.0119 \\text{ W/m}^2$$",
+    "pista": "Relaciona la energía del fotón con su frecuencia y con la longitud de onda.",
+    "formula": "$$I = \\frac{3 \\cdot 10^{-8}}{2 \\cdot (4\\pi \\times 10^{-7})} = \\frac{3 \\times 10^{-8}}{8\\pi \\times 10^{-7}} = \\frac{3}{80\\pi}$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 809,
+    "dificultad": "Difícil",
+    "bloque": "Tema 8: Ondas Electromagnéticas",
+    "enunciado": "Un equipo de radar emite un pulso hacia un avión y recibe el eco (señal rebotada) $40 \\text{ } \\mu\\text{s}$ después. ¿A qué distancia exacta en kilómetros se encuentra el avión del radar?",
+    "resolucion_latex": "El pulso del radar es una onda electromagnética que viaja a $c = 3 \\times 10^8 \\text{ m/s}$.\\nEl tiempo total de viaje (ida y vuelta) es $t_{total} = 40 \\times 10^{-6} \\text{ s}$.\\nEl tiempo que tarda en llegar al avión es la mitad: $t = 20 \\times 10^{-6} \\text{ s}$.\\nAplicamos la fórmula de MRU (velocidad constante):\\n$$d = c \\cdot t = (3 \\times 10^8) \\cdot (20 \\times 10^{-6}) = 60 \\times 10^2 = 6000 \\text{ m}$$\\nEl avión está a $6 \\text{ km}$ del radar.",
+    "pista": "Usa que las ondas electromagnéticas se propagan en el vacío a la velocidad de la luz.",
+    "formula": "$$d = c \\cdot t = (3 \\times 10^8) \\cdot (20 \\times 10^{-6}) = 60 \\times 10^2 = 6000 \\text{ m}$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 810,
+    "dificultad": "Superior",
+    "bloque": "Tema 8: Ondas Electromagnéticas",
+    "enunciado": "*(Reto Supernova)*: Si la luz no tiene masa, ¿cómo es posible que el viento solar empuje las 'velas solares' de una nave espacial en el vacío? Demuestra conceptualmente que las ondas electromagnéticas transportan momento lineal ($p$) y generan presión de radiación, combinando las ecuaciones de Einstein y Planck.",
+    "resolucion_latex": "Es el principio fundamental de la presión de radiación. Aunque la masa en reposo de un fotón sea nula ($m_0 = 0$), la Teoría de la Relatividad de Einstein establece la relación completa de energía:\\n$$E^2 = (pc)^2 + (m_0 c^2)^2$$\\nComo $m_0 = 0$, la ecuación se reduce a $E^2 = (pc)^2 \\implies E = pc$.\\nPor lo tanto, la cantidad de movimiento (momento lineal) de un fotón es:\\n$$p = \\frac{E}{c}$$\\nPor la mecánica cuántica de Planck sabemos que $E = hf$. Por tanto, el momento transportado por la luz es:\\n$$p = \\frac{hf}{c} = \\frac{h}{\\lambda}$$\\nAl chocar y reflejarse en la vela solar, los fotones sufren una variación de momento lineal $\\Delta p$. Por la 2ª Ley de Newton generalizada ($F = \\frac{\\Delta p}{\\Delta t}$), este intercambio de momento ejerce una fuerza física medible sobre la vela (Presión de Radiación) permitiendo impulsar la nave sin necesidad de combustible.",
+    "pista": "Usa que las ondas electromagnéticas se propagan en el vacío a la velocidad de la luz.",
+    "formula": "$$p = \\frac{E}{c}$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 901,
+    "dificultad": "Fácil",
+    "bloque": "Tema 9: Movimiento Ondulatorio",
+    "enunciado": "Una onda armónica transversal se propaga por una cuerda según la ecuación $y(x, t) = 0.2 \\sin(10\\pi t - 2\\pi x)$ (en unidades del SI). Determina:\\na) La amplitud, la frecuencia angular y el número de onda.\\nb) El periodo, la frecuencia, la longitud de onda y la velocidad de propagación.",
+    "resolucion_latex": "a) Comparando con $y(x, t) = A \\sin(\\omega t \\pm kx + \\phi_0)$:\\nAmplitud: $A = 0.2 \\text{ m}$.\\nFrecuencia angular: $\\omega = 10\\pi \\text{ rad/s}$.\\nNúmero de onda: $k = 2\\pi \\text{ rad/m}$.\\n\\nb) Periodo: $T = \\frac{2\\pi}{\\omega} = \\frac{2\\pi}{10\\pi} = 0.2 \\text{ s}$.\\nFrecuencia: $f = \\frac{1}{T} = 5 \\text{ Hz}$.\\nLongitud de onda: $\\lambda = \\frac{2\\pi}{k} = \\frac{2\\pi}{2\\pi} = 1 \\text{ m}$.\\nVelocidad de propagación: $v = \\frac{\\lambda}{T} = \\frac{1}{0.2} = 5 \\text{ m/s}$ (o también $v = \\frac{\\omega}{k}$).",
+    "pista": "En ondas estacionarias, los extremos y nodos fijan las longitudes de onda permitidas.",
+    "formula": "$$\\lambda = \\frac{2\\pi}{k} = \\frac{2\\pi}{2\\pi} = 1 \\text{ m}$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 902,
+    "dificultad": "Fácil",
+    "bloque": "Tema 9: Movimiento Ondulatorio",
+    "enunciado": "Una onda viaja en el sentido negativo del eje X con una amplitud de 0.05 m, una frecuencia de 20 Hz y una velocidad de propagación de 40 m/s. Escribe su ecuación sabiendo que en $t = 0$ y $x = 0$ la elongación es nula y la velocidad transversal es positiva.",
+    "resolucion_latex": "Amplitud: $A = 0.05 \\text{ m}$.\\nFrecuencia angular: $\\omega = 2\\pi f = 2\\pi \\cdot 20 = 40\\pi \\text{ rad/s}$.\\nVelocidad de propagación: $v = \\frac{\\omega}{k} \\implies k = \\frac{\\omega}{v} = \\frac{40\\pi}{40} = \\pi \\text{ rad/m}$.\\nViaja hacia el sentido negativo $\\implies$ el signo entre $\\omega t$ y $kx$ es positivo ($+$).\\nEcuación base: $y(x, t) = 0.05 \\sin(40\\pi t + \\pi x + \\phi_0)$.\\nCondición inicial: $y(0,0) = 0 \\implies \\sin(\\phi_0) = 0 \\implies \\phi_0 = 0$ ó $\\phi_0 = \\pi$.\\nVelocidad transversal: $v_y = \\frac{dy}{dt} = A\\omega \\cos(40\\pi t + \\pi x + \\phi_0)$.\\nEn $(0,0)$: $v_y(0,0) = A\\omega \\cos(\\phi_0) > 0$. Para que sea positivo, $\\cos(\\phi_0)$ debe ser positivo $\\implies \\phi_0 = 0$.\\nEcuación final: $y(x, t) = 0.05 \\sin(40\\pi t + \\pi x) \\text{ m}$.",
+    "pista": "Usa la relación fundamental entre velocidad de propagación, longitud de onda y frecuencia.",
+    "formula": "$$v = \\frac{\\omega}{k} \\implies k = \\frac{\\omega}{v} = \\frac{40\\pi}{40} = \\pi \\text{ rad/m}$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 903,
+    "dificultad": "Fácil",
+    "bloque": "Tema 9: Movimiento Ondulatorio",
+    "enunciado": "Dada la onda $y(x, t) = 0.4 \\cos(50t - 2x + \\pi/4)$ (SI), calcula la diferencia de fase entre dos puntos separados por una distancia de 1.5 m.",
+    "resolucion_latex": "La fase de la onda es $\\phi = 50t - 2x + \\pi/4$.\\nLa diferencia de fase $\\Delta\\phi$ entre dos puntos separados una distancia $\\Delta x$ en un mismo instante es: $|\\Delta\\phi| = k \\cdot \\Delta x$.\\nDe la ecuación extraemos $k = 2 \\text{ rad/m}$. Con $\\Delta x = 1.5 \\text{ m}$:\\n$$|\\Delta\\phi| = 2 \\cdot 1.5 = 3 \\text{ rad}$$",
+    "pista": "Usa la relación fundamental entre velocidad de propagación, longitud de onda y frecuencia.",
+    "formula": "$$|\\Delta\\phi| = 2 \\cdot 1.5 = 3 \\text{ rad}$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 904,
+    "dificultad": "Media",
+    "bloque": "Tema 9: Movimiento Ondulatorio",
+    "enunciado": "Calcula la velocidad y la aceleración transversal máximas de las partículas de una cuerda por la que se propaga la onda $y(x, t) = 0.1 \\sin(100\\pi t - 5\\pi x)$ (SI).",
+    "resolucion_latex": "Derivamos la ecuación de posición para hallar las magnitudes transversales:\\n$$v_y(x, t) = \\frac{dy}{dt} = 0.1 \\cdot 100\\pi \\cos(100\\pi t - 5\\pi x) = 10\\pi \\cos(100\\pi t - 5\\pi x) \\text{ m/s}$$\\nVelocidad transversal máxima (cuando el coseno vale 1): $v_{max} = 10\\pi \\approx 31.42 \\text{ m/s}$.\\n$$a_y(x, t) = \\frac{dv_y}{dt} = -10\\pi \\cdot 100\\pi \\sin(100\\pi t - 5\\pi x) = -1000\\pi^2 \\sin(100\\pi t - 5\\pi x) \\text{ m/s}^2$$\\nAceleración transversal máxima (cuando el seno vale -1): $a_{max} = 1000\\pi^2 \\approx 9869.6 \\text{ m/s}^2$.",
+    "pista": "En ondas estacionarias, los extremos y nodos fijan las longitudes de onda permitidas.",
+    "formula": "$$v_y(x, t) = \\frac{dy}{dt} = 0.1 \\cdot 100\\pi \\cos(100\\pi t - 5\\pi x) = 10\\pi \\cos(100\\pi t - 5\\pi x) \\text{ m/s}$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 905,
+    "dificultad": "Media",
+    "bloque": "Tema 9: Movimiento Ondulatorio",
+    "enunciado": "Dos puntos de una cuerda por la que se propaga una onda armónica están separados 10 cm. Se observa que el desfase entre ellos es de $\\pi/3$ radianes. Si la frecuencia de la onda es de 50 Hz, ¿cuál es la longitud de onda y su velocidad de propagación?",
+    "resolucion_latex": "Diferencia de fase: $\\Delta\\phi = k \\cdot \\Delta x$.\\nDatos: $\\Delta\\phi = \\pi/3 \\text{ rad}$, $\\Delta x = 10 \\text{ cm} = 0.1 \\text{ m}$.\\n$$\\frac{\\pi}{3} = k \\cdot 0.1 \\implies k = \\frac{10\\pi}{3} \\text{ rad/m}$$\\nSabemos que $k = \\frac{2\\pi}{\\lambda} \\implies \\lambda = \\frac{2\\pi}{k}$:\\n$$\\lambda = \\frac{2\\pi}{10\\pi/3} = \\frac{6}{10} = 0.6 \\text{ m}$$\\nVelocidad de propagación: $v = \\lambda \\cdot f = 0.6 \\cdot 50 = 30 \\text{ m/s}$.",
+    "pista": "En ondas estacionarias, los extremos y nodos fijan las longitudes de onda permitidas.",
+    "formula": "$$\\lambda = \\frac{2\\pi}{10\\pi/3} = \\frac{6}{10} = 0.6 \\text{ m}$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 906,
+    "dificultad": "Media",
+    "bloque": "Tema 9: Movimiento Ondulatorio",
+    "enunciado": "Escribe la ecuación de una onda sabiendo que la distancia entre dos crestas consecutivas es de 2 m, tarda 0.5 s en recorrer esa distancia, su amplitud es 0.3 m y se propaga hacia el sentido positivo del eje X (fase inicial nula).",
+    "resolucion_latex": "Distancia entre crestas = Longitud de onda: $\\lambda = 2 \\text{ m} \\implies k = \\frac{2\\pi}{2} = \\pi \\text{ rad/m}$.\\nTiempo entre crestas = Periodo: $T = 0.5 \\text{ s} \\implies \\omega = \\frac{2\\pi}{0.5} = 4\\pi \\text{ rad/s}$.\\nAmplitud: $A = 0.3 \\text{ m}$. Hacia $+X$ (signo negativo en $kx$). Fase inicial nula.\\nEcuación final: $y(x, t) = 0.3 \\sin(4\\pi t - \\pi x) \\text{ m}$.",
+    "pista": "Usa la relación fundamental entre velocidad de propagación, longitud de onda y frecuencia.",
+    "formula": "$$\\lambda = 2 \\text{ m} \\implies k = \\frac{2\\pi}{2} = \\pi \\text{ rad/m}$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 907,
+    "dificultad": "Difícil",
+    "bloque": "Tema 9: Movimiento Ondulatorio",
+    "enunciado": "El extremo de una cuerda tensa vibra con un MAS de amplitud 2 cm y frecuencia 10 Hz. La vibración se propaga por la cuerda con una velocidad de 20 m/s hacia la derecha.\\na) Escribe la ecuación de la onda, sabiendo que en el instante inicial el extremo origen se encuentra en su máxima elongación positiva.\\nb) Calcula la velocidad transversal de un punto situado a 1 m del origen en el instante $t = 0.1 \\text{ s}$.",
+    "resolucion_latex": "a) Amplitud: $A = 0.02 \\text{ m}$. Frecuencia: $f = 10 \\text{ Hz} \\implies \\omega = 20\\pi \\text{ rad/s}$. Velocidad: $v = 20 \\text{ m/s}$.\\nComo $v = \\lambda \\cdot f \\implies \\lambda = \\frac{20}{10} = 2 \\text{ m} \\implies k = \\frac{2\\pi}{2} = \\pi \\text{ rad/m}$.\\nViaja hacia la derecha: $y(x, t) = 0.02 \\cos(20\\pi t - \\pi x + \\phi_0)$ (usamos coseno para ajustar directamente la elongación máxima). En $t = 0, x = 0 \\implies y(0,0) = 0.02 \\cos(\\phi_0) = 0.02 \\implies \\cos(\\phi_0) = 1 \\implies \\phi_0 = 0$.\\nEcuación: $y(x, t) = 0.02 \\cos(20\\pi t - \\pi x) \\text{ m}$.\\n\\nb) $v_y(x, t) = \\frac{dy}{dt} = -0.02 \\cdot 20\\pi \\sin(20\\pi t - \\pi x) = -0.4\\pi \\sin(20\\pi t - \\pi x)$.\\nPara $x = 1 \\text{ m}$ y $t = 0.1 \\text{ s}$:\\n$$v_y(1; 0.1) = -0.4\\pi \\sin(20\\pi(0.1) - \\pi(1)) = -0.4\\pi \\sin(2\\pi - \\pi) = -0.4\\pi \\sin(\\pi) = 0 \\text{ m/s}$$",
+    "pista": "En ondas estacionarias, los extremos y nodos fijan las longitudes de onda permitidas.",
+    "formula": "$$v_y(1; 0.1) = -0.4\\pi \\sin(20\\pi(0.1) - \\pi(1)) = -0.4\\pi \\sin(2\\pi - \\pi) = -0.4\\pi \\sin(\\pi) = 0 \\text{ m/s}$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 908,
+    "dificultad": "Difícil",
+    "bloque": "Tema 9: Movimiento Ondulatorio",
+    "enunciado": "Una onda transversal armónica se propaga por una cuerda. La velocidad transversal máxima de un punto de la cuerda es de 3 m/s y su aceleración transversal máxima es de $90 \\text{ m/s}^2$. Si la velocidad de fase de la onda es de 5 m/s, halla la amplitud, la longitud de onda y escribe la ecuación de la onda asumiendo que viaja hacia $+X$ y no tiene fase inicial.",
+    "resolucion_latex": "Velocidad máxima: $v_{max} = A\\omega = 3$. Aceleración máxima: $a_{max} = A\\omega^2 = 90$.\\nDividiendo ambas expresiones: $\\omega = \\frac{90}{3} = 30 \\text{ rad/s}$.\\nSustituyendo: $A(30) = 3 \\implies A = 0.1 \\text{ m}$.\\nVelocidad de propagación de la fase de la onda: $v = \\frac{\\omega}{k} \\implies 5 = \\frac{30}{k} \\implies k = 6 \\text{ rad/m}$.\\nLongitud de onda: $\\lambda = \\frac{2\\pi}{k} = \\frac{2\\pi}{6} = \\frac{\\pi}{3} \\text{ m}$.\\nEcuación final (hacia $+X$): $y(x, t) = 0.1 \\sin(30t - 6x) \\text{ m}$.",
+    "pista": "En ondas estacionarias, los extremos y nodos fijan las longitudes de onda permitidas.",
+    "formula": "$$v = \\frac{\\omega}{k} \\implies 5 = \\frac{30}{k} \\implies k = 6 \\text{ rad/m}$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 909,
+    "dificultad": "Superior",
+    "bloque": "Tema 9: Movimiento Ondulatorio",
+    "enunciado": "*(Reto Supernova)*: Un alumno examina la onda $y(x, t) = 5 \\sin(2t + 4x)$ y afirma dos cosas:\\n1) La onda viaja hacia la derecha porque 'los signos dentro del seno son positivos'.\\n2) La velocidad máxima de propagación de la onda es de 10 m/s porque multiplicó la amplitud (5) por la frecuencia angular (2).\\nDemuestra analíticamente por qué este alumno ha suspendido el examen, corrigiendo ambos errores.",
+    "resolucion_latex": "1) **Primer error (Sentido)**: Para que una onda viaje hacia la derecha (sentido $+X$), los signos de $\\omega t$ y $kx$ deben ser **opuestos** (como $\\omega t - kx$). Al ser ambos positivos en $2t + 4x$, la onda viaja físicamente hacia la **izquierda** (sentido $-X$).\\n2) **Segundo error (Confusión de velocidades)**: El alumno confundió la velocidad máxima de oscilación local de una partícula de la cuerda ($v_{y,max} = A\\omega = 5 \\cdot 2 = 10 \\text{ m/s}$) con la velocidad de avance de la perturbación por el espacio ($v_{fase}$). La velocidad de propagación real de la onda es:\\n$$v_{fase} = \\frac{\\omega}{k} = \\frac{2}{4} = 0.5 \\text{ m/s}$$\\nDemostrando que la onda se desplaza espacialmente de forma mucho más lenta que la vibración transversal de sus partículas.",
+    "pista": "Usa la relación fundamental entre velocidad de propagación, longitud de onda y frecuencia.",
+    "formula": "$$v_{fase} = \\frac{\\omega}{k} = \\frac{2}{4} = 0.5 \\text{ m/s}$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 1001,
+    "dificultad": "Fácil",
+    "bloque": "Tema 10: Energía y Atenuación",
+    "enunciado": "Un altavoz emite sonido como una onda esférica con una potencia de 50 W. Calcula la intensidad de la onda a una distancia de 5 m de la fuente emisora.",
+    "resolucion_latex": "La intensidad de una onda esférica es la potencia dividida entre la superficie de la esfera que conforma el frente de onda ($S = 4\\pi r^2$):\\n$$I = \\frac{P}{4\\pi r^2}$$\\nSustituimos la potencia y la distancia:\\n$$I = \\frac{50}{4\\pi \\cdot 5^2} = \\frac{50}{4\\pi \\cdot 25} = \\frac{50}{100\\pi}$$\\n$$I = \\frac{1}{2\\pi} \\approx 0.159 \\text{ W/m}^2$$",
+    "pista": "Recuerda que el nivel sonoro es logarítmico, no lineal.",
+    "formula": "$$I = \\frac{P}{4\\pi r^2}$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 1002,
+    "dificultad": "Fácil",
+    "bloque": "Tema 10: Energía y Atenuación",
+    "enunciado": "Sabiendo que la energía transportada por una onda es proporcional al cuadrado de su amplitud y de su frecuencia, ¿qué le ocurrirá a la energía de una onda si duplicamos su amplitud y triplicamos su frecuencia simultáneamente?",
+    "resolucion_latex": "Sabemos que la energía $E \\propto A^2 \\cdot f^2$.\\nSi las nuevas condiciones son $A' = 2A$ y $f' = 3f$, calculamos la nueva energía:\\n$$E' \\propto (2A)^2 \\cdot (3f)^2$$\\n$$E' \\propto 4A^2 \\cdot 9f^2 = 36(A^2 \\cdot f^2)$$\\nComparando $E'$ con la $E$ original, vemos que la energía se multiplicará por **36**.",
+    "pista": "Usa la relación fundamental entre velocidad de propagación, longitud de onda y frecuencia.",
+    "formula": "$$E' \\propto (2A)^2 \\cdot (3f)^2$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 1003,
+    "dificultad": "Fácil",
+    "bloque": "Tema 10: Energía y Atenuación",
+    "enunciado": "Una onda esférica tiene una amplitud de 0.8 m a una distancia de 2 m de la fuente. Considerando únicamente la atenuación geométrica, calcula la amplitud de la onda a 8 m de la fuente.",
+    "resolucion_latex": "Para ondas esféricas, la atenuación geométrica dicta que la amplitud disminuye de forma inversamente proporcional a la distancia al foco. Se cumple la relación:\\n$$A_1 \\cdot r_1 = A_2 \\cdot r_2$$\\nSustituimos los datos conocidos:\\n$$0.8 \\cdot 2 = A_2 \\cdot 8 \\implies 1.6 = 8 A_2$$\\nDespejamos la nueva amplitud:\\n$$A_2 = \\frac{1.6}{8} = 0.2 \\text{ m}$$",
+    "pista": "Usa la relación fundamental entre velocidad de propagación, longitud de onda y frecuencia.",
+    "formula": "$$A_1 \\cdot r_1 = A_2 \\cdot r_2$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 1004,
+    "dificultad": "Media",
+    "bloque": "Tema 10: Energía y Atenuación",
+    "enunciado": "Un haz de ondas atraviesa un medio material absorbente. Sabiendo que al atravesar 2 m de dicho medio la intensidad de la onda se reduce a la mitad de la inicial, calcula el coeficiente de absorción ($\\beta$) del material.",
+    "resolucion_latex": "Aplicamos la Ley de absorción de Beer-Lambert:\\n$$I = I_0 \\cdot e^{-\\beta x}$$\\nDatos del problema: En $x = 2 \\text{ m}$, tenemos que $I = \\frac{I_0}{2} = 0.5 I_0$.\\n$$0.5 I_0 = I_0 \\cdot e^{-2\\beta} \\implies 0.5 = e^{-2\\beta}$$\\nAplicamos logaritmo neperiano a ambos lados para despejar:\\n$$\\ln(0.5) = -2\\beta \\implies -0.693 = -2\\beta$$\\n$$\\beta = \\frac{-0.693}{-2} \\approx 0.347 \\text{ m}^{-1}$$",
+    "pista": "Recuerda que el nivel sonoro es logarítmico, no lineal.",
+    "formula": "$$I = I_0 \\cdot e^{-\\beta x}$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 1005,
+    "dificultad": "Media",
+    "bloque": "Tema 10: Energía y Atenuación",
+    "enunciado": "La intensidad de una onda acústica a 4 m de una fuente puntual es de $10^{-4} \\text{ W/m}^2$. Calcula:\\na) La potencia de la fuente sonora.\\nb) La intensidad de la onda a 10 m de la fuente.",
+    "resolucion_latex": "a) De la fórmula general $I = \\frac{P}{4\\pi r^2}$ despejamos la potencia:\\n$$P = I \\cdot 4\\pi r^2 = 10^{-4} \\cdot 4\\pi \\cdot (4)^2 = 10^{-4} \\cdot 64\\pi \\approx 0.0201 \\text{ W}$$\\nb) Utilizamos la proporción de atenuación geométrica de intensidades ($I_1 \\cdot r_1^2 = I_2 \\cdot r_2^2$):\\n$$I_2 = I_1 \\left(\\frac{r_1^2}{r_2^2}\\right) = 10^{-4} \\left(\\frac{4^2}{10^2}\\right) = 10^{-4} \\left(\\frac{16}{100}\\right)$$\\n$$I_2 = 10^{-4} \\cdot 0.16 = 1.6 \\times 10^{-5} \\text{ W/m}^2$$",
+    "pista": "Recuerda que el nivel sonoro es logarítmico, no lineal.",
+    "formula": "$$P = I \\cdot 4\\pi r^2 = 10^{-4} \\cdot 4\\pi \\cdot (4)^2 = 10^{-4} \\cdot 64\\pi \\approx 0.0201 \\text{ W}$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 1006,
+    "dificultad": "Media",
+    "bloque": "Tema 10: Energía y Atenuación",
+    "enunciado": "Se hace pasar una onda sonora plana por un muro aislante de 0.5 m de grosor con un coeficiente de absorción de $4.6 \\text{ m}^{-1}$. Si la onda incidente tiene una intensidad de $0.05 \\text{ W/m}^2$, calcula la intensidad de la onda transmitida al otro lado del muro.",
+    "resolucion_latex": "Aplicamos la ecuación de absorción para ondas planas:\\n$$I = I_0 \\cdot e^{-\\beta x}$$\\nSustituimos los datos de la onda y el muro:\\n$$I = 0.05 \\cdot e^{-4.6 \\cdot 0.5} = 0.05 \\cdot e^{-2.3}$$\\nCalculamos el factor exponencial ($e^{-2.3} \\approx 0.100$):\\n$$I \\approx 0.05 \\cdot 0.100 = 0.005 \\text{ W/m}^2$$",
+    "pista": "Recuerda que el nivel sonoro es logarítmico, no lineal.",
+    "formula": "$$I = I_0 \\cdot e^{-\\beta x}$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 1007,
+    "dificultad": "Difícil",
+    "bloque": "Tema 10: Energía y Atenuación",
+    "enunciado": "Una antena emisora radia ondas esféricas de forma isótropa con una potencia constante. A 10 km de la antena se mide una amplitud del campo eléctrico de la onda de 0.05 V/m.\\na) ¿A qué distancia de la antena la amplitud se habrá reducido a 0.01 V/m debido a la atenuación geométrica?\\nb) Comprueba la relación entre las intensidades en esos dos puntos.",
+    "resolucion_latex": "a) Atenuación geométrica para amplitud en ondas esféricas ($A_1 \\cdot r_1 = A_2 \\cdot r_2$):\\n$$0.05 \\cdot 10 = 0.01 \\cdot r_2 \\implies 0.5 = 0.01 \\cdot r_2 \\implies r_2 = 50 \\text{ km}$$\\nb) Comprobación. La intensidad es directamente proporcional al cuadrado de la amplitud ($I \\propto A^2$):\\n$$I_1 \\propto A_1^2 = 0.05^2 = 0.0025$$\\n$$I_2 \\propto A_2^2 = 0.01^2 = 0.0001$$\\nRelación por amplitudes: $\\frac{I_1}{I_2} = \\frac{0.0025}{0.0001} = 25$.\\nComprobamos con la fórmula de atenuación geométrica pura de intensidades (inversa de los cuadrados):\\n$$\\frac{I_1}{I_2} = \\frac{r_2^2}{r_1^2} = \\frac{50^2}{10^2} = \\frac{2500}{100} = 25$$. Todo cuadra perfectamente.",
+    "pista": "Recuerda que el nivel sonoro es logarítmico, no lineal.",
+    "formula": "$$I_1 \\propto A_1^2 = 0.05^2 = 0.0025$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 1008,
+    "dificultad": "Difícil",
+    "bloque": "Tema 10: Energía y Atenuación",
+    "enunciado": "A una distancia de 2 m de un foco puntual isótropo sonoro, la amplitud de presión de la onda es $A_1$. Al medir a 6 m del foco, interponiendo en el trayecto un material absorbente de 1 metro de espesor con $\\beta = 0.2 \\text{ m}^{-1}$, la amplitud medida es $A_2$. Encuentra la relación exacta entre $A_2$ y $A_1$ (teniendo en cuenta atenuación y absorción).",
+    "resolucion_latex": "Paso 1: Atenuación geométrica pura hasta 6 m (sin muro):\\n$$A_{6,teo} = A_1 \\left(\\frac{r_1}{r_2}\\right) = A_1 \\left(\\frac{2}{6}\\right) = \\frac{A_1}{3}$$\\nPaso 2: Absorción. Sabiendo que $I = I_0 e^{-\\beta x}$ y que $I \\propto A^2$, se deduce que la amplitud decae según la expresión: $A = A_0 e^{-\\beta x / 2}$.\\nLa onda atraviesa un espesor $x = 1 \\text{ m}$ del material. Aplicamos esta caída sobre la amplitud atenuada:\\n$$A_2 = A_{6,teo} \\cdot e^{-\\beta x / 2} = \\left(\\frac{A_1}{3}\\right) \\cdot e^{-0.2 \\cdot 1 / 2} = \\left(\\frac{A_1}{3}\\right) \\cdot e^{-0.1}$$\\nSabiendo que $e^{-0.1} \\approx 0.905$:\\n$$A_2 \\approx 0.905 \\frac{A_1}{3} \\approx 0.302 A_1$$",
+    "pista": "Usa la relación fundamental entre velocidad de propagación, longitud de onda y frecuencia.",
+    "formula": "$$A_{6,teo} = A_1 \\left(\\frac{r_1}{r_2}\\right) = A_1 \\left(\\frac{2}{6}\\right) = \\frac{A_1}{3}$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 1009,
+    "dificultad": "Superior",
+    "bloque": "Tema 10: Energía y Atenuación",
+    "enunciado": "*(Reto Supernova)*: Cuando una onda mecánica (como el sonido) se aleja de un foco emisor en el aire libre, sufre atenuación. Un estudiante afirma que: 'Debido a que la onda pierde energía al expandirse, su longitud de onda cada vez es menor y por eso viaja más despacio cuanto más lejos está'. Refuta esta afirmación identificando las magnitudes que cambian y las que permanecen constantes.",
+    "resolucion_latex": "La afirmación del estudiante es **físicamente falsa**.\\n1) **Magnitudes que SÍ cambian**: La atenuación afecta **exclusivamente** a la amplitud, a la intensidad y a la densidad de energía de la onda. Esto ocurre porque los frentes de onda se hacen esféricamente cada vez más grandes ($4\\pi r^2$) y la misma energía neta debe repartirse en una superficie mayor, 'adelgazando' la intensidad.\\n2) **Magnitudes que permanecen CONSTANTES**: La frecuencia ($f$) y el periodo ($T$) dependen única y exclusivamente de la fuente emisora (no cambian jamás al viajar). La velocidad de propagación de la fase ($v$) y la longitud de onda ($\\lambda$) dependen única y exclusivamente de las propiedades mecánicas y térmicas del medio (elasticidad, temperatura). La velocidad del sonido en el aire no depende en absoluto de cuánta energía lleve la onda. Mientras el aire sea homogéneo, viajará a $\\approx 340 \\text{ m/s}$ y con la misma $\\lambda$ independientemente de si estamos a 1 metro o a 5 kilómetros del foco.",
+    "pista": "Usa la relación fundamental entre velocidad de propagación, longitud de onda y frecuencia.",
+    "formula": "$$\\lambda$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 1101,
+    "dificultad": "Fácil",
+    "bloque": "Tema 11: Fenómenos Ondulatorios",
+    "enunciado": "Un haz de luz pasa del aire ($n_1 = 1$) al agua ($n_2 = 1.33$) con un ángulo de incidencia de $30^\\circ$ respecto a la normal. Calcula el ángulo de refracción utilizando la Ley de Snell.",
+    "resolucion_latex": "Aplicamos la Ley de Snell de la refracción:\\n$$n_1 \\sin(\\hat{i}) = n_2 \\sin(\\hat{r})$$\\n$$1 \\cdot \\sin(30^\\circ) = 1.33 \\cdot \\sin(\\hat{r})$$\\n$$1 \\cdot 0.5 = 1.33 \\sin(\\hat{r}) \\implies \\sin(\\hat{r}) = \\frac{0.5}{1.33} \\approx 0.376$$\\n$$\\hat{r} = \\arcsin(0.376) \\approx 22.08^\\circ$$",
+    "pista": "Usa la relación fundamental entre velocidad de propagación, longitud de onda y frecuencia.",
+    "formula": "$$\\hat{r} = \\arcsin(0.376) \\approx 22.08^\\circ$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 1102,
+    "dificultad": "Fácil",
+    "bloque": "Tema 11: Fenómenos Ondulatorios",
+    "enunciado": "Se forma una onda estacionaria en una cuerda. Si la distancia entre tres nodos consecutivos es de 40 cm, ¿cuál es la longitud de onda de la onda incidente que la generó?",
+    "resolucion_latex": "La distancia entre dos nodos consecutivos en una onda estacionaria es $\\frac{\\lambda}{2}$.\\nEntre tres nodos consecutivos hay exactamente dos espacios internodales (dos 'vientres'), es decir:\\n$$2 \\cdot \\left(\\frac{\\lambda}{2}\\right) = \\lambda$$\\nPor tanto, si la distancia total abarcada por tres nodos es 40 cm, la longitud de onda completa es directamente:\\n$$\\lambda = 40 \\text{ cm}$$",
+    "pista": "En ondas estacionarias, los extremos y nodos fijan las longitudes de onda permitidas.",
+    "formula": "$$\\lambda = 40 \\text{ cm}$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 1103,
+    "dificultad": "Fácil",
+    "bloque": "Tema 11: Fenómenos Ondulatorios",
+    "enunciado": "Calcula la velocidad de la luz en el interior de un bloque de vidrio que tiene un índice de refracción $n = 1.5$. (Dato: $c = 3 \\times 10^8 \\text{ m/s}$).",
+    "resolucion_latex": "El índice de refracción absoluto de un medio se define como $n = \\frac{c}{v}$.\\nDespejamos la velocidad en el medio ($v$):\\n$$v = \\frac{c}{n} = \\frac{3 \\times 10^8}{1.5} = 2 \\times 10^8 \\text{ m/s}$$",
+    "pista": "Usa la relación fundamental entre velocidad de propagación, longitud de onda y frecuencia.",
+    "formula": "$$v = \\frac{c}{n} = \\frac{3 \\times 10^8}{1.5} = 2 \\times 10^8 \\text{ m/s}$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 1104,
+    "dificultad": "Media",
+    "bloque": "Tema 11: Fenómenos Ondulatorios",
+    "enunciado": "Dadas dos ondas que viajan en sentidos opuestos $y_1 = 0.05 \\sin(20\\pi t - 4\\pi x)$ y $y_2 = 0.05 \\sin(20\\pi t + 4\\pi x)$, determina la ecuación de la onda estacionaria resultante. ¿Cuál es la amplitud máxima de la onda estacionaria?",
+    "resolucion_latex": "Sumamos ambas ondas usando la identidad trigonométrica $\\sin(A) + \\sin(B) = 2 \\sin\\left(\\frac{A+B}{2}\\right) \\cos\\left(\\frac{A-B}{2}\\right)$.\\n$$y = y_1 + y_2 = 2 \\cdot 0.05 \\sin(20\\pi t) \\cos(-4\\pi x)$$\\nComo el coseno es una función par, $\\cos(-x) = \\cos(x)$. Ecuación de onda estacionaria:\\n$$y(x, t) = 0.1 \\cos(4\\pi x) \\sin(20\\pi t) \\text{ m}$$\\nLa amplitud resultante de cada punto es $|0.1 \\cos(4\\pi x)|$. Su valor máximo en los antinodos es $2A = 0.1 \\text{ m}$.",
+    "pista": "En ondas estacionarias, los extremos y nodos fijan las longitudes de onda permitidas.",
+    "formula": "$$y = y_1 + y_2 = 2 \\cdot 0.05 \\sin(20\\pi t) \\cos(-4\\pi x)$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 1105,
+    "dificultad": "Media",
+    "bloque": "Tema 11: Fenómenos Ondulatorios",
+    "enunciado": "Un rayo de luz viaja por un bloque de cristal ($n = 1.6$) y llega a la frontera con el aire ($n = 1$). Calcula el ángulo límite (o crítico) a partir del cual se produce la reflexión total interna.",
+    "resolucion_latex": "El ángulo límite $\\theta_L$ es aquel ángulo de incidencia que produce un ángulo de refracción rasante a la superficie de salida ($\\hat{r} = 90^\\circ$).\\nAplicamos la Ley de Snell:\\n$$n_1 \\sin(\\theta_L) = n_2 \\sin(90^\\circ)$$\\n$$1.6 \\sin(\\theta_L) = 1 \\cdot 1 \\implies \\sin(\\theta_L) = \\frac{1}{1.6} = 0.625$$\\n$$\\theta_L = \\arcsin(0.625) \\approx 38.68^\\circ$$",
+    "pista": "Usa la relación fundamental entre velocidad de propagación, longitud de onda y frecuencia.",
+    "formula": "$$\\theta_L = \\arcsin(0.625) \\approx 38.68^\\circ$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 1106,
+    "dificultad": "Media",
+    "bloque": "Tema 11: Fenómenos Ondulatorios",
+    "enunciado": "Un coche de policía se acerca a un observador en reposo con una velocidad de 30 m/s emitiendo un sonido con una frecuencia de 500 Hz. Calcula la frecuencia percibida por el observador. (Velocidad del sonido en el aire: $v_s = 340 \\text{ m/s}$).",
+    "resolucion_latex": "Efecto Doppler con fuente acercándose a observador en reposo:\\n$$f' = f \\left( \\frac{v_s}{v_s - v_{foco}} \\right)$$\\nSustituimos:\\n$$f' = 500 \\left( \\frac{340}{340 - 30} \\right) = 500 \\left( \\frac{340}{310} \\right)$$\\n$$f' \\approx 500 \\cdot 1.0968 \\approx 548.4 \\text{ Hz}$$\\nEl sonido se percibe más agudo.",
+    "pista": "Usa la relación fundamental entre velocidad de propagación, longitud de onda y frecuencia.",
+    "formula": "$$f' = f \\left( \\frac{v_s}{v_s - v_{foco}} \\right)$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 1107,
+    "dificultad": "Difícil",
+    "bloque": "Tema 11: Fenómenos Ondulatorios",
+    "enunciado": "Dos altavoces conectados al mismo oscilador emiten ondas sonoras en fase con una longitud de onda de 2 m. Un micrófono se sitúa a 6 m del primer altavoz y a 9 m del segundo.\\na) Determina, analizando la diferencia de caminos, si la interferencia en ese punto es constructiva o destructiva.\\nb) ¿Qué le ocurriría a la intensidad del sonido en ese punto si la longitud de onda emitida pasara a ser de 1.5 m?",
+    "resolucion_latex": "a) Calculamos la diferencia de caminos: $\\Delta x = |x_2 - x_1| = |9 - 6| = 3 \\text{ m}$.\\nComparamos con la longitud de onda ($\\lambda = 2 \\text{ m}$): $\\frac{\\Delta x}{\\lambda} = \\frac{3}{2} = 1.5$.\\nComo el resultado es un múltiplo semientero ($\\Delta x = (n + \\frac{1}{2})\\lambda$, con $n=1$), las ondas llegan en oposición de fase. Interferencia **destructiva** (silencio).\\n\\nb) Si $\\lambda' = 1.5 \\text{ m}$, entonces: $\\frac{\\Delta x}{\\lambda'} = \\frac{3}{1.5} = 2$.\\nAhora es un múltiplo exacto (entero) ($\\Delta x = n\\lambda$, con $n=2$). Las ondas llegan en fase. Se produce una interferencia **constructiva** (sonido de máxima intensidad).",
+    "pista": "Recuerda que el nivel sonoro es logarítmico, no lineal.",
+    "formula": "$$\\frac{\\Delta x}{\\lambda} = \\frac{3}{2} = 1.5$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 1108,
+    "dificultad": "Difícil",
+    "bloque": "Tema 11: Fenómenos Ondulatorios",
+    "enunciado": "Una cuerda de guitarra de 60 cm de longitud está fija por ambos extremos. La tensión y densidad de la cuerda hacen que la velocidad de propagación de las ondas en ella sea de 120 m/s. Calcula la frecuencia del tono fundamental (primer armónico) y del tercer armónico.",
+    "resolucion_latex": "Condición de onda estacionaria fija en dos extremos: $L = n \\cdot \\frac{\\lambda}{2}$.\\nSabiendo que $\\lambda = \\frac{v}{f}$:\\n$$L = n \\cdot \\frac{v}{2f} \\implies f_n = n \\cdot \\frac{v}{2L}$$\\nLongitud $L = 0.6 \\text{ m}$.\\nPrimer armónico (fundamental, $n=1$):\\n$$f_1 = 1 \\cdot \\frac{120}{2 \\cdot 0.6} = \\frac{120}{1.2} = 100 \\text{ Hz}$$\\nTercer armónico ($n=3$):\\n$$f_3 = 3 \\cdot \\frac{120}{1.2} = 360 \\text{ Hz} \\quad \\text{(o simplemente } 3 \\cdot f_1\\text{)}$$",
+    "pista": "En ondas estacionarias, los extremos y nodos fijan las longitudes de onda permitidas.",
+    "formula": "$$L = n \\cdot \\frac{v}{2f} \\implies f_n = n \\cdot \\frac{v}{2L}$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 1109,
+    "dificultad": "Superior",
+    "bloque": "Tema 11: Fenómenos Ondulatorios",
+    "enunciado": "*(Reto Supernova)*: Un rayo de láser azul entra en un vaso de agua transparente. Un alumno observa que el láser cambia de dirección y dice: 'Al entrar en el agua, la velocidad de la luz disminuye, y por tanto, su frecuencia también disminuye'. ¿Es correcta esta deducción matemática de la fórmula $v = \\lambda \\cdot f$? Explica qué magnitudes cambian realmente.",
+    "resolucion_latex": "La deducción del alumno es **conceptualmente incorrecta**.\\nEn el fenómeno del cambio de medio (refracción), **la frecuencia ($f$) permanece siempre constante** porque depende de la energía cuántica del fotón emitido por la fuente original, y un medio transparente no destruye energía (salvo dispersiones menores).\\nEs cierto que, al entrar en el agua, su velocidad de propagación macroscópica ($v$) disminuye (porque $n_{agua} > n_{aire}$).\\nPara que la ecuación matemática $v = \\lambda \\cdot f$ siga siendo válida con una $f$ constante y una $v$ más pequeña, la magnitud que se acorta proporcionalmente en el interior del agua es la **longitud de onda ($\\lambda$)**. El alumno falló al desconocer qué magnitud era la invariante del sistema.",
+    "pista": "Usa la relación fundamental entre velocidad de propagación, longitud de onda y frecuencia.",
+    "formula": "$$v = \\lambda \\cdot f$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 1201,
+    "dificultad": "Fácil",
+    "bloque": "Tema 12: El Sonido",
+    "enunciado": "El umbral de audición del oído humano es $I_0 = 10^{-12} \\text{ W/m}^2$. Si una persona está expuesta a un sonido con una intensidad de $10^{-6} \\text{ W/m}^2$, calcula su Nivel de Intensidad Sonora ($\\beta$) en decibelios (dB).",
+    "resolucion_latex": "Fórmula del nivel de intensidad sonora:\\n$$\\beta = 10 \\log_{10}\\left(\\frac{I}{I_0}\\right)$$\\nSustituimos valores:\\n$$\\beta = 10 \\log_{10}\\left(\\frac{10^{-6}}{10^{-12}}\\right) = 10 \\log_{10}(10^6)$$\\n$$\\beta = 10 \\cdot 6 = 60 \\text{ dB}$$",
+    "pista": "Recuerda que el nivel sonoro es logarítmico, no lineal.",
+    "formula": "$$\\beta = 10 \\log_{10}\\left(\\frac{I}{I_0}\\right)$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 1202,
+    "dificultad": "Fácil",
+    "bloque": "Tema 12: El Sonido",
+    "enunciado": "En una biblioteca se mide un nivel de ruido de $40 \\text{ dB}$. Calcula cuál es la intensidad acústica ($I$) en $\\text{W/m}^2$ en ese recinto.",
+    "resolucion_latex": "Despejamos la intensidad $I$ de la fórmula: $\\beta = 10 \\log_{10}\\left(\\frac{I}{I_0}\\right)$.\\n$$40 = 10 \\log_{10}\\left(\\frac{I}{10^{-12}}\\right) \\implies 4 = \\log_{10}\\left(\\frac{I}{10^{-12}}\\right)$$\\nAplicamos la definición de logaritmo ($10^x$):\\n$$10^4 = \\frac{I}{10^{-12}} \\implies I = 10^4 \\cdot 10^{-12} = 10^{-8} \\text{ W/m}^2$$",
+    "pista": "Recuerda que el nivel sonoro es logarítmico, no lineal.",
+    "formula": "$$40 = 10 \\log_{10}\\left(\\frac{I}{10^{-12}}\\right) \\implies 4 = \\log_{10}\\left(\\frac{I}{10^{-12}}\\right)$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 1203,
+    "dificultad": "Fácil",
+    "bloque": "Tema 12: El Sonido",
+    "enunciado": "Una máquina trabajando genera un nivel sonoro de $60 \\text{ dB}$. Si encendemos otra máquina exactamente igual al lado, ¿cuál será el nuevo nivel sonoro en dB?",
+    "resolucion_latex": "Si duplicamos las máquinas, la INTENSIDAD física real se duplica ($I_{nueva} = 2 I_{vieja}$).\\nCalculamos el nuevo Nivel:\\n$$\\beta_{nueva} = 10 \\log_{10}\\left(\\frac{2I_{vieja}}{I_0}\\right) = 10 \\left[ \\log_{10}(2) + \\log_{10}\\left(\\frac{I_{vieja}}{I_0}\\right) \\right]$$\\n$$\\beta_{nueva} = 10 \\log_{10}(2) + \\beta_{vieja}$$\\nSabiendo que $\\log_{10}(2) \\approx 0.3 \\implies 10 \\cdot 0.3 = 3 \\text{ dB}$.\\nSiempre que se duplica la fuente (misma intensidad), suman 3 dB extra:\\nNuevo nivel $= 60 + 3 = 63 \\text{ dB}$.",
+    "pista": "Recuerda que el nivel sonoro es logarítmico, no lineal.",
+    "formula": "$$\\beta_{nueva} = 10 \\log_{10}(2) + \\beta_{vieja}$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 1204,
+    "dificultad": "Media",
+    "bloque": "Tema 12: El Sonido",
+    "enunciado": "A 5 metros de una máquina apisonadora el nivel de intensidad sonora es de $100 \\text{ dB}$. Suponiendo propagación en forma de onda esférica y sin absorción, calcula el nivel de intensidad sonora a 50 metros de distancia.",
+    "resolucion_latex": "1) Calculamos la intensidad a 5 m ($\\beta = 100 \\text{ dB}$):\\n$$100 = 10 \\log_{10}\\left(\\frac{I_1}{10^{-12}}\\right) \\implies 10 = \\log_{10}\\left(\\frac{I_1}{10^{-12}}\\right) \\implies 10^{10} = \\frac{I_1}{10^{-12}} \\implies I_1 = 10^{-2} \\text{ W/m}^2$$\\n2) Atenuación geométrica: $I_1 r_1^2 = I_2 r_2^2$:\\n$$10^{-2} \\cdot 5^2 = I_2 \\cdot 50^2 \\implies I_2 = 10^{-2} \\cdot \\frac{25}{2500} = 10^{-2} \\cdot 0.01 = 10^{-4} \\text{ W/m}^2$$\\n3) Nuevo nivel sonoro:\\n$$\\beta_2 = 10 \\log_{10}\\left(\\frac{10^{-4}}{10^{-12}}\\right) = 10 \\log_{10}(10^8) = 10 \\cdot 8 = 80 \\text{ dB}$$\\n*(Truco: en ondas esféricas, alejarte a 10 veces la distancia siempre resta exactamente 20 dB)*.",
+    "pista": "Recuerda que el nivel sonoro es logarítmico, no lineal.",
+    "formula": "$$\\beta_2 = 10 \\log_{10}\\left(\\frac{10^{-4}}{10^{-12}}\\right) = 10 \\log_{10}(10^8) = 10 \\cdot 8 = 80 \\text{ dB}$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 1205,
+    "dificultad": "Media",
+    "bloque": "Tema 12: El Sonido",
+    "enunciado": "Si el nivel de intensidad sonora de un avión a 200 m es de $130 \\text{ dB}$ (umbral del dolor), ¿a qué distancia el avión producirá un nivel de $100 \\text{ dB}$ (asumiendo que actúa como foco isótropo puntual)?",
+    "resolucion_latex": "Diferencia de nivel: $130 - 100 = 30 \\text{ dB}$.\\nUna diferencia de $30 \\text{ dB}$ significa que la relación entre intensidades en escala logarítmica ha caído 3 niveles (cada 10 dB es un factor de 10). La intensidad es $10^3 = 1000$ veces menor ($\\frac{I_1}{I_2} = 1000$).\\nAplicamos relación geométrica $I_1 r_1^2 = I_2 r_2^2$:\\n$$r_2^2 = r_1^2 \\cdot \\left(\\frac{I_1}{I_2}\\right) = 200^2 \\cdot 1000 = 40000 \\cdot 1000 = 40000000$$\\n$$r_2 = \\sqrt{40000000} \\approx 6324 \\text{ m}$$",
+    "pista": "Recuerda que el nivel sonoro es logarítmico, no lineal.",
+    "formula": "$$r_2 = \\sqrt{40000000} \\approx 6324 \\text{ m}$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 1206,
+    "dificultad": "Media",
+    "bloque": "Tema 12: El Sonido",
+    "enunciado": "Un coro está formado por 20 cantantes idénticos. Si cada uno de ellos, cantando solo, produce un nivel sonoro de 70 dB a cierta distancia, ¿qué nivel sonoro producirán cantando todos a la vez a esa misma distancia?",
+    "resolucion_latex": "Un cantante ($70 \\text{ dB}$) emite una intensidad $I_1$:\\n$$I_1 = 10^{-12} \\cdot 10^{70/10} = 10^{-12} \\cdot 10^7 = 10^{-5} \\text{ W/m}^2$$\\n20 cantantes idénticos suman su intensidad física: $I_{total} = 20 \\cdot I_1$.\\nCalculamos el nuevo nivel:\\n$$\\beta_{total} = 10 \\log_{10}\\left(\\frac{20 I_1}{I_0}\\right) = 10 \\log_{10}(20) + 10 \\log_{10}\\left(\\frac{I_1}{I_0}\\right)$$\\n$$\\beta_{total} = 10 \\log_{10}(20) + 70 = 10(1.301) + 70 = 13.01 + 70 = 83.01 \\text{ dB}$$\\n*(Nota: No se suman nunca $70+70$, sino las intensidades)*.",
+    "pista": "Recuerda que el nivel sonoro es logarítmico, no lineal.",
+    "formula": "$$\\beta_{total} = 10 \\log_{10}\\left(\\frac{20 I_1}{I_0}\\right) = 10 \\log_{10}(20) + 10 \\log_{10}\\left(\\frac{I_1}{I_0}\\right)$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 1207,
+    "dificultad": "Difícil",
+    "bloque": "Tema 12: El Sonido",
+    "enunciado": "Un foco sonoro isótropo de pequeñas dimensiones emite sonido en todas direcciones. A 4 m de distancia el nivel de intensidad sonora es de 80 dB.\\na) Calcula la potencia total emitida por el foco sonoro.\\nb) Halla el nivel de intensidad sonora que medirá una persona que se sitúe a 12 m del foco.",
+    "resolucion_latex": "a) Encontramos la Intensidad a 4 m ($\\beta = 80 \\text{ dB}$):\\n$$80 = 10 \\log_{10}\\left(\\frac{I}{10^{-12}}\\right) \\implies I = 10^8 \\cdot 10^{-12} = 10^{-4} \\text{ W/m}^2$$\\nPotencia total de la fuente (ondas esféricas):\\n$$P = I \\cdot 4\\pi r^2 = 10^{-4} \\cdot 4\\pi \\cdot (4)^2 = 10^{-4} \\cdot 64\\pi \\approx 0.020 \\text{ W}$$\\nb) A 12 m (el triple de distancia), calculamos la nueva Intensidad:\\n$$I_2 = \\frac{P}{4\\pi r_2^2} = \\frac{0.020}{4\\pi \\cdot 12^2} \\approx 1.11 \\times 10^{-5} \\text{ W/m}^2$$\\nNivel en dB:\\n$$\\beta_2 = 10 \\log_{10}\\left(\\frac{1.11 \\times 10^{-5}}{10^{-12}}\\right) = 10 \\log_{10}(1.11 \\times 10^7) \\approx 10 \\cdot 7.045 \\approx 70.45 \\text{ dB}$$",
+    "pista": "Recuerda que el nivel sonoro es logarítmico, no lineal.",
+    "formula": "$$P = I \\cdot 4\\pi r^2 = 10^{-4} \\cdot 4\\pi \\cdot (4)^2 = 10^{-4} \\cdot 64\\pi \\approx 0.020 \\text{ W}$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 1208,
+    "dificultad": "Difícil",
+    "bloque": "Tema 12: El Sonido",
+    "enunciado": "Se tienen dos altavoces idénticos que emiten con la misma potencia esféricamente. Cuando se enciende solo uno, a una distancia $d$, se miden 70 dB. Al encender ambos, se quiere saber a qué nueva distancia $x$ hay que colocarse para seguir escuchando exactamente 70 dB.",
+    "resolucion_latex": "Al encender 2 altavoces juntos a distancia $d$, la intensidad sería doble ($2 I_1$).\\nPara que a una distancia $x$ se siga oyendo exactamente $70 \\text{ dB}$, la intensidad neta a esa distancia debe volver a ser exactamente $I_1$.\\nPlanteamos la ecuación de atenuación para los dos altavoces simultáneamente:\\n$$I = \\frac{P_{total}}{4\\pi x^2} = I_1$$\\nSabemos que la potencia de 1 altavoz es $P = I_1 \\cdot 4\\pi d^2$.\\nPor tanto, la potencia de 2 altavoces es $P_{total} = 2(I_1 \\cdot 4\\pi d^2)$.\\nSustituimos:\\n$$\\frac{2(I_1 \\cdot 4\\pi d^2)}{4\\pi x^2} = I_1 \\implies \\frac{2d^2}{x^2} = 1$$\\n$$x^2 = 2d^2 \\implies x = d\\sqrt{2}$$\\nHay que alejarse hasta una distancia de aproximadamente $1.41d$.",
+    "pista": "Usa la relación fundamental entre velocidad de propagación, longitud de onda y frecuencia.",
+    "formula": "$$I = \\frac{P_{total}}{4\\pi x^2} = I_1$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 1209,
+    "dificultad": "Superior",
+    "bloque": "Tema 12: El Sonido",
+    "enunciado": "*(Reto Supernova)*: Un ayuntamiento recibe quejas porque un concierto emite $100 \\text{ dB}$ a 100 metros del escenario. El técnico dice: 'No hay problema, alejamos las vallas al doble de distancia (200 m). Como es el doble de distancia, los decibelios se reducirán a la mitad, y 50 dB es legal'. ¿Tiene razón el técnico? Realiza el cálculo real de los decibelios a 200 m.",
+    "resolucion_latex": "El técnico está **brutalmente equivocado** porque asume que la escala de decibelios es lineal, cuando en realidad es logarítmica.\\nA 100 m: $\\beta_1 = 100 \\text{ dB} \\implies I_1 = 10^2 \\cdot 10^{-12} = 10^{-2} \\text{ W/m}^2$.\\nAl doble de distancia ($200 \\text{ m}$), según la ley de la inversa del cuadrado, la intensidad real se reduce a la **cuarta parte** ($I_2 = \\frac{I_1}{4}$):\\n$$I_2 = \\frac{10^{-2}}{4} = 2.5 \\times 10^{-3} \\text{ W/m}^2$$\\nCalculamos el nuevo nivel logarítmico:\\n$$\\beta_2 = 10 \\log_{10}\\left(\\frac{2.5 \\times 10^{-3}}{10^{-12}}\\right) = 10 \\log_{10}(2.5 \\times 10^9)$$\\n$$\\beta_2 = 10 (\\log_{10}(2.5) + 9) \\approx 10 (0.398 + 9) = 93.98 \\text{ dB}$$\\nAl duplicar la distancia, los decibelios no caen a la mitad, **¡solo se reducen unos 6 dB!**. El ruido a 200 metros ($\\sim 94 \\text{ dB}$) sigue siendo ensordecedor y totalmente ilegal para la normativa de ruido urbana.",
+    "pista": "Recuerda que el nivel sonoro es logarítmico, no lineal.",
+    "formula": "$$I_2 = \\frac{10^{-2}}{4} = 2.5 \\times 10^{-3} \\text{ W/m}^2$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 1301,
+    "dificultad": "Fácil",
+    "bloque": "Tema 13: Óptica Geométrica y Física",
+    "enunciado": "Un rayo de luz monocromática que viaja por el aire ($n = 1$) incide sobre la superficie de un lago ($n = 1.33$) con un ángulo de $45^\\circ$ respecto a la normal. Calcula el ángulo de refracción.",
+    "resolucion_latex": "Aplicamos la Ley de Snell:\\n$$n_1 \\sin(\\hat{i}) = n_2 \\sin(\\hat{r})$$\\nSustituimos:\\n$$1 \\cdot \\sin(45^\\circ) = 1.33 \\cdot \\sin(\\hat{r}) \\implies 0.707 = 1.33 \\sin(\\hat{r})$$\\n$$\\sin(\\hat{r}) = \\frac{0.707}{1.33} \\approx 0.531$$\\n$$\\hat{r} = \\arcsin(0.531) \\approx 32.1^\\circ$$",
+    "pista": "Aplica la ley de Snell y compara los índices para saber si el rayo se acerca o se aleja de la normal.",
+    "formula": "$$\\hat{r} = \\arcsin(0.531) \\approx 32.1^\\circ$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 1302,
+    "dificultad": "Fácil",
+    "bloque": "Tema 13: Óptica Geométrica y Física",
+    "enunciado": "La velocidad de la luz en el interior de un diamante es de $1.24 \\times 10^8 \\text{ m/s}$. Calcula el índice de refracción del diamante. (Dato: $c = 3 \\times 10^8 \\text{ m/s}$).",
+    "resolucion_latex": "Fórmula general del índice de refracción absoluto:\\n$$n = \\frac{c}{v}$$\\n$$n = \\frac{3 \\times 10^8}{1.24 \\times 10^8} \\approx 2.42$$",
+    "pista": "Aplica la ley de Snell y compara los índices para saber si el rayo se acerca o se aleja de la normal.",
+    "formula": "$$n = \\frac{c}{v}$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 1303,
+    "dificultad": "Fácil",
+    "bloque": "Tema 13: Óptica Geométrica y Física",
+    "enunciado": "Un rayo de luz roja de frecuencia $4.6 \\times 10^{14} \\text{ Hz}$ pasa del vacío a un vidrio transparente con índice de refracción $n = 1.5$. Calcula la longitud de onda de esta luz en el vacío y en el interior del vidrio.",
+    "resolucion_latex": "La frecuencia ($f = 4.6 \\times 10^{14} \\text{ Hz}$) no cambia de un medio a otro.\\n1) En el vacío:\\n$$c = \\lambda_0 \\cdot f \\implies \\lambda_0 = \\frac{c}{f} = \\frac{3 \\times 10^8}{4.6 \\times 10^{14}} \\approx 6.52 \\times 10^{-7} \\text{ m} = 652 \\text{ nm}$$\\n2) En el vidrio:\\nVelocidad en el vidrio: $v = \\frac{c}{n} = \\frac{3 \\times 10^8}{1.5} = 2 \\times 10^8 \\text{ m/s}$.\\n$$\\lambda_{vidrio} = \\frac{v}{f} = \\frac{2 \\times 10^8}{4.6 \\times 10^{14}} \\approx 4.35 \\times 10^{-7} \\text{ m} = 435 \\text{ nm}$$\\n*(También se puede calcular como $\\lambda_{vidrio} = \\frac{\\lambda_0}{n}$)*.",
+    "pista": "Aplica la ley de Snell y compara los índices para saber si el rayo se acerca o se aleja de la normal.",
+    "formula": "$$\\lambda_{vidrio} = \\frac{v}{f} = \\frac{2 \\times 10^8}{4.6 \\times 10^{14}} \\approx 4.35 \\times 10^{-7} \\text{ m} = 435 \\text{ nm}$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 1304,
+    "dificultad": "Media",
+    "bloque": "Tema 13: Óptica Geométrica y Física",
+    "enunciado": "Un submarinista enciende una linterna bajo el agua ($n = 1.33$) apuntando hacia la superficie en contacto con el aire ($n = 1$). ¿Cuál es el ángulo límite a partir del cual la luz no saldrá al exterior (reflexión total interna)?",
+    "resolucion_latex": "El ángulo límite ($L$) es el que produce una salida rasante a $90^\\circ$.\\nAplicamos Snell: $n_1 \\sin(L) = n_2 \\sin(90^\\circ)$.\\n$$1.33 \\cdot \\sin(L) = 1 \\cdot 1 \\implies \\sin(L) = \\frac{1}{1.33} \\approx 0.752$$\\n$$L = \\arcsin(0.752) \\approx 48.75^\\circ$$\\nA partir de este ángulo no habrá refracción, toda la luz rebotará hacia el fondo.",
+    "pista": "Aplica la ley de Snell y compara los índices para saber si el rayo se acerca o se aleja de la normal.",
+    "formula": "$$L = \\arcsin(0.752) \\approx 48.75^\\circ$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 1305,
+    "dificultad": "Media",
+    "bloque": "Tema 13: Óptica Geométrica y Física",
+    "enunciado": "Un rayo de luz incide desde el aire con un ángulo de $60^\\circ$ sobre un bloque de vidrio plano de caras paralelas. Si el ángulo de refracción en el vidrio es de $35^\\circ$, ¿con qué ángulo emergerá el rayo por la otra cara hacia el aire? Demuéstralo matemáticamente.",
+    "resolucion_latex": "Cara 1 (aire a vidrio):\\n$$1 \\cdot \\sin(60^\\circ) = n_{vidrio} \\sin(35^\\circ) \\implies n_{vidrio} = \\frac{\\sin(60^\\circ)}{\\sin(35^\\circ)} = \\frac{0.866}{0.574} \\approx 1.51$$\\nCara 2 (vidrio a aire): Por geometría de rectas paralelas cortadas por una secante, el ángulo de incidencia en la cara 2 es el ángulo de refracción de la cara 1 ($i_2 = r_1 = 35^\\circ$).\\n$$n_{vidrio} \\sin(35^\\circ) = 1 \\cdot \\sin(r_2)$$\\n$$1.51 \\cdot 0.574 = \\sin(r_2) \\implies \\sin(r_2) = 0.866$$\\n$$r_2 = \\arcsin(0.866) = 60^\\circ$$\\nEl rayo emerge exactamente con el mismo ángulo con el que entró ($60^\\circ$).",
+    "pista": "Aplica la ley de Snell y compara los índices para saber si el rayo se acerca o se aleja de la normal.",
+    "formula": "$$n_{vidrio} \\sin(35^\\circ) = 1 \\cdot \\sin(r_2)$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 1306,
+    "dificultad": "Media",
+    "bloque": "Tema 13: Óptica Geométrica y Física",
+    "enunciado": "Una fibra óptica está formada por un núcleo de cuarzo ($n_1 = 1.48$) recubierto por una capa de otro material ($n_2 = 1.44$). Para que se produzca la reflexión total en las paredes de la fibra, ¿cuál debe ser el ángulo mínimo de incidencia del rayo con la pared interior de la cubierta?",
+    "resolucion_latex": "Reflexión total interna desde el núcleo ($n_1$) hacia la cubierta ($n_2$).\\n$$n_1 \\sin(L) = n_2 \\sin(90^\\circ)$$\\n$$1.48 \\sin(L) = 1.44 \\cdot 1 \\implies \\sin(L) = \\frac{1.44}{1.48} \\approx 0.973$$\\n$$L = \\arcsin(0.973) \\approx 76.6^\\circ$$",
+    "pista": "Haz un esquema de rayos y usa el criterio de signos de forma constante.",
+    "formula": "$$L = \\arcsin(0.973) \\approx 76.6^\\circ$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 1307,
+    "dificultad": "Difícil",
+    "bloque": "Tema 13: Óptica Geométrica y Física",
+    "enunciado": "Un rayo de luz incide sobre una lámina de vidrio de caras plano-paralelas de 5 cm de espesor e índice de refracción $n = 1.5$. El ángulo de incidencia desde el aire es de $50^\\circ$. Calcula el desplazamiento lateral que experimenta el rayo al emerger de la lámina respecto a su trayectoria original.",
+    "resolucion_latex": "1) Calculamos el ángulo de refracción $r$:\\n$$1 \\cdot \\sin(50^\\circ) = 1.5 \\sin(r) \\implies \\sin(r) = \\frac{0.766}{1.5} = 0.511 \\implies r \\approx 30.7^\\circ$$\\n2) El rayo viaja por el interior formando un triángulo rectángulo con el espesor $e = 5 \\text{ cm}$. La longitud del recorrido interior $d'$ es:\\n$$\\cos(r) = \\frac{e}{d'} \\implies d' = \\frac{5}{\\cos(30.7^\\circ)} = \\frac{5}{0.86} = 5.81 \\text{ cm}$$\\n3) El desplazamiento lateral $d$ se calcula resolviendo un segundo triángulo con el ángulo $(i - r) = 50^\\circ - 30.7^\\circ = 19.3^\\circ$.\\n$$\\sin(i - r) = \\frac{d}{d'} \\implies d = d' \\sin(19.3^\\circ) = 5.81 \\cdot 0.33 = 1.92 \\text{ cm}$$",
+    "pista": "Aplica la ley de Snell y compara los índices para saber si el rayo se acerca o se aleja de la normal.",
+    "formula": "$$\\cos(r) = \\frac{e}{d'} \\implies d' = \\frac{5}{\\cos(30.7^\\circ)} = \\frac{5}{0.86} = 5.81 \\text{ cm}$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 1308,
+    "dificultad": "Difícil",
+    "bloque": "Tema 13: Óptica Geométrica y Física",
+    "enunciado": "Un prisma óptico de vidrio tiene un ángulo de refringencia (ángulo en el vértice) $A = 60^\\circ$ y se encuentra en el aire. Un rayo de luz incide con un ángulo de $45^\\circ$ y se observa que emerge por la otra cara simétricamente (el ángulo de emergencia es igual al de incidencia). Calcula el índice de refracción del prisma.",
+    "resolucion_latex": "Geometría del prisma: $A = r_1 + r_2$.\\nSi la emergencia es simétrica ($i_1 = i_2 = 45^\\circ$), la refracción en el interior del prisma también lo es ($r_1 = r_2$).\\n$$A = 2r_1 \\implies 60^\\circ = 2r_1 \\implies r_1 = 30^\\circ$$\\nAplicamos la ley de Snell en la primera cara (aire a prisma):\\n$$1 \\cdot \\sin(45^\\circ) = n \\cdot \\sin(30^\\circ)$$\\n$$0.707 = n \\cdot 0.5 \\implies n = \\frac{0.707}{0.5} = 1.414 \\approx \\sqrt{2}$$\\nEl índice de refracción del prisma es aproximadamente $1.41$.",
+    "pista": "Aplica la ley de Snell y compara los índices para saber si el rayo se acerca o se aleja de la normal.",
+    "formula": "$$A = 2r_1 \\implies 60^\\circ = 2r_1 \\implies r_1 = 30^\\circ$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 1309,
+    "dificultad": "Superior",
+    "bloque": "Tema 13: Óptica Geométrica y Física",
+    "enunciado": "*(Reto Supernova)*: Un buceador está sumergido bajo el agua de una piscina. Un amigo desde fuera le apunta con un láser de color rojo intenso. El alumno dice: 'Como la luz pasa al agua ($n = 1.33$), su velocidad y su longitud de onda disminuyen. Por lo tanto, al cambiar la longitud de onda, el láser cambiará de color hacia el azul/verde'. ¿Refuta o confirma esta afirmación argumentando físicamente qué determina el color percibido?",
+    "resolucion_latex": "La afirmación del alumno es **FALSA**.\\nEs totalmente cierto que la velocidad y la longitud de onda física disminuyen al entrar al agua, tal y como rige la ecuación geométrica $\\lambda_{agua} = \\frac{\\lambda_0}{n}$.\\nSin embargo, **el color que percibe el ojo (y el cerebro) o cualquier sensor fotográfico depende EXCLUSIVAMENTE de la frecuencia ($f$) de la onda electromagnética**, no de su longitud de onda temporal en un medio dado. La retina reacciona a la energía del fotón ($E=hf$), que es invariante.\\nComo la frecuencia ($f$) permanece absolutamente constante en la refracción, la energía no cambia y el láser seguirá viéndose de un inconfundible color rojo bajo el agua.",
+    "pista": "Haz un esquema de rayos y usa el criterio de signos de forma constante.",
+    "formula": "$$\\lambda_{agua} = \\frac{\\lambda_0}{n}$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 1401,
+    "dificultad": "Fácil",
+    "bloque": "Tema 14: Lentes y Espejos",
+    "enunciado": "Un objeto de 4 cm de altura se sitúa a 20 cm delante de un espejo plano. Determina la posición, tamaño y naturaleza (real o virtual, derecha o invertida) de la imagen formada.",
+    "resolucion_latex": "En un espejo plano, el radio de curvatura tiende a infinito ($R \\to \\infty$).\\nFórmula general de espejos: $\\frac{1}{s'} + \\frac{1}{s} = 0 \\implies s' = -s$.\\nObjeto delante (Convenio DIN): $s = -20 \\text{ cm}$.\\nPosición de la imagen: $s' = -(-20) = +20 \\text{ cm}$ (Imagen detrás del espejo).\\nAumento lateral: $m = -\\frac{s'}{s} = -\\frac{20}{-20} = 1$.\\nTamaño: $y' = m \\cdot y = 1 \\cdot 4 = 4 \\text{ cm}$.\\n**Naturaleza**: Virtual ($s' > 0$), derecha ($m > 0$) y de igual tamaño.",
+    "pista": "Usa la ecuación de lentes o espejos y después interpreta el signo de la imagen.",
+    "formula": "$$\\frac{1}{s'} + \\frac{1}{s} = 0 \\implies s' = -s$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 1402,
+    "dificultad": "Fácil",
+    "bloque": "Tema 14: Lentes y Espejos",
+    "enunciado": "Un objeto se coloca a 30 cm delante de un espejo esférico cóncavo de radio de curvatura $R = -40 \\text{ cm}$. Calcula la posición de la imagen y el aumento lateral.",
+    "resolucion_latex": "Espejo cóncavo: $R = -40 \\text{ cm} \\implies f = \\frac{R}{2} = -20 \\text{ cm}$.\\nObjeto: $s = -30 \\text{ cm}$.\\nAplicamos la ecuación del espejo esférico: $\\frac{1}{s'} + \\frac{1}{s} = \\frac{1}{f}$\\n$$\\frac{1}{s'} + \\frac{1}{-30} = \\frac{1}{-20} \\implies \\frac{1}{s'} = \\frac{1}{30} - \\frac{1}{20} = \\frac{2}{60} - \\frac{3}{60} = -\\frac{1}{60}$$\\nPosición imagen: $s' = -60 \\text{ cm}$.\\nAumento: $m = -\\frac{s'}{s} = -\\frac{-60}{-30} = -2$.\\nImagen real ($s' < 0$), invertida ($m < 0$) y el doble de grande.",
+    "pista": "Usa la ecuación de lentes o espejos y después interpreta el signo de la imagen.",
+    "formula": "$$\\frac{1}{s'} + \\frac{1}{-30} = \\frac{1}{-20} \\implies \\frac{1}{s'} = \\frac{1}{30} - \\frac{1}{20} = \\frac{2}{60} - \\frac{3}{60} = -\\frac{1}{60}$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 1403,
+    "dificultad": "Fácil",
+    "bloque": "Tema 14: Lentes y Espejos",
+    "enunciado": "Un espejo retrovisor esférico convexo tiene un radio de curvatura de 80 cm. Si un coche se encuentra a 5 m detrás del espejo, ¿dónde se forma su imagen?",
+    "resolucion_latex": "Espejo convexo: $R = +80 \\text{ cm} \\implies f = +40 \\text{ cm}$.\\nObjeto: $s = -5 \\text{ m} = -500 \\text{ cm}$.\\n$$\\frac{1}{s'} + \\frac{1}{-500} = \\frac{1}{40} \\implies \\frac{1}{s'} = \\frac{1}{40} + \\frac{1}{500} = \\frac{25}{1000} + \\frac{2}{1000} = \\frac{27}{1000}$$\\n$$s' = \\frac{1000}{27} \\approx +37.04 \\text{ cm}$$\\nEs una imagen Virtual, derecha y de menor tamaño (por estar detrás del espejo).",
+    "pista": "Usa la ecuación de lentes o espejos y después interpreta el signo de la imagen.",
+    "formula": "$$s' = \\frac{1000}{27} \\approx +37.04 \\text{ cm}$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 1404,
+    "dificultad": "Media",
+    "bloque": "Tema 14: Lentes y Espejos",
+    "enunciado": "Un objeto luminoso de 2 cm de altura se coloca a 15 cm a la izquierda de una lente delgada convergente cuya distancia focal imagen es $f' = 10 \\text{ cm}$. Determina matemática y geométricamente la posición y tamaño de la imagen.",
+    "resolucion_latex": "Lente convergente: $f' = 10 \\text{ cm}$. Objeto: $s = -15 \\text{ cm}$, $y = 2 \\text{ cm}$.\\nFórmula de Gauss para lentes delgadas:\\n$$\\frac{1}{s'} - \\frac{1}{s} = \\frac{1}{f'} \\implies \\frac{1}{s'} - \\frac{1}{-15} = \\frac{1}{10} \\implies \\frac{1}{s'} + \\frac{1}{15} = \\frac{1}{10}$$\\n$$\\frac{1}{s'} = \\frac{1}{10} - \\frac{1}{15} = \\frac{3}{30} - \\frac{2}{30} = \\frac{1}{30}$$\\nPosición imagen: $s' = 30 \\text{ cm}$.\\nAumento para lentes: $m = \\frac{s'}{s} = \\frac{30}{-15} = -2$.\\nTamaño: $y' = m \\cdot y = -2 \\cdot 2 = -4 \\text{ cm}$.\\nImagen real ($s' > 0$), invertida y mayor.",
+    "pista": "Usa la ecuación de lentes o espejos y después interpreta el signo de la imagen.",
+    "formula": "$$\\frac{1}{s'} = \\frac{1}{10} - \\frac{1}{15} = \\frac{3}{30} - \\frac{2}{30} = \\frac{1}{30}$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 1405,
+    "dificultad": "Media",
+    "bloque": "Tema 14: Lentes y Espejos",
+    "enunciado": "Se utiliza una lente convergente de distancia focal $f' = 5 \\text{ cm}$ como lupa. Se coloca un sello a 4 cm delante de la lente. Calcula la posición de la imagen, el aumento y describe sus características.",
+    "resolucion_latex": "Lente convergente: $f' = 5 \\text{ cm}$. Objeto: $s = -4 \\text{ cm}$ (situado entre el foco y la lente).\\n$$\\frac{1}{s'} - \\frac{1}{-4} = \\frac{1}{5} \\implies \\frac{1}{s'} + \\frac{1}{4} = \\frac{1}{5}$$\\n$$\\frac{1}{s'} = \\frac{1}{5} - \\frac{1}{4} = \\frac{4}{20} - \\frac{5}{20} = -\\frac{1}{20}$$\\n$$s' = -20 \\text{ cm}$$\\nAumento: $m = \\frac{s'}{s} = \\frac{-20}{-4} = 5$.\\nLa lupa forma una imagen **VIRTUAL** ($s' < 0$, se ve a través de la lente), **DERECHA** ($m > 0$) y 5 veces **MAYOR**.",
+    "pista": "Usa la ecuación de lentes o espejos y después interpreta el signo de la imagen.",
+    "formula": "$$s' = -20 \\text{ cm}$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 1406,
+    "dificultad": "Media",
+    "bloque": "Tema 14: Lentes y Espejos",
+    "enunciado": "Dada una lente divergente con $f' = -10 \\text{ cm}$, calcula a qué distancia debe colocarse un objeto para que la imagen se forme a 5 cm delante de la lente.",
+    "resolucion_latex": "Lente divergente: $f' = -10 \\text{ cm}$.\\nLa imagen se forma a 5 cm 'delante' (a la izquierda de la lente), por tanto, virtual: $s' = -5 \\text{ cm}$.\\n$$\\frac{1}{s'} - \\frac{1}{s} = \\frac{1}{f'} \\implies \\frac{1}{-5} - \\frac{1}{s} = \\frac{1}{-10}$$\\n$$-\\frac{1}{5} - \\frac{1}{s} = -\\frac{1}{10} \\implies -\\frac{1}{s} = \\frac{1}{5} - \\frac{1}{10} = \\frac{2}{10} - \\frac{1}{10} = \\frac{1}{10}$$\\n$$s = -10 \\text{ cm}$$",
+    "pista": "Usa la ecuación de lentes o espejos y después interpreta el signo de la imagen.",
+    "formula": "$$s = -10 \\text{ cm}$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 1407,
+    "dificultad": "Difícil",
+    "bloque": "Tema 14: Lentes y Espejos",
+    "enunciado": "Un sistema óptico está formado por dos lentes convergentes, $L_1$ ($f'_1 = 20 \\text{ cm}$) y $L_2$ ($f'_2 = 10 \\text{ cm}$), separadas entre sí una distancia de 50 cm. Un objeto se sitúa a 30 cm a la izquierda de $L_1$. Calcula la posición de la imagen final del sistema y el aumento lateral total.",
+    "resolucion_latex": "**PASO 1: Imagen de la primera lente ($L_1$)**.\\n$f'_1 = 20 \\text{ cm}$, $s_1 = -30 \\text{ cm}$.\\n$$\\frac{1}{s'_1} - \\frac{1}{-30} = \\frac{1}{20} \\implies \\frac{1}{s'_1} = \\frac{1}{20} - \\frac{1}{30} = \\frac{3}{60} - \\frac{2}{60} = \\frac{1}{60} \\implies s'_1 = 60 \\text{ cm}$$\\nAumento: $m_1 = \\frac{s'_1}{s_1} = \\frac{60}{-30} = -2$.\\n\\n**PASO 2: La imagen 1 actúa como objeto para $L_2$**.\\nDistancia de separación $d = 50 \\text{ cm}$.\\nPosición respecto a $L_2$: $s_2 = s'_1 - d = 60 - 50 = +10 \\text{ cm}$. (¡El objeto es virtual para la segunda lente por haberla sobrepasado!).\\n$f'_2 = 10 \\text{ cm}$, $s_2 = +10 \\text{ cm}$.\\n$$\\frac{1}{s'_2} - \\frac{1}{10} = \\frac{1}{10} \\implies \\frac{1}{s'_2} = \\frac{1}{10} + \\frac{1}{10} = \\frac{2}{10} = \\frac{1}{5} \\implies s'_2 = +5 \\text{ cm}$$\\n(Se forma a 5 cm a la derecha de la lente 2).\\nAumento 2: $m_2 = \\frac{s'_2}{s_2} = \\frac{5}{10} = 0.5$.\\n**Aumento total**: $M = m_1 \\cdot m_2 = -2 \\cdot 0.5 = -1$.\\nImagen final Real, Invertida y del mismo tamaño.",
+    "pista": "Usa la ecuación de lentes o espejos y después interpreta el signo de la imagen.",
+    "formula": "$$\\frac{1}{s'_2} - \\frac{1}{10} = \\frac{1}{10} \\implies \\frac{1}{s'_2} = \\frac{1}{10} + \\frac{1}{10} = \\frac{2}{10} = \\frac{1}{5} \\implies s'_2 = +5 \\text{ cm}$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 1408,
+    "dificultad": "Difícil",
+    "bloque": "Tema 14: Lentes y Espejos",
+    "enunciado": "Se quiere fabricar una lente delgada biconvexa simétrica ($R_1 = -R_2$) con vidrio de índice de refracción $n = 1.5$. Si se desea que la lente tenga una distancia focal de 20 cm en el aire, ¿qué valor deben tener los radios de curvatura?",
+    "resolucion_latex": "Aplicamos la ecuación del fabricante de lentes:\\n$$\\frac{1}{f'} = (n - 1) \\left(\\frac{1}{R_1} - \\frac{1}{R_2}\\right)$$\\nBiconvexa según convenio DIN: Primera cara curva hacia la derecha ($R_1 > 0$). Segunda cara cierra hacia la izquierda ($R_2 < 0$). Como es simétrica, $R_2 = -R_1$.\\n$$\\frac{1}{20} = (1.5 - 1) \\left(\\frac{1}{R_1} - \\frac{1}{-R_1}\\right)$$\\n$$\\frac{1}{20} = 0.5 \\left(\\frac{1}{R_1} + \\frac{1}{R_1}\\right) = 0.5 \\left(\\frac{2}{R_1}\\right) = \\frac{1}{R_1}$$\\nPor tanto, igualando numeradores:\\n$$\\frac{1}{20} = \\frac{1}{R_1} \\implies R_1 = 20 \\text{ cm}$$\\nLos radios físicos deben ser: $R_1 = +20 \\text{ cm}$, $R_2 = -20 \\text{ cm}$.",
+    "pista": "Aplica la ley de Snell y compara los índices para saber si el rayo se acerca o se aleja de la normal.",
+    "formula": "$$\\frac{1}{f'} = (n - 1) \\left(\\frac{1}{R_1} - \\frac{1}{R_2}\\right)$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 1409,
+    "dificultad": "Superior",
+    "bloque": "Tema 14: Lentes y Espejos",
+    "enunciado": "*(Reto Supernova)*: Un alumno está analizando las respuestas de su examen: 'He colocado un objeto delante de una lente divergente ($f' < 0$) y, tras aplicar la fórmula, he obtenido un aumento lateral $m = -2$, lo que significa que la imagen es el doble de grande y está invertida'. Sin necesidad de ver los números exactos del problema, explica por qué sabes seguro que el alumno se ha equivocado.",
+    "resolucion_latex": "Un alumno atento a la teoría sabe que **una lente divergente NUNCA puede producir una imagen real ni una imagen de mayor tamaño** si el objeto es real.\\nPor la marcha de rayos óptica, la imagen formada por una lente divergente (foco imagen virtual) para objetos reales es geométrica e invariablemente: **Virtual, Derecha ($m > 0$) y de Menor tamaño ($|m| < 1$)**.\\nObtener un aumento de $m = -2$ implica matemáticamente una imagen invertida y de doble tamaño, lo cual es óptica y físicamente imposible en un sistema simple divergente.\\nCon total seguridad, el alumno olvidó poner el signo negativo a la focal divergente al sustituir en la fórmula $\\frac{1}{s'} - \\frac{1}{s} = \\frac{1}{f'}$ o se equivocó al despejar las fracciones.",
+    "pista": "Usa la ecuación de lentes o espejos y después interpreta el signo de la imagen.",
+    "formula": "$$\\frac{1}{s'} - \\frac{1}{s} = \\frac{1}{f'}$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 1501,
+    "dificultad": "Fácil",
+    "bloque": "Tema 15: Instrumentos Ópticos y el Ojo Humano",
+    "enunciado": "Una persona utiliza unas gafas con lentes de potencia $P = -4$ dioptrías. ¿Qué defecto visual tiene? ¿Cuál es la distancia focal de la lente en centímetros?",
+    "resolucion_latex": "Las dioptrías son negativas, lo que implica una lente divergente ($f' < 0$). Esto corrige la **miopía**.\\nSabemos que la Potencia es $P = \\frac{1}{f'}$ (con $f'$ obligatoriamente en metros).\\n$$f' = \\frac{1}{P} = \\frac{1}{-4} = -0.25 \\text{ m}$$\\nEn centímetros, la distancia focal es $-25 \\text{ cm}$.",
+    "pista": "Usa la ecuación de lentes o espejos y después interpreta el signo de la imagen.",
+    "formula": "$$f' = \\frac{1}{P} = \\frac{1}{-4} = -0.25 \\text{ m}$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 1502,
+    "dificultad": "Fácil",
+    "bloque": "Tema 15: Instrumentos Ópticos y el Ojo Humano",
+    "enunciado": "Un hipermétrope no puede ver con claridad objetos situados a menos de $100 \\text{ cm}$ de sus ojos (Punto Próximo). Calcula la potencia de la lente necesaria para que pueda leer un libro situado a $25 \\text{ cm}$ (distancia de lectura normal).",
+    "resolucion_latex": "Para corregir la hipermetropía, la lente debe coger un objeto situado a la distancia normal de lectura ($s = -0.25 \\text{ m}$) y formar su imagen virtual exactamente en el punto próximo del enfermo, para que él pueda enfocarlo ($s' = -1.00 \\text{ m}$).\\n$$P = \\frac{1}{f'} = \\frac{1}{s'} - \\frac{1}{s}$$\\n$$P = \\frac{1}{-1} - \\frac{1}{-0.25} = -1 + 4 = +3 \\text{ dioptrías}$$",
+    "pista": "Usa la ecuación de lentes o espejos y después interpreta el signo de la imagen.",
+    "formula": "$$P = \\frac{1}{f'} = \\frac{1}{s'} - \\frac{1}{s}$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 1503,
+    "dificultad": "Fácil",
+    "bloque": "Tema 15: Instrumentos Ópticos y el Ojo Humano",
+    "enunciado": "Se tiene una lupa construida con una lente convergente de 20 dioptrías. ¿Cuál es su aumento comercial (aumento angular estándar asumiendo la visión a $25 \\text{ cm}$)?",
+    "resolucion_latex": "El aumento comercial de una lupa se define como $M_a = \\frac{d_0}{f'}$, donde $d_0 = 0.25 \\text{ m}$ (distancia mínima de visión nítida estándar).\\nComo $P = \\frac{1}{f'}$, podemos escribir:\\n$$M_a = d_0 \\cdot P = 0.25 \\cdot 20 = 5$$\\nLa lupa es de $5\\times$ aumentos.",
+    "pista": "Usa la ecuación de lentes o espejos y después interpreta el signo de la imagen.",
+    "formula": "$$M_a = d_0 \\cdot P = 0.25 \\cdot 20 = 5$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 1504,
+    "dificultad": "Media",
+    "bloque": "Tema 15: Instrumentos Ópticos y el Ojo Humano",
+    "enunciado": "El punto remoto de un miope se encuentra a $50 \\text{ cm}$ de su ojo. Calcula la potencia de las lentes de contacto necesarias para corregir su visión (asumiendo que las lentes están en contacto con el ojo).",
+    "resolucion_latex": "El ojo miope no ve más allá de su punto remoto. Para arreglarlo, la lente divergente debe tomar un objeto en el infinito ($s \\to -\\infty$) y traer su imagen virtual al punto remoto del ojo ($s' = -50 \\text{ cm} = -0.5 \\text{ m}$).\\n$$P = \\frac{1}{f'} = \\frac{1}{s'} - \\frac{1}{s}$$\\n$$P = \\frac{1}{-0.5} - \\frac{1}{-\\infty} = -2 - 0 = -2 \\text{ dioptrías}$$",
+    "pista": "Usa la ecuación de lentes o espejos y después interpreta el signo de la imagen.",
+    "formula": "$$P = \\frac{1}{f'} = \\frac{1}{s'} - \\frac{1}{s}$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 1505,
+    "dificultad": "Media",
+    "bloque": "Tema 15: Instrumentos Ópticos y el Ojo Humano",
+    "enunciado": "El objetivo de un microscopio compuesto tiene una distancia focal de $4 \\text{ mm}$ y el ocular de $25 \\text{ mm}$. La distancia entre el foco imagen del objetivo y el foco objeto del ocular (longitud del tubo o intervalo óptico $L$) es de $16 \\text{ cm}$. Calcula el aumento total del microscopio.",
+    "resolucion_latex": "Fórmula del aumento estándar del microscopio: $M = \\Gamma_{obj} \\cdot M_{oc} = -\\left(\\frac{L}{f'_{obj}}\\right) \\cdot \\left(\\frac{d_0}{f'_{oc}}\\right)$.\\n(Todas las distancias deben estar en las mismas unidades. Usaremos cm).\\n$f'_{obj} = 0.4 \\text{ cm}$. $f'_{oc} = 2.5 \\text{ cm}$. $L = 16 \\text{ cm}$. $d_0 = 25 \\text{ cm}$.\\n$$M = -\\left(\\frac{16}{0.4}\\right) \\cdot \\left(\\frac{25}{2.5}\\right) = -(40) \\cdot (10) = -400$$\\nAumento total de $400\\times$ (la imagen se ve invertida, de ahí el signo negativo).",
+    "pista": "Usa la ecuación de lentes o espejos y después interpreta el signo de la imagen.",
+    "formula": "$$M = -\\left(\\frac{16}{0.4}\\right) \\cdot \\left(\\frac{25}{2.5}\\right) = -(40) \\cdot (10) = -400$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 1506,
+    "dificultad": "Media",
+    "bloque": "Tema 15: Instrumentos Ópticos y el Ojo Humano",
+    "enunciado": "Un telescopio refractor tiene un objetivo de $f'_{obj} = 100 \\text{ cm}$ y un ocular de $f'_{oc} = 5 \\text{ cm}$. Calcula su aumento angular y la longitud del tubo del telescopio para un observador que enfoca al infinito (visión afocal).",
+    "resolucion_latex": "Aumento de telescopio afocal (en módulo):\\n$$M = \\frac{f'_{obj}}{f'_{oc}} = \\frac{100}{5} = 20 \\text{ (Aumento de } 20\\times\\text{)}$$\\nLongitud del tubo: En visión afocal, el foco imagen del objetivo coincide exactamente con el foco objeto del ocular.\\n$$L = f'_{obj} + f'_{oc} = 100 + 5 = 105 \\text{ cm}$$",
+    "pista": "El aumento lateral relaciona el tamaño de la imagen con el del objeto.",
+    "formula": "$$L = f'_{obj} + f'_{oc} = 100 + 5 = 105 \\text{ cm}$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 1507,
+    "dificultad": "Difícil",
+    "bloque": "Tema 15: Instrumentos Ópticos y el Ojo Humano",
+    "enunciado": "Una persona padece presbicia (vista cansada) y no puede enfocar objetos más cerca de $120 \\text{ cm}$. Además, es levemente miope y su punto remoto está a $300 \\text{ cm}$. Si quiere unas lentes bifocales:\\na) Calcula la potencia de la parte inferior de la lente para poder leer un periódico a $25 \\text{ cm}$.\\nb) Calcula la potencia de la parte superior para poder ver el horizonte (infinito) nítidamente.",
+    "resolucion_latex": "a) Parte de CERCA (hipermetropía/presbicia).\\nObjeto normal en $s = -0.25 \\text{ m}$. Imagen en el punto próximo del ojo $s' = -1.20 \\text{ m}$.\\n$$P_{cerca} = \\frac{1}{-1.20} - \\frac{1}{-0.25} = -0.833 + 4 = +3.16 \\text{ dioptrías}$$\\nb) Parte de LEJOS (miopía).\\nObjeto en $s = -\\infty$. Imagen en el punto remoto $s' = -3.00 \\text{ m}$.\\n$$P_{lejos} = \\frac{1}{-3.00} - \\frac{1}{-\\infty} = -0.33 \\text{ dioptrías}$$",
+    "pista": "Usa la ecuación de lentes o espejos y después interpreta el signo de la imagen.",
+    "formula": "$$P_{lejos} = \\frac{1}{-3.00} - \\frac{1}{-\\infty} = -0.33 \\text{ dioptrías}$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 1508,
+    "dificultad": "Difícil",
+    "bloque": "Tema 15: Instrumentos Ópticos y el Ojo Humano",
+    "enunciado": "En un microscopio, el objeto se sitúa a $5 \\text{ mm}$ del objetivo ($f'_{obj} = +4 \\text{ mm}$). La imagen final virtual que produce el ocular ($f'_{oc} = +20 \\text{ mm}$) se forma a $25 \\text{ cm}$ a la izquierda del ocular (distancia de visión clara).\\na) Calcula la posición de la imagen intermedia creada por el objetivo.\\nb) Calcula la distancia total que debe haber entre el objetivo y el ocular.",
+    "resolucion_latex": "a) En el objetivo: $s_1 = -5 \\text{ mm}$, $f'_1 = +4 \\text{ mm}$.\\n$$\\frac{1}{s'_1} - \\frac{1}{-5} = \\frac{1}{4} \\implies \\frac{1}{s'_1} = \\frac{1}{4} - \\frac{1}{5} = \\frac{5}{20} - \\frac{4}{20} = \\frac{1}{20}$$\\n$$s'_1 = +20 \\text{ mm}$$. (La imagen intermedia está a $20 \\text{ mm}$ a la derecha del objetivo).\\n\\nb) En el ocular: forma una imagen final en $s'_2 = -250 \\text{ mm}$ ($-25 \\text{ cm}$). $f'_2 = +20 \\text{ mm}$.\\nCalculamos dónde debe estar su objeto virtual ($s_2$):\\n$$\\frac{1}{-250} - \\frac{1}{s_2} = \\frac{1}{20} \\implies -\\frac{1}{s_2} = \\frac{1}{20} + \\frac{1}{250} = \\frac{25}{500} + \\frac{2}{500} = \\frac{27}{500}$$\\n$$s_2 = -\\frac{500}{27} \\approx -18.52 \\text{ mm}$$\\nLa imagen intermedia actúa como objeto para el ocular. La distancia de separación total $d$ entre lentes es el hueco total absoluto:\\n$$d = s'_1 + |s_2| = 20 + 18.52 = 38.52 \\text{ mm}$$",
+    "pista": "Usa la ecuación de lentes o espejos y después interpreta el signo de la imagen.",
+    "formula": "$$d = s'_1 + |s_2| = 20 + 18.52 = 38.52 \\text{ mm}$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 1509,
+    "dificultad": "Superior",
+    "bloque": "Tema 15: Instrumentos Ópticos y el Ojo Humano",
+    "enunciado": "*(Reto Supernova)*: Tienes una lente delgada de vidrio con $n = 1.5$ que en el aire funciona como una potente lente convergente de $+5$ dioptrías. Te sumerges con ella bajo el agua de una piscina ($n_{agua} = 1.33$) para intentar hacer fuego concentrando la luz del Sol. ¿Tendrá la lente la misma potencia de $+5$ dioptrías? Demuestra qué le pasa a su distancia focal usando la ecuación del fabricante de lentes.",
+    "resolucion_latex": "NO, su potencia cae en picado y dejará de funcionar eficazmente.\\nEcuación en el aire ($n_{ext} = 1$):\\n$$P_{aire} = \\left(\\frac{n_{vidrio}}{n_{aire}} - 1\\right) \\cdot K \\implies 5 = \\left(\\frac{1.5}{1} - 1\\right) \\cdot K = 0.5 \\cdot K \\implies K = 10$$\\nDonde $K$ es el factor geométrico de los radios de curvatura de la lente (que no cambia al sumergirla).\\nEcuación en el agua: el índice de refracción ya no es absoluto, es relativo al agua.\\n$$P_{agua} = \\left(\\frac{n_{vidrio}}{n_{agua}} - 1\\right) \\cdot K = \\left(\\frac{1.5}{1.33} - 1\\right) \\cdot 10 = (1.127 - 1) \\cdot 10 = 0.127 \\cdot 10 = 1.27 \\text{ Dp}$$\\nAl sumergir la lente en un medio más denso como el agua, se pierde casi toda la refracción superficial porque los índices de refracción se parecen mucho más. ¡La lente pasa de 5 dioptrías a solo $1.27 \\text{ dioptrías}$ (cuatro veces menos potente)!",
+    "pista": "Usa la ecuación de lentes o espejos y después interpreta el signo de la imagen.",
+    "formula": "$$P_{aire} = \\left(\\frac{n_{vidrio}}{n_{aire}} - 1\\right) \\cdot K \\implies 5 = \\left(\\frac{1.5}{1} - 1\\right) \\cdot K = 0.5 \\cdot K \\implies K = 10$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 1601,
+    "dificultad": "Fácil",
+    "bloque": "Tema 16: Relatividad y Cuántica",
+    "enunciado": "Un astronauta viaja en una nave a una velocidad $v = 0.8c$ respecto a la Tierra. Si el viaje dura 10 años medidos por los controladores en la Tierra, ¿cuánto tiempo ha transcurrido en el reloj de la nave del astronauta?",
+    "resolucion_latex": "Ecuación de dilatación del tiempo: $\\Delta t = \\gamma \\Delta t_0$, donde $\\gamma = \\frac{1}{\\sqrt{1 - v^2/c^2}}$.\\nEl tiempo propio $\\Delta t_0$ es el que mide el astronauta (en reposo respecto a su propio reloj).\\nCalculamos el factor de Lorentz:\\n$$\\gamma = \\frac{1}{\\sqrt{1 - (0.8c)^2/c^2}} = \\frac{1}{\\sqrt{1 - 0.64}} = \\frac{1}{\\sqrt{0.36}} = \\frac{1}{0.6} = \\frac{5}{3}$$\\nSustituimos en la ecuación:\\n$$10 = \\left(\\frac{5}{3}\\right) \\Delta t_0 \\implies \\Delta t_0 = \\frac{10 \\cdot 3}{5} = 6 \\text{ años}$$\\nEl astronauta solo ha envejecido 6 años.",
+    "pista": "Cuando las velocidades son próximas a la de la luz, usa el factor de Lorentz.",
+    "formula": "$$\\gamma = \\frac{1}{\\sqrt{1 - (0.8c)^2/c^2}} = \\frac{1}{\\sqrt{1 - 0.64}} = \\frac{1}{\\sqrt{0.36}} = \\frac{1}{0.6} = \\frac{5}{3}$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 1602,
+    "dificultad": "Fácil",
+    "bloque": "Tema 16: Relatividad y Cuántica",
+    "enunciado": "Calcula la energía equivalente en julios (J) que se obtendría si se convirtiera íntegramente en energía la masa de 1 gramo de materia. (Dato: $c = 3 \\times 10^8 \\text{ m/s}$).",
+    "resolucion_latex": "Aplicamos la ecuación de equivalencia masa-energía de Einstein:\\n$$E = m \\cdot c^2$$\\nPasamos la masa al Sistema Internacional: $m = 1 \\text{ g} = 10^{-3} \\text{ kg}$.\\n$$E = (10^{-3}) \\cdot (3 \\times 10^8)^2 = (10^{-3}) \\cdot (9 \\times 10^{16}) = 9 \\times 10^{13} \\text{ J}$$\\n(Es una cantidad colosal de energía por un solo gramo).",
+    "pista": "Identifica si el problema es relativista, cuántico o de fotones antes de aplicar la fórmula.",
+    "formula": "$$E = m \\cdot c^2$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 1603,
+    "dificultad": "Fácil",
+    "bloque": "Tema 16: Relatividad y Cuántica",
+    "enunciado": "Calcula la longitud de onda de De Broglie asociada a un electrón que se mueve con una velocidad de $2 \\times 10^6 \\text{ m/s}$. (Datos: $m_e = 9.1 \\times 10^{-31} \\text{ kg}$, $h = 6.63 \\times 10^{-34} \\text{ J s}$).",
+    "resolucion_latex": "Hipótesis de De Broglie:\\n$$\\lambda = \\frac{h}{p} = \\frac{h}{m \\cdot v}$$\\n$$\\lambda = \\frac{6.63 \\times 10^{-34}}{(9.1 \\times 10^{-31}) \\cdot (2 \\times 10^6)}$$\\n$$\\lambda = \\frac{6.63 \\times 10^{-34}}{1.82 \\times 10^{-24}} \\approx 3.64 \\times 10^{-10} \\text{ m}$$\\n(Esta onda está en el rango de los rayos X).",
+    "pista": "Asocia momento lineal y longitud de onda mediante la hipótesis de De Broglie.",
+    "formula": "$$\\lambda = \\frac{h}{p} = \\frac{h}{m \\cdot v}$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 1604,
+    "dificultad": "Media",
+    "bloque": "Tema 16: Relatividad y Cuántica",
+    "enunciado": "Una nave espacial tiene una longitud en reposo de 100 m. Cuando pasa junto a la Tierra, los observadores terrestres miden que su longitud es de 60 m. ¿A qué velocidad viaja la nave respecto a la Tierra?",
+    "resolucion_latex": "Ecuación de contracción de la longitud: $L = \\frac{L_0}{\\gamma} = L_0 \\sqrt{1 - v^2/c^2}$.\\n$L_0 = 100 \\text{ m}$ (longitud propia). $L = 60 \\text{ m}$ (longitud aparente y acortada).\\n$$60 = 100 \\sqrt{1 - v^2/c^2} \\implies 0.6 = \\sqrt{1 - v^2/c^2}$$\\nElevamos al cuadrado:\\n$$0.36 = 1 - \\frac{v^2}{c^2} \\implies \\frac{v^2}{c^2} = 1 - 0.36 = 0.64$$\\n$$\\frac{v}{c} = \\sqrt{0.64} = 0.8 \\implies v = 0.8c = 2.4 \\times 10^8 \\text{ m/s}$$",
+    "pista": "Cuando las velocidades son próximas a la de la luz, usa el factor de Lorentz.",
+    "formula": "$$\\frac{v}{c} = \\sqrt{0.64} = 0.8 \\implies v = 0.8c = 2.4 \\times 10^8 \\text{ m/s}$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 1605,
+    "dificultad": "Media",
+    "bloque": "Tema 16: Relatividad y Cuántica",
+    "enunciado": "El trabajo de extracción (función de trabajo) del potasio es $W_0 = 2.2 \\text{ eV}$. Calcula la frecuencia umbral y la longitud de onda umbral a partir de la cual se produce el efecto fotoeléctrico en este metal. (Dato: $1 \\text{ eV} = 1.6 \\times 10^{-19} \\text{ J}$).",
+    "resolucion_latex": "Pasamos la energía a Julios:\\n$$W_0 = 2.2 \\text{ eV} \\cdot (1.6 \\times 10^{-19}) = 3.52 \\times 10^{-19} \\text{ J}$$\\nFrecuencia umbral ($f_0$):\\n$$W_0 = h f_0 \\implies f_0 = \\frac{W_0}{h} = \\frac{3.52 \\times 10^{-19}}{6.63 \\times 10^{-34}} \\approx 5.31 \\times 10^{14} \\text{ Hz}$$\\nLongitud de onda umbral ($\\lambda_0$):\\n$$c = \\lambda_0 f_0 \\implies \\lambda_0 = \\frac{c}{f_0} = \\frac{3 \\times 10^8}{5.31 \\times 10^{14}} \\approx 5.65 \\times 10^{-7} \\text{ m} = 565 \\text{ nm}$$",
+    "pista": "Asocia momento lineal y longitud de onda mediante la hipótesis de De Broglie.",
+    "formula": "$$W_0 = 2.2 \\text{ eV} \\cdot (1.6 \\times 10^{-19}) = 3.52 \\times 10^{-19} \\text{ J}$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 1606,
+    "dificultad": "Media",
+    "bloque": "Tema 16: Relatividad y Cuántica",
+    "enunciado": "Calcula el momento lineal ($p$) y la longitud de onda asociada a un fotón de rayos X cuya energía es de $50 \\text{ keV}$.",
+    "resolucion_latex": "Un fotón no tiene masa en reposo, por lo que $p = \\frac{E}{c}$.\\nEnergía: $E = 50 \\text{ keV} = 50000 \\text{ eV} = 50000 \\cdot (1.6 \\times 10^{-19}) = 8 \\times 10^{-15} \\text{ J}$.\\nMomento lineal:\\n$$p = \\frac{8 \\times 10^{-15}}{3 \\times 10^8} \\approx 2.67 \\times 10^{-23} \\text{ kg m/s}$$\\nLongitud de onda:\\n$$\\lambda = \\frac{h}{p} = \\frac{6.63 \\times 10^{-34}}{2.67 \\times 10^{-23}} \\approx 2.48 \\times 10^{-11} \\text{ m}$$",
+    "pista": "Asocia momento lineal y longitud de onda mediante la hipótesis de De Broglie.",
+    "formula": "$$p = \\frac{8 \\times 10^{-15}}{3 \\times 10^8} \\approx 2.67 \\times 10^{-23} \\text{ kg m/s}$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 1607,
+    "dificultad": "Difícil",
+    "bloque": "Tema 16: Relatividad y Cuántica",
+    "enunciado": "Se ilumina una superficie de un metal con luz de $\\lambda = 300 \\text{ nm}$, emitiendo electrones con una energía cinética máxima de $1.2 \\text{ eV}$.\\na) Calcula el trabajo de extracción del metal en eV.\\nb) ¿Cuál es el potencial de frenado (potencial de corte) necesario para detener a estos electrones?",
+    "resolucion_latex": "a) Energía del fotón incidente:\\n$$E = \\frac{hc}{\\lambda} = \\frac{(6.63 \\times 10^{-34})(3 \\times 10^8)}{300 \\times 10^{-9}} = 6.63 \\times 10^{-19} \\text{ J}$$\\nConvertimos a eV:\\n$$E = \\frac{6.63 \\times 10^{-19}}{1.6 \\times 10^{-19}} \\approx 4.14 \\text{ eV}$$\\nEcuación de Einstein del efecto fotoeléctrico: $E = W_0 + E_c$.\\n$$4.14 = W_0 + 1.2 \\implies W_0 = 4.14 - 1.2 = 2.94 \\text{ eV}$$\\n\\nb) Potencial de frenado ($V_s$): toda la energía cinética máxima es frenada por el campo eléctrico adverso.\\n$$E_c = e \\cdot V_s \\implies 1.2 \\text{ eV} = e \\cdot V_s$$\\nAl estar en electronvoltios, la carga $e$ se cancela a ambos lados, dando directamente el voltaje en Voltios:\\n$$V_s = 1.2 \\text{ V}$$",
+    "pista": "Identifica si el problema es relativista, cuántico o de fotones antes de aplicar la fórmula.",
+    "formula": "$$E_c = e \\cdot V_s \\implies 1.2 \\text{ eV} = e \\cdot V_s$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 1608,
+    "dificultad": "Difícil",
+    "bloque": "Tema 16: Relatividad y Cuántica",
+    "enunciado": "Aplica el Principio de Incertidumbre de Heisenberg ($\\Delta x \\cdot \\Delta p \\ge \\frac{h}{4\\pi}$) para calcular la incertidumbre mínima en la velocidad de un electrón si sabemos que su posición está determinada con una precisión de $10^{-10} \\text{ m}$ (el tamaño aproximado de un átomo). Comenta el resultado.",
+    "resolucion_latex": "Sabemos que la incertidumbre en el momento es $\\Delta p = m \\Delta v$.\\n$$\\Delta x \\cdot (m_e \\Delta v) = \\frac{h}{4\\pi} \\implies \\Delta v = \\frac{h}{4\\pi \\cdot m_e \\cdot \\Delta x}$$\\nSustituimos los datos:\\n$$\\Delta v = \\frac{6.63 \\times 10^{-34}}{4\\pi \\cdot (9.1 \\times 10^{-31}) \\cdot (10^{-10})} \\approx 5.79 \\times 10^5 \\text{ m/s}$$\\n**Comentario**: Esta incertidumbre es gigantesca. Significa que, si obligamos al electrón a 'estar' dentro del límite de un átomo, su velocidad tiene un error indetectable de casi $580 \\text{ km/s}$. Por esto mismo, la física clásica fracasa a nivel atómico y es imposible hablar de 'órbitas' trazables tipo planetarias para los electrones, obligando a usar 'nubes de probabilidad'.",
+    "pista": "Cuando las velocidades son próximas a la de la luz, usa el factor de Lorentz.",
+    "formula": "$$\\Delta x \\cdot (m_e \\Delta v) = \\frac{h}{4\\pi} \\implies \\Delta v = \\frac{h}{4\\pi \\cdot m_e \\cdot \\Delta x}$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 1609,
+    "dificultad": "Superior",
+    "bloque": "Tema 16: Relatividad y Cuántica",
+    "enunciado": "*(Reto Supernova)*: Un protón viaja a una velocidad $v = 0.9c$. Un estudiante calcula su energía cinética usando la fórmula clásica $E_c = \\frac{1}{2}mv^2$. Sabiendo que $m_p = 1.67 \\times 10^{-27} \\text{ kg}$, realiza tú el cálculo correcto de la energía cinética relativista y compáralo con el resultado clásico que obtuvo el estudiante. ¿Por qué la fórmula clásica falla estrepitosamente aquí?",
+    "resolucion_latex": "Cálculo clásico del estudiante:\\n$$E_{c,clas} = 0.5 \\cdot m_p \\cdot v^2 = 0.5(1.67 \\times 10^{-27})(0.9 \\cdot 3 \\times 10^8)^2 = 0.5(1.67 \\times 10^{-27})(7.29 \\times 10^{16}) \\approx 6.09 \\times 10^{-11} \\text{ J}$$\\nCálculo Relativista correcto ($E_c = E_{total} - E_{reposo}$):\\n$$E_{c,rel} = \\gamma mc^2 - mc^2 = (\\gamma - 1)mc^2$$\\nEl factor de Lorentz a $0.9c$ es:\\n$$\\gamma = \\frac{1}{\\sqrt{1 - 0.9^2}} = \\frac{1}{\\sqrt{0.19}} \\approx 2.294$$\\n$$E_{c,rel} = (2.294 - 1)(1.67 \\times 10^{-27})(3 \\times 10^8)^2 = 1.294 \\cdot (1.503 \\times 10^{-10}) \\approx 1.94 \\times 10^{-10} \\text{ J}$$\\n**Conclusión**: El cálculo clásico es completamente falso a $v = 0.9c$ porque asume que la masa (inercia) es constante e independiente de la velocidad. A velocidades cercanas a $c$, la inercia (factor gamma) aumenta drásticamente, haciendo falta casi **más del triple** de energía física real ($1.94 \\times 10^{-10} \\text{ J}$) de la predicha por Newton ($6.09 \\times 10^{-11} \\text{ J}$) para acelerar ese protón.",
+    "pista": "Cuando las velocidades son próximas a la de la luz, usa el factor de Lorentz.",
+    "formula": "$$E_{c,rel} = \\gamma mc^2 - mc^2 = (\\gamma - 1)mc^2$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 1701,
+    "dificultad": "Fácil",
+    "bloque": "Tema 17: Física Nuclear y de Partículas",
+    "enunciado": "Escribe la ecuación de la desintegración alfa ($\\alpha$) del Uranio-238 ($^{238}_{92}\\text{U}$) indicando el número atómico y másico del núcleo hijo resultante. (Consulta en tu cabeza que el elemento Z=90 es el Torio, Th).",
+    "resolucion_latex": "La partícula $\\alpha$ es un núcleo de Helio ($^4_2\\text{He}$), por lo que en el decaimiento se restan 4 unidades al número másico (A) y 2 al número atómico (Z).\\nEcuación de la reacción:\\n$$^{238}_{92}\\text{U} \\rightarrow ^{234}_{90}\\text{Th} + ^4_2\\text{He} \\text{ (o } \\alpha)$$",
+    "pista": "En procesos nucleares se conservan la carga total y el número de nucleones.",
+    "formula": "$$^{238}_{92}\\text{U} \\rightarrow ^{234}_{90}\\text{Th} + ^4_2\\text{He} \\text{ (o } \\alpha)$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 1702,
+    "dificultad": "Fácil",
+    "bloque": "Tema 17: Física Nuclear y de Partículas",
+    "enunciado": "Una muestra radiactiva tiene una actividad inicial de $8000 \\text{ Bq}$ y un periodo de semidesintegración de 3 días. Calcula la actividad de la muestra al cabo de 9 días.",
+    "resolucion_latex": "Periodo de semidesintegración $T_{1/2} = 3 \\text{ días}$. Tiempo transcurrido $t = 9 \\text{ días}$.\\nEl número exacto de semividas (ciclos completos de reducción) que han pasado es:\\n$$n = \\frac{t}{T_{1/2}} = \\frac{9}{3} = 3 \\text{ ciclos}$$\\nLa actividad se reduce a la mitad en cada ciclo ($A = \\frac{A_0}{2^n}$):\\n$$A = \\frac{8000}{2^3} = \\frac{8000}{8} = 1000 \\text{ Bq (Becquerelios)}$$",
+    "pista": "La desintegración radiactiva sigue una ley exponencial; usa semividas si el dato viene en mitades.",
+    "formula": "$$n = \\frac{t}{T_{1/2}} = \\frac{9}{3} = 3 \\text{ ciclos}$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 1703,
+    "dificultad": "Fácil",
+    "bloque": "Tema 17: Física Nuclear y de Partículas",
+    "enunciado": "Determina las partículas emitidas en la siguiente serie de desintegraciones:\\n$$^{234}_{90}\\text{Th} \\rightarrow X + ^{234}_{91}\\text{Pa} \\rightarrow Y + ^{234}_{92}\\text{U}$$",
+    "resolucion_latex": "Reacción 1: de $^{234}_{90}\\text{Th}$ a $^{234}_{91}\\text{Pa}$.\\nEl número másico (234) no cambia, pero el número atómico (Z) sube en 1 unidad (de 90 a 91). Esto ocurre exclusivamente al emitir un electrón nuclear (partícula con carga -1 y masa 0).\\nPor tanto, **X es una partícula $\\beta^-$ (\\$^0_{-1}\\text{e}$)**.\\n\\nReacción 2: de $^{234}_{91}\\text{Pa}$ a $^{234}_{92}\\text{U}$.\\nOcurre exactamente lo mismo, la masa es constante y Z sube de 91 a 92.\\nPor tanto, **Y es otra partícula $\\beta^-$**.",
+    "pista": "En procesos nucleares se conservan la carga total y el número de nucleones.",
+    "formula": "$$^{234}_{90}\\text{Th}$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 1704,
+    "dificultad": "Media",
+    "bloque": "Tema 17: Física Nuclear y de Partículas",
+    "enunciado": "La masa atómica experimental del núcleo de Helio-4 ($^4_2\\text{He}$) es de $4.002603 \\text{ u}$. Sabiendo que la masa de un protón es $1.007276 \\text{ u}$ y la de un neutrón $1.008665 \\text{ u}$.\\na) Calcula el defecto de masa en unidades de masa atómica (u).\\nb) Calcula la energía de enlace por nucleón en MeV/nucleón. (Dato: $1 \\text{ u} = 931.5 \\text{ MeV}$).",
+    "resolucion_latex": "a) El Helio-4 tiene 2 protones y 2 neutrones. Masa teórica de los nucleones separados:\\n$$M_{separados} = 2 \\cdot m_p + 2 \\cdot m_n = 2(1.007276) + 2(1.008665) = 2.014552 + 2.017330 = 4.031882 \\text{ u}$$\\nDefecto de masa (masa perdida al unirse):\\n$$\\Delta m = M_{separados} - M_{nucleo} = 4.031882 - 4.002603 = 0.029279 \\text{ u}$$\\n\\nb) Energía de enlace neta ($E_e$):\\n$$E_e = \\Delta m \\cdot 931.5 = 0.029279 \\cdot 931.5 \\approx 27.27 \\text{ MeV}$$\\nEnergía de enlace específica (por nucleón, $A=4$):\\n$$E_n = \\frac{E_e}{A} = \\frac{27.27}{4} \\approx 6.82 \\text{ MeV/nucleón}$$",
+    "pista": "Convierte el defecto de masa en energía con la equivalencia masa-energía.",
+    "formula": "$$E_n = \\frac{E_e}{A} = \\frac{27.27}{4} \\approx 6.82 \\text{ MeV/nucleón}$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 1705,
+    "dificultad": "Media",
+    "bloque": "Tema 17: Física Nuclear y de Partículas",
+    "enunciado": "Un isótopo radiactivo tiene una vida media ($\\tau$) de 20 años. Si inicialmente tenemos una muestra de 100 gramos de dicho isótopo, ¿cuántos gramos quedarán sin desintegrar al cabo de 50 años?",
+    "resolucion_latex": "¡Cuidado! La vida media ($\\tau$) NO es lo mismo que el periodo de semidesintegración.\\nLa constante radiactiva ($\\lambda$) es la inversa de la vida media:\\n$$\\lambda = \\frac{1}{\\tau} = \\frac{1}{20} = 0.05 \\text{ años}^{-1}$$\\nAplicamos la ley de decaimiento radiactivo (sirve igual para el número de núcleos o la masa total de la muestra):\\n$$m = m_0 e^{-\\lambda t} = 100 \\cdot e^{-0.05 \\cdot 50} = 100 \\cdot e^{-2.5}$$\\nComo $e^{-2.5} \\approx 0.082$:\\n$$m \\approx 100 \\cdot 0.082 = 8.2 \\text{ gramos restantes}$$",
+    "pista": "La desintegración radiactiva sigue una ley exponencial; usa semividas si el dato viene en mitades.",
+    "formula": "$$\\lambda = \\frac{1}{\\tau} = \\frac{1}{20} = 0.05 \\text{ años}^{-1}$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 1706,
+    "dificultad": "Media",
+    "bloque": "Tema 17: Física Nuclear y de Partículas",
+    "enunciado": "Completa la siguiente reacción de fusión nuclear y calcula la energía liberada ($Q$):\\n$$^2_1\\text{H} + ^3_1\\text{H} \\rightarrow ^4_2\\text{He} + X$$\\nDatos de masa: $m(^2_1\\text{H}) = 2.0141 \\text{ u}$, $m(^3_1\\text{H}) = 3.0160 \\text{ u}$, $m(^4_2\\text{He}) = 4.0026 \\text{ u}$, $m(n) = 1.0087 \\text{ u}$. (Dato: $1 \\text{ u} = 931.5 \\text{ MeV}$).",
+    "resolucion_latex": "Identificación de la partícula $X$ (conservación de números atómicos y másicos):\\nNucleones ($A$): $2 + 3 = 4 + A_x \\implies A_x = 1$.\\nCarga ($Z$): $1 + 1 = 2 + Z_x \\implies Z_x = 0$.\\nLa partícula con $A=1$ y $Z=0$ es un **neutrón** ($^1_0\\text{n}$).\\nBalance de masas (Reactivos - Productos):\\n$$\\Delta m = (2.0141 + 3.0160) - (4.0026 + 1.0087) = 5.0301 - 5.0113 = 0.0188 \\text{ u}$$\\nEnergía radiada ($Q$):\\n$$Q = \\Delta m \\cdot 931.5 = 0.0188 \\cdot 931.5 \\approx 17.51 \\text{ MeV}$$",
+    "pista": "Convierte el defecto de masa en energía con la equivalencia masa-energía.",
+    "formula": "$$Q = \\Delta m \\cdot 931.5 = 0.0188 \\cdot 931.5 \\approx 17.51 \\text{ MeV}$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 1707,
+    "dificultad": "Difícil",
+    "bloque": "Tema 17: Física Nuclear y de Partículas",
+    "enunciado": "El Carbono-14 tiene un periodo de semidesintegración de 5730 años. Se descubre un hueso fósil en un yacimiento y se mide que su actividad radiactiva por gramo de carbono es de solo el $15\\%$ de la que tendría un ser vivo actual. Calcula la edad del fósil.",
+    "resolucion_latex": "Actividad del fósil actual: $A = 0.15 A_0$.\\nCalculamos la constante radiactiva $\\lambda$ a partir del periodo:\\n$$\\lambda = \\frac{\\ln(2)}{T_{1/2}} = \\frac{\\ln(2)}{5730} \\approx 1.21 \\times 10^{-4} \\text{ años}^{-1}$$\\nLey de la actividad radiactiva:\\n$$A = A_0 e^{-\\lambda t} \\implies 0.15 A_0 = A_0 e^{-\\lambda t} \\implies 0.15 = e^{-\\lambda t}$$\\nTomamos logaritmos neperianos a ambos lados:\\n$$\\ln(0.15) = -\\lambda t \\implies -1.897 = -(1.21 \\times 10^{-4}) t$$\\n$$t = \\frac{1.897}{1.21 \\times 10^{-4}} \\approx 15677 \\text{ años de antigüedad}$$",
+    "pista": "La desintegración radiactiva sigue una ley exponencial; usa semividas si el dato viene en mitades.",
+    "formula": "$$A = A_0 e^{-\\lambda t} \\implies 0.15 A_0 = A_0 e^{-\\lambda t} \\implies 0.15 = e^{-\\lambda t}$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 1708,
+    "dificultad": "Difícil",
+    "bloque": "Tema 17: Física Nuclear y de Partículas",
+    "enunciado": "Según el Modelo Estándar de la física de partículas, los protones y neutrones están formados por quarks *up* (carga $+2/3 e$) y quarks *down* (carga $-1/3 e$).\\na) Determina la composición de quarks de un protón y de un neutrón.\\nb) Explica en términos de quarks qué es lo que realmente sucede dentro del núcleo durante una desintegración beta menos ($\\beta^-$).",
+    "resolucion_latex": "a) Protón (carga neta $+1 e$): Está formado por tres quarks. Para que la carga sume 1, debe ser **$uud$**.\\n$$\\frac{2}{3} + \\frac{2}{3} - \\frac{1}{3} = \\frac{3}{3} = +1$$\\nNeutrón (carga neta $0$): Para que la carga se anule, debe ser **$udd$**.\\n$$\\frac{2}{3} - \\frac{1}{3} - \\frac{1}{3} = 0$$\\n\\nb) En una desintegración $\\beta^-$, un neutrón del núcleo se transforma en un protón. A nivel subatómico fundamental, lo que ocurre realmente es que un **quark down ($d$) del neutrón original experimenta una mutación (interacción nuclear débil), transformándose en un quark up ($u$)**.\\nAsí, la estructura del neutrón ($udd$) muta internamente a la del protón ($uud$). Para conservar la energía y la carga en este proceso, el quark emite un bosón virtual $W^-$, el cual decae casi instantáneamente creando el electrón (partícula $\\beta^-$) y un antineutrino electrónico ($\\bar{\\nu}_e$) que salen disparados fuera del átomo.",
+    "pista": "En procesos nucleares se conservan la carga total y el número de nucleones.",
+    "formula": "$$\\frac{2}{3} - \\frac{1}{3} - \\frac{1}{3} = 0$$"
+  },
+  {
+    "asignatura": "Física 2º Bach",
+    "id": 1709,
+    "dificultad": "Superior",
+    "bloque": "Tema 17: Física Nuclear y de Partículas",
+    "enunciado": "*(Reto Supernova)*: Un medio de comunicación publica el siguiente titular: 'Un residuo nuclear tiene una vida media de 30 años, por lo que a los 60 años habrá desaparecido por completo de la faz de la Tierra'. Como estudiante de física, redacta una corrección a este periodista explicando el significado real estadístico de la ley de desintegración y demostrando cuánto residuo quedará realmente tras esos 60 años.",
+    "resolucion_latex": "El periodista confunde de manera abismal la caída lineal con la decadencia exponencial.\\nLa vida media (o incluso el periodo de semidesintegración, que es con lo que suele tropezar la prensa) NO implica que la sustancia desaparezca un porcentaje fijo cada año hasta llegar a cero.\\nLa desintegración sigue una curva exponencial asintótica: $N = N_0 e^{-t/\\tau}$.\\nSi la vida media es $\\tau = 30 \\text{ años}$, a los $t = 60 \\text{ años}$ (dos vidas medias exactas) la cantidad que queda es:\\n$$N = N_0 e^{-60/30} = N_0 e^{-2} \\approx 0.135 N_0$$\\nAún quedará vivo y emitiendo radiación un **$13.5\\%$ del residuo tóxico original**.\\n*(Incluso si el periodista se hubiera confundido de término y se refiriera al 'periodo de semidesintegración' ($T_{1/2}$), a los 30 años quedaría la mitad, y a los 60 años quedaría la mitad de la mitad, es decir, la cuarta parte ($25\\%$), nunca cero).*\\nEn la física de partículas, estadísticamente, el nivel de radiactividad jamás llega al cero absoluto en un tiempo finito, por lo que los almacenes nucleares requieren escalas de milenios.",
+    "pista": "La desintegración radiactiva sigue una ley exponencial; usa semividas si el dato viene en mitades.",
+    "formula": "$$N = N_0 e^{-60/30} = N_0 e^{-2} \\approx 0.135 N_0$$"
+  }
+]

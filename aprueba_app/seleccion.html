@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A-PRUEBA | Selector de Misión</title>
+    <meta name="description" content="Elige tu asignatura y tema de prueba gratuito en A-PRUEBA.">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        :root {
+            --neon-math: #00f2fe;
+            --neon-physics: #ff4500;
+            --neon-chemistry: #00ff88;
+            --neon-purple: #8c52ff;
+            --current-neon: #00f2fe;
+            --bg-dark: #07090f;
+        }
+
+        body {
+            background: var(--bg-dark);
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        /* ── Stars Background ── */
+        .stars-bg {
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background-image:
+                radial-gradient(1.5px 1.5px at 15px 25px, rgba(255,255,255,0.9), transparent),
+                radial-gradient(1px 1px at 55px 80px, rgba(255,255,255,0.7), transparent),
+                radial-gradient(2px 2px at 110px 45px, rgba(255,255,255,0.5), transparent),
+                radial-gradient(1px 1px at 175px 130px, rgba(255,255,255,0.8), transparent),
+                radial-gradient(1.5px 1.5px at 245px 65px, rgba(255,255,255,0.6), transparent),
+                radial-gradient(1px 1px at 320px 20px, rgba(255,255,255,0.9), transparent),
+                radial-gradient(2px 2px at 10px 160px, rgba(255,255,255,0.5), transparent),
+                radial-gradient(1px 1px at 370px 100px, rgba(255,255,255,0.7), transparent);
+            background-repeat: repeat;
+            background-size: 400px 200px;
+            opacity: 0.4;
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        .nebula {
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background:
+                radial-gradient(ellipse at 15% 20%, rgba(45, 110, 255, 0.18) 0%, transparent 45%),
+                radial-gradient(ellipse at 85% 75%, rgba(138, 43, 226, 0.2) 0%, transparent 45%),
+                radial-gradient(ellipse at 50% 50%, rgba(7, 9, 15, 0.6) 0%, transparent 70%);
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        /* ── Navbar ── */
+        .navbar {
+            width: 100%;
+            height: 72px;
+            padding: 0 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(7, 9, 15, 0.7);
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+            z-index: 200;
+            position: relative;
+        }
+
+        .nav-brand {
+            font-size: 1.4rem;
+            font-weight: 800;
+            letter-spacing: 3px;
+            background: linear-gradient(90deg, #00f2fe 0%, #4facfe 60%, #8c52ff 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-decoration: none;
+        }
+
+        #nav-user-name {
+            font-size: 0.85rem;
+            color: #a0a0b8;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        /* ── Auth Loading Overlay ── */
+        #authLoading {
+            position: fixed;
+            top: 0; left: 0;
+            width: 100vw; height: 100vh;
+            background: #07090f;
+            z-index: 9999;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color: #00f2fe;
+        }
+
+        .spinner {
+            width: 52px; height: 52px;
+            border: 3px solid rgba(0,242,254,0.15);
+            border-top-color: #00f2fe;
+            border-radius: 50%;
+            animation: spin 0.9s linear infinite;
+            margin-bottom: 1.2rem;
+        }
+
+        @keyframes spin { 100% { transform: rotate(360deg); } }
+
+        /* ── Main Container ── */
+        .container {
+            width: 100%;
+            max-width: 1100px;
+            padding: 3rem 2rem 4rem;
+            z-index: 10;
+            position: relative;
+            flex: 1;
+            animation: fadeSlideIn 0.7s ease-out both;
+        }
+
+        @keyframes fadeSlideIn {
+            from { opacity: 0; transform: translateY(28px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+
+        /* ── Header ── */
+        .page-header {
+            text-align: center;
+            margin-bottom: 3.5rem;
+        }
+
+        .page-header .superlabel {
+            font-size: 0.78rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: #8c52ff;
+            margin-bottom: 0.8rem;
+            display: block;
+        }
+
+        .page-header h1 {
+            font-size: clamp(1.8rem, 4vw, 2.8rem);
+            font-weight: 800;
+            line-height: 1.2;
+            background: linear-gradient(135deg, #ffffff 0%, #b9f2ff 50%, #8c52ff 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: none;
+            margin-bottom: 1rem;
+        }
+
+        .page-header .subtitle {
+            font-size: 1.05rem;
+            color: #a0a0b8;
+            font-weight: 300;
+            max-width: 560px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        /* ── Freemium Hook Banner ── */
+        .hook-banner {
+            background: linear-gradient(135deg, rgba(140, 82, 255, 0.12) 0%, rgba(0, 242, 254, 0.1) 100%);
+            border: 1px solid rgba(140, 82, 255, 0.4);
+            border-radius: 16px;
+            padding: 1.2rem 2rem;
+            text-align: center;
+            margin-bottom: 3rem;
+            position: relative;
+            overflow: hidden;
+            animation: pulseBorder 2.5s ease-in-out infinite alternate;
+        }
+
+        @keyframes pulseBorder {
+            from { box-shadow: 0 0 20px rgba(140,82,255,0.1); border-color: rgba(140,82,255,0.3); }
+            to   { box-shadow: 0 0 40px rgba(140,82,255,0.4); border-color: rgba(140,82,255,0.7); }
+        }
+
+        .hook-banner .credit-badge {
+            display: inline-block;
+            background: linear-gradient(90deg, #8c52ff, #00f2fe);
+            color: #000;
+            font-weight: 700;
+            font-size: 0.75rem;
+            padding: 0.25rem 0.8rem;
+            border-radius: 50px;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            margin-bottom: 0.6rem;
+        }
+
+        .hook-banner p {
+            color: #d0d0e8;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        .hook-banner strong {
+            color: #00f2fe;
+        }
+
+        /* ── Section Labels ── */
+        .section-label {
+            font-size: 0.78rem;
+            text-transform: uppercase;
+            letter-spacing: 2.5px;
+            color: #606080;
+            margin-bottom: 1.2rem;
+            margin-top: 2.5rem;
+        }
+
+        /* ── Subject Cards ── */
+        .subject-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        @media (max-width: 700px) {
+            .subject-grid { grid-template-columns: 1fr; }
+        }
+
+        .subject-card {
+            background: rgba(20, 20, 38, 0.45);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 2px solid rgba(255,255,255,0.07);
+            border-radius: 22px;
+            padding: 2.2rem 1.5rem;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            position: relative;
+            overflow: hidden;
+            user-select: none;
+        }
+
+        .subject-card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 3px;
+            border-radius: 22px 22px 0 0;
+            opacity: 0.6;
+            transition: opacity 0.3s;
+        }
+
+        .subject-card.fisica::before  { background: linear-gradient(90deg, #ff4500, #ff8c42); }
+        .subject-card.mates::before   { background: linear-gradient(90deg, #00f2fe, #4facfe); }
+        .subject-card.quimica::before { background: linear-gradient(90deg, #00ff88, #00d4af); }
+
+        .subject-card .s-icon {
+            font-size: 3.2rem;
+            margin-bottom: 1rem;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+
+        .subject-card h2 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            color: #ffffff;
+        }
+
+        .subject-card p {
+            font-size: 0.85rem;
+            color: #8888a0;
+            line-height: 1.5;
+        }
+
+        /* Hover states */
+        .subject-card:hover {
+            transform: translateY(-8px) scale(1.02);
+        }
+
+        .subject-card.fisica:hover {
+            border-color: rgba(255, 69, 0, 0.6);
+            box-shadow: 0 12px 40px rgba(255, 69, 0, 0.25), inset 0 0 30px rgba(255, 69, 0, 0.05);
+        }
+
+        .subject-card.mates:hover {
+            border-color: rgba(0, 242, 254, 0.6);
+            box-shadow: 0 12px 40px rgba(0, 242, 254, 0.25), inset 0 0 30px rgba(0, 242, 254, 0.05);
+        }
+
+        .subject-card.quimica:hover {
+            border-color: rgba(0, 255, 136, 0.6);
+            box-shadow: 0 12px 40px rgba(0, 255, 136, 0.25), inset 0 0 30px rgba(0, 255, 136, 0.05);
+        }
+
+        .subject-card:hover .s-icon {
+            transform: scale(1.15) rotate(-5deg);
+        }
+
+        /* Selected state */
+        .subject-card.selected.fisica  {
+            border-color: rgba(255, 69, 0, 0.9) !important;
+            box-shadow: 0 0 30px rgba(255, 69, 0, 0.4), inset 0 0 40px rgba(255, 69, 0, 0.08) !important;
+            background: rgba(255, 69, 0, 0.06);
+        }
+
+        .subject-card.selected.mates {
+            border-color: rgba(0, 242, 254, 0.9) !important;
+            box-shadow: 0 0 30px rgba(0, 242, 254, 0.4), inset 0 0 40px rgba(0, 242, 254, 0.08) !important;
+            background: rgba(0, 242, 254, 0.06);
+        }
+
+        .subject-card.selected.quimica {
+            border-color: rgba(0, 255, 136, 0.9) !important;
+            box-shadow: 0 0 30px rgba(0, 255, 136, 0.4), inset 0 0 40px rgba(0, 255, 136, 0.08) !important;
+            background: rgba(0, 255, 136, 0.06);
+        }
+
+        .subject-card.selected::before { opacity: 1; }
+
+        .check-badge {
+            position: absolute;
+            top: 14px; right: 14px;
+            width: 26px; height: 26px;
+            background: var(--card-neon, #00f2fe);
+            border-radius: 50%;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.75rem;
+            color: #000;
+            font-weight: 700;
+        }
+
+        .subject-card.selected .check-badge { display: flex; }
+
+        /* Locked card style */
+        .subject-card.locked {
+            opacity: 0.4;
+            cursor: not-allowed;
+            filter: grayscale(0.7);
+        }
+
+        .subject-card.locked:hover {
+            transform: none;
+            box-shadow: none;
+            border-color: rgba(255,255,255,0.07);
+        }
+
+        .lock-overlay {
+            position: absolute;
+            inset: 0;
+            background: rgba(7,9,15,0.6);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+        }
+
+        /* ── Topic Dropdown ── */
+        .topic-row {
+            display: flex;
+            gap: 1.5rem;
+            align-items: flex-end;
+            flex-wrap: wrap;
+            margin-top: 0.5rem;
+        }
+
+        .topic-group {
+            flex: 1;
+            min-width: 260px;
+        }
+
+        .topic-group label {
+            display: block;
+            font-size: 0.78rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #606080;
+            margin-bottom: 0.7rem;
+        }
+
+        select#tema-select {
+            width: 100%;
+            padding: 1rem 3rem 1rem 1.3rem;
+            background-color: rgba(20, 20, 38, 0.6);
+            background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2300f2fe' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 1.2rem center;
+            background-size: 1em;
+            border: 1px solid rgba(255,255,255,0.12);
+            border-radius: 14px;
+            color: white;
+            font-size: 1rem;
+            font-family: 'Montserrat', sans-serif;
+            outline: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            appearance: none;
+            -webkit-appearance: none;
+            backdrop-filter: blur(10px);
+        }
+
+        select#tema-select:focus,
+        select#tema-select:hover {
+            border-color: var(--current-neon);
+            box-shadow: 0 0 18px rgba(0, 242, 254, 0.25);
+        }
+
+        select#tema-select option {
+            background-color: #0f0a1e;
+            color: #fff;
+        }
+
+        /* ── Call To Action Buttons ── */
+        .cta-section {
+            text-align: center;
+            margin-top: 3rem;
+        }
+
+        .btn-launch {
+            display: inline-block;
+            background: linear-gradient(135deg, #00f2fe, #4facfe, #8c52ff);
+            background-size: 200% 200%;
+            color: #000;
+            border: none;
+            padding: 1.1rem 3.5rem;
+            font-size: 1.1rem;
+            font-weight: 800;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 25px rgba(0, 242, 254, 0.4);
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            animation: neonPulse 2s ease-in-out infinite alternate;
+            position: relative;
+            overflow: hidden;
+        }
+
+        @keyframes neonPulse {
+            from { box-shadow: 0 0 20px rgba(0,242,254,0.35); background-position: 0% 50%; }
+            to   { box-shadow: 0 0 45px rgba(140,82,255,0.55); background-position: 100% 50%; }
+        }
+
+        .btn-launch:hover {
+            transform: translateY(-3px) scale(1.03);
+        }
+
+        .btn-launch:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            animation: none;
+            transform: none;
+        }
+
+        .btn-pro-link {
+            display: inline-block;
+            margin-top: 1.5rem;
+            color: #606080;
+            font-size: 0.82rem;
+            font-weight: 600;
+            text-decoration: none;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            transition: color 0.2s;
+            cursor: pointer;
+            background: none;
+            border: none;
+        }
+
+        .btn-pro-link:hover { color: #00f2fe; }
+
+        /* ── Locked / Pro Mode ── */
+        #pro-cta-block {
+            display: none;
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        .btn-activate-pro {
+            display: inline-block;
+            background: linear-gradient(135deg, #8c52ff, #ff4dc4);
+            color: #fff;
+            border: none;
+            padding: 1.1rem 3.5rem;
+            font-size: 1.1rem;
+            font-weight: 800;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 30px rgba(140, 82, 255, 0.5);
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            animation: proPulse 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes proPulse {
+            from { box-shadow: 0 0 20px rgba(140,82,255,0.4); }
+            to   { box-shadow: 0 0 50px rgba(255,77,196,0.6); }
+        }
+
+        .btn-activate-pro:hover {
+            transform: scale(1.05);
+        }
+
+        .pro-lock-msg {
+            background: rgba(140, 82, 255, 0.08);
+            border: 1px solid rgba(140, 82, 255, 0.3);
+            border-radius: 16px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .pro-lock-msg .lock-icon { font-size: 3rem; margin-bottom: 1rem; }
+
+        .pro-lock-msg h3 {
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            color: #e0b0ff;
+        }
+
+        .pro-lock-msg p { color: #a0a0b8; font-size: 0.95rem; line-height: 1.5; }
+
+        /* ── Footer ── */
+        footer {
+            width: 100%;
+            padding: 1.2rem;
+            text-align: center;
+            background: rgba(7, 9, 15, 0.5);
+            backdrop-filter: blur(10px);
+            border-top: 1px solid rgba(255,255,255,0.05);
+            z-index: 100;
+            position: relative;
+        }
+
+        footer p { font-size: 0.82rem; color: #505060; }
+    </style>
+</head>
+
+<body>
+    <!-- Stars + Nebula -->
+    <div class="stars-bg"></div>
+    <div class="nebula"></div>
+
+    <!-- Auth Loading -->
+    <div id="authLoading">
+        <div class="spinner"></div>
+        <p style="font-weight: 600; letter-spacing: 1.5px; font-size: 0.9rem; color: #00f2fe;">Verificando coordenadas...</p>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="index.html" class="nav-brand">A-PRUEBA</a>
+        <span id="nav-user-name"></span>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container" id="main-content" style="display:none;">
+
+        <!-- ── FREE USER INTERFACE (default) ── -->
+        <div id="free-user-view">
+            <!-- Header -->
+            <div class="page-header">
+                <span class="superlabel">🚀 Centro de Mando Estelar</span>
+                <h1>¡Bienvenido, Supernova!<br>Elige tu punto de ignición</h1>
+                <p class="subtitle">Antes de entrar al mapa, selecciona la asignatura y el tema que más necesites trabajar hoy.</p>
+            </div>
+
+            <!-- Freemium Hook -->
+            <div class="hook-banner" id="hook-banner">
+                <span class="credit-badge">⭐ 1 Crédito de Prueba</span>
+                <p>Tienes <strong>1 crédito de prueba gratuito</strong>. Elige el tema que más necesites reforzar hoy y pruébalo <strong>sin compromiso, sin tarjeta</strong>.</p>
+            </div>
+
+            <!-- Subject Cards -->
+            <p class="section-label">1. Elige tu asignatura</p>
+            <div class="subject-grid" id="subject-grid">
+                <div class="subject-card fisica" data-subject="fisica" onclick="selectSubject(this)" id="card-fisica">
+                    <div class="check-badge" style="--card-neon: #ff4500;">✓</div>
+                    <span class="s-icon">⚛️</span>
+                    <h2>Física</h2>
+                    <p>Campo eléctrico, gravitatorio, ondas, óptica y más.</p>
+                </div>
+                <div class="subject-card mates" data-subject="mates" onclick="selectSubject(this)" id="card-mates">
+                    <div class="check-badge" style="--card-neon: #00f2fe;">✓</div>
+                    <span class="s-icon">📐</span>
+                    <h2>Matemáticas</h2>
+                    <p>Matrices, derivadas, integrales, probabilidad y estadística.</p>
+                </div>
+                <div class="subject-card quimica" data-subject="quimica" onclick="selectSubject(this)" id="card-quimica">
+                    <div class="check-badge" style="--card-neon: #00ff88;">✓</div>
+                    <span class="s-icon">🧪</span>
+                    <h2>Química</h2>
+                    <p>Termodinámica, cinética, equilibrio, ácido-base y redox.</p>
+                </div>
+            </div>
+
+            <!-- Topic Dropdown -->
+            <p class="section-label" id="topic-label" style="display:none;">2. Elige tu tema de prueba</p>
+            <div class="topic-row" id="topic-row" style="display:none;">
+                <div class="topic-group">
+                    <label for="tema-select">Tema disponible para tu comunidad</label>
+                    <div id="temas-container" class="checkbox-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 1rem; margin-top: 1rem;">
+                        <!-- Checkboxes irán aquí -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA Buttons -->
+            <div class="cta-section">
+                <button id="btn-launch" class="btn-launch" disabled onclick="launchMission()">
+                    🚀 Iniciar Prueba Gratuita
+                </button>
+                <br>
+                <button class="btn-pro-link" onclick="goToProLogin()">Ya soy Pro / Iniciar sesión con otra cuenta</button>
+            </div>
+        </div>
+
+        <!-- ── PRO LOCKED INTERFACE ── -->
+        <div id="locked-user-view" style="display:none;">
+            <div class="page-header">
+                <span class="superlabel">🔒 Acceso Restringido</span>
+                <h1>Tu crédito de prueba<br>ya fue utilizado</h1>
+            </div>
+
+            <!-- Locked Subject Cards (visual only) -->
+            <p class="section-label">Asignaturas disponibles con Plan Pro</p>
+            <div class="subject-grid">
+                <div class="subject-card fisica locked">
+                    <div class="lock-overlay">🔒</div>
+                    <span class="s-icon">⚛️</span>
+                    <h2>Física</h2>
+                    <p>Desbloquea todos los temas</p>
+                </div>
+                <div class="subject-card mates locked">
+                    <div class="lock-overlay">🔒</div>
+                    <span class="s-icon">📐</span>
+                    <h2>Matemáticas</h2>
+                    <p>Desbloquea todos los temas</p>
+                </div>
+                <div class="subject-card quimica locked">
+                    <div class="lock-overlay">🔒</div>
+                    <span class="s-icon">🧪</span>
+                    <h2>Química</h2>
+                    <p>Desbloquea todos los temas</p>
+                </div>
+            </div>
+
+            <!-- Pro CTA -->
+            <div id="pro-cta-block" style="display:block; margin-top: 3rem;">
+                <div class="pro-lock-msg">
+                    <div class="lock-icon">🌠</div>
+                    <h3>Activa tu Plan Pro para continuar</h3>
+                    <p>Has completado tu período de prueba. Con el Plan Pro obtienes acceso ilimitado a todos los temas, las 3 asignaturas, el tutor IA y el mapa de constelaciones completo.</p>
+                </div>
+                <button class="btn-activate-pro" onclick="activatePro()">
+                    ⚡ Activar Plan Pro para continuar
+                </button>
+                <br>
+                <button class="btn-pro-link" onclick="goToProLogin()" style="margin-top: 1.2rem;">
+                    ¿Ya eres Pro? Verifica tu cuenta
+                </button>
+            </div>
+        </div>
+
+    </div><!-- /container -->
+
+    <footer>
+        <p>© 2026 A-PRUEBA · Todos los derechos reservados</p>
+    </footer>
+
+    <!-- temarios.js for topic list generation -->
+    <script src="temarios.js"></script>
+
+    <script type="module">
+        import { auth, db, onAuthStateChanged, getDoc, doc, updateDoc, collection, query, where, getDocs } from './firebase-config.js';
+
+        /* ── Neon colour map ─────────────────────────── */
+        const NEON = { fisica: '#ff4500', mates: '#00f2fe', quimica: '#00ff88' };
+        const SUBJ_LABEL = { fisica: '⚛️ Física', mates: '📐 Matemáticas', quimica: '🧪 Química' };
+
+        /* State ─────────────────────────────────────── */
+        let currentUser = null;
+        let userDoc     = null;
+        let selectedSubject = null;
+        let selectedTemas = []; // Array de objetos {id, titulo}
+
+        /* ────────────────────────────────────────────── */
+        /*  AUTH GUARD + ROUTING                          */
+        /* ────────────────────────────────────────────── */
+        onAuthStateChanged(auth, async (user) => {
+            if (!user) {
+                window.location.href = 'login.html';
+                return;
+            }
+
+            currentUser = user;
+
+            // Show display name in nav
+            const navName = document.getElementById('nav-user-name');
+            navName.textContent = user.displayName
+                ? `👤 ${user.displayName.split(' ')[0]}`
+                : `👤 ${user.email.split('@')[0]}`;
+
+            try {
+                const snap = await getDoc(doc(db, 'usuarios', user.uid));
+                userDoc = snap.exists() ? snap.data() : null;
+            } catch (e) {
+                console.warn('No se pudo leer Firestore:', e);
+                userDoc = null;
+            }
+
+            // Bloqueo temporal de Paywall: acceso libre a todo para pruebas
+            showFreeView();
+
+            // Hide auth loader
+            document.getElementById('authLoading').style.display = 'none';
+            document.getElementById('main-content').style.display = 'block';
+        });
+
+        /* ────────────────────────────────────────────── */
+        /*  VIEW RENDERERS                                */
+        /* ────────────────────────────────────────────── */
+        function showFreeView() {
+            document.getElementById('free-user-view').style.display  = 'block';
+            document.getElementById('locked-user-view').style.display = 'none';
+
+            // If user already has a saved subject, pre-select it
+            const savedSubject = userDoc?.asignatura || localStorage.getItem('userSubject');
+            if (savedSubject) {
+                const card = document.getElementById(`card-${savedSubject}`);
+                if (card) window.selectSubject(card);
+            }
+        }
+
+        function showLockedView() {
+            document.getElementById('free-user-view').style.display  = 'none';
+            document.getElementById('locked-user-view').style.display = 'block';
+        }
+
+        /* ────────────────────────────────────────────── */
+        /*  SUBJECT SELECTION                             */
+        /* ────────────────────────────────────────────── */
+        window.selectSubject = function(card) {
+            if (card.classList.contains('locked')) return;
+
+            // Deselect all
+            document.querySelectorAll('.subject-card').forEach(c => c.classList.remove('selected'));
+
+            // Select clicked
+            card.classList.add('selected');
+            selectedSubject = card.dataset.subject;
+
+            // Update neon accent
+            const neon = NEON[selectedSubject] || '#00f2fe';
+            document.documentElement.style.setProperty('--current-neon', neon);
+
+            // Persist to localStorage immediately (temp storage for mapa/estudio)
+            localStorage.setItem('seleccion_asignatura', selectedSubject);
+
+            // Build topic dropdown
+            buildTopicDropdown(selectedSubject);
+        };
+
+        async function buildTopicDropdown(subject) {
+            const container = document.getElementById('temas-container');
+            container.innerHTML = '<div style="color: #00f2fe;">Cargando temas desde la base de datos...</div>';
+            document.getElementById('btn-launch').disabled = true;
+
+            const cursoRaw = userDoc?.curso || localStorage.getItem('userCourse') || '2_bachillerato';
+
+            const asigTextos = {
+                'fisica': 'Física',
+                'mates': 'Matemáticas',
+                'quimica': 'Química'
+            };
+            const cursoTextos = {
+                '2eso': '2º ESO',
+                '3eso': '3º ESO',
+                '4eso': '4º ESO',
+                '1bach': '1º Bach',
+                '2bach': '2º Bach',
+                '2_bachillerato': '2º Bach'
+            };
+
+            const asigName = asigTextos[subject] || 'Física';
+            const cursoName = cursoTextos[cursoRaw] || '2º Bach';
+            const asigFullName = `${asigName} ${cursoName}`;
+
+            let temas = [];
+            try {
+                const q = query(collection(db, 'ejercicios_base'), where('asignatura', '==', asigFullName));
+                const snapshot = await getDocs(q);
+                
+                const bloquesSet = new Set();
+                snapshot.forEach(doc => {
+                    const data = doc.data();
+                    if (data.bloque) {
+                        bloquesSet.add(data.bloque);
+                    }
+                });
+
+                // Convertir a array de objetos para mantener la compatibilidad con el resto del código
+                temas = Array.from(bloquesSet).map(bloque => ({
+                    id: bloque,
+                    titulo: bloque
+                }));
+
+                // Ordenar alfabéticamente/numéricamente
+                temas.sort((a, b) => {
+                    // Intenta extraer el número del tema (ej. "Tema 1", "T1") para ordenar correctamente
+                    const matchA = a.titulo.match(/\d+/);
+                    const matchB = b.titulo.match(/\d+/);
+                    if (matchA && matchB) {
+                        return parseInt(matchA[0]) - parseInt(matchB[0]);
+                    }
+                    return a.titulo.localeCompare(b.titulo);
+                });
+
+            } catch (e) {
+                console.error("Error al cargar temas desde Firestore:", e);
+                container.innerHTML = '<div style="color: #ef473a;">Error al cargar temas.</div>';
+                return;
+            }
+
+            container.innerHTML = ''; // Limpiar contenedor
+
+            // Reset state
+            selectedTemas = [];
+            document.getElementById('btn-launch').disabled = true;
+
+            if (temas.length === 0) {
+                container.innerHTML = '<div style="color: #a0a0b8;">No hay temas disponibles todavía.</div>';
+                document.getElementById('topic-label').style.display = 'block';
+                document.getElementById('topic-row').style.display   = 'flex';
+                return;
+            }
+
+            temas.forEach(t => {
+                const label = document.createElement('label');
+                label.style.display = 'flex';
+                label.style.alignItems = 'center';
+                label.style.gap = '0.5rem';
+                label.style.background = 'rgba(20, 20, 38, 0.6)';
+                label.style.padding = '0.8rem 1rem';
+                label.style.borderRadius = '10px';
+                label.style.border = '1px solid rgba(255,255,255,0.1)';
+                label.style.cursor = 'pointer';
+                label.style.transition = 'all 0.2s';
+                
+                const checkbox = document.createElement('input');
+                checkbox.type = 'checkbox';
+                checkbox.value = t.id;
+                checkbox.dataset.titulo = t.titulo;
+                checkbox.style.accentColor = 'var(--current-neon)';
+                checkbox.style.width = '18px';
+                checkbox.style.height = '18px';
+
+                const span = document.createElement('span');
+                span.textContent = t.titulo;
+                span.style.color = '#fff';
+                span.style.fontSize = '0.9rem';
+
+                label.appendChild(checkbox);
+                label.appendChild(span);
+                
+                // Hover effect
+                label.onmouseover = () => label.style.borderColor = 'var(--current-neon)';
+                label.onmouseout = () => {
+                    if (!checkbox.checked) label.style.borderColor = 'rgba(255,255,255,0.1)';
+                };
+
+                checkbox.addEventListener('change', function() {
+                    if (this.checked) {
+                        label.style.borderColor = 'var(--current-neon)';
+                        label.style.background = 'rgba(255,255,255,0.05)';
+                        selectedTemas.push({ id: this.value, titulo: this.dataset.titulo });
+                    } else {
+                        label.style.borderColor = 'rgba(255,255,255,0.1)';
+                        label.style.background = 'rgba(20, 20, 38, 0.6)';
+                        selectedTemas = selectedTemas.filter(tema => tema.id !== this.value);
+                    }
+                    
+                    document.getElementById('btn-launch').disabled = selectedTemas.length === 0;
+                });
+
+                container.appendChild(label);
+            });
+
+            // Show topic row
+            document.getElementById('topic-label').style.display = 'block';
+            document.getElementById('topic-label').innerText = '2. Elige tus temas (puedes marcar varios)';
+            document.getElementById('topic-row').style.display   = 'flex';
+        }
+
+        /* ────────────────────────────────────────────── */
+        /*  LAUNCH MISSION                                */
+        /* ────────────────────────────────────────────── */
+        window.launchMission = async function() {
+            if (!selectedSubject || selectedTemas.length === 0) {
+                alert('Elige una asignatura y al menos un tema antes de iniciar.');
+                return;
+            }
+
+            const btn = document.getElementById('btn-launch');
+            btn.disabled = true;
+            btn.textContent = 'Preparando ignición...';
+
+            // Save selection to localStorage
+            localStorage.setItem('seleccion_asignatura', selectedSubject);
+            localStorage.setItem('seleccion_temas', JSON.stringify(selectedTemas));
+            localStorage.setItem('userSubject', selectedSubject);
+
+            // Mark trial used in Firestore
+            if (currentUser) {
+                try {
+                    await updateDoc(doc(db, 'usuarios', currentUser.uid), {
+                        asignatura: selectedSubject,
+                        tema_probado: true,
+                        temas_prueba: selectedTemas
+                    });
+                } catch (e) {
+                    console.warn('No se pudo guardar en Firestore:', e);
+                }
+            }
+
+            window.location.href = `estudio.html?asignatura=${selectedSubject}`;
+        };
+
+        /* ────────────────────────────────────────────── */
+        /*  HELPERS                                       */
+        /* ────────────────────────────────────────────── */
+        function mapCurso(raw) {
+            // Normalise various spellings → temarios.js keys
+            const map = {
+                '2_bachillerato': '2bach',
+                '2bach': '2bach',
+                '1bach': '1bach',
+                '4eso': '4eso',
+                '3eso': '3eso',
+                '2eso': '2eso'
+            };
+            return map[raw] || '2bach';
+        }
+
+        window.goToProLogin = function() {
+            window.location.href = 'login.html';
+        };
+
+        window.activatePro = function() {
+            // Placeholder: ideally opens a payment / Stripe flow
+            alert('🚀 Próximamente: Integración con pasarela de pago. ¡Muy pronto estará disponible!');
+        };
+    </script>
+</body>
+
+</html>

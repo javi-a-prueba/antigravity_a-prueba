@@ -1,0 +1,702 @@
+[
+  {
+    "asignatura": "Física 1º Bach",
+    "id": 1101,
+    "dificultad": "Básica",
+    "bloque": "Tema 1: Elementos del Movimiento y Cinemática en 1D",
+    "enunciado": "El vector de posición de una partícula viene dado, en unidades del SI, por la expresión $\\vec{r}(t)=(2t)\\vec{i}+(t^{2}-1)\\vec{j}$. Calcula el vector posición para los instantes $t=1$ s y $t=3$ s, y determina el vector desplazamiento entre dichos instantes.",
+    "resolucion_latex": "Evaluamos el vector posición en $t=1$:<br>$\\vec{r}(1)=(2\\cdot 1)\\vec{i}+(1^{2}-1)\\vec{j}=2\\vec{i}+0\\vec{j}$ m.<br><br>Evaluamos en $t=3$:<br>$\\vec{r}(3)=(2\\cdot 3)\\vec{i}+(3^{2}-1)\\vec{j}=6\\vec{i}+8\\vec{j}$ m.<br><br>El vector desplazamiento es la diferencia de las posiciones:<br>$\\Delta\\vec{r}=\\vec{r}(3)-\\vec{r}(1)=(6-2)\\vec{i}+(8-0)\\vec{j}=4\\vec{i}+8\\vec{j}$ m.",
+    "pista": "Sustituye directamente el valor del tiempo 't' en la ecuación del vector posición para hallar la posición en cada instante. Luego, recuerda que el desplazamiento es una resta de vectores.",
+    "formula": "$$\\Delta\\vec{r} = \\vec{r}_{f} - \\vec{r}_{i}$$"
+  },
+  {
+    "asignatura": "Física 1º Bach",
+    "id": 1102,
+    "dificultad": "Básica",
+    "bloque": "Tema 1: Elementos del Movimiento y Cinemática en 1D",
+    "enunciado": "Dos ciudades A y B están separadas por una distancia de **400 km**. A las **10:00 h** sale de A hacia B un coche a velocidad constante de **90 km/h**. A la misma hora sale de B hacia A un camión a **110 km/h** constantes. ¿A qué hora y a qué distancia de A se cruzarán?",
+    "resolucion_latex": "Establecemos el origen de coordenadas ($x=0$) en la ciudad A.<br>Ecuación de posición del coche A (MRU): $x_{A}(t)=v_{A}\\cdot t=90t$.<br>Ecuación de posición del camión B (MRU): $x_{B}(t)=400-110t$ (velocidad negativa porque se acerca a A).<br><br>El cruce ocurre cuando ambos ocupan la misma posición: $x_{A}(t)=x_{B}(t)$.<br>$90t=400-110t \\Rightarrow 200t=400 \\Rightarrow t=2$ horas.<br>Como salen a las 10:00 h, se cruzan a las 12:00 h.<br><br>Distancia desde A: $x_{A}(2)=90\\cdot 2=180$ km.",
+    "pista": "Es un problema de cruce con Movimiento Rectilíneo Uniforme (MRU). Coloca el origen de coordenadas en la ciudad A y ten cuidado con el signo de la velocidad del vehículo que viene en sentido contrario.",
+    "formula": "$$x(t) = x_0 + v \\cdot t$$"
+  },
+  {
+    "asignatura": "Física 1º Bach",
+    "id": 1103,
+    "dificultad": "Básica",
+    "bloque": "Tema 1: Elementos del Movimiento y Cinemática en 1D",
+    "enunciado": "Un coche circula a **72 km/h** cuando el conductor ve un obstáculo y frena con una aceleración constante de **-2 m/s²**. Calcula el tiempo que tarda en detenerse por completo y la distancia recorrida durante la frenada.",
+    "resolucion_latex": "Pasamos la velocidad inicial a unidades del SI: $v_{0}=72 \\text{ km/h} = 20 \\text{ m/s}$.<br>Condición de detención: La velocidad final es $v=0$.<br>Usamos la ecuación de velocidad del MRUA: $v=v_{0}+a\\cdot t$.<br>$0=20-2t \\Rightarrow 2t=20 \\Rightarrow t=10$ s (tiempo de frenado).<br><br>Posición recorrida: $\\Delta x=v_{0}t+\\frac{1}{2}at^{2}=20(10)+\\frac{1}{2}(-2)(10)^{2}=200-100=100$ m.",
+    "pista": "Cuidado con las unidades, pásalo todo al Sistema Internacional (m/s). Recuerda que cuando un vehículo se detiene por completo, su velocidad final es cero.",
+    "formula": "$$v = v_0 + a \\cdot t$$<br>$$x = x_0 + v_0 \\cdot t + \\frac{1}{2} a \\cdot t^2$$"
+  },
+  {
+    "asignatura": "Física 1º Bach",
+    "id": 1104,
+    "dificultad": "Media",
+    "bloque": "Tema 1: Elementos del Movimiento y Cinemática en 1D",
+    "enunciado": "Un coche A avanza por una recta a velocidad constante de **20 m/s**. Justo en el instante en que pasa por un semáforo, arranca desde ese mismo semáforo un coche B (velocidad inicial nula) con una aceleración constante de **2 m/s²** en la misma dirección. ¿Cuánto tiempo tardará el coche B en alcanzar al coche A y a qué distancia del semáforo lo hará?",
+    "resolucion_latex": "Establecemos el origen en el semáforo ($x_{0}=0$).<br>Ecuación del coche A (MRU): $x_{A}=20t$.<br>Ecuación del coche B (MRUA): $x_{B}=\\frac{1}{2}at^{2}=\\frac{1}{2}(2)t^{2}=t^{2}$.<br><br>Igualamos posiciones: $x_{A}=x_{B} \\Rightarrow 20t=t^{2} \\Rightarrow t^{2}-20t=0 \\Rightarrow t(t-20)=0$.<br>Desechamos $t=0$ s. El coche B alcanza al coche A a los $20$ s.<br><br>Distancia de encuentro: $x=20(20)=400$ m.",
+    "pista": "Plantea las ecuaciones de posición para ambos vehículos (uno tiene MRU y el otro MRUA). El momento en que se alcanzan es matemáticamente cuando sus posiciones 'x' son iguales.",
+    "formula": "$$x_A = v \\cdot t$$<br>$$x_B = \\frac{1}{2} a \\cdot t^2$$"
+  },
+  {
+    "asignatura": "Física 1º Bach",
+    "id": 1105,
+    "dificultad": "Media",
+    "bloque": "Tema 1: Elementos del Movimiento y Cinemática en 1D",
+    "enunciado": "Desde un balcón situado a **20 metros** del suelo se lanza verticalmente hacia arriba una pelota con una velocidad de **15 m/s**. Considerando que $g=9.8 \\text{ m/s}^{2}$, halla la altura máxima que alcanza (respecto al suelo) y el tiempo total que tarda en llegar al suelo.",
+    "resolucion_latex": "Tomamos el suelo como origen ($y=0$). Altura inicial $y_{0}=20$ m. $v_{0}=+15 \\text{ m/s}$. $a=-9.8 \\text{ m/s}^{2}$.<br>Altura máxima: Ocurre cuando $v=0 \\Rightarrow 0=15-9.8t \\Rightarrow t \\approx 1.53$ s.<br>Sustituimos en la posición: $y_{max}=20+15(1.53)-4.9(1.53)^{2} \\approx 31.48$ m.<br><br>Tiempo hasta el suelo: Ocurre cuando $y=0 \\Rightarrow 0=20+15t-4.9t^{2}$.<br>Resolvemos la ecuación de segundo grado y tomamos el valor positivo: $t \\approx 4.07$ s.",
+    "pista": "Recuerda que en el punto más alto del lanzamiento, la velocidad instantánea de la pelota es cero. Usa ese dato para sacar el tiempo que tarda en subir.",
+    "formula": "$$y = y_0 + v_0 \\cdot t - \\frac{1}{2} g \\cdot t^2$$"
+  },
+  {
+    "asignatura": "Física 1º Bach",
+    "id": 1106,
+    "dificultad": "Media",
+    "bloque": "Tema 1: Elementos del Movimiento y Cinemática en 1D",
+    "enunciado": "Dada la ecuación del movimiento de un móvil expresada mediante su vector de posición $\\vec{r}(t)=(2t)\\vec{i}+(4t^{2}-3)\\vec{j}$ (en SI), obtén la ecuación de su trayectoria $y=f(x)$ eliminando el tiempo e indica qué tipo de curva describe.",
+    "resolucion_latex": "Separamos el vector de posición en ecuaciones paramétricas: $x=2t$ e $y=4t^{2}-3$.<br>Despejamos $t$ de la primera: $t=\\frac{x}{2}$.<br><br>Sustituimos en la segunda:<br>$y=4\\left(\\frac{x}{2}\\right)^{2}-3=4\\left(\\frac{x^{2}}{4}\\right)-3 \\Rightarrow y=x^{2}-3$.<br><br>Al ser una función polinómica de segundo grado, la trayectoria es una parábola.",
+    "pista": "La ecuación de la trayectoria relaciona las coordenadas 'y' y 'x' sin que aparezca el tiempo. Despeja el tiempo de la componente 'x' y sustitúyelo en la 'y'.",
+    "formula": "$$x(t) = f(t) \\quad ; \\quad y(t) = g(t)$$"
+  },
+  {
+    "asignatura": "Física 1º Bach",
+    "id": 1107,
+    "dificultad": "Alta",
+    "bloque": "Tema 1: Elementos del Movimiento y Cinemática en 1D",
+    "enunciado": "Se deja caer libremente una piedra desde la azotea de un edificio de **50 metros** de altura. Exactamente un segundo después, desde la base del edificio se lanza otra piedra verticalmente hacia arriba con una velocidad de **25 m/s**. ¿A qué altura respecto al suelo y en qué instante se cruzarán ambas piedras? ($g=9.8 \\text{ m/s}^{2}$).",
+    "resolucion_latex": "Establecemos el suelo como el origen $y=0$.<br>Piedra 1 (cae): $y_{1}=50-4.9t^{2}$.<br>Piedra 2 (un segundo tarde): $y_{2}=25(t-1)-4.9(t-1)^{2}$ (para $t \\ge 1$).<br><br>Igualamos posiciones ($y_{1}=y_{2}$):<br>$50-4.9t^{2}=25t-25-4.9(t^{2}-2t+1)$.<br>$50-4.9t^{2}=25t-25-4.9t^{2}+9.8t-4.9 \\Rightarrow 50=34.8t-29.9 \\Rightarrow t \\approx 2.30$ s.<br><br>Calculamos la altura sustituyendo en la primera ecuación:<br>$y=50-4.9(2.30)^{2} \\approx 24.08$ m.",
+    "pista": "Cuidado con el desfase temporal. Si el tiempo de la primera piedra es 't', el de la segunda debe ser 't - 1' porque sale un segundo más tarde. Iguala sus ecuaciones de posición Y.",
+    "formula": "$$y = y_0 + v_0(t-t_0) - \\frac{1}{2} g(t-t_0)^2$$"
+  },
+  {
+    "asignatura": "Física 1º Bach",
+    "id": 1108,
+    "dificultad": "Alta",
+    "bloque": "Tema 1: Elementos del Movimiento y Cinemática en 1D",
+    "enunciado": "El vector de posición de una partícula es $\\vec{r}(t)=t^{2}\\vec{i}+t^{3}\\vec{j}$ (SI). Calcula, para el instante $t=1$ s, las componentes intrínsecas de la aceleración: la aceleración tangencial ($a_{t}$) y la aceleración normal ($a_{n}$).",
+    "resolucion_latex": "Vector velocidad (derivada): $\\vec{v}(t)=(2t, 3t^{2})$. En $t=1$: $\\vec{v}(1)=(2, 3)$. Módulo: $|\\vec{v}|=\\sqrt{13} \\text{ m/s}$.<br>Vector aceleración (derivada de v): $\\vec{a}(t)=(2, 6t)$. En $t=1$: $\\vec{a}(1)=(2, 6)$. Módulo: $|\\vec{a}|=\\sqrt{40} \\text{ m/s}^{2}$.<br><br>Aceleración tangencial ($a_{t}$), proyección de $\\vec{a}$ sobre $\\vec{v}$:<br>$a_{t}=\\frac{\\vec{v}\\cdot\\vec{a}}{|\\vec{v}|}=\\frac{(2\\cdot 2)+(3\\cdot 6)}{\\sqrt{13}}=\\frac{22}{\\sqrt{13}} \\approx 6.10 \\text{ m/s}^{2}$.<br><br>Aceleración normal ($a_{n}$) por Pitágoras:<br>$a_{n}=\\sqrt{|\\vec{a}|^{2}-a_{t}^{2}}=\\sqrt{40-\\left(\\frac{22}{\\sqrt{13}}\\right)^{2}}=\\sqrt{\\frac{36}{13}} \\approx 1.66 \\text{ m/s}^{2}$.",
+    "pista": "Deriva el vector posición una vez para sacar la velocidad y dos veces para sacar la aceleración. Recuerda que la aceleración tangencial es el producto escalar de la velocidad y aceleración dividido por el módulo de la velocidad.",
+    "formula": "$$a_t = \\frac{\\vec{v} \\cdot \\vec{a}}{|\\vec{v}|} \\quad ; \\quad a_n = \\sqrt{|\\vec{a}|^2 - a_t^2}$$"
+  },
+  {
+    "asignatura": "Física 1º Bach",
+    "id": 1109,
+    "dificultad": "Alta",
+    "bloque": "Tema 1: Elementos del Movimiento y Cinemática en 1D",
+    "enunciado": "La aceleración de un móvil que se desplaza en el eje X depende del tiempo según la expresión $a(t)=4t-2 \\text{ m/s}^{2}$. Si sabemos que en el instante inicial ($t=0$) su velocidad era de **5 m/s** y se encontraba en el origen de coordenadas ($x=0$), halla la expresión completa de su posición en función del tiempo, $x(t)$.",
+    "resolucion_latex": "La velocidad es la integral de la aceleración: $v(t)=\\int(4t-2)dt=2t^{2}-2t+C$<br>Como $v(0)=5 \\Rightarrow C=5$, luego $v(t)=2t^{2}-2t+5$.<br><br>La posición es la integral de la velocidad:<br>$x(t)=\\int(2t^{2}-2t+5)dt=\\frac{2}{3}t^{3}-t^{2}+5t+K$.<br><br>Como $x(0)=0 \\Rightarrow K=0$. La expresión final es:<br>$x(t)=\\frac{2}{3}t^{3}-t^{2}+5t$",
+    "pista": "Es un ejercicio de cálculo integral. Integra la función de la aceleración respecto al tiempo para obtener la velocidad, usando la condición inicial para sacar la constante. Vuelve a integrar para obtener la posición.",
+    "formula": "$$v(t) = \\int a(t) dt \\quad ; \\quad x(t) = \\int v(t) dt$$"
+  },
+  {
+    "asignatura": "Física 1º Bach",
+    "id": 1110,
+    "dificultad": "Superior",
+    "bloque": "Tema 1: Elementos del Movimiento y Cinemática en 1D",
+    "enunciado": "Ejercicio Trampa: En una pregunta de verdadero o falso, un alumno se encuentra la siguiente afirmación: 'Si en un instante determinado la velocidad de un objeto es cero, su aceleración en ese mismo instante obligatoriamente tiene que ser cero'. El alumno marca 'Verdadero' justificando que, si está quieto, no puede estar acelerando. Destroza el razonamiento del alumno utilizando la definición matemática de la aceleración y pon un ejemplo práctico de la vida real que demuestre su error.",
+    "resolucion_latex": "La aceleración es el ritmo al que cambia la velocidad ($a=\\frac{dv}{dt}$). Un objeto puede tener velocidad cero en un instante pero estar cambiando ese valor (su derivada no es nula).<br><br>Un ejemplo clásico es el lanzamiento vertical hacia arriba. En el punto más alto, el objeto se detiene por completo ($v=0 \\text{ m/s}$) para invertir el sentido de su marcha. Sin embargo, la gravedad sigue tirando de él, por lo que su aceleración en ese mismo instante sigue siendo la de la gravedad ($g=-9.8 \\text{ m/s}^{2}$). Si la aceleración fuera cero, el objeto se quedaría flotando en el aire para siempre.",
+    "pista": "Piensa en lo que ocurre cuando tiras una pelota hacia arriba justo en el milisegundo en que alcanza su altura máxima antes de empezar a caer.",
+    "formula": "$$a = \\frac{dv}{dt}$$"
+  },
+  {
+    "asignatura": "Física 1º Bach",
+    "id": 1201,
+    "dificultad": "Básica",
+    "bloque": "Tema 2: Cinemática en 2D y Movimientos Circulares",
+    "enunciado": "Una avioneta de rescate vuela horizontalmente a una velocidad de **50 m/s** y a una altitud de **500 m**. En un momento dado, deja caer un paquete de suministros. Calcula el tiempo que tarda el paquete en llegar al suelo y la distancia horizontal que recorre desde que se suelta. ($g=9,8 \\text{ m/s}^{2}$).",
+    "resolucion_latex": "Es un tiro horizontal. Eje Y (MRUA): $y(t)=500-4,9t^{2}$. Eje X (MRU): $x(t)=50t$.<br>Llega al suelo cuando $y=0 \\Rightarrow 0=500-4,9t^{2} \\Rightarrow t=\\sqrt{\\frac{500}{4,9}} \\approx 10,10 \\text{ s}$.<br>Distancia horizontal: Sustituimos en la ecuación de X $\\Rightarrow x=50(10,10)=505$ m.",
+    "pista": "Descompón el movimiento. En el eje X hay un Movimiento Rectilíneo Uniforme (velocidad constante) y en el eje Y hay una caída libre con aceleración.",
+    "formula": "$$y(t) = y_0 - \\frac{1}{2}gt^2 \\quad ; \\quad x(t) = v_{0x} t$$"
+  },
+  {
+    "asignatura": "Física 1º Bach",
+    "id": 1202,
+    "dificultad": "Básica",
+    "bloque": "Tema 2: Cinemática en 2D y Movimientos Circulares",
+    "enunciado": "Un disco de vinilo gira a **45 rpm** (revoluciones por minuto). Calcula su velocidad angular en rad/s, su frecuencia ($f$) en Hz y su periodo ($T$) en segundos.",
+    "resolucion_latex": "Convertimos 45 rpm a rad/s usando factores de conversión:<br>$\\omega=45\\cdot\\frac{2\\pi}{60}=1,5\\pi \\text{ rad/s} \\approx 4,71 \\text{ rad/s}$.<br>Frecuencia: $\\omega =2\\pi f \\Rightarrow f=\\frac{1,5\\pi}{2\\pi}=0,75 \\text{ Hz}$.<br>Periodo: $T=\\frac{1}{f}=\\frac{1}{0,75} \\approx 1,33 \\text{ s}$.",
+    "pista": "Recuerda que una revolución (vuelta completa) equivale a $2\\pi$ radianes y un minuto está compuesto de 60 segundos.",
+    "formula": "$$\\omega = 2\\pi f = \\frac{2\\pi}{T}$$"
+  },
+  {
+    "asignatura": "Física 1º Bach",
+    "id": 1203,
+    "dificultad": "Básica",
+    "bloque": "Tema 2: Cinemática en 2D y Movimientos Circulares",
+    "enunciado": "Un coche toma una curva de **50 metros** de radio a una velocidad constante de **72 km/h**. Calcula el valor de su aceleración normal (o centrípeta).",
+    "resolucion_latex": "Pasamos la velocidad al SI: $v=72 \\text{ km/h}=20 \\text{ m/s}$.<br>La fórmula de la aceleración normal es $a_{n}=\\frac{v^{2}}{R}$.<br>$a_{n}=\\frac{20^{2}}{50}=\\frac{400}{50}=8 \\text{ m/s}^{2}$.",
+    "pista": "Primero convierte la velocidad de km/h a m/s (dividiendo entre 3.6). Después, aplica la fórmula directa de la aceleración dirigida hacia el centro.",
+    "formula": "$$a_n = \\frac{v^2}{R}$$"
+  },
+  {
+    "asignatura": "Física 1º Bach",
+    "id": 1204,
+    "dificultad": "Media",
+    "bloque": "Tema 2: Cinemática en 2D y Movimientos Circulares",
+    "enunciado": "Un futbolista patea un balón desde el suelo con una velocidad inicial de **20 m/s** y un ángulo de **30º** sobre la horizontal. Calcula el tiempo total de vuelo y el alcance máximo horizontal ($x_{max}$) que logra el balón.",
+    "resolucion_latex": "Descomponemos la velocidad inicial:<br>$v_{0x}=20\\cdot \\cos(30^{\\circ}) \\approx 17,32 \\text{ m/s}$ y $v_{0y}=20\\cdot \\sin(30^{\\circ})=10 \\text{ m/s}$.<br>Tiempo de vuelo (hasta volver al suelo, $y=0$):<br>$0=10t-4,9t^{2} \\Rightarrow t(10-4,9t)=0 \\Rightarrow t \\approx 2,04 \\text{ s}$.<br>Alcance máximo horizontal: $x_{max} =v_{0x}\\cdot t=17,32\\cdot 2,04 \\approx 35,33 \\text{ m}$.",
+    "pista": "El lanzamiento es un tiro parabólico. El tiempo de vuelo termina exactamente en el momento en el que la posición vertical 'y' vuelve a ser cero.",
+    "formula": "$$x = v_{0x} t \\quad ; \\quad y = v_{0y} t - \\frac{1}{2}gt^2$$"
+  },
+  {
+    "asignatura": "Física 1º Bach",
+    "id": 1205,
+    "dificultad": "Media",
+    "bloque": "Tema 2: Cinemática en 2D y Movimientos Circulares",
+    "enunciado": "Un ventilador gira a **300 rpm**. De repente, se desconecta de la corriente y tarda **10 segundos** en detenerse por completo mediante un Movimiento Circular Uniformemente Acelerado (frenado). Calcula su aceleración angular ($\\alpha$) y el número total de vueltas que da hasta parar.",
+    "resolucion_latex": "Velocidad angular inicial: $\\omega_{0}=300\\cdot\\frac{2\\pi}{60}=10\\pi \\text{ rad/s}$.<br>Parado: $\\omega=0 \\text{ rad/s}$ en $t=10 \\text{ s}$.<br>Aceleración angular ($\\alpha$): $\\omega=\\omega_{0}+\\alpha t \\Rightarrow 0=10\\pi+10\\alpha \\Rightarrow \\alpha=-\\pi \\text{ rad/s}^{2}$.<br>Ángulo girado: $\\Delta\\theta=\\omega_{0}t+\\frac{1}{2}\\alpha t^{2}=(10\\pi)(10)+\\frac{1}{2}(-\\pi)(10^{2})=50\\pi \\text{ rad}$.<br>Número de vueltas ($1 \\text{ vuelta}=2\\pi \\text{ rad}$): $N=\\frac{50\\pi}{2\\pi}=25 \\text{ vueltas}$.",
+    "pista": "Plantea las ecuaciones del MRUA pero con las magnitudes angulares (omega y alfa). Una vez calcules el ángulo total girado en radianes, divídelo entre $2\\pi$.",
+    "formula": "$$\\omega = \\omega_0 + \\alpha t \\quad ; \\quad \\Delta\\theta = \\omega_0 t + \\frac{1}{2}\\alpha t^2$$"
+  },
+  {
+    "asignatura": "Física 1º Bach",
+    "id": 1206,
+    "dificultad": "Media",
+    "bloque": "Tema 2: Cinemática en 2D y Movimientos Circulares",
+    "enunciado": "Una barca con motor intenta cruzar un río perpendicularmente a la corriente. La velocidad de la barca respecto al agua en reposo es de **4 m/s**, mientras que el río fluye con una velocidad constante de **3 m/s**. Si la anchura del río es de **100 m**, calcula el tiempo que tarda en cruzar y a qué distancia río abajo llega a la otra orilla.",
+    "resolucion_latex": "Tiempo de cruce (depende solo del eje Y perpendicular): $y=v_{y}\\cdot t \\Rightarrow 100=4t \\Rightarrow t=25 \\text{ s}$.<br>Arrastre del río (eje X horizontal): $x=v_{x}\\cdot t=3\\cdot 25=75 \\text{ m}$ río abajo.",
+    "pista": "Por el Principio de Galileo, los movimientos perpendicular y horizontal son independientes. La velocidad del río no afecta al tiempo que tardas en cruzar, solo te desplaza hacia el lado.",
+    "formula": "$$y = v_{y} t \\quad ; \\quad x = v_{x} t$$"
+  },
+  {
+    "asignatura": "Física 1º Bach",
+    "id": 1207,
+    "dificultad": "Alta",
+    "bloque": "Tema 2: Cinemática en 2D y Movimientos Circulares",
+    "enunciado": "Un jugador de baloncesto lanza a canasta desde una altura de **2 metros** respecto al suelo, con una velocidad inicial de **8 m/s** y un ángulo de **45º**. La canasta se encuentra a una distancia horizontal de **5 metros** y a una altura de **3,05 metros**. Justifica mediante cálculos si la pelota entrará por el aro o no.",
+    "resolucion_latex": "Descomponemos la velocidad inicial:<br>$v_{0x}=8 \\cos(45^{\\circ}) \\approx 5,66 \\text{ m/s}$ y $v_{0y}=8 \\sin(45^{\\circ}) \\approx 5,66 \\text{ m/s}$.<br>Ecuación en X: $x=5,66t$.<br>Ecuación en Y: $y=2+5,66t-4,9t^{2}$.<br>Calculamos cuándo llega a la distancia de la canasta ($x=5 \\text{ m}$): $5=5,66t \\Rightarrow t \\approx 0,883 \\text{ s}$.<br>Comprobamos la altura del balón en ese instante: $y=2+5,66(0,883)-4,9(0,883)^{2} \\approx 3,18 \\text{ m}$.<br>Como el aro está a 3,05 m, el balón pasa por encima de la canasta por 13 cm; por tanto, NO entra directamente.",
+    "pista": "Halla primero el tiempo exacto que tarda el balón en recorrer la distancia horizontal de los 5 metros hasta situarse encima del aro. Con ese tiempo, calcula la altura y comprueba.",
+    "formula": "$$x(t) = v_{0x} t \\quad ; \\quad y(t) = y_0 + v_{0y} t - \\frac{1}{2}gt^2$$"
+  },
+  {
+    "asignatura": "Física 1º Bach",
+    "id": 1208,
+    "dificultad": "Alta",
+    "bloque": "Tema 2: Cinemática en 2D y Movimientos Circulares",
+    "enunciado": "Dos poleas están unidas por una correa de transmisión que no resbala. La polea A tiene un radio de **10 cm** y gira a **120 rad/s**. La polea B tiene un radio de **25 cm**. Calcula la velocidad angular de la polea B y la aceleración normal de un punto situado en la periferia de esta polea B.",
+    "resolucion_latex": "La velocidad lineal en los bordes de ambas poleas es idéntica ($v_{A}=v_{B}$).<br>$\\omega_{A}\\cdot R_{A}=\\omega_{B}\\cdot R_{B} \\Rightarrow 120\\cdot 10=\\omega_{B}\\cdot 25 \\Rightarrow \\omega_{B}=48 \\text{ rad/s}$.<br>Aceleración normal en el borde de B (pasando radio a metros, $R_{B}=0,25 \\text{ m}$):<br>$a_{n}=\\omega_{B}^{2}\\cdot R_{B}=(48)^{2}\\cdot 0,25=576 \\text{ m/s}^{2}$.",
+    "pista": "Al estar acopladas por una correa, las velocidades lineales (v) en el borde de ambas poleas tienen que ser exactamente iguales. Iguala las fórmulas de la velocidad lineal.",
+    "formula": "$$v_A = v_B \\Rightarrow \\omega_A R_A = \\omega_B R_B$$<br>$$a_n = \\omega^2 R$$"
+  },
+  {
+    "asignatura": "Física 1º Bach",
+    "id": 1209,
+    "dificultad": "Alta",
+    "bloque": "Tema 2: Cinemática en 2D y Movimientos Circulares",
+    "enunciado": "El vector de posición de una partícula que describe una trayectoria curva es $\\vec{r}(t)=3t\\vec{i}+(4t-5t^{2})\\vec{j}$ (en unidades del SI). Calcula la velocidad y la aceleración de la partícula en el instante $t=1$ s. A partir de esos vectores, halla el radio de curvatura de la trayectoria en ese instante.",
+    "resolucion_latex": "Vector velocidad (derivando $\\vec{r}$): $\\vec{v}(t)=3\\vec{i}+(4-10t)\\vec{j}$. En $t=1 \\text{ s}$: $\\vec{v}(1)=3\\vec{i}-6\\vec{j} \\text{ m/s}$. Módulo: $|\\vec{v}|=\\sqrt{45} \\text{ m/s}$.<br>Vector aceleración (derivando $\\vec{v}$): $\\vec{a}(t)=-10\\vec{j} \\text{ m/s}^{2}$. Módulo: $|\\vec{a}|=10 \\text{ m/s}^{2}$.<br>Aceleración tangencial: $a_{t}=\\frac{\\vec{v}\\cdot\\vec{a}}{|\\vec{v}|}=\\frac{(3\\cdot 0)+(-6\\cdot -10)}{\\sqrt{45}}=\\frac{60}{\\sqrt{45}} \\approx 8,94 \\text{ m/s}^{2}$.<br>Aceleración normal: $a_{n}=\\sqrt{|\\vec{a}|^{2}-a_{t}^{2}}=\\sqrt{100-\\frac{3600}{45}}=\\sqrt{20} \\approx 4,47 \\text{ m/s}^{2}$.<br>Radio de curvatura ($a_{n}=\\frac{v^{2}}{R}$): $R=\\frac{v^{2}}{a_{n}}=\\frac{45}{\\sqrt{20}} \\approx 10,06 \\text{ m}$.",
+    "pista": "Para sacar el radio de curvatura despeja 'R' de la fórmula general de la aceleración normal. Necesitarás tener el vector velocidad y su módulo al cuadrado.",
+    "formula": "$$R = \\frac{|\\vec{v}|^2}{a_n} \\quad ; \\quad a_n = \\sqrt{|\\vec{a}|^2 - a_t^2}$$"
+  },
+  {
+    "asignatura": "Física 1º Bach",
+    "id": 1210,
+    "dificultad": "Superior",
+    "bloque": "Tema 2: Cinemática en 2D y Movimientos Circulares",
+    "enunciado": "Ejercicio Trampa: En un examen teórico sobre el Movimiento Circular Uniforme (MCU), un alumno afirma rotundo: 'Como la palabra Uniforme significa que la velocidad es constante ($v=cte$), entonces por definición matemática su aceleración total debe ser cero, ya que la derivada de una constante es cero'. El profesor le tacha la respuesta por completo. Identifica el error conceptual grave que tiene el alumno respecto a la naturaleza de la velocidad.",
+    "resolucion_latex": "El error del alumno radica en olvidar el carácter vectorial de la velocidad. La velocidad cambia en módulo (rapidez) y en dirección.<br>En un MCU, el módulo de la velocidad es ciertamente constante, por lo que la aceleración tangencial es nula ($a_{t}=0$).<br>Sin embargo, la trayectoria es curva, lo que obliga a que la dirección del vector velocidad cambie en todo instante. Esta variación genera de forma obligatoria una aceleración dirigida hacia el centro del giro, denominada aceleración normal o centrípeta ($a_{n}=\\frac{v^{2}}{R}$), la cual nunca es nula en un giro.",
+    "pista": "Piensa en un volante. La velocidad es un vector que apunta hacia el frente del vehículo. Si giras el volante, ¿sigue apuntando en la misma dirección aunque el velocímetro marque siempre 50 km/h?",
+    "formula": "$$\\vec{a} = \\vec{a}_t + \\vec{a}_n \\quad ; \\quad a_n = \\frac{v^2}{R}$$"
+  },
+  {
+    "asignatura": "Física 1º Bach",
+    "id": 1301,
+    "dificultad": "Básica",
+    "bloque": "Tema 3: Leyes de Newton y Aplicaciones",
+    "enunciado": "A un bloque de 5 kg que se encuentra sobre una superficie horizontal lisa (sin rozamiento) se le aplica una fuerza constante de 20 N. Calcula la aceleración que adquiere el bloque y la fuerza Normal que ejerce la superficie sobre él. ($g=9,8 \\text{ m/s}^{2}$).",
+    "resolucion_latex": "Eje Y (Vertical): El bloque no se mueve verticalmente $\\Rightarrow \\sum F_{y}=0 \\Rightarrow N-P=0 \\Rightarrow N=m\\cdot g$.<br>$N=5\\cdot 9,8=49 \\text{ N}$.<br><br>Eje X (Horizontal): $\\sum F_{x}=m\\cdot a \\Rightarrow 20=5\\cdot a \\Rightarrow a=\\frac{20}{5}=4 \\text{ m/s}^{2}$.",
+    "pista": "Aplica la Segunda Ley de Newton para el eje horizontal. Para el eje vertical, ten en cuenta que el bloque no se eleva ni se hunde, por lo que las fuerzas están equilibradas.",
+    "formula": "$$\\sum F_x = m\\cdot a \\quad ; \\quad \\sum F_y = 0$$"
+  },
+  {
+    "asignatura": "Física 1º Bach",
+    "id": 1302,
+    "dificultad": "Básica",
+    "bloque": "Tema 3: Leyes de Newton y Aplicaciones",
+    "enunciado": "Un objeto de 10 kg es arrastrado por un suelo horizontal tirando de él con una fuerza de 50 N. Si el coeficiente de rozamiento cinético entre el objeto y el suelo es $\\mu_{c}=0,3$, halla la fuerza de rozamiento y la aceleración del objeto.",
+    "resolucion_latex": "Fuerza Normal: $N=P=m\\cdot g=10\\cdot 9,8=98 \\text{ N}$.<br>Fuerza de rozamiento: $F_{r}=\\mu_{c}\\cdot N=0,3\\cdot 98=29,4 \\text{ N}$.<br><br>Segunda Ley de Newton en el eje X: $\\sum F_{x}=m\\cdot a \\Rightarrow F_{\\text{tirar}}-F_{r}=m\\cdot a$.<br>$50-29,4=10\\cdot a \\Rightarrow 20,6=10\\cdot a \\Rightarrow a=2,06 \\text{ m/s}^{2}$.",
+    "pista": "Recuerda que la fuerza de rozamiento siempre se opone al movimiento y depende de la fuerza Normal. Réstala a la fuerza con la que tiras antes de calcular la aceleración.",
+    "formula": "$$F_r = \\mu_c \\cdot N \\quad ; \\quad F - F_r = m\\cdot a$$"
+  },
+  {
+    "asignatura": "Física 1º Bach",
+    "id": 1303,
+    "dificultad": "Básica",
+    "bloque": "Tema 3: Leyes de Newton y Aplicaciones",
+    "enunciado": "Un ascensor de 500 kg de masa total arranca hacia arriba con una aceleración constante de $1,5 \\text{ m/s}^{2}$. Calcula la tensión del cable que soporta al ascensor.",
+    "resolucion_latex": "El ascensor sufre dos fuerzas en el eje Y: la Tensión ($T$) hacia arriba y el Peso ($P$) hacia abajo.<br>Como acelera hacia arriba, tomamos el sentido hacia arriba como positivo.<br>$\\sum F_{y}=m\\cdot a \\Rightarrow T-P=m\\cdot a \\Rightarrow T-(500\\cdot 9,8)=500\\cdot 1,5$.<br>$T-4900=750 \\Rightarrow T=4900+750=5650 \\text{ N}$.",
+    "pista": "Dibuja las fuerzas: la tensión tira hacia arriba y el peso hacia abajo. Como el ascensor sube acelerando, la tensión tiene que ser obligatoriamente mayor que el peso.",
+    "formula": "$$T - m\\cdot g = m\\cdot a$$"
+  },
+  {
+    "asignatura": "Física 1º Bach",
+    "id": 1304,
+    "dificultad": "Media",
+    "bloque": "Tema 3: Leyes de Newton y Aplicaciones",
+    "enunciado": "Se deja caer un bloque de 2 kg por un plano inclinado 30º sobre la horizontal. Si no hay rozamiento, calcula la aceleración de bajada del bloque y el tiempo que tarda en recorrer 5 metros sobre el plano partiendo del reposo.",
+    "resolucion_latex": "En un plano inclinado, la fuerza que tira hacia abajo es la componente X del peso: $P_{x}=m\\cdot g\\cdot \\sin(30^{\\circ})$.<br>Ecuación dinámica: $\\sum F_{x}=m\\cdot a \\Rightarrow m\\cdot g\\cdot \\sin(30^{\\circ})=m\\cdot a$.<br>(La masa se cancela): $a=9,8\\cdot 0,5=4,9 \\text{ m/s}^{2}$.<br><br>Cinemática (MRUA): $\\Delta x=v_{0}t+\\frac{1}{2}at^{2} \\Rightarrow 5=0+\\frac{1}{2}(4,9)t^{2} \\Rightarrow 5=2,45t^{2}$.<br>$t=\\sqrt{\\frac{5}{2,45}} \\approx 1,43 \\text{ s}$.",
+    "pista": "Descompón el peso. La única fuerza responsable de que el bloque baje deslizándose es la componente paralela al plano (Px). Luego aplica cinemática básica.",
+    "formula": "$$P_x = m\\cdot g \\cdot \\sin(\\alpha) \\quad ; \\quad \\Delta x = \\frac{1}{2} a\\cdot t^2$$"
+  },
+  {
+    "asignatura": "Física 1º Bach",
+    "id": 1305,
+    "dificultad": "Media",
+    "bloque": "Tema 3: Leyes de Newton y Aplicaciones",
+    "enunciado": "Un bloque de 4 kg se desliza hacia abajo por un plano inclinado 45º. Si el coeficiente de rozamiento cinético es $\\mu_{c}=0,2$, calcula la aceleración con la que desciende.",
+    "resolucion_latex": "Descomponemos el peso: $P_{x}=m\\cdot g\\cdot \\sin(45^{\\circ})$ y $P_{y}=m\\cdot g\\cdot \\cos(45^{\\circ})$.<br>La fuerza Normal: $N=P_{y}=m\\cdot g\\cdot \\cos(45^{\\circ})$.<br>La fuerza de rozamiento se opone al movimiento: $F_{r}=\\mu_{c}\\cdot N=\\mu_{c}\\cdot m\\cdot g\\cdot \\cos(45^{\\circ})$.<br><br>Segunda Ley de Newton: $P_{x}-F_{r}=m\\cdot a$.<br>$m\\cdot g\\cdot \\sin(45^{\\circ})-\\mu_{c}\\cdot m\\cdot g\\cdot \\cos(45^{\\circ})=m\\cdot a$.<br>Cancelamos la masa $m$ en todos los términos y sustituimos:<br>$a=9,8\\cdot \\frac{\\sqrt{2}}{2}-0,2\\cdot 9,8\\cdot \\frac{\\sqrt{2}}{2}=6,93-1,39=5,54 \\text{ m/s}^{2}$.",
+    "pista": "¡Cuidado con la Normal en planos inclinados! No es igual al peso total, sino solo a la componente perpendicular al plano (Py).",
+    "formula": "$$N = m\\cdot g \\cdot \\cos(\\alpha) \\quad ; \\quad m\\cdot g\\cdot\\sin(\\alpha) - \\mu_c\\cdot N = m\\cdot a$$"
+  },
+  {
+    "asignatura": "Física 1º Bach",
+    "id": 1306,
+    "dificultad": "Media",
+    "bloque": "Tema 3: Leyes de Newton y Aplicaciones",
+    "enunciado": "Dos masas $m_{1}=3 \\text{ kg}$ y $m_{2}=2 \\text{ kg}$ están apoyadas sobre una mesa horizontal sin rozamiento, en contacto la una con la otra. Se aplica una fuerza horizontal de 25 N sobre la masa $m_{1}$, empujando a ambas. Calcula la aceleración del sistema y la fuerza de contacto (interacción) entre ambas masas.",
+    "resolucion_latex": "Consideramos el sistema completo ($M_{\\text{total}}=m_{1}+m_{2}=5 \\text{ kg}$).<br>$F=M_{\\text{total}}\\cdot a \\Rightarrow 25=5\\cdot a \\Rightarrow a=5 \\text{ m/s}^{2}$.<br><br>Para hallar la fuerza de contacto ($F_{c}$), aislamos la masa $m_{2}$. La única fuerza que la empuja horizontalmente es la que le hace $m_{1}$ ($F_{c}$).<br>Aplicamos Newton solo a $m_{2}$: $\\sum F_{x,2}=m_{2}\\cdot a \\Rightarrow F_{c}=2\\cdot 5=10 \\text{ N}$.<br>(Comprobación en $m_{1}$: $F-F_{c}=m_{1}\\cdot a \\Rightarrow 25-10=3\\cdot 5 \\Rightarrow 15=15$. Correcto).",
+    "pista": "Trata a las dos masas como si fueran un solo bloque gigante para calcular la aceleración. Luego, aísla solo el bloque de delante para ver con qué fuerza le empuja el de atrás.",
+    "formula": "$$a = \\frac{F}{m_1 + m_2} \\quad ; \\quad F_c = m_2 \\cdot a$$"
+  },
+  {
+    "asignatura": "Física 1º Bach",
+    "id": 1307,
+    "dificultad": "Alta",
+    "bloque": "Tema 3: Leyes de Newton y Aplicaciones",
+    "enunciado": "Máquina de Atwood: De una polea ideal (sin masa ni rozamiento) cuelgan dos masas, $m_{1}=7 \\text{ kg}$ y $m_{2}=5 \\text{ kg}$. Calcula la aceleración del sistema al soltarlas y la tensión de la cuerda.",
+    "resolucion_latex": "Establecemos el sentido positivo a favor del movimiento de la masa mayor ($m_{1}$ baja, $m_{2}$ sube).<br>Sistema de ecuaciones para cada masa:<br>Masa 1: $P_{1}-T=m_{1}\\cdot a \\Rightarrow (7\\cdot 9,8)-T=7a \\Rightarrow 68,6-T=7a$<br>Masa 2: $T-P_{2}=m_{2}\\cdot a \\Rightarrow T-(5\\cdot 9,8)=5a \\Rightarrow T-49=5a$<br><br>Sumamos ambas ecuaciones (se anula T):<br>$68,6-49=12a \\Rightarrow 19,6=12a \\Rightarrow a=1,63 \\text{ m/s}^{2}$.<br>Sustituimos la $a$ para hallar T: $T=49+5(1,63)=49+8,15=57,15 \\text{ N}$.",
+    "pista": "Asigna un sentido de movimiento general al sistema (la masa grande manda). Haz el diagrama de fuerzas individual para cada masa y plantea un sistema de dos ecuaciones.",
+    "formula": "$$P_1 - T = m_1 \\cdot a \\quad ; \\quad T - P_2 = m_2 \\cdot a$$"
+  },
+  {
+    "asignatura": "Física 1º Bach",
+    "id": 1308,
+    "dificultad": "Alta",
+    "bloque": "Tema 3: Leyes de Newton y Aplicaciones",
+    "enunciado": "Un bloque de 10 kg reposa sobre una mesa horizontal ($\\mu_{c}=0,4$). Está unido por una cuerda que pasa por una polea en el borde de la mesa a otro bloque de masa M que cuelga libremente. ¿Qué masa mínima debe tener M para que el sistema comience a moverse? Una vez en movimiento, si $M=8 \\text{ kg}$, calcula la tensión de la cuerda.",
+    "resolucion_latex": "a) Masa mínima para moverse: El sistema está a punto de moverse ($a=0$).<br>$P_{M}-F_{\\text{rozamiento}}=0 \\Rightarrow M\\cdot g=\\mu_{e}\\cdot N \\Rightarrow M\\cdot 9,8=0,4\\cdot (10\\cdot 9,8)$.<br>$M\\cdot 9,8=39,2 \\Rightarrow M=4 \\text{ kg}$.<br><br>b) Si $M=8 \\text{ kg}$, el sistema acelera. Planteamos el sistema:<br>Cuerpo colgante: $P_{M}-T=M\\cdot a \\Rightarrow (8\\cdot 9,8)-T=8a \\Rightarrow 78,4-T=8a$<br>Cuerpo mesa: $T-F_{r}=10\\cdot a \\Rightarrow T-(0,4\\cdot 98)=10a \\Rightarrow T-39,2=10a$<br>Sumamos: $78,4-39,2=18a \\Rightarrow 39,2=18a \\Rightarrow a=2,18 \\text{ m/s}^{2}$.<br>Tensión: $T=39,2+10(2,18)=39,2+21,8=61 \\text{ N}$.",
+    "pista": "Para la primera parte, piensa que justo antes de moverse la aceleración es cero. Para la segunda parte, monta un sistema de ecuaciones igual que en la máquina de Atwood.",
+    "formula": "$$M_{min} \\cdot g = \\mu \\cdot m_{\\text{mesa}} \\cdot g$$"
+  },
+  {
+    "asignatura": "Física 1º Bach",
+    "id": 1309,
+    "dificultad": "Alta",
+    "bloque": "Tema 3: Leyes de Newton y Aplicaciones",
+    "enunciado": "Un trineo de 50 kg es arrastrado sobre la nieve horizontal por una persona que tira de una cuerda formando un ángulo de 37º hacia arriba respecto a la horizontal, aplicando una fuerza de 200 N. Si el trineo se mueve con velocidad constante, calcula el coeficiente de rozamiento cinético entre el trineo y la nieve.",
+    "resolucion_latex": "Al tirar con ángulo, la fuerza tiene dos componentes:<br>$F_{x}=200\\cdot \\cos(37^{\\circ}) \\approx 200\\cdot 0,8=160 \\text{ N}$.<br>$F_{y}=200\\cdot \\sin(37^{\\circ}) \\approx 200\\cdot 0,6=120 \\text{ N}$.<br><br>El trineo no se levanta, pero la fuerza Normal disminuye porque $F_{y}$ ayuda a sostener el peso:<br>$\\sum F_{y}=0 \\Rightarrow N+F_{y}-P=0 \\Rightarrow N=P-F_{y}=(50\\cdot 9,8)-120=490-120=370 \\text{ N}$.<br>Fuerza de rozamiento: $F_{r}=\\mu_{c}\\cdot N=\\mu_{c}\\cdot 370$.<br><br>Como la velocidad es constante, $a=0$. $\\sum F_{x}=0 \\Rightarrow F_{x}-F_{r}=0 \\Rightarrow 160=\\mu_{c}\\cdot 370$.<br>Coeficiente: $\\mu_{c}=\\frac{160}{370} \\approx 0,43$.",
+    "pista": "Al tirar hacia arriba en diagonal, le quitas peso al trineo. Calcula la nueva Normal (que será menor que el peso) y ten en cuenta que velocidad constante implica que las fuerzas se anulan.",
+    "formula": "$$N = m\\cdot g - F\\cdot\\sin(\\alpha) \\quad ; \\quad F\\cdot\\cos(\\alpha) = \\mu_c \\cdot N$$"
+  },
+  {
+    "asignatura": "Física 1º Bach",
+    "id": 1310,
+    "dificultad": "Superior",
+    "bloque": "Tema 3: Leyes de Newton y Aplicaciones",
+    "enunciado": "Ejercicio Trampa: Un camión de 10000 kg que viaja a 90 km/h choca frontalmente contra un pequeño mosquito de 1 gramo. Un alumno razona: 'Como el camión tiene una masa enorme y va muy rápido, la fuerza que el camión ejerce sobre el mosquito es millones de veces mayor que la fuerza que el mosquito ejerce sobre el camión. Por eso el mosquito se aplasta y el camión no'. Identifica la ley de Newton que el alumno está violando y explica matemáticamente la verdadera razón por la que el mosquito sufre peores consecuencias.",
+    "resolucion_latex": "El alumno está violando descaradamente la Tercera Ley de Newton (Principio de Acción y Reacción). Esta ley establece que si el camión ejerce una fuerza sobre el mosquito, el mosquito ejerce exactamente la misma fuerza sobre el camión en sentido contrario. ¡La fuerza de impacto es idéntica para ambos!<br><br>La razón por la que el mosquito se aplasta y el camión no se explica con la Segunda Ley de Newton ($a=\\frac{F}{m}$). Como ambos experimentan la misma fuerza $F$, la aceleración (o deceleración brutal que sufren) es inversamente proporcional a su masa. El mosquito no se aplasta por recibir una fuerza mayor, sino porque su minúscula masa no puede soportar la gigantesca aceleración que le provoca esa fuerza compartida.",
+    "pista": "Repasa el Principio de Acción y Reacción. ¿Acaso la pared te pega a ti más flojo de lo que tú pegas a la pared?",
+    "formula": "$$\\vec{F}_{A \\rightarrow B} = -\\vec{F}_{B \\rightarrow A} \\quad ; \\quad a = \\frac{F}{m}$$"
+  },
+  {
+    "asignatura": "Física 1º Bach",
+    "id": 1401,
+    "dificultad": "Básica",
+    "bloque": "Tema 4: Impulso y Cantidad de Movimiento",
+    "enunciado": "Un coche de 1200 kg viaja a 25 m/s hacia el Este. Calcula su cantidad de movimiento (momento lineal). Si frena durante 5 s con una fuerza constante de -3000 N, ¿cuál será su nueva velocidad?",
+    "resolucion_latex": "Momento inicial: $p_{0}=m\\cdot v_{0}=1200\\cdot 25=30000 \\text{ kg}\\cdot\\text{m/s}$.<br>Impulso: $I=F\\cdot \\Delta t=-3000\\cdot 5=-15000 \\text{ N}\\cdot\\text{s}$.<br><br>El impulso equivale a la variación del momento: $I=\\Delta p=p_{f}-p_{0}$.<br>$-15000=p_{f}-30000 \\Rightarrow p_{f}=15000 \\text{ kg}\\cdot\\text{m/s}$.<br>Nueva velocidad: $v_{f}=\\frac{p_{f}}{m}=\\frac{15000}{1200}=12,5 \\text{ m/s}$.",
+    "pista": "El Teorema del Impulso nos dice que la fuerza aplicada durante un tiempo provoca un cambio en la cantidad de movimiento de un objeto.",
+    "formula": "$$p = m \\cdot v \\quad ; \\quad I = F \\cdot \\Delta t = \\Delta p$$"
+  },
+  {
+    "asignatura": "Física 1º Bach",
+    "id": 1402,
+    "dificultad": "Básica",
+    "bloque": "Tema 4: Impulso y Cantidad de Movimiento",
+    "enunciado": "Un tenista golpea una pelota de 60 gramos que le llega a 30 m/s y la devuelve en sentido contrario a 40 m/s. Calcula la variación de la cantidad de movimiento ($\\Delta p$) de la pelota.",
+    "resolucion_latex": "Fijamos un sistema de referencia: sentido de la raqueta hacia adelante positivo (+).<br>Velocidad inicial de la bola (viene hacia el jugador): $v_{i}=-30 \\text{ m/s}$.<br>Velocidad final (sale disparada hacia adelante): $v_{f}=+40 \\text{ m/s}$.<br>Masa de la bola: $m=60 \\text{ g}=0,06 \\text{ kg}$.<br><br>Variación de momento: $\\Delta p=m\\cdot v_{f}-m\\cdot v_{i}=0,06(40)-0,06(-30)=2,4-(-1,8)=2,4+1,8=4,2 \\text{ kg}\\cdot\\text{m/s}$.",
+    "pista": "Cuidado extremo con los signos. Si la pelota va en una dirección y vuelve en la contraria, sus velocidades deben tener signos opuestos. Pasa los gramos a kg.",
+    "formula": "$$\\Delta p = m\\cdot v_f - m\\cdot v_i$$"
+  },
+  {
+    "asignatura": "Física 1º Bach",
+    "id": 1403,
+    "dificultad": "Básica",
+    "bloque": "Tema 4: Impulso y Cantidad de Movimiento",
+    "enunciado": "Un patinador de 60 kg que está en reposo lanza hacia adelante un bloque de 5 kg a una velocidad de 4 m/s. Calcula la velocidad de retroceso del patinador. (No hay rozamiento).",
+    "resolucion_latex": "Conservación del momento lineal (el sistema inicialmente está en reposo): $p_{\\text{inicial}}=0$.<br>$p_{\\text{inicial}}=p_{\\text{final}} \\Rightarrow 0=m_{\\text{patinador}}\\cdot v_{\\text{pat}}+m_{\\text{bloque}}\\cdot v_{\\text{bloq}}$.<br>$0=60\\cdot v_{\\text{pat}}+5\\cdot 4 \\Rightarrow 60v_{\\text{pat}}=-20 \\Rightarrow v_{\\text{pat}}=\\frac{-20}{60} \\approx -0,33 \\text{ m/s}$.<br>El signo negativo indica que retrocede.",
+    "pista": "Como no hay fuerzas externas, la cantidad de movimiento total antes de lanzar el bloque (que es cero) debe ser igual a la cantidad de movimiento total después de lanzarlo.",
+    "formula": "$$\\sum p_{\\text{inicial}} = \\sum p_{\\text{final}}$$"
+  },
+  {
+    "asignatura": "Física 1º Bach",
+    "id": 1404,
+    "dificultad": "Media",
+    "bloque": "Tema 4: Impulso y Cantidad de Movimiento",
+    "enunciado": "A partir de los datos de la pelota del Ejercicio 2, si el tiempo de contacto entre la raqueta y la pelota fue de 0,05 segundos, calcula la fuerza media (Impulso) que ejerció la raqueta sobre el balón.",
+    "resolucion_latex": "Aplicamos el Teorema del Impulso: $F_{m}\\cdot \\Delta t=\\Delta p$.<br>Sabemos del Ejercicio 2 que $\\Delta p=4,2 \\text{ kg}\\cdot\\text{m/s}$.<br>$F_{m}\\cdot 0,05=4,2 \\Rightarrow F_{m}=\\frac{4,2}{0,05}=84 \\text{ N}$.",
+    "pista": "Ya calculaste cuánto cambia la cantidad de movimiento. Usa ese dato y divídelo entre el tiempo para hallar la fuerza constante promedio.",
+    "formula": "$$F_m = \\frac{\\Delta p}{\\Delta t}$$"
+  },
+  {
+    "asignatura": "Física 1º Bach",
+    "id": 1405,
+    "dificultad": "Media",
+    "bloque": "Tema 4: Impulso y Cantidad de Movimiento",
+    "enunciado": "Un vagón de tren de 5000 kg que se mueve a 4 m/s choca y se engancha automáticamente con otro vagón de 3000 kg que estaba en reposo. Calcula la velocidad con la que se moverán ambos vagones enganchados tras el choque (choque inelástico).",
+    "resolucion_latex": "Choque inelástico (masas se unen). Conservación de $\\vec{p}$:<br>$m_1 v_1 + m_2 v_2 = (m_1 + m_2) v_f$<br>$5000\\cdot 4+3000\\cdot 0=(5000+3000)\\cdot v_{f}$.<br>$20000=8000\\cdot v_{f} \\Rightarrow v_{f}=\\frac{20000}{8000}=2,5 \\text{ m/s}$.",
+    "pista": "Al quedarse enganchados, tras el choque pasan a comportarse como un único objeto con la masa sumada de los dos.",
+    "formula": "$$m_1\\cdot v_{1i} + m_2\\cdot v_{2i} = (m_1 + m_2)\\cdot v_f$$"
+  },
+  {
+    "asignatura": "Física 1º Bach",
+    "id": 1406,
+    "dificultad": "Media",
+    "bloque": "Tema 4: Impulso y Cantidad de Movimiento",
+    "enunciado": "Un proyectil de 20 gramos se dispara horizontalmente a 400 m/s contra un bloque de madera de 1,98 kg que está en reposo sobre una superficie lisa. El proyectil queda incrustado. ¿A qué velocidad se moverá el conjunto madera+proyectil tras el impacto?",
+    "resolucion_latex": "Igual que el caso anterior, choque perfectamente inelástico.<br>$m_{1}=0,02 \\text{ kg}$ (proyectil). $m_{2}=1,98 \\text{ kg}$ (madera).<br>$0,02\\cdot 400+1,98\\cdot 0=(0,02+1,98)\\cdot v_{f}$.<br>$8=2,00\\cdot v_{f} \\Rightarrow v_{f}=\\frac{8}{2}=4 \\text{ m/s}$.",
+    "pista": "Aplica exactamente la misma lógica de conservación del momento lineal que si fueran dos vagones de tren, pasando antes los gramos a kilos.",
+    "formula": "$$m_1\\cdot v_{1i} + m_2\\cdot v_{2i} = (m_1 + m_2)\\cdot v_f$$"
+  },
+  {
+    "asignatura": "Física 1º Bach",
+    "id": 1407,
+    "dificultad": "Alta",
+    "bloque": "Tema 4: Impulso y Cantidad de Movimiento",
+    "enunciado": "Dos bolas de billar de la misma masa 'm' colisionan en línea recta (choque perfectamente elástico). La bola 1 va a 5 m/s y la bola 2 a -3 m/s. Plantea las ecuaciones de conservación del momento lineal y de la energía cinética, y demuestra que tras el choque ambas bolas intercambian sus velocidades.",
+    "resolucion_latex": "Conservación del momento: $m(5)+m(-3)=m(v_{1f})+m(v_{2f})$.<br>Dividiendo por $m$: $5-3=v_{1f}+v_{2f} \\Rightarrow v_{1f}+v_{2f}=2$.<br><br>Conservación Energía Cinética: $\\frac{1}{2}m(5)^{2}+\\frac{1}{2}m(-3)^{2}=\\frac{1}{2}mv_{1f}^{2}+\\frac{1}{2}mv_{2f}^{2}$.<br>Dividiendo por $\\frac{1}{2}m$: $25+9=v_{1f}^{2}+v_{2f}^{2} \\Rightarrow v_{1f}^{2}+v_{2f}^{2}=34$.<br><br>Resolvemos el sistema: $v_{2f}=2-v_{1f}$. Sustituimos: $v_{1f}^{2}+(2-v_{1f})^{2}=34$<br>$v_{1f}^{2}+4-4v_{1f}+v_{1f}^{2}=34 \\Rightarrow 2v_{1f}^{2}-4v_{1f}-30=0 \\Rightarrow v_{1f}^{2}-2v_{1f}-15=0$.<br><br>Soluciones: $v_{1f}=5$ o $v_{1f}=-3$. Si $v_{1f}=5$, no hubo choque. Si $v_{1f}=-3 \\Rightarrow v_{2f}=5$.<br>Conclusión: Bola 1 sale a -3 m/s y bola 2 sale a 5 m/s (intercambio perfecto).",
+    "pista": "En los choques elásticos se conserva el momento Y también la energía cinética. Te va a quedar un sistema de dos ecuaciones donde podrás anular las masas (al ser iguales).",
+    "formula": "$$\\sum p_i = \\sum p_f \\quad ; \\quad \\sum E_{ci} = \\sum E_{cf}$$"
+  },
+  {
+    "asignatura": "Física 1º Bach",
+    "id": 1408,
+    "dificultad": "Alta",
+    "bloque": "Tema 4: Impulso y Cantidad de Movimiento",
+    "enunciado": "Un cohete de 200 kg que viaja por el espacio a 100 m/s explota partiéndose en dos fragmentos. Un fragmento de 50 kg sale disparado a 400 m/s en la misma dirección pero en sentido opuesto al movimiento original. Calcula la velocidad (módulo y sentido) del segundo fragmento.",
+    "resolucion_latex": "Conservación del momento lineal. Masa inicial $=200 \\text{ kg}$. Fragmento 1: $m_{1}=50 \\text{ kg}$. Fragmento 2: $m_{2}=150 \\text{ kg}$.<br>$M\\cdot v_{0}=m_{1}\\cdot v_{1}+m_{2}\\cdot v_{2}$.<br>Sentido original positivo (+). El fragmento 1 va en sentido opuesto (-400 m/s).<br>$200\\cdot 100=50(-400)+150\\cdot v_{2} \\Rightarrow 20000=-20000+150v_{2}$.<br>$40000=150v_{2} \\Rightarrow v_{2}=\\frac{40000}{150} \\approx 266,67 \\text{ m/s}$.<br>El signo positivo indica que viaja en la misma dirección original de la nave.",
+    "pista": "Considera la explosión como un 'choque al revés'. El momento inicial de la nave unida tiene que ser igual a la suma de los momentos de los dos pedazos. Cuidado con los signos.",
+    "formula": "$$M_{\\text{total}} \\cdot v_i = m_1\\cdot v_1 + m_2\\cdot v_2$$"
+  },
+  {
+    "asignatura": "Física 1º Bach",
+    "id": 1409,
+    "dificultad": "Alta",
+    "bloque": "Tema 4: Impulso y Cantidad de Movimiento",
+    "enunciado": "Péndulo balístico: Una bala de 10 gramos se dispara horizontalmente y se incrusta en un bloque de madera de 990 gramos suspendido de una cuerda. Tras el impacto, el bloque oscila y se eleva a una altura de 20 cm sobre su posición inicial. Calcula la velocidad a la que fue disparada la bala.",
+    "resolucion_latex": "Es un problema en dos fases.<br>Fase 2 (Oscilación): Conservación de la energía mecánica (conjunto bloque+bala de 1 kg).<br>$E_{\\text{cinetica}}=E_{\\text{potencial}} \\Rightarrow \\frac{1}{2}(m+M)V_{f}^{2}=(m+M)gh \\Rightarrow V_{f}=\\sqrt{2gh}$.<br>$V_{f}=\\sqrt{2\\cdot 9,8\\cdot 0,20}=\\sqrt{3,92} \\approx 1,98 \\text{ m/s}$ (Velocidad del bloque+bala tras el choque).<br><br>Fase 1 (Choque inelástico): Conservación del momento lineal.<br>$m_{\\text{bala}}\\cdot v_{\\text{bala}}=(m_{\\text{bala}}+m_{\\text{bloque}})\\cdot V_{f}$.<br>$0,010\\cdot v_{\\text{bala}}=(1,000)\\cdot 1,98 \\Rightarrow 0,010\\cdot v_{\\text{bala}}=1,98 \\Rightarrow v_{\\text{bala}}=\\frac{1,98}{0,010}=198 \\text{ m/s}$.",
+    "pista": "Resuélvelo de atrás hacia adelante. Usa la altura final para calcular con qué velocidad empezaron a moverse juntos mediante conservación de energía. Luego usa esa velocidad para calcular la de la bala con el momento lineal.",
+    "formula": "$$\\frac{1}{2} M_t V_f^2 = M_t g h \\quad ; \\quad m_b v_b = M_t V_f$$"
+  },
+  {
+    "asignatura": "Física 1º Bach",
+    "id": 1410,
+    "dificultad": "Superior",
+    "bloque": "Tema 4: Impulso y Cantidad de Movimiento",
+    "enunciado": "Ejercicio Trampa: Un alumno lee en un problema: 'Dos coches chocan y quedan completamente abollados y enganchados el uno al otro en medio del cruce'. Como la pista de hielo sobre la que chocan no tiene rozamiento, no hay fuerzas externas. El alumno concluye: 'Dado que el sistema está aislado y no hay fuerzas externas, se conserva el Momento Lineal ($p_{inicial}=p_{final}$) y también se conserva la Energía Cinética ($E_{ci}=E_{cf}$)'. El profesor le marca el ejercicio como incorrecto. Explica la confusión fatal del alumno.",
+    "resolucion_latex": "El alumno asume que, como el sistema está aislado, \"se conserva todo\". El Momento Lineal ($p$) sí se conserva efectivamente en cualquier tipo de colisión sin fuerzas externas.<br><br>Sin embargo, la Energía Cinética no se conserva de forma obligatoria. En este problema, al quedar los coches \"abollados y enganchados\", se ha producido un choque completamente inelástico. En las colisiones inelásticas, una gran cantidad de la energía cinética inicial se \"pierde\" al transformarse en trabajo de deformación de los metales, sonido y calor.",
+    "pista": "Piensa en el propio enunciado: 'quedan abollados'. ¿Qué se necesita para deformar el metal de un coche? ¿De dónde ha salido la energía para eso?",
+    "formula": "$$\\sum p_i = \\sum p_f \\quad ; \\quad \\sum E_{ci} \\neq \\sum E_{cf}$$"
+  },
+  {
+    "asignatura": "Física 1º Bach",
+    "id": 1501,
+    "dificultad": "Básica",
+    "bloque": "Tema 5: Dinámica Circular y Gravitación",
+    "enunciado": "Haces girar una piedra de 200 g atada a una cuerda de 1 metro de longitud describiendo una circunferencia horizontal sobre una mesa lisa. Si la piedra gira a 5 m/s, ¿cuál es la tensión de la cuerda?",
+    "resolucion_latex": "En el movimiento circular, la fuerza centrípeta es la responsable del giro. Aquí, es proporcionada íntegramente por la tensión.<br>$T=F_{c}=m\\cdot \\frac{v^{2}}{R}=0,200\\cdot \\frac{5^{2}}{1}=0,200\\cdot 25=5 \\text{ N}$.",
+    "pista": "La tensión es la única fuerza que tira de la piedra hacia el centro de la circunferencia. Usa la fórmula de la fuerza centrípeta y acuérdate de pasar los gramos a kilos.",
+    "formula": "$$F_c = m \\cdot \\frac{v^2}{R}$$"
+  },
+  {
+    "asignatura": "Física 1º Bach",
+    "id": 1502,
+    "dificultad": "Básica",
+    "bloque": "Tema 5: Dinámica Circular y Gravitación",
+    "enunciado": "Dos masas esféricas de 500 kg y 800 kg están separadas por una distancia de 2 metros entre sus centros. Calcula la fuerza de atracción gravitatoria entre ambas. ($G=6,67\\times 10^{-11} \\text{ N}\\cdot\\text{m}^{2}\\text{/kg}^{2}$).",
+    "resolucion_latex": "Ley de Gravitación Universal: $F=G\\frac{m_{1}m_{2}}{d^{2}}$<br>$F=6,67\\times 10^{-11}\\frac{500 \\cdot 800}{2^{2}}=6,67\\times 10^{-11}\\frac{400000}{4}=6,67\\times 10^{-11}\\cdot 100000=6,67\\times 10^{-6} \\text{ N}$.",
+    "pista": "Aplica directamente la Ley de la Gravitación Universal de Newton asegurándote de no olvidarte de elevar la distancia al cuadrado en el denominador.",
+    "formula": "$$F_g = G \\cdot \\frac{m_1 m_2}{d^2}$$"
+  },
+  {
+    "asignatura": "Física 1º Bach",
+    "id": 1503,
+    "dificultad": "Básica",
+    "bloque": "Tema 5: Dinámica Circular y Gravitación",
+    "enunciado": "Sabiendo que la masa de la Tierra es $M_{T}=5,97\\times 10^{24} \\text{ kg}$ y su radio $R_{T}=6371 \\text{ km}$, calcula el valor de la aceleración de la gravedad (g) en su superficie.",
+    "resolucion_latex": "La aceleración de la gravedad es $g=G\\frac{M_{T}}{R_{T}^{2}}$. Pasamos $R_{T}$ a metros ($6,371\\times 10^{6} \\text{ m}$).<br>$g=6,67\\times 10^{-11}\\frac{5,97\\times 10^{24}}{(6,371\\times 10^{6})^{2}}=\\frac{39,8199\\times 10^{13}}{40,5896\\times 10^{12}} \\approx 9,81 \\text{ m/s}^{2}$.",
+    "pista": "El radio de la Tierra te lo dan en kilómetros. Es un error clásico olvidar pasarlo a metros antes de elevarlo al cuadrado.",
+    "formula": "$$g = G \\cdot \\frac{M}{R^2}$$"
+  },
+  {
+    "asignatura": "Física 1º Bach",
+    "id": 1504,
+    "dificultad": "Media",
+    "bloque": "Tema 5: Dinámica Circular y Gravitación",
+    "enunciado": "Un coche de 1500 kg toma una curva horizontal sin peralte de 40 m de radio. Si el coeficiente de rozamiento estático entre los neumáticos y el asfalto es $\\mu_{e}=0,6$, ¿cuál es la velocidad máxima a la que puede tomar la curva sin derrapar?",
+    "resolucion_latex": "En una curva plana, el rozamiento estático actúa hacia el centro y proporciona la fuerza centrípeta.<br>Fuerza máxima: $F_{r}=\\mu_{e}\\cdot N=\\mu_{e}\\cdot m\\cdot g$.<br>Límite de derrape: $F_{c}=F_{r} \\Rightarrow m\\frac{v^{2}}{R}=\\mu_{e}\\cdot m\\cdot g$. Cancelamos m.<br>$v^{2}=\\mu_{e}\\cdot g\\cdot R \\Rightarrow v=\\sqrt{0,6\\cdot 9,8\\cdot 40}=\\sqrt{235,2} \\approx 15,34 \\text{ m/s}$ (unos 55 km/h).",
+    "pista": "La fuerza centrípeta que obliga al coche a girar es exactamente la fuerza de rozamiento estático. Iguala ambas fórmulas y podrás despejar la velocidad.",
+    "formula": "$$m \\cdot \\frac{v^2}{R} = \\mu_e \\cdot m \\cdot g$$"
+  },
+  {
+    "asignatura": "Física 1º Bach",
+    "id": 1505,
+    "dificultad": "Media",
+    "bloque": "Tema 5: Dinámica Circular y Gravitación",
+    "enunciado": "Péndulo cónico: Una masa de 5 kg cuelga del techo mediante una cuerda de 2 metros. La masa gira en un círculo horizontal de manera que la cuerda forma constantemente un ángulo de 30º con la vertical. Calcula la tensión de la cuerda y la velocidad lineal de la masa.",
+    "resolucion_latex": "Descomponemos la Tensión: $T_{y}=T\\cos(30^{\\circ})$ sostiene el peso, y $T_{x}=T\\sin(30^{\\circ})$ da la fuerza centrípeta.<br>1) Eje Y: $T\\cos(30^{\\circ})=m\\cdot g \\Rightarrow T\\cdot \\frac{\\sqrt{3}}{2}=5\\cdot 9,8 \\Rightarrow T=\\frac{49}{0,866} \\approx 56,58 \\text{ N}$.<br>2) Radio de giro: $R=L\\sin(30^{\\circ})=2\\cdot 0,5=1 \\text{ m}$.<br>3) Eje X: $T\\sin(30^{\\circ})=m\\frac{v^{2}}{R} \\Rightarrow 56,58\\cdot 0,5=5\\frac{v^{2}}{1} \\Rightarrow 28,29=5v^{2} \\Rightarrow v=\\sqrt{\\frac{28,29}{5}} \\approx 2,38 \\text{ m/s}$.",
+    "pista": "Dibuja el sistema y descompón la tensión. La componente vertical sostiene el peso y la componente horizontal actúa como fuerza centrípeta. Recuerda hallar el radio de giro con trigonometría.",
+    "formula": "$$T_y = T\\cos(\\alpha) = mg \\quad ; \\quad T_x = T\\sin(\\alpha) = m\\frac{v^2}{R}$$"
+  },
+  {
+    "asignatura": "Física 1º Bach",
+    "id": 1506,
+    "dificultad": "Media",
+    "bloque": "Tema 5: Dinámica Circular y Gravitación",
+    "enunciado": "El satélite Meteosat orbita la Tierra a una altura donde la gravedad vale exactamente $1 \\text{ m/s}^{2}$. Calcula a qué distancia del centro de la Tierra se encuentra y cuál es su velocidad orbital. (Datos de la Tierra en el Ejercicio 3).",
+    "resolucion_latex": "Gravedad a distancia r: $g'=G\\frac{M_{T}}{r^{2}} \\Rightarrow 1=6,67\\times 10^{-11}\\frac{5,97\\times 10^{24}}{r^{2}}$.<br>$r=\\sqrt{39,82\\times 10^{13}} \\approx 1,99\\times 10^{7} \\text{ m}$ (distancia desde el centro).<br>Para mantener la órbita estable: $F_{g}=F_{c} \\Rightarrow m\\cdot g'=m\\frac{v^{2}}{r} \\Rightarrow 1=\\frac{v^{2}}{r} \\Rightarrow v=\\sqrt{r}$.<br>$v=\\sqrt{1,99\\times 10^{7}} \\approx 4461 \\text{ m/s}$.",
+    "pista": "Primero usa la fórmula de la gravedad 'g' a una distancia 'r' para despejar la distancia al centro. Luego, recuerda que en órbita estable, esa 'g' actúa como aceleración centrípeta.",
+    "formula": "$$g' = G\\frac{M}{r^2} \\quad ; \\quad v = \\sqrt{g' \\cdot r}$$"
+  },
+  {
+    "asignatura": "Física 1º Bach",
+    "id": 1507,
+    "dificultad": "Alta",
+    "bloque": "Tema 5: Dinámica Circular y Gravitación",
+    "enunciado": "En una curva cubierta de hielo (rozamiento nulo) de 60 m de radio, los ingenieros quieren diseñar un peralte (una inclinación lateral) para que los coches puedan tomar la curva de forma segura a 54 km/h. Calcula el ángulo de inclinación $\\theta$ que debe tener el peralte.",
+    "resolucion_latex": "Velocidad de paso: $v=54 \\text{ km/h}=15 \\text{ m/s}$.<br>Sin rozamiento, la componente X de la Normal empuja el coche hacia el centro: $N_{x}=N\\sin(\\theta)$.<br>La componente Y soporta el peso: $N_{y}=N\\cos(\\theta)=mg$.<br>Sistema: $N\\sin(\\theta)=m\\frac{v^{2}}{R}$ y $N\\cos(\\theta)=mg$.<br>Dividiendo la primera entre la segunda: $\\tan(\\theta)=\\frac{v^{2}}{Rg}$.<br>$\\tan(\\theta)=\\frac{15^{2}}{60\\cdot 9,8}=\\frac{225}{588} \\approx 0,382 \\Rightarrow \\theta=\\arctan(0,382) \\approx 20,9^{\\circ}$.",
+    "pista": "Como no hay rozamiento, es la Fuerza Normal inclinada la que tiene que aportar la fuerza centrípeta. Si divides la componente horizontal de la Normal entre la vertical, llegarás a la tangente del ángulo.",
+    "formula": "$$\\tan(\\theta) = \\frac{v^2}{Rg}$$"
+  },
+  {
+    "asignatura": "Física 1º Bach",
+    "id": 1508,
+    "dificultad": "Alta",
+    "bloque": "Tema 5: Dinámica Circular y Gravitación",
+    "enunciado": "Un piloto acrobático realiza un 'looping' vertical (un rizo circular) de 200 m de radio. Si la masa del piloto es de 80 kg, calcula la fuerza normal que ejerce el asiento sobre él (peso aparente) en el punto más bajo del rizo y en el punto más alto si la velocidad de su avión es constante e igual a 100 m/s en todo el giro.",
+    "resolucion_latex": "En el plano vertical, $F_{c}$ es la resultante hacia el centro.<br>$F_{c}=m\\frac{v^{2}}{R}=80\\frac{100^{2}}{200}=80\\frac{10000}{200}=4000 \\text{ N}$.<br>Punto más bajo (Normal arriba, Peso abajo): $N-P=F_{c} \\Rightarrow N=F_{c}+mg=4000+784=4784 \\text{ N}$.<br>Punto más alto (Normal abajo, Peso abajo): $N+P=F_{c} \\Rightarrow N=F_{c}-mg=4000-784=3216 \\text{ N}$.",
+    "pista": "La fuerza centrípeta total tiene que ser siempre la misma. En el punto más bajo, el asiento tiene que empujarte con mucha más fuerza porque tiene que vencer a tu peso; en el punto más alto, tu propio peso le ayuda.",
+    "formula": "$$N_{\\text{bajo}} - mg = m\\frac{v^2}{R} \\quad ; \\quad N_{\\text{alto}} + mg = m\\frac{v^2}{R}$$"
+  },
+  {
+    "asignatura": "Física 1º Bach",
+    "id": 1509,
+    "dificultad": "Alta",
+    "bloque": "Tema 5: Dinámica Circular y Gravitación",
+    "enunciado": "Queremos colocar un satélite en órbita geoestacionaria (su periodo de revolución es igual al periodo de rotación de la Tierra, es decir, 24 horas). Calcula a qué altura sobre la superficie terrestre debe colocarse. ($M_{T}=5,97\\times 10^{24} \\text{ kg}$, $R_{T}=6371 \\text{ km}$).",
+    "resolucion_latex": "Periodo $T=24 \\text{ h}=86400 \\text{ s}$. Órbita estable: $G\\frac{M_{T}m}{r^{2}}=m\\omega^{2}r \\Rightarrow GM_{T}=\\left(\\frac{4\\pi^{2}}{T^{2}}\\right)r^{3}$.<br>$r^{3}=\\frac{GM_{T}T^{2}}{4\\pi^{2}}=\\frac{6,67\\times 10^{-11}\\cdot 5,97\\times 10^{24}\\cdot (86400)^{2}}{4\\pi^{2}} \\approx \\frac{39,82\\times 10^{13}\\cdot 7,46\\times 10^{9}}{39,48} \\approx 7,52\\times 10^{22}$.<br>Radio de la órbita: $r=\\sqrt[3]{7,52\\times 10^{22}} \\approx 4,22\\times 10^{7} \\text{ m}=42200 \\text{ km}$.<br>La altura $h=r-R_{T} \\Rightarrow h=42200-6371=35829 \\text{ km}$.",
+    "pista": "Iguala la fuerza gravitatoria con la fuerza centrípeta usando la fórmula que incluye el Periodo (T). Recuerda que al final tienes que restar el radio de la Tierra para hallar la 'altura'.",
+    "formula": "$$r^3 = \\frac{G M_T T^2}{4\\pi^2} \\quad ; \\quad h = r - R_T$$"
+  },
+  {
+    "asignatura": "Física 1º Bach",
+    "id": 1510,
+    "dificultad": "Superior",
+    "bloque": "Tema 5: Dinámica Circular y Gravitación",
+    "enunciado": "Ejercicio Trampa: Viendo un vídeo de los astronautas a bordo de la Estación Espacial Internacional (ISS) flotando y haciendo piruetas, un alumno exclama: '¡Qué guay! Como están en el espacio vacío, allí no llega la gravedad de la Tierra ($g=0$) y por eso carecen de peso y flotan mágicamente'. Explica cuál es el error gravísimo de su afirmación y por qué flotan realmente si la ISS está a solo unos 400 km de altura.",
+    "resolucion_latex": "El error del alumno es creer que el espacio a esa altura está libre de gravedad. A 400 km de altura, la gravedad terrestre vale aún $\\approx 90\\%$ de su valor en la superficie ($g \\approx 8,7 \\text{ m/s}^{2}$).<br>Los astronautas no flotan porque no haya gravedad, flotan porque **están cayendo constantemente**.<br>La ISS orbita la Tierra a unos 28000 km/h; es decir, avanza horizontalmente tan rápido que, aunque la gravedad la arrastra hacia abajo, la curvatura de la Tierra \"esquiva\" su caída. Están en un estado permanente de **caída libre**, y en caída libre, los objetos y las personas no sienten la fuerza normal del suelo contra sus pies, creando la sensación de ingravidez.",
+    "pista": "Si la gravedad fuera cero, la Luna habría salido disparada de su órbita hace miles de millones de años. Piensa en el ascensor en caída libre.",
+    "formula": "$$g = G\\frac{M_T}{(R_T + h)^2} \\neq 0$$"
+  },
+  {
+    "asignatura": "Física 1º Bach",
+    "id": 1601,
+    "dificultad": "Básica",
+    "bloque": "Tema 6: Trabajo Mecánico y Potencia",
+    "enunciado": "Un bloque de 10 kg es empujado sobre una superficie horizontal mediante una fuerza de 50 N paralela al suelo durante 8 metros. Si no hay rozamiento, calcula el trabajo realizado por dicha fuerza, el trabajo realizado por el peso y el trabajo de la fuerza normal.",
+    "resolucion_latex": "La fórmula del trabajo es $W=F\\cdot d\\cdot \\cos(\\alpha)$.<br>Trabajo de la fuerza F: Forma un ángulo de $0^{\\circ}$ con el desplazamiento.<br>$W_{F}=50\\cdot 8\\cdot \\cos(0^{\\circ})=50\\cdot 8\\cdot 1=400 \\text{ J}$.<br>Trabajo del Peso (P): Forma $90^{\\circ}$ con el desplazamiento horizontal.<br>$W_{P}=P\\cdot d\\cdot \\cos(90^{\\circ})=P\\cdot 8\\cdot 0=0 \\text{ J}$.<br>Trabajo de la Normal (N): Forma $90^{\\circ}$ con el desplazamiento.<br>$W_{N}=N\\cdot d\\cdot \\cos(90^{\\circ})=N\\cdot 8\\cdot 0=0 \\text{ J}$.",
+    "pista": "Recuerda que una fuerza perpendicular al movimiento (ángulo de 90 grados) nunca realiza trabajo mecánico, porque el coseno de 90 vale cero.",
+    "formula": "$$W = F \\cdot d \\cdot \\cos(\\alpha)$$"
+  },
+  {
+    "asignatura": "Física 1º Bach",
+    "id": 1602,
+    "dificultad": "Básica",
+    "bloque": "Tema 6: Trabajo Mecánico y Potencia",
+    "enunciado": "Una grúa levanta un bloque de cemento de 200 kg hasta una altura de 15 metros a velocidad constante en un tiempo de 10 segundos. Calcula el trabajo realizado por la grúa y la potencia mecánica desarrollada.",
+    "resolucion_latex": "Para subir a velocidad constante ($a=0$), la fuerza de la grúa debe igualar al peso.<br>$F=P=m\\cdot g=200\\cdot 9,8=1960 \\text{ N}$.<br>Trabajo de la grúa: Fuerza paralela al desplazamiento vertical ($0^{\\circ}$).<br>$W=F\\cdot d\\cdot \\cos(0^{\\circ})=1960\\cdot 15=29400 \\text{ J}$.<br>Potencia mecánica: $P=\\frac{W}{t}=\\frac{29400}{10}=2940 \\text{ W}$.",
+    "pista": "Como lo levanta a velocidad constante, la fuerza de la grúa es exactamente igual al peso del bloque. Calcula el trabajo y divídelo por el tiempo para obtener la potencia.",
+    "formula": "$$P = m \\cdot g \\quad ; \\quad Pot = \\frac{W}{t}$$"
+  },
+  {
+    "asignatura": "Física 1º Bach",
+    "id": 1603,
+    "dificultad": "Básica",
+    "bloque": "Tema 6: Trabajo Mecánico y Potencia",
+    "enunciado": "Tiramos de un carrito con una cuerda que forma un ángulo de 30º con la horizontal aplicando una fuerza de 100 N. Si desplazamos el carrito 5 metros, ¿cuál es el trabajo realizado por nuestra fuerza?",
+    "resolucion_latex": "La fuerza tiene un ángulo de $30^{\\circ}$ con el vector desplazamiento.<br>$W=F\\cdot d\\cdot \\cos(\\alpha)=100\\cdot 5\\cdot \\cos(30^{\\circ})=500\\cdot \\frac{\\sqrt{3}}{2} \\approx 433,01 \\text{ J}$.",
+    "pista": "Al tirar en diagonal, solo la componente horizontal de tu fuerza (la que va en el mismo sentido que el movimiento) hace trabajo. Usa el coseno del ángulo.",
+    "formula": "$$W = F \\cdot d \\cdot \\cos(\\alpha)$$"
+  },
+  {
+    "asignatura": "Física 1º Bach",
+    "id": 1604,
+    "dificultad": "Media",
+    "bloque": "Tema 6: Trabajo Mecánico y Potencia",
+    "enunciado": "Un objeto de 5 kg se desliza 10 metros por un plano horizontal rugoso con un coeficiente de rozamiento cinético $\\mu_{c}=0,2$. Calcula el trabajo realizado por la fuerza de rozamiento. ¿Qué significa el signo de este trabajo?",
+    "resolucion_latex": "Fuerza Normal en plano horizontal: $N=m\\cdot g=5\\cdot 9,8=49 \\text{ N}$.<br>Fuerza de rozamiento: $F_{r}=\\mu_{c}\\cdot N=0,2\\cdot 49=9,8 \\text{ N}$.<br>El rozamiento siempre se opone al movimiento, por lo que el ángulo es $180^{\\circ}$.<br>$W_{r}=F_{r}\\cdot d\\cdot \\cos(180^{\\circ})=9,8\\cdot 10\\cdot (-1)=-98 \\text{ J}$.<br>El signo negativo significa que es un trabajo resistente (quita energía al sistema).",
+    "pista": "Calcula primero la fuerza de fricción normal. Recuerda que el rozamiento frena, apunta en sentido contrario al movimiento, por lo que el ángulo es de 180º.",
+    "formula": "$$W_r = F_r \\cdot d \\cdot \\cos(180^{\\circ}) = - F_r \\cdot d$$"
+  },
+  {
+    "asignatura": "Física 1º Bach",
+    "id": 1605,
+    "dificultad": "Media",
+    "bloque": "Tema 6: Trabajo Mecánico y Potencia",
+    "enunciado": "Un motor consume una potencia eléctrica de 1500 W para elevar un montacargas de 250 kg a una altura de 20 m en 40 segundos. Calcula el trabajo útil realizado, la potencia útil y el rendimiento (eficiencia) del motor.",
+    "resolucion_latex": "Trabajo útil (el necesario para subir el peso): $F=m\\cdot g=250\\cdot 9,8=2450 \\text{ N}$.<br>$W_{\\text{util}}=2450\\cdot 20=49000 \\text{ J}$.<br>Potencia útil: $P_{\\text{util}}=\\frac{W_{\\text{util}}}{t}=\\frac{49000}{40}=1225 \\text{ W}$.<br>Rendimiento ($\\eta$): Relación entre potencia útil y consumida (total).<br>$\\eta=\\frac{P_{\\text{util}}}{P_{\\text{consumida}}}\\cdot 100=\\frac{1225}{1500}\\cdot 100 \\approx 81,67\\%$.",
+    "pista": "La 'potencia útil' es la que de verdad se invierte en mover el peso físico. El rendimiento te dice qué porcentaje de la luz consumida no se ha perdido en forma de calor.",
+    "formula": "$$\\eta = \\frac{P_{util}}{P_{consumida}} \\cdot 100$$"
+  },
+  {
+    "asignatura": "Física 1º Bach",
+    "id": 1606,
+    "dificultad": "Media",
+    "bloque": "Tema 6: Trabajo Mecánico y Potencia",
+    "enunciado": "El trabajo también se puede calcular gráficamente. La fuerza aplicada a un objeto varía con la posición según una gráfica F-x que forma un triángulo rectángulo: la fuerza sube linealmente desde 0 N en $x=0$ m hasta 40 N en $x=10$ m. Calcula el trabajo total realizado por la fuerza en esos 10 metros.",
+    "resolucion_latex": "En una gráfica Fuerza-posición, el trabajo es numéricamente igual al área bajo la curva.<br>El área de un triángulo es: $A=\\frac{\\text{base}\\cdot \\text{altura}}{2}$.<br>Base ($d$)=10 m. Altura ($F$)=40 N.<br>$W=\\frac{10\\cdot 40}{2}=\\frac{400}{2}=200 \\text{ J}$.",
+    "pista": "Cuando la fuerza no es constante, no puedes usar $W = F \\cdot d$. Lo más rápido es calcular el área de la figura geométrica que se forma en la gráfica.",
+    "formula": "$$W = \\text{Área bajo curva } F-x$$"
+  },
+  {
+    "asignatura": "Física 1º Bach",
+    "id": 1607,
+    "dificultad": "Alta",
+    "bloque": "Tema 6: Trabajo Mecánico y Potencia",
+    "enunciado": "Se quiere subir un bloque de 50 kg por un plano inclinado 30º respecto a la horizontal, recorriendo una distancia de 10 m sobre el plano. El coeficiente de rozamiento es $\\mu_{c}=0,1$. Calcula el trabajo total (neto) necesario si queremos subir el bloque a velocidad constante.",
+    "resolucion_latex": "Para que suba a velocidad constante, el Trabajo Total o Neto debe ser cero ($W_{\\text{neto}}=\\Delta E_{c}=0$).<br>Esto significa que el trabajo de nuestra fuerza ($W_{F}$) debe contrarrestar exactamente al trabajo negativo del peso y del rozamiento.<br>Descomponemos el peso: $P_{x}=50\\cdot 9,8\\cdot \\sin(30^{\\circ})=490\\cdot 0,5=245 \\text{ N}$.<br>Normal: $N=P_{y}=50\\cdot 9,8\\cdot \\cos(30^{\\circ})=490\\cdot \\frac{\\sqrt{3}}{2} \\approx 424,35 \\text{ N}$.<br>Rozamiento: $F_{r}=\\mu_{c}\\cdot N=0,1\\cdot 424,35 \\approx 42,44 \\text{ N}$.<br>Fuerza que debemos aplicar: $F_{\\text{aplicada}} = P_{x} + F_{r} = 245 + 42,44 = 287,44 \\text{ N}$.<br>Trabajo necesario: $W=F_{\\text{aplicada}}\\cdot d=287,44\\cdot 10=2874,4 \\text{ J}$.",
+    "pista": "Al subir a velocidad constante, tu fuerza de empuje tiene que anular matemáticamente a las dos que te frenan: el peso en X y la fuerza de rozamiento.",
+    "formula": "$$F_{aplicada} = P_x + F_r \\quad ; \\quad W = F \\cdot d$$"
+  },
+  {
+    "asignatura": "Física 1º Bach",
+    "id": 1608,
+    "dificultad": "Alta",
+    "bloque": "Tema 6: Trabajo Mecánico y Potencia",
+    "enunciado": "Un coche de 1200 kg sube por una carretera que tiene un desnivel del 10% (seno del ángulo $\\approx 0,1$) a una velocidad constante de 72 km/h. Si las fuerzas de rozamiento y resistencia del aire suman 500 N, calcula la potencia que debe suministrar el motor del coche para mantener esa velocidad constante.",
+    "resolucion_latex": "La potencia cuando hay velocidad constante se puede calcular como: $P=F\\cdot v$.<br>Pasamos velocidad al SI: $v=72 \\text{ km/h}=20 \\text{ m/s}$.<br>Para mantener velocidad constante subiendo, el motor debe vencer la componente del peso en el eje X y el rozamiento.<br>$P_{x}=m\\cdot g\\cdot \\sin(\\alpha)=1200\\cdot 9,8\\cdot 0,1=1176 \\text{ N}$.<br>Fuerza total a vencer: $F_{\\text{total}}=P_{x}+F_{\\text{rozamiento}}=1176+500=1676 \\text{ N}$.<br>Potencia: $P=F_{\\text{total}}\\cdot v=1676\\cdot 20=33520 \\text{ W}$ (o 33,52 kW).",
+    "pista": "La potencia no solo es 'trabajo entre tiempo', también se puede calcular multiplicando la fuerza aplicada por la velocidad a la que se mueve. Ten cuidado de sumar toda la resistencia al motor.",
+    "formula": "$$Pot = F_{\\text{motor}} \\cdot v$$"
+  },
+  {
+    "asignatura": "Física 1º Bach",
+    "id": 1609,
+    "dificultad": "Alta",
+    "bloque": "Tema 6: Trabajo Mecánico y Potencia",
+    "enunciado": "Una bomba de agua extrae 300 litros de agua por minuto desde un pozo situado a 25 metros de profundidad y la expulsa a nivel del suelo con una velocidad de 10 m/s. Calcula la potencia útil de la bomba.",
+    "resolucion_latex": "La bomba realiza dos trabajos: uno para elevar el agua (energía potencial) y otro para darle velocidad (energía cinética).<br>Masa de 300 L de agua = 300 kg. Tiempo = 60 s.<br>Trabajo para elevarla: $W_{p}=m\\cdot g\\cdot h=300\\cdot 9,8\\cdot 25=73500 \\text{ J}$.<br>Trabajo para acelerarla: $W_{c}=\\frac{1}{2}mv^{2}=\\frac{1}{2}\\cdot 300\\cdot 10^{2}=15000 \\text{ J}$.<br>Trabajo total útil en 1 minuto: $W_{\\text{total}}=73500+15000=88500 \\text{ J}$.<br>Potencia útil: $P=\\frac{W_{\\text{total}}}{t}=\\frac{88500}{60}=1475 \\text{ W}$.",
+    "pista": "Recuerda que 1 litro de agua equivale exactamente a 1 kg de masa. Suma la energía cinética (velocidad) y la potencial (altura) para sacar el trabajo total que hace la bomba en un minuto.",
+    "formula": "$$W_{total} = \\Delta E_c + \\Delta E_p \\quad ; \\quad Pot = \\frac{W}{t}$$"
+  },
+  {
+    "asignatura": "Física 1º Bach",
+    "id": 1610,
+    "dificultad": "Superior",
+    "bloque": "Tema 6: Trabajo Mecánico y Potencia",
+    "enunciado": "Ejercicio Trampa: Un mozo de almacén sostiene sobre sus hombros una pesada caja de 80 kg. Con la caja a cuestas, camina horizontalmente a velocidad constante por un pasillo llano durante 50 metros. Al llegar al final, jadeando, dice: '¡Uf, he hecho muchísimo trabajo mecánico acarreando esta caja!'. El profesor de física le responde: 'Físicamente, el trabajo que le has hecho a la caja durante el trayecto es estrictamente CERO'. Demuestra matemáticamente por qué el profesor tiene razón.",
+    "resolucion_latex": "El error está en la definición biológica de esfuerzo frente a la definición física de Trabajo ($W=F\\cdot d\\cdot \\cos(\\alpha)$).<br>El mozo ejerce una fuerza vertical hacia arriba para contrarrestar el peso de la caja y que no caiga al suelo. Sin embargo, su desplazamiento es puramente horizontal.<br>El ángulo entre el vector Fuerza (hacia arriba) y el vector Desplazamiento (horizontal) es exactamente de $90^{\\circ}$.<br>Como $\\cos(90^{\\circ})=0$, el trabajo mecánico es $W=F\\cdot d\\cdot 0=0$ Julios.<br>Físicamente, mover una carga horizontalmente a velocidad constante en ausencia de rozamiento no requiere trabajo, aunque los músculos humanos consuman energía química para mantener la postura.",
+    "pista": "A la física no le importa el sudor. Fíjate hacia dónde está empujando el mozo para sostener la caja (eje Y) y hacia dónde se está desplazando (eje X).",
+    "formula": "$$W = F \\cdot d \\cdot \\cos(90^{\\circ}) = 0$$"
+  },
+  {
+    "asignatura": "Física 1º Bach",
+    "id": 1701,
+    "dificultad": "Básica",
+    "bloque": "Tema 7: Energía y su Conservación",
+    "enunciado": "Un pájaro de 0,5 kg vuela a 15 m/s a una altura de 40 metros. Calcula su energía cinética, su energía potencial gravitatoria respecto al suelo y su energía mecánica total. ($g=9,8 \\text{ m/s}^{2}$).",
+    "resolucion_latex": "Energía cinética: $E_{c}=\\frac{1}{2}mv^{2}=\\frac{1}{2}\\cdot 0,5\\cdot (15)^{2}=0,25\\cdot 225=56,25 \\text{ J}$.<br>Energía potencial: $E_{p}=m\\cdot g\\cdot h=0,5\\cdot 9,8\\cdot 40=196 \\text{ J}$.<br>Energía mecánica: $E_{m}=E_{c}+E_{p}=56,25+196=252,25 \\text{ J}$.",
+    "pista": "La energía mecánica de un cuerpo volador es simplemente la suma de la energía por su velocidad (cinética) más la energía por su altura (potencial).",
+    "formula": "$$E_m = E_c + E_p \\quad ; \\quad E_c = \\frac{1}{2}mv^2 \\quad ; \\quad E_p = mgh$$"
+  },
+  {
+    "asignatura": "Física 1º Bach",
+    "id": 1702,
+    "dificultad": "Básica",
+    "bloque": "Tema 7: Energía y su Conservación",
+    "enunciado": "Se deja caer una maceta de 3 kg desde un balcón situado a 20 metros de altura. Aplicando el Principio de Conservación de la Energía Mecánica (despreciando el rozamiento del aire), calcula con qué velocidad impactará contra el suelo.",
+    "resolucion_latex": "Principio de conservación: $E_{m,\\text{arriba}}=E_{m,\\text{abajo}}$.<br>Arriba (solo potencial, reposo): $E_{m,\\text{arriba}}=m\\cdot g\\cdot h=3\\cdot 9,8\\cdot 20=588 \\text{ J}$.<br>Abajo (solo cinética, altura nula): $E_{m,\\text{abajo}}=\\frac{1}{2}mv^{2}=\\frac{1}{2}\\cdot 3\\cdot v^{2}=1,5v^{2}$.<br>Igualamos: $1,5v^{2}=588 \\Rightarrow v^{2}=\\frac{588}{1,5}=392 \\Rightarrow v=\\sqrt{392} \\approx 19,8 \\text{ m/s}$.",
+    "pista": "Al no haber rozamiento, toda la energía de altura que tiene arriba se transforma íntegramente en energía de velocidad cuando llega abajo. Iguala ambas ecuaciones.",
+    "formula": "$$mgh = \\frac{1}{2}mv^2$$"
+  },
+  {
+    "asignatura": "Física 1º Bach",
+    "id": 1703,
+    "dificultad": "Básica",
+    "bloque": "Tema 7: Energía y su Conservación",
+    "enunciado": "Un muelle de constante elástica $k=500 \\text{ N/m}$ se comprime 20 cm. ¿Qué energía potencial elástica almacena?",
+    "resolucion_latex": "Pasamos la deformación a metros: $x=20 \\text{ cm}=0,2 \\text{ m}$.<br>Energía potencial elástica: $E_{pe}=\\frac{1}{2}kx^{2}=\\frac{1}{2}\\cdot 500\\cdot (0,2)^{2}=250\\cdot 0,04=10 \\text{ J}$.",
+    "pista": "Para la fórmula del muelle es vital que la distancia de compresión la pases a metros.",
+    "formula": "$$E_{pe} = \\frac{1}{2} k x^2$$"
+  },
+  {
+    "asignatura": "Física 1º Bach",
+    "id": 1704,
+    "dificultad": "Media",
+    "bloque": "Tema 7: Energía y su Conservación",
+    "enunciado": "Un coche de 1000 kg circula a 20 m/s. De repente, frena a fondo hasta detenerse. Aplicando el Teorema de las Fuerzas Vivas (Teorema del Trabajo y la Energía Cinética), calcula el trabajo realizado por los frenos del coche.",
+    "resolucion_latex": "Teorema de las fuerzas vivas: El trabajo neto realizado sobre un cuerpo es igual a la variación de su energía cinética ($W_{\\text{neto}}=\\Delta E_{c}$).<br>Energía cinética inicial: $E_{c,i}=\\frac{1}{2}\\cdot 1000\\cdot (20)^{2}=500\\cdot 400=200000 \\text{ J}$.<br>Energía cinética final (detenido): $E_{c,f}=0 \\text{ J}$.<br>$W=E_{c,f}-E_{c,i}=0-200000=-200000 \\text{ J}$ (El trabajo es negativo porque los frenos quitan energía al coche).",
+    "pista": "El trabajo neto que se hace sobre un cuerpo siempre será exactamente la resta entre la energía cinética que tiene al final y la que tenía al principio.",
+    "formula": "$$W_{neto} = \\Delta E_c = E_{cf} - E_{ci}$$"
+  },
+  {
+    "asignatura": "Física 1º Bach",
+    "id": 1705,
+    "dificultad": "Media",
+    "bloque": "Tema 7: Energía y su Conservación",
+    "enunciado": "Se dispara un proyectil de 2 kg verticalmente hacia arriba con una velocidad de 30 m/s. Usando energías, halla la altura máxima que alcanza.",
+    "resolucion_latex": "Conservación de la energía mecánica (lanzamiento).<br>Punto inicial (suelo, solo cinética): $E_{m}=\\frac{1}{2}mv^{2}=\\frac{1}{2}\\cdot 2\\cdot (30)^{2}=1\\cdot 900=900 \\text{ J}$.<br>Altura máxima (se detiene, solo potencial): $E_{m}=m\\cdot g\\cdot h=2\\cdot 9,8\\cdot h=19,6h$.<br>Igualamos: $19,6h=900 \\Rightarrow h=\\frac{900}{19,6} \\approx 45,92 \\text{ m}$.",
+    "pista": "Es justo el caso contrario que dejar caer algo. Al lanzarlo hacia arriba, su energía cinética se va 'gastando' y convirtiendo en energía potencial hasta que se detiene.",
+    "formula": "$$\\frac{1}{2}mv^2 = mgh$$"
+  },
+  {
+    "asignatura": "Física 1º Bach",
+    "id": 1706,
+    "dificultad": "Media",
+    "bloque": "Tema 7: Energía y su Conservación",
+    "enunciado": "Un bloque de 1 kg choca horizontalmente a 4 m/s contra un muelle de constante $k=400 \\text{ N/m}$. Si la superficie no tiene rozamiento, ¿cuánto se comprimirá el muelle hasta detener momentáneamente al bloque?",
+    "resolucion_latex": "La energía cinética del bloque se transforma íntegramente en energía potencial elástica al chocar.<br>$E_{c}=E_{pe} \\Rightarrow \\frac{1}{2}mv^{2}=\\frac{1}{2}kx^{2}$.<br>Sustituimos: $\\frac{1}{2}\\cdot 1\\cdot (4)^{2}=\\frac{1}{2}\\cdot 400\\cdot x^{2} \\Rightarrow 8=200x^{2} \\Rightarrow x^{2}=\\frac{8}{200}=0,04$.<br>Compresión: $x=\\sqrt{0,04}=0,2 \\text{ m}$ (o 20 cm).",
+    "pista": "Cuando el bloque se choca y aprieta el muelle al máximo, toda la energía cinética del bloque pasa a estar acumulada y escondida dentro del muelle elástico.",
+    "formula": "$$\\frac{1}{2}mv^2 = \\frac{1}{2}kx^2$$"
+  },
+  {
+    "asignatura": "Física 1º Bach",
+    "id": 1707,
+    "dificultad": "Alta",
+    "bloque": "Tema 7: Energía y su Conservación",
+    "enunciado": "Fuerzas no conservativas: Un esquiador de 70 kg se deja caer desde la cima de una rampa inclinada 30º que tiene una longitud de 50 metros. Al llegar a la base, su velocidad es de 20 m/s. Determina el trabajo realizado por la fuerza de rozamiento durante la bajada y calcula el coeficiente de rozamiento cinético $\\mu_{c}$.",
+    "resolucion_latex": "Altura inicial: $h=L\\cdot \\sin(30^{\\circ})=50\\cdot 0,5=25 \\text{ m}$.<br>Energía mecánica inicial: $E_{m,i}=m\\cdot g\\cdot h=70\\cdot 9,8\\cdot 25=17150 \\text{ J}$.<br>Energía mecánica final (abajo): $E_{m,f}=\\frac{1}{2}mv^{2}=\\frac{1}{2}\\cdot 70\\cdot (20)^{2}=35\\cdot 400=14000 \\text{ J}$.<br>Como la energía disminuye, el trabajo de las fuerzas no conservativas (rozamiento) es igual a esa variación:<br>$W_{roz}=\\Delta E_{m}=E_{m,f}-E_{m,i}=14000-17150=-3150 \\text{ J}$.<br>Sabiendo que $W_{roz}=F_{r}\\cdot d\\cdot \\cos(180^{\\circ})=-(\\mu_{c}\\cdot N)\\cdot d$.<br>La Normal en el plano: $N=m\\cdot g\\cdot \\cos(30^{\\circ})=70\\cdot 9,8\\cdot \\frac{\\sqrt{3}}{2} \\approx 594,09 \\text{ N}$.<br>$-3150 = -(\\mu_{c} \\cdot 594,09)\\cdot 50 \\Rightarrow 3150 = 29704,5 \\cdot \\mu_{c} \\Rightarrow \\mu_{c} = \\frac{3150}{29704,5} \\approx 0,106$.",
+    "pista": "Compara la energía que tenía al salir con la que tiene al llegar abajo. Si no es la misma, la diferencia la ha 'robado' el rozamiento. Usa trigonometría para hallar la altura real de la pista.",
+    "formula": "$$W_{roz} = \\Delta E_m = E_{mf} - E_{mi}$$"
+  },
+  {
+    "asignatura": "Física 1º Bach",
+    "id": 1708,
+    "dificultad": "Alta",
+    "bloque": "Tema 7: Energía y su Conservación",
+    "enunciado": "El Looping: Un vagón de montaña rusa de masa 'm' parte del reposo desde una altura H. A continuación entra en un bucle circular (rizo) de radio R. Demuestra por conservación de la energía y dinámica que la altura mínima H desde la que debe soltarse para que no caiga en el punto más alto del rizo es $H=2,5R$.",
+    "resolucion_latex": "1) Condición límite en el punto más alto del rizo (altura=2R): la Normal es cero (a punto de caer). La gravedad aporta toda la fuerza centrípeta.<br>$m\\cdot g=m\\frac{v_{\\text{top}}^{2}}{R} \\Rightarrow v_{\\text{top}}^{2}=g\\cdot R$.<br>2) Conservación de energía entre el inicio (altura H) y el top del rizo (altura 2R):<br>$E_{m,i}=E_{m,\\text{top}} \\Rightarrow m\\cdot g\\cdot H=m\\cdot g\\cdot (2R)+\\frac{1}{2}mv_{\\text{top}}^{2}$.<br>Cancelamos $m$ y sustituimos $v_{\\text{top}}^{2}$:<br>$g\\cdot H=2gR+\\frac{1}{2}(g\\cdot R)$. Cancelamos $g$.<br>$H=2R+0,5R \\Rightarrow H=2,5R$. Demostrado.",
+    "pista": "En el punto más crítico del rizo (arriba del todo), la fuerza centrípeta que necesitas la pone toda el peso en un caso límite. Calcula la velocidad en ese punto y aplica energía con el inicio.",
+    "formula": "$$mg = m\\frac{v_{top}^2}{R} \\quad ; \\quad mgH = mg(2R) + \\frac{1}{2}mv_{top}^2$$"
+  },
+  {
+    "asignatura": "Física 1º Bach",
+    "id": 1709,
+    "dificultad": "Alta",
+    "bloque": "Tema 7: Energía y su Conservación",
+    "enunciado": "Un bloque de 2 kg cae desde 3 metros de altura sobre un resorte vertical de constante $k=1000 \\text{ N/m}$. Calcula la compresión máxima del resorte. (Ojo: considera que la altura inicial incluye la caída más la propia compresión del muelle).",
+    "resolucion_latex": "Sea 'h' la altura de caída (3 m) y 'x' la compresión del resorte.<br>La energía potencial gravitatoria total perdida desde que se suelta hasta que se comprime el resorte al máximo es referida a la caída total: $m\\cdot g\\cdot (h+x)$.<br>Esa energía se convierte en potencial elástica: $\\frac{1}{2}kx^{2}$.<br>$m\\cdot g\\cdot (h+x)=\\frac{1}{2}kx^{2} \\Rightarrow 2\\cdot 9,8\\cdot (3+x)=\\frac{1}{2}\\cdot 1000\\cdot x^{2}$.<br>$19,6\\cdot (3+x)=500x^{2} \\Rightarrow 58,8+19,6x=500x^{2} \\Rightarrow 500x^{2}-19,6x-58,8=0$.<br>Resolvemos la ecuación cuadrática y tomamos la solución positiva: $x \\approx 0,363 \\text{ m}$.",
+    "pista": "Cuidado, es un problema clásico de examen: el bloque sigue perdiendo altura gravitatoria MIENTRAS aplasta el muelle. Plantea la ecuación contando con ese pequeño descenso extra 'x'.",
+    "formula": "$$mg(h + x) = \\frac{1}{2} k x^2$$"
+  },
+  {
+    "asignatura": "Física 1º Bach",
+    "id": 1710,
+    "dificultad": "Superior",
+    "bloque": "Tema 7: Energía y su Conservación",
+    "enunciado": "Ejercicio Trampa: Un examen pregunta: '¿De qué depende el trabajo realizado por la fuerza de gravedad y el trabajo realizado por la fuerza de rozamiento para llevar un objeto del punto A al punto B?'. Un alumno contesta: 'Como ambas son fuerzas, por la fórmula $W=F\\cdot d$, el trabajo de ambas depende exclusivamente de la distancia recorrida a lo largo de la trayectoria elegida'. Tacha esta respuesta y explica la diferencia fundamental entre fuerzas conservativas y no conservativas.",
+    "resolucion_latex": "La gravedad es una fuerza conservativa. Su trabajo es totalmente independiente de la trayectoria que se elija para ir del punto A al punto B; solo depende de la diferencia de altura inicial y final (el camino recto o hacer zigzag dan el mismo trabajo). Por eso tiene asociada una energía potencial.<br><br>Por el contrario, el rozamiento es una fuerza no conservativa (disipativa). Su trabajo SÍ depende de la trayectoria elegida: un camino largo en zigzag generará muchísimo más roce y disipará mucha más energía en forma de calor que un camino en línea recta. No se le puede asociar ninguna \"energía potencial de rozamiento\".",
+    "pista": "Pregúntate esto: ¿te cansas igual y desgastas la misma suela subiendo a la montaña en línea recta de forma vertical, que si das mil vueltas por la ladera hasta llegar?",
+    "formula": "$$W_{conservativa} = -\\Delta E_p \\quad ; \\quad W_{no-conservativa} = \\Delta E_m$$"
+  }
+]

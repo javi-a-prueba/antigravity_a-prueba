@@ -1,0 +1,1766 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A-PRUEBA | Lección en Curso</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']],
+                processEscapes: true
+            },
+            startup: {
+                typeset: false
+            }
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        :root {
+            --neon-math: #00f2fe;
+            --neon-physics: #ff4500;
+            --neon-chemistry: #00ff88;
+            --current-neon: var(--neon-math);
+        }
+
+        button {
+            transition: all 0.3s ease;
+        }
+
+        button:hover {
+            box-shadow: 0 0 15px var(--current-neon, rgba(0, 242, 254, 0.5));
+            filter: brightness(1.2);
+        }
+
+        /* Cinemáticas IA */
+        @keyframes rocketLaunch {
+            0% { transform: translateY(0) scale(1); opacity: 1; }
+            40% { transform: translateY(-50px) scale(1.1); opacity: 1; }
+            100% { transform: translateY(-200px) scale(0.5); opacity: 0; }
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .rocket-anim {
+            position: absolute;
+            font-size: 3rem;
+            animation: rocketLaunch 0.8s cubic-bezier(0.5, 0, 0.2, 1) forwards;
+            pointer-events: none;
+            z-index: 5000;
+        }
+
+        body {
+            background: #0B0E14;
+            color: #ffffff;
+            height: 100vh;
+            display: flex;
+            overflow: hidden;
+        }
+
+        /* Ambient glowing dots */
+        .ambient-glow {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            background: radial-gradient(circle at 10% 20%, rgba(138, 43, 226, 0.1) 0%, transparent 40%),
+                radial-gradient(circle at 80% 80%, rgba(0, 242, 254, 0.1) 0%, transparent 40%);
+            z-index: 0;
+        }
+
+        /* Estructura Principal de la Página */
+        .page-wrapper {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 100%;
+        }
+
+        .content-wrapper {
+            display: flex;
+            flex: 1;
+            margin-top: 80px;
+            /* space for navbar */
+            overflow: hidden;
+            position: relative;
+        }
+
+        .main-content {
+            flex: 1;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            z-index: 10;
+            overflow-y: auto;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+        }
+
+        .header-title h1 {
+            font-size: 2rem;
+            color: #fff;
+            text-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+            margin-bottom: 0.2rem;
+        }
+
+        .header-title p {
+            color: #b8b8d0;
+            font-size: 0.95rem;
+        }
+
+        .back-btn {
+            background: rgba(255, 255, 255, 0.06);
+            color: var(--current-neon, #00f2fe);
+            text-decoration: none;
+            padding: 0.65rem 1.4rem;
+            border-radius: 50px;
+            font-size: 0.88rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid var(--current-neon, rgba(0,242,254,0.35));
+            box-shadow: 0 0 12px color-mix(in srgb, var(--current-neon,#00f2fe) 20%, transparent);
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .back-btn:hover {
+            background: color-mix(in srgb, var(--current-neon,#00f2fe) 15%, transparent);
+            box-shadow: 0 0 22px color-mix(in srgb, var(--current-neon,#00f2fe) 40%, transparent);
+            transform: translateX(-2px);
+        }
+
+        /* Video Player Area */
+        .video-container {
+            width: 100%;
+            height: 500px;
+            background: #000;
+            border-radius: 20px;
+            border: 2px solid rgba(0, 242, 254, 0.4);
+            box-shadow: 0 0 40px rgba(0, 242, 254, 0.15);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 2.5rem;
+        }
+
+        .play-overlay {
+            width: 80px;
+            height: 80px;
+            background: rgba(0, 242, 254, 0.2);
+            border: 2px solid #00f2fe;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            backdrop-filter: blur(5px);
+            transition: all 0.3s;
+        }
+
+        .play-overlay:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 30px rgba(0, 242, 254, 0.6);
+            background: rgba(0, 242, 254, 0.4);
+        }
+
+        .play-icon {
+            width: 0;
+            height: 0;
+            border-top: 15px solid transparent;
+            border-bottom: 15px solid transparent;
+            border-left: 25px solid #fff;
+            margin-left: 5px;
+        }
+
+        .video-bar {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 6px;
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .video-progress {
+            height: 100%;
+            width: 45%;
+            background: #00f2fe;
+            box-shadow: 0 0 10px #00f2fe;
+        }
+
+        .video-time {
+            position: absolute;
+            bottom: 15px;
+            left: 20px;
+            font-size: 0.9rem;
+            color: #fff;
+            text-shadow: 0 0 5px #000;
+        }
+
+        /* Hexagonal System */
+        .progression-section {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .progression-title {
+            font-size: 1.1rem;
+            color: #a0a0b8;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .hex-container {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .hex-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .hex {
+            width: 80px;
+            height: 92px;
+            background: rgba(20, 20, 30, 0.8);
+            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            border: none;
+        }
+
+        .hex-inner {
+            width: 76px;
+            height: 88px;
+            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .hex-label {
+            font-size: 0.85rem;
+            color: #b8b8d0;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        /* Fases del Aprendizaje (Replaces Levels) */
+        /* Teoría */
+        .theory .hex {
+            background: #00f2fe;
+            box-shadow: 0 0 20px rgba(0, 242, 254, 0.4);
+        }
+
+        .theory .hex-inner {
+            background: #001f2b;
+            color: #00f2fe;
+        }
+
+        .theory:hover .hex {
+            transform: translateY(-5px);
+            box-shadow: 0 0 30px rgba(0, 242, 254, 0.7);
+        }
+
+        /* Ejemplos */
+        .examples .hex {
+            background: #00fa9a;
+            box-shadow: 0 0 20px rgba(0, 250, 154, 0.4);
+        }
+
+        .examples .hex-inner {
+            background: #002b1a;
+            color: #00fa9a;
+        }
+
+        .examples:hover .hex {
+            transform: translateY(-5px);
+            box-shadow: 0 0 30px rgba(0, 250, 154, 0.7);
+        }
+
+        /* Práctica */
+        .practice .hex {
+            background: #ffb199;
+            box-shadow: 0 0 20px rgba(255, 177, 153, 0.4);
+        }
+
+        .practice .hex-inner {
+            background: #2b110a;
+            color: #ffb199;
+        }
+
+        .practice:hover .hex {
+            transform: translateY(-5px);
+            box-shadow: 0 0 30px rgba(255, 177, 153, 0.7);
+        }
+
+        .gold:hover .hex {
+            transform: translateY(-5px);
+            box-shadow: 0 0 30px rgba(255, 215, 0, 0.7);
+        }
+
+        /* Reto Supernova Bloqueado */
+        .supernova .hex {
+            background: rgba(30, 30, 40, 0.5);
+            box-shadow: none;
+            cursor: not-allowed;
+            animation: none;
+            filter: grayscale(100%);
+        }
+
+        .supernova .hex-inner {
+            background: #111;
+            color: #555;
+            text-shadow: none;
+        }
+
+        .supernova-wrapper {
+            position: relative;
+        }
+
+        .supernova-tooltip {
+            visibility: hidden;
+            width: 200px;
+            background-color: rgba(255, 42, 85, 0.9);
+            color: #fff;
+            text-align: center;
+            border-radius: 8px;
+            padding: 8px;
+            position: absolute;
+            z-index: 1;
+            bottom: 120%;
+            left: 50%;
+            margin-left: -100px;
+            opacity: 0;
+            transition: opacity 0.3s;
+            font-size: 0.8rem;
+            pointer-events: none;
+        }
+
+        .supernova-wrapper:hover .supernova-tooltip {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        /* Logic for Fases del Aprendizaje */
+        .locked-phase .hex {
+            filter: grayscale(100%) !important;
+            box-shadow: none !important;
+            cursor: not-allowed;
+            animation: none !important;
+            background: rgba(30, 30, 40, 0.5) !important;
+        }
+
+        .locked-phase .hex-inner {
+            background: #111 !important;
+            color: #555 !important;
+            text-shadow: none !important;
+            font-size: 1.5rem;
+        }
+
+        .locked-tooltip {
+            visibility: hidden;
+            width: 220px;
+            background-color: rgba(255, 42, 85, 0.9);
+            color: #fff;
+            text-align: center;
+            border-radius: 8px;
+            padding: 8px;
+            position: absolute;
+            z-index: 10;
+            bottom: 110%;
+            left: 50%;
+            margin-left: -110px;
+            opacity: 0;
+            transition: opacity 0.3s;
+            font-size: 0.8rem;
+            pointer-events: none;
+        }
+
+        .locked-phase:hover .locked-tooltip {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .completed-phase .hex {
+            filter: none !important;
+            /* Resplandor neón constante */
+            animation: none !important;
+        }
+
+        .completed-phase.theory .hex {
+            box-shadow: 0 0 30px #00f2fe, 0 0 50px rgba(0, 242, 254, 0.6) !important;
+        }
+
+        .completed-phase.practice .hex {
+            box-shadow: 0 0 30px #ffb199, 0 0 50px rgba(255, 177, 153, 0.6) !important;
+        }
+
+        .completed-phase.challenge .hex {
+            box-shadow: 0 0 40px #ff0844, 0 0 60px rgba(138, 43, 226, 0.8) !important;
+        }
+
+        .phase-wrapper {
+            position: relative;
+        }
+
+        /* Bloques de Teoría y Práctica */
+        .lesson-blocks {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .theory-box {
+            background: rgba(0, 242, 254, 0.05);
+            border: 1px solid rgba(0, 242, 254, 0.3);
+            border-radius: 12px;
+            padding: 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .theory-info h3 {
+            color: #00f2fe;
+            margin-bottom: 0.5rem;
+        }
+
+        .theory-info p {
+            color: #a0a0b8;
+            font-size: 0.9rem;
+        }
+
+        .btn-pdf {
+            background: rgba(0, 242, 254, 0.1);
+            color: #00f2fe;
+            border: 1px solid #00f2fe;
+            padding: 0.8rem 1.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+
+        .btn-pdf:hover {
+            background: #00f2fe;
+            color: #000;
+            box-shadow: 0 0 15px rgba(0, 242, 254, 0.5);
+        }
+
+        .exercises-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .ex-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            padding: 1rem;
+            text-align: center;
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+
+        .ex-card:hover {
+            background: rgba(255, 255, 255, 0.08);
+            border-color: rgba(255, 255, 255, 0.3);
+        }
+
+        .ex-bronze {
+            border-top: 3px solid #cd7f32;
+        }
+
+        .ex-silver {
+            border-top: 3px solid #c0c0c0;
+        }
+
+        .ex-gold {
+            border-top: 3px solid #ffd700;
+        }
+
+
+        /* Reto IA */
+        .challenge .hex {
+            background: linear-gradient(135deg, #05020a 0%, #ff0844 50%, #8a2be2 100%);
+            box-shadow: 0 0 50px rgba(255, 8, 68, 0.6), 0 0 80px rgba(138, 43, 226, 0.4);
+            animation: stellar-explosion 2s infinite alternate;
+        }
+
+        .challenge .hex-inner {
+            background: #000;
+            color: #fff;
+            text-shadow: 0 0 10px #ff0844;
+        }
+
+        .challenge:hover .hex {
+            transform: scale(1.15);
+            box-shadow: 0 0 80px rgba(255, 8, 68, 0.8), 0 0 100px rgba(138, 43, 226, 0.6);
+        }
+
+        @keyframes stellar-explosion {
+            from {
+                filter: brightness(1) hue-rotate(0deg);
+            }
+
+            to {
+                filter: brightness(1.3) hue-rotate(30deg);
+            }
+        }
+
+
+        /* Tutor Socrático Sidebar (Consola de Nave Espacial) */
+        .sidebar {
+            width: 400px;
+            background: linear-gradient(180deg, rgba(5, 2, 10, 0.95) 0%, rgba(15, 10, 30, 0.95) 100%);
+            border-left: 2px solid #00f2fe;
+            box-shadow: inset 10px 0 30px rgba(0, 242, 254, 0.05), -10px 0 40px rgba(0, 0, 0, 0.7);
+            display: flex;
+            flex-direction: column;
+            z-index: 20;
+        }
+
+        .chat-header {
+            padding: 1.5rem;
+            background: rgba(0, 242, 254, 0.05);
+            border-bottom: 1px solid rgba(0, 242, 254, 0.3);
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .ai-avatar {
+            width: 40px;
+            height: 40px;
+            background: #00f2fe;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 0 20px rgba(0, 242, 254, 0.8);
+            text-shadow: 0 0 5px #000;
+        }
+
+        .chat-header h2 {
+            font-size: 1.1rem;
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 0 0 10px rgba(0, 242, 254, 0.5);
+        }
+
+        .chat-header p {
+            font-size: 0.8rem;
+            color: #00f2fe;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .chat-messages {
+            flex: 1;
+            padding: 1.5rem;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .msg {
+            max-width: 85%;
+            padding: 1rem;
+            border-radius: 12px;
+            font-size: 0.95rem;
+            line-height: 1.4;
+        }
+
+        .msg.ai {
+            background: rgba(0, 242, 254, 0.1);
+            border: 1px solid rgba(0, 242, 254, 0.2);
+            color: #e0faff;
+            align-self: flex-start;
+            border-bottom-left-radius: 2px;
+        }
+
+        .msg.user {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            align-self: flex-end;
+            border-bottom-right-radius: 2px;
+        }
+
+        .chat-input {
+            padding: 1.5rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .chat-input input {
+            flex: 1;
+            background: rgba(0, 0, 0, 0.5);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 0.8rem 1rem;
+            border-radius: 50px;
+            color: white;
+            outline: none;
+            font-size: 0.95rem;
+            transition: all 0.3s;
+        }
+
+        .chat-input input:focus {
+            border-color: #00f2fe;
+            box-shadow: 0 0 10px rgba(0, 242, 254, 0.2);
+        }
+
+        .chat-input button {
+            background: linear-gradient(135deg, #00f2fe 0%, #4facfe 100%);
+            border: none;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            box-shadow: 0 0 15px rgba(0, 242, 254, 0.4);
+            transition: all 0.3s;
+        }
+
+        .chat-input button:hover {
+            transform: scale(1.1);
+        }
+
+        /* SVG Send Icon */
+        .send-icon {
+            fill: none;
+            stroke: #000;
+            stroke-width: 2;
+            width: 20px;
+            height: 20px;
+        }
+
+        /* Typing Indicator styles */
+        .typing-indicator {
+            display: inline-flex;
+            gap: 4px;
+            padding: 1rem 1.2rem;
+            align-items: center;
+        }
+
+        .dot {
+            width: 8px;
+            height: 8px;
+            background-color: #00f2fe;
+            border-radius: 50%;
+            animation: bounce 1.4s infinite ease-in-out both;
+        }
+
+        .dot:nth-child(1) {
+            animation-delay: -0.32s;
+        }
+
+        .dot:nth-child(2) {
+            animation-delay: -0.16s;
+        }
+
+        .dot:nth-child(3) {
+            animation-delay: 0s;
+        }
+
+        @keyframes bounce {
+
+            0%,
+            80%,
+            100% {
+                transform: scale(0);
+            }
+
+            40% {
+                transform: scale(1);
+            }
+        }
+
+        /* Navbar & Footer */
+        .navbar {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 80px;
+            padding: 0 3rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(10, 5, 25, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            z-index: 100;
+        }
+
+        .nav-brand {
+            font-size: 1.5rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            background: linear-gradient(90deg, #00f2fe 0%, #4facfe 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: #b8b8d0;
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: #00f2fe;
+            text-shadow: 0 0 10px rgba(0, 242, 254, 0.5);
+        }
+
+        .footer {
+            padding: 1rem 3rem;
+            text-align: center;
+            background: rgba(10, 5, 25, 0.4);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            z-index: 100;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .footer p {
+            font-size: 0.85rem;
+            color: #8888a0;
+            margin: 0;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .footer-links a {
+            color: #a0a0b8;
+            text-decoration: none;
+            font-size: 0.8rem;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: #00f2fe;
+        }
+
+        /* Checkpoint Popup Styles */
+        .popup-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.85);
+            backdrop-filter: blur(8px);
+            z-index: 1000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation: fadeIn 0.4s ease;
+        }
+
+        .popup-content {
+            background: linear-gradient(135deg, rgba(20, 10, 35, 0.95), rgba(5, 5, 20, 0.95));
+            border: 1px solid rgba(0, 242, 254, 0.4);
+            box-shadow: 0 0 50px rgba(0, 242, 254, 0.3);
+            border-radius: 20px;
+            padding: 3rem 2.5rem;
+            max-width: 600px;
+            width: 90%;
+            text-align: center;
+        }
+
+        .popup-content h3 {
+            color: #00f2fe;
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .popup-content p {
+            font-size: 1.15rem;
+            margin-bottom: 2rem;
+            line-height: 1.5;
+        }
+
+        .options-container {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .option-btn {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: #fff;
+            padding: 1rem;
+            border-radius: 12px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-align: left;
+        }
+
+        .option-btn:hover {
+            background: rgba(0, 242, 254, 0.15);
+            border-color: #00f2fe;
+            box-shadow: 0 0 15px rgba(0, 242, 254, 0.3);
+        }
+
+        /* Premium Unlock Button Container */
+        #premium-unlock-container {
+            display: none;
+            /* Hidden by default until quiz is completed */
+            justify-content: center;
+            align-items: center;
+            margin-top: 3rem;
+            margin-bottom: 1rem;
+            padding: 2rem;
+            background: rgba(0, 242, 254, 0.05);
+            border: 1px solid rgba(0, 242, 254, 0.3);
+            border-radius: 20px;
+            box-shadow: 0 0 40px rgba(0, 242, 254, 0.1);
+        }
+
+        .premium-btn {
+            background: linear-gradient(90deg, #ff0844 0%, #ffb199 100%);
+            color: white;
+            padding: 1rem 2.5rem;
+            font-size: 1.2rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            text-decoration: none;
+            box-shadow: 0 0 30px rgba(255, 8, 68, 0.5);
+            transition: all 0.3s;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.8rem;
+        }
+
+        .premium-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 50px rgba(255, 8, 68, 0.8);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Modal Salvavidas */
+        .salvavidas-modal {
+            display: none;
+            position: fixed;
+            top: 0; left: 0; width: 100vw; height: 100vh;
+            background: rgba(5, 2, 10, 0.90);
+            backdrop-filter: blur(15px);
+            z-index: 3000;
+            justify-content: center;
+            align-items: center;
+            animation: fadeIn 0.4s ease;
+        }
+
+        .salvavidas-content {
+            background: rgba(15, 10, 30, 0.85);
+            border: 1px solid rgba(0, 250, 154, 0.4);
+            box-shadow: 0 0 40px rgba(0, 250, 154, 0.2);
+            border-radius: 12px;
+            padding: 2rem;
+            width: 90%;
+            max-width: 600px;
+            text-align: center;
+            position: relative;
+        }
+
+        .salvavidas-btn {
+            background: rgba(0, 250, 154, 0.1);
+            color: #00fa9a;
+            border: 1px solid #00fa9a;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: all 0.3s;
+        }
+
+        .salvavidas-btn:hover {
+            background: #00fa9a;
+            color: #000;
+            box-shadow: 0 0 15px rgba(0, 250, 154, 0.5);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="ambient-glow"></div>
+
+    <nav class="navbar">
+        <a href="index.html" class="nav-brand">A-PRUEBA</a>
+        <div class="nav-links">
+            <a href="index.html">Inicio</a>
+            <a href="mapa.html">Mapa</a>
+            <a href="perfil.html">Perfil</a>
+            <a href="config.html">Configuración</a>
+        </div>
+    </nav>
+
+    <div class="page-wrapper">
+        <div class="content-wrapper">
+            <main class="main-content">
+                <header class="header">
+                    <div class="header-title">
+                        <h1 id="estudio-titulo">Cargando lección…</h1>
+                        <p id="estudio-subtitulo">Lección Interactiva</p>
+                    </div>
+                    <a href="mapa.html" class="back-btn" id="btn-volver-mapa">
+                        ← Volver al Mapa
+                    </a>
+                </header>
+
+                <!-- El reproductor de vídeo principal ahora reside en el Modal de Teoría -->
+
+                <div id="default-estudio-view">
+                    <section class="progression-section" style="margin-bottom: 2.5rem;">
+                    <h3 class="progression-title">Fases del Aprendizaje</h3>
+                    <div class="hex-container" style="justify-content: center; gap: 3rem;">
+                        <!-- Fase 1: Teoría -->
+                        <div class="hex-wrapper phase-wrapper theory" id="phase-theory">
+                            <div class="hex" onclick="completePhase('theory')">
+                                <div class="hex-inner" id="inner-theory">📖</div>
+                            </div>
+                            <span class="hex-label">Teoría</span>
+                        </div>
+
+                        <!-- Fase 2: Misiones -->
+                        <div class="hex-wrapper phase-wrapper practice" id="phase-exercises">
+                            <div class="hex"
+                                onclick="completePhase('exercises'); window.iniciarMisiones()">
+                                <div class="hex-inner" id="inner-exercises">✏️</div>
+                            </div>
+                            <span class="hex-label">Misiones</span>
+                        </div>
+
+                        <!-- Fase 3: Reto Socrático -->
+                        <div class="hex-wrapper phase-wrapper challenge" id="phase-challenge">
+                            <div class="hex"
+                                onclick="completePhase('challenge'); document.getElementById('supernova-section').scrollIntoView({behavior: 'smooth'})">
+                                <div class="hex-inner" id="inner-challenge">🧠</div>
+                            </div>
+                            <span class="hex-label">Reto Socrático</span>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="lesson-blocks">
+                    <div class="theory-box">
+                        <div class="theory-info">
+                            <h3>Teoría Clave</h3>
+                            <p>Apuntes estructurados y vídeo explicativo, generados dinámicamente según el temario
+                                oficial
+                                (BOE).</p>
+                        </div>
+                        <button class="btn-pdf" onclick="openTheoryModal()">▶️ Ver Vídeo y Teoría</button>
+                    </div>
+
+                    <!-- El grid de ejercicios se oculta ya que ahora se usa la interfaz modal de Misiones -->
+                    <section class="progression-section" id="exercises-section" style="display: none;">
+                        <h3 class="progression-title">Dominio Práctico (9 Ejercicios)</h3>
+                        <div class="exercises-grid">
+                        </div>
+                    </section>
+                </div>
+
+                <section class="progression-section" id="supernova-section" style="margin-top: 2rem;">
+                    <h3 class="progression-title">Reto Final Cúbico</h3>
+                    <div class="hex-container" style="justify-content: center;">
+                        <div class="hex-wrapper supernova-wrapper supernova">
+                            <span class="supernova-tooltip">Necesitas acertar todos los demás ejercicios para
+                                desbloquear este</span>
+                            <div class="hex">
+                                <div class="hex-inner">∞</div>
+                            </div>
+                            <span class="hex-label">Reto Supernova</span>
+                        </div>
+                    </div>
+                </section>
+                </div> <!-- Cierra default-estudio-view -->
+
+                <!-- Contenedor nativo para Misiones UI -->
+                <div id="misiones-inline-container" style="display: none; flex-direction: column; width: 100%; animation: fadeIn 0.3s ease;">
+                </div>
+
+                <!-- Premium Unlock Trigger (Hidden Initially)
+                <div id="premium-unlock-container">
+                    <a href="mapa.html" class="premium-btn">
+                        <span>⭐</span> ¡Tema SUPERADO! Desbloquear Curso Completo
+                    </a>
+                </div>
+                -->
+            </main>
+
+            <aside class="sidebar">
+                <div class="chat-header">
+                    <div class="ai-avatar">💡</div>
+                    <div>
+                        <h2>Tutor Socrático</h2>
+                        <p>En línea • Consola IA</p>
+                    </div>
+                </div>
+
+                <div class="chat-messages" id="chatMessages">
+                    <div class="msg ai">
+                        ¡Hola! Soy tu Tutor IA de A-PRUEBA. No te daré la solución directa, pero estoy aquí para guiarte
+                        paso a paso. ¿En qué parte del ejercicio te has atascado?
+                    </div>
+                </div>
+
+                <div class="chat-input" onsubmit="event.preventDefault()">
+                    <input type="text" placeholder="Pregunta a tu Tutor..." id="chatInput">
+                    <button onclick="document.getElementById('chatInput').value=''">
+                        <svg class="send-icon" viewBox="0 0 24 24">
+                            <path d="M22 2L11 13M22 2L15 22L11 13L2 9L22 2Z" />
+                        </svg>
+                    </button>
+                </div>
+            </aside>
+        </div>
+
+        <!-- Modal Salvavidas -->
+        <div class="salvavidas-modal" id="salvavidas-modal">
+            <div class="salvavidas-content">
+                <button onclick="document.getElementById('salvavidas-modal').style.display='none'" style="position: absolute; top: 15px; right: 20px; background: transparent; border: none; color: #a0a0b8; font-size: 2rem; cursor: pointer; transition: color 0.3s;">&times;</button>
+                <h2 style="color: #00fa9a; font-size: 1.2rem; text-transform: uppercase; letter-spacing: 3px; font-weight: 300; margin-bottom: 2rem; border-bottom: 1px solid rgba(0, 250, 154, 0.2); padding-bottom: 1rem;">Salvavidas de Emergencia 🛟</h2>
+                
+                <div class="video-container" style="height: 300px; margin-bottom: 1.5rem; border-color: rgba(0, 250, 154, 0.4); box-shadow: 0 0 20px rgba(0, 250, 154, 0.15);">
+                    <!-- Placeholder iframe -->
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/dQw4w9WgXcQ?controls=0" title="Salvavidas Video" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope;" allowfullscreen></iframe>
+                </div>
+                
+                <p style="color: #b8b8d0; font-size: 0.95rem; margin-bottom: 1rem;">Revisa esta explicación rápida. Si aciertas ahora, ganarás <strong>+0.5 XP</strong> en lugar de +1.0 XP.</p>
+                <button class="salvavidas-btn" onclick="document.getElementById('salvavidas-modal').style.display='none'">Entendido, volver al ejercicio</button>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <p>&copy; 2026 A-PRUEBA. Todos los derechos reservados.</p>
+            <div class="footer-links">
+                <a href="#">Términos de Servicio</a>
+                <a href="#">Contacto para Padres</a>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Temarios DB -->
+    <script src="config.js"></script>
+    <script src="temarios.js"></script>
+    <!-- Preguntas Interactividad Script -->
+    <script src="preguntas.js"></script>
+    <!-- IA Script -->
+    <script src="script.js"></script>
+
+    <script type="module">
+        import { auth, db, doc, updateDoc, onAuthStateChanged, getDoc, collection, query, where, getDocs, functions, httpsCallable } from './firebase-config.js';
+        import { signOut } from './firebase-config.js';
+
+        window.socraticTutorCall = httpsCallable(functions, 'socraticTutor');
+
+        let currentUser = null;
+        let timeStart = Date.now();
+
+        onAuthStateChanged(auth, (user) => {
+            if (!user) {
+                window.location.href = 'login.html';
+            } else {
+                currentUser = user;
+                loadExercisesFromFirestore();
+            }
+        });
+
+        async function loadExercisesFromFirestore() {
+            try {
+                const grid = document.querySelector('.exercises-grid');
+                if (!grid) return;
+                grid.innerHTML = '<div style="color: #00f2fe; grid-column: 1 / -1; text-align: center;">Cargando ejercicios desde la base de datos...</div>';
+
+                const asigTextos = {
+                    'fisica': 'Física',
+                    'mates': 'Matemáticas',
+                    'quimica': 'Química'
+                };
+                const cursoTextos = {
+                    '2eso': '2º ESO',
+                    '3eso': '3º ESO',
+                    '4eso': '4º ESO',
+                    '1bach': '1º Bach',
+                    '2bach': '2º Bach',
+                    '2_bachillerato': '2º Bach'
+                };
+                
+                const rawSubject = localStorage.getItem('seleccion_asignatura') || 'fisica';
+                const asigName = asigTextos[rawSubject] || 'Física';
+                
+                let cursoRaw = localStorage.getItem('userCourse') || localStorage.getItem('curso') || '2_bachillerato';
+                const cursoName = cursoTextos[cursoRaw] || '2º Bach';
+                
+                const asigFullName = `${asigName} ${cursoName}`;
+                
+                const rawTemas = localStorage.getItem('seleccion_temas');
+                if (!rawTemas) {
+                    grid.innerHTML = '<div style="color: #ef473a; grid-column: 1 / -1; text-align: center;">No has seleccionado temas para estudiar.</div>';
+                    return;
+                }
+                
+                const temas = JSON.parse(rawTemas);
+                const temasTitulos = temas.map(t => t.titulo);
+                
+                if (temasTitulos.length === 0) return;
+
+                // FireStore "in" queries only support up to 10 items.
+                // We'll chunk if necessary, though typical selection is 1-3 themes.
+                const allExercises = [];
+                const chunks = [];
+                for (let i = 0; i < temasTitulos.length; i += 10) {
+                    chunks.push(temasTitulos.slice(i, i + 10));
+                }
+
+                for (const chunk of chunks) {
+                    const q = query(
+                        collection(db, 'ejercicios_base'),
+                        where('asignatura', '==', asigFullName),
+                        where('bloque', 'in', chunk)
+                    );
+                    const snapshot = await getDocs(q);
+                    snapshot.forEach(doc => {
+                        allExercises.push({ id_doc: doc.id, ...doc.data() });
+                    });
+                }
+
+                // Sort exercises by id as requested
+                allExercises.sort((a, b) => (a.id || 0) - (b.id || 0));
+
+                grid.innerHTML = ''; // clear loading
+
+                if (allExercises.length === 0) {
+                    grid.innerHTML = '<div style="color: #a0a0b8; grid-column: 1 / -1; text-align: center;">No hay ejercicios disponibles para los temas seleccionados.</div>';
+                    return;
+                }
+
+                // Guardamos los ejercicios en una variable global para Misiones UI
+                window.ejerciciosMision = allExercises;
+                grid.innerHTML = '<div style="color: #a0a0b8; grid-column: 1 / -1; text-align: center;">Misiones listas para inicialización.</div>';
+                
+            } catch (error) {
+                console.error("Error al cargar ejercicios de Firestore:", error);
+                const grid = document.querySelector('.exercises-grid');
+                if (grid) grid.innerHTML = '<div style="color: #ef473a; grid-column: 1 / -1; text-align: center;">Ocurrió un error de red al cargar los ejercicios. Inténtalo más tarde.</div>';
+            }
+        }
+
+        document.querySelector('.btn-logout')?.addEventListener('click', (e) => {
+            e.preventDefault();
+            signOut(auth).then(() => {
+                window.location.href = 'index.html';
+            }).catch(err => console.error(err));
+        });
+
+        // ── GUARDAR ACIERTO EN FIRESTORE ─────────────────────────────────────────
+        window.guardarProgresoAcierto = async function(puntos, usadoSalvavidas, tema, ejercicioId) {
+            if (!currentUser) return;
+            try {
+                const userRef = doc(db, 'usuarios', currentUser.uid);
+                const userSnap = await getDoc(userRef);
+                if (userSnap.exists()) {
+                    const data = userSnap.data();
+                    const stats = data.stats || { total_aciertos: 0, tiempo_estudio: 0 };
+                    const temaKey = tema || 'general';
+                    const temaStats = (data.temas || {})[temaKey] || { aciertos: 0, fallos: 0 };
+
+                    let tiempoActual = Math.round((Date.now() - timeStart) / 1000 / 60);
+                    timeStart = Date.now();
+
+                    // Prevenir doble contabilidad del mismo ejercicio
+                    let resueltos = data.ejercicios_resueltos || [];
+                    if (ejercicioId) {
+                        const yaResuelto = resueltos.find(r => r.id === ejercicioId);
+                        if (yaResuelto && yaResuelto.resultado === 'acierto') {
+                            console.log("Este ejercicio ya estaba marcado como acierto.");
+                            return; // Ya puntuó por este
+                        }
+                        if (yaResuelto) {
+                            yaResuelto.resultado = 'acierto';
+                        } else {
+                            resueltos.push({ id: ejercicioId, resultado: 'acierto', timestamp: Date.now() });
+                        }
+                    }
+
+                    // El tema NO se marca completado automáticamente al primer acierto.
+                    // Se marcará al alcanzar el 80% en evaluarSupernova.
+                    const completados = data.temas_completados || [];
+
+                    const prevScore = ((data.aciertos || {})[temaKey]?.score) || 0;
+                    const newScore  = Math.min(100, prevScore + (puntos * 30));
+
+                    // Nueva lógica de progreso_temas
+                    const pt = (data.progreso_temas || {})[temaKey] || {
+                        ejercicios_intentados: 0,
+                        ejercicios_acertados: 0,
+                        supernova_desbloqueado: false
+                    };
+                    const newIntentados = pt.ejercicios_intentados + 1;
+                    const newAcertados = pt.ejercicios_acertados + (puntos > 0 ? 1 : 0);
+                    const porcentaje = Math.round((newAcertados / newIntentados) * 100);
+
+                    const updates = {
+                        'stats.total_aciertos': (stats.total_aciertos || 0) + puntos,
+                        'stats.tiempo_estudio': (stats.tiempo_estudio || 0) + tiempoActual,
+                        [`temas.${temaKey}.aciertos`]: (temaStats.aciertos || 0) + 1,
+                        [`aciertos.${temaKey}.score`]: newScore,
+                        temas_completados: completados,
+                        salvavidas_usados: (data.salvavidas_usados || 0) + (usadoSalvavidas ? 1 : 0),
+                        ejercicios_resueltos: resueltos,
+                        [`progreso_temas.${temaKey}.ejercicios_intentados`]: newIntentados,
+                        [`progreso_temas.${temaKey}.ejercicios_acertados`]: newAcertados,
+                        [`progreso_temas.${temaKey}.porcentaje_acierto`]: porcentaje
+                    };
+                    await updateDoc(userRef, updates);
+                    
+                    window.evaluarSupernova(temaKey, newIntentados, newAcertados, pt.supernova_desbloqueado);
+                }
+            } catch (err) {
+                console.error("Error guardando acierto:", err);
+            }
+        };
+
+        // ── GUARDAR FALLO EN FIRESTORE ──────────────────────────────────────────
+        window.guardarProgresoFallo = async function(tema, ejercicioId) {
+            if (!currentUser) return;
+            try {
+                const userRef = doc(db, 'usuarios', currentUser.uid);
+                const userSnap = await getDoc(userRef);
+                if (userSnap.exists()) {
+                    const data = userSnap.data();
+                    const temaKey = tema || 'general';
+                    const temaStats = (data.temas || {})[temaKey] || { aciertos: 0, fallos: 0 };
+                    
+                    let resueltos = data.ejercicios_resueltos || [];
+                    if (ejercicioId) {
+                        const yaResuelto = resueltos.find(r => r.id === ejercicioId);
+                        if (!yaResuelto) {
+                            resueltos.push({ id: ejercicioId, resultado: 'fallo', timestamp: Date.now() });
+                        }
+                    }
+                    
+                    // Nueva lógica de progreso_temas
+                    const pt = (data.progreso_temas || {})[temaKey] || {
+                        ejercicios_intentados: 0,
+                        ejercicios_acertados: 0,
+                        supernova_desbloqueado: false
+                    };
+                    const newIntentados = pt.ejercicios_intentados + 1;
+                    const porcentaje = Math.round((pt.ejercicios_acertados / newIntentados) * 100);
+
+                    const updates = {
+                        [`temas.${temaKey}.fallos`]: (temaStats.fallos || 0) + 1,
+                        ejercicios_resueltos: resueltos,
+                        [`progreso_temas.${temaKey}.ejercicios_intentados`]: newIntentados,
+                        [`progreso_temas.${temaKey}.porcentaje_acierto`]: porcentaje
+                    };
+                    await updateDoc(userRef, updates);
+
+                    window.evaluarSupernova(temaKey, newIntentados, pt.ejercicios_acertados, pt.supernova_desbloqueado);
+                }
+            } catch (err) {
+                console.error("Error guardando fallo:", err);
+            }
+        };
+
+        // --- Guardar DIFICULTAD PERCIBIDA (1-5) ---
+        window.guardarDificultad = async function(tema, nivel) {
+            if (!currentUser) return;
+            try {
+                const userRef = doc(db, 'usuarios', currentUser.uid);
+                const userSnap = await getDoc(userRef);
+                if (userSnap.exists()) {
+                    const data = userSnap.data();
+                    const temaKey = tema || 'general';
+                    const temaData = (data.temas || {})[temaKey] || {};
+                    const prev = temaData.dificultad_sum || 0;
+                    const prevCount = temaData.dificultad_count || 0;
+                    await updateDoc(userRef, {
+                        [`temas.${temaKey}.dificultad_sum`]: prev + nivel,
+                        [`temas.${temaKey}.dificultad_count`]: prevCount + 1
+                    });
+                }
+            } catch (err) {
+                console.error("Error guardando dificultad:", err);
+            }
+        };
+
+        // --- Evaluar Supernova ---
+        window.evaluarSupernova = function(temaKey, intentados, aciertos, yaDesbloqueado) {
+            if (yaDesbloqueado) return; // Ya lo tiene desbloqueado
+            // Solo evaluar cuando termina la fase práctica (9 ejercicios)
+            // Si el test es más dinámico, >= 9 asegura que terminó la ronda base
+            if (intentados === 9) {
+                const porcentaje = Math.round((aciertos / intentados) * 100);
+                if (porcentaje >= 80) {
+                    window.desbloquearSupernovaUI();
+                    window.guardarSupernova(temaKey);
+                } else {
+                    window.mostrarModalSupernova(temaKey);
+                }
+            }
+        };
+
+        window.guardarSupernova = async function(temaKey) {
+            if (!currentUser) return;
+            try {
+                // Obtenemos los temas completados actuales para añadir este
+                const userRef = doc(db, 'usuarios', currentUser.uid);
+                const userSnap = await getDoc(userRef);
+                let completados = [];
+                if (userSnap.exists()) {
+                    completados = userSnap.data().temas_completados || [];
+                }
+                if (!completados.includes(temaKey)) completados.push(temaKey);
+
+                await updateDoc(userRef, {
+                    [`progreso_temas.${temaKey}.supernova_desbloqueado`]: true,
+                    temas_completados: completados
+                });
+            } catch (err) {
+                console.error(err);
+            }
+        };
+
+        window.desbloquearSupernovaUI = function() {
+            const wrapper = document.querySelector('.supernova-wrapper');
+            if (wrapper) {
+                wrapper.classList.remove('supernova');
+                wrapper.classList.add('challenge', 'completed-phase');
+                const tooltip = wrapper.querySelector('.supernova-tooltip');
+                if (tooltip) tooltip.innerText = "¡Reto Supernova Desbloqueado!";
+            }
+        };
+
+        window.mostrarModalSupernova = function(temaKey) {
+            const overlay = document.createElement("div");
+            overlay.className = "popup-overlay";
+            const content = document.createElement("div");
+            content.className = "popup-content";
+            
+            const title = document.createElement("h3");
+            title.innerText = "No has alcanzado el 80% óptimo.";
+            title.style.color = "#ef473a";
+            title.style.marginBottom = "1rem";
+            
+            const p = document.createElement("p");
+            p.innerText = "¿Quieres pasar al Reto Supernova de todas formas, o prefieres hacer un pequeño repaso de 3 ejercicios?";
+            p.style.marginBottom = "2rem";
+            p.style.color = "#b8b8d0";
+
+            const btnPasar = document.createElement("button");
+            btnPasar.className = "premium-btn";
+            btnPasar.style.marginRight = "10px";
+            btnPasar.innerText = "Pasar al Reto";
+            btnPasar.onclick = () => {
+                window.desbloquearSupernovaUI();
+                window.guardarSupernova(temaKey);
+                overlay.remove();
+            };
+
+            const btnRepasar = document.createElement("button");
+            btnRepasar.className = "premium-btn";
+            btnRepasar.style.background = "linear-gradient(90deg, #00f2fe 0%, #4facfe 100%)";
+            btnRepasar.innerText = "Hacer Repaso";
+            btnRepasar.onclick = () => {
+                overlay.remove();
+                window.repasoActivo = true;
+                window.repasoAciertos = 0;
+                window.repasoIntentos = 0;
+                if (typeof renderQuestionDialog === "function") {
+                    renderQuestionDialog(temaKey);
+                }
+            };
+
+            content.appendChild(title);
+            content.appendChild(p);
+            content.appendChild(btnPasar);
+            content.appendChild(btnRepasar);
+            overlay.appendChild(content);
+            document.body.appendChild(overlay);
+        };
+    </script>
+
+
+    <script>
+        // =============================================
+        // TÍTULO DINÁMICO & COLOR NEÓN DE ASIGNATURA
+        // =============================================
+        document.addEventListener('DOMContentLoaded', () => {
+            const urlParams  = new URLSearchParams(window.location.search);
+            const temaId     = urlParams.get('tema');
+
+            // ── LIMPIEZA DE CACHÉ DE TEMA ──────────────────────────────────────────
+            // Elimina cualquier dato de sesión anterior para evitar que el título
+            // se quede 'pegado' al tema de una sesión de estudio previa.
+            localStorage.removeItem('tema_actual');
+            localStorage.removeItem('tema_titulo');
+            localStorage.removeItem('tema_desc');
+
+            // ── ASIGNATURA: URL tiene prioridad ABSOLUTA sobre localStorage ────────
+            // Si el alumno llega desde un nodo del mapa, la URL siempre lleva ?asig=
+            // Si no hay parámetro en URL (acceso directo), lee localStorage como fallback.
+            const asigFromUrl = urlParams.get('asig');
+            const asignatura  = asigFromUrl || localStorage.getItem('userSubject') || localStorage.getItem('asignatura') || 'mates';
+
+            // Sincronizar: actualiza localStorage con la asignatura real de esta sesión
+            // Esto evita que una sesión anterior "contamine" la siguiente.
+            localStorage.setItem('userSubject', asignatura);
+            localStorage.setItem('asignatura',  asignatura);
+
+            const curso     = localStorage.getItem('userCourse')    || localStorage.getItem('curso')     || '2_bachillerato';
+            const comunidad = localStorage.getItem('userComunidad') || localStorage.getItem('comunidad') || 'madrid';
+
+            // -- COLOR NEON DE ASIGNATURA --
+            // Aplica el color neon correcto en la variable CSS global --current-neon.
+            // Tambien calcula su equivalente RGB para sombras y fondos (hexToRgb).
+            // Se aplica antes de renderizar para evitar flasheos de color incorrecto.
+            const neonMap = {
+                'fisica':   '#ff4500',
+                'mates':    '#00f2fe',
+                'quimica':  '#00ff88'
+            };
+            const neonColor = neonMap[asignatura] || '#00f2fe';
+            document.documentElement.style.setProperty('--current-neon', neonColor);
+            // También establecer la versión RGB para sombras y fondos
+            const hexToRgb = hex => {
+                const r = parseInt(hex.slice(1, 3), 16);
+                const g = parseInt(hex.slice(3, 5), 16);
+                const b = parseInt(hex.slice(5, 7), 16);
+                return `${r},${g},${b}`;
+            };
+            document.documentElement.style.setProperty('--current-neon-rgb', hexToRgb(neonColor));
+
+
+            // ── ICONOS Y ETIQUETAS POR ASIGNATURA (obligatorios según diseño) ──────
+            // Matemáticas 📐 · Física ⚛️ · Química 🧪
+            const asigData = {
+                'fisica':  { label: 'Física',       icon: '⚛️' },
+                'mates':   { label: 'Matemáticas',  icon: '📐' },
+                'quimica': { label: 'Química',      icon: '🧪' }
+            };
+            const { label: asigLabel, icon: asigIcon } = asigData[asignatura] || { label: 'Asignatura', icon: '📚' };
+
+            const h1 = document.getElementById('estudio-titulo');
+            const p  = document.getElementById('estudio-subtitulo');
+
+            if (h1) h1.style.color = neonColor;
+            if (h1) h1.style.textShadow = `0 0 18px ${neonColor}55`;
+
+            // -- RESOLVER NOMBRE DEL TEMA DESDE URL --
+            // El tema llega por URL (?tema=f_fire_3). Busca primero en temarios.js
+            // (fallback local) y si es un ID de Firestore (f_fire_X) consulta la API.
+            // El boton Volver al Mapa se actualiza con el icono y color de la asignatura.
+            const btnVolver = document.getElementById('btn-volver-mapa');
+            if (btnVolver) {
+                btnVolver.innerHTML = `${asigIcon} Volver al Mapa`;
+                btnVolver.style.borderColor = neonColor;
+                btnVolver.style.color = neonColor;
+            }
+
+            // ── FORMATO DE TÍTULO: [Icono] [Asignatura]  ›  [Nombre del Tema] ─────
+            // Este es el formato canónico del título. Se llama con el nombre real del tema
+            // una vez que se ha resuelto desde temarios.js o Firestore.
+            function setTitle(nombreTema, desc) {
+                if (h1) h1.innerText = `${asigIcon} ${asigLabel}  ›  ${nombreTema}`;
+                if (p)  p.innerText  = desc ? `${desc} • Lección Interactiva` : 'Lección Interactiva';
+                // Guardar en caché limpia para esta sesión
+                localStorage.setItem('tema_actual',  temaId   || '');
+                localStorage.setItem('tema_titulo',  nombreTema);
+                document.title = `A-PRUEBA | ${asigIcon} ${asigLabel} › ${nombreTema}`;
+            }
+
+            if (!temaId) {
+                setTitle('Lección', '');
+                return;
+            }
+
+            // Intenta con obtenerTemario (local BOE)
+            let resolved = false;
+            if (typeof obtenerTemario === 'function') {
+                const temas = obtenerTemario(curso, asignatura, comunidad);
+                const found = temas.find(t => t.id === temaId);
+                if (found) { setTitle(found.titulo, found.desc); resolved = true; }
+            }
+
+            // Si el tema viene de Firestore (id = f_fire_X / m_fire_X), consult Firestore
+            if (!resolved) {
+                // Extraer índice del id tipo f_fire_5
+                const match = temaId.match(/^[a-z]_fire_(\d+)$/);
+                const asigPrefix = asignatura === 'fisica' ? 'fisica' :
+                                   asignatura === 'mates'  ? 'matematicas' : 'quimica';
+                const comunidadNorm = comunidad.toLowerCase()
+                    .replace(/á/g,'a').replace(/é/g,'e').replace(/í/g,'i')
+                    .replace(/ó/g,'o').replace(/ú/g,'u').replace(/ñ/g,'n')
+                    .replace(/\s+/g,'-');
+                const docId = `${comunidadNorm}_${asigPrefix}`;
+
+                // Fetch REST (no auth needed, reglas de lectura abiertas)
+                fetch(`https://firestore.googleapis.com/v1/projects/aprueba-webapp/databases/(default)/documents/temarios/${docId}`)
+                    .then(r => r.json())
+                    .then(data => {
+                        if (data.fields && data.fields.lista_temas) {
+                            const lista = data.fields.lista_temas.arrayValue.values.map(v => v.stringValue);
+                            const idx   = match ? parseInt(match[1]) : -1;
+                            const nombreTema = (idx >= 0 && lista[idx]) ? lista[idx] : (temaId || 'Tema');
+                            setTitle(nombreTema, '');
+                        } else {
+                            setTitle(temaId, '');
+                        }
+                    })
+                    .catch(() => setTitle(temaId, ''));
+            }
+        });
+
+        // Lógica Visual de los Hexágonos
+        const phaseState = {
+            theory: false,
+            exercises: false,
+            challenge: false
+        };
+
+        function completePhase(phase) {
+            const theoryElem = document.getElementById('phase-theory');
+            const exercisesElem = document.getElementById('phase-exercises');
+            const challengeElem = document.getElementById('phase-challenge');
+
+            if (phase === 'theory' && !phaseState.theory) {
+                // Completar Teoría, desbloquear Ejercicios
+                phaseState.theory = true;
+                theoryElem.classList.add('completed-phase');
+                document.getElementById('inner-theory').innerText = '✓';
+
+                // Desbloqueo Ejercicios
+                exercisesElem.classList.remove('locked-phase');
+                document.getElementById('inner-exercises').innerText = '✏️';
+            }
+            else if (phase === 'exercises' && !phaseState.exercises) {
+                if (!phaseState.theory) return; // Must complete previous
+
+                // Completar Ejercicios, desbloquear Reto Socrático
+                phaseState.exercises = true;
+                exercisesElem.classList.add('completed-phase');
+                document.getElementById('inner-exercises').innerText = '✓';
+
+                // Desbloqueo Reto Socrático
+                challengeElem.classList.remove('locked-phase');
+                document.getElementById('inner-challenge').innerText = '🤖';
+            }
+            else if (phase === 'challenge' && !phaseState.challenge) {
+                if (!phaseState.exercises) return; // Must complete previous
+
+                // Completar Reto Socrático
+                phaseState.challenge = true;
+                challengeElem.classList.add('completed-phase');
+                document.getElementById('inner-challenge').innerText = '✓';
+
+                // Mostrar botón Premium
+                document.getElementById('premium-unlock-container').style.display = 'flex';
+            }
+        }
+
+        // Lógica Modal Teoría
+        function openTheoryModal() {
+            document.getElementById('theory-modal').style.display = 'flex';
+        }
+
+        function closeTheoryModal() {
+            document.getElementById('theory-modal').style.display = 'none';
+        }
+
+        function toggleTheoryText() {
+            const content = document.getElementById('theory-text-content');
+            if (content.style.display === 'none') {
+                content.style.display = 'block';
+                content.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            } else {
+                content.style.display = 'none';
+            }
+        }
+    </script>
+
+    <!-- Modal Teoría (FullScreen) -->
+    <div id="theory-modal"
+        style="display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(5, 2, 10, 0.95); backdrop-filter: blur(15px); -webkit-backdrop-filter: blur(15px); z-index: 2000; flex-direction: column; overflow-y: auto; align-items: center; padding: 4rem 2rem;">
+
+        <button onclick="closeTheoryModal()"
+            style="position: absolute; top: 30px; right: 40px; background: transparent; border: none; color: #a0a0b8; font-size: 3.5rem; cursor: pointer; transition: color 0.3s;">&times;</button>
+
+        <h2
+            style="font-size: 2.2rem; color: #fff; margin-bottom: 2rem; letter-spacing: 2px; text-shadow: 0 0 20px rgba(0, 242, 254, 0.5);">
+            Vídeo Explicativo</h2>
+
+        <div class="video-container"
+            style="width: 100%; max-width: 1000px; height: 50vw; max-height: 550px; margin-bottom: 3rem; flex-shrink: 0;">
+            <div class="play-overlay">
+                <div class="play-icon"></div>
+            </div>
+            <div class="video-time">08:45 / 20:00</div>
+            <div class="video-bar">
+                <div class="video-progress"></div>
+            </div>
+        </div>
+
+        <button onclick="toggleTheoryText()" class="premium-btn"
+            style="font-size: 1.1rem; padding: 1rem 3rem; margin-bottom: 2rem; background: linear-gradient(90deg, #00f2fe 0%, #4facfe 100%); box-shadow: 0 0 30px rgba(0, 242, 254, 0.4);">📖
+            Ver Teoría Escrita</button>
+
+        <div id="theory-text-content"
+            style="display: none; width: 100%; max-width: 1000px; background: rgba(255,255,255,0.03); padding: 3rem; border-radius: 20px; border: 1px solid rgba(0,242,254,0.3); text-align: left; margin-bottom: 4rem;">
+            <h3 style="color: #00f2fe; margin-bottom: 1.5rem; font-size: 1.6rem; text-transform: uppercase;">Campo
+                Magnético - Apuntes Generados</h3>
+
+            <p style="color: #b8b8d0; font-size: 1.1rem; margin-bottom: 2rem; line-height: 1.6;">Resumen de los 3 puntos
+                más importantes. Puedes descargarlo en PDF en cualquier momento.</p>
+
+            <div
+                style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 12px; padding: 1.5rem; margin-bottom: 1.5rem;">
+                <h4 style="color: #ffb199; margin-bottom: 0.8rem; font-size: 1.2rem;">1. Ley de Lorentz</h4>
+                <p style="color: #a0a0b8; font-size: 1rem; margin-bottom: 1rem;">Fuerza magnética sobre una carga
+                    descubierta en movimiento constante.</p>
+                <div
+                    style="background: rgba(0, 0, 0, 0.6); padding: 1rem; border-radius: 8px; border-left: 4px solid #ffb199; font-family: monospace; font-size: 1.2rem; color: #fff;">
+                    🚀 F = q(v × B)
+                </div>
+            </div>
+
+            <div
+                style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 12px; padding: 1.5rem; margin-bottom: 1.5rem;">
+                <h4 style="color: #00fa9a; margin-bottom: 0.8rem; font-size: 1.2rem;">2. Ley de Biot-Savart</h4>
+                <p style="color: #a0a0b8; font-size: 1rem; margin-bottom: 1rem;">Campo magnético creado en el espacio
+                    por un hilo conductor infinito.</p>
+                <div
+                    style="background: rgba(0, 0, 0, 0.6); padding: 1rem; border-radius: 8px; border-left: 4px solid #00fa9a; font-family: monospace; font-size: 1.2rem; color: #fff;">
+                    🪐 B = (μ₀·I) / (2π·d)
+                </div>
+            </div>
+
+            <div
+                style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 12px; padding: 1.5rem; margin-bottom: 2.5rem;">
+                <h4 style="color: #00f2fe; margin-bottom: 0.8rem; font-size: 1.2rem;">3. Flujo Magnético</h4>
+                <p style="color: #a0a0b8; font-size: 1rem; margin-bottom: 1rem;">Medida de las líneas de campo que
+                    atraviesan una superficie dada.</p>
+                <div
+                    style="background: rgba(0, 0, 0, 0.6); padding: 1rem; border-radius: 8px; border-left: 4px solid #00f2fe; font-family: monospace; font-size: 1.2rem; color: #fff;">
+                    ✨ Φ = B · S · cos(α)
+                </div>
+            </div>
+
+            <button onclick="downloadMissionPDF()" class="premium-btn"
+                style="background: rgba(0,242,254,0.1); border: 1px solid #00f2fe; color: #00f2fe; box-shadow: none;">
+                📄 Descargar Misión en PDF
+            </button>
+        </div>
+    </div>
+    <!-- Auth Loading Overlay -->
+    <div id="authLoading"
+        style="position:fixed;top:0;left:0;width:100vw;height:100vh;background:#05010f;z-index:9999;display:flex;justify-content:center;align-items:center;flex-direction:column;color:#00f2fe;font-family:'Space Grotesk',sans-serif;">
+        <div
+            style="width:50px;height:50px;border:3px solid rgba(0,242,254,0.2);border-top-color:#00f2fe;border-radius:50%;animation:spin 1s linear infinite;margin-bottom:1rem;">
+        </div>
+        <style>
+            @keyframes spin {
+                100% {
+                    transform: rotate(360deg);
+                }
+            }
+        </style>
+        <p style="font-weight:600;letter-spacing:1px;">Autorizando coordenadas estelares...</p>
+    </div>
+    <script type="module">
+        import { auth, onAuthStateChanged } from './firebase-config.js';
+        onAuthStateChanged(auth, (user) => {
+            if (!user) {
+                window.location.href = 'login.html';
+            } else {
+                const loader = document.getElementById('authLoading');
+                if (loader) loader.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,602 @@
+[
+  {
+    "asignatura": "Química 4º ESO",
+    "id": 4201,
+    "dificultad": "Básica",
+    "bloque": "Tema 1: El átomo y modelos atómicos",
+    "enunciado": "Indica el número de protones, neutrones y electrones de un átomo neutro de carbono-12, sabiendo que su número atómico es $Z=6$ y su número másico es $A=12$.",
+    "resolucion_latex": "El número atómico $Z$ indica el número de protones:<br>$p^+=6$.<br>Como el átomo es neutro, tiene el mismo número de electrones que de protones:<br>$e^-=6$.<br>El número de neutrones se calcula restando el número atómico al número másico:<br>$n=A-Z=12-6=6$.<br>Por tanto, el carbono-12 tiene $6$ protones, $6$ neutrones y $6$ electrones.",
+    "pista": "En un átomo neutro, el número de protones coincide con el número de electrones.",
+    "formula": "$$n=A-Z$$"
+  },
+  {
+    "asignatura": "Química 4º ESO",
+    "id": 4202,
+    "dificultad": "Básica",
+    "bloque": "Tema 1: El átomo y modelos atómicos",
+    "enunciado": "Un átomo tiene $Z=11$ y $A=23$. Calcula cuántos protones, neutrones y electrones tiene si es neutro.",
+    "resolucion_latex": "El número atómico indica el número de protones:<br>$p^+=11$.<br>Como el átomo es neutro, el número de electrones es igual al de protones:<br>$e^-=11$.<br>Calculamos los neutrones:<br>$n=A-Z=23-11=12$.<br>Por tanto, el átomo tiene $11$ protones, $12$ neutrones y $11$ electrones.",
+    "pista": "Primero identifica los protones con $Z$. Después usa $A-Z$ para los neutrones.",
+    "formula": "$$A=Z+n$$"
+  },
+  {
+    "asignatura": "Química 4º ESO",
+    "id": 4203,
+    "dificultad": "Básica",
+    "bloque": "Tema 1: El átomo y modelos atómicos",
+    "enunciado": "Explica qué partícula subatómica tiene carga positiva, cuál tiene carga negativa y cuál no tiene carga.",
+    "resolucion_latex": "El protón tiene carga positiva y se encuentra en el núcleo del átomo.<br>El electrón tiene carga negativa y se encuentra alrededor del núcleo.<br>El neutrón no tiene carga eléctrica y también se encuentra en el núcleo.<br>Por tanto:<br>Protón: carga positiva.<br>Electrón: carga negativa.<br>Neutrón: carga neutra.",
+    "pista": "Recuerda: protón positivo, electrón negativo y neutrón neutro.",
+    "formula": "$$p^+ \\quad ; \\quad e^- \\quad ; \\quad n^0$$"
+  },
+  {
+    "asignatura": "Química 4º ESO",
+    "id": 4204,
+    "dificultad": "Media",
+    "bloque": "Tema 1: El átomo y modelos atómicos",
+    "enunciado": "El ion $\\text{Mg}^{2+}$ tiene número atómico $Z=12$ y número másico $A=24$. Calcula el número de protones, neutrones y electrones.",
+    "resolucion_latex": "El número atómico indica el número de protones:<br>$p^+=12$.<br>Calculamos los neutrones:<br>$n=A-Z=24-12=12$.<br>El ion $\\text{Mg}^{2+}$ tiene carga positiva $2+$, lo que significa que ha perdido $2$ electrones respecto al átomo neutro.<br>El magnesio neutro tendría $12$ electrones, pero al perder $2$:<br>$e^-=12-2=10$.<br>Por tanto, $\\text{Mg}^{2+}$ tiene $12$ protones, $12$ neutrones y $10$ electrones.",
+    "pista": "Un ion positivo ha perdido electrones. No cambia el número de protones.",
+    "formula": "$$\\text{catión } X^{n+}:\\ e^-=Z-n$$"
+  },
+  {
+    "asignatura": "Química 4º ESO",
+    "id": 4205,
+    "dificultad": "Media",
+    "bloque": "Tema 1: El átomo y modelos atómicos",
+    "enunciado": "El ion $\\text{Cl}^{-}$ tiene número atómico $Z=17$ y número másico $A=35$. Calcula el número de protones, neutrones y electrones.",
+    "resolucion_latex": "El número atómico indica el número de protones:<br>$p^+=17$.<br>Calculamos el número de neutrones:<br>$n=A-Z=35-17=18$.<br>El ion $\\text{Cl}^{-}$ tiene carga negativa, lo que significa que ha ganado $1$ electrón respecto al átomo neutro.<br>El cloro neutro tendría $17$ electrones, pero al ganar $1$:<br>$e^-=17+1=18$.<br>Por tanto, $\\text{Cl}^{-}$ tiene $17$ protones, $18$ neutrones y $18$ electrones.",
+    "pista": "Un ion negativo ha ganado electrones. Los protones no cambian.",
+    "formula": "$$\\text{anión } X^{n-}:\\ e^-=Z+n$$"
+  },
+  {
+    "asignatura": "Química 4º ESO",
+    "id": 4206,
+    "dificultad": "Media",
+    "bloque": "Tema 1: El átomo y modelos atómicos",
+    "enunciado": "Explica la diferencia entre isótopos usando como ejemplo $^{12}\\text{C}$ y $^{14}\\text{C}$.",
+    "resolucion_latex": "Los isótopos son átomos del mismo elemento que tienen el mismo número de protones, pero distinto número de neutrones.<br>El carbono siempre tiene número atómico $Z=6$, por tanto tanto $^{12}\\text{C}$ como $^{14}\\text{C}$ tienen $6$ protones.<br>Para $^{12}\\text{C}$:<br>$n=12-6=6$ neutrones.<br>Para $^{14}\\text{C}$:<br>$n=14-6=8$ neutrones.<br>Por tanto, son isótopos porque ambos son carbono, pero tienen distinto número de neutrones.",
+    "pista": "Si cambia el número de protones, cambia el elemento. Si solo cambia el número de neutrones, es un isótopo.",
+    "formula": "$$n=A-Z$$"
+  },
+  {
+    "asignatura": "Química 4º ESO",
+    "id": 4207,
+    "dificultad": "Alta",
+    "bloque": "Tema 1: El átomo y modelos atómicos",
+    "enunciado": "Un ion tiene $16$ protones, $18$ electrones y $16$ neutrones. Determina su número atómico, su número másico, su carga y escribe su símbolo nuclear sabiendo que el elemento con $Z=16$ es el azufre, $\\text{S}$.",
+    "resolucion_latex": "El número atómico es el número de protones:<br>$Z=16$.<br>El número másico es la suma de protones y neutrones:<br>$A=p+n=16+16=32$.<br>Ahora calculamos la carga. Tiene $16$ protones positivos y $18$ electrones negativos, es decir, tiene $2$ electrones más que protones.<br>Por tanto, su carga es $2-$:<br>$\\text{S}^{2-}$.<br>El símbolo nuclear es:<br>$^{32}*{16}\\text{S}^{2-}$.",
+    "pista": "La carga depende de la diferencia entre protones y electrones, no de los neutrones.",
+    "formula": "$$A=Z+n \\quad ; \\quad q=p^+-e^-$$"
+  },
+  {
+    "asignatura": "Química 4º ESO",
+    "id": 4208,
+    "dificultad": "Alta",
+    "bloque": "Tema 1: El átomo y modelos atómicos",
+    "enunciado": "Completa la información de un ion $^{40}*{20}\\text{Ca}^{2+}$: número de protones, neutrones, electrones, número atómico y número másico.",
+    "resolucion_latex": "En el símbolo $^{40}*{20}\\text{Ca}^{2+}$, el número inferior es el número atómico:<br>$Z=20$.<br>El número superior es el número másico:<br>$A=40$.<br>El número de protones es igual a $Z$:<br>$p^+=20$.<br>El número de neutrones es:<br>$n=A-Z=40-20=20$.<br>Como el ion tiene carga $2+$, ha perdido $2$ electrones respecto al átomo neutro.<br>El calcio neutro tendría $20$ electrones, así que:<br>$e^-=20-2=18$.<br>Por tanto: $20$ protones, $20$ neutrones, $18$ electrones, $Z=20$ y $A=40$.",
+    "pista": "En la notación nuclear, el número de arriba es $A$ y el de abajo es $Z$.",
+    "formula": "$$^{A}*{Z}X^{q}$$"
+  },
+  {
+    "asignatura": "Química 4º ESO",
+    "id": 4209,
+    "dificultad": "Alta",
+    "bloque": "Tema 1: El átomo y modelos atómicos",
+    "enunciado": "Un elemento tiene dos isótopos: uno de masa $10$ u con abundancia del $20\\%$ y otro de masa $11$ u con abundancia del $80\\%$. Calcula la masa atómica media.",
+    "resolucion_latex": "La masa atómica media se calcula haciendo una media ponderada según las abundancias.<br>Pasamos los porcentajes a forma decimal:<br>$20\\%=0,20$ y $80\\%=0,80$.<br>Calculamos:<br>$M=10\\cdot 0,20+11\\cdot 0,80$.<br>$M=2+8,8=10,8 \\text{ u}$.<br>La masa atómica media es $10,8 \\text{ u}$.",
+    "pista": "No hagas la media normal si los isótopos no tienen la misma abundancia.",
+    "formula": "$$M=\\sum m_i\\cdot a_i$$"
+  },
+  {
+    "asignatura": "Química 4º ESO",
+    "id": 4210,
+    "dificultad": "Superior",
+    "bloque": "Tema 1: El átomo y modelos atómicos",
+    "enunciado": "Ejercicio trampa: Un alumno afirma que si un átomo gana electrones, cambia de elemento porque cambia su número de partículas. Explica el error y di qué se forma realmente.",
+    "resolucion_latex": "El error está en pensar que cualquier cambio en el número de partículas cambia el elemento. Un elemento queda determinado por su número de protones, es decir, por su número atómico $Z$.<br>Si un átomo gana electrones, cambia su carga eléctrica, pero no cambia su número de protones.<br>Por tanto, no se transforma en otro elemento: se convierte en un ion negativo, llamado anión.<br>Por ejemplo, si el cloro gana un electrón, pasa de $\\text{Cl}$ a $\\text{Cl}^{-}$, pero sigue siendo cloro porque sigue teniendo $17$ protones.",
+    "pista": "Lo que define al elemento es el número de protones, no el número de electrones.",
+    "formula": "$$Z=p^+$$"
+  },
+  {
+    "asignatura": "Química 4º ESO",
+    "id": 4211,
+    "dificultad": "Básica",
+    "bloque": "Tema 2: Sistema periódico y enlace químico",
+    "enunciado": "Indica si los siguientes elementos son metales o no metales: sodio ($\\text{Na}$), oxígeno ($\\text{O}$), hierro ($\\text{Fe}$), cloro ($\\text{Cl}$) y calcio ($\\text{Ca}$).",
+    "resolucion_latex": "El sodio ($\\text{Na}$) es un metal.<br>El oxígeno ($\\text{O}$) es un no metal.<br>El hierro ($\\text{Fe}$) es un metal.<br>El cloro ($\\text{Cl}$) es un no metal.<br>El calcio ($\\text{Ca}$) es un metal.<br>Por tanto:<br>Metales: $\\text{Na}$, $\\text{Fe}$ y $\\text{Ca}$.<br>No metales: $\\text{O}$ y $\\text{Cl}$.",
+    "pista": "Los metales suelen estar situados en la zona izquierda y central de la tabla periódica; los no metales, en la zona derecha.",
+    "formula": "$$\\text{metal} + \\text{no metal} \\rightarrow \\text{enlace iónico}$$"
+  },
+  {
+    "asignatura": "Química 4º ESO",
+    "id": 4212,
+    "dificultad": "Básica",
+    "bloque": "Tema 2: Sistema periódico y enlace químico",
+    "enunciado": "Explica qué tienen en común los elementos de un mismo grupo de la tabla periódica.",
+    "resolucion_latex": "Los elementos de un mismo grupo de la tabla periódica tienen el mismo número de electrones en la capa de valencia.<br>Por eso suelen tener propiedades químicas parecidas.<br>Por ejemplo, los elementos del grupo 1 tienden a perder un electrón y formar iones con carga $+1$.",
+    "pista": "Las columnas de la tabla periódica se llaman grupos.",
+    "formula": "$$\\text{mismo grupo} \\Rightarrow \\text{propiedades químicas parecidas}$$"
+  },
+  {
+    "asignatura": "Química 4º ESO",
+    "id": 4213,
+    "dificultad": "Básica",
+    "bloque": "Tema 2: Sistema periódico y enlace químico",
+    "enunciado": "Indica el tipo de enlace más probable en las siguientes sustancias: $\\text{NaCl}$, $\\text{O}_2$ y $\\text{Fe}$.",
+    "resolucion_latex": "$\\text{NaCl}$ está formado por sodio, que es un metal, y cloro, que es un no metal. Por tanto, presenta enlace iónico.<br>$\\text{O}_2$ está formado por dos átomos de oxígeno, ambos no metales. Por tanto, presenta enlace covalente.<br>$\\text{Fe}$ es hierro, un metal. Por tanto, presenta enlace metálico.<br>Resultado:<br>$\\text{NaCl}$: enlace iónico.<br>$\\text{O}_2$: enlace covalente.<br>$\\text{Fe}$: enlace metálico.",
+    "pista": "Metal con no metal suele formar enlace iónico. No metal con no metal, covalente. Metal con metal, metálico.",
+    "formula": "$$\\text{metal-no metal: iónico} \\quad ; \\quad \\text{no metal-no metal: covalente}$$"
+  },
+  {
+    "asignatura": "Química 4º ESO",
+    "id": 4214,
+    "dificultad": "Media",
+    "bloque": "Tema 2: Sistema periódico y enlace químico",
+    "enunciado": "Explica por qué el sodio tiende a formar el ion $\\text{Na}^{+}$ y el cloro tiende a formar el ion $\\text{Cl}^{-}$.",
+    "resolucion_latex": "El sodio tiene un electrón en su capa de valencia. Para alcanzar una configuración más estable, tiende a perder ese electrón.<br>Al perder un electrón, queda con una carga positiva:<br>$\\text{Na} \\rightarrow \\text{Na}^{+}+e^-$.<br><br>El cloro tiene siete electrones en su capa de valencia. Para completar el octeto, tiende a ganar un electrón.<br>Al ganar un electrón, queda con una carga negativa:<br>$\\text{Cl}+e^- \\rightarrow \\text{Cl}^{-}$.<br>Por eso el sodio forma $\\text{Na}^{+}$ y el cloro forma $\\text{Cl}^{-}$.",
+    "pista": "Los átomos tienden a ganar o perder electrones para alcanzar una configuración más estable.",
+    "formula": "$$\\text{Na} \\rightarrow \\text{Na}^{+}+e^- \\quad ; \\quad \\text{Cl}+e^- \\rightarrow \\text{Cl}^{-}$$"
+  },
+  {
+    "asignatura": "Química 4º ESO",
+    "id": 4215,
+    "dificultad": "Media",
+    "bloque": "Tema 2: Sistema periódico y enlace químico",
+    "enunciado": "Indica qué tipo de enlace se forma entre calcio ($\\text{Ca}$) y oxígeno ($\\text{O}$), y escribe la fórmula del compuesto resultante sabiendo que el calcio forma $\\text{Ca}^{2+}$ y el oxígeno forma $\\text{O}^{2-}$.",
+    "resolucion_latex": "El calcio es un metal y el oxígeno es un no metal, por tanto forman un enlace iónico.<br>El calcio forma el ion $\\text{Ca}^{2+}$ y el oxígeno forma el ion $\\text{O}^{2-}$.<br>Como las cargas tienen el mismo valor absoluto, se combinan en proporción $1:1$.<br>Por tanto, la fórmula del compuesto es:<br>$\\text{CaO}$.",
+    "pista": "En un compuesto iónico, la suma total de cargas debe ser cero.",
+    "formula": "$$\\text{Ca}^{2+}+\\text{O}^{2-}\\rightarrow \\text{CaO}$$"
+  },
+  {
+    "asignatura": "Química 4º ESO",
+    "id": 4216,
+    "dificultad": "Media",
+    "bloque": "Tema 2: Sistema periódico y enlace químico",
+    "enunciado": "Escribe la fórmula del compuesto iónico formado por aluminio $\\text{Al}^{3+}$ y cloro $\\text{Cl}^{-}$.",
+    "resolucion_latex": "El aluminio tiene carga $3+$ y el cloro tiene carga $1-$.<br>Para que el compuesto sea neutro, necesitamos tres iones cloruro por cada ion aluminio:<br>$\\text{Al}^{3+}+3\\text{Cl}^{-}\\rightarrow \\text{AlCl}_3$.<br>La fórmula del compuesto es:<br>$\\text{AlCl}_3$.",
+    "pista": "Compensa la carga $3+$ del aluminio con tres cargas negativas del cloro.",
+    "formula": "$$\\text{Al}^{3+}+3\\text{Cl}^{-}\\rightarrow \\text{AlCl}_3$$"
+  },
+  {
+    "asignatura": "Química 4º ESO",
+    "id": 4217,
+    "dificultad": "Alta",
+    "bloque": "Tema 2: Sistema periódico y enlace químico",
+    "enunciado": "Compara las propiedades principales de un compuesto iónico como $\\text{NaCl}$ y una sustancia covalente molecular como $\\text{CO}_2$.",
+    "resolucion_latex": "El $\\text{NaCl}$ es un compuesto iónico formado por iones positivos y negativos unidos por atracción electrostática. Suele formar redes cristalinas, tiene puntos de fusión altos y puede conducir la electricidad cuando está fundido o disuelto en agua.<br><br>El $\\text{CO}_2$ es una sustancia covalente molecular. Está formado por moléculas en las que los átomos comparten electrones. Sus fuerzas entre moléculas son más débiles, por lo que suele tener puntos de fusión y ebullición más bajos. Además, normalmente no conduce la electricidad.<br><br>Por tanto, el enlace iónico y el covalente molecular dan lugar a propiedades muy diferentes.",
+    "pista": "Piensa en cómo están unidas las partículas: iones en red o moléculas independientes.",
+    "formula": "$$\\text{iónico: red de iones} \\quad ; \\quad \\text{covalente molecular: moléculas}$$"
+  },
+  {
+    "asignatura": "Química 4º ESO",
+    "id": 4218,
+    "dificultad": "Alta",
+    "bloque": "Tema 2: Sistema periódico y enlace químico",
+    "enunciado": "Razona qué tipo de enlace presenta el agua, $\\text{H}_2\\text{O}$, y explica por qué no es un compuesto iónico.",
+    "resolucion_latex": "El agua está formada por hidrógeno y oxígeno, que son no metales.<br>Cuando se unen no metales entre sí, lo habitual es que compartan electrones, formando enlaces covalentes.<br>Por tanto, el agua presenta enlace covalente.<br>No es un compuesto iónico porque no está formada por un metal que cede electrones y un no metal que los gana. En el agua, los electrones se comparten entre los átomos de hidrógeno y oxígeno.",
+    "pista": "Para que sea iónico normalmente debe haber un metal y un no metal. El hidrógeno y el oxígeno son no metales.",
+    "formula": "$$\\text{no metal} + \\text{no metal} \\rightarrow \\text{enlace covalente}$$"
+  },
+  {
+    "asignatura": "Química 4º ESO",
+    "id": 4219,
+    "dificultad": "Alta",
+    "bloque": "Tema 2: Sistema periódico y enlace químico",
+    "enunciado": "Escribe la fórmula del compuesto formado por magnesio $\\text{Mg}^{2+}$ y nitrógeno $\\text{N}^{3-}$.",
+    "resolucion_latex": "El magnesio tiene carga $2+$ y el nitrógeno tiene carga $3-$.<br>Buscamos la proporción más pequeña que haga que la suma total de cargas sea cero.<br>El mínimo común múltiplo de $2$ y $3$ es $6$.<br>Necesitamos $3$ iones magnesio para tener carga total $+6$:<br>$3\\cdot (+2)=+6$.<br>Necesitamos $2$ iones nitruro para tener carga total $-6$:<br>$2\\cdot (-3)=-6$.<br>Por tanto, la fórmula es:<br>$\\text{Mg}_3\\text{N}_2$.",
+    "pista": "Cruza las cargas y simplifica si es posible.",
+    "formula": "$$3\\text{Mg}^{2+}+2\\text{N}^{3-}\\rightarrow \\text{Mg}_3\\text{N}_2$$"
+  },
+  {
+    "asignatura": "Química 4º ESO",
+    "id": 4220,
+    "dificultad": "Superior",
+    "bloque": "Tema 2: Sistema periódico y enlace químico",
+    "enunciado": "Ejercicio trampa: Un alumno dice que el cloruro de sodio, $\\text{NaCl}$, está formado por moléculas individuales de $\\text{NaCl}$ porque su fórmula tiene dos átomos. Explica el error.",
+    "resolucion_latex": "El error está en interpretar la fórmula de un compuesto iónico como si representara una molécula individual.<br>El $\\text{NaCl}$ no está formado por moléculas aisladas de un átomo de sodio y uno de cloro. En realidad, forma una red cristalina gigante de iones $\\text{Na}^{+}$ y $\\text{Cl}^{-}$ ordenados.<br>La fórmula $\\text{NaCl}$ solo indica la proporción más simple entre los iones: por cada ion sodio hay un ion cloruro.<br>Por tanto, en compuestos iónicos se habla de unidad fórmula, no de molécula individual.",
+    "pista": "En los compuestos iónicos, la fórmula indica proporciones, no moléculas aisladas.",
+    "formula": "$$\\text{NaCl}:\\ \\text{proporción }1:1\\text{ entre }\\text{Na}^{+}\\text{ y }\\text{Cl}^{-}$$"
+  },
+  {
+    "asignatura": "Química 4º ESO",
+    "id": 4221,
+    "dificultad": "Básica",
+    "bloque": "Tema 3: Formulación y nomenclatura inorgánica",
+    "enunciado": "Nombra el compuesto $\\text{NaCl}$ usando nomenclatura tradicional/sistemática básica.",
+    "resolucion_latex": "El compuesto $\\text{NaCl}$ está formado por sodio ($\\text{Na}$) y cloro ($\\text{Cl}$).<br>El sodio actúa con carga $+1$ y el cloro con carga $-1$.<br>En una sal binaria, se nombra primero el no metal terminado en '-uro' y después el metal:<br>$\\text{NaCl}$ se llama cloruro de sodio.",
+    "pista": "En las sales binarias, el no metal se nombra con terminación '-uro'.",
+    "formula": "$$\\text{NaCl}:\\ \\text{cloruro de sodio}$$"
+  },
+  {
+    "asignatura": "Química 4º ESO",
+    "id": 4222,
+    "dificultad": "Básica",
+    "bloque": "Tema 3: Formulación y nomenclatura inorgánica",
+    "enunciado": "Formula el óxido de calcio sabiendo que el calcio forma $\\text{Ca}^{2+}$ y el oxígeno forma $\\text{O}^{2-}$.",
+    "resolucion_latex": "El calcio tiene carga $2+$ y el oxígeno tiene carga $2-$.<br>Como las cargas tienen el mismo valor absoluto, se combinan en proporción $1:1$.<br>Por tanto, la fórmula del óxido de calcio es:<br>$\\text{CaO}$.",
+    "pista": "La fórmula debe ser eléctricamente neutra: la suma total de cargas debe ser cero.",
+    "formula": "$$\\text{Ca}^{2+}+\\text{O}^{2-}\\rightarrow \\text{CaO}$$"
+  },
+  {
+    "asignatura": "Química 4º ESO",
+    "id": 4223,
+    "dificultad": "Básica",
+    "bloque": "Tema 3: Formulación y nomenclatura inorgánica",
+    "enunciado": "Nombra el compuesto $\\text{FeO}$ sabiendo que el oxígeno actúa con número de oxidación $-2$.",
+    "resolucion_latex": "El oxígeno actúa con número de oxidación $-2$.<br>En $\\text{FeO}$ hay un átomo de oxígeno, así que la carga negativa total es $-2$.<br>Para que el compuesto sea neutro, el hierro debe actuar con número de oxidación $+2$.<br>Por tanto, el compuesto se nombra como:<br>óxido de hierro(II).",
+    "pista": "Calcula el número de oxidación del metal para poder usar la nomenclatura de Stock.",
+    "formula": "$$\\text{Fe}^{2+}+\\text{O}^{2-}\\rightarrow \\text{FeO}$$"
+  },
+  {
+    "asignatura": "Química 4º ESO",
+    "id": 4224,
+    "dificultad": "Media",
+    "bloque": "Tema 3: Formulación y nomenclatura inorgánica",
+    "enunciado": "Formula el cloruro de aluminio sabiendo que el aluminio forma $\\text{Al}^{3+}$ y el cloro forma $\\text{Cl}^{-}$.",
+    "resolucion_latex": "El aluminio tiene carga $3+$ y el cloro tiene carga $1-$.<br>Para neutralizar la carga $+3$ del aluminio, hacen falta tres iones cloruro:<br>$\\text{Al}^{3+}+3\\text{Cl}^{-}\\rightarrow \\text{AlCl}_3$.<br>Por tanto, la fórmula del cloruro de aluminio es:<br>$\\text{AlCl}_3$.",
+    "pista": "Cruza las cargas para obtener los subíndices y comprueba que la suma total sea cero.",
+    "formula": "$$\\text{Al}^{3+}+3\\text{Cl}^{-}\\rightarrow \\text{AlCl}_3$$"
+  },
+  {
+    "asignatura": "Química 4º ESO",
+    "id": 4225,
+    "dificultad": "Media",
+    "bloque": "Tema 3: Formulación y nomenclatura inorgánica",
+    "enunciado": "Nombra el compuesto $\\text{Cu}_2\\text{O}$ usando nomenclatura de Stock.",
+    "resolucion_latex": "El oxígeno actúa normalmente con número de oxidación $-2$.<br>En $\\text{Cu}_2\\text{O}$ hay un oxígeno, así que la carga total negativa es $-2$.<br>Como hay dos átomos de cobre, entre los dos deben sumar $+2$.<br>Por tanto, cada cobre actúa con número de oxidación $+1$.<br>El nombre en nomenclatura de Stock es:<br>óxido de cobre(I).",
+    "pista": "Primero calcula el número de oxidación del cobre. Recuerda que hay dos átomos de cobre.",
+    "formula": "$$2x+(-2)=0 \\Rightarrow x=+1$$"
+  },
+  {
+    "asignatura": "Química 4º ESO",
+    "id": 4226,
+    "dificultad": "Media",
+    "bloque": "Tema 3: Formulación y nomenclatura inorgánica",
+    "enunciado": "Formula el hidróxido de hierro(III).",
+    "resolucion_latex": "El hierro(III) indica que el hierro actúa con número de oxidación $+3$:<br>$\\text{Fe}^{3+}$.<br>El ion hidróxido es:<br>$\\text{OH}^{-}$.<br>Para neutralizar la carga $+3$ del hierro, hacen falta tres grupos hidróxido:<br>$\\text{Fe}^{3+}+3\\text{OH}^{-}\\rightarrow \\text{Fe(OH)}_3$.<br>Por tanto, la fórmula del hidróxido de hierro(III) es:<br>$\\text{Fe(OH)}_3$.",
+    "pista": "El grupo hidróxido, $\\text{OH}^{-}$, se pone entre paréntesis si aparece más de una vez.",
+    "formula": "$$\\text{Fe}^{3+}+3\\text{OH}^{-}\\rightarrow \\text{Fe(OH)}_3$$"
+  },
+  {
+    "asignatura": "Química 4º ESO",
+    "id": 4227,
+    "dificultad": "Alta",
+    "bloque": "Tema 3: Formulación y nomenclatura inorgánica",
+    "enunciado": "Formula el sulfato de aluminio sabiendo que el aluminio forma $\\text{Al}^{3+}$ y el ion sulfato es $\\text{SO}_4^{2-}$.",
+    "resolucion_latex": "El aluminio tiene carga $3+$ y el ion sulfato tiene carga $2-$.<br>Buscamos la proporción más pequeña que neutralice las cargas. El mínimo común múltiplo de $3$ y $2$ es $6$.<br>Necesitamos $2$ iones aluminio para tener carga total $+6$:<br>$2\\cdot (+3)=+6$.<br>Necesitamos $3$ iones sulfato para tener carga total $-6$:<br>$3\\cdot (-2)=-6$.<br>Por tanto, la fórmula es:<br>$\\text{Al}_2(\\text{SO}_4)_3$.",
+    "pista": "Cuando un ion poliatómico aparece varias veces, se escribe entre paréntesis.",
+    "formula": "$$2\\text{Al}^{3+}+3\\text{SO}_4^{2-}\\rightarrow \\text{Al}_2(\\text{SO}_4)_3$$"
+  },
+  {
+    "asignatura": "Química 4º ESO",
+    "id": 4228,
+    "dificultad": "Alta",
+    "bloque": "Tema 3: Formulación y nomenclatura inorgánica",
+    "enunciado": "Nombra el compuesto $\\text{PbO}_2$ usando nomenclatura de Stock.",
+    "resolucion_latex": "El oxígeno actúa con número de oxidación $-2$.<br>En $\\text{PbO}_2$ hay dos oxígenos, así que la carga total negativa es:<br>$2\\cdot (-2)=-4$.<br>Para que el compuesto sea neutro, el plomo debe actuar con número de oxidación $+4$.<br>Por tanto, el nombre del compuesto es:<br>óxido de plomo(IV).",
+    "pista": "Multiplica el número de oxígenos por $-2$ para averiguar la carga total negativa.",
+    "formula": "$$x+2(-2)=0 \\Rightarrow x=+4$$"
+  },
+  {
+    "asignatura": "Química 4º ESO",
+    "id": 4229,
+    "dificultad": "Alta",
+    "bloque": "Tema 3: Formulación y nomenclatura inorgánica",
+    "enunciado": "Formula el nitrato de calcio sabiendo que el calcio forma $\\text{Ca}^{2+}$ y el ion nitrato es $\\text{NO}_3^{-}$.",
+    "resolucion_latex": "El calcio tiene carga $2+$ y el ion nitrato tiene carga $1-$.<br>Para compensar la carga $+2$ del calcio, hacen falta dos iones nitrato:<br>$\\text{Ca}^{2+}+2\\text{NO}_3^{-}\\rightarrow \\text{Ca(NO}_3)_2$.<br>Por tanto, la fórmula del nitrato de calcio es:<br>$\\text{Ca(NO}_3)_2$.",
+    "pista": "El nitrato es un ion poliatómico. Si hay dos nitratos, usa paréntesis.",
+    "formula": "$$\\text{Ca}^{2+}+2\\text{NO}_3^{-}\\rightarrow \\text{Ca(NO}_3)_2$$"
+  },
+  {
+    "asignatura": "Química 4º ESO",
+    "id": 4230,
+    "dificultad": "Superior",
+    "bloque": "Tema 3: Formulación y nomenclatura inorgánica",
+    "enunciado": "Ejercicio trampa: Un alumno formula el sulfato de calcio como $\\text{CaSO}_4{}_2$ porque el ion sulfato es $\\text{SO}_4^{2-}$. Explica el error y escribe la fórmula correcta.",
+    "resolucion_latex": "El error consiste en colocar la carga del ion sulfato como si fuera un subíndice dentro de la fórmula.<br>El ion calcio es $\\text{Ca}^{2+}$ y el ion sulfato es $\\text{SO}_4^{2-}$.<br>Como las cargas tienen el mismo valor absoluto, se combinan en proporción $1:1$.<br>Por tanto, la fórmula correcta es:<br>$\\text{CaSO}_4$.<br>El subíndice $4$ pertenece al oxígeno dentro del ion sulfato, pero la carga $2-$ no se escribe como subíndice en la fórmula final.",
+    "pista": "Las cargas sirven para decidir la proporción, pero no se copian directamente como subíndices.",
+    "formula": "$$\\text{Ca}^{2+}+\\text{SO}_4^{2-}\\rightarrow \\text{CaSO}_4$$"
+  },
+  {
+    "asignatura": "Química 4º ESO",
+    "id": 4231,
+    "dificultad": "Básica",
+    "bloque": "Tema 4: Reacciones químicas y estequiometría básica",
+    "enunciado": "Ajusta la reacción química: $\\text{H}_2+\\text{O}_2\\rightarrow \\text{H}_2\\text{O}$.",
+    "resolucion_latex": "Contamos átomos en ambos lados.<br>En los reactivos hay $2$ átomos de hidrógeno y $2$ átomos de oxígeno.<br>En el producto $\\text{H}_2\\text{O}$ hay $2$ hidrógenos y $1$ oxígeno.<br>Para tener $2$ oxígenos en los productos, ponemos un $2$ delante del agua:<br>$\\text{H}_2+\\text{O}_2\\rightarrow 2\\text{H}_2\\text{O}$.<br>Ahora en productos hay $4$ hidrógenos, así que ponemos un $2$ delante del hidrógeno:<br>$2\\text{H}_2+\\text{O}_2\\rightarrow 2\\text{H}_2\\text{O}$.<br>La reacción ajustada es:<br>$2\\text{H}_2+\\text{O}_2\\rightarrow 2\\text{H}_2\\text{O}$.",
+    "pista": "Ajustar una reacción significa tener el mismo número de átomos de cada elemento a ambos lados.",
+    "formula": "$$2\\text{H}_2+\\text{O}_2\\rightarrow 2\\text{H}_2\\text{O}$$"
+  },
+  {
+    "asignatura": "Química 4º ESO",
+    "id": 4232,
+    "dificultad": "Básica",
+    "bloque": "Tema 4: Reacciones químicas y estequiometría básica",
+    "enunciado": "Ajusta la reacción de combustión del metano: $\\text{CH}_4+\\text{O}_2\\rightarrow \\text{CO}_2+\\text{H}_2\\text{O}$.",
+    "resolucion_latex": "Primero contamos el carbono: hay $1$ carbono en $\\text{CH}_4$ y $1$ en $\\text{CO}_2$, por tanto está ajustado.<br>Ahora contamos el hidrógeno: en $\\text{CH}_4$ hay $4$ hidrógenos. Para tener $4$ hidrógenos en los productos, ponemos $2$ delante del agua:<br>$\\text{CH}_4+\\text{O}_2\\rightarrow \\text{CO}_2+2\\text{H}_2\\text{O}$.<br>Ahora contamos oxígenos en productos: $\\text{CO}_2$ aporta $2$ oxígenos y $2\\text{H}_2\\text{O}$ aporta $2$ más. En total hay $4$ oxígenos.<br>Por tanto, necesitamos $2\\text{O}_2$ en reactivos:<br>$\\text{CH}_4+2\\text{O}_2\\rightarrow \\text{CO}_2+2\\text{H}_2\\text{O}$.",
+    "pista": "En combustiones, ajusta primero carbono, luego hidrógeno y deja el oxígeno para el final.",
+    "formula": "$$\\text{CH}_4+2\\text{O}_2\\rightarrow \\text{CO}_2+2\\text{H}_2\\text{O}$$"
+  },
+  {
+    "asignatura": "Química 4º ESO",
+    "id": 4233,
+    "dificultad": "Básica",
+    "bloque": "Tema 4: Reacciones químicas y estequiometría básica",
+    "enunciado": "Calcula la masa molar del agua, $\\text{H}_2\\text{O}$, sabiendo que $M(\\text{H})=1 \\text{ g/mol}$ y $M(\\text{O})=16 \\text{ g/mol}$.",
+    "resolucion_latex": "La molécula de agua tiene $2$ átomos de hidrógeno y $1$ átomo de oxígeno.<br>Calculamos:<br>$M(\\text{H}_2\\text{O})=2\\cdot M(\\text{H})+1\\cdot M(\\text{O})$.<br>$M(\\text{H}_2\\text{O})=2\\cdot 1+16=18 \\text{ g/mol}$.<br>La masa molar del agua es $18 \\text{ g/mol}$.",
+    "pista": "Multiplica la masa de cada elemento por el número de átomos que aparece en la fórmula.",
+    "formula": "$$M(\\text{H}_2\\text{O})=2M(\\text{H})+M(\\text{O})$$"
+  },
+  {
+    "asignatura": "Química 4º ESO",
+    "id": 4234,
+    "dificultad": "Media",
+    "bloque": "Tema 4: Reacciones químicas y estequiometría básica",
+    "enunciado": "Calcula cuántos moles hay en $36$ g de agua, sabiendo que la masa molar del agua es $18 \\text{ g/mol}$.",
+    "resolucion_latex": "El número de moles se calcula dividiendo la masa entre la masa molar:<br>$n=\\frac{m}{M}$.<br>Sustituimos:<br>$n=\\frac{36}{18}=2 \\text{ mol}$.<br>Por tanto, en $36$ g de agua hay $2$ moles.",
+    "pista": "Los moles relacionan la masa de una sustancia con su masa molar.",
+    "formula": "$$n=\\frac{m}{M}$$"
+  },
+  {
+    "asignatura": "Química 4º ESO",
+    "id": 4235,
+    "dificultad": "Media",
+    "bloque": "Tema 4: Reacciones químicas y estequiometría básica",
+    "enunciado": "Calcula la masa de $3$ moles de dióxido de carbono, $\\text{CO}_2$. Datos: $M(\\text{C})=12 \\text{ g/mol}$ y $M(\\text{O})=16 \\text{ g/mol}$.",
+    "resolucion_latex": "Primero calculamos la masa molar del dióxido de carbono:<br>$M(\\text{CO}_2)=M(\\text{C})+2M(\\text{O})$.<br>$M(\\text{CO}_2)=12+2\\cdot 16=44 \\text{ g/mol}$.<br>Ahora usamos:<br>$m=n\\cdot M$.<br>Sustituimos:<br>$m=3\\cdot 44=132 \\text{ g}$.<br>La masa de $3$ moles de $\\text{CO}_2$ es $132$ g.",
+    "pista": "Primero calcula la masa molar de la sustancia y después multiplica por el número de moles.",
+    "formula": "$$m=n\\cdot M$$"
+  },
+  {
+    "asignatura": "Química 4º ESO",
+    "id": 4236,
+    "dificultad": "Media",
+    "bloque": "Tema 4: Reacciones químicas y estequiometría básica",
+    "enunciado": "En la reacción ajustada $2\\text{H}_2+\\text{O}_2\\rightarrow 2\\text{H}_2\\text{O}$, ¿cuántos moles de agua se forman a partir de $4$ moles de hidrógeno?",
+    "resolucion_latex": "La reacción ajustada indica que $2$ moles de $\\text{H}_2$ producen $2$ moles de $\\text{H}_2\\text{O}$.<br>La proporción entre $\\text{H}_2$ y $\\text{H}_2\\text{O}$ es $2:2$, es decir, $1:1$.<br>Por tanto, si reaccionan $4$ moles de $\\text{H}_2$, se forman $4$ moles de $\\text{H}_2\\text{O}$.",
+    "pista": "Mira los coeficientes estequiométricos de la reacción ajustada.",
+    "formula": "$$2\\text{ mol H}_2 \\rightarrow 2\\text{ mol H}_2\\text{O}$$"
+  },
+  {
+    "asignatura": "Química 4º ESO",
+    "id": 4237,
+    "dificultad": "Alta",
+    "bloque": "Tema 4: Reacciones químicas y estequiometría básica",
+    "enunciado": "En la combustión del metano $\\text{CH}_4+2\\text{O}_2\\rightarrow \\text{CO}_2+2\\text{H}_2\\text{O}$, calcula cuántos moles de oxígeno se necesitan para quemar $5$ moles de metano.",
+    "resolucion_latex": "La reacción ajustada indica que $1$ mol de metano reacciona con $2$ moles de oxígeno:<br>$1\\text{ mol CH}_4 \\rightarrow 2\\text{ mol O}_2$.<br>Si tenemos $5$ moles de metano, necesitamos el doble de moles de oxígeno:<br>$5\\cdot 2=10 \\text{ mol O}_2$.<br>Por tanto, se necesitan $10$ moles de oxígeno.",
+    "pista": "Usa la proporción entre los coeficientes de $\\text{CH}_4$ y $\\text{O}_2$.",
+    "formula": "$$1\\text{CH}_4:2\\text{O}_2$$"
+  },
+  {
+    "asignatura": "Química 4º ESO",
+    "id": 4238,
+    "dificultad": "Alta",
+    "bloque": "Tema 4: Reacciones químicas y estequiometría básica",
+    "enunciado": "El carbonato de calcio se descompone según la reacción $\\text{CaCO}_3\\rightarrow \\text{CaO}+\\text{CO}_2$. Calcula la masa de $\\text{CO}_2$ que se obtiene al descomponer $50$ g de $\\text{CaCO}_3$. Datos: $M(\\text{CaCO}_3)=100 \\text{ g/mol}$ y $M(\\text{CO}_2)=44 \\text{ g/mol}$.",
+    "resolucion_latex": "Primero calculamos los moles de $\\text{CaCO}_3$:<br>$n=\\frac{m}{M}=\\frac{50}{100}=0,5 \\text{ mol}$.<br>La reacción ajustada muestra una proporción $1:1$ entre $\\text{CaCO}_3$ y $\\text{CO}_2$.<br>Por tanto, se forman $0,5$ moles de $\\text{CO}_2$.<br>Calculamos la masa de $\\text{CO}_2$:<br>$m=n\\cdot M=0,5\\cdot 44=22 \\text{ g}$.<br>Se obtienen $22$ g de $\\text{CO}_2$.",
+    "pista": "Pasa primero la masa de reactivo a moles, usa la reacción ajustada y luego vuelve a gramos.",
+    "formula": "$$n=\\frac{m}{M} \\quad ; \\quad m=nM$$"
+  },
+  {
+    "asignatura": "Química 4º ESO",
+    "id": 4239,
+    "dificultad": "Alta",
+    "bloque": "Tema 4: Reacciones químicas y estequiometría básica",
+    "enunciado": "Se hacen reaccionar $2$ moles de $\\text{H}_2$ con $2$ moles de $\\text{O}_2$ según $2\\text{H}_2+\\text{O}_2\\rightarrow 2\\text{H}_2\\text{O}$. Determina el reactivo limitante y los moles de agua formados.",
+    "resolucion_latex": "La reacción ajustada indica que $2$ moles de $\\text{H}_2$ reaccionan con $1$ mol de $\\text{O}_2$.<br>Tenemos $2$ moles de $\\text{H}_2$, que necesitan solo $1$ mol de $\\text{O}_2$.<br>Como hay $2$ moles de $\\text{O}_2$, sobra oxígeno.<br>Por tanto, el reactivo limitante es el hidrógeno.<br>Según la reacción, $2$ moles de $\\text{H}_2$ producen $2$ moles de $\\text{H}_2\\text{O}$.<br>Se forman $2$ moles de agua.",
+    "pista": "No siempre se consume todo lo que hay. El reactivo limitante es el que se agota primero.",
+    "formula": "$$2\\text{H}_2+\\text{O}_2\\rightarrow 2\\text{H}_2\\text{O}$$"
+  },
+  {
+    "asignatura": "Química 4º ESO",
+    "id": 4240,
+    "dificultad": "Superior",
+    "bloque": "Tema 4: Reacciones químicas y estequiometría básica",
+    "enunciado": "Ejercicio trampa: Un alumno afirma que para ajustar una reacción química se pueden cambiar los subíndices de las fórmulas. Por ejemplo, cambia $\\text{H}_2\\text{O}$ por $\\text{H}_2\\text{O}_2$ para ajustar el oxígeno. Explica el error.",
+    "resolucion_latex": "El error está en que al ajustar una reacción química no se pueden cambiar los subíndices de las fórmulas, porque eso cambia la sustancia.<br>$\\text{H}_2\\text{O}$ es agua, mientras que $\\text{H}_2\\text{O}_2$ es peróxido de hidrógeno, una sustancia diferente.<br>Para ajustar una reacción solo se pueden cambiar los coeficientes que van delante de las fórmulas.<br>Por ejemplo:<br>$2\\text{H}_2+\\text{O}_2\\rightarrow 2\\text{H}_2\\text{O}$.<br>Aquí se conserva la fórmula del agua y solo se colocan coeficientes delante.",
+    "pista": "Los subíndices forman parte de la identidad de la sustancia. Los coeficientes indican cantidad.",
+    "formula": "$$\\text{coeficientes: sí se cambian} \\quad ; \\quad \\text{subíndices: no se cambian}$$"
+  },
+  {
+    "asignatura": "Química 4º ESO",
+    "id": 4241,
+    "dificultad": "Básica",
+    "bloque": "Tema 5: Química del carbono",
+    "enunciado": "Indica cuántos átomos de carbono e hidrógeno hay en la molécula de propano, $\\text{C}_3\\text{H}_8$.",
+    "resolucion_latex": "La fórmula $\\text{C}_3\\text{H}_8$ indica el número de átomos de cada elemento en una molécula.<br>El subíndice $3$ junto al carbono significa que hay $3$ átomos de carbono.<br>El subíndice $8$ junto al hidrógeno significa que hay $8$ átomos de hidrógeno.<br>Por tanto, una molécula de propano tiene $3$ átomos de carbono y $8$ átomos de hidrógeno.",
+    "pista": "Los subíndices indican cuántos átomos de cada elemento hay en la molécula.",
+    "formula": "$$\\text{C}_3\\text{H}_8: 3\\text{ C y }8\\text{ H}$$"
+  },
+  {
+    "asignatura": "Química 4º ESO",
+    "id": 4242,
+    "dificultad": "Básica",
+    "bloque": "Tema 5: Química del carbono",
+    "enunciado": "Clasifica los siguientes hidrocarburos como alcanos, alquenos o alquinos: $\\text{C}_2\\text{H}_6$, $\\text{C}_2\\text{H}_4$ y $\\text{C}_2\\text{H}_2$.",
+    "resolucion_latex": "Los alcanos tienen enlaces simples y siguen la fórmula general $\\text{C}*n\\text{H}*{2n+2}$. Para $n=2$, sería $\\text{C}_2\\text{H}_6$, por tanto $\\text{C}_2\\text{H}_6$ es un alcano.<br><br>Los alquenos tienen un doble enlace y siguen la fórmula general $\\text{C}*n\\text{H}*{2n}$. Para $n=2$, sería $\\text{C}_2\\text{H}_4$, por tanto $\\text{C}_2\\text{H}_4$ es un alqueno.<br><br>Los alquinos tienen un triple enlace y siguen la fórmula general $\\text{C}*n\\text{H}*{2n-2}$. Para $n=2$, sería $\\text{C}_2\\text{H}_2$, por tanto $\\text{C}_2\\text{H}_2$ es un alquino.",
+    "pista": "Compara cada fórmula con las fórmulas generales de alcanos, alquenos y alquinos.",
+    "formula": "$$\\text{alcanos: C}*n\\text{H}*{2n+2} \\quad ; \\quad \\text{alquenos: C}*n\\text{H}*{2n} \\quad ; \\quad \\text{alquinos: C}*n\\text{H}*{2n-2}$$"
+  },
+  {
+    "asignatura": "Química 4º ESO",
+    "id": 4243,
+    "dificultad": "Básica",
+    "bloque": "Tema 5: Química del carbono",
+    "enunciado": "Escribe la fórmula molecular del butano sabiendo que es un alcano de $4$ carbonos.",
+    "resolucion_latex": "Los alcanos siguen la fórmula general:<br>$\\text{C}*n\\text{H}*{2n+2}$.<br>Para el butano, $n=4$.<br>Sustituimos:<br>$\\text{H}=2\\cdot 4+2=10$.<br>Por tanto, la fórmula molecular del butano es:<br>$\\text{C}*4\\text{H}*{10}$.",
+    "pista": "El butano es un alcano, así que usa la fórmula general de los alcanos.",
+    "formula": "$$\\text{C}*n\\text{H}*{2n+2}$$"
+  },
+  {
+    "asignatura": "Química 4º ESO",
+    "id": 4244,
+    "dificultad": "Media",
+    "bloque": "Tema 5: Química del carbono",
+    "enunciado": "Nombra el hidrocarburo $\\text{C}_3\\text{H}_6$ sabiendo que es un alqueno.",
+    "resolucion_latex": "El compuesto tiene $3$ átomos de carbono, por lo que usamos el prefijo 'prop-'.<br>Como se indica que es un alqueno, tiene un doble enlace y se usa la terminación '-eno'.<br>Por tanto, $\\text{C}_3\\text{H}_6$ se nombra como propeno.",
+    "pista": "Tres carbonos usan el prefijo 'prop-'. Los alquenos terminan en '-eno'.",
+    "formula": "$$\\text{C}_3\\text{H}_6 \\rightarrow \\text{propeno}$$"
+  },
+  {
+    "asignatura": "Química 4º ESO",
+    "id": 4245,
+    "dificultad": "Media",
+    "bloque": "Tema 5: Química del carbono",
+    "enunciado": "Formula el etanol sabiendo que tiene dos carbonos y un grupo alcohol $-\\text{OH}$.",
+    "resolucion_latex": "El etanol es un alcohol de dos carbonos.<br>La cadena de dos carbonos corresponde al prefijo 'et-'.<br>Los alcoholes contienen el grupo funcional $-\\text{OH}$.<br>Su fórmula molecular es:<br>$\\text{C}_2\\text{H}_6\\text{O}$.<br>También puede escribirse de forma semidesarrollada como:<br>$\\text{CH}_3\\text{-CH}_2\\text{OH}$.",
+    "pista": "El grupo alcohol se representa como $-\\text{OH}$ unido a una cadena de carbonos.",
+    "formula": "$$\\text{CH}_3\\text{-CH}_2\\text{OH}$$"
+  },
+  {
+    "asignatura": "Química 4º ESO",
+    "id": 4246,
+    "dificultad": "Media",
+    "bloque": "Tema 5: Química del carbono",
+    "enunciado": "Ajusta la combustión completa del propano: $\\text{C}_3\\text{H}_8+\\text{O}_2\\rightarrow \\text{CO}_2+\\text{H}_2\\text{O}$.",
+    "resolucion_latex": "En una combustión completa se forman dióxido de carbono y agua.<br>Primero ajustamos el carbono. Como hay $3$ carbonos en el propano, ponemos $3\\text{CO}_2$:<br>$\\text{C}_3\\text{H}_8+\\text{O}_2\\rightarrow 3\\text{CO}_2+\\text{H}_2\\text{O}$.<br><br>Ahora ajustamos el hidrógeno. Hay $8$ hidrógenos, así que ponemos $4\\text{H}_2\\text{O}$:<br>$\\text{C}_3\\text{H}_8+\\text{O}_2\\rightarrow 3\\text{CO}_2+4\\text{H}_2\\text{O}$.<br><br>Contamos oxígenos en productos: $3\\text{CO}_2$ aporta $6$ oxígenos y $4\\text{H}_2\\text{O}$ aporta $4$ oxígenos. En total hay $10$ oxígenos.<br>Por tanto, hacen falta $5\\text{O}_2$:<br>$\\text{C}_3\\text{H}_8+5\\text{O}_2\\rightarrow 3\\text{CO}_2+4\\text{H}_2\\text{O}$.",
+    "pista": "En combustiones, ajusta primero carbono, luego hidrógeno y deja el oxígeno para el final.",
+    "formula": "$$\\text{C}_3\\text{H}_8+5\\text{O}_2\\rightarrow 3\\text{CO}_2+4\\text{H}_2\\text{O}$$"
+  },
+  {
+    "asignatura": "Química 4º ESO",
+    "id": 4247,
+    "dificultad": "Alta",
+    "bloque": "Tema 5: Química del carbono",
+    "enunciado": "Calcula la masa molar del butano, $\\text{C}*4\\text{H}*{10}$. Datos: $M(\\text{C})=12 \\text{ g/mol}$ y $M(\\text{H})=1 \\text{ g/mol}$.",
+    "resolucion_latex": "El butano tiene $4$ átomos de carbono y $10$ átomos de hidrógeno.<br>Calculamos la masa molar:<br>$M(\\text{C}*4\\text{H}*{10})=4\\cdot M(\\text{C})+10\\cdot M(\\text{H})$.<br>Sustituimos:<br>$M(\\text{C}*4\\text{H}*{10})=4\\cdot 12+10\\cdot 1=48+10=58 \\text{ g/mol}$.<br>La masa molar del butano es $58 \\text{ g/mol}$.",
+    "pista": "Multiplica la masa atómica de cada elemento por su subíndice.",
+    "formula": "$$M(\\text{C}*4\\text{H}*{10})=4M(\\text{C})+10M(\\text{H})$$"
+  },
+  {
+    "asignatura": "Química 4º ESO",
+    "id": 4248,
+    "dificultad": "Alta",
+    "bloque": "Tema 5: Química del carbono",
+    "enunciado": "En la combustión completa del metano, $\\text{CH}_4+2\\text{O}_2\\rightarrow \\text{CO}_2+2\\text{H}_2\\text{O}$, calcula cuántos gramos de $\\text{CO}_2$ se forman al quemar $16$ g de metano. Datos: $M(\\text{CH}_4)=16 \\text{ g/mol}$ y $M(\\text{CO}_2)=44 \\text{ g/mol}$.",
+    "resolucion_latex": "Primero calculamos los moles de metano:<br>$n=\\frac{m}{M}=\\frac{16}{16}=1 \\text{ mol}$.<br>La reacción ajustada indica que $1$ mol de $\\text{CH}_4$ produce $1$ mol de $\\text{CO}_2$.<br>Por tanto, se forma $1$ mol de $\\text{CO}_2$.<br>Calculamos la masa de $\\text{CO}_2$:<br>$m=n\\cdot M=1\\cdot 44=44 \\text{ g}$.<br>Se forman $44$ g de $\\text{CO}_2$.",
+    "pista": "Pasa primero los gramos de metano a moles, usa la proporción de la reacción y después vuelve a gramos.",
+    "formula": "$$n=\\frac{m}{M} \\quad ; \\quad m=nM$$"
+  },
+  {
+    "asignatura": "Química 4º ESO",
+    "id": 4249,
+    "dificultad": "Alta",
+    "bloque": "Tema 5: Química del carbono",
+    "enunciado": "Explica la diferencia entre combustión completa e incompleta de un hidrocarburo.",
+    "resolucion_latex": "La combustión completa ocurre cuando hay suficiente oxígeno. En ese caso, el carbono del hidrocarburo se transforma en dióxido de carbono y el hidrógeno en agua:<br>$\\text{hidrocarburo}+\\text{O}_2\\rightarrow \\text{CO}_2+\\text{H}_2\\text{O}$.<br><br>La combustión incompleta ocurre cuando no hay suficiente oxígeno. En ese caso, pueden formarse monóxido de carbono, carbono sólido u hollín, además de agua:<br>$\\text{hidrocarburo}+\\text{O}_2\\rightarrow \\text{CO}+\\text{H}_2\\text{O}$ o $\\text{C}+\\text{H}_2\\text{O}$.<br>La combustión incompleta es más peligrosa porque puede producir $\\text{CO}$, un gas tóxico.",
+    "pista": "La clave está en la cantidad de oxígeno disponible durante la combustión.",
+    "formula": "$$\\text{completa: CO}_2+\\text{H}_2\\text{O} \\quad ; \\quad \\text{incompleta: CO o C}+\\text{H}_2\\text{O}$$"
+  },
+  {
+    "asignatura": "Química 4º ESO",
+    "id": 4250,
+    "dificultad": "Superior",
+    "bloque": "Tema 5: Química del carbono",
+    "enunciado": "Ejercicio trampa: Un alumno dice que todos los compuestos que contienen carbono son orgánicos. Explica por qué esta afirmación no es correcta y pon ejemplos.",
+    "resolucion_latex": "La afirmación no es correcta porque aunque la química orgánica estudia principalmente los compuestos del carbono, no todos los compuestos que contienen carbono se consideran orgánicos.<br>Por ejemplo, el dióxido de carbono, $\\text{CO}_2$, el monóxido de carbono, $\\text{CO}$, los carbonatos como $\\text{CaCO}_3$ y los bicarbonatos como $\\text{NaHCO}_3$ suelen estudiarse como compuestos inorgánicos.<br>En cambio, hidrocarburos como el metano $\\text{CH}_4$, alcoholes como el etanol $\\text{C}_2\\text{H}_5\\text{OH}$ o ácidos orgánicos como el ácido acético $\\text{CH}_3\\text{COOH}$ sí pertenecen a la química orgánica.<br>Por tanto, la presencia de carbono no basta por sí sola para clasificar un compuesto como orgánico.",
+    "pista": "Piensa en el dióxido de carbono: tiene carbono, pero no se estudia como compuesto orgánico típico.",
+    "formula": "$$\\text{tener carbono} \\nRightarrow \\text{ser siempre orgánico}$$"
+  },
+  {
+    "asignatura": "Química 4º ESO",
+    "id": 4251,
+    "dificultad": "Básica",
+    "bloque": "Tema 6: Química, sociedad y medioambiente",
+    "enunciado": "Indica si las siguientes acciones favorecen o reducen la contaminación: usar transporte público, quemar residuos al aire libre, reciclar vidrio y verter aceite usado por el fregadero.",
+    "resolucion_latex": "Usar transporte público reduce la contaminación porque disminuye el número de vehículos en circulación.<br>Quemar residuos al aire libre favorece la contaminación porque libera gases y partículas al aire.<br>Reciclar vidrio reduce la contaminación y el consumo de materias primas.<br>Verter aceite usado por el fregadero favorece la contaminación del agua.<br>Por tanto:<br>Reducen la contaminación: usar transporte público y reciclar vidrio.<br>Favorecen la contaminación: quemar residuos y verter aceite usado por el fregadero.",
+    "pista": "Piensa si cada acción disminuye residuos/emisiones o si los aumenta.",
+    "formula": "$$\\text{prevención} > \\text{corrección de la contaminación}$$"
+  },
+  {
+    "asignatura": "Química 4º ESO",
+    "id": 4252,
+    "dificultad": "Básica",
+    "bloque": "Tema 6: Química, sociedad y medioambiente",
+    "enunciado": "Explica brevemente qué es el efecto invernadero y por qué un aumento excesivo de gases como el $\\text{CO}_2$ puede ser un problema.",
+    "resolucion_latex": "El efecto invernadero es un fenómeno natural por el cual algunos gases de la atmósfera retienen parte del calor que emite la Tierra.<br>Gracias a este fenómeno, la temperatura del planeta es adecuada para la vida.<br>El problema aparece cuando aumenta demasiado la concentración de gases de efecto invernadero, como el $\\text{CO}_2$.<br>Ese aumento puede provocar que se retenga más calor del normal, contribuyendo al calentamiento global.",
+    "pista": "El efecto invernadero no es malo por sí mismo; el problema es su aumento excesivo.",
+    "formula": "$$\\text{más gases de efecto invernadero} \\Rightarrow \\text{mayor retención de calor}$$"
+  },
+  {
+    "asignatura": "Química 4º ESO",
+    "id": 4253,
+    "dificultad": "Básica",
+    "bloque": "Tema 6: Química, sociedad y medioambiente",
+    "enunciado": "Clasifica los siguientes materiales como renovables o no renovables: petróleo, madera de bosques gestionados, gas natural, energía solar y carbón.",
+    "resolucion_latex": "El petróleo es un recurso no renovable porque tarda millones de años en formarse.<br>La madera de bosques gestionados puede considerarse renovable si se repone mediante reforestación.<br>El gas natural es no renovable.<br>La energía solar es renovable.<br>El carbón es no renovable.<br>Por tanto:<br>Renovables: madera de bosques gestionados y energía solar.<br>No renovables: petróleo, gas natural y carbón.",
+    "pista": "Un recurso renovable se regenera en un tiempo relativamente corto si se gestiona bien.",
+    "formula": "$$\\text{renovable} \\neq \\text{inagotable si se usa mal}$$"
+  },
+  {
+    "asignatura": "Química 4º ESO",
+    "id": 4254,
+    "dificultad": "Media",
+    "bloque": "Tema 6: Química, sociedad y medioambiente",
+    "enunciado": "Explica por qué la combustión de combustibles fósiles contribuye al aumento de $\\text{CO}_2$ en la atmósfera.",
+    "resolucion_latex": "Los combustibles fósiles, como el carbón, el petróleo y el gas natural, contienen carbono.<br>Cuando se queman en presencia de oxígeno, ese carbono reacciona formando dióxido de carbono:<br>$\\text{C}+\\text{O}_2\\rightarrow \\text{CO}_2$.<br>Por eso, al quemar grandes cantidades de combustibles fósiles, se libera mucho $\\text{CO}_2$ a la atmósfera.<br>Este gas contribuye al aumento del efecto invernadero.",
+    "pista": "La combustión transforma el carbono del combustible en dióxido de carbono.",
+    "formula": "$$\\text{C}+\\text{O}_2\\rightarrow \\text{CO}_2$$"
+  },
+  {
+    "asignatura": "Química 4º ESO",
+    "id": 4255,
+    "dificultad": "Media",
+    "bloque": "Tema 6: Química, sociedad y medioambiente",
+    "enunciado": "Calcula la masa de $\\text{CO}_2$ producida al quemar $12$ g de carbono puro. Datos: $\\text{C}+\\text{O}_2\\rightarrow \\text{CO}_2$, $M(\\text{C})=12 \\text{ g/mol}$ y $M(\\text{CO}_2)=44 \\text{ g/mol}$.",
+    "resolucion_latex": "Primero calculamos los moles de carbono:<br>$n(\\text{C})=\\frac{m}{M}=\\frac{12}{12}=1 \\text{ mol}$.<br>La reacción indica que $1$ mol de carbono produce $1$ mol de dióxido de carbono.<br>Por tanto, se forma $1$ mol de $\\text{CO}_2$.<br>Calculamos su masa:<br>$m=n\\cdot M=1\\cdot 44=44 \\text{ g}$.<br>Se producen $44$ g de $\\text{CO}_2$.",
+    "pista": "Usa la reacción ajustada para pasar de moles de carbono a moles de dióxido de carbono.",
+    "formula": "$$n=\\frac{m}{M} \\quad ; \\quad m=nM$$"
+  },
+  {
+    "asignatura": "Química 4º ESO",
+    "id": 4256,
+    "dificultad": "Media",
+    "bloque": "Tema 6: Química, sociedad y medioambiente",
+    "enunciado": "Explica la diferencia entre reciclar, reutilizar y reducir, usando un ejemplo de cada caso.",
+    "resolucion_latex": "Reducir significa consumir menos recursos o generar menos residuos desde el principio. Por ejemplo, llevar una botella reutilizable para no comprar botellas de plástico.<br><br>Reutilizar significa volver a usar un objeto sin transformarlo en otro material. Por ejemplo, usar un tarro de vidrio como recipiente para guardar alimentos.<br><br>Reciclar significa transformar un residuo para fabricar nuevos productos. Por ejemplo, reciclar papel usado para producir papel nuevo.<br>La opción más eficaz suele ser reducir, después reutilizar y finalmente reciclar.",
+    "pista": "Reducir evita el residuo, reutilizar alarga la vida del objeto y reciclar transforma el material.",
+    "formula": "$$\\text{Reducir} \\rightarrow \\text{Reutilizar} \\rightarrow \\text{Reciclar}$$"
+  },
+  {
+    "asignatura": "Química 4º ESO",
+    "id": 4257,
+    "dificultad": "Alta",
+    "bloque": "Tema 6: Química, sociedad y medioambiente",
+    "enunciado": "Una fábrica emite $2,5$ toneladas de $\\text{CO}_2$ al día. Si instala un sistema que reduce sus emisiones un $30\\%$, calcula cuántas toneladas emitirá al día después de la reducción y cuántas toneladas evitará emitir en un mes de $30$ días.",
+    "resolucion_latex": "Primero calculamos la reducción diaria:<br>$30\\%$ de $2,5$ toneladas es:<br>$0,30\\cdot 2,5=0,75$ toneladas.<br><br>Emisión diaria después de la reducción:<br>$2,5-0,75=1,75$ toneladas al día.<br><br>Ahora calculamos las toneladas evitadas en $30$ días:<br>$0,75\\cdot 30=22,5$ toneladas.<br>Por tanto, la fábrica emitirá $1,75$ toneladas diarias y evitará emitir $22,5$ toneladas de $\\text{CO}_2$ en un mes.",
+    "pista": "Calcula primero cuánto se reduce cada día y luego multiplica esa reducción por los días del mes.",
+    "formula": "$$\\text{reducción}=\\text{cantidad inicial}\\cdot\\frac{\\%}{100}$$"
+  },
+  {
+    "asignatura": "Química 4º ESO",
+    "id": 4258,
+    "dificultad": "Alta",
+    "bloque": "Tema 6: Química, sociedad y medioambiente",
+    "enunciado": "Una muestra de agua contiene $0,20$ g de contaminante en $2$ L de agua. Calcula la concentración en $\\text{g/L}$ y explica si aumentaría o disminuiría al añadir $3$ L de agua limpia sin añadir más contaminante.",
+    "resolucion_latex": "La concentración se calcula dividiendo la masa de soluto entre el volumen de disolución:<br>$C=\\frac{m}{V}$.<br>Sustituimos:<br>$C=\\frac{0,20}{2}=0,10 \\text{ g/L}$.<br><br>Si añadimos $3$ L de agua limpia, el volumen total pasa a ser:<br>$2+3=5$ L.<br>La masa de contaminante sigue siendo $0,20$ g.<br>Nueva concentración:<br>$C=\\frac{0,20}{5}=0,04 \\text{ g/L}$.<br>Por tanto, la concentración disminuye al diluir la muestra.",
+    "pista": "Al diluir, la cantidad de contaminante no cambia, pero aumenta el volumen total.",
+    "formula": "$$C=\\frac{m}{V}$$"
+  },
+  {
+    "asignatura": "Química 4º ESO",
+    "id": 4259,
+    "dificultad": "Alta",
+    "bloque": "Tema 6: Química, sociedad y medioambiente",
+    "enunciado": "Explica por qué los plásticos pueden ser útiles y, al mismo tiempo, causar problemas medioambientales.",
+    "resolucion_latex": "Los plásticos son útiles porque son materiales ligeros, resistentes, baratos, moldeables y aislantes. Por eso se usan en envases, medicina, construcción, transporte y tecnología.<br><br>Sin embargo, también pueden causar problemas medioambientales. Muchos plásticos tardan mucho tiempo en degradarse y pueden acumularse en ecosistemas terrestres y acuáticos. Además, si se fragmentan, pueden formar microplásticos que entran en las cadenas alimentarias.<br><br>Por eso es importante reducir su uso innecesario, reutilizarlos cuando sea posible, reciclarlos correctamente y diseñar materiales más sostenibles.",
+    "pista": "Un material puede tener propiedades muy útiles y aun así generar problemas si se usa en exceso o se gestiona mal como residuo.",
+    "formula": "$$\\text{material útil} + \\text{mala gestión} \\Rightarrow \\text{impacto ambiental}$$"
+  },
+  {
+    "asignatura": "Química 4º ESO",
+    "id": 4260,
+    "dificultad": "Superior",
+    "bloque": "Tema 6: Química, sociedad y medioambiente",
+    "enunciado": "Ejercicio trampa: Un alumno afirma que reciclar siempre elimina por completo el impacto ambiental de un producto. Explica por qué esta afirmación es incorrecta.",
+    "resolucion_latex": "La afirmación es incorrecta porque reciclar reduce el impacto ambiental, pero no lo elimina por completo.<br>El reciclaje también requiere recogida, transporte, separación, tratamiento industrial y consumo de energía. Además, algunos materiales pierden calidad al reciclarse y no pueden reciclarse infinitas veces.<br>Por eso, reciclar es importante, pero no debe ser la única medida.<br>La prioridad debe ser reducir el consumo innecesario, reutilizar los productos siempre que sea posible y reciclar correctamente los residuos que no se puedan evitar.<br>Por tanto, el reciclaje ayuda, pero no convierte automáticamente un producto en completamente sostenible.",
+    "pista": "Reciclar es mejor que tirar, pero también consume recursos y energía.",
+    "formula": "$$\\text{Reducir} > \\text{Reutilizar} > \\text{Reciclar}$$"
+  }
+]

@@ -1,0 +1,702 @@
+[
+  {
+    "asignatura": "Matemáticas 4º ESO",
+    "id": 4001,
+    "dificultad": "Básica",
+    "bloque": "Tema 1: Números reales, radicales y logaritmos básicos",
+    "enunciado": "Clasifica los siguientes números como naturales, enteros, racionales, irracionales o reales: $5$, $-3$, $\\frac{7}{4}$, $\\sqrt{9}$, $\\sqrt{2}$, $-\\frac{12}{6}$ y $\\pi$.",
+    "resolucion_latex": "$5$ es natural, entero, racional y real.<br>$-3$ es entero, racional y real.<br>$\\frac{7}{4}$ es racional y real.<br>$\\sqrt{9}=3$, por tanto es natural, entero, racional y real.<br>$\\sqrt{2}$ es irracional y real.<br>$-\\frac{12}{6}=-2$, por tanto es entero, racional y real.<br>$\\pi$ es irracional y real.",
+    "pista": "Recuerda que todos los números naturales son enteros, todos los enteros son racionales y todos los racionales e irracionales pertenecen a los reales.",
+    "formula": "$$\\mathbb{N} \\subset \\mathbb{Z} \\subset \\mathbb{Q} \\subset \\mathbb{R}$$"
+  },
+  {
+    "asignatura": "Matemáticas 4º ESO",
+    "id": 4002,
+    "dificultad": "Básica",
+    "bloque": "Tema 1: Números reales, radicales y logaritmos básicos",
+    "enunciado": "Simplifica la siguiente expresión usando las propiedades de las potencias: $\\frac{2^{3}\\cdot 2^{5}}{2^{4}}$.",
+    "resolucion_latex": "Primero multiplicamos las potencias de la misma base sumando exponentes:<br>$2^{3}\\cdot 2^{5}=2^{3+5}=2^{8}$.<br>Ahora dividimos potencias de la misma base restando exponentes:<br>$\\frac{2^{8}}{2^{4}}=2^{8-4}=2^{4}$.<br>Finalmente:<br>$2^{4}=16$.",
+    "pista": "Cuando multiplicas potencias de la misma base, sumas exponentes. Cuando divides potencias de la misma base, los restas.",
+    "formula": "$$a^{m}\\cdot a^{n}=a^{m+n} \\quad ; \\quad \\frac{a^{m}}{a^{n}}=a^{m-n}$$"
+  },
+  {
+    "asignatura": "Matemáticas 4º ESO",
+    "id": 4003,
+    "dificultad": "Básica",
+    "bloque": "Tema 1: Números reales, radicales y logaritmos básicos",
+    "enunciado": "Simplifica los siguientes radicales: $\\sqrt{50}$, $\\sqrt{72}$ y $\\sqrt{98}$.",
+    "resolucion_latex": "Descomponemos cada número buscando factores cuadrados perfectos.<br>$\\sqrt{50}=\\sqrt{25\\cdot 2}=\\sqrt{25}\\cdot \\sqrt{2}=5\\sqrt{2}$.<br>$\\sqrt{72}=\\sqrt{36\\cdot 2}=\\sqrt{36}\\cdot \\sqrt{2}=6\\sqrt{2}$.<br>$\\sqrt{98}=\\sqrt{49\\cdot 2}=\\sqrt{49}\\cdot \\sqrt{2}=7\\sqrt{2}$.",
+    "pista": "Busca dentro de la raíz el mayor cuadrado perfecto posible: $25$, $36$, $49$, $64$, etc.",
+    "formula": "$$\\sqrt{a\\cdot b}=\\sqrt{a}\\cdot \\sqrt{b}$$"
+  },
+  {
+    "asignatura": "Matemáticas 4º ESO",
+    "id": 4004,
+    "dificultad": "Media",
+    "bloque": "Tema 1: Números reales, radicales y logaritmos básicos",
+    "enunciado": "Opera y simplifica: $3\\sqrt{12}-2\\sqrt{27}+\\sqrt{75}$.",
+    "resolucion_latex": "Primero simplificamos cada radical:<br>$\\sqrt{12}=\\sqrt{4\\cdot 3}=2\\sqrt{3}$, por tanto $3\\sqrt{12}=3\\cdot 2\\sqrt{3}=6\\sqrt{3}$.<br>$\\sqrt{27}=\\sqrt{9\\cdot 3}=3\\sqrt{3}$, por tanto $-2\\sqrt{27}=-2\\cdot 3\\sqrt{3}=-6\\sqrt{3}$.<br>$\\sqrt{75}=\\sqrt{25\\cdot 3}=5\\sqrt{3}$.<br>Ahora sumamos los radicales semejantes:<br>$6\\sqrt{3}-6\\sqrt{3}+5\\sqrt{3}=5\\sqrt{3}$.",
+    "pista": "Antes de sumar o restar radicales, simplifícalos. Solo se pueden operar directamente si tienen la misma raíz.",
+    "formula": "$$a\\sqrt{b}+c\\sqrt{b}=(a+c)\\sqrt{b}$$"
+  },
+  {
+    "asignatura": "Matemáticas 4º ESO",
+    "id": 4005,
+    "dificultad": "Media",
+    "bloque": "Tema 1: Números reales, radicales y logaritmos básicos",
+    "enunciado": "Racionaliza y simplifica la expresión: $\\frac{5}{\\sqrt{3}}$.",
+    "resolucion_latex": "Para eliminar la raíz del denominador, multiplicamos numerador y denominador por $\\sqrt{3}$:<br>$\\frac{5}{\\sqrt{3}}\\cdot \\frac{\\sqrt{3}}{\\sqrt{3}}=\\frac{5\\sqrt{3}}{\\sqrt{3}\\cdot \\sqrt{3}}$.<br>Como $\\sqrt{3}\\cdot \\sqrt{3}=3$, queda:<br>$\\frac{5\\sqrt{3}}{3}$.",
+    "pista": "Racionalizar significa quitar la raíz del denominador sin cambiar el valor de la fracción.",
+    "formula": "$$\\frac{a}{\\sqrt{b}}=\\frac{a\\sqrt{b}}{b}$$"
+  },
+  {
+    "asignatura": "Matemáticas 4º ESO",
+    "id": 4006,
+    "dificultad": "Media",
+    "bloque": "Tema 1: Números reales, radicales y logaritmos básicos",
+    "enunciado": "Calcula los siguientes logaritmos: $\\log_{2}32$, $\\log_{3}81$ y $\\log_{10}0,01$.",
+    "resolucion_latex": "Usamos la definición de logaritmo: $\\log_{a}b=x$ significa que $a^{x}=b$.<br>Como $2^{5}=32$, entonces $\\log_{2}32=5$.<br>Como $3^{4}=81$, entonces $\\log_{3}81=4$.<br>Como $10^{-2}=0,01$, entonces $\\log_{10}0,01=-2$.",
+    "pista": "Un logaritmo pregunta: ¿a qué exponente tengo que elevar la base para obtener el número?",
+    "formula": "$$\\log_{a}b=x \\Longleftrightarrow a^{x}=b$$"
+  },
+  {
+    "asignatura": "Matemáticas 4º ESO",
+    "id": 4007,
+    "dificultad": "Alta",
+    "bloque": "Tema 1: Números reales, radicales y logaritmos básicos",
+    "enunciado": "Simplifica completamente la expresión: $\\sqrt{18}\\cdot \\sqrt{8}-4\\sqrt{2}+\\sqrt{50}$.",
+    "resolucion_latex": "Primero multiplicamos los dos primeros radicales:<br>$\\sqrt{18}\\cdot \\sqrt{8}=\\sqrt{18\\cdot 8}=\\sqrt{144}=12$.<br>Ahora simplificamos el último radical:<br>$\\sqrt{50}=\\sqrt{25\\cdot 2}=5\\sqrt{2}$.<br>Sustituimos en la expresión inicial:<br>$12-4\\sqrt{2}+5\\sqrt{2}$.<br>Sumamos los radicales semejantes:<br>$-4\\sqrt{2}+5\\sqrt{2}=\\sqrt{2}$.<br>Resultado final:<br>$12+\\sqrt{2}$.",
+    "pista": "No todos los términos tienen que acabar siendo radicales. Primero resuelve el producto de raíces y luego simplifica lo que quede.",
+    "formula": "$$\\sqrt{a}\\cdot \\sqrt{b}=\\sqrt{ab}$$"
+  },
+  {
+    "asignatura": "Matemáticas 4º ESO",
+    "id": 4008,
+    "dificultad": "Alta",
+    "bloque": "Tema 1: Números reales, radicales y logaritmos básicos",
+    "enunciado": "Racionaliza la expresión: $\\frac{3}{2+\\sqrt{5}}$.",
+    "resolucion_latex": "Para racionalizar un denominador con suma, usamos el conjugado: $2-\\sqrt{5}$.<br>Multiplicamos numerador y denominador por el conjugado:<br>$\\frac{3}{2+\\sqrt{5}}\\cdot \\frac{2-\\sqrt{5}}{2-\\sqrt{5}}=\\frac{3(2-\\sqrt{5})}{(2+\\sqrt{5})(2-\\sqrt{5})}$.<br>En el denominador usamos suma por diferencia:<br>$(2+\\sqrt{5})(2-\\sqrt{5})=2^{2}-(\\sqrt{5})^{2}=4-5=-1$.<br>Entonces:<br>$\\frac{3(2-\\sqrt{5})}{-1}=-6+3\\sqrt{5}$.<br>Resultado final:<br>$3\\sqrt{5}-6$.",
+    "pista": "Cuando el denominador tiene una suma o resta con una raíz, multiplica por el conjugado para usar una diferencia de cuadrados.",
+    "formula": "$$(a+b)(a-b)=a^{2}-b^{2}$$"
+  },
+  {
+    "asignatura": "Matemáticas 4º ESO",
+    "id": 4009,
+    "dificultad": "Alta",
+    "bloque": "Tema 1: Números reales, radicales y logaritmos básicos",
+    "enunciado": "Sabiendo que $\\log 2=0,301$, calcula sin calculadora el valor de $\\log 200$.",
+    "resolucion_latex": "Descomponemos $200$ como producto de $2$ y una potencia de $10$:<br>$200=2\\cdot 100=2\\cdot 10^{2}$.<br>Aplicamos la propiedad del logaritmo de un producto:<br>$\\log 200=\\log(2\\cdot 10^{2})=\\log 2+\\log 10^{2}$.<br>Como $\\log 2=0,301$ y $\\log 10^{2}=2$, tenemos:<br>$\\log 200=0,301+2=2,301$.",
+    "pista": "Intenta escribir $200$ usando el número $2$ y una potencia de $10$, porque sabes el valor de $\\log 2$ y conoces los logaritmos de potencias de $10$.",
+    "formula": "$$\\log(a\\cdot b)=\\log a+\\log b \\quad ; \\quad \\log(10^{n})=n$$"
+  },
+  {
+    "asignatura": "Matemáticas 4º ESO",
+    "id": 4010,
+    "dificultad": "Superior",
+    "bloque": "Tema 1: Números reales, radicales y logaritmos básicos",
+    "enunciado": "Ejercicio trampa: Un alumno afirma que $\\sqrt{16+9}=\\sqrt{16}+\\sqrt{9}=4+3=7$. Por tanto, concluye que $\\sqrt{25}=7$. Explica dónde está el error y calcula correctamente $\\sqrt{16+9}$.",
+    "resolucion_latex": "El error está en aplicar una propiedad falsa. En general, no se cumple que:<br>$\\sqrt{a+b}=\\sqrt{a}+\\sqrt{b}$.<br>La raíz debe calcularse después de resolver la suma que hay dentro:<br>$\\sqrt{16+9}=\\sqrt{25}$.<br>Como $25=5^{2}$, entonces:<br>$\\sqrt{25}=5$.<br>Por tanto:<br>$\\sqrt{16+9}=5$, no $7$.",
+    "pista": "La raíz de una suma no es igual a la suma de las raíces. Primero calcula lo que hay dentro de la raíz.",
+    "formula": "$$\\sqrt{a+b}\\neq \\sqrt{a}+\\sqrt{b}$$"
+  },
+  {
+    "asignatura": "Matemáticas 4º ESO",
+    "id": 4011,
+    "dificultad": "Básica",
+    "bloque": "Tema 2: Polinomios, factorización y fracciones algebraicas",
+    "enunciado": "Calcula el valor numérico del polinomio $P(x)=2x^{3}-3x^{2}+4x-5$ para $x=2$.",
+    "resolucion_latex": "Sustituimos $x=2$ en el polinomio:<br>$P(2)=2\\cdot 2^{3}-3\\cdot 2^{2}+4\\cdot 2-5$.<br>Calculamos las potencias:<br>$2^{3}=8$ y $2^{2}=4$.<br>Entonces:<br>$P(2)=2\\cdot 8-3\\cdot 4+8-5=16-12+8-5$.<br>Finalmente:<br>$P(2)=7$.",
+    "pista": "Sustituye cada $x$ por el número que te dan y respeta el orden de operaciones: primero potencias, luego productos y por último sumas y restas.",
+    "formula": "$$P(a)=\\text{valor del polinomio al sustituir }x\\text{ por }a$$"
+  },
+  {
+    "asignatura": "Matemáticas 4º ESO",
+    "id": 4012,
+    "dificultad": "Básica",
+    "bloque": "Tema 2: Polinomios, factorización y fracciones algebraicas",
+    "enunciado": "Dados los polinomios $P(x)=3x^{2}-2x+5$ y $Q(x)=x^{2}+4x-7$, calcula $P(x)+Q(x)$ y $P(x)-Q(x)$.",
+    "resolucion_latex": "Primero sumamos los polinomios agrupando términos semejantes:<br>$P(x)+Q(x)=(3x^{2}-2x+5)+(x^{2}+4x-7)$.<br>$P(x)+Q(x)=4x^{2}+2x-2$.<br><br>Ahora restamos. Cuidado con cambiar los signos del segundo polinomio:<br>$P(x)-Q(x)=(3x^{2}-2x+5)-(x^{2}+4x-7)$.<br>$P(x)-Q(x)=3x^{2}-2x+5-x^{2}-4x+7$.<br>$P(x)-Q(x)=2x^{2}-6x+12$.",
+    "pista": "En la resta de polinomios, cambia todos los signos del segundo polinomio antes de agrupar términos semejantes.",
+    "formula": "$$(ax^{2}+bx+c)+(dx^{2}+ex+f)=(a+d)x^{2}+(b+e)x+(c+f)$$"
+  },
+  {
+    "asignatura": "Matemáticas 4º ESO",
+    "id": 4013,
+    "dificultad": "Básica",
+    "bloque": "Tema 2: Polinomios, factorización y fracciones algebraicas",
+    "enunciado": "Desarrolla y simplifica la expresión $3x(2x^{2}-5x+4)$.",
+    "resolucion_latex": "Aplicamos la propiedad distributiva multiplicando $3x$ por cada término del paréntesis:<br>$3x(2x^{2}-5x+4)=3x\\cdot 2x^{2}+3x\\cdot (-5x)+3x\\cdot 4$.<br>Calculamos cada producto:<br>$3x\\cdot 2x^{2}=6x^{3}$,<br>$3x\\cdot (-5x)=-15x^{2}$,<br>$3x\\cdot 4=12x$.<br>Resultado final:<br>$6x^{3}-15x^{2}+12x$.",
+    "pista": "Multiplica el monomio de fuera por todos los términos del paréntesis, sin olvidarte de los signos.",
+    "formula": "$$a(b+c+d)=ab+ac+ad$$"
+  },
+  {
+    "asignatura": "Matemáticas 4º ESO",
+    "id": 4014,
+    "dificultad": "Media",
+    "bloque": "Tema 2: Polinomios, factorización y fracciones algebraicas",
+    "enunciado": "Divide el polinomio $2x^{3}+3x^{2}-5x+6$ entre $x+2$. Indica el cociente y el resto.",
+    "resolucion_latex": "Dividimos $2x^{3}+3x^{2}-5x+6$ entre $x+2$.<br>Primer término: $2x^{3}:x=2x^{2}$. Multiplicamos: $2x^{2}(x+2)=2x^{3}+4x^{2}$. Restamos:<br>$(2x^{3}+3x^{2})-(2x^{3}+4x^{2})=-x^{2}$.<br>Bajamos $-5x$.<br>Segundo término: $-x^{2}:x=-x$. Multiplicamos: $-x(x+2)=-x^{2}-2x$. Restamos:<br>$(-x^{2}-5x)-(-x^{2}-2x)=-3x$.<br>Bajamos $+6$.<br>Tercer término: $-3x:x=-3$. Multiplicamos: $-3(x+2)=-3x-6$. Restamos:<br>$(-3x+6)-(-3x-6)=12$.<br>Por tanto, el cociente es $2x^{2}-x-3$ y el resto es $12$.",
+    "pista": "Divide siempre el primer término del dividendo entre el primer término del divisor. Después multiplica, resta y baja el siguiente término.",
+    "formula": "$$D(x)=d(x)\\cdot C(x)+R(x)$$"
+  },
+  {
+    "asignatura": "Matemáticas 4º ESO",
+    "id": 4015,
+    "dificultad": "Media",
+    "bloque": "Tema 2: Polinomios, factorización y fracciones algebraicas",
+    "enunciado": "Usa la regla de Ruffini para dividir $P(x)=x^{3}-4x^{2}+x+6$ entre $x-2$. Indica el cociente y el resto.",
+    "resolucion_latex": "Como el divisor es $x-2$, usamos en Ruffini el número $2$.<br>Coeficientes del polinomio: $1$, $-4$, $1$, $6$.<br>Bajamos el primer coeficiente: $1$.<br>Multiplicamos por $2$: $1\\cdot 2=2$. Sumamos con $-4$: $-4+2=-2$.<br>Multiplicamos por $2$: $-2\\cdot 2=-4$. Sumamos con $1$: $1+(-4)=-3$.<br>Multiplicamos por $2$: $-3\\cdot 2=-6$. Sumamos con $6$: $6+(-6)=0$.<br>Los coeficientes del cociente son $1$, $-2$, $-3$, así que:<br>$C(x)=x^{2}-2x-3$.<br>El resto es $0$.",
+    "pista": "En Ruffini no se usa el divisor completo, sino el número que anula el divisor. Si divides entre $x-2$, usas $2$.",
+    "formula": "$$P(x)=(x-a)\\cdot C(x)+R$$"
+  },
+  {
+    "asignatura": "Matemáticas 4º ESO",
+    "id": 4016,
+    "dificultad": "Media",
+    "bloque": "Tema 2: Polinomios, factorización y fracciones algebraicas",
+    "enunciado": "Factoriza completamente la expresión $3x^{3}-12x$.",
+    "resolucion_latex": "Primero sacamos factor común. Ambos términos tienen $3x$ como factor común:<br>$3x^{3}-12x=3x(x^{2}-4)$.<br>Ahora observamos que $x^{2}-4$ es una diferencia de cuadrados:<br>$x^{2}-4=x^{2}-2^{2}=(x-2)(x+2)$.<br>Por tanto, la factorización completa es:<br>$3x^{3}-12x=3x(x-2)(x+2)$.",
+    "pista": "Primero saca el factor común más grande. Después revisa si lo que queda dentro del paréntesis se puede seguir factorizar.",
+    "formula": "$$a^{2}-b^{2}=(a-b)(a+b)$$"
+  },
+  {
+    "asignatura": "Matemáticas 4º ESO",
+    "id": 4017,
+    "dificultad": "Alta",
+    "bloque": "Tema 2: Polinomios, factorización y fracciones algebraicas",
+    "enunciado": "Factoriza completamente el polinomio $P(x)=x^{3}-6x^{2}+11x-6$.",
+    "resolucion_latex": "Buscamos raíces enteras probando divisores del término independiente: $\\pm 1$, $\\pm 2$, $\\pm 3$, $\\pm 6$.<br>Probamos $x=1$:<br>$P(1)=1-6+11-6=0$, por tanto $x=1$ es raíz y $(x-1)$ es factor.<br>Dividimos por Ruffini entre $x-1$ usando el número $1$. Coeficientes: $1$, $-6$, $11$, $-6$.<br>El cociente obtenido es $x^{2}-5x+6$.<br>Ahora factorizamos el trinomio:<br>$x^{2}-5x+6=(x-2)(x-3)$, porque $2\\cdot 3=6$ y $2+3=5$.<br>Por tanto:<br>$P(x)=(x-1)(x-2)(x-3)$.",
+    "pista": "Prueba primero raíces enteras sencillas. Si un número hace que el polinomio valga cero, entonces tienes un factor de la forma $x-a$.",
+    "formula": "$$P(a)=0 \\Longleftrightarrow (x-a)\\text{ es factor de }P(x)$$"
+  },
+  {
+    "asignatura": "Matemáticas 4º ESO",
+    "id": 4018,
+    "dificultad": "Alta",
+    "bloque": "Tema 2: Polinomios, factorización y fracciones algebraicas",
+    "enunciado": "Simplifica la siguiente fracción algebraica: $\\frac{x^{2}-9}{x^{2}+6x+9}$.",
+    "resolucion_latex": "Factorizamos el numerador y el denominador.<br>El numerador es una diferencia de cuadrados:<br>$x^{2}-9=x^{2}-3^{2}=(x-3)(x+3)$.<br>El denominador es un cuadrado perfecto:<br>$x^{2}+6x+9=(x+3)^{2}=(x+3)(x+3)$.<br>Entonces:<br>$\\frac{x^{2}-9}{x^{2}+6x+9}=\\frac{(x-3)(x+3)}{(x+3)(x+3)}$.<br>Cancelamos el factor común $(x+3)$:<br>$\\frac{x-3}{x+3}$.<br>Resultado final:<br>$\\frac{x-3}{x+3}$, con $x\\neq -3$.",
+    "pista": "No intentes cancelar términos sueltos. Primero factoriza numerador y denominador y después cancela factores completos.",
+    "formula": "$$\\frac{A\\cdot B}{A\\cdot C}=\\frac{B}{C}, \\quad A\\neq 0$$"
+  },
+  {
+    "asignatura": "Matemáticas 4º ESO",
+    "id": 4019,
+    "dificultad": "Alta",
+    "bloque": "Tema 2: Polinomios, factorización y fracciones algebraicas",
+    "enunciado": "Opera y simplifica la expresión $\\frac{2}{x-1}+\\frac{3}{x+1}$.",
+    "resolucion_latex": "El denominador común es $(x-1)(x+1)$.<br>Reescribimos cada fracción:<br>$\\frac{2}{x-1}=\\frac{2(x+1)}{(x-1)(x+1)}$.<br>$\\frac{3}{x+1}=\\frac{3(x-1)}{(x+1)(x-1)}$.<br>Sumamos los numeradores:<br>$\\frac{2(x+1)+3(x-1)}{(x-1)(x+1)}$.<br>Desarrollamos:<br>$2(x+1)+3(x-1)=2x+2+3x-3=5x-1$.<br>Por tanto:<br>$\\frac{2}{x-1}+\\frac{3}{x+1}=\\frac{5x-1}{(x-1)(x+1)}$.<br>También puede escribirse como:<br>$\\frac{5x-1}{x^{2}-1}$, con $x\\neq 1$ y $x\\neq -1$.",
+    "pista": "Busca un denominador común multiplicando los dos denominadores. Después adapta cada numerador antes de sumar.",
+    "formula": "$$\\frac{a}{b}+\\frac{c}{d}=\\frac{ad+bc}{bd}$$"
+  },
+  {
+    "asignatura": "Matemáticas 4º ESO",
+    "id": 4020,
+    "dificultad": "Superior",
+    "bloque": "Tema 2: Polinomios, factorización y fracciones algebraicas",
+    "enunciado": "Ejercicio trampa: Un alumno simplifica la fracción algebraica así: $\\frac{x^{2}+3x}{x+3}=\\frac{x^{2}}{x}=x$. Explica por qué este procedimiento es incorrecto y simplifica correctamente la fracción.",
+    "resolucion_latex": "El procedimiento es incorrecto porque no se pueden cancelar términos sueltos dentro de una suma. Solo se pueden cancelar factores que estén multiplicando a todo el numerador y a todo el denominador.<br>Primero debemos factorizar el numerador:<br>$x^{2}+3x=x(x+3)$.<br>Entonces la fracción queda:<br>$\\frac{x^{2}+3x}{x+3}=\\frac{x(x+3)}{x+3}$.<br>Ahora sí podemos cancelar el factor común $(x+3)$, siempre que $x\\neq -3$:<br>$\\frac{x(x+3)}{x+3}=x$.<br>El resultado final es $x$, pero el razonamiento del alumno es incorrecto. La simplificación correcta se hace factorizando primero.",
+    "pista": "Aunque el resultado final coincida, el método está mal. En álgebra no se cancelan sumandos: se cancelan factores.",
+    "formula": "$$\\frac{x(x+3)}{x+3}=x, \\quad x\\neq -3$$"
+  },
+  {
+    "asignatura": "Matemáticas 4º ESO",
+    "id": 4021,
+    "dificultad": "Básica",
+    "bloque": "Tema 3: Ecuaciones, inecuaciones y sistemas",
+    "enunciado": "Resuelve la ecuación de segundo grado: $x^{2}-5x+6=0$.",
+    "resolucion_latex": "Buscamos dos números que multiplicados den $6$ y sumados den $5$. Esos números son $2$ y $3$. Por tanto:<br>$x^{2}-5x+6=(x-2)(x-3)$.<br>Igualamos cada factor a cero:<br>$x-2=0 \\Rightarrow x=2$.<br>$x-3=0 \\Rightarrow x=3$.<br>Las soluciones son $x=2$ y $x=3$.",
+    "pista": "Intenta factorizar el trinomio buscando dos números que multipliquen el término independiente y sumen el coeficiente de $x$ cambiado de signo.",
+    "formula": "$$x^{2}+bx+c=(x-r_{1})(x-r_{2})$$"
+  },
+  {
+    "asignatura": "Matemáticas 4º ESO",
+    "id": 4022,
+    "dificultad": "Básica",
+    "bloque": "Tema 3: Ecuaciones, inecuaciones y sistemas",
+    "enunciado": "Resuelve la ecuación: $3(x-2)+4=2x+5$.",
+    "resolucion_latex": "Primero quitamos el paréntesis:<br>$3(x-2)+4=3x-6+4=3x-2$.<br>La ecuación queda:<br>$3x-2=2x+5$.<br>Pasamos las incógnitas a un lado y los números al otro:<br>$3x-2x=5+2$.<br>Entonces:<br>$x=7$.",
+    "pista": "Empieza quitando paréntesis y luego agrupa las incógnitas en un lado y los números en el otro.",
+    "formula": "$$a(b+c)=ab+ac$$"
+  },
+  {
+    "asignatura": "Matemáticas 4º ESO",
+    "id": 4023,
+    "dificultad": "Básica",
+    "bloque": "Tema 3: Ecuaciones, inecuaciones y sistemas",
+    "enunciado": "Resuelve el sistema de ecuaciones: $\\begin{cases} x+y=8 \\ x-y=2 \\end{cases}$.",
+    "resolucion_latex": "Sumamos las dos ecuaciones para eliminar $y$:<br>$(x+y)+(x-y)=8+2$.<br>Entonces:<br>$2x=10 \\Rightarrow x=5$.<br>Sustituimos en la primera ecuación:<br>$5+y=8 \\Rightarrow y=3$.<br>La solución del sistema es:<br>$x=5$, $y=3$.",
+    "pista": "Fíjate en que al sumar las ecuaciones, la $y$ desaparece directamente.",
+    "formula": "$$\\begin{cases} ax+by=c \\ dx+ey=f \\end{cases}$$"
+  },
+  {
+    "asignatura": "Matemáticas 4º ESO",
+    "id": 4024,
+    "dificultad": "Media",
+    "bloque": "Tema 3: Ecuaciones, inecuaciones y sistemas",
+    "enunciado": "Resuelve la ecuación de segundo grado usando la fórmula general: $2x^{2}-3x-2=0$.",
+    "resolucion_latex": "Identificamos los coeficientes:<br>$a=2$, $b=-3$, $c=-2$.<br>Aplicamos la fórmula general:<br>$x=\\frac{-b\\pm\\sqrt{b^{2}-4ac}}{2a}$.<br>Sustituimos:<br>$x=\\frac{-(-3)\\pm\\sqrt{(-3)^{2}-4\\cdot 2\\cdot (-2)}}{2\\cdot 2}$.<br>$x=\\frac{3\\pm\\sqrt{9+16}}{4}=\\frac{3\\pm\\sqrt{25}}{4}$.<br>$x=\\frac{3\\pm 5}{4}$.<br>Soluciones:<br>$x=\\frac{3+5}{4}=2$ y $x=\\frac{3-5}{4}=-\\frac{1}{2}$.",
+    "pista": "Identifica bien $a$, $b$ y $c$. Ten cuidado con los signos negativos dentro del discriminante.",
+    "formula": "$$x=\\frac{-b\\pm\\sqrt{b^{2}-4ac}}{2a}$$"
+  },
+  {
+    "asignatura": "Matemáticas 4º ESO",
+    "id": 4025,
+    "dificultad": "Media",
+    "bloque": "Tema 3: Ecuaciones, inecuaciones y sistemas",
+    "enunciado": "Resuelve la inecuación: $3x-7<2x+5$.",
+    "resolucion_latex": "Partimos de la inecuación:<br>$3x-7<2x+5$.<br>Pasamos las incógnitas a un lado y los números al otro:<br>$3x-2x<5+7$.<br>Entonces:<br>$x<12$.<br>La solución es todos los números reales menores que $12$:<br>$(-\\infty,12)$.",
+    "pista": "Resuelve igual que una ecuación, pero conservando el signo de desigualdad. Solo cambia el sentido si multiplicas o divides por un número negativo.",
+    "formula": "$$a<b \\Rightarrow a+c<b+c$$"
+  },
+  {
+    "asignatura": "Matemáticas 4º ESO",
+    "id": 4026,
+    "dificultad": "Media",
+    "bloque": "Tema 3: Ecuaciones, inecuaciones y sistemas",
+    "enunciado": "Resuelve el sistema por sustitución: $\\begin{cases} y=2x+1 \\ 3x+y=16 \\end{cases}$.",
+    "resolucion_latex": "Como ya tenemos despejada $y$, sustituimos en la segunda ecuación:<br>$3x+y=16$.<br>$3x+(2x+1)=16$.<br>Sumamos términos semejantes:<br>$5x+1=16$.<br>$5x=15 \\Rightarrow x=3$.<br>Ahora calculamos $y$:<br>$y=2\\cdot 3+1=7$.<br>La solución es:<br>$x=3$, $y=7$.",
+    "pista": "Cuando una incógnita ya está despejada, sustituye esa expresión en la otra ecuación.",
+    "formula": "$$y=f(x) \\Rightarrow \\text{sustituir } y \\text{ en la otra ecuación}$$"
+  },
+  {
+    "asignatura": "Matemáticas 4º ESO",
+    "id": 4027,
+    "dificultad": "Alta",
+    "bloque": "Tema 3: Ecuaciones, inecuaciones y sistemas",
+    "enunciado": "Resuelve la ecuación bicuadrada: $x^{4}-5x^{2}+4=0$.",
+    "resolucion_latex": "Hacemos el cambio $t=x^{2}$. Entonces $x^{4}=t^{2}$.<br>La ecuación queda:<br>$t^{2}-5t+4=0$.<br>Factorizamos:<br>$t^{2}-5t+4=(t-1)(t-4)=0$.<br>Por tanto:<br>$t=1$ o $t=4$.<br>Deshacemos el cambio:<br>Si $x^{2}=1$, entonces $x=\\pm 1$.<br>Si $x^{2}=4$, entonces $x=\\pm 2$.<br>Las soluciones son:<br>$x=-2$, $x=-1$, $x=1$ y $x=2$.",
+    "pista": "En las ecuaciones bicuadradas aparece $x^{4}$ y $x^{2}$. Usa el cambio $t=x^{2}$.",
+    "formula": "$$x^{4}=(x^{2})^{2}$$"
+  },
+  {
+    "asignatura": "Matemáticas 4º ESO",
+    "id": 4028,
+    "dificultad": "Alta",
+    "bloque": "Tema 3: Ecuaciones, inecuaciones y sistemas",
+    "enunciado": "Resuelve la ecuación racional: $\\frac{x+1}{x-2}=3$.",
+    "resolucion_latex": "Primero indicamos la restricción:<br>$x-2\\neq 0 \\Rightarrow x\\neq 2$.<br>Ahora multiplicamos ambos lados por $x-2$:<br>$x+1=3(x-2)$.<br>Quitamos paréntesis:<br>$x+1=3x-6$.<br>Agrupamos:<br>$1+6=3x-x$.<br>$7=2x \\Rightarrow x=\\frac{7}{2}$.<br>Como $\\frac{7}{2}\\neq 2$, la solución es válida.",
+    "pista": "Antes de resolver, mira qué valores anulan el denominador. Esos valores nunca pueden ser solución.",
+    "formula": "$$\\frac{A(x)}{B(x)}=k \\Rightarrow A(x)=k\\cdot B(x), \\quad B(x)\\neq 0$$"
+  },
+  {
+    "asignatura": "Matemáticas 4º ESO",
+    "id": 4029,
+    "dificultad": "Alta",
+    "bloque": "Tema 3: Ecuaciones, inecuaciones y sistemas",
+    "enunciado": "Resuelve el sistema no lineal: $\\begin{cases} x+y=5 \\ xy=6 \\end{cases}$.",
+    "resolucion_latex": "De la primera ecuación despejamos:<br>$y=5-x$.<br>Sustituimos en la segunda:<br>$x(5-x)=6$.<br>Desarrollamos:<br>$5x-x^{2}=6$.<br>Pasamos todo a un lado:<br>$x^{2}-5x+6=0$.<br>Factorizamos:<br>$(x-2)(x-3)=0$.<br>Por tanto:<br>$x=2$ o $x=3$.<br>Si $x=2$, entonces $y=3$.<br>Si $x=3$, entonces $y=2$.<br>Soluciones:<br>$(2,3)$ y $(3,2)$.",
+    "pista": "Usa la ecuación lineal para despejar una incógnita y sustitúyela en la ecuación del producto.",
+    "formula": "$$x+y=S, \\quad xy=P$$"
+  },
+  {
+    "asignatura": "Matemáticas 4º ESO",
+    "id": 4030,
+    "dificultad": "Superior",
+    "bloque": "Tema 3: Ecuaciones, inecuaciones y sistemas",
+    "enunciado": "Ejercicio trampa: Un alumno resuelve la inecuación $-2x>6$ dividiendo entre $-2$ y escribe $x> -3$. Explica el error y resuelve correctamente la inecuación.",
+    "resolucion_latex": "El error está en que al dividir una inecuación por un número negativo, el sentido de la desigualdad cambia.<br>Partimos de:<br>$-2x>6$.<br>Dividimos entre $-2$ y cambiamos el signo de la desigualdad:<br>$x<\\frac{6}{-2}$.<br>Por tanto:<br>$x<-3$.<br>La solución correcta es:<br>$(-\\infty,-3)$.",
+    "pista": "En una inecuación, si multiplicas o divides por un número negativo, debes cambiar $<$ por $>$ o $>$ por $<$.",
+    "formula": "$$a>b,\\ c<0 \\Rightarrow \\frac{a}{c}<\\frac{b}{c}$$"
+  },
+  {
+    "asignatura": "Matemáticas 4º ESO",
+    "id": 4031,
+    "dificultad": "Básica",
+    "bloque": "Tema 4: Trigonometría",
+    "enunciado": "En un triángulo rectángulo, un ángulo agudo mide $30^{\\circ}$ y la hipotenusa mide $10$ cm. Calcula el cateto opuesto a ese ángulo.",
+    "resolucion_latex": "Usamos la razón seno:<br>$\\sin 30^{\\circ}=\\frac{\\text{cateto opuesto}}{\\text{hipotenusa}}$.<br>Sustituimos:<br>$\\sin 30^{\\circ}=\\frac{x}{10}$.<br>Como $\\sin 30^{\\circ}=\\frac{1}{2}$:<br>$\\frac{1}{2}=\\frac{x}{10}$.<br>Entonces:<br>$x=5$ cm.",
+    "pista": "El seno relaciona el cateto opuesto con la hipotenusa.",
+    "formula": "$$\\sin \\alpha=\\frac{\\text{cateto opuesto}}{\\text{hipotenusa}}$$"
+  },
+  {
+    "asignatura": "Matemáticas 4º ESO",
+    "id": 4032,
+    "dificultad": "Básica",
+    "bloque": "Tema 4: Trigonometría",
+    "enunciado": "En un triángulo rectángulo, un ángulo agudo mide $60^{\\circ}$ y la hipotenusa mide $12$ cm. Calcula el cateto contiguo a ese ángulo.",
+    "resolucion_latex": "Usamos la razón coseno:<br>$\\cos 60^{\\circ}=\\frac{\\text{cateto contiguo}}{\\text{hipotenusa}}$.<br>Sustituimos:<br>$\\cos 60^{\\circ}=\\frac{x}{12}$.<br>Como $\\cos 60^{\\circ}=\\frac{1}{2}$:<br>$\\frac{1}{2}=\\frac{x}{12}$.<br>Entonces:<br>$x=6$ cm.",
+    "pista": "El coseno relaciona el cateto contiguo con la hipotenusa.",
+    "formula": "$$\\cos \\alpha=\\frac{\\text{cateto contiguo}}{\\text{hipotenusa}}$$"
+  },
+  {
+    "asignatura": "Matemáticas 4º ESO",
+    "id": 4033,
+    "dificultad": "Básica",
+    "bloque": "Tema 4: Trigonometría",
+    "enunciado": "En un triángulo rectángulo, el cateto opuesto a un ángulo mide $8$ cm y el cateto contiguo mide $6$ cm. Calcula la tangente de ese ángulo.",
+    "resolucion_latex": "Usamos la razón tangente:<br>$\\tan \\alpha=\\frac{\\text{cateto opuesto}}{\\text{cateto contiguo}}$.<br>Sustituimos:<br>$\\tan \\alpha=\\frac{8}{6}$.<br>Simplificamos:<br>$\\tan \\alpha=\\frac{4}{3}$.",
+    "pista": "La tangente no usa la hipotenusa: compara el cateto opuesto con el cateto contiguo.",
+    "formula": "$$\\tan \\alpha=\\frac{\\text{cateto opuesto}}{\\text{cateto contiguo}}$$"
+  },
+  {
+    "asignatura": "Matemáticas 4º ESO",
+    "id": 4034,
+    "dificultad": "Media",
+    "bloque": "Tema 4: Trigonometría",
+    "enunciado": "Desde un punto del suelo se observa la parte alta de un edificio con un ángulo de elevación de $35^{\\circ}$. Si el punto está a $40$ m de la base del edificio, calcula la altura del edificio.",
+    "resolucion_latex": "La distancia al edificio es el cateto contiguo y la altura es el cateto opuesto.<br>Usamos la tangente:<br>$\\tan 35^{\\circ}=\\frac{h}{40}$.<br>Despejamos:<br>$h=40\\tan 35^{\\circ}$.<br>Calculamos:<br>$h\\approx 40\\cdot 0,700=28,0$ m.<br>La altura del edificio es aproximadamente $28$ m.",
+    "pista": "En problemas de altura y distancia horizontal suele aparecer la tangente.",
+    "formula": "$$\\tan \\alpha=\\frac{h}{d}$$"
+  },
+  {
+    "asignatura": "Matemáticas 4º ESO",
+    "id": 4035,
+    "dificultad": "Media",
+    "bloque": "Tema 4: Trigonometría",
+    "enunciado": "Una escalera de $5$ m está apoyada en una pared y forma un ángulo de $70^{\\circ}$ con el suelo. Calcula la altura que alcanza en la pared.",
+    "resolucion_latex": "La escalera es la hipotenusa y la altura es el cateto opuesto al ángulo de $70^{\\circ}$.<br>Usamos el seno:<br>$\\sin 70^{\\circ}=\\frac{h}{5}$.<br>Despejamos:<br>$h=5\\sin 70^{\\circ}$.<br>Calculamos:<br>$h\\approx 5\\cdot 0,940=4,70$ m.<br>La escalera alcanza aproximadamente $4,70$ m de altura.",
+    "pista": "La escalera actúa como hipotenusa. La altura en la pared es el cateto opuesto al ángulo con el suelo.",
+    "formula": "$$\\sin \\alpha=\\frac{h}{\\text{hipotenusa}}$$"
+  },
+  {
+    "asignatura": "Matemáticas 4º ESO",
+    "id": 4036,
+    "dificultad": "Media",
+    "bloque": "Tema 4: Trigonometría",
+    "enunciado": "Calcula el valor de $\\cos \\alpha$ sabiendo que $\\sin \\alpha=\\frac{3}{5}$ y que $\\alpha$ es un ángulo agudo.",
+    "resolucion_latex": "Usamos la identidad fundamental de la trigonometría:<br>$\\sin^{2}\\alpha+\\cos^{2}\\alpha=1$.<br>Sustituimos $\\sin \\alpha=\\frac{3}{5}$:<br>$\\left(\\frac{3}{5}\\right)^{2}+\\cos^{2}\\alpha=1$.<br>$\\frac{9}{25}+\\cos^{2}\\alpha=1$.<br>$\\cos^{2}\\alpha=1-\\frac{9}{25}=\\frac{16}{25}$.<br>Como el ángulo es agudo, el coseno es positivo:<br>$\\cos \\alpha=\\frac{4}{5}$.",
+    "pista": "Usa la identidad fundamental. Como el ángulo es agudo, seno y coseno son positivos.",
+    "formula": "$$\\sin^{2}\\alpha+\\cos^{2}\\alpha=1$$"
+  },
+  {
+    "asignatura": "Matemáticas 4º ESO",
+    "id": 4037,
+    "dificultad": "Alta",
+    "bloque": "Tema 4: Trigonometría",
+    "enunciado": "Desde un barco se observa la cima de un faro con un ángulo de elevación de $18^{\\circ}$. Si el faro mide $45$ m de altura, calcula la distancia horizontal entre el barco y la base del faro.",
+    "resolucion_latex": "La altura del faro es el cateto opuesto y la distancia horizontal es el cateto contiguo.<br>Usamos la tangente:<br>$\\tan 18^{\\circ}=\\frac{45}{d}$.<br>Despejamos $d$:<br>$d=\\frac{45}{\\tan 18^{\\circ}}$.<br>Calculamos:<br>$d\\approx \\frac{45}{0,325}=138,46$ m.<br>La distancia horizontal es aproximadamente $138,46$ m.",
+    "pista": "Aquí conoces la altura y buscas la distancia horizontal. Plantea la tangente y despeja el denominador.",
+    "formula": "$$\\tan \\alpha=\\frac{\\text{cateto opuesto}}{\\text{cateto contiguo}}$$"
+  },
+  {
+    "asignatura": "Matemáticas 4º ESO",
+    "id": 4038,
+    "dificultad": "Alta",
+    "bloque": "Tema 4: Trigonometría",
+    "enunciado": "En un triángulo rectángulo, la hipotenusa mide $13$ cm y uno de los catetos mide $5$ cm. Calcula el otro cateto y las razones trigonométricas del ángulo opuesto al cateto de $5$ cm.",
+    "resolucion_latex": "Primero calculamos el otro cateto usando Pitágoras:<br>$13^{2}=5^{2}+b^{2}$.<br>$169=25+b^{2}$.<br>$b^{2}=144 \\Rightarrow b=12$ cm.<br>Para el ángulo opuesto al cateto de $5$ cm:<br>Cateto opuesto: $5$.<br>Cateto contiguo: $12$.<br>Hipotenusa: $13$.<br>Por tanto:<br>$\\sin \\alpha=\\frac{5}{13}$.<br>$\\cos \\alpha=\\frac{12}{13}$.<br>$\\tan \\alpha=\\frac{5}{12}$.",
+    "pista": "Antes de calcular las razones trigonométricas necesitas conocer los tres lados del triángulo.",
+    "formula": "$$a^{2}+b^{2}=c^{2} \\quad ; \\quad \\sin \\alpha=\\frac{CO}{H},\\ \\cos \\alpha=\\frac{CC}{H},\\ \\tan \\alpha=\\frac{CO}{CC}$$"
+  },
+  {
+    "asignatura": "Matemáticas 4º ESO",
+    "id": 4039,
+    "dificultad": "Alta",
+    "bloque": "Tema 4: Trigonometría",
+    "enunciado": "Desde dos puntos alineados con la base de una torre se observa su parte superior con ángulos de elevación de $45^{\\circ}$ y $30^{\\circ}$. Los dos puntos están separados $20$ m y el punto con ángulo $45^{\\circ}$ está más cerca de la torre. Calcula la altura de la torre.",
+    "resolucion_latex": "Sea $x$ la distancia desde el punto más cercano a la base de la torre y $h$ la altura.<br>Desde el punto cercano:<br>$\\tan 45^{\\circ}=\\frac{h}{x}$.<br>Como $\\tan 45^{\\circ}=1$, entonces:<br>$h=x$.<br>Desde el punto más lejano, la distancia es $x+20$:<br>$\\tan 30^{\\circ}=\\frac{h}{x+20}$.<br>Sustituimos $h=x$:<br>$\\tan 30^{\\circ}=\\frac{x}{x+20}$.<br>Como $\\tan 30^{\\circ}\\approx 0,577$:<br>$0,577=\\frac{x}{x+20}$.<br>$0,577x+11,54=x$.<br>$11,54=0,423x$.<br>$x\\approx 27,28$ m.<br>Como $h=x$, la altura de la torre es aproximadamente $27,28$ m.",
+    "pista": "Plantea dos triángulos rectángulos distintos que comparten la misma altura.",
+    "formula": "$$\\tan \\alpha=\\frac{h}{d}$$"
+  },
+  {
+    "asignatura": "Matemáticas 4º ESO",
+    "id": 4040,
+    "dificultad": "Superior",
+    "bloque": "Tema 4: Trigonometría",
+    "enunciado": "Ejercicio trampa: Un alumno dice que si $\\sin \\alpha=0,6$, entonces necesariamente $\\cos \\alpha=0,4$ porque seno y coseno deben sumar $1$. Explica el error y calcula el valor correcto de $\\cos \\alpha$ suponiendo que $\\alpha$ es agudo.",
+    "resolucion_latex": "El error está en pensar que $\\sin \\alpha+\\cos \\alpha=1$. Esa igualdad no es cierta en general.<br>La identidad correcta es:<br>$\\sin^{2}\\alpha+\\cos^{2}\\alpha=1$.<br>Como $\\sin \\alpha=0,6$, entonces:<br>$(0,6)^{2}+\\cos^{2}\\alpha=1$.<br>$0,36+\\cos^{2}\\alpha=1$.<br>$\\cos^{2}\\alpha=0,64$.<br>Como $\\alpha$ es agudo, el coseno es positivo:<br>$\\cos \\alpha=0,8$.",
+    "pista": "La relación fundamental no suma seno y coseno, sino sus cuadrados.",
+    "formula": "$$\\sin^{2}\\alpha+\\cos^{2}\\alpha=1$$"
+  },
+  {
+    "asignatura": "Matemáticas 4º ESO",
+    "id": 4041,
+    "dificultad": "Básica",
+    "bloque": "Tema 5: Geometría analítica, vectores y rectas",
+    "enunciado": "Dados los puntos $A(2,3)$ y $B(6,5)$, calcula el vector $\\overrightarrow{AB}$.",
+    "resolucion_latex": "Para calcular el vector $\\overrightarrow{AB}$ restamos las coordenadas de $A$ a las coordenadas de $B$:<br>$\\overrightarrow{AB}=(x_B-x_A, y_B-y_A)$.<br>Sustituimos:<br>$\\overrightarrow{AB}=(6-2,5-3)=(4,2)$.<br>Por tanto:<br>$\\overrightarrow{AB}=(4,2)$.",
+    "pista": "El vector que va de $A$ a $B$ se calcula haciendo coordenadas de llegada menos coordenadas de salida.",
+    "formula": "$$\\overrightarrow{AB}=(x_B-x_A, y_B-y_A)$$"
+  },
+  {
+    "asignatura": "Matemáticas 4º ESO",
+    "id": 4042,
+    "dificultad": "Básica",
+    "bloque": "Tema 5: Geometría analítica, vectores y rectas",
+    "enunciado": "Calcula el módulo del vector $\\vec{v}=(3,4)$.",
+    "resolucion_latex": "El módulo de un vector $\\vec{v}=(a,b)$ se calcula con:<br>$|\\vec{v}|=\\sqrt{a^{2}+b^{2}}$.<br>Sustituimos:<br>$|\\vec{v}|=\\sqrt{3^{2}+4^{2}}=\\sqrt{9+16}=\\sqrt{25}=5$.<br>Por tanto, el módulo del vector es $5$.",
+    "pista": "El módulo de un vector se calcula igual que la hipotenusa de un triángulo rectángulo.",
+    "formula": "$$|\\vec{v}|=\\sqrt{a^{2}+b^{2}}$$"
+  },
+  {
+    "asignatura": "Matemáticas 4º ESO",
+    "id": 4043,
+    "dificultad": "Básica",
+    "bloque": "Tema 5: Geometría analítica, vectores y rectas",
+    "enunciado": "Calcula la distancia entre los puntos $A(1,2)$ y $B(4,6)$.",
+    "resolucion_latex": "Usamos la fórmula de la distancia entre dos puntos:<br>$d(A,B)=\\sqrt{(x_B-x_A)^2+(y_B-y_A)^2}$.<br>Sustituimos:<br>$d(A,B)=\\sqrt{(4-1)^2+(6-2)^2}$.<br>$d(A,B)=\\sqrt{3^2+4^2}=\\sqrt{9+16}=\\sqrt{25}=5$.<br>La distancia entre los puntos es $5$ unidades.",
+    "pista": "La distancia entre dos puntos se obtiene formando un triángulo rectángulo y aplicando Pitágoras.",
+    "formula": "$$d(A,B)=\\sqrt{(x_B-x_A)^2+(y_B-y_A)^2}$$"
+  },
+  {
+    "asignatura": "Matemáticas 4º ESO",
+    "id": 4044,
+    "dificultad": "Media",
+    "bloque": "Tema 5: Geometría analítica, vectores y rectas",
+    "enunciado": "Calcula el punto medio del segmento que une $A(-2,4)$ y $B(6,10)$.",
+    "resolucion_latex": "El punto medio se calcula haciendo la media de las coordenadas:<br>$M=\\left(\\frac{x_A+x_B}{2},\\frac{y_A+y_B}{2}\\right)$.<br>Sustituimos:<br>$M=\\left(\\frac{-2+6}{2},\\frac{4+10}{2}\\right)$.<br>$M=\\left(\\frac{4}{2},\\frac{14}{2}\\right)=(2,7)$.<br>Por tanto, el punto medio es $M(2,7)$.",
+    "pista": "El punto medio tiene las coordenadas justo a mitad de camino entre los dos extremos.",
+    "formula": "$$M=\\left(\\frac{x_A+x_B}{2},\\frac{y_A+y_B}{2}\\right)$$"
+  },
+  {
+    "asignatura": "Matemáticas 4º ESO",
+    "id": 4045,
+    "dificultad": "Media",
+    "bloque": "Tema 5: Geometría analítica, vectores y rectas",
+    "enunciado": "Halla la pendiente de la recta que pasa por los puntos $A(1,3)$ y $B(5,11)$.",
+    "resolucion_latex": "La pendiente de una recta que pasa por dos puntos se calcula con:<br>$m=\\frac{y_B-y_A}{x_B-x_A}$.<br>Sustituimos:<br>$m=\\frac{11-3}{5-1}=\\frac{8}{4}=2$.<br>Por tanto, la pendiente de la recta es $m=2$.",
+    "pista": "La pendiente mide cuánto sube o baja la recta por cada unidad que avanza en horizontal.",
+    "formula": "$$m=\\frac{y_B-y_A}{x_B-x_A}$$"
+  },
+  {
+    "asignatura": "Matemáticas 4º ESO",
+    "id": 4046,
+    "dificultad": "Media",
+    "bloque": "Tema 5: Geometría analítica, vectores y rectas",
+    "enunciado": "Encuentra la ecuación de la recta que tiene pendiente $m=3$ y pasa por el punto $P(2,5)$.",
+    "resolucion_latex": "Usamos la forma punto-pendiente:<br>$y-y_0=m(x-x_0)$.<br>Sustituimos $m=3$ y $P(2,5)$:<br>$y-5=3(x-2)$.<br>Desarrollamos:<br>$y-5=3x-6$.<br>Sumamos $5$ en ambos lados:<br>$y=3x-1$.<br>La ecuación de la recta es $y=3x-1$.",
+    "pista": "Si conoces la pendiente y un punto, usa la ecuación punto-pendiente.",
+    "formula": "$$y-y_0=m(x-x_0)$$"
+  },
+  {
+    "asignatura": "Matemáticas 4º ESO",
+    "id": 4047,
+    "dificultad": "Alta",
+    "bloque": "Tema 5: Geometría analítica, vectores y rectas",
+    "enunciado": "Halla la ecuación de la recta que pasa por los puntos $A(-1,2)$ y $B(3,10)$.",
+    "resolucion_latex": "Primero calculamos la pendiente:<br>$m=\\frac{10-2}{3-(-1)}=\\frac{8}{4}=2$.<br>Usamos la forma punto-pendiente con el punto $A(-1,2)$:<br>$y-2=2(x-(-1))$.<br>$y-2=2(x+1)$.<br>Desarrollamos:<br>$y-2=2x+2$.<br>Sumamos $2$:<br>$y=2x+4$.<br>La ecuación de la recta es $y=2x+4$.",
+    "pista": "Con dos puntos, primero calcula la pendiente y después usa uno de los puntos para hallar la ecuación.",
+    "formula": "$$m=\\frac{y_B-y_A}{x_B-x_A} \\quad ; \\quad y-y_0=m(x-x_0)$$"
+  },
+  {
+    "asignatura": "Matemáticas 4º ESO",
+    "id": 4048,
+    "dificultad": "Alta",
+    "bloque": "Tema 5: Geometría analítica, vectores y rectas",
+    "enunciado": "Comprueba si los puntos $A(1,2)$, $B(3,6)$ y $C(5,10)$ están alineados.",
+    "resolucion_latex": "Tres puntos están alineados si las pendientes entre ellos son iguales.<br>Calculamos la pendiente entre $A$ y $B$:<br>$m_{AB}=\\frac{6-2}{3-1}=\\frac{4}{2}=2$.<br>Calculamos la pendiente entre $B$ y $C$:<br>$m_{BC}=\\frac{10-6}{5-3}=\\frac{4}{2}=2$.<br>Como $m_{AB}=m_{BC}=2$, los tres puntos están alineados.",
+    "pista": "Si la inclinación entre el primer y segundo punto es la misma que entre el segundo y el tercero, están en la misma recta.",
+    "formula": "$$m_{AB}=m_{BC} \\Rightarrow A,B,C\\text{ alineados}$$"
+  },
+  {
+    "asignatura": "Matemáticas 4º ESO",
+    "id": 4049,
+    "dificultad": "Alta",
+    "bloque": "Tema 5: Geometría analítica, vectores y rectas",
+    "enunciado": "Determina la ecuación de la recta paralela a $y=-2x+7$ que pasa por el punto $P(3,-1)$.",
+    "resolucion_latex": "Las rectas paralelas tienen la misma pendiente.<br>La recta dada es $y=-2x+7$, por tanto su pendiente es $m=-2$.<br>Buscamos una recta con pendiente $-2$ que pase por $P(3,-1)$.<br>Usamos la forma punto-pendiente:<br>$y-(-1)=-2(x-3)$.<br>$y+1=-2x+6$.<br>Restamos $1$:<br>$y=-2x+5$.<br>La recta buscada es $y=-2x+5$.",
+    "pista": "Una recta paralela conserva la misma pendiente que la recta original.",
+    "formula": "$$r \\parallel s \\Rightarrow m_r=m_s$$"
+  },
+  {
+    "asignatura": "Matemáticas 4º ESO",
+    "id": 4050,
+    "dificultad": "Superior",
+    "bloque": "Tema 5: Geometría analítica, vectores y rectas",
+    "enunciado": "Ejercicio trampa: Un alumno afirma que las rectas $y=2x+1$ y $y=2x-5$ se cortan porque tienen distinto término independiente. Explica el error y di qué relación tienen ambas rectas.",
+    "resolucion_latex": "El error está en fijarse solo en el término independiente. Para saber si dos rectas son paralelas o se cortan, hay que comparar sus pendientes.<br>La recta $y=2x+1$ tiene pendiente $m=2$.<br>La recta $y=2x-5$ también tiene pendiente $m=2$.<br>Como tienen la misma pendiente y distinto término independiente, son rectas paralelas distintas.<br>Por tanto, no se cortan.",
+    "pista": "Dos rectas con la misma pendiente tienen la misma inclinación. Si además tienen distinto término independiente, son paralelas.",
+    "formula": "$$m_1=m_2,\\ n_1\\neq n_2 \\Rightarrow \\text{rectas paralelas distintas}$$"
+  },
+  {
+    "asignatura": "Matemáticas 4º ESO",
+    "id": 4051,
+    "dificultad": "Básica",
+    "bloque": "Tema 6: Funciones",
+    "enunciado": "Dada la función $f(x)=2x-3$, calcula $f(0)$, $f(2)$ y $f(-1)$.",
+    "resolucion_latex": "Sustituimos cada valor de $x$ en la función.<br>Para $x=0$:<br>$f(0)=2\\cdot 0-3=-3$.<br>Para $x=2$:<br>$f(2)=2\\cdot 2-3=4-3=1$.<br>Para $x=-1$:<br>$f(-1)=2\\cdot (-1)-3=-2-3=-5$.<br>Por tanto:<br>$f(0)=-3$, $f(2)=1$ y $f(-1)=-5$.",
+    "pista": "Calcular una imagen significa sustituir la $x$ por el número que te dan.",
+    "formula": "$$f(a)=\\text{valor de la función cuando }x=a$$"
+  },
+  {
+    "asignatura": "Matemáticas 4º ESO",
+    "id": 4052,
+    "dificultad": "Básica",
+    "bloque": "Tema 6: Funciones",
+    "enunciado": "Indica la pendiente y la ordenada en el origen de la función lineal $f(x)=-3x+4$.",
+    "resolucion_latex": "Una función lineal o afín escrita como $f(x)=mx+n$ tiene pendiente $m$ y ordenada en el origen $n$.<br>En este caso:<br>$f(x)=-3x+4$.<br>Por tanto:<br>$m=-3$ y $n=4$.<br>La pendiente es $-3$ y la ordenada en el origen es $4$.",
+    "pista": "En una función de la forma $y=mx+n$, el número que multiplica a $x$ es la pendiente.",
+    "formula": "$$f(x)=mx+n$$"
+  },
+  {
+    "asignatura": "Matemáticas 4º ESO",
+    "id": 4053,
+    "dificultad": "Básica",
+    "bloque": "Tema 6: Funciones",
+    "enunciado": "Calcula los puntos de corte con los ejes de la función $f(x)=x-5$.",
+    "resolucion_latex": "Corte con el eje $Y$: ponemos $x=0$.<br>$f(0)=0-5=-5$.<br>Por tanto, corta al eje $Y$ en $(0,-5)$.<br><br>Corte con el eje $X$: imponemos $f(x)=0$.<br>$x-5=0 \\Rightarrow x=5$.<br>Por tanto, corta al eje $X$ en $(5,0)$.",
+    "pista": "Para cortar el eje $Y$, usa $x=0$. Para cortar el eje $X$, usa $y=0$.",
+    "formula": "$$\\text{Eje }Y: x=0 \\quad ; \\quad \\text{Eje }X: y=0$$"
+  },
+  {
+    "asignatura": "Matemáticas 4º ESO",
+    "id": 4054,
+    "dificultad": "Media",
+    "bloque": "Tema 6: Funciones",
+    "enunciado": "Dada la función cuadrática $f(x)=x^{2}-4x+3$, calcula sus puntos de corte con el eje $X$.",
+    "resolucion_latex": "Para hallar los cortes con el eje $X$, resolvemos $f(x)=0$:<br>$x^{2}-4x+3=0$.<br>Factorizamos:<br>$x^{2}-4x+3=(x-1)(x-3)$.<br>Igualamos cada factor a cero:<br>$x-1=0 \\Rightarrow x=1$.<br>$x-3=0 \\Rightarrow x=3$.<br>Por tanto, los puntos de corte con el eje $X$ son:<br>$(1,0)$ y $(3,0)$.",
+    "pista": "Los cortes con el eje $X$ se obtienen haciendo que la función valga cero.",
+    "formula": "$$f(x)=0$$"
+  },
+  {
+    "asignatura": "Matemáticas 4º ESO",
+    "id": 4055,
+    "dificultad": "Media",
+    "bloque": "Tema 6: Funciones",
+    "enunciado": "Calcula el vértice de la parábola $f(x)=x^{2}-6x+8$.",
+    "resolucion_latex": "Para una parábola $f(x)=ax^{2}+bx+c$, la coordenada $x$ del vértice es:<br>$x_v=\\frac{-b}{2a}$.<br>En este caso $a=1$ y $b=-6$.<br>$x_v=\\frac{-(-6)}{2\\cdot 1}=\\frac{6}{2}=3$.<br>Calculamos la coordenada $y$:<br>$f(3)=3^{2}-6\\cdot 3+8=9-18+8=-1$.<br>Por tanto, el vértice es $V(3,-1)$.",
+    "pista": "Primero calcula la coordenada $x$ del vértice y después sustituye ese valor en la función.",
+    "formula": "$$x_v=\\frac{-b}{2a}$$"
+  },
+  {
+    "asignatura": "Matemáticas 4º ESO",
+    "id": 4056,
+    "dificultad": "Media",
+    "bloque": "Tema 6: Funciones",
+    "enunciado": "Estudia si la función exponencial $f(x)=2^{x}$ es creciente o decreciente y calcula $f(0)$, $f(1)$ y $f(3)$.",
+    "resolucion_latex": "Como la base de la función exponencial es $2$ y $2>1$, la función es creciente.<br>Calculamos algunos valores:<br>$f(0)=2^{0}=1$.<br>$f(1)=2^{1}=2$.<br>$f(3)=2^{3}=8$.<br>Los valores aumentan al aumentar $x$, por eso la función es creciente.",
+    "pista": "Una exponencial de base mayor que $1$ es creciente. Si la base está entre $0$ y $1$, es decreciente.",
+    "formula": "$$a>1 \\Rightarrow f(x)=a^{x}\\text{ es creciente}$$"
+  },
+  {
+    "asignatura": "Matemáticas 4º ESO",
+    "id": 4057,
+    "dificultad": "Alta",
+    "bloque": "Tema 6: Funciones",
+    "enunciado": "Calcula el dominio de la función $f(x)=\\frac{3}{x-2}$.",
+    "resolucion_latex": "La función tiene una fracción, por tanto el denominador no puede ser cero.<br>Imponemos:<br>$x-2\\neq 0$.<br>Entonces:<br>$x\\neq 2$.<br>Por tanto, el dominio es todos los números reales excepto $2$:<br>$D(f)=\\mathbb{R}-\\{2\\}$.",
+    "pista": "En una función racional, el denominador nunca puede valer cero.",
+    "formula": "$$B(x)\\neq 0 \\quad \\text{si} \\quad f(x)=\\frac{A(x)}{B(x)}$$"
+  },
+  {
+    "asignatura": "Matemáticas 4º ESO",
+    "id": 4058,
+    "dificultad": "Alta",
+    "bloque": "Tema 6: Funciones",
+    "enunciado": "Calcula el dominio de la función $f(x)=\\sqrt{x-4}$.",
+    "resolucion_latex": "En una raíz cuadrada, el radicando debe ser mayor o igual que cero.<br>Por tanto:<br>$x-4\\geq 0$.<br>Resolviendo:<br>$x\\geq 4$.<br>El dominio de la función es:<br>$D(f)=[4,+\\infty)$.",
+    "pista": "Dentro de una raíz cuadrada no puede quedar un número negativo si trabajamos con números reales.",
+    "formula": "$$\\sqrt{A(x)} \\Rightarrow A(x)\\geq 0$$"
+  },
+  {
+    "asignatura": "Matemáticas 4º ESO",
+    "id": 4059,
+    "dificultad": "Alta",
+    "bloque": "Tema 6: Funciones",
+    "enunciado": "Representa de forma razonada la función cuadrática $f(x)=x^{2}-2x-3$ calculando el vértice, los cortes con los ejes y si abre hacia arriba o hacia abajo.",
+    "resolucion_latex": "La función es $f(x)=x^{2}-2x-3$, con $a=1$, $b=-2$ y $c=-3$.<br>Como $a=1>0$, la parábola abre hacia arriba.<br><br>Calculamos el vértice:<br>$x_v=\\frac{-b}{2a}=\\frac{-(-2)}{2\\cdot 1}=1$.<br>$f(1)=1^{2}-2\\cdot 1-3=1-2-3=-4$.<br>Vértice: $V(1,-4)$.<br><br>Corte con el eje $Y$:<br>$f(0)=-3$, por tanto corta en $(0,-3)$.<br><br>Cortes con el eje $X$:<br>$x^{2}-2x-3=0$.<br>Factorizamos:<br>$(x-3)(x+1)=0$.<br>Por tanto:<br>$x=3$ y $x=-1$.<br>Cortes con el eje $X$: $(3,0)$ y $(-1,0)$.",
+    "pista": "Para representar una parábola necesitas como mínimo saber hacia dónde abre, su vértice y sus cortes con los ejes.",
+    "formula": "$$x_v=\\frac{-b}{2a} \\quad ; \\quad f(x)=0$$"
+  },
+  {
+    "asignatura": "Matemáticas 4º ESO",
+    "id": 4060,
+    "dificultad": "Superior",
+    "bloque": "Tema 6: Funciones",
+    "enunciado": "Ejercicio trampa: Un alumno afirma que la función $f(x)=\\frac{1}{x}$ está definida para todos los números reales porque se puede sustituir cualquier valor de $x$. Explica el error y escribe correctamente su dominio.",
+    "resolucion_latex": "El error está en olvidar que no se puede dividir entre cero.<br>La función es:<br>$f(x)=\\frac{1}{x}$.<br>Si sustituimos $x=0$, queda:<br>$f(0)=\\frac{1}{0}$, que no existe.<br>Por tanto, la función no está definida en $x=0$.<br>Su dominio es todos los números reales excepto el cero:<br>$D(f)=\\mathbb{R}-\\{0\\}$.",
+    "pista": "Antes de decir que una función está definida para todos los reales, revisa si hay denominadores o raíces.",
+    "formula": "$$\\frac{1}{x}\\text{ existe solo si }x\\neq 0$$"
+  },
+  {
+    "asignatura": "Matemáticas 4º ESO",
+    "id": 4061,
+    "dificultad": "Básica",
+    "bloque": "Tema 7: Estadística, probabilidad y combinatoria",
+    "enunciado": "Calcula la media aritmética de los siguientes datos: $4$, $6$, $8$, $10$ y $12$.",
+    "resolucion_latex": "La media aritmética se calcula sumando todos los datos y dividiendo entre el número total de datos.<br>Sumamos:<br>$4+6+8+10+12=40$.<br>Hay $5$ datos, por tanto:<br>$\\bar{x}=\\frac{40}{5}=8$.<br>La media aritmética es $8$.",
+    "pista": "Suma todos los valores y divide el resultado entre cuántos valores hay.",
+    "formula": "$$\\bar{x}=\\frac{x_1+x_2+\\cdots+x_n}{n}$$"
+  },
+  {
+    "asignatura": "Matemáticas 4º ESO",
+    "id": 4062,
+    "dificultad": "Básica",
+    "bloque": "Tema 7: Estadística, probabilidad y combinatoria",
+    "enunciado": "Calcula la mediana y la moda del siguiente conjunto de datos: $3$, $5$, $7$, $5$, $9$, $5$, $4$.",
+    "resolucion_latex": "Primero ordenamos los datos de menor a mayor:<br>$3$, $4$, $5$, $5$, $5$, $7$, $9$.<br>Como hay $7$ datos, la mediana es el dato central, es decir, el cuarto dato:<br>$Me=5$.<br>La moda es el dato que más se repite. En este caso, el $5$ aparece tres veces.<br>Por tanto:<br>Mediana: $5$.<br>Moda: $5$.",
+    "pista": "Para calcular la mediana, ordena primero los datos. La moda es el dato que más se repite.",
+    "formula": "$$Me=\\text{valor central de los datos ordenados}$$"
+  },
+  {
+    "asignatura": "Matemáticas 4º ESO",
+    "id": 4063,
+    "dificultad": "Básica",
+    "bloque": "Tema 7: Estadística, probabilidad y combinatoria",
+    "enunciado": "En una bolsa hay $4$ bolas rojas, $3$ bolas azules y $3$ bolas verdes. Se extrae una bola al azar. Calcula la probabilidad de que sea roja.",
+    "resolucion_latex": "Primero calculamos el número total de bolas:<br>$4+3+3=10$.<br>Los casos favorables son las $4$ bolas rojas.<br>Por tanto:<br>$P(\\text{roja})=\\frac{4}{10}=\\frac{2}{5}=0,4$.<br>La probabilidad de sacar una bola roja es $\\frac{2}{5}$ o $40\\%$.",
+    "pista": "La probabilidad se calcula dividiendo los casos favorables entre los casos posibles.",
+    "formula": "$$P(A)=\\frac{\\text{casos favorables}}{\\text{casos posibles}}$$"
+  },
+  {
+    "asignatura": "Matemáticas 4º ESO",
+    "id": 4064,
+    "dificultad": "Media",
+    "bloque": "Tema 7: Estadística, probabilidad y combinatoria",
+    "enunciado": "Calcula la media ponderada de un alumno que ha sacado un $6$ en un examen que vale el $40\\%$ de la nota y un $8$ en un trabajo que vale el $60\\%$ de la nota.",
+    "resolucion_latex": "Multiplicamos cada nota por su peso correspondiente:<br>$6\\cdot 0,40=2,4$.<br>$8\\cdot 0,60=4,8$.<br>Sumamos ambos resultados:<br>$2,4+4,8=7,2$.<br>La nota final del alumno es $7,2$.",
+    "pista": "No hagas una media normal si cada parte vale distinto. Multiplica cada nota por su porcentaje.",
+    "formula": "$$\\bar{x}*p=x_1p_1+x_2p_2+\\cdots+x_np_n$$"
+  },
+  {
+    "asignatura": "Matemáticas 4º ESO",
+    "id": 4065,
+    "dificultad": "Media",
+    "bloque": "Tema 7: Estadística, probabilidad y combinatoria",
+    "enunciado": "Calcula el rango y la desviación media del siguiente conjunto de datos: $2$, $4$, $6$, $8$ y $10$.",
+    "resolucion_latex": "Primero calculamos el rango:<br>$R=10-2=8$.<br>Ahora calculamos la media:<br>$\\bar{x}=\\frac{2+4+6+8+10}{5}=\\frac{30}{5}=6$.<br>Calculamos las desviaciones absolutas respecto a la media:<br>$|2-6|=4$, $|4-6|=2$, $|6-6|=0$, $|8-6|=2$, $|10-6|=4$.<br>Sumamos las desviaciones:<br>$4+2+0+2+4=12$.<br>Dividimos entre el número de datos:<br>$DM=\\frac{12}{5}=2,4$.<br>Por tanto, el rango es $8$ y la desviación media es $2,4$.",
+    "pista": "El rango mide la amplitud de los datos. La desviación media mide cuánto se alejan, de media, respecto a la media.",
+    "formula": "$$R=x*{max}-x_{min} \\quad ; \\quad DM=\\frac{\\sum |x_i-\\bar{x}|}{n}$$"
+  },
+  {
+    "asignatura": "Matemáticas 4º ESO",
+    "id": 4066,
+    "dificultad": "Media",
+    "bloque": "Tema 7: Estadística, probabilidad y combinatoria",
+    "enunciado": "Se lanzan dos monedas al aire. Calcula la probabilidad de obtener exactamente una cara.",
+    "resolucion_latex": "Escribimos todos los resultados posibles al lanzar dos monedas:<br>$(C,C)$, $(C,X)$, $(X,C)$ y $(X,X)$, donde $C$ representa cara y $X$ representa cruz.<br>Hay $4$ casos posibles.<br>Los casos favorables para obtener exactamente una cara son:<br>$(C,X)$ y $(X,C)$.<br>Hay $2$ casos favorables.<br>Por tanto:<br>$P(\\text{exactamente una cara})=\\frac{2}{4}=\\frac{1}{2}$.",
+    "pista": "Haz una lista ordenada de todos los resultados posibles. Exactamente una cara no es lo mismo que al menos una cara.",
+    "formula": "$$P(A)=\\frac{\\text{casos favorables}}{\\text{casos posibles}}$$"
+  },
+  {
+    "asignatura": "Matemáticas 4º ESO",
+    "id": 4067,
+    "dificultad": "Alta",
+    "bloque": "Tema 7: Estadística, probabilidad y combinatoria",
+    "enunciado": "En una clase hay $12$ chicas y $8$ chicos. Se eligen dos estudiantes al azar sin reemplazo. Calcula la probabilidad de que ambos sean chicas.",
+    "resolucion_latex": "En total hay:<br>$12+8=20$ estudiantes.<br>La probabilidad de que el primer estudiante sea chica es:<br>$\\frac{12}{20}$.<br>Como no hay reemplazo, después quedan $11$ chicas entre $19$ estudiantes.<br>La probabilidad de que el segundo estudiante también sea chica es:<br>$\\frac{11}{19}$.<br>Multiplicamos ambas probabilidades:<br>$P=\\frac{12}{20}\\cdot \\frac{11}{19}=\\frac{3}{5}\\cdot \\frac{11}{19}=\\frac{33}{95}$.<br>Por tanto, la probabilidad de elegir dos chicas es $\\frac{33}{95}$.",
+    "pista": "Sin reemplazo significa que después de elegir a la primera persona, el total cambia.",
+    "formula": "$$P(A\\cap B)=P(A)\\cdot P(B/A)$$"
+  },
+  {
+    "asignatura": "Matemáticas 4º ESO",
+    "id": 4068,
+    "dificultad": "Alta",
+    "bloque": "Tema 7: Estadística, probabilidad y combinatoria",
+    "enunciado": "¿Cuántos números de tres cifras distintas se pueden formar con los dígitos $1$, $2$, $3$, $4$ y $5$?",
+    "resolucion_latex": "Queremos formar números de tres cifras distintas usando los dígitos $1$, $2$, $3$, $4$ y $5$.<br>Para la primera cifra hay $5$ posibilidades.<br>Para la segunda cifra quedan $4$ posibilidades, porque no se puede repetir la anterior.<br>Para la tercera cifra quedan $3$ posibilidades.<br>Multiplicamos:<br>$5\\cdot 4\\cdot 3=60$.<br>Por tanto, se pueden formar $60$ números de tres cifras distintas.",
+    "pista": "Como importa el orden y no se pueden repetir cifras, ve contando las posibilidades posición por posición.",
+    "formula": "$$V_{n,k}=n\\cdot(n-1)\\cdot(n-2)\\cdots(n-k+1)$$"
+  },
+  {
+    "asignatura": "Matemáticas 4º ESO",
+    "id": 4069,
+    "dificultad": "Alta",
+    "bloque": "Tema 7: Estadística, probabilidad y combinatoria",
+    "enunciado": "En una urna hay $5$ bolas rojas, $4$ azules y $1$ verde. Se extraen dos bolas sin reemplazo. Calcula la probabilidad de que sean de distinto color.",
+    "resolucion_latex": "Calculamos la probabilidad usando el suceso contrario: que las dos bolas sean del mismo color.<br>En total hay $10$ bolas.<br><br>Probabilidad de dos rojas:<br>$P(RR)=\\frac{5}{10}\\cdot \\frac{4}{9}=\\frac{20}{90}$.<br>Probabilidad de dos azules:<br>$P(AA)=\\frac{4}{10}\\cdot \\frac{3}{9}=\\frac{12}{90}$.<br>Probabilidad de dos verdes:<br>$P(VV)=\\frac{1}{10}\\cdot \\frac{0}{9}=0$.<br><br>Probabilidad de mismo color:<br>$P(\\text{mismo color})=\\frac{20}{90}+\\frac{12}{90}=\\frac{32}{90}=\\frac{16}{45}$.<br>Por tanto, la probabilidad de distinto color es:<br>$P(\\text{distinto color})=1-\\frac{16}{45}=\\frac{29}{45}$.",
+    "pista": "A veces es más fácil calcular el suceso contrario. Distinto color es lo contrario de mismo color.",
+    "formula": "$$P(A^c)=1-P(A)$$"
+  },
+  {
+    "asignatura": "Matemáticas 4º ESO",
+    "id": 4070,
+    "dificultad": "Superior",
+    "bloque": "Tema 7: Estadística, probabilidad y combinatoria",
+    "enunciado": "Ejercicio trampa: En una bolsa hay $3$ bolas rojas y $2$ bolas azules. Se extraen dos bolas sin reemplazo. Un alumno afirma que la probabilidad de sacar dos rojas es $\\frac{3}{5}\\cdot\\frac{3}{5}=\\frac{9}{25}$ porque la bolsa siempre tiene la misma proporción. Explica el error y calcula la probabilidad correcta.",
+    "resolucion_latex": "El error está en no tener en cuenta que la extracción es sin reemplazo. Después de sacar la primera bola, la composición de la bolsa cambia.<br>Al principio hay $5$ bolas, de las cuales $3$ son rojas. Por tanto:<br>$P(\\text{primera roja})=\\frac{3}{5}$.<br>Si la primera bola ha sido roja, quedan $4$ bolas en total y solo $2$ rojas.<br>Entonces:<br>$P(\\text{segunda roja después de primera roja})=\\frac{2}{4}$.<br>Multiplicamos:<br>$P(\\text{dos rojas})=\\frac{3}{5}\\cdot\\frac{2}{4}=\\frac{6}{20}=\\frac{3}{10}$.<br>La probabilidad correcta es $\\frac{3}{10}$, no $\\frac{9}{25}$.",
+    "pista": "Si no se devuelve la primera bola a la bolsa, el número total de bolas y el número de bolas rojas cambian.",
+    "formula": "$$P(A\\cap B)=P(A)\\cdot P(B/A)$$"
+  }
+]

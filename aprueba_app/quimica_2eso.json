@@ -1,0 +1,502 @@
+[
+  {
+    "asignatura": "Química 2º ESO",
+    "id": 2201,
+    "dificultad": "Básica",
+    "bloque": "Tema 1: El método científico y la medida",
+    "enunciado": "Ordena las etapas del método científico: conclusión, observación, hipótesis, experimentación y análisis de resultados.",
+    "resolucion_latex": "El método científico sigue una serie de pasos ordenados para estudiar un fenómeno.<br>Primero se observa un hecho o problema.<br>Después se propone una hipótesis, que es una posible explicación.<br>Luego se realiza una experimentación para comprobarla.<br>Después se analizan los resultados obtenidos.<br>Finalmente se obtiene una conclusión.<br>Por tanto, el orden correcto es:<br>observación, hipótesis, experimentación, análisis de resultados y conclusión.",
+    "pista": "Primero se observa, después se propone una explicación y luego se comprueba con experimentos.",
+    "formula": "$$\\text{Observación}\\rightarrow\\text{Hipótesis}\\rightarrow\\text{Experimentación}\\rightarrow\\text{Análisis}\\rightarrow\\text{Conclusión}$$"
+  },
+  {
+    "asignatura": "Química 2º ESO",
+    "id": 2202,
+    "dificultad": "Básica",
+    "bloque": "Tema 1: El método científico y la medida",
+    "enunciado": "Indica si las siguientes cantidades son magnitudes físicas: masa, color, volumen y tiempo.",
+    "resolucion_latex": "Una magnitud física es una propiedad que se puede medir y expresar con una unidad.<br>La masa sí es una magnitud física, porque se puede medir en kilogramos.<br>El color no se considera una magnitud física básica en este nivel, porque no lo expresamos normalmente con una unidad de medida sencilla.<br>El volumen sí es una magnitud física, porque se puede medir en litros o metros cúbicos.<br>El tiempo sí es una magnitud física, porque se mide en segundos.<br>Por tanto, son magnitudes físicas: masa, volumen y tiempo.",
+    "pista": "Una magnitud física debe poder medirse y expresarse con una unidad.",
+    "formula": "$$\\text{magnitud}=\\text{valor numérico}+\\text{unidad}$$"
+  },
+  {
+    "asignatura": "Química 2º ESO",
+    "id": 2203,
+    "dificultad": "Básica",
+    "bloque": "Tema 1: El método científico y la medida",
+    "enunciado": "Convierte $2,5\\ \\text{kg}$ a gramos.",
+    "resolucion_latex": "Sabemos que:<br>$1\\ \\text{kg}=1000\\ \\text{g}$.<br>Para pasar de kilogramos a gramos, multiplicamos por $1000$.<br>$2,5\\ \\text{kg}=2,5\\cdot 1000=2500\\ \\text{g}$.<br>Por tanto, $2,5\\ \\text{kg}$ equivalen a $2500\\ \\text{g}$.",
+    "pista": "Para pasar de kilogramos a gramos, multiplica por $1000$.",
+    "formula": "$$1\\ \\text{kg}=1000\\ \\text{g}$$"
+  },
+  {
+    "asignatura": "Química 2º ESO",
+    "id": 2204,
+    "dificultad": "Media",
+    "bloque": "Tema 1: El método científico y la medida",
+    "enunciado": "Convierte $3500\\ \\text{mL}$ a litros.",
+    "resolucion_latex": "Sabemos que:<br>$1\\ \\text{L}=1000\\ \\text{mL}$.<br>Para pasar de mililitros a litros, dividimos entre $1000$.<br>$3500\\ \\text{mL}=\\frac{3500}{1000}=3,5\\ \\text{L}$.<br>Por tanto, $3500\\ \\text{mL}$ equivalen a $3,5\\ \\text{L}$.",
+    "pista": "Para pasar de mililitros a litros, divide entre $1000$.",
+    "formula": "$$1\\ \\text{L}=1000\\ \\text{mL}$$"
+  },
+  {
+    "asignatura": "Química 2º ESO",
+    "id": 2205,
+    "dificultad": "Media",
+    "bloque": "Tema 1: El método científico y la medida",
+    "enunciado": "Relaciona cada magnitud con su unidad del Sistema Internacional: longitud, masa, tiempo y temperatura.",
+    "resolucion_latex": "En el Sistema Internacional, la longitud se mide en metros, cuyo símbolo es $\\text{m}$.<br>La masa se mide en kilogramos, cuyo símbolo es $\\text{kg}$.<br>El tiempo se mide en segundos, cuyo símbolo es $\\text{s}$.<br>La temperatura se mide en kelvin, cuyo símbolo es $\\text{K}$.<br>Por tanto:<br>Longitud: $\\text{m}$.<br>Masa: $\\text{kg}$.<br>Tiempo: $\\text{s}$.<br>Temperatura: $\\text{K}$.",
+    "pista": "Recuerda las unidades básicas: metro, kilogramo, segundo y kelvin.",
+    "formula": "$$\\text{SI}:\\ \\text{m},\\ \\text{kg},\\ \\text{s},\\ \\text{K}$$"
+  },
+  {
+    "asignatura": "Química 2º ESO",
+    "id": 2206,
+    "dificultad": "Media",
+    "bloque": "Tema 1: El método científico y la medida",
+    "enunciado": "Un alumno mide la masa de una muestra y obtiene $48\\ \\text{g}$. Si el valor real es $50\\ \\text{g}$, calcula el error absoluto.",
+    "resolucion_latex": "El error absoluto se calcula como el valor absoluto de la diferencia entre el valor medido y el valor real:<br>$E_a=|x_m-x_r|$.<br>Sustituimos:<br>$E_a=|48-50|=|-2|=2\\ \\text{g}$.<br>El error absoluto es $2\\ \\text{g}$.",
+    "pista": "El error absoluto siempre se expresa como una cantidad positiva.",
+    "formula": "$$E_a=|x_m-x_r|$$"
+  },
+  {
+    "asignatura": "Química 2º ESO",
+    "id": 2207,
+    "dificultad": "Alta",
+    "bloque": "Tema 1: El método científico y la medida",
+    "enunciado": "Convierte $0,75\\ \\text{m}$ a centímetros y a milímetros.",
+    "resolucion_latex": "Sabemos que:<br>$1\\ \\text{m}=100\\ \\text{cm}$.<br>Entonces:<br>$0,75\\ \\text{m}=0,75\\cdot 100=75\\ \\text{cm}$.<br><br>También sabemos que:<br>$1\\ \\text{m}=1000\\ \\text{mm}$.<br>Entonces:<br>$0,75\\ \\text{m}=0,75\\cdot 1000=750\\ \\text{mm}$.<br>Por tanto, $0,75\\ \\text{m}=75\\ \\text{cm}=750\\ \\text{mm}$.",
+    "pista": "Para pasar de metros a unidades más pequeñas, multiplicas.",
+    "formula": "$$1\\ \\text{m}=100\\ \\text{cm}=1000\\ \\text{mm}$$"
+  },
+  {
+    "asignatura": "Química 2º ESO",
+    "id": 2208,
+    "dificultad": "Alta",
+    "bloque": "Tema 1: El método científico y la medida",
+    "enunciado": "Un grupo de alumnos mide tres veces el volumen de un líquido y obtiene $24\\ \\text{mL}$, $25\\ \\text{mL}$ y $26\\ \\text{mL}$. Calcula el valor medio.",
+    "resolucion_latex": "El valor medio se calcula sumando todas las medidas y dividiendo entre el número de medidas:<br>$\\bar{x}=\\frac{x_1+x_2+x_3}{3}$.<br>Sustituimos:<br>$\\bar{x}=\\frac{24+25+26}{3}=\\frac{75}{3}=25\\ \\text{mL}$.<br>El valor medio del volumen es $25\\ \\text{mL}$.",
+    "pista": "Cuando hay varias medidas, el valor medio ayuda a reducir errores accidentales.",
+    "formula": "$$\\bar{x}=\\frac{x_1+x_2+\\cdots+x_n}{n}$$"
+  },
+  {
+    "asignatura": "Química 2º ESO",
+    "id": 2209,
+    "dificultad": "Alta",
+    "bloque": "Tema 1: El método científico y la medida",
+    "enunciado": "Expresa $4500000\\ \\text{g}$ en notación científica.",
+    "resolucion_latex": "La notación científica escribe un número como un valor entre $1$ y $10$ multiplicado por una potencia de $10$.<br>Movemos la coma hasta obtener $4,5$.<br>Desde $4500000$ hasta $4,5$ se mueve la coma $6$ lugares hacia la izquierda.<br>Por tanto:<br>$4500000=4,5\\cdot 10^6$.<br>Resultado final:<br>$4,5\\cdot 10^6\\ \\text{g}$.",
+    "pista": "Cuenta cuántos lugares se mueve la coma para dejar un número entre $1$ y $10$.",
+    "formula": "$$N=a\\cdot 10^n,\\quad 1\\leq a<10$$"
+  },
+  {
+    "asignatura": "Química 2º ESO",
+    "id": 2210,
+    "dificultad": "Superior",
+    "bloque": "Tema 1: El método científico y la medida",
+    "enunciado": "Ejercicio trampa: Un alumno dice que una medida de $5$ sin unidad es suficiente porque el número ya indica la cantidad. Explica el error.",
+    "resolucion_latex": "El error está en olvidar que una medida física necesita siempre una unidad.<br>El número $5$ por sí solo no indica si hablamos de $5\\ \\text{g}$, $5\\ \\text{mL}$, $5\\ \\text{m}$ o $5\\ \\text{s}$.<br>Cada unidad representa una magnitud diferente.<br>Por ejemplo, $5\\ \\text{g}$ es una masa, mientras que $5\\ \\text{s}$ es un tiempo.<br>Por tanto, una medida científica debe escribirse como valor numérico más unidad.",
+    "pista": "En ciencia, el número sin unidad puede resultar ambiguo o incorrecto.",
+    "formula": "$$\\text{medida}=\\text{número}+\\text{unidad}$$"
+  },
+  {
+    "asignatura": "Química 2º ESO",
+    "id": 2211,
+    "dificultad": "Básica",
+    "bloque": "Tema 2: La materia y sus estados",
+    "enunciado": "Explica qué es la materia y pon tres ejemplos.",
+    "resolucion_latex": "La materia es todo aquello que tiene masa y ocupa un volumen.<br>Por ejemplo, el agua es materia porque tiene masa y ocupa espacio.<br>El aire también es materia, aunque no lo veamos, porque tiene masa y ocupa volumen.<br>Una piedra también es materia.<br>Por tanto, ejemplos de materia son: agua, aire y piedra.",
+    "pista": "Si algo tiene masa y ocupa espacio, es materia.",
+    "formula": "$$\\text{materia}=\\text{masa}+\\text{volumen}$$"
+  },
+  {
+    "asignatura": "Química 2º ESO",
+    "id": 2212,
+    "dificultad": "Básica",
+    "bloque": "Tema 2: La materia y sus estados",
+    "enunciado": "Indica en qué estado de agregación se encuentran normalmente el hielo, el agua líquida y el vapor de agua.",
+    "resolucion_latex": "El hielo se encuentra en estado sólido.<br>El agua líquida se encuentra en estado líquido.<br>El vapor de agua se encuentra en estado gaseoso.<br>Por tanto:<br>Hielo: sólido.<br>Agua líquida: líquido.<br>Vapor de agua: gas.",
+    "pista": "Los tres estados principales son sólido, líquido y gaseoso.",
+    "formula": "$$\\text{sólido}\\rightarrow\\text{líquido}\\rightarrow\\text{gas}$$"
+  },
+  {
+    "asignatura": "Química 2º ESO",
+    "id": 2213,
+    "dificultad": "Básica",
+    "bloque": "Tema 2: La materia y sus estados",
+    "enunciado": "Calcula la densidad de una sustancia que tiene una masa de $60\\ \\text{g}$ y un volumen de $20\\ \\text{cm}^3$.",
+    "resolucion_latex": "La densidad se calcula dividiendo la masa entre el volumen:<br>$\\rho=\\frac{m}{V}$.<br>Sustituimos:<br>$\\rho=\\frac{60}{20}=3\\ \\text{g/cm}^3$.<br>La densidad de la sustancia es $3\\ \\text{g/cm}^3$.",
+    "pista": "La densidad indica cuánta masa hay en cada unidad de volumen.",
+    "formula": "$$\\rho=\\frac{m}{V}$$"
+  },
+  {
+    "asignatura": "Química 2º ESO",
+    "id": 2214,
+    "dificultad": "Media",
+    "bloque": "Tema 2: La materia y sus estados",
+    "enunciado": "Explica cómo están las partículas en un sólido, en un líquido y en un gas según la teoría cinético-molecular.",
+    "resolucion_latex": "Según la teoría cinético-molecular, la materia está formada por partículas en movimiento.<br>En un sólido, las partículas están muy juntas y ordenadas, y solo vibran alrededor de posiciones fijas.<br>En un líquido, las partículas están próximas, pero pueden desplazarse unas sobre otras.<br>En un gas, las partículas están muy separadas y se mueven libremente en todas direcciones.<br>Por eso los sólidos tienen forma fija, los líquidos toman la forma del recipiente y los gases ocupan todo el volumen disponible.",
+    "pista": "Cuanto más separadas y libres estén las partículas, más fácil es que la sustancia cambie de forma y ocupe espacio.",
+    "formula": "$$\\text{sólido}<\\text{líquido}<\\text{gas}\\quad \\text{en libertad de movimiento}$$"
+  },
+  {
+    "asignatura": "Química 2º ESO",
+    "id": 2215,
+    "dificultad": "Media",
+    "bloque": "Tema 2: La materia y sus estados",
+    "enunciado": "Nombra los cambios de estado: de sólido a líquido, de líquido a gas, de gas a líquido y de líquido a sólido.",
+    "resolucion_latex": "El paso de sólido a líquido se llama fusión.<br>El paso de líquido a gas se llama vaporización.<br>El paso de gas a líquido se llama condensación.<br>El paso de líquido a sólido se llama solidificación.<br>Por tanto:<br>Sólido a líquido: fusión.<br>Líquido a gas: vaporización.<br>Gas a líquido: condensación.<br>Líquido a sólido: solidificación.",
+    "pista": "Relaciona cada cambio con ganar o perder calor.",
+    "formula": "$$\\text{S}\\rightarrow\\text{L}:\\text{fusión} \\quad ; \\quad \\text{L}\\rightarrow\\text{G}:\\text{vaporización}$$"
+  },
+  {
+    "asignatura": "Química 2º ESO",
+    "id": 2216,
+    "dificultad": "Media",
+    "bloque": "Tema 2: La materia y sus estados",
+    "enunciado": "Un objeto tiene una densidad de $2\\ \\text{g/cm}^3$ y un volumen de $15\\ \\text{cm}^3$. Calcula su masa.",
+    "resolucion_latex": "Usamos la fórmula de la densidad:<br>$\\rho=\\frac{m}{V}$.<br>Despejamos la masa:<br>$m=\\rho\\cdot V$.<br>Sustituimos:<br>$m=2\\cdot 15=30\\ \\text{g}$.<br>La masa del objeto es $30\\ \\text{g}$.",
+    "pista": "Si conoces densidad y volumen, multiplica para obtener la masa.",
+    "formula": "$$m=\\rho\\cdot V$$"
+  },
+  {
+    "asignatura": "Química 2º ESO",
+    "id": 2217,
+    "dificultad": "Alta",
+    "bloque": "Tema 2: La materia y sus estados",
+    "enunciado": "Un material tiene una masa de $180\\ \\text{g}$ y una densidad de $6\\ \\text{g/cm}^3$. Calcula su volumen.",
+    "resolucion_latex": "Partimos de la fórmula de la densidad:<br>$\\rho=\\frac{m}{V}$.<br>Despejamos el volumen:<br>$V=\\frac{m}{\\rho}$.<br>Sustituimos:<br>$V=\\frac{180}{6}=30\\ \\text{cm}^3$.<br>El volumen del material es $30\\ \\text{cm}^3$.",
+    "pista": "Si conoces masa y densidad, divide la masa entre la densidad.",
+    "formula": "$$V=\\frac{m}{\\rho}$$"
+  },
+  {
+    "asignatura": "Química 2º ESO",
+    "id": 2218,
+    "dificultad": "Alta",
+    "bloque": "Tema 2: La materia y sus estados",
+    "enunciado": "Explica qué ocurre con la temperatura durante un cambio de estado, por ejemplo durante la fusión del hielo.",
+    "resolucion_latex": "Durante un cambio de estado, la temperatura permanece constante mientras dura el proceso.<br>Por ejemplo, cuando el hielo se está fundiendo, el calor que recibe no aumenta la temperatura, sino que se utiliza para romper parcialmente las fuerzas que mantienen ordenadas sus partículas.<br>Por eso, durante la fusión del hielo, la temperatura se mantiene aproximadamente en $0\\ ^\\circ\\text{C}$ hasta que todo el hielo se ha transformado en agua líquida.<br>Después de completarse el cambio de estado, la temperatura puede volver a aumentar.",
+    "pista": "En una gráfica de calentamiento, los cambios de estado aparecen como tramos horizontales.",
+    "formula": "$$\\text{durante un cambio de estado: }T=\\text{constante}$$"
+  },
+  {
+    "asignatura": "Química 2º ESO",
+    "id": 2219,
+    "dificultad": "Alta",
+    "bloque": "Tema 2: La materia y sus estados",
+    "enunciado": "Una sustancia se calienta y su temperatura sube hasta $80\\ ^\\circ\\text{C}$. Después permanece constante a $80\\ ^\\circ\\text{C}$ durante varios minutos mientras hierve. ¿Cuál es su temperatura de ebullición?",
+    "resolucion_latex": "Durante la ebullición, la temperatura permanece constante mientras la sustancia cambia de líquido a gas.<br>Si la temperatura se mantiene constante a $80\\ ^\\circ\\text{C}$ mientras hierve, esa temperatura corresponde a su punto de ebullición.<br>Por tanto, la temperatura de ebullición de la sustancia es $80\\ ^\\circ\\text{C}$.",
+    "pista": "En una gráfica de calentamiento, el punto de ebullición se identifica en el tramo horizontal de líquido a gas.",
+    "formula": "$$T_{ebullición}=\\text{temperatura constante durante la ebullición}$$"
+  },
+  {
+    "asignatura": "Química 2º ESO",
+    "id": 2220,
+    "dificultad": "Superior",
+    "bloque": "Tema 2: La materia y sus estados",
+    "enunciado": "Ejercicio trampa: Un alumno afirma que los gases no son materia porque no se pueden ver ni tocar fácilmente. Explica el error.",
+    "resolucion_latex": "El error está en pensar que solo es materia lo que se ve o se toca fácilmente.<br>Los gases también son materia porque tienen masa y ocupan volumen.<br>Por ejemplo, el aire no se ve, pero ocupa espacio dentro de un globo y tiene masa.<br>Además, los gases pueden ejercer presión sobre las paredes del recipiente que los contiene.<br>Por tanto, los gases sí son materia.",
+    "pista": "Que algo no se vea no significa que no tenga masa ni ocupe espacio.",
+    "formula": "$$\\text{gas}=\\text{materia porque tiene masa y volumen}$$"
+  },
+  {
+    "asignatura": "Química 2º ESO",
+    "id": 2221,
+    "dificultad": "Básica",
+    "bloque": "Tema 3: Sustancias puras y mezclas",
+    "enunciado": "Clasifica como sustancia pura o mezcla: agua destilada, aire, sal común y agua con arena.",
+    "resolucion_latex": "El agua destilada es una sustancia pura porque está formada solo por agua.<br>El aire es una mezcla porque está formado por varios gases.<br>La sal común es una sustancia pura porque está formada por cloruro de sodio.<br>El agua con arena es una mezcla porque contiene dos sustancias diferentes.<br>Por tanto:<br>Sustancias puras: agua destilada y sal común.<br>Mezclas: aire y agua con arena.",
+    "pista": "Una sustancia pura tiene composición fija; una mezcla contiene varias sustancias.",
+    "formula": "$$\\text{sustancia pura}\\neq\\text{mezcla}$$"
+  },
+  {
+    "asignatura": "Química 2º ESO",
+    "id": 2222,
+    "dificultad": "Básica",
+    "bloque": "Tema 3: Sustancias puras y mezclas",
+    "enunciado": "Indica si las siguientes mezclas son homogéneas o heterogéneas: agua con sal, granito, leche con cereales y aire.",
+    "resolucion_latex": "El agua con sal es una mezcla homogénea porque no se distinguen sus componentes.<br>El granito es una mezcla heterogénea porque se pueden distinguir diferentes minerales.<br>La leche con cereales es una mezcla heterogénea porque se distinguen sus componentes.<br>El aire es una mezcla homogénea de gases.<br>Por tanto:<br>Homogéneas: agua con sal y aire.<br>Heterogéneas: granito y leche con cereales.",
+    "pista": "Si se distinguen los componentes a simple vista, suele ser una mezcla heterogénea.",
+    "formula": "$$\\text{homogénea}:\\text{ una sola fase} \\quad ; \\quad \\text{heterogénea}:\\text{ varias fases}$$"
+  },
+  {
+    "asignatura": "Química 2º ESO",
+    "id": 2223,
+    "dificultad": "Básica",
+    "bloque": "Tema 3: Sustancias puras y mezclas",
+    "enunciado": "En una disolución de azúcar en agua, indica cuál es el soluto y cuál es el disolvente.",
+    "resolucion_latex": "En una disolución, el soluto es la sustancia que se disuelve y el disolvente es la sustancia que disuelve al soluto.<br>En este caso, el azúcar se disuelve en el agua.<br>Por tanto, el azúcar es el soluto y el agua es el disolvente.",
+    "pista": "El disolvente suele ser la sustancia que está en mayor cantidad.",
+    "formula": "$$\\text{disolución}=\\text{soluto}+\\text{disolvente}$$"
+  },
+  {
+    "asignatura": "Química 2º ESO",
+    "id": 2224,
+    "dificultad": "Media",
+    "bloque": "Tema 3: Sustancias puras y mezclas",
+    "enunciado": "Indica el método de separación más adecuado para separar arena y agua.",
+    "resolucion_latex": "La arena no se disuelve en el agua, por lo que forman una mezcla heterogénea.<br>Para separar un sólido insoluble de un líquido se puede usar la filtración.<br>El filtro retiene la arena y deja pasar el agua.<br>Por tanto, el método más adecuado es la filtración.",
+    "pista": "Cuando hay un sólido insoluble mezclado con un líquido, piensa en filtrar.",
+    "formula": "$$\\text{sólido insoluble}+\\text{líquido}\\rightarrow\\text{filtración}$$"
+  },
+  {
+    "asignatura": "Química 2º ESO",
+    "id": 2225,
+    "dificultad": "Media",
+    "bloque": "Tema 3: Sustancias puras y mezclas",
+    "enunciado": "Indica el método de separación más adecuado para separar aceite y agua.",
+    "resolucion_latex": "El aceite y el agua son líquidos inmiscibles, es decir, no se mezclan de forma homogénea.<br>Además, tienen distinta densidad, por lo que el aceite queda encima del agua.<br>Para separarlos se puede usar la decantación, por ejemplo con un embudo de decantación.<br>Por tanto, el método adecuado es la decantación.",
+    "pista": "Si son dos líquidos que no se mezclan y tienen distinta densidad, se pueden decantar.",
+    "formula": "$$\\text{líquidos inmiscibles}\\rightarrow\\text{decantación}$$"
+  },
+  {
+    "asignatura": "Química 2º ESO",
+    "id": 2226,
+    "dificultad": "Media",
+    "bloque": "Tema 3: Sustancias puras y mezclas",
+    "enunciado": "Calcula la concentración en $\\text{g/L}$ de una disolución que contiene $10\\ \\text{g}$ de sal disueltos en $2\\ \\text{L}$ de disolución.",
+    "resolucion_latex": "La concentración en $\\text{g/L}$ se calcula dividiendo la masa de soluto entre el volumen de disolución:<br>$C=\\frac{m}{V}$.<br>Sustituimos:<br>$C=\\frac{10}{2}=5\\ \\text{g/L}$.<br>La concentración de la disolución es $5\\ \\text{g/L}$.",
+    "pista": "Divide los gramos de soluto entre los litros de disolución.",
+    "formula": "$$C=\\frac{m_{soluto}}{V_{disolución}}$$"
+  },
+  {
+    "asignatura": "Química 2º ESO",
+    "id": 2227,
+    "dificultad": "Alta",
+    "bloque": "Tema 3: Sustancias puras y mezclas",
+    "enunciado": "Se disuelven $8\\ \\text{g}$ de azúcar en agua hasta obtener $250\\ \\text{mL}$ de disolución. Calcula la concentración en $\\text{g/L}$.",
+    "resolucion_latex": "Primero pasamos el volumen a litros:<br>$250\\ \\text{mL}=0,250\\ \\text{L}$.<br>Ahora usamos la fórmula de la concentración:<br>$C=\\frac{m}{V}$.<br>Sustituimos:<br>$C=\\frac{8}{0,250}=32\\ \\text{g/L}$.<br>La concentración de la disolución es $32\\ \\text{g/L}$.",
+    "pista": "Antes de calcular $\\text{g/L}$, convierte los mililitros a litros.",
+    "formula": "$$1\\ \\text{L}=1000\\ \\text{mL}$$"
+  },
+  {
+    "asignatura": "Química 2º ESO",
+    "id": 2228,
+    "dificultad": "Alta",
+    "bloque": "Tema 3: Sustancias puras y mezclas",
+    "enunciado": "Una disolución tiene concentración $12\\ \\text{g/L}$. Calcula qué masa de soluto hay en $0,5\\ \\text{L}$ de disolución.",
+    "resolucion_latex": "La concentración se calcula con:<br>$C=\\frac{m}{V}$.<br>Despejamos la masa:<br>$m=C\\cdot V$.<br>Sustituimos:<br>$m=12\\cdot 0,5=6\\ \\text{g}$.<br>En $0,5\\ \\text{L}$ de disolución hay $6\\ \\text{g}$ de soluto.",
+    "pista": "Si sabes cuántos gramos hay por litro, multiplica por los litros de disolución.",
+    "formula": "$$m=C\\cdot V$$"
+  },
+  {
+    "asignatura": "Química 2º ESO",
+    "id": 2229,
+    "dificultad": "Alta",
+    "bloque": "Tema 3: Sustancias puras y mezclas",
+    "enunciado": "Explica qué método usarías para separar una mezcla de agua y sal, y justifica la respuesta.",
+    "resolucion_latex": "El agua con sal es una mezcla homogénea, porque la sal está disuelta y no se distingue a simple vista.<br>La filtración no sirve porque la sal disuelta atraviesa el filtro junto con el agua.<br>Para separar la sal del agua podemos usar evaporación o cristalización: al calentar, el agua se evapora y la sal queda como residuo sólido.<br>Si queremos recuperar también el agua, se puede usar destilación, condensando el vapor de agua.<br>Por tanto, para recuperar la sal usaríamos evaporación o cristalización; para recuperar ambos componentes, destilación.",
+    "pista": "La sal disuelta no se separa con un filtro normal.",
+    "formula": "$$\\text{disolución sólido-líquido}\\rightarrow\\text{evaporación o destilación}$$"
+  },
+  {
+    "asignatura": "Química 2º ESO",
+    "id": 2230,
+    "dificultad": "Superior",
+    "bloque": "Tema 3: Sustancias puras y mezclas",
+    "enunciado": "Ejercicio trampa: Un alumno dice que el agua con sal no es una mezcla porque no se ve la sal. Explica el error.",
+    "resolucion_latex": "El error está en pensar que una mezcla solo existe si se ven sus componentes.<br>En el agua con sal, la sal se ha disuelto y queda repartida de forma uniforme por toda la disolución.<br>Por eso no se ve a simple vista, pero sigue estando presente.<br>El agua con sal es una mezcla homogénea o disolución, porque contiene al menos dos sustancias: agua y sal.<br>Por tanto, que no se vea un componente no significa que no esté.",
+    "pista": "En una mezcla homogénea, los componentes no se distinguen a simple vista.",
+    "formula": "$$\\text{disolución}=\\text{mezcla homogénea}$$"
+  },
+  {
+    "asignatura": "Química 2º ESO",
+    "id": 2231,
+    "dificultad": "Básica",
+    "bloque": "Tema 4: Estructura atómica básica",
+    "enunciado": "Indica qué partículas forman el átomo y qué carga tiene cada una.",
+    "resolucion_latex": "El átomo está formado por protones, neutrones y electrones.<br>Los protones tienen carga positiva y se encuentran en el núcleo.<br>Los neutrones no tienen carga eléctrica y también se encuentran en el núcleo.<br>Los electrones tienen carga negativa y se encuentran alrededor del núcleo.<br>Por tanto:<br>Protón: positivo.<br>Neutrón: neutro.<br>Electrón: negativo.",
+    "pista": "Protón positivo, neutrón neutro y electrón negativo.",
+    "formula": "$$p^+ \\quad ; \\quad n^0 \\quad ; \\quad e^-$$"
+  },
+  {
+    "asignatura": "Química 2º ESO",
+    "id": 2232,
+    "dificultad": "Básica",
+    "bloque": "Tema 4: Estructura atómica básica",
+    "enunciado": "Explica dónde se encuentran los protones, neutrones y electrones dentro del átomo.",
+    "resolucion_latex": "Los protones y los neutrones se encuentran en el núcleo del átomo.<br>El núcleo es la zona central del átomo y concentra casi toda su masa.<br>Los electrones se encuentran alrededor del núcleo, moviéndose en la zona externa del átomo.<br>Por tanto, protones y neutrones están en el núcleo, y los electrones están alrededor.",
+    "pista": "El núcleo está en el centro; los electrones se sitúan alrededor.",
+    "formula": "$$\\text{núcleo}:p^+,n^0 \\quad ; \\quad \\text{exterior}:e^-$$"
+  },
+  {
+    "asignatura": "Química 2º ESO",
+    "id": 2233,
+    "dificultad": "Básica",
+    "bloque": "Tema 4: Estructura atómica básica",
+    "enunciado": "Diferencia entre elemento y compuesto usando como ejemplo el oxígeno ($\\text{O}_2$) y el agua ($\\text{H}_2\\text{O}$).",
+    "resolucion_latex": "Un elemento está formado por átomos del mismo tipo.<br>El oxígeno $\\text{O}_2$ es un elemento porque está formado solo por átomos de oxígeno.<br><br>Un compuesto está formado por átomos de distintos elementos unidos químicamente.<br>El agua $\\text{H}_2\\text{O}$ es un compuesto porque está formada por hidrógeno y oxígeno.<br>Por tanto, $\\text{O}_2$ es un elemento y $\\text{H}_2\\text{O}$ es un compuesto.",
+    "pista": "Si solo hay un tipo de átomo, es elemento; si hay varios tipos unidos, es compuesto.",
+    "formula": "$$\\text{elemento}:\\text{ un tipo de átomo} \\quad ; \\quad \\text{compuesto}:\\text{ varios elementos}$$"
+  },
+  {
+    "asignatura": "Química 2º ESO",
+    "id": 2234,
+    "dificultad": "Media",
+    "bloque": "Tema 4: Estructura atómica básica",
+    "enunciado": "Un átomo tiene $6$ protones, $6$ neutrones y $6$ electrones. Indica si es neutro y calcula su número másico.",
+    "resolucion_latex": "Un átomo es neutro cuando tiene el mismo número de protones que de electrones.<br>En este caso tiene $6$ protones y $6$ electrones, por tanto es neutro.<br><br>El número másico se calcula sumando protones y neutrones:<br>$A=p+n=6+6=12$.<br>Por tanto, el átomo es neutro y su número másico es $12$.",
+    "pista": "La carga depende de protones y electrones; el número másico depende de protones y neutrones.",
+    "formula": "$$A=p+n$$"
+  },
+  {
+    "asignatura": "Química 2º ESO",
+    "id": 2235,
+    "dificultad": "Media",
+    "bloque": "Tema 4: Estructura atómica básica",
+    "enunciado": "Un átomo tiene $8$ protones y $10$ electrones. ¿Es neutro o es un ion? Indica su carga.",
+    "resolucion_latex": "Un átomo neutro tiene el mismo número de protones que de electrones.<br>Este átomo tiene $8$ protones positivos y $10$ electrones negativos.<br>Tiene $2$ electrones más que protones, por lo que su carga total es $2-$.<br>Por tanto, no es neutro: es un ion negativo o anión.",
+    "pista": "Si hay más electrones que protones, la carga es negativa.",
+    "formula": "$$q=p^+-e^-$$"
+  },
+  {
+    "asignatura": "Química 2º ESO",
+    "id": 2236,
+    "dificultad": "Media",
+    "bloque": "Tema 4: Estructura atómica básica",
+    "enunciado": "Explica qué representa la tabla periódica de forma sencilla.",
+    "resolucion_latex": "La tabla periódica es una forma ordenada de colocar todos los elementos químicos conocidos.<br>Cada elemento tiene un símbolo, como $\\text{H}$ para el hidrógeno, $\\text{O}$ para el oxígeno o $\\text{Fe}$ para el hierro.<br>Los elementos se ordenan según sus propiedades y su estructura atómica.<br>Además, los elementos con propiedades parecidas aparecen en la misma columna o grupo.<br>Por tanto, la tabla periódica permite organizar y comparar los elementos químicos.",
+    "pista": "La tabla periódica es como un mapa ordenado de los elementos.",
+    "formula": "$$\\text{tabla periódica}=\\text{elementos químicos ordenados}$$"
+  },
+  {
+    "asignatura": "Química 2º ESO",
+    "id": 2237,
+    "dificultad": "Alta",
+    "bloque": "Tema 4: Estructura atómica básica",
+    "enunciado": "Un átomo tiene $11$ protones y $12$ neutrones. Si es neutro, calcula su número de electrones y su número másico.",
+    "resolucion_latex": "Si el átomo es neutro, el número de electrones es igual al número de protones.<br>Como tiene $11$ protones, tendrá $11$ electrones.<br><br>El número másico es la suma de protones y neutrones:<br>$A=p+n=11+12=23$.<br>Por tanto, tiene $11$ electrones y número másico $23$.",
+    "pista": "En un átomo neutro, protones y electrones coinciden.",
+    "formula": "$$A=p+n$$"
+  },
+  {
+    "asignatura": "Química 2º ESO",
+    "id": 2238,
+    "dificultad": "Alta",
+    "bloque": "Tema 4: Estructura atómica básica",
+    "enunciado": "Un ion tiene $12$ protones, $12$ neutrones y $10$ electrones. Calcula su carga y su número másico.",
+    "resolucion_latex": "La carga se calcula comparando protones y electrones.<br>Tiene $12$ protones positivos y $10$ electrones negativos.<br>Hay $2$ protones más que electrones, por lo que la carga es $2+$.<br><br>El número másico se calcula sumando protones y neutrones:<br>$A=12+12=24$.<br>Por tanto, el ion tiene carga $2+$ y número másico $24$.",
+    "pista": "Si hay menos electrones que protones, la carga es positiva.",
+    "formula": "$$q=p^+-e^- \\quad ; \\quad A=p+n$$"
+  },
+  {
+    "asignatura": "Química 2º ESO",
+    "id": 2239,
+    "dificultad": "Alta",
+    "bloque": "Tema 4: Estructura atómica básica",
+    "enunciado": "Clasifica como elemento o compuesto: $\\text{H}_2$, $\\text{CO}_2$, $\\text{Fe}$ y $\\text{NaCl}$.",
+    "resolucion_latex": "$\\text{H}_2$ es un elemento porque está formado solo por átomos de hidrógeno.<br>$\\text{CO}_2$ es un compuesto porque contiene carbono y oxígeno.<br>$\\text{Fe}$ es un elemento porque representa hierro.<br>$\\text{NaCl}$ es un compuesto porque contiene sodio y cloro.<br>Por tanto:<br>Elementos: $\\text{H}_2$ y $\\text{Fe}$.<br>Compuestos: $\\text{CO}_2$ y $\\text{NaCl}$.",
+    "pista": "Mira si la fórmula contiene símbolos de un solo elemento o de varios.",
+    "formula": "$$\\text{un símbolo químico}\\rightarrow\\text{elemento} \\quad ; \\quad \\text{varios símbolos}\\rightarrow\\text{compuesto}$$"
+  },
+  {
+    "asignatura": "Química 2º ESO",
+    "id": 2240,
+    "dificultad": "Superior",
+    "bloque": "Tema 4: Estructura atómica básica",
+    "enunciado": "Ejercicio trampa: Un alumno dice que un compuesto es lo mismo que una mezcla porque ambos tienen varias sustancias. Explica el error.",
+    "resolucion_latex": "El error está en confundir unión química con mezcla física.<br>En un compuesto, los elementos están unidos químicamente en una proporción fija. Por ejemplo, el agua $\\text{H}_2\\text{O}$ siempre tiene hidrógeno y oxígeno unidos en una proporción determinada.<br>En una mezcla, las sustancias no están unidas químicamente y pueden aparecer en proporciones variables. Por ejemplo, el agua con sal puede tener más o menos sal.<br>Además, los componentes de una mezcla pueden separarse por métodos físicos, mientras que un compuesto necesita procesos químicos para separarse en sus elementos.<br>Por tanto, compuesto y mezcla no son lo mismo.",
+    "pista": "En un compuesto hay unión química; en una mezcla, no.",
+    "formula": "$$\\text{compuesto}\\neq\\text{mezcla}$$"
+  },
+  {
+    "asignatura": "Química 2º ESO",
+    "id": 2241,
+    "dificultad": "Básica",
+    "bloque": "Tema 5: Cambios de la materia",
+    "enunciado": "Indica si los siguientes procesos son cambios físicos o químicos: derretir hielo, quemar madera, romper un vaso y oxidarse una verja de hierro.",
+    "resolucion_latex": "Derretir hielo es un cambio físico, porque cambia el estado del agua, pero sigue siendo agua.<br>Quemar madera es un cambio químico, porque se forman sustancias nuevas, como cenizas y gases.<br>Romper un vaso es un cambio físico, porque cambia la forma del vidrio, pero no aparece una sustancia nueva.<br>Oxidarse una verja de hierro es un cambio químico, porque se forma óxido de hierro.<br>Por tanto:<br>Cambios físicos: derretir hielo y romper un vaso.<br>Cambios químicos: quemar madera y oxidarse una verja.",
+    "pista": "Si aparecen sustancias nuevas, es un cambio químico. Si solo cambia la forma o el estado, es físico.",
+    "formula": "$$\\text{cambio químico}\\Rightarrow\\text{sustancias nuevas}$$"
+  },
+  {
+    "asignatura": "Química 2º ESO",
+    "id": 2242,
+    "dificultad": "Básica",
+    "bloque": "Tema 5: Cambios de la materia",
+    "enunciado": "Explica qué son los reactivos y los productos en una reacción química.",
+    "resolucion_latex": "En una reacción química, los reactivos son las sustancias iniciales, es decir, las que reaccionan.<br>Los productos son las sustancias nuevas que se forman al final de la reacción.<br>En una ecuación química, los reactivos se escriben a la izquierda de la flecha y los productos a la derecha.<br>Por tanto:<br>Reactivos: sustancias de partida.<br>Productos: sustancias finales formadas.",
+    "pista": "La flecha de una reacción separa lo que empieza de lo que se forma.",
+    "formula": "$$\\text{reactivos}\\rightarrow\\text{productos}$$"
+  },
+  {
+    "asignatura": "Química 2º ESO",
+    "id": 2243,
+    "dificultad": "Básica",
+    "bloque": "Tema 5: Cambios de la materia",
+    "enunciado": "Identifica los reactivos y productos en la reacción: $\\text{carbono}+\\text{oxígeno}\\rightarrow\\text{dióxido de carbono}$.",
+    "resolucion_latex": "Los reactivos son las sustancias que aparecen antes de la flecha:<br>carbono y oxígeno.<br>El producto es la sustancia que aparece después de la flecha:<br>dióxido de carbono.<br>Por tanto:<br>Reactivos: carbono y oxígeno.<br>Producto: dióxido de carbono.",
+    "pista": "Lo que está a la izquierda de la flecha reacciona; lo que está a la derecha se forma.",
+    "formula": "$$\\text{C}+\\text{O}*2\\rightarrow\\text{CO}*2$$"
+  },
+  {
+    "asignatura": "Química 2º ESO",
+    "id": 2244,
+    "dificultad": "Media",
+    "bloque": "Tema 5: Cambios de la materia",
+    "enunciado": "Indica tres señales que pueden indicar que ha ocurrido una reacción química.",
+    "resolucion_latex": "Algunas señales de que puede haber ocurrido una reacción química son:<br>1. Aparición de un gas, como burbujas.<br>2. Cambio de color.<br>3. Formación de un sólido nuevo, llamado precipitado.<br>También puede observarse desprendimiento o absorción de calor, emisión de luz o cambio de olor.<br>Estas señales no siempre demuestran por sí solas que haya reacción, pero son indicios importantes.",
+    "pista": "Busca pistas como burbujas, cambio de color, calor, luz o formación de un sólido.",
+    "formula": "$$\\text{reacción química}\\Rightarrow\\text{indicios de sustancias nuevas}$$"
+  },
+  {
+    "asignatura": "Química 2º ESO",
+    "id": 2245,
+    "dificultad": "Media",
+    "bloque": "Tema 5: Cambios de la materia",
+    "enunciado": "Explica por qué evaporar agua es un cambio físico, pero quemar papel es un cambio químico.",
+    "resolucion_latex": "Evaporar agua es un cambio físico porque el agua pasa de estado líquido a estado gaseoso, pero sigue siendo la misma sustancia: agua.<br>No se forman sustancias nuevas.<br><br>Quemar papel es un cambio químico porque el papel reacciona con el oxígeno y se forman sustancias nuevas, como cenizas, dióxido de carbono y vapor de agua.<br>Por tanto, evaporar agua solo cambia el estado, mientras que quemar papel cambia la composición de la materia.",
+    "pista": "Compara si la sustancia sigue siendo la misma o si aparecen sustancias diferentes.",
+    "formula": "$$\\text{cambio físico}:\\text{misma sustancia} \\quad ; \\quad \\text{cambio químico}:\\text{sustancias nuevas}$$"
+  },
+  {
+    "asignatura": "Química 2º ESO",
+    "id": 2246,
+    "dificultad": "Media",
+    "bloque": "Tema 5: Cambios de la materia",
+    "enunciado": "Según la ley de conservación de la masa, si reaccionan $5\\ \\text{g}$ de una sustancia A con $12\\ \\text{g}$ de una sustancia B, ¿qué masa total de productos se obtiene?",
+    "resolucion_latex": "La ley de conservación de la masa dice que, en una reacción química, la masa total de los reactivos es igual a la masa total de los productos.<br>Sumamos las masas de los reactivos:<br>$5\\ \\text{g}+12\\ \\text{g}=17\\ \\text{g}$.<br>Por tanto, la masa total de productos obtenida será $17\\ \\text{g}$.",
+    "pista": "La masa no desaparece durante una reacción química: se conserva.",
+    "formula": "$$m*{reactivos}=m*{productos}$$"
+  },
+  {
+    "asignatura": "Química 2º ESO",
+    "id": 2247,
+    "dificultad": "Alta",
+    "bloque": "Tema 5: Cambios de la materia",
+    "enunciado": "En una reacción se obtienen $30\\ \\text{g}$ de producto. Si uno de los reactivos tenía una masa de $18\\ \\text{g}$, ¿qué masa tenía el otro reactivo suponiendo que reaccionaron completamente?",
+    "resolucion_latex": "Aplicamos la ley de conservación de la masa:<br>$m_{reactivos}=m_{productos}$.<br>Si llamamos $x$ a la masa del segundo reactivo, entonces:<br>$18+x=30$.<br>Despejamos:<br>$x=30-18=12\\ \\text{g}$.<br>Por tanto, el otro reactivo tenía una masa de $12\\ \\text{g}$.",
+    "pista": "La suma de las masas de los reactivos debe coincidir con la masa total de productos.",
+    "formula": "$$m_1+m_2=m_{producto}$$"
+  },
+  {
+    "asignatura": "Química 2º ESO",
+    "id": 2248,
+    "dificultad": "Alta",
+    "bloque": "Tema 5: Cambios de la materia",
+    "enunciado": "Clasifica estos procesos y justifica la respuesta: hacer una tortilla, cortar una manzana, disolver azúcar en agua y encender una vela.",
+    "resolucion_latex": "Hacer una tortilla es un cambio químico, porque al cocinar el huevo cambian sus sustancias y no se puede volver al huevo crudo original.<br>Cortar una manzana es un cambio físico, porque solo cambia su forma o tamaño.<br>Disolver azúcar en agua es un cambio físico, porque el azúcar sigue estando presente y puede recuperarse evaporando el agua.<br>Encender una vela incluye un cambio físico y uno químico: la cera se funde, que es físico, y parte de la cera se quema, que es químico.<br>Por tanto, algunos procesos pueden combinar cambios físicos y químicos.",
+    "pista": "Pregunta si se forman sustancias nuevas y si el proceso puede deshacerse por métodos físicos.",
+    "formula": "$$\\text{un proceso puede incluir cambios físicos y químicos}$$"
+  },
+  {
+    "asignatura": "Química 2º ESO",
+    "id": 2249,
+    "dificultad": "Alta",
+    "bloque": "Tema 5: Cambios de la materia",
+    "enunciado": "Completa la reacción en palabras e identifica reactivos y productos: magnesio + oxígeno $\\rightarrow$ óxido de magnesio.",
+    "resolucion_latex": "La reacción ya está escrita en forma de palabras:<br>magnesio + oxígeno $\\rightarrow$ óxido de magnesio.<br>Los reactivos son las sustancias que aparecen antes de la flecha:<br>magnesio y oxígeno.<br>El producto es la sustancia que aparece después de la flecha:<br>óxido de magnesio.<br>Esta reacción es un cambio químico porque se forma una sustancia nueva distinta de las iniciales.",
+    "pista": "Los nombres antes de la flecha son reactivos; el nombre después de la flecha es producto.",
+    "formula": "$$\\text{Mg}+\\text{O}_2\\rightarrow\\text{MgO}$$"
+  },
+  {
+    "asignatura": "Química 2º ESO",
+    "id": 2250,
+    "dificultad": "Superior",
+    "bloque": "Tema 5: Cambios de la materia",
+    "enunciado": "Ejercicio trampa: Un alumno afirma que si algo cambia de aspecto, siempre ha ocurrido un cambio químico. Explica el error con ejemplos.",
+    "resolucion_latex": "La afirmación es falsa porque un cambio de aspecto no siempre significa que se formen sustancias nuevas.<br>Por ejemplo, al cortar papel cambia su aspecto, pero sigue siendo papel: es un cambio físico.<br>Al derretir hielo también cambia el aspecto, pero sigue siendo agua: también es un cambio físico.<br>En cambio, al quemar papel se forman cenizas y gases, por lo que sí es un cambio químico.<br>Por tanto, para saber si un cambio es químico no basta con mirar el aspecto: hay que comprobar si aparecen sustancias nuevas.",
+    "pista": "Lo importante no es solo cómo se ve, sino si cambia la composición de la materia.",
+    "formula": "$$\\text{cambio de aspecto}\\nRightarrow\\text{cambio químico siempre}$$"
+  }
+]

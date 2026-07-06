@@ -1,0 +1,502 @@
+[
+  {
+    "asignatura": "Física 3º ESO",
+    "id": 3101,
+    "dificultad": "Básica",
+    "bloque": "Tema 1: Magnitudes, unidades y método científico",
+    "enunciado": "Indica si las siguientes cantidades son magnitudes físicas y escribe su unidad en el Sistema Internacional: masa, tiempo, temperatura y longitud.",
+    "resolucion_latex": "Todas las cantidades dadas son magnitudes físicas porque se pueden medir.<br>La masa se mide en kilogramos: $\\text{kg}$.<br>El tiempo se mide en segundos: $\\text{s}$.<br>La temperatura se mide en kelvin: $\\text{K}$.<br>La longitud se mide en metros: $\\text{m}$.<br>Por tanto:<br>Masa: $\\text{kg}$.<br>Tiempo: $\\text{s}$.<br>Temperatura: $\\text{K}$.<br>Longitud: $\\text{m}$.",
+    "pista": "Una magnitud física es todo aquello que se puede medir y expresar con una unidad.",
+    "formula": "$$\\text{magnitud}=\\text{número}+\\text{unidad}$$"
+  },
+  {
+    "asignatura": "Física 3º ESO",
+    "id": 3102,
+    "dificultad": "Básica",
+    "bloque": "Tema 1: Magnitudes, unidades y método científico",
+    "enunciado": "Convierte $3,5$ km a metros.",
+    "resolucion_latex": "Sabemos que:<br>$1 \\text{ km}=1000 \\text{ m}$.<br>Por tanto:<br>$3,5 \\text{ km}=3,5\\cdot 1000 \\text{ m}$.<br>$3,5 \\text{ km}=3500 \\text{ m}$.<br>Resultado final:<br>$3500 \\text{ m}$.",
+    "pista": "Para pasar de kilómetros a metros, multiplica por $1000$.",
+    "formula": "$$1\\text{ km}=1000\\text{ m}$$"
+  },
+  {
+    "asignatura": "Física 3º ESO",
+    "id": 3103,
+    "dificultad": "Básica",
+    "bloque": "Tema 1: Magnitudes, unidades y método científico",
+    "enunciado": "Expresa $0,0045$ m en notación científica.",
+    "resolucion_latex": "Queremos escribir el número como un valor entre $1$ y $10$ multiplicado por una potencia de $10$.<br>Movemos la coma hasta obtener $4,5$.<br>Para pasar de $4,5$ a $0,0045$ hay que mover la coma $3$ lugares hacia la izquierda, por eso el exponente es negativo:<br>$0,0045=4,5\\cdot 10^{-3}$.<br>Resultado final:<br>$4,5\\cdot 10^{-3}\\text{ m}$.",
+    "pista": "Si el número es menor que $1$, el exponente de la potencia de $10$ será negativo.",
+    "formula": "$$N=a\\cdot 10^n,\\quad 1\\leq a<10$$"
+  },
+  {
+    "asignatura": "Física 3º ESO",
+    "id": 3104,
+    "dificultad": "Media",
+    "bloque": "Tema 1: Magnitudes, unidades y método científico",
+    "enunciado": "Convierte $72 \\text{ km/h}$ a $\\text{m/s}$.",
+    "resolucion_latex": "Para pasar de $\\text{km/h}$ a $\\text{m/s}$ dividimos entre $3,6$.<br>Sustituimos:<br>$72 \\text{ km/h}=\\frac{72}{3,6}\\text{ m/s}$.<br>Calculamos:<br>$\\frac{72}{3,6}=20$.<br>Por tanto:<br>$72 \\text{ km/h}=20 \\text{ m/s}$.",
+    "pista": "Para pasar de $\\text{km/h}$ a $\\text{m/s}$ se divide entre $3,6$. Para pasar de $\\text{m/s}$ a $\\text{km/h}$ se multiplica por $3,6$.",
+    "formula": "$$v(\\text{m/s})=\\frac{v(\\text{km/h})}{3,6}$$"
+  },
+  {
+    "asignatura": "Física 3º ESO",
+    "id": 3105,
+    "dificultad": "Media",
+    "bloque": "Tema 1: Magnitudes, unidades y método científico",
+    "enunciado": "Un alumno mide una mesa y obtiene $1,24$ m. Si el valor real es $1,20$ m, calcula el error absoluto.",
+    "resolucion_latex": "El error absoluto se calcula como el valor absoluto de la diferencia entre la medida y el valor real:<br>$E_a=|x_m-x_r|$.<br>Sustituimos:<br>$E_a=|1,24-1,20|=|0,04|=0,04 \\text{ m}$.<br>El error absoluto es $0,04 \\text{ m}$.",
+    "pista": "El error absoluto siempre se expresa como una cantidad positiva.",
+    "formula": "$$E_a=|x_m-x_r|$$"
+  },
+  {
+    "asignatura": "Física 3º ESO",
+    "id": 3106,
+    "dificultad": "Media",
+    "bloque": "Tema 1: Magnitudes, unidades y método científico",
+    "enunciado": "Ordena las fases del método científico: experimentación, hipótesis, observación, conclusión y análisis de datos.",
+    "resolucion_latex": "Una secuencia habitual del método científico es:<br>1. Observación.<br>2. Hipótesis.<br>3. Experimentación.<br>4. Análisis de datos.<br>5. Conclusión.<br>Por tanto, el orden correcto es:<br>observación, hipótesis, experimentación, análisis de datos y conclusión.",
+    "pista": "Primero se observa un fenómeno, después se propone una explicación y luego se comprueba con experimentos.",
+    "formula": "$$\\text{Observación}\\rightarrow\\text{Hipótesis}\\rightarrow\\text{Experimento}\\rightarrow\\text{Análisis}\\rightarrow\\text{Conclusión}$$"
+  },
+  {
+    "asignatura": "Física 3º ESO",
+    "id": 3107,
+    "dificultad": "Alta",
+    "bloque": "Tema 1: Magnitudes, unidades y método científico",
+    "enunciado": "Un objeto tiene una masa de $250$ g y un volumen de $50 \\text{ cm}^3$. Calcula su densidad en $\\text{g/cm}^3$.",
+    "resolucion_latex": "La densidad se calcula dividiendo la masa entre el volumen:<br>$\\rho=\\frac{m}{V}$.<br>Sustituimos:<br>$\\rho=\\frac{250}{50}=5 \\text{ g/cm}^3$.<br>La densidad del objeto es $5 \\text{ g/cm}^3$.",
+    "pista": "La densidad indica cuánta masa hay en cada unidad de volumen.",
+    "formula": "$$\\rho=\\frac{m}{V}$$"
+  },
+  {
+    "asignatura": "Física 3º ESO",
+    "id": 3108,
+    "dificultad": "Alta",
+    "bloque": "Tema 1: Magnitudes, unidades y método científico",
+    "enunciado": "Una medida se expresa como $2,5\\cdot 10^4$ m. Escríbela en forma decimal y en kilómetros.",
+    "resolucion_latex": "Primero pasamos de notación científica a forma decimal:<br>$2,5\\cdot 10^4=2,5\\cdot 10000=25000 \\text{ m}$.<br>Ahora pasamos metros a kilómetros:<br>$1 \\text{ km}=1000 \\text{ m}$.<br>$25000 \\text{ m}=\\frac{25000}{1000}=25 \\text{ km}$.<br>Resultado:<br>$2,5\\cdot 10^4 \\text{ m}=25000 \\text{ m}=25 \\text{ km}$.",
+    "pista": "Primero desarrolla la potencia de diez y luego cambia de metros a kilómetros.",
+    "formula": "$$1\\text{ km}=1000\\text{ m}$$"
+  },
+  {
+    "asignatura": "Física 3º ESO",
+    "id": 3109,
+    "dificultad": "Alta",
+    "bloque": "Tema 1: Magnitudes, unidades y método científico",
+    "enunciado": "Un estudiante mide cinco veces el tiempo de caída de un objeto y obtiene: $1,2$ s, $1,3$ s, $1,2$ s, $1,4$ s y $1,3$ s. Calcula el valor medio de las medidas.",
+    "resolucion_latex": "El valor medio se calcula sumando todas las medidas y dividiendo entre el número de medidas:<br>$\\bar{t}=\\frac{1,2+1,3+1,2+1,4+1,3}{5}$.<br>Sumamos:<br>$1,2+1,3+1,2+1,4+1,3=6,4$.<br>Dividimos:<br>$\\bar{t}=\\frac{6,4}{5}=1,28 \\text{ s}$.<br>El valor medio del tiempo es $1,28 \\text{ s}$.",
+    "pista": "Cuando hay varias medidas de una misma magnitud, se suele usar el valor medio para reducir errores accidentales.",
+    "formula": "$$\\bar{x}=\\frac{x_1+x_2+\\cdots+x_n}{n}$$"
+  },
+  {
+    "asignatura": "Física 3º ESO",
+    "id": 3110,
+    "dificultad": "Superior",
+    "bloque": "Tema 1: Magnitudes, unidades y método científico",
+    "enunciado": "Ejercicio trampa: Un alumno dice que $5$ metros y $5$ segundos son cantidades comparables porque tienen el mismo número. Explica el error.",
+    "resolucion_latex": "El error está en fijarse solo en el número y olvidar la unidad.<br>$5$ metros es una medida de longitud, mientras que $5$ segundos es una medida de tiempo.<br>Aunque el número sea el mismo, representan magnitudes físicas distintas y no se pueden comparar directamente.<br>Una medida física siempre debe interpretarse como número más unidad:<br>$5\\text{ m}$ no significa lo mismo que $5\\text{ s}$.<br>Por tanto, no son cantidades comparables.",
+    "pista": "En Física, el número no tiene sentido completo sin la unidad.",
+    "formula": "$$\\text{medida}=\\text{valor numérico}+\\text{unidad}$$"
+  },
+  {
+    "asignatura": "Física 3º ESO",
+    "id": 3111,
+    "dificultad": "Básica",
+    "bloque": "Tema 2: Cinemática básica",
+    "enunciado": "Un ciclista recorre $120$ m en $10$ s. Calcula su velocidad media.",
+    "resolucion_latex": "La velocidad media se calcula dividiendo la distancia recorrida entre el tiempo empleado:<br>$v=\\frac{s}{t}$.<br>Sustituimos:<br>$v=\\frac{120}{10}=12 \\text{ m/s}$.<br>La velocidad media del ciclista es $12 \\text{ m/s}$.",
+    "pista": "La velocidad indica cuántos metros se recorren cada segundo.",
+    "formula": "$$v=\\frac{s}{t}$$"
+  },
+  {
+    "asignatura": "Física 3º ESO",
+    "id": 3112,
+    "dificultad": "Básica",
+    "bloque": "Tema 2: Cinemática básica",
+    "enunciado": "Un coche se mueve con velocidad constante de $15 \\text{ m/s}$ durante $20$ s. Calcula la distancia recorrida.",
+    "resolucion_latex": "En un movimiento rectilíneo uniforme, la distancia se calcula con:<br>$s=v\\cdot t$.<br>Sustituimos:<br>$s=15\\cdot 20=300 \\text{ m}$.<br>El coche recorre $300 \\text{ m}$.",
+    "pista": "Si la velocidad es constante, distancia es velocidad por tiempo.",
+    "formula": "$$s=v\\cdot t$$"
+  },
+  {
+    "asignatura": "Física 3º ESO",
+    "id": 3113,
+    "dificultad": "Básica",
+    "bloque": "Tema 2: Cinemática básica",
+    "enunciado": "Un móvil pasa de la posición $x_i=5$ m a la posición $x_f=18$ m. Calcula su desplazamiento.",
+    "resolucion_latex": "El desplazamiento se calcula restando la posición inicial a la posición final:<br>$\\Delta x=x_f-x_i$.<br>Sustituimos:<br>$\\Delta x=18-5=13 \\text{ m}$.<br>El desplazamiento es $13 \\text{ m}$.",
+    "pista": "El desplazamiento depende de la posición inicial y final, no necesariamente de todo el camino recorrido.",
+    "formula": "$$\\Delta x=x_f-x_i$$"
+  },
+  {
+    "asignatura": "Física 3º ESO",
+    "id": 3114,
+    "dificultad": "Media",
+    "bloque": "Tema 2: Cinemática básica",
+    "enunciado": "Un tren viaja a $90 \\text{ km/h}$. Convierte esta velocidad a $\\text{m/s}$.",
+    "resolucion_latex": "Para pasar de $\\text{km/h}$ a $\\text{m/s}$ dividimos entre $3,6$:<br>$v=\\frac{90}{3,6}=25 \\text{ m/s}$.<br>Por tanto:<br>$90 \\text{ km/h}=25 \\text{ m/s}$.",
+    "pista": "Recuerda: de $\\text{km/h}$ a $\\text{m/s}$ se divide entre $3,6$.",
+    "formula": "$$v(\\text{m/s})=\\frac{v(\\text{km/h})}{3,6}$$"
+  },
+  {
+    "asignatura": "Física 3º ESO",
+    "id": 3115,
+    "dificultad": "Media",
+    "bloque": "Tema 2: Cinemática básica",
+    "enunciado": "Un alumno camina $300$ m hacia el este y después $100$ m hacia el oeste. Calcula la distancia recorrida y el desplazamiento final.",
+    "resolucion_latex": "La distancia recorrida es todo el camino realizado:<br>$300+100=400 \\text{ m}$.<br><br>Para el desplazamiento, tomamos el este como positivo:<br>$\\Delta x=300-100=200 \\text{ m}$.<br>Por tanto, la distancia recorrida es $400 \\text{ m}$ y el desplazamiento final es $200 \\text{ m}$ hacia el este.",
+    "pista": "La distancia suma todo el camino. El desplazamiento solo mira desde dónde empieza hasta dónde acaba.",
+    "formula": "$$\\text{distancia}=\\text{camino total} \\quad ; \\quad \\Delta x=x_f-x_i$$"
+  },
+  {
+    "asignatura": "Física 3º ESO",
+    "id": 3116,
+    "dificultad": "Media",
+    "bloque": "Tema 2: Cinemática básica",
+    "enunciado": "Un coche circula con velocidad constante de $25 \\text{ m/s}$. ¿Cuánto tiempo tarda en recorrer $500$ m?",
+    "resolucion_latex": "Usamos la fórmula del movimiento rectilíneo uniforme:<br>$s=v\\cdot t$.<br>Despejamos el tiempo:<br>$t=\\frac{s}{v}$.<br>Sustituimos:<br>$t=\\frac{500}{25}=20 \\text{ s}$.<br>El coche tarda $20$ segundos.",
+    "pista": "Si conoces distancia y velocidad, divide distancia entre velocidad para obtener el tiempo.",
+    "formula": "$$t=\\frac{s}{v}$$"
+  },
+  {
+    "asignatura": "Física 3º ESO",
+    "id": 3117,
+    "dificultad": "Alta",
+    "bloque": "Tema 2: Cinemática básica",
+    "enunciado": "Dos pueblos están separados $18$ km. Un ciclista tarda $45$ minutos en ir de uno a otro. Calcula su velocidad media en $\\text{km/h}$ y en $\\text{m/s}$.",
+    "resolucion_latex": "Primero pasamos el tiempo a horas:<br>$45$ min $=\\frac{45}{60}=0,75$ h.<br>Calculamos la velocidad en $\\text{km/h}$:<br>$v=\\frac{s}{t}=\\frac{18}{0,75}=24 \\text{ km/h}$.<br>Ahora pasamos a $\\text{m/s}$ dividiendo entre $3,6$:<br>$24 \\text{ km/h}=\\frac{24}{3,6}=6,67 \\text{ m/s}$.<br>La velocidad media es $24 \\text{ km/h}$, aproximadamente $6,67 \\text{ m/s}$.",
+    "pista": "Convierte primero los minutos a horas si quieres calcular la velocidad en $\\text{km/h}$.",
+    "formula": "$$v=\\frac{s}{t} \\quad ; \\quad v(\\text{m/s})=\\frac{v(\\text{km/h})}{3,6}$$"
+  },
+  {
+    "asignatura": "Física 3º ESO",
+    "id": 3118,
+    "dificultad": "Alta",
+    "bloque": "Tema 2: Cinemática básica",
+    "enunciado": "Un coche A sale de una ciudad a $20 \\text{ m/s}$ y otro coche B sale del mismo punto $10$ segundos después a $30 \\text{ m/s}$ en la misma dirección. ¿Cuánto tiempo tarda B en alcanzar a A desde que sale B?",
+    "resolucion_latex": "Cuando sale B, el coche A ya lleva $10$ segundos moviéndose.<br>La ventaja inicial de A es:<br>$s_A=20\\cdot 10=200 \\text{ m}$.<br><br>La velocidad relativa de B respecto a A es:<br>$30-20=10 \\text{ m/s}$.<br>El tiempo que tarda B en recortar los $200$ m es:<br>$t=\\frac{200}{10}=20 \\text{ s}$.<br>Por tanto, B tarda $20$ segundos en alcanzar a A desde que sale B.",
+    "pista": "Calcula primero la ventaja que lleva A. Luego usa la diferencia de velocidades.",
+    "formula": "$$t=\\frac{\\text{ventaja inicial}}{v_B-v_A}$$"
+  },
+  {
+    "asignatura": "Física 3º ESO",
+    "id": 3119,
+    "dificultad": "Alta",
+    "bloque": "Tema 2: Cinemática básica",
+    "enunciado": "La posición de un móvil viene dada por $x=4t+2$, con $x$ en metros y $t$ en segundos. Indica su posición inicial, su velocidad y calcula la posición cuando $t=5$ s.",
+    "resolucion_latex": "La ecuación del MRU tiene la forma:<br>$x=x_0+vt$.<br>Comparando con $x=4t+2$, tenemos:<br>$x_0=2 \\text{ m}$ y $v=4 \\text{ m/s}$.<br><br>Calculamos la posición para $t=5$ s:<br>$x=4\\cdot 5+2=20+2=22 \\text{ m}$.<br>Por tanto, la posición inicial es $2$ m, la velocidad es $4 \\text{ m/s}$ y a los $5$ s está en $22$ m.",
+    "pista": "Compara la ecuación con la forma general $x=x_0+vt$.",
+    "formula": "$$x=x_0+vt$$"
+  },
+  {
+    "asignatura": "Física 3º ESO",
+    "id": 3120,
+    "dificultad": "Superior",
+    "bloque": "Tema 2: Cinemática básica",
+    "enunciado": "Ejercicio trampa: Un alumno afirma que distancia recorrida y desplazamiento son siempre lo mismo. Explica por qué es falso con un ejemplo.",
+    "resolucion_latex": "La afirmación es falsa porque la distancia recorrida mide todo el camino realizado, mientras que el desplazamiento solo mide el cambio entre la posición inicial y la final.<br>Por ejemplo, si una persona camina $100$ m hacia el norte y luego vuelve $100$ m al punto de partida, la distancia recorrida es:<br>$100+100=200 \\text{ m}$.<br>Pero el desplazamiento es $0$ m, porque termina en el mismo punto donde empezó.<br>Por tanto, distancia y desplazamiento no son siempre iguales.",
+    "pista": "Si vuelves al punto de partida, has recorrido camino, pero tu desplazamiento total es cero.",
+    "formula": "$$\\text{distancia recorrida}\\neq\\text{desplazamiento}$$"
+  },
+  {
+    "asignatura": "Física 3º ESO",
+    "id": 3121,
+    "dificultad": "Básica",
+    "bloque": "Tema 3: Fuerzas y efectos de las fuerzas",
+    "enunciado": "Indica si las siguientes situaciones son ejemplos de fuerza por contacto o fuerza a distancia: empujar una puerta, la gravedad que atrae una pelota, un imán que atrae un clip y tirar de una cuerda.",
+    "resolucion_latex": "Empujar una puerta es una fuerza por contacto, porque hay contacto físico entre la mano y la puerta.<br>La gravedad que atrae una pelota es una fuerza a distancia, porque actúa sin contacto directo.<br>Un imán que atrae un clip es una fuerza a distancia, porque el magnetismo puede actuar sin tocar el objeto.<br>Tirar de una cuerda es una fuerza por contacto, porque la mano está en contacto con la cuerda.<br>Por tanto:<br>Fuerzas por contacto: empujar una puerta y tirar de una cuerda.<br>Fuerzas a distancia: gravedad e imán.",
+    "pista": "Si los cuerpos se tocan, suele ser una fuerza por contacto. Si no se tocan, es una fuerza a distancia.",
+    "formula": "$$\\text{fuerza}=\\text{interacción entre cuerpos}$$"
+  },
+  {
+    "asignatura": "Física 3º ESO",
+    "id": 3122,
+    "dificultad": "Básica",
+    "bloque": "Tema 3: Fuerzas y efectos de las fuerzas",
+    "enunciado": "Calcula el peso de un cuerpo de masa $10 \\text{ kg}$ en la Tierra. Usa $g=9,8 \\text{ m/s}^2$.",
+    "resolucion_latex": "El peso se calcula multiplicando la masa por la gravedad:<br>$P=m\\cdot g$.<br>Sustituimos:<br>$P=10\\cdot 9,8=98 \\text{ N}$.<br>El peso del cuerpo es $98 \\text{ N}$.",
+    "pista": "La masa se mide en kilogramos, pero el peso es una fuerza y se mide en newtons.",
+    "formula": "$$P=m\\cdot g$$"
+  },
+  {
+    "asignatura": "Física 3º ESO",
+    "id": 3123,
+    "dificultad": "Básica",
+    "bloque": "Tema 3: Fuerzas y efectos de las fuerzas",
+    "enunciado": "Sobre una caja actúan dos fuerzas en la misma dirección y sentido: $12 \\text{ N}$ y $8 \\text{ N}$. Calcula la fuerza resultante.",
+    "resolucion_latex": "Cuando dos fuerzas actúan en la misma dirección y sentido, se suman:<br>$F_R=12+8=20 \\text{ N}$.<br>La fuerza resultante es $20 \\text{ N}$ en el mismo sentido que las fuerzas aplicadas.",
+    "pista": "Si las fuerzas empujan hacia el mismo lado, se suman.",
+    "formula": "$$F_R=F_1+F_2$$"
+  },
+  {
+    "asignatura": "Física 3º ESO",
+    "id": 3124,
+    "dificultad": "Media",
+    "bloque": "Tema 3: Fuerzas y efectos de las fuerzas",
+    "enunciado": "Sobre un cuerpo actúan dos fuerzas horizontales: $25 \\text{ N}$ hacia la derecha y $15 \\text{ N}$ hacia la izquierda. Calcula la fuerza resultante e indica su sentido.",
+    "resolucion_latex": "Como las fuerzas actúan en sentidos contrarios, se restan.<br>Tomamos como positivo el sentido hacia la derecha:<br>$F_R=25-15=10 \\text{ N}$.<br>La fuerza resultante es $10 \\text{ N}$ hacia la derecha, porque la fuerza mayor apunta hacia la derecha.",
+    "pista": "Si dos fuerzas tienen sentidos contrarios, gana la de mayor valor y se resta la menor.",
+    "formula": "$$F_R=F_{mayor}-F_{menor}$$"
+  },
+  {
+    "asignatura": "Física 3º ESO",
+    "id": 3125,
+    "dificultad": "Media",
+    "bloque": "Tema 3: Fuerzas y efectos de las fuerzas",
+    "enunciado": "Un muelle se alarga $0,04$ m cuando se le aplica una fuerza de $8 \\text{ N}$. Calcula la constante elástica del muelle.",
+    "resolucion_latex": "Usamos la ley de Hooke:<br>$F=k\\cdot x$.<br>Despejamos la constante elástica:<br>$k=\\frac{F}{x}$.<br>Sustituimos:<br>$k=\\frac{8}{0,04}=200 \\text{ N/m}$.<br>La constante elástica del muelle es $200 \\text{ N/m}$.",
+    "pista": "En la ley de Hooke, el alargamiento debe estar en metros.",
+    "formula": "$$F=kx$$"
+  },
+  {
+    "asignatura": "Física 3º ESO",
+    "id": 3126,
+    "dificultad": "Media",
+    "bloque": "Tema 3: Fuerzas y efectos de las fuerzas",
+    "enunciado": "Un cuerpo está en reposo sobre una mesa. Su peso es de $30 \\text{ N}$. ¿Cuánto vale la fuerza normal de la mesa sobre el cuerpo?",
+    "resolucion_latex": "Si el cuerpo está en reposo sobre una superficie horizontal, las fuerzas verticales están equilibradas.<br>El peso actúa hacia abajo y la normal actúa hacia arriba.<br>Por tanto, la normal debe tener el mismo valor que el peso:<br>$N=30 \\text{ N}$.<br>La fuerza normal vale $30 \\text{ N}$ hacia arriba.",
+    "pista": "Si no se hunde ni salta hacia arriba, las fuerzas verticales están equilibradas.",
+    "formula": "$$N=P\\quad \\text{en equilibrio horizontal}$$"
+  },
+  {
+    "asignatura": "Física 3º ESO",
+    "id": 3127,
+    "dificultad": "Alta",
+    "bloque": "Tema 3: Fuerzas y efectos de las fuerzas",
+    "enunciado": "Un muelle tiene constante elástica $k=150 \\text{ N/m}$. ¿Qué fuerza hay que aplicar para alargarlo $6$ cm?",
+    "resolucion_latex": "Primero pasamos el alargamiento a metros:<br>$6\\text{ cm}=0,06\\text{ m}$.<br>Usamos la ley de Hooke:<br>$F=kx$.<br>Sustituimos:<br>$F=150\\cdot 0,06=9 \\text{ N}$.<br>Hay que aplicar una fuerza de $9 \\text{ N}$.",
+    "pista": "Cuidado con las unidades: los centímetros deben convertirse a metros.",
+    "formula": "$$F=kx$$"
+  },
+  {
+    "asignatura": "Física 3º ESO",
+    "id": 3128,
+    "dificultad": "Alta",
+    "bloque": "Tema 3: Fuerzas y efectos de las fuerzas",
+    "enunciado": "Un objeto de masa $2 \\text{ kg}$ pesa $19,6 \\text{ N}$ en la Tierra. ¿Cuánto pesaría en la Luna, donde $g=1,6 \\text{ m/s}^2$? ¿Cambia su masa?",
+    "resolucion_latex": "El peso depende de la gravedad:<br>$P=m\\cdot g$.<br>En la Luna:<br>$P_L=2\\cdot 1,6=3,2 \\text{ N}$.<br>Por tanto, en la Luna pesaría $3,2 \\text{ N}$.<br><br>Su masa no cambia. La masa sigue siendo $2 \\text{ kg}$, porque la masa mide la cantidad de materia, mientras que el peso depende del lugar donde esté el cuerpo.",
+    "pista": "La masa no cambia al viajar a otro planeta o satélite, pero el peso sí porque cambia la gravedad.",
+    "formula": "$$P=m\\cdot g$$"
+  },
+  {
+    "asignatura": "Física 3º ESO",
+    "id": 3129,
+    "dificultad": "Alta",
+    "bloque": "Tema 3: Fuerzas y efectos de las fuerzas",
+    "enunciado": "Sobre una caja actúan tres fuerzas horizontales: $40 \\text{ N}$ hacia la derecha, $15 \\text{ N}$ hacia la izquierda y $10 \\text{ N}$ hacia la izquierda. Calcula la fuerza resultante e indica si la caja está en equilibrio.",
+    "resolucion_latex": "Tomamos como positivo el sentido hacia la derecha.<br>La fuerza hacia la derecha es $+40 \\text{ N}$.<br>Las fuerzas hacia la izquierda son $-15 \\text{ N}$ y $-10 \\text{ N}$.<br>Sumamos:<br>$F_R=40-15-10=15 \\text{ N}$.<br>La fuerza resultante es $15 \\text{ N}$ hacia la derecha.<br>Como la fuerza resultante no es cero, la caja no está en equilibrio.",
+    "pista": "Un cuerpo está en equilibrio si la fuerza resultante total es cero.",
+    "formula": "$$F_R=\\sum F \\quad ; \\quad F_R=0\\Rightarrow \\text{equilibrio}$$"
+  },
+  {
+    "asignatura": "Física 3º ESO",
+    "id": 3130,
+    "dificultad": "Superior",
+    "bloque": "Tema 3: Fuerzas y efectos de las fuerzas",
+    "enunciado": "Ejercicio trampa: Un alumno afirma que si un objeto está en reposo, no actúa ninguna fuerza sobre él. Explica el error usando el ejemplo de un libro apoyado sobre una mesa.",
+    "resolucion_latex": "El error está en confundir reposo con ausencia de fuerzas.<br>Un objeto puede estar en reposo aunque actúen fuerzas sobre él, siempre que esas fuerzas estén equilibradas.<br>Por ejemplo, un libro sobre una mesa tiene peso hacia abajo debido a la gravedad. Además, la mesa ejerce una fuerza normal hacia arriba.<br>Si el libro está en reposo, ambas fuerzas tienen el mismo valor y sentidos contrarios:<br>$N=P$.<br>La fuerza resultante es cero, pero eso no significa que no haya fuerzas. Significa que están equilibradas.",
+    "pista": "Reposo no significa ausencia de fuerzas; puede significar equilibrio de fuerzas.",
+    "formula": "$$F_R=0\\neq \\text{ausencia de fuerzas}$$"
+  },
+  {
+    "asignatura": "Física 3º ESO",
+    "id": 3131,
+    "dificultad": "Básica",
+    "bloque": "Tema 4: Energía, trabajo y potencia básica",
+    "enunciado": "Calcula la energía cinética de un cuerpo de masa $2 \\text{ kg}$ que se mueve a $5 \\text{ m/s}$.",
+    "resolucion_latex": "La energía cinética se calcula con:<br>$E_c=\\frac{1}{2}mv^2$.<br>Sustituimos:<br>$E_c=\\frac{1}{2}\\cdot 2\\cdot 5^2$.<br>$E_c=1\\cdot 25=25 \\text{ J}$.<br>La energía cinética del cuerpo es $25 \\text{ J}$.",
+    "pista": "La energía cinética es la energía asociada al movimiento.",
+    "formula": "$$E_c=\\frac{1}{2}mv^2$$"
+  },
+  {
+    "asignatura": "Física 3º ESO",
+    "id": 3132,
+    "dificultad": "Básica",
+    "bloque": "Tema 4: Energía, trabajo y potencia básica",
+    "enunciado": "Calcula la energía potencial gravitatoria de un objeto de masa $3 \\text{ kg}$ situado a $4$ m de altura. Usa $g=9,8 \\text{ m/s}^2$.",
+    "resolucion_latex": "La energía potencial gravitatoria se calcula con:<br>$E_p=mgh$.<br>Sustituimos:<br>$E_p=3\\cdot 9,8\\cdot 4$.<br>$E_p=117,6 \\text{ J}$.<br>La energía potencial gravitatoria es $117,6 \\text{ J}$.",
+    "pista": "Cuanto mayor sea la altura, mayor será la energía potencial gravitatoria.",
+    "formula": "$$E_p=mgh$$"
+  },
+  {
+    "asignatura": "Física 3º ESO",
+    "id": 3133,
+    "dificultad": "Básica",
+    "bloque": "Tema 4: Energía, trabajo y potencia básica",
+    "enunciado": "Una fuerza de $20 \\text{ N}$ desplaza una caja $3$ m en la misma dirección y sentido. Calcula el trabajo realizado.",
+    "resolucion_latex": "Si la fuerza y el desplazamiento tienen la misma dirección y sentido, el trabajo es:<br>$W=F\\cdot d$.<br>Sustituimos:<br>$W=20\\cdot 3=60 \\text{ J}$.<br>El trabajo realizado es $60 \\text{ J}$.",
+    "pista": "Cuando la fuerza va en el mismo sentido que el desplazamiento, el trabajo es positivo.",
+    "formula": "$$W=F\\cdot d$$"
+  },
+  {
+    "asignatura": "Física 3º ESO",
+    "id": 3134,
+    "dificultad": "Media",
+    "bloque": "Tema 4: Energía, trabajo y potencia básica",
+    "enunciado": "Un cuerpo tiene $40 \\text{ J}$ de energía cinética y $60 \\text{ J}$ de energía potencial. Calcula su energía mecánica.",
+    "resolucion_latex": "La energía mecánica es la suma de la energía cinética y la energía potencial:<br>$E_m=E_c+E_p$.<br>Sustituimos:<br>$E_m=40+60=100 \\text{ J}$.<br>La energía mecánica total es $100 \\text{ J}$.",
+    "pista": "La energía mecánica total combina movimiento y altura.",
+    "formula": "$$E_m=E_c+E_p$$"
+  },
+  {
+    "asignatura": "Física 3º ESO",
+    "id": 3135,
+    "dificultad": "Media",
+    "bloque": "Tema 4: Energía, trabajo y potencia básica",
+    "enunciado": "Una máquina realiza un trabajo de $500 \\text{ J}$ en $10$ segundos. Calcula su potencia.",
+    "resolucion_latex": "La potencia se calcula dividiendo el trabajo entre el tiempo:<br>$P=\\frac{W}{t}$.<br>Sustituimos:<br>$P=\\frac{500}{10}=50 \\text{ W}$.<br>La potencia de la máquina es $50 \\text{ W}$.",
+    "pista": "La potencia mide la rapidez con la que se realiza un trabajo.",
+    "formula": "$$P=\\frac{W}{t}$$"
+  },
+  {
+    "asignatura": "Física 3º ESO",
+    "id": 3136,
+    "dificultad": "Media",
+    "bloque": "Tema 4: Energía, trabajo y potencia básica",
+    "enunciado": "Un cuerpo de $5 \\text{ kg}$ se encuentra a $2$ m de altura y se mueve a $4 \\text{ m/s}$. Calcula su energía cinética, potencial y mecánica. Usa $g=9,8 \\text{ m/s}^2$.",
+    "resolucion_latex": "Calculamos la energía cinética:<br>$E_c=\\frac{1}{2}mv^2=\\frac{1}{2}\\cdot 5\\cdot 4^2$.<br>$E_c=2,5\\cdot 16=40 \\text{ J}$.<br><br>Calculamos la energía potencial:<br>$E_p=mgh=5\\cdot 9,8\\cdot 2=98 \\text{ J}$.<br><br>La energía mecánica es:<br>$E_m=E_c+E_p=40+98=138 \\text{ J}$.<br>Por tanto, $E_c=40 \\text{ J}$, $E_p=98 \\text{ J}$ y $E_m=138 \\text{ J}$.",
+    "pista": "Calcula por separado la energía de movimiento y la energía de altura.",
+    "formula": "$$E_m=E_c+E_p$$"
+  },
+  {
+    "asignatura": "Física 3º ESO",
+    "id": 3137,
+    "dificultad": "Alta",
+    "bloque": "Tema 4: Energía, trabajo y potencia básica",
+    "enunciado": "Una grúa eleva una caja de $40 \\text{ kg}$ hasta una altura de $5$ m. Calcula el trabajo realizado contra la gravedad. Usa $g=9,8 \\text{ m/s}^2$.",
+    "resolucion_latex": "El trabajo realizado para elevar la caja se transforma en energía potencial gravitatoria:<br>$W=mgh$.<br>Sustituimos:<br>$W=40\\cdot 9,8\\cdot 5$.<br>$W=1960 \\text{ J}$.<br>El trabajo realizado contra la gravedad es $1960 \\text{ J}$.",
+    "pista": "Elevar un cuerpo aumenta su energía potencial gravitatoria.",
+    "formula": "$$W=mgh$$"
+  },
+  {
+    "asignatura": "Física 3º ESO",
+    "id": 3138,
+    "dificultad": "Alta",
+    "bloque": "Tema 4: Energía, trabajo y potencia básica",
+    "enunciado": "Una bombilla consume $6000 \\text{ J}$ de energía en $120$ segundos. Calcula su potencia.",
+    "resolucion_latex": "La potencia se calcula como energía dividida entre tiempo:<br>$P=\\frac{E}{t}$.<br>Sustituimos:<br>$P=\\frac{6000}{120}=50 \\text{ W}$.<br>La potencia de la bombilla es $50 \\text{ W}$.",
+    "pista": "En electricidad, también puedes calcular potencia como energía consumida entre tiempo.",
+    "formula": "$$P=\\frac{E}{t}$$"
+  },
+  {
+    "asignatura": "Física 3º ESO",
+    "id": 3139,
+    "dificultad": "Alta",
+    "bloque": "Tema 4: Energía, trabajo y potencia básica",
+    "enunciado": "Un cuerpo de $2 \\text{ kg}$ cae desde una altura de $10$ m. Despreciando el rozamiento, calcula su energía potencial inicial y explica en qué se transforma al caer. Usa $g=9,8 \\text{ m/s}^2$.",
+    "resolucion_latex": "Calculamos la energía potencial inicial:<br>$E_p=mgh=2\\cdot 9,8\\cdot 10=196 \\text{ J}$.<br>Al caer, si despreciamos el rozamiento, la energía potencial gravitatoria se transforma progresivamente en energía cinética.<br>Justo antes de llegar al suelo, casi toda esa energía será energía cinética.<br>Por tanto, la energía potencial inicial es $196 \\text{ J}$ y se transforma en energía cinética durante la caída.",
+    "pista": "En una caída sin rozamiento, se conserva la energía mecánica.",
+    "formula": "$$E_p\\rightarrow E_c$$"
+  },
+  {
+    "asignatura": "Física 3º ESO",
+    "id": 3140,
+    "dificultad": "Superior",
+    "bloque": "Tema 4: Energía, trabajo y potencia básica",
+    "enunciado": "Ejercicio trampa: Un alumno afirma que si se aplica una fuerza sobre un objeto, siempre se realiza trabajo. Explica por qué no siempre es cierto.",
+    "resolucion_latex": "La afirmación no siempre es cierta porque para que una fuerza realice trabajo debe producirse un desplazamiento en la dirección de la fuerza.<br>Si empujamos una pared con mucha fuerza y la pared no se mueve, el desplazamiento es cero.<br>Entonces:<br>$W=F\\cdot d$.<br>Como $d=0$, tenemos:<br>$W=F\\cdot 0=0$.<br>Por tanto, puede haber fuerza sin que haya trabajo físico.",
+    "pista": "En Física, trabajo no significa esfuerzo: necesita fuerza y desplazamiento.",
+    "formula": "$$W=F\\cdot d$$"
+  },
+  {
+    "asignatura": "Física 3º ESO",
+    "id": 3141,
+    "dificultad": "Básica",
+    "bloque": "Tema 5: Electricidad básica",
+    "enunciado": "Indica qué magnitud eléctrica representa cada unidad: voltio ($\\text{V}$), amperio ($\\text{A}$), ohmio ($\\Omega$) y vatio ($\\text{W}$).",
+    "resolucion_latex": "El voltio ($\\text{V}$) es la unidad de tensión o voltaje.<br>El amperio ($\\text{A}$) es la unidad de intensidad de corriente eléctrica.<br>El ohmio ($\\Omega$) es la unidad de resistencia eléctrica.<br>El vatio ($\\text{W}$) es la unidad de potencia.<br>Por tanto:<br>$\\text{V}$: voltaje.<br>$\\text{A}$: intensidad.<br>$\\Omega$: resistencia.<br>$\\text{W}$: potencia.",
+    "pista": "Recuerda la ley de Ohm: relaciona voltaje, intensidad y resistencia.",
+    "formula": "$$V=I\\cdot R$$"
+  },
+  {
+    "asignatura": "Física 3º ESO",
+    "id": 3142,
+    "dificultad": "Básica",
+    "bloque": "Tema 5: Electricidad básica",
+    "enunciado": "Un circuito tiene una resistencia de $6\\ \\Omega$ y circula una corriente de $2\\ \\text{A}$. Calcula el voltaje.",
+    "resolucion_latex": "Aplicamos la ley de Ohm:<br>$V=I\\cdot R$.<br>Sustituimos:<br>$V=2\\cdot 6=12\\ \\text{V}$.<br>El voltaje del circuito es $12\\ \\text{V}$.",
+    "pista": "Multiplica la intensidad por la resistencia.",
+    "formula": "$$V=I\\cdot R$$"
+  },
+  {
+    "asignatura": "Física 3º ESO",
+    "id": 3143,
+    "dificultad": "Básica",
+    "bloque": "Tema 5: Electricidad básica",
+    "enunciado": "Una bombilla funciona con $12\\ \\text{V}$ y tiene una resistencia de $4\\ \\Omega$. Calcula la intensidad de corriente que circula por ella.",
+    "resolucion_latex": "Usamos la ley de Ohm:<br>$V=I\\cdot R$.<br>Despejamos la intensidad:<br>$I=\\frac{V}{R}$.<br>Sustituimos:<br>$I=\\frac{12}{4}=3\\ \\text{A}$.<br>La intensidad de corriente es $3\\ \\text{A}$.",
+    "pista": "Si conoces voltaje y resistencia, divide voltaje entre resistencia.",
+    "formula": "$$I=\\frac{V}{R}$$"
+  },
+  {
+    "asignatura": "Física 3º ESO",
+    "id": 3144,
+    "dificultad": "Media",
+    "bloque": "Tema 5: Electricidad básica",
+    "enunciado": "Por una resistencia circula una corriente de $0,5\\ \\text{A}$ cuando se conecta a una pila de $9\\ \\text{V}$. Calcula la resistencia.",
+    "resolucion_latex": "Aplicamos la ley de Ohm:<br>$V=I\\cdot R$.<br>Despejamos la resistencia:<br>$R=\\frac{V}{I}$.<br>Sustituimos:<br>$R=\\frac{9}{0,5}=18\\ \\Omega$.<br>La resistencia vale $18\\ \\Omega$.",
+    "pista": "La resistencia se obtiene dividiendo el voltaje entre la intensidad.",
+    "formula": "$$R=\\frac{V}{I}$$"
+  },
+  {
+    "asignatura": "Física 3º ESO",
+    "id": 3145,
+    "dificultad": "Media",
+    "bloque": "Tema 5: Electricidad básica",
+    "enunciado": "Calcula la resistencia equivalente de dos resistencias en serie de $4\\ \\Omega$ y $6\\ \\Omega$.",
+    "resolucion_latex": "En una asociación de resistencias en serie, la resistencia equivalente es la suma de las resistencias:<br>$R_{eq}=R_1+R_2$.<br>Sustituimos:<br>$R_{eq}=4+6=10\\ \\Omega$.<br>La resistencia equivalente es $10\\ \\Omega$.",
+    "pista": "En serie, las resistencias se suman directamente.",
+    "formula": "$$R_{eq}=R_1+R_2$$"
+  },
+  {
+    "asignatura": "Física 3º ESO",
+    "id": 3146,
+    "dificultad": "Media",
+    "bloque": "Tema 5: Electricidad básica",
+    "enunciado": "Calcula la potencia de un aparato eléctrico que funciona a $230\\ \\text{V}$ y por el que circula una corriente de $2\\ \\text{A}$.",
+    "resolucion_latex": "La potencia eléctrica se calcula con:<br>$P=V\\cdot I$.<br>Sustituimos:<br>$P=230\\cdot 2=460\\ \\text{W}$.<br>La potencia del aparato es $460\\ \\text{W}$.",
+    "pista": "La potencia eléctrica depende del voltaje y de la intensidad.",
+    "formula": "$$P=V\\cdot I$$"
+  },
+  {
+    "asignatura": "Física 3º ESO",
+    "id": 3147,
+    "dificultad": "Alta",
+    "bloque": "Tema 5: Electricidad básica",
+    "enunciado": "Un circuito tiene tres resistencias en serie de $2\\ \\Omega$, $3\\ \\Omega$ y $5\\ \\Omega$, conectadas a una pila de $20\\ \\text{V}$. Calcula la resistencia equivalente y la intensidad que circula por el circuito.",
+    "resolucion_latex": "Primero calculamos la resistencia equivalente en serie:<br>$R_{eq}=R_1+R_2+R_3$.<br>$R_{eq}=2+3+5=10\\ \\Omega$.<br><br>Ahora usamos la ley de Ohm:<br>$I=\\frac{V}{R}$.<br>Sustituimos:<br>$I=\\frac{20}{10}=2\\ \\text{A}$.<br>La resistencia equivalente es $10\\ \\Omega$ y la intensidad es $2\\ \\text{A}$.",
+    "pista": "Primero reduce el circuito a una sola resistencia equivalente y después aplica la ley de Ohm.",
+    "formula": "$$R_{eq}=R_1+R_2+R_3 \\quad ; \\quad I=\\frac{V}{R}$$"
+  },
+  {
+    "asignatura": "Física 3º ESO",
+    "id": 3148,
+    "dificultad": "Alta",
+    "bloque": "Tema 5: Electricidad básica",
+    "enunciado": "Una bombilla de $60\\ \\text{W}$ está encendida durante $5$ horas. Calcula la energía consumida en $\\text{Wh}$ y en $\\text{kWh}$.",
+    "resolucion_latex": "La energía eléctrica consumida se calcula con:<br>$E=P\\cdot t$.<br>Sustituimos:<br>$E=60\\cdot 5=300\\ \\text{Wh}$.<br>Para pasar de $\\text{Wh}$ a $\\text{kWh}$ dividimos entre $1000$:<br>$300\\ \\text{Wh}=\\frac{300}{1000}=0,3\\ \\text{kWh}$.<br>La bombilla consume $300\\ \\text{Wh}$, es decir, $0,3\\ \\text{kWh}$.",
+    "pista": "El consumo eléctrico doméstico suele medirse en kilovatios hora.",
+    "formula": "$$E=P\\cdot t$$"
+  },
+  {
+    "asignatura": "Física 3º ESO",
+    "id": 3149,
+    "dificultad": "Alta",
+    "bloque": "Tema 5: Electricidad básica",
+    "enunciado": "Un aparato consume $1,2\\ \\text{kWh}$ al día. Si el precio de la electricidad es $0,20\\ € /\\text{kWh}$, calcula el coste diario y el coste en $30$ días.",
+    "resolucion_latex": "El coste se calcula multiplicando la energía consumida por el precio de cada $\\text{kWh}$.<br>Coste diario:<br>$1,2\\cdot 0,20=0,24\\ €$.<br><br>Coste en $30$ días:<br>$0,24\\cdot 30=7,20\\ €$.<br>El coste diario es $0,24\\ €$ y el coste en $30$ días es $7,20\\ €$.",
+    "pista": "Multiplica los kilovatios hora consumidos por el precio de cada kilovatio hora.",
+    "formula": "$$\\text{coste}=E\\cdot \\text{precio por kWh}$$"
+  },
+  {
+    "asignatura": "Física 3º ESO",
+    "id": 3150,
+    "dificultad": "Superior",
+    "bloque": "Tema 5: Electricidad básica",
+    "enunciado": "Ejercicio trampa: Un alumno afirma que una pila de más voltaje siempre es segura porque solo el voltaje importa. Explica por qué esta afirmación es peligrosa e incorrecta.",
+    "resolucion_latex": "La afirmación es incorrecta porque en la seguridad eléctrica no importa solo el voltaje. También importa la intensidad que puede circular por el cuerpo, la resistencia del cuerpo, el tiempo de contacto y el camino que sigue la corriente.<br>Según la ley de Ohm:<br>$I=\\frac{V}{R}$.<br>Si el voltaje es alto o la resistencia del cuerpo disminuye, por ejemplo por humedad, la intensidad puede aumentar y resultar peligrosa.<br>Por tanto, no se debe considerar seguro un circuito solo fijándose en el voltaje. La electricidad debe manipularse siempre con precaución.",
+    "pista": "El peligro eléctrico está muy relacionado con la intensidad que atraviesa el cuerpo.",
+    "formula": "$$I=\\frac{V}{R}$$"
+  }
+]

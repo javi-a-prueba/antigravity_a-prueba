@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A-PRUEBA | Onboarding</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        :root {
+            --neon-math: #00f2fe;
+            --neon-physics: #ff4500;
+            --neon-chemistry: #00ff88;
+        }
+
+        body {
+            background: #0B0E14;
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow-x: hidden;
+            position: relative;
+            animation: fadeIn 1.5s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Ambient Stars/Nebula */
+        .nebula {
+            position: absolute;
+            width: 800px;
+            height: 800px;
+            background: radial-gradient(circle, rgba(138, 43, 226, 0.15) 0%, transparent 70%);
+            top: -200px;
+            left: -200px;
+            border-radius: 50%;
+            pointer-events: none;
+        }
+
+        .nebula2 {
+            position: absolute;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(43, 107, 226, 0.15) 0%, transparent 70%);
+            bottom: -100px;
+            right: -100px;
+            border-radius: 50%;
+            pointer-events: none;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            padding: 2rem;
+            margin-top: 100px;
+            z-index: 10;
+            flex: 1;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        header h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            letter-spacing: 4px;
+            background: linear-gradient(90deg, #00f2fe 0%, #4facfe 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 1rem;
+            text-shadow: 0 0 30px rgba(79, 172, 254, 0.3);
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: #a0a0b8;
+            font-weight: 300;
+        }
+
+        .glass-panel {
+            background: rgba(20, 20, 35, 0.4);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 24px;
+            padding: 3rem;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .form-row {
+            display: flex;
+            gap: 2rem;
+            margin-bottom: 3rem;
+            flex-wrap: wrap;
+        }
+
+        .input-group {
+            flex: 1;
+            min-width: 250px;
+        }
+
+        .input-group label {
+            display: block;
+            margin-bottom: 0.8rem;
+            font-size: 0.9rem;
+            color: #b8b8d0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        select {
+            width: 100%;
+            padding: 1rem 1.5rem;
+            background-color: rgba(20, 20, 35, 0.6);
+            background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2300f2fe' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 1.5rem center;
+            background-size: 1em;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 12px;
+            color: white;
+            font-size: 1.1rem;
+            outline: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            appearance: none;
+            -webkit-appearance: none;
+            backdrop-filter: blur(10px);
+        }
+
+        select:focus,
+        select:hover {
+            border-color: #00f2fe;
+            box-shadow: 0 0 20px rgba(0, 242, 254, 0.3);
+            background-color: rgba(30, 30, 50, 0.8);
+        }
+
+        select option {
+            background-color: #1a0b2e;
+            color: #fff;
+            padding: 1rem;
+        }
+
+        .profile-cards {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .profile-cards {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Freemium Banner */
+        .freemium-banner {
+            background: linear-gradient(90deg, rgba(255, 42, 85, 0.15) 0%, rgba(138, 43, 226, 0.3) 50%, rgba(0, 242, 254, 0.15) 100%);
+            border: 1px solid rgba(138, 43, 226, 0.5);
+            border-radius: 16px;
+            padding: 1.5rem;
+            text-align: center;
+            margin-bottom: 3rem;
+            box-shadow: 0 0 30px rgba(138, 43, 226, 0.2);
+            animation: pulse-border 2s infinite alternate;
+        }
+
+        .freemium-banner h2 {
+            font-size: 1.5rem;
+            color: #fff;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+        }
+
+        .freemium-banner span {
+            color: #00f2fe;
+            font-weight: 700;
+        }
+
+        @keyframes pulse-border {
+            from {
+                box-shadow: 0 0 20px rgba(138, 43, 226, 0.1);
+                border-color: rgba(138, 43, 226, 0.3);
+            }
+
+            to {
+                box-shadow: 0 0 40px rgba(138, 43, 226, 0.5);
+                border-color: rgba(138, 43, 226, 0.8);
+            }
+        }
+
+        /* How it works */
+        .how-it-works {
+            margin-top: 6rem;
+            margin-bottom: 4rem;
+            text-align: center;
+        }
+
+        .how-it-works h2 {
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: #fff;
+        }
+
+        .steps-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .step-card {
+            background: rgba(20, 20, 35, 0.4);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 20px;
+            padding: 2.5rem 2rem;
+            backdrop-filter: blur(10px);
+            text-align: center;
+        }
+
+        .step-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .step-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            color: #b9f2ff;
+        }
+
+        .step-card p {
+            color: #a0a0b8;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        /* Fade-in Animation */
+        .fade-in-section {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+            will-change: opacity, visibility;
+        }
+
+        .fade-in-section.is-visible {
+            opacity: 1;
+            transform: none;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 20px;
+            padding: 2.5rem 2rem;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            opacity: 0;
+            transition: opacity 0.4s ease;
+            z-index: -1;
+        }
+
+        .card.ambitious::before {
+            background: radial-gradient(circle at center, rgba(255, 42, 85, 0.15) 0%, transparent 70%);
+        }
+
+        .card.support::before {
+            background: radial-gradient(circle at center, rgba(45, 110, 255, 0.15) 0%, transparent 70%);
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .card:hover::before {
+            opacity: 1;
+        }
+
+        .card.ambitious:hover {
+            box-shadow: 0 10px 30px rgba(255, 42, 85, 0.2);
+            border-color: rgba(255, 42, 85, 0.5);
+        }
+
+        .card.support:hover {
+            box-shadow: 0 10px 30px rgba(45, 110, 255, 0.2);
+            border-color: rgba(45, 110, 255, 0.5);
+        }
+
+        .card.ambitious.selected {
+            transform: translateY(-10px);
+            border-color: rgba(255, 42, 85, 0.8) !important;
+            box-shadow: 0 10px 30px rgba(255, 42, 85, 0.4);
+        }
+
+        .card.ambitious.selected::before {
+            opacity: 1;
+        }
+
+        .card.support.selected {
+            transform: translateY(-10px);
+            border-color: rgba(45, 110, 255, 0.8) !important;
+            box-shadow: 0 10px 30px rgba(45, 110, 255, 0.4);
+        }
+
+        .card.support.selected::before {
+            opacity: 1;
+        }
+
+        .icon {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .card p {
+            color: #a0a0b8;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        .action-container {
+            text-align: center;
+            margin-top: 3rem;
+        }
+
+        .btn-enter {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            color: #000;
+            border: none;
+            padding: 1.2rem 4rem;
+            font-size: 1.2rem;
+            font-weight: 700;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 20px rgba(79, 172, 254, 0.4);
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-enter:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 30px rgba(79, 172, 254, 0.6);
+        }
+
+        /* Navbar & Footer */
+        .navbar {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            padding: 1.5rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(10, 5, 25, 0.4);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            z-index: 100;
+        }
+
+        .nav-brand {
+            font-size: 1.5rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            background: linear-gradient(90deg, #00f2fe 0%, #4facfe 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: #b8b8d0;
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: #00f2fe;
+            text-shadow: 0 0 10px rgba(0, 242, 254, 0.5);
+        }
+
+        .footer {
+            margin-top: auto;
+            position: relative;
+            width: 100%;
+            padding: 1.5rem;
+            text-align: center;
+            background: rgba(10, 5, 25, 0.4);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            z-index: 100;
+        }
+
+        .footer p {
+            font-size: 0.85rem;
+            color: #8888a0;
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+        }
+
+        .footer-links a {
+            color: #a0a0b8;
+            text-decoration: none;
+            font-size: 0.8rem;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: #00f2fe;
+        }
+
+        /* Brillo Estelar Prominente Movido a las Vistas Internas exclusivas */
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="nav-brand">A-PRUEBA</a>
+
+        <div class="nav-links">
+            <a href="index.html" class="active">Inicio</a>
+            <a href="mapa.html">Mapa</a>
+            <a href="perfil.html">Perfil</a>
+            <a href="config.html">Configuración</a>
+        </div>
+    </nav>
+
+    <div class="nebula"></div>
+    <div class="nebula2"></div>
+
+    <div class="container">
+        <header class="fade-in-section">
+            <h1>A-PRUEBA</h1>
+            <p>El portal de tu futuro académico. Prepárate para el salto hiperespacial.</p>
+        </header>
+
+        <div class="freemium-banner fade-in-section">
+            <h2>Inicia tu misión espacial: ¡Elige tu asignatura y desbloquea el primer tema <span>100% GRATIS</span>!
+            </h2>
+        </div>
+
+        <div class="glass-panel fade-in-section">
+            <div class="form-row">
+                <div class="input-group">
+                    <label for="comunidad">Sistema de coordenadas (CCAA)</label>
+                    <select id="comunidad">
+                        <option value="" disabled selected>Elige tu Comunidad Autónoma...</option>
+                        <!-- CCAA con datos en Firestore -->
+                        <option value="andalucia">Andalucía</option>
+                        <option value="aragon">Aragón</option>
+                        <option value="asturias">Asturias</option>
+                        <option value="cantabria">Cantabria</option>
+                        <option value="castilla-la-mancha">Castilla-La Mancha</option>
+                        <option value="cataluna">Cataluña</option>
+                        <option value="comunidad-valenciana">C. Valenciana</option>
+                        <option value="galicia">Galicia</option>
+                        <option value="madrid">Madrid</option>
+                        <option value="murcia">Murcia</option>
+                        <option value="pais-vasco">País Vasco</option>
+                        <!-- Próximamente -->
+                        <option value="" disabled>── Próximamente ──</option>
+                        <option value="" disabled>Baleares</option>
+                        <option value="" disabled>Canarias</option>
+                        <option value="castilla-y-leon" disabled>Castilla y León</option>
+                        <option value="" disabled>Extremadura</option>
+                        <option value="" disabled>La Rioja</option>
+                        <option value="" disabled>Navarra</option>
+                        <option value="" disabled>Ceuta / Melilla</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="curso">Selecciona tu nivel</label>
+                    <select id="curso">
+                        <option value="" disabled selected>Elige un curso...</option>
+                        <option value="2eso">2º ESO</option>
+                        <option value="3eso">3º ESO</option>
+                        <option value="4eso">4º ESO</option>
+                        <option value="1bach">1º Bachillerato</option>
+                        <option value="2_bachillerato">2º Bachillerato / EvAU</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="asignatura">Elige tu Misión (Asignatura)</label>
+                    <select id="asignatura" onchange="actualizarColorAsig(this.value)">
+                        <option value="" disabled selected>Selecciona Asignatura...</option>
+                        <option value="fisica">&#9883;&#65039; Física</option>
+                        <option value="mates">&#128208; Matemáticas</option>
+                        <option value="quimica">&#129514; Química</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="input-group" style="text-align: center; margin-bottom: 2rem;">
+                <label style="font-size: 1.2rem; color: #fff;">Elige tu perfil de misión</label>
+            </div>
+
+            <div class="profile-cards">
+                <div class="card ambitious">
+                    <div class="icon">🚀</div>
+                    <h3>Quiero mejorar mi nivel</h3>
+                    <p>Enfoque ambicioso. Adelanta el temario, domina conceptos complejos y apunta a la excelencia
+                        académica.</p>
+                </div>
+                <div class="card support">
+                    <div class="icon">🛡️</div>
+                    <h3>Quiero reforzar mi nivel</h3>
+                    <p>Enfoque de apoyo. Asegura el aprobado, consolida las bases y avanza con seguridad a tu ritmo.</p>
+                </div>
+            </div>
+
+            <div class="action-container">
+                <button id="btnIgnicion" class="btn-enter">INICIAR IGNICIÓN</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="config.js"></script>
+    <script>
+        // Visual selection logic globally available
+        window.selectedProfile = null;
+
+        // ── MAPA DE COLORES NEÓN POR ASIGNATURA ─────────────────────────────────
+        // Define el color neón visual de cada asignatura. Este mismo mapa
+        // se replica en mapa.html y estudio.html para mantener coherencia visual.
+        const NEON_COLORS = {
+            'fisica': '#ff4500',
+            'mates': '#00f2fe',
+            'quimica': '#00ff88'
+        };
+
+        // Actualiza el color del selector de asignatura al cambiar
+        window.actualizarColorAsig = function (val) {
+            const color = NEON_COLORS[val] || '#00f2fe';
+            const sel = document.getElementById('asignatura');
+            sel.style.borderColor = color;
+            sel.style.boxShadow = `0 0 10px ${color}66`;
+            document.documentElement.style.setProperty('--current-neon', color);
+        };
+
+        document.addEventListener("DOMContentLoaded", () => {
+            document.querySelectorAll('.card').forEach(card => {
+                card.addEventListener('click', () => {
+                    document.querySelectorAll('.card').forEach(c => c.classList.remove('selected'));
+                    card.classList.add('selected');
+                    if (card.classList.contains('ambitious')) {
+                        window.selectedProfile = 'ambitious';
+                    } else if (card.classList.contains('support')) {
+                        window.selectedProfile = 'support';
+                    }
+                });
+            });
+        });
+    </script>
+
+    <script type="module">
+        import { auth, db, doc, setDoc, onAuthStateChanged } from './firebase-config.js';
+
+        let currentUser = null;
+
+        // ── ROUTE GUARD: Protección de ruta ───────────────────────────────────────
+        // Si el usuario no está autenticado, se redirige inmediatamente a login.html.
+        // Solo los usuarios logueados pueden ver y usar el onboarding.
+        onAuthStateChanged(auth, (user) => {
+            if (!user) {
+                window.location.href = 'login.html';
+            } else {
+                currentUser = user;
+            }
+        });
+
+        const btnIgnicion = document.getElementById('btnIgnicion');
+        btnIgnicion.addEventListener('click', async (event) => {
+            event.preventDefault();
+            const curso = document.getElementById('curso').value;
+            const comunidad = document.getElementById('comunidad').value;
+            const asignatura = document.getElementById('asignatura').value;
+
+            if (!curso || !comunidad || !asignatura || !window.selectedProfile) {
+                alert('Por favor, selecciona tu curso, comunidad, asignatura y perfil para continuar la misión.');
+                return;
+            }
+
+            if (!currentUser) {
+                alert('Error crítico de autenticación. Por favor, reinicia la sesión.');
+                window.location.href = 'login.html';
+                return;
+            }
+
+            btnIgnicion.innerText = 'CALIBRANDO SISTEMAS...';
+            btnIgnicion.style.pointerEvents = 'none';
+
+            // ── GUARDADO EN FIRESTORE + LOCALSTORAGE ──────────────────────────────
+            // Persiste curso, comunidad, asignatura y perfil en Firestore (doc de usuario)
+            // y en localStorage con DOBLE CLAVE para garantizar compatibilidad entre páginas.
+            // mapa.html lee 'userComunidad'; otros módulos pueden leer 'comunidad'. Se guardan ambas.
+            try {
+                await setDoc(doc(db, "usuarios", currentUser.uid), {
+                    curso: curso,
+                    comunidad: comunidad,
+                    asignatura: asignatura,
+                    perfil: window.selectedProfile,
+                    userStreak: 1,
+                    fechaRegistro: new Date()
+                }, { merge: true });
+
+                // Escritura con doble clave para máxima compatibilidad
+                localStorage.setItem('userCourse', curso);
+                localStorage.setItem('curso', curso);
+                localStorage.setItem('userComunidad', comunidad);
+                localStorage.setItem('comunidad', comunidad);
+                localStorage.setItem('userSubject', asignatura);
+                localStorage.setItem('asignatura', asignatura);
+                localStorage.setItem('userProfile', window.selectedProfile);
+                localStorage.setItem('userStreak', '1');
+
+                // ── VERIFICACIÓN DE INTEGRIDAD ─────────────────────────────────────
+                // Confirma que los datos se escribieron en localStorage antes de redirigir.
+                // Si faltan, es un error crítico: no se redirige y se avisa al usuario.
+                const check = localStorage.getItem('userComunidad');
+                if (!check) {
+                    throw new Error('localStorage no disponible o bloqueado por el navegador.');
+                }
+
+                window.location.href = 'seleccion.html';
+            } catch (error) {
+                console.error("Error al guardar en el servidor estelar: ", error);
+                alert('No hemos podido transmitir tus datos: ' + error.message);
+                btnIgnicion.innerText = 'INICIAR IGNICIÓN';
+                btnIgnicion.style.pointerEvents = 'auto';
+            }
+        });
+    </script>
+
+    </div>
+
+    <!-- How it works section -->
+    <div class="container how-it-works fade-in-section">
+        <h2>¿Cómo funciona A-PRUEBA?</h2>
+        <div class="steps-grid">
+            <div class="step-card fade-in-section">
+                <div class="step-icon">🪐</div>
+                <h3>Explora Misiones</h3>
+                <p>Navega a través de mapas estelares didácticos. Tu constelación personal cambia según la asignatura
+                    que estudies (Física, Mates, Química).</p>
+            </div>
+            <div class="step-card fade-in-section">
+                <div class="step-icon">🤖</div>
+                <h3>Tutor Socrático IA</h3>
+                <p>Nuestro Tutor IA nunca te dará la respuesta directa. Te guiará paso a paso hasta
+                    que tu mente haga "clic".</p>
+            </div>
+            <div class="step-card fade-in-section">
+                <div class="step-icon">🏆</div>
+                <h3>Sube a Diamante</h3>
+                <p>Demuestra lo que sabes con los niveles Bronce, Plata, Oro y el temido Reto Supernova. Gana
+                    experiencia y mantén tu Brillo Estelar activo.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.15
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.fade-in-section').forEach(section => {
+                observer.observe(section);
+            });
+        });
+    </script>
+
+    <footer class="footer">
+        <p>&copy; 2026 A-PRUEBA. Todos los derechos reservados.</p>
+        <div class="footer-links">
+            <a href="#">Términos de Servicio</a>
+            <a href="#">Contacto para Padres</a>
+        </div>
+    </footer>
+
+    <!-- Scripts Relevantes ya procesados -->
+</body>
+
+</html>

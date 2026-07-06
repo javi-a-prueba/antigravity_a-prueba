@@ -1,0 +1,1502 @@
+[
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 101,
+    "dificultad": "Fácil",
+    "bloque": "Tema 1: Matrices",
+    "enunciado": "Dadas las matrices $A = \\begin{pmatrix} 1 & -2 \\ 0 & 3 \\ 4 & 1 \\end{pmatrix}$ y $B = \\begin{pmatrix} 2 & -1 & 5 \\ 0 & 1 & -3 \\end{pmatrix}$, justifica si se puede realizar el producto $A \\cdot B$ y calcúlalo.",
+    "resolucion_latex": "La matriz $A$ tiene dimensión $3 \\times 2$ y la matriz $B$ tiene dimensión $2 \\times 3$. Como el número de columnas de $A$ coincide con el número de filas de $B$, el producto es posible y dará una matriz de $3 \\times 3$.\\n$$A \\cdot B = \\begin{pmatrix} 2 & -3 & 11 \\ 0 & 3 & -9 \\ 8 & -3 & 17 \\end{pmatrix}$$",
+    "pista": "Comprueba siempre las dimensiones: el producto $A\\cdot B$ solo existe si columnas de $A$ coinciden con filas de $B$.",
+    "formula": "$$A_{m\\times n}\\cdot B_{n\\times p}=C_{m\\times p}$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 102,
+    "dificultad": "Fácil",
+    "bloque": "Tema 1: Matrices",
+    "enunciado": "Dadas las mismas matrices $A$ y $B$ del ejercicio anterior, ¿se puede realizar el producto $A^2$?",
+    "resolucion_latex": "No se puede realizar. $A^2 = A \\cdot A$. El número de columnas de la primera matriz (2) no coincide con el número de filas de la segunda (3).",
+    "pista": "Para calcular $A^2$, la matriz $A$ debe poder multiplicarse por sí misma; eso exige que sea cuadrada.",
+    "formula": "$$A^2=A\\cdot A\\quad \\text{solo si }A\\text{ es cuadrada}$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 103,
+    "dificultad": "Fácil",
+    "bloque": "Tema 1: Matrices",
+    "enunciado": "Dada la matriz identidad $I_2$, calcula su inversa.",
+    "resolucion_latex": "La matriz identidad $I_2 = \\begin{pmatrix} 1 & 0 \\ 0 & 1 \\end{pmatrix}$ es su propia inversa, ya que $I \\cdot I = I$. Por tanto, $I^{-1} = I$.",
+    "pista": "La matriz identidad actúa como el número $1$ en el producto de matrices.",
+    "formula": "$$I^{-1}=I$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 104,
+    "dificultad": "Media",
+    "bloque": "Tema 1: Matrices",
+    "enunciado": "Despeja $X$ en la ecuación matricial $A \\cdot X \\cdot B - C = I$, asumiendo que $A$ y $B$ tienen inversa.",
+    "resolucion_latex": "Sumamos $C$ a ambos lados:\\n$$A \\cdot X \\cdot B = I + C$$\\nMultiplicamos por $A^{-1}$ por la izquierda y por $B^{-1}$ por la derecha:\\n$$X = A^{-1} \\cdot (I + C) \\cdot B^{-1}$$",
+    "pista": "En ecuaciones matriciales, respeta siempre el lado por el que multiplicas por la inversa.",
+    "formula": "$$A\\cdot X\\cdot B=C\\Rightarrow X=A^{-1}\\cdot C\\cdot B^{-1}$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 105,
+    "dificultad": "Media",
+    "bloque": "Tema 1: Matrices",
+    "enunciado": "Dadas dos matrices cuadradas $A$ y $B$ de la misma dimensión, desarrolla y simplifica la expresión $(A+B)^2$.",
+    "resolucion_latex": "Desarrollamos el binomio multiplicando los paréntesis:\\n$$(A+B)^2 = (A+B) \\cdot (A+B) = A \\cdot A + A \\cdot B + B \\cdot A + B \\cdot B$$\\n$$(A+B)^2 = A^2 + A \\cdot B + B \\cdot A + B^2$$\\nAl no ser conmutativo el producto matricial en general, no podemos agrupar $A \\cdot B$ y $B \\cdot A$ en $2AB$.",
+    "pista": "No uses la identidad escalar $A^2+2AB+B^2$ salvo que sepas que $A$ y $B$ conmutan.",
+    "formula": "$$(A+B)^2=A^2+A\\cdot B+B\\cdot A+B^2$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 106,
+    "dificultad": "Media",
+    "bloque": "Tema 1: Matrices",
+    "enunciado": "Despeja $X$ en la ecuación matricial $A \\cdot X + X = B$, sabiendo que la matriz resultante de los coeficientes de $X$ es invertible.",
+    "resolucion_latex": "Sacamos $X$ como factor común por la derecha (es vital respetar el lado por el que multiplica):\\n$$(A + I) \\cdot X = B$$\\nMultiplicamos por la inversa de $(A+I)$ por la izquierda:\\n$$X = (A + I)^{-1} \\cdot B$$",
+    "pista": "Saca factor común respetando el orden del producto matricial; no es lo mismo factorizar por la izquierda que por la derecha.",
+    "formula": "$$A\\cdot X+I\\cdot X=(A+I)\\cdot X$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 107,
+    "dificultad": "Difícil",
+    "bloque": "Tema 1: Matrices",
+    "enunciado": "Sea la matriz $A = \\begin{pmatrix} 1 & 1 & 1 \\ 0 & 1 & 1 \\ 0 & 0 & 1 \\end{pmatrix}$. Encuentra la ley general para $A^n$ y utilízala para calcular $A^{2026}$.",
+    "resolucion_latex": "Calculamos $A^2$ y $A^3$ para ver el patrón:\\n$$A^2 = \\begin{pmatrix} 1 & 2 & 3 \\ 0 & 1 & 2 \\ 0 & 0 & 1 \\end{pmatrix}, \\quad A^3 = \\begin{pmatrix} 1 & 3 & 6 \\ 0 & 1 & 3 \\ 0 & 0 & 1 \\end{pmatrix}$$\\nLa ley general es: $A^n = \\begin{pmatrix} 1 & n & \\frac{n(n+1)}{2} \\ 0 & 1 & n \\ 0 & 0 & 1 \\end{pmatrix}$.\\nPara $n=2026$:\\n$$A^{2026} = \\begin{pmatrix} 1 & 2026 & \\frac{2026 \\cdot 2027}{2} \\ 0 & 1 & 2026 \\ 0 & 0 & 1 \\end{pmatrix} = \\begin{pmatrix} 1 & 2026 & 2053351 \\ 0 & 1 & 2026 \\ 0 & 0 & 1 \\end{pmatrix}$$",
+    "pista": "Calcula varias potencias pequeñas y busca un patrón en cada posición de la matriz.",
+    "formula": "$$1+2+\\cdots+n=\\frac{n(n+1)}{2}$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 108,
+    "dificultad": "Difícil",
+    "bloque": "Tema 1: Matrices",
+    "enunciado": "Dada la matriz $M = \\begin{pmatrix} 1 & k & -1 \\ 2 & -1 & k \\ 1 & 10 & -6 \\end{pmatrix}$, determina para qué valores del parámetro $k$ la matriz $M$ tiene inversa.",
+    "resolucion_latex": "Tiene inversa si $|M| \\neq 0$.\\n$$|M| = (6 + k^2 - 20) - (1 + 10k - 12k) = k^2 - 14 - 1 + 2k = k^2 + 2k - 15$$\\nIgualamos a cero: $k^2 + 2k - 15 = 0 \\implies k = 3, k = -5$.\\nLa matriz $M$ tiene inversa para cualquier valor de $k \\in \\mathbb{R} \\setminus \\{-5, 3\\}$.",
+    "pista": "Una matriz cuadrada tiene inversa exactamente cuando su determinante es distinto de cero.",
+    "formula": "$$A^{-1}\\text{ existe}\\Leftrightarrow |A|\\neq 0$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 109,
+    "dificultad": "Difícil",
+    "bloque": "Tema 1: Matrices",
+    "enunciado": "Utilizando la fórmula de la matriz adjunta, calcula la matriz inversa de $C = \\begin{pmatrix} 1 & 2 & -1 \\ 0 & 1 & 2 \\ 1 & 0 & -3 \\end{pmatrix}$.",
+    "resolucion_latex": "$|C| = (-3 + 4 + 0) - (-1 + 0 + 0) = 1 - (-1) = 2$. Tiene inversa.\\nMatriz adjunta transpuesta: $(Adj(C))^t = \\begin{pmatrix} -3 & 6 & 5 \\ 2 & -2 & -2 \\ -1 & 2 & 1 \\end{pmatrix}$.\\n$$C^{-1} = \\frac{1}{2} \\begin{pmatrix} -3 & 6 & 5 \\ 2 & -2 & -2 \\ -1 & 2 & 1 \\end{pmatrix} = \\begin{pmatrix} -3/2 & 3 & 5/2 \\ 1 & -1 & -1 \\ -1/2 & 1 & 1/2 \\end{pmatrix}$$",
+    "pista": "Para usar la adjunta, primero comprueba que el determinante no sea cero.",
+    "formula": "$$A^{-1}=\\frac{1}{|A|}\\operatorname{Adj}(A)^T$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 110,
+    "dificultad": "Superior",
+    "bloque": "Tema 1: Matrices",
+    "enunciado": "*(Reto Supernova)*: Demuestra que si $A$ es una matriz ortogonal (es decir, $A^T = A^{-1}$), entonces su determinante solo puede ser $1$ o $-1$.",
+    "resolucion_latex": "Partimos de la definición de matriz ortogonal: $A \\cdot A^T = I$.\\nTomamos determinantes a ambos lados:\\n$$|A \\cdot A^T| = |I|$$\\nPor las propiedades de los determinantes ($|AB| = |A||B|$ y $|A^T| = |A|$), tenemos:\\n$$|A| \\cdot |A^T| = 1 \\implies |A| \\cdot |A| = 1 \\implies |A|^2 = 1$$\\nPor lo tanto, al tomar la raíz cuadrada, obtenemos que $|A| = \\pm 1$.",
+    "pista": "Usa determinantes en la igualdad que define una matriz ortogonal.",
+    "formula": "$$A\\cdot A^T=I\\Rightarrow |A|\\cdot |A^T|=1$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 201,
+    "dificultad": "Fácil",
+    "bloque": "Tema 2: Determinantes",
+    "enunciado": "Calcula el determinante de la matriz $A = \\begin{pmatrix} 3 & -2 \\ 5 & 4 \\end{pmatrix}$.",
+    "resolucion_latex": "Aplicamos la regla para determinantes $2 \\times 2$:\\n$$|A| = (3 \\cdot 4) - (-2 \\cdot 5) = 12 - (-10) = 12 + 10 = 22$$",
+    "pista": "En determinantes de orden $2$, multiplica la diagonal principal y resta la diagonal secundaria.",
+    "formula": "$$\\begin{vmatrix}a&b\\c&d\\end{vmatrix}=ad-bc$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 202,
+    "dificultad": "Fácil",
+    "bloque": "Tema 2: Determinantes",
+    "enunciado": "Si $|A| = 5$ y $A$ es una matriz de orden 3, ¿cuánto vale $|2A|$?",
+    "resolucion_latex": "Cuando multiplicamos una matriz de orden $n$ por un escalar $k$, su determinante se multiplica por $k^n$.\\n$$|2A| = 2^3 \\cdot |A| = 8 \\cdot 5 = 40$$",
+    "pista": "Al multiplicar una matriz de orden $n$ por un número, el determinante se multiplica por ese número elevado a $n$.",
+    "formula": "$$|kA|=k^n|A|$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 203,
+    "dificultad": "Fácil",
+    "bloque": "Tema 2: Determinantes",
+    "enunciado": "Sabiendo que la matriz $B$ tiene dos filas iguales, ¿cuál es su determinante?",
+    "resolucion_latex": "Por las propiedades de los determinantes, si una matriz tiene dos filas (o columnas) idénticas o proporcionales, su determinante es estrictamente **0**.",
+    "pista": "Si dos filas o columnas son iguales o proporcionales, el determinante se anula.",
+    "formula": "$$F_i=F_j\\Rightarrow |A|=0$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 204,
+    "dificultad": "Media",
+    "bloque": "Tema 2: Determinantes",
+    "enunciado": "Calcula el rango de la matriz $M = \\begin{pmatrix} 1 & 2 & -1 \\ 2 & 4 & -2 \\ 3 & 1 & 0 \\end{pmatrix}$.",
+    "resolucion_latex": "Observamos que la segunda fila es proporcional a la primera ($F_2 = 2F_1$). Por tanto, el rango no puede ser 3, ya que el determinante es 0.\\nBuscamos un menor de orden 2 no nulo:\\n$$\\begin{vmatrix} 2 & -1 \\ 1 & 0 \\end{vmatrix} = 0 - (-1) = 1 \\neq 0$$\\nComo existe un menor de orden 2 distinto de cero, el rango de la matriz es **2**.",
+    "pista": "Para hallar el rango, busca el mayor menor no nulo.",
+    "formula": "$$rg(A)=\\text{orden del mayor menor no nulo}$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 205,
+    "dificultad": "Media",
+    "bloque": "Tema 2: Determinantes",
+    "enunciado": "Calcula mediante la regla de Sarrus el determinante de $C = \\begin{pmatrix} 1 & 0 & 3 \\ 2 & -1 & 1 \\ 0 & 4 & 2 \\end{pmatrix}$.",
+    "resolucion_latex": "$$|C| = (1)(-1)(2) + (0)(1)(0) + (3)(2)(4) - [(3)(-1)(0) + (1)(1)(4) + (0)(2)(2)]$$\\n$$|C| = -2 + 0 + 24 - [0 + 4 + 0] = 22 - 4 = 18$$",
+    "pista": "En la regla de Sarrus, suma los productos de las diagonales descendentes y resta los de las ascendentes.",
+    "formula": "$$|A|=\\text{suma diagonales descendentes}-\\text{suma diagonales ascendentes}$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 206,
+    "dificultad": "Media",
+    "bloque": "Tema 2: Determinantes",
+    "enunciado": "Dada una matriz $A$ de dimensión $3 \\times 3$, demuestra qué le ocurre al determinante si intercambias dos filas entre sí.",
+    "resolucion_latex": "Una de las propiedades fundamentales de los determinantes establece que el intercambio de dos líneas paralelas (ya sean dos filas o dos columnas) provoca que el determinante cambie de signo.\\nPor tanto, el nuevo determinante será $-|A|$.",
+    "pista": "Intercambiar dos filas no cambia el tamaño del determinante, pero sí su signo.",
+    "formula": "$$F_i\\leftrightarrow F_j\\Rightarrow |A'|=-|A|$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 207,
+    "dificultad": "Difícil",
+    "bloque": "Tema 2: Determinantes",
+    "enunciado": "Sabiendo que $\\begin{vmatrix} a & b & c \\ x & y & z \\ p & q & r \\end{vmatrix} = 5$, calcula el valor de $\\begin{vmatrix} 2a & 2b & 2c \\ x+a & y+b & z+c \\ -p & -q & -r \\end{vmatrix}$.",
+    "resolucion_latex": "Aplicamos propiedades de los determinantes:\\n1) Extraemos el factor 2 de la primera fila y el factor -1 de la tercera:\\n$$-2 \\begin{vmatrix} a & b & c \\ x+a & y+b & z+c \\ p & q & r \\end{vmatrix}$$\\n2) Restamos a la segunda fila la primera ($F_2 \\to F_2 - F_1$), lo cual no altera el determinante:\\n$$-2 \\begin{vmatrix} a & b & c \\ x & y & z \\ p & q & r \\end{vmatrix} = -2 \\cdot 5 = -10$$",
+    "pista": "Usa propiedades de determinantes: extraer factores de filas y sumar/restar filas proporcionales no cambia el determinante.",
+    "formula": "$$F_i\\rightarrow F_i+kF_j\\Rightarrow |A|\\text{ no cambia}$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 208,
+    "dificultad": "Difícil",
+    "bloque": "Tema 2: Determinantes",
+    "enunciado": "Calcula para qué valor o valores de $m$ el rango de la matriz $A = \\begin{pmatrix} m & 1 & 1 \\ 1 & m & 1 \\ 1 & 1 & m \\end{pmatrix}$ es 2.",
+    "resolucion_latex": "Para que el rango no sea 3, el determinante debe ser 0.\\n$$|A| = m^3 + 1 + 1 - (m + m + m) = m^3 - 3m + 2$$\\nPor Ruffini, factorizamos: $(m-1)^2(m+2) = 0 \\implies m = 1, m = -2$.\\n- Si $m = 1$, la matriz tiene todos los elementos iguales a 1, por lo que su rango es 1.\\n- Si $m = -2$, la matriz no es de rango 1, pero su $|A| = 0$, por lo que su rango es exactamente 2.\\nEl valor buscado es $m = -2$.",
+    "pista": "Primero impón que el determinante sea cero y después distingue los casos para saber si el rango baja a $2$ o a $1$.",
+    "formula": "$$rg(A)<3\\Leftrightarrow |A|=0$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 209,
+    "dificultad": "Difícil",
+    "bloque": "Tema 2: Determinantes",
+    "enunciado": "Desarrolla el determinante por los adjuntos de la primera fila: $D = \\begin{vmatrix} 2 & 0 & -1 \\ 3 & 5 & 2 \\ 1 & -2 & 4 \\end{vmatrix}$.",
+    "resolucion_latex": "Desarrollo por la fila 1:\\n$$|D| = a_{11}A_{11} + a_{12}A_{12} + a_{13}A_{13}$$\\n$$|D| = 2 \\begin{vmatrix} 5 & 2 \\ -2 & 4 \\end{vmatrix} - 0 \\begin{vmatrix} 3 & 2 \\ 1 & 4 \\end{vmatrix} + (-1) \\begin{vmatrix} 3 & 5 \\ 1 & -2 \\end{vmatrix}$$\\n$$|D| = 2(20 - (-4)) - 0 - 1(-6 - 5) = 2(24) - 1(-11) = 48 + 11 = 59$$",
+    "pista": "Al desarrollar por adjuntos, respeta los signos alternos $+$, $-$, $+$.",
+    "formula": "$$|A|=a_{11}A_{11}+a_{12}A_{12}+a_{13}A_{13}$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 210,
+    "dificultad": "Superior",
+    "bloque": "Tema 2: Determinantes",
+    "enunciado": "*(Reto Supernova)*: Demuestra, utilizando las propiedades de los determinantes, que el determinante de una matriz antisimétrica ($A^T = -A$) de orden impar es siempre cero.",
+    "resolucion_latex": "Partimos de la condición de antisimetría: $A^T = -A$.\\nTomamos determinantes a ambos lados:\\n$$|A^T| = |-A|$$\\nSabemos que $|A^T| = |A|$. Por otro lado, al sacar el signo negativo de una matriz de orden $n$, se extrae como $(-1)^n$:\\n$$|A| = (-1)^n |A|$$\\nComo $n$ es impar, $(-1)^n = -1$. Por tanto:\\n$$|A| = -|A| \\implies 2|A| = 0 \\implies |A| = 0$$",
+    "pista": "Combina $|A^T|=|A|$ con el efecto de multiplicar una matriz de orden impar por $-1$.",
+    "formula": "$$|-A|=(-1)^n|A|$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 301,
+    "dificultad": "Fácil",
+    "bloque": "Tema 3: Sistemas de Ecuaciones Lineales",
+    "enunciado": "Resuelve aplicando la Regla de Cramer el sistema: $\\begin{cases} 2x - y = 3 \\\\ x + y = 3 \\end{cases}$.",
+    "resolucion_latex": "Determinante de coeficientes: $|A| = \\begin{vmatrix} 2 & -1 \\\\ 1 & 1 \\end{vmatrix} = 2 - (-1) = 3$.\\n$$x = \\frac{\\begin{vmatrix} 3 & -1 \\\\ 3 & 1 \\end{vmatrix}}{3} = \\frac{3 - (-3)}{3} = \\frac{6}{3} = 2$$\\n$$y = \\frac{\\begin{vmatrix} 2 & 3 \\\\ 1 & 3 \\end{vmatrix}}{3} = \\frac{6 - 3}{3} = \\frac{3}{3} = 1$$\\nSolución: $x=2, y=1$.",
+    "pista": "Antes de aplicar Cramer, calcula el determinante de la matriz de coeficientes y comprueba que no sea cero.",
+    "formula": "$$x=\\frac{|A_x|}{|A|},\\quad y=\\frac{|A_y|}{|A|}$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 302,
+    "dificultad": "Fácil",
+    "bloque": "Tema 3: Sistemas de Ecuaciones Lineales",
+    "enunciado": "Clasifica un sistema de ecuaciones lineales si el rango de la matriz de coeficientes es igual al rango de la matriz ampliada y coincide con el número de incógnitas.",
+    "resolucion_latex": "Según el Teorema de Rouché-Frobenius, si $Rg(A) = Rg(A^*) = n$ (número de incógnitas), el sistema se clasifica como **Compatible Determinado (SCD)**, lo que significa que tiene una única solución.",
+    "pista": "Aplica Rouché-Frobenius: compara los rangos con el número de incógnitas.",
+    "formula": "$$Rg(A)=Rg(A^*)=n\\Rightarrow \\text{SCD}$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 303,
+    "dificultad": "Fácil",
+    "bloque": "Tema 3: Sistemas de Ecuaciones Lineales",
+    "enunciado": "¿Qué es un sistema homogéneo y cuál es la solución que siempre admite por defecto?",
+    "resolucion_latex": "Un sistema homogéneo es aquel en el que todos los términos independientes son cero. Estos sistemas siempre son compatibles porque admiten invariablemente la **solución trivial**, en la que todas las incógnitas valen cero ($x=0, y=0, z=0$).",
+    "pista": "En un sistema homogéneo todos los términos independientes son cero.",
+    "formula": "$$AX=0\\Rightarrow X=0\\text{ siempre es solución}$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 304,
+    "dificultad": "Media",
+    "bloque": "Tema 3: Sistemas de Ecuaciones Lineales",
+    "enunciado": "Clasifica y resuelve el sistema homogéneo: $\\begin{cases} x + y + z = 0 \\\\ 2x - y + z = 0 \\\\ x - 2y = 0 \\end{cases}$.",
+    "resolucion_latex": "Calculamos el determinante de coeficientes:\\n$$|A| = \\begin{vmatrix} 1 & 1 & 1 \\\\ 2 & -1 & 1 \\\\ 1 & -2 & 0 \\end{vmatrix} = 0 + 1 - 4 - (-1 - 2 + 0) = -3 - (-3) = 0$$\\nComo $|A|=0$, $Rg(A) < 3$. Al haber un menor de orden 2 no nulo, $Rg(A)=2$. Es un sistema **Compatible Indeterminado** con 1 grado de libertad.\\nTomando $x=2\\lambda$ de la última ecuación, $y=\\lambda$, y de la primera $z = -3\\lambda$.",
+    "pista": "En un sistema homogéneo, si el determinante es cero, puede haber infinitas soluciones.",
+    "formula": "$$Rg(A)<n\\Rightarrow \\text{SCI en sistema homogéneo}$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 305,
+    "dificultad": "Media",
+    "bloque": "Tema 3: Sistemas de Ecuaciones Lineales",
+    "enunciado": "Escribe un sistema matricial de la forma $A \\cdot X = B$ basándote en las ecuaciones $3x-y=4$ y $x+2y=-1$.",
+    "resolucion_latex": "Identificamos los coeficientes, las incógnitas y los términos independientes:\\n$$\\begin{pmatrix} 3 & -1 \\\\ 1 & 2 \\end{pmatrix} \\cdot \\begin{pmatrix} x \\\\ y \\end{pmatrix} = \\begin{pmatrix} 4 \\\\ -1 \\end{pmatrix}$$",
+    "pista": "Coloca los coeficientes en la matriz, las incógnitas en una columna y los términos independientes en otra.",
+    "formula": "$$A\\cdot X=B$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 306,
+    "dificultad": "Media",
+    "bloque": "Tema 3: Sistemas de Ecuaciones Lineales",
+    "enunciado": "Discute un sistema $AX = B$ de 3 ecuaciones con 4 incógnitas si el rango de la matriz ampliada $A^*$ es 3.",
+    "resolucion_latex": "Como la matriz de coeficientes $A$ está contenida en $A^*$ y tiene solo 3 filas, su rango máximo es 3 ($Rg(A) \\le 3$).\\nHay dos escenarios posibles:\\n1) Si $Rg(A) = 3 = Rg(A^*)$, al tener 4 incógnitas, el sistema es **Compatible Indeterminado** con 1 grado de libertad ($4-3=1$).\\n2) Si $Rg(A) < 3$ pero $Rg(A^*)=3$, el sistema sería **Incompatible**.",
+    "pista": "Compara siempre $Rg(A)$ y $Rg(A^*)$; después mira cuántas incógnitas hay.",
+    "formula": "$$Rg(A)=Rg(A^*)<n\\Rightarrow \\text{SCI}$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 307,
+    "dificultad": "Difícil",
+    "bloque": "Tema 3: Sistemas de Ecuaciones Lineales",
+    "enunciado": "Discute el sistema dependiente del parámetro $m$: $\\begin{cases} mx + y + z = 1 \\\\ x + my + z = 1 \\\\ x + y + mz = 1 \\end{cases}$.",
+    "resolucion_latex": "Calculamos el determinante de coeficientes:\\n$|A| = \\begin{vmatrix} m & 1 & 1 \\\\ 1 & m & 1 \\\\ 1 & 1 & m \\end{vmatrix} = m^3 - 3m + 2 = (m-1)^2(m+2)$.\\n- Si $m \\neq 1$ y $m \\neq -2$: $|A| \\neq 0 \\implies Rg(A) = 3 = Rg(A^*)$. **Sistema Compatible Determinado**.\\n- Si $m = 1$: El sistema es $x+y+z=1$ tres veces. $Rg(A) = 1 = Rg(A^*)$. **Compatible Indeterminado**.\\n- Si $m = -2$: $|A| = 0$, $Rg(A)=2$. Sin embargo, al sustituir y calcular un menor orlado en $A^*$, da distinto de cero $\\implies Rg(A^*)=3$. **Sistema Incompatible**.",
+    "pista": "Estudia primero cuándo se anula el determinante y analiza por separado esos valores del parámetro.",
+    "formula": "$$|A|=(m-1)^2(m+2)$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 308,
+    "dificultad": "Difícil",
+    "bloque": "Tema 3: Sistemas de Ecuaciones Lineales",
+    "enunciado": "Resuelve el sistema del ejercicio anterior usando la Regla de Cramer para $m = 2$.",
+    "resolucion_latex": "Para $m=2$, el determinante es $|A| = (2-1)^2(2+2) = 4$.\\nPor simetría, $x=y=z$. Calculamos solo $x$:\\n$$x = \\frac{\\begin{vmatrix} 1 & 1 & 1 \\\\ 1 & 2 & 1 \\\\ 1 & 1 & 2 \\end{vmatrix}}{4} = \\frac{1}{4}$$\\nLa solución única es $x=1/4, y=1/4, z=1/4$.",
+    "pista": "Al sustituir $m=2$, el sistema queda simétrico, así que puedes aprovechar que las incógnitas valen lo mismo.",
+    "formula": "$$x_i=\\frac{|A_i|}{|A|}$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 309,
+    "dificultad": "Difícil",
+    "bloque": "Tema 3: Sistemas de Ecuaciones Lineales",
+    "enunciado": "Plantea un sistema para el siguiente problema: Una empresa fabrica 3 tipos de productos. La suma del total de productos es 120. El doble del producto A más el producto B es igual al producto C. Además, se fabrican tantas unidades de B como de A y C juntas.",
+    "resolucion_latex": "Variables: $A, B, C$.\\n1) Total: $A + B + C = 120$\\n2) Relación A-C: $2A + B = C \\implies 2A + B - C = 0$\\n3) Relación B-AC: $B = A + C \\implies -A + B - C = 0$\\nEl sistema matricial sería:\\n$\\begin{cases} A + B + C = 120 \\\\ 2A + B - C = 0 \\\\ -A + B - C = 0 \\end{cases}$",
+    "pista": "Define una variable para cada tipo de producto y traduce cada frase a una ecuación.",
+    "formula": "$$\\text{datos del problema}\\rightarrow\\text{sistema lineal}$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 310,
+    "dificultad": "Superior",
+    "bloque": "Tema 3: Sistemas de Ecuaciones Lineales",
+    "enunciado": "*(Reto Supernova)*: Si se tiene un sistema incompatible de 3 ecuaciones con 2 incógnitas, demuestra geométricamente qué representan estas ecuaciones en el plano.",
+    "resolucion_latex": "Cada ecuación lineal con dos incógnitas ($ax+by=c$) representa una recta en el plano 2D.\\nQue un sistema de tres ecuaciones con dos incógnitas sea incompatible significa que el sistema no tiene una solución común.\\nGeométricamente, esto significa que las **tres rectas no se cortan en un único punto**. Pueden formar un triángulo (se cortan dos a dos), o puede haber dos rectas paralelas que son cortadas por una tercera, o incluso ser las tres paralelas y distintas.",
+    "pista": "Cada ecuación lineal con dos incógnitas representa una recta en el plano.",
+    "formula": "$$ax+by=c\\Rightarrow \\text{recta en } \\mathbb{R}^2$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 401,
+    "dificultad": "Fácil",
+    "bloque": "Tema 4: Vectores en el espacio",
+    "enunciado": "Halla las coordenadas y el módulo del vector $\\vec{AB}$ sabiendo que $A(1, 0, -2)$ y $B(3, 4, 1)$.",
+    "resolucion_latex": "Coordenadas: $\\vec{AB} = B - A = (3-1, 4-0, 1-(-2)) = (2, 4, 3)$.\\nMódulo: $|\\vec{AB}| = \\sqrt{2^2 + 4^2 + 3^2} = \\sqrt{4 + 16 + 9} = \\sqrt{29}$.",
+    "pista": "Resta las coordenadas del punto inicial a las del punto final y luego aplica la fórmula del módulo.",
+    "formula": "$$\\vec{AB}=B-A,\\quad |\\vec{v}|=\\sqrt{x^2+y^2+z^2}$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 402,
+    "dificultad": "Fácil",
+    "bloque": "Tema 4: Vectores en el espacio",
+    "enunciado": "Sabiendo que el producto escalar de dos vectores es $\\vec{u} \\cdot \\vec{v} = |\\vec{u}| |\\vec{v}| \\cos(\\alpha)$, calcula el producto escalar de $\\vec{u} = (2, -1, 3)$ y $\\vec{v} = (1, 5, -2)$ utilizando sus coordenadas.",
+    "resolucion_latex": "En función de las coordenadas:\\n$\\vec{u} \\cdot \\vec{v} = u_1v_1 + u_2v_2 + u_3v_3 = 2(1) + (-1)(5) + 3(-2) = 2 - 5 - 6 = -9$.",
+    "pista": "Multiplica coordenada a coordenada y suma los resultados.",
+    "formula": "$$\\vec{u}\\cdot\\vec{v}=u_1v_1+u_2v_2+u_3v_3$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 403,
+    "dificultad": "Fácil",
+    "bloque": "Tema 4: Vectores en el espacio",
+    "enunciado": "Halla el producto vectorial $\\vec{u} \\times \\vec{v}$ de los vectores $\\vec{u} = (1, 0, 0)$ y $\\vec{v} = (0, 1, 0)$.",
+    "resolucion_latex": "$$\\vec{u} \\times \\vec{v} = \\begin{vmatrix} \\vec{i} & \\vec{j} & \\vec{k} \\\\ 1 & 0 & 0 \\\\ 0 & 1 & 0 \\end{vmatrix} = 0\\vec{i} - 0\\vec{j} + 1\\vec{k} = (0, 0, 1)$$",
+    "pista": "Usa el determinante con $\\u000bec{i}$, $\\u000bec{j}$ y $\\u000bec{k}$ para calcular el producto vectorial.",
+    "formula": "$$\\vec{u}\\times\\vec{v}=\\begin{vmatrix}\\vec{i}&\\vec{j}&\\vec{k}\\\\u_1&u_2&u_3\\\\v_1&v_2&v_3\\end{vmatrix}$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 404,
+    "dificultad": "Media",
+    "bloque": "Tema 4: Vectores en el espacio",
+    "enunciado": "Comprueba si los vectores $\\vec{u}=(1, 2, 3)$, $\\vec{v}=(-1, 0, 1)$ y $\\vec{w}=(0, 2, 4)$ son linealmente independientes o coplanarios.",
+    "resolucion_latex": "Calculamos el producto mixto (su determinante):\\n$$[\\vec{u}, \\vec{v}, \\vec{w}] = \\begin{vmatrix} 1 & 2 & 3 \\\\ -1 & 0 & 1 \\\\ 0 & 2 & 4 \\end{vmatrix} = 0 + 0 - 6 - (0 + 2 - 8) = -6 - (-6) = 0$$\\nComo el determinante es 0, los vectores son linealmente dependientes, es decir, **son coplanarios** (pertenecen al mismo plano).",
+    "pista": "Tres vectores son coplanarios si su producto mixto vale cero.",
+    "formula": "$$[\\vec{u},\\vec{v},\\vec{w}]=0\\Rightarrow \\text{coplanarios}$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 405,
+    "dificultad": "Media",
+    "bloque": "Tema 4: Vectores en el espacio",
+    "enunciado": "Calcula el ángulo que forman los vectores $\\vec{u}=(2, 1, -1)$ y $\\vec{v}=(1, 1, 1)$.",
+    "resolucion_latex": "Aplicamos la fórmula del coseno:\\n$$\\cos(\\alpha) = \\frac{\\vec{u} \\cdot \\vec{v}}{|\\vec{u}| |\\vec{v}|} = \\frac{2(1)+1(1)+(-1)(1)}{\\sqrt{4+1+1} \\sqrt{1+1+1}} = \\frac{2}{\\sqrt{6}\\sqrt{3}} = \\frac{2}{\\sqrt{18}}$$\\n$$\\alpha = \\arccos\\left(\\frac{2}{\\sqrt{18}}\\right) \\approx 61.87^\\circ$$",
+    "pista": "Calcula primero el producto escalar y los módulos de los dos vectores.",
+    "formula": "$$\\cos(\\alpha)=\\frac{\\vec{u}\\cdot\\vec{v}}{|\\vec{u}|\\,|\\vec{v}|}$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 406,
+    "dificultad": "Media",
+    "bloque": "Tema 4: Vectores en el espacio",
+    "enunciado": "Halla un vector perpendicular a la vez a $\\vec{u}=(1, -1, 2)$ y a $\\vec{v}=(3, 0, -1)$.",
+    "resolucion_latex": "El producto vectorial genera siempre un vector ortogonal a ambos.\\n$$\\vec{w} = \\vec{u} \\times \\vec{v} = \\begin{vmatrix} \\vec{i} & \\vec{j} & \\vec{k} \\\\ 1 & -1 & 2 \\\\ 3 & 0 & -1 \\end{vmatrix} = \\vec{i}(1-0) - \\vec{j}(-1-6) + \\vec{k}(0 - (-3))$$\\n$$\\vec{w} = (1, 7, 3)$$",
+    "pista": "Un vector perpendicular a dos vectores se obtiene con el producto vectorial.",
+    "formula": "$$\\vec{w}=\\vec{u}\\times\\vec{v}$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 407,
+    "dificultad": "Difícil",
+    "bloque": "Tema 4: Vectores en el espacio",
+    "enunciado": "Calcula el valor de $m$ para que el vector $\\vec{u}=(1, m, 2)$ tenga módulo $\\sqrt{14}$.",
+    "resolucion_latex": "Fórmula del módulo:\\n$$|\\vec{u}| = \\sqrt{1^2 + m^2 + 2^2} = \\sqrt{m^2 + 5}$$\\nIgualamos a la condición: $\\sqrt{m^2 + 5} = \\sqrt{14}$.\\nElevando al cuadrado: $m^2 + 5 = 14 \\implies m^2 = 9 \\implies m = \\pm 3$.",
+    "pista": "Iguala el módulo del vector al valor dado y eleva al cuadrado para eliminar la raíz.",
+    "formula": "$$|\\vec{u}|=\\sqrt{x^2+y^2+z^2}$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 408,
+    "dificultad": "Difícil",
+    "bloque": "Tema 4: Vectores en el espacio",
+    "enunciado": "Calcula el área del triángulo determinado por los puntos $A(1, 0, 1)$, $B(2, -1, 0)$ y $C(0, 1, -1)$.",
+    "resolucion_latex": "Vectores: $\\vec{AB} = (1, -1, -1)$ y $\\vec{AC} = (-1, 1, -2)$.\\nProducto vectorial:\\n$$\\vec{AB} \\times \\vec{AC} = \\begin{vmatrix} \\vec{i} & \\vec{j} & \\vec{k} \\\\ 1 & -1 & -1 \\\\ -1 & 1 & -2 \\end{vmatrix} = \\vec{i}(2+1) - \\vec{j}(-2-1) + \\vec{k}(1-1) = (3, 3, 0)$$\\nÁrea $= \\frac{1}{2} |\\vec{AB} \\times \\vec{AC}| = \\frac{1}{2} \\sqrt{3^2 + 3^2 + 0^2} = \\frac{\\sqrt{18}}{2} = \\frac{3\\sqrt{2}}{2} \\text{ u}^2$.",
+    "pista": "El área del triángulo es la mitad del área del paralelogramo formado por dos de sus lados.",
+    "formula": "$$A_{\\triangle}=\\frac{1}{2}|\\vec{AB}\\times\\vec{AC}|$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 409,
+    "dificultad": "Difícil",
+    "bloque": "Tema 4: Vectores en el espacio",
+    "enunciado": "Calcula el volumen del paralelepípedo que determinan los vectores $\\vec{u}=(1, 1, 1)$, $\\vec{v}=(0, 2, -1)$ y $\\vec{w}=(1, 0, 3)$.",
+    "resolucion_latex": "El volumen es el valor absoluto del producto mixto:\\n$$V = |[\\vec{u}, \\vec{v}, \\vec{w}]| = \\left| \\begin{vmatrix} 1 & 1 & 1 \\\\ 0 & 2 & -1 \\\\ 1 & 0 & 3 \\end{vmatrix} \\right|$$\\n$$V = |(6 - 1 + 0) - (2 + 0 + 0)| = |5 - 2| = 3 \\text{ u}^3$$.",
+    "pista": "El volumen del paralelepípedo se obtiene con el valor absoluto del producto mixto.",
+    "formula": "$$V=|[\\vec{u},\\vec{v},\\vec{w}]|$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 410,
+    "dificultad": "Superior",
+    "bloque": "Tema 4: Vectores en el espacio",
+    "enunciado": "*(Reto Supernova)*: Sabiendo que $|\\vec{u} \\times \\vec{v}| = |\\vec{u}| |\\vec{v}| \\sin(\\alpha)$, deduce la Identidad de Lagrange: $|\\vec{u} \\times \\vec{v}|^2 + (\\vec{u} \\cdot \\vec{v})^2 = |\\vec{u}|^2 |\\vec{v}|^2$.",
+    "resolucion_latex": "Sustituimos las definiciones geométricas de los productos:\\n$$|\\vec{u} \\times \\vec{v}|^2 = (|\\vec{u}| |\\vec{v}| \\sin(\\alpha))^2 = |\\vec{u}|^2 |\\vec{v}|^2 \\sin^2(\\alpha)$$\\n$$(\\vec{u} \\cdot \\vec{v})^2 = (|\\vec{u}| |\\vec{v}| \\cos(\\alpha))^2 = |\\vec{u}|^2 |\\vec{v}|^2 \\cos^2(\\alpha)$$\\nSumamos ambas expresiones y extraemos factor común:\\n$$|\\vec{u}|^2 |\\vec{v}|^2 (\\sin^2(\\alpha) + \\cos^2(\\alpha))$$\\nPor la identidad trigonométrica fundamental, el paréntesis vale 1, quedando probado que la suma es igual a $|\\vec{u}|^2 |\\vec{v}|^2$.",
+    "pista": "Eleva al cuadrado las expresiones geométricas del producto escalar y vectorial, y usa $\\sin^2\\u0007lpha+\\cos^2\\u0007lpha=1$.",
+    "formula": "$$|\\vec{u}\\times\\vec{v}|^2+(\\vec{u}\\cdot\\vec{v})^2=|\\vec{u}|^2|\\vec{v}|^2$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 501,
+    "dificultad": "Fácil",
+    "bloque": "Tema 5: Puntos, rectas y planos",
+    "enunciado": "Halla las ecuaciones paramétricas de la recta $r$ que pasa por el punto $A(1, -2, 3)$ y tiene como vector director $\\vec{v} = (4, 0, -1)$.",
+    "resolucion_latex": "Las ecuaciones paramétricas se forman con el punto base más un parámetro $t$ multiplicado por el vector director:\\n$$r \\equiv \\begin{cases} x = 1 + 4t \\\\ y = -2 \\\\ z = 3 - t \\end{cases} \\quad \\text{con } t \\in \\mathbb{R}$$",
+    "pista": "Una recta en el espacio se escribe con un punto y un vector director.",
+    "formula": "$$r:\\ (x,y,z)=P+t\\vec{v}$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 502,
+    "dificultad": "Fácil",
+    "bloque": "Tema 5: Puntos, rectas y planos",
+    "enunciado": "Determina la ecuación general (implícita) del plano $\\pi$ que pasa por el punto $P(2, 0, 5)$ y tiene como vector normal $\\vec{n} = (1, -3, 2)$.",
+    "resolucion_latex": "La ecuación es de la forma $Ax + By + Cz + D = 0$, donde $(A,B,C)$ es el vector normal:\\n$$1x - 3y + 2z + D = 0$$\\nObligamos a que pase por $P(2,0,5)$ para hallar $D$:\\n$$1(2) - 3(0) + 2(5) + D = 0 \\implies 2 + 10 + D = 0 \\implies D = -12$$\\nEl plano es $\\pi \\equiv x - 3y + 2z - 12 = 0$.",
+    "pista": "El vector normal del plano aporta los coeficientes de $x$, $y$ y $z$.",
+    "formula": "$$\\pi:\\ Ax+By+Cz+D=0,\\quad \\vec{n}=(A,B,C)$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 503,
+    "dificultad": "Fácil",
+    "bloque": "Tema 5: Puntos, rectas y planos",
+    "enunciado": "Comprueba si el punto $Q(3, 1, 2)$ pertenece al plano $\\pi \\equiv 2x - y + z - 7 = 0$.",
+    "resolucion_latex": "Sustituimos las coordenadas del punto $Q$ en la ecuación del plano:\\n$$2(3) - (1) + (2) - 7 = 6 - 1 + 2 - 7 = 0$$\\nComo se cumple la igualdad $0 = 0$, el punto **sí pertenece** al plano.",
+    "pista": "Sustituye las coordenadas del punto en la ecuación del plano.",
+    "formula": "$$P\\in\\pi\\Leftrightarrow Ax_P+By_P+Cz_P+D=0$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 504,
+    "dificultad": "Media",
+    "bloque": "Tema 5: Puntos, rectas y planos",
+    "enunciado": "Pasa la recta $r \\equiv \\frac{x-1}{2} = \\frac{y}{3} = \\frac{z+1}{-1}$ a forma implícita (como intersección de dos planos).",
+    "resolucion_latex": "Agrupamos las igualdades dos a dos. \\nPrimera y segunda: $\\frac{x-1}{2} = \\frac{y}{3} \\implies 3(x-1) = 2y \\implies 3x - 2y - 3 = 0$.\\nSegunda y tercera: $\\frac{y}{3} = \\frac{z+1}{-1} \\implies -y = 3(z+1) \\implies y + 3z + 3 = 0$.\\nEcuaciones implícitas: $r \\equiv \\begin{cases} 3x - 2y - 3 = 0 \\\\ y + 3z + 3 = 0 \\end{cases}$.",
+    "pista": "Iguala las fracciones de la forma continua dos a dos para obtener dos planos.",
+    "formula": "$$\\frac{x-x_0}{a}=\\frac{y-y_0}{b}=\\frac{z-z_0}{c}$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 505,
+    "dificultad": "Media",
+    "bloque": "Tema 5: Puntos, rectas y planos",
+    "enunciado": "Halla la ecuación del plano que pasa por los puntos $A(1, 0, 0)$, $B(0, 2, 0)$ y $C(0, 0, 3)$.",
+    "resolucion_latex": "Formamos dos vectores directores del plano: $\\vec{u} = \\vec{AB} = (-1, 2, 0)$ y $\\vec{v} = \\vec{AC} = (-1, 0, 3)$.\\nUsamos el punto $A(1,0,0)$. Desarrollamos el determinante:\\n$$\\begin{vmatrix} x-1 & y & z \\\\ -1 & 2 & 0 \\\\ -1 & 0 & 3 \\end{vmatrix} = 0$$\\n$$(x-1)(6) - y(-3) + z(2) = 0 \\implies 6x - 6 + 3y + 2z = 0$$\\nEl plano es $\\pi \\equiv 6x + 3y + 2z - 6 = 0$.",
+    "pista": "Con tres puntos, forma dos vectores del plano y usa un determinante igualado a cero.",
+    "formula": "$$\\begin{vmatrix}x-x_0&y-y_0&z-z_0\\\\u_1&u_2&u_3\\\\v_1&v_2&v_3\\end{vmatrix}=0$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 506,
+    "dificultad": "Media",
+    "bloque": "Tema 5: Puntos, rectas y planos",
+    "enunciado": "Halla el punto simétrico de $A(1, -2, 4)$ respecto del punto $M(3, 1, 2)$.",
+    "resolucion_latex": "El punto $M$ es el punto medio del segmento que une $A$ con su simétrico $A'(x,y,z)$.\\n$$M = \\left( \\frac{1+x}{2}, \\frac{-2+y}{2}, \\frac{4+z}{2} \\right) = (3, 1, 2)$$\\nIgualando coordenadas:\\n$\\frac{1+x}{2} = 3 \\implies 1+x = 6 \\implies x = 5$.\\n$\\frac{-2+y}{2} = 1 \\implies -2+y = 2 \\implies y = 4$.\\n$\\frac{4+z}{2} = 2 \\implies 4+z = 4 \\implies z = 0$.\\nEl simétrico es $A'(5, 4, 0)$.",
+    "pista": "Si $M$ es el punto medio de $AA'$, iguala coordenada a coordenada.",
+    "formula": "$$M=\\left(\\frac{x_A+x_{A'}}{2},\\frac{y_A+y_{A'}}{2},\\frac{z_A+z_{A'}}{2}\\right)$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 507,
+    "dificultad": "Difícil",
+    "bloque": "Tema 5: Puntos, rectas y planos",
+    "enunciado": "Halla la ecuación de la recta $s$ que pasa por el punto $P(2, -1, 1)$ y es perpendicular al plano $\\pi \\equiv x + 3y - 2z = 0$.",
+    "resolucion_latex": "Si la recta es perpendicular al plano, su vector director $\\vec{v_s}$ será paralelo (o igual) al vector normal del plano $\\vec{n_\\pi}$.\\nVector normal del plano: $\\vec{n_\\pi} = (1, 3, -2)$.\\nEcuación de la recta en forma continua con punto $P$ y vector $(1, 3, -2)$:\\n$$s \\equiv \\frac{x-2}{1} = \\frac{y+1}{3} = \\frac{z-1}{-2}$$",
+    "pista": "Una recta perpendicular a un plano tiene como vector director el vector normal del plano.",
+    "formula": "$$r\\perp\\pi\\Rightarrow \\vec{v}_r\\parallel \\vec{n}_\\pi$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 508,
+    "dificultad": "Difícil",
+    "bloque": "Tema 5: Puntos, rectas y planos",
+    "enunciado": "Halla el plano $\\pi$ que contiene a la recta $r \\equiv \\frac{x}{2} = y-1 = z$ y es paralelo a la recta $s \\equiv \\begin{cases} x = t \\\\ y = 1+t \\\\ z = -t \\end{cases}$.",
+    "resolucion_latex": "Para definir el plano necesitamos un punto y dos vectores directores.\\nPunto de la recta $r$ (que estará en el plano): $P_r(0, 1, 0)$.\\nPrimer vector director (el de $r$): $\\vec{v_r} = (2, 1, 1)$.\\nSegundo vector director (al ser paralelo a $s$, tomamos su vector): $\\vec{v_s} = (1, 1, -1)$.\\nEcuación del plano desarrollando el determinante:\\n$$\\begin{vmatrix} x & y-1 & z \\\\ 2 & 1 & 1 \\\\ 1 & 1 & -1 \\end{vmatrix} = x(-1-1) - (y-1)(-2-1) + z(2-1) = 0$$\\n$$-2x + 3(y-1) + z = 0 \\implies -2x + 3y + z - 3 = 0$$",
+    "pista": "Para definir un plano necesitas un punto y dos vectores directores no proporcionales.",
+    "formula": "$$\\pi:\\ P+\\lambda\\vec{u}+\\mu\\vec{v}$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 509,
+    "dificultad": "Difícil",
+    "bloque": "Tema 5: Puntos, rectas y planos",
+    "enunciado": "Pertenece al haz de planos definidos por la intersección de $\\pi_1 \\equiv x+y=1$ y $\\pi_2 \\equiv y+z=2$. Encuentra el plano de este haz que pasa por el origen de coordenadas $O(0,0,0)$.",
+    "resolucion_latex": "Ecuación del haz de planos: $(x+y-1) + \\lambda(y+z-2) = 0$.\\nImponemos que pase por el origen $x=0, y=0, z=0$:\\n$$(0+0-1) + \\lambda(0+0-2) = 0 \\implies -1 - 2\\lambda = 0 \\implies \\lambda = -\\frac{1}{2}$$\\nSustituimos el valor de $\\lambda$ en la ecuación del haz:\\n$$(x+y-1) - \\frac{1}{2}(y+z-2) = 0$$\\nMultiplicamos todo por 2: $2x + 2y - 2 - y - z + 4 = 0$.\\nEl plano pedido es: $2x + y - z + 2 = 0$.",
+    "pista": "Escribe el haz como combinación lineal de los dos planos e impón que pase por el punto dado.",
+    "formula": "$$\\pi_1+\\lambda\\pi_2=0$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 510,
+    "dificultad": "Superior",
+    "bloque": "Tema 5: Puntos, rectas y planos",
+    "enunciado": "*(Reto Supernova)*: Demuestra algebraicamente la ecuación segmentaria del plano $\\frac{x}{a} + \\frac{y}{b} + \\frac{z}{c} = 1$, sabiendo que el plano corta a los ejes coordenados en los puntos $A(a,0,0)$, $B(0,b,0)$ y $C(0,0,c)$.",
+    "resolucion_latex": "Tomamos la ecuación general del plano: $Ax + By + Cz + D = 0$. Como no pasa por el origen (si $a,b,c \\neq 0$), $D \\neq 0$. Dividimos todo por $-D$ y renombramos coeficientes: $A'x + B'y + C'z = 1$.\\nObligamos al plano a pasar por los tres puntos de corte:\\n1) Para $A(a,0,0)$: $A'a + 0 + 0 = 1 \\implies A' = \\frac{1}{a}$.\\n2) Para $B(0,b,0)$: $0 + B'b + 0 = 1 \\implies B' = \\frac{1}{b}$.\\n3) Para $C(0,0,c)$: $0 + 0 + C'c = 1 \\implies C' = \\frac{1}{c}$.\\nSustituyendo estos valores en la ecuación obtenemos:\\n$$\\frac{1}{a}x + \\frac{1}{b}y + \\frac{1}{c}z = 1 \\implies \\frac{x}{a} + \\frac{y}{b} + \\frac{z}{c} = 1$$",
+    "pista": "Parte de la ecuación general del plano e impón que pase por los tres cortes con los ejes.",
+    "formula": "$$\\frac{x}{a}+\\frac{y}{b}+\\frac{z}{c}=1$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 601,
+    "dificultad": "Fácil",
+    "bloque": "Tema 6: Posiciones relativas",
+    "enunciado": "Estudia la posición relativa de los planos $\\pi_1 \\equiv 2x - y + 3z - 5 = 0$ y $\\pi_2 \\equiv 4x - 2y + 6z - 10 = 0$.",
+    "resolucion_latex": "Comparamos los coeficientes de las variables y el término independiente:\\n$$\\frac{2}{4} = \\frac{-1}{-2} = \\frac{3}{6} = \\frac{-5}{-10}$$\\nComo se cumple la igualdad total (todos los cocientes dan $1/2$), los planos son **coincidentes** (son el mismo plano).",
+    "pista": "Compara las razones entre coeficientes y término independiente.",
+    "formula": "$$\\frac{A_1}{A_2}=\\frac{B_1}{B_2}=\\frac{C_1}{C_2}=\\frac{D_1}{D_2}\\Rightarrow \\text{coincidentes}$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 602,
+    "dificultad": "Fácil",
+    "bloque": "Tema 6: Posiciones relativas",
+    "enunciado": "Estudia la posición relativa de la recta $r \\equiv x=t, y=1-t, z=2t$ y el plano $\\pi \\equiv x + y + z = 0$.",
+    "resolucion_latex": "Sustituimos las ecuaciones paramétricas de la recta en la ecuación del plano:\\n$$(t) + (1-t) + (2t) = 0 \\implies t + 1 - t + 2t = 0 \\implies 2t + 1 = 0 \\implies t = -1/2$$\\nComo obtenemos una única solución para $t$, la recta y el plano se cortan en un único punto. Son **secantes**.",
+    "pista": "Sustituye la recta paramétrica en el plano y estudia cuántos valores del parámetro aparecen.",
+    "formula": "$$r\\cap\\pi:\\ \\text{sustituir }(x(t),y(t),z(t))\\text{ en }\\pi$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 603,
+    "dificultad": "Fácil",
+    "bloque": "Tema 6: Posiciones relativas",
+    "enunciado": "Si dos rectas tienen vectores directores proporcionales $\\vec{u_r} = (1, 2, -1)$ y $\\vec{u_s} = (-2, -4, 2)$, ¿cuáles son sus posibles posiciones relativas?",
+    "resolucion_latex": "Si los vectores directores son proporcionales (como aquí, $\\vec{u_s} = -2\\vec{u_r}$), significa que tienen la misma dirección.\\nPor tanto, solo pueden ser **paralelas** o **coincidentes**.",
+    "pista": "Si los vectores directores son proporcionales, las rectas tienen la misma dirección.",
+    "formula": "$$\\vec{u}_s=k\\vec{u}_r\\Rightarrow \\text{paralelas o coincidentes}$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 604,
+    "dificultad": "Media",
+    "bloque": "Tema 6: Posiciones relativas",
+    "enunciado": "Determina la posición relativa de los tres planos: $\\pi_1 \\equiv x+y+z=1$, $\\pi_2 \\equiv 2x-y+z=2$, $\\pi_3 \\equiv x-2y=1$.",
+    "resolucion_latex": "Es equivalente a discutir un sistema de ecuaciones lineales $3\\times 3$.\\nMatriz coeficientes $A = \\begin{pmatrix} 1 & 1 & 1 \\\\ 2 & -1 & 1 \\\\ 1 & -2 & 0 \\end{pmatrix}$. Calculamos su determinante:\\n$|A| = 0 + 1 - 4 - (-1 - 2 + 0) = -3 - (-3) = 0$. Luego $Rg(A) \\le 2$. Al haber menores no nulos, $Rg(A) = 2$.\\nCalculamos $Rg(A^*)$ orlando con los términos independientes $(1,2,1)^T$. Se puede comprobar que la tercera ecuación es la segunda menos la primera. Por tanto $Rg(A^*) = 2$.\\n$Rg(A) = Rg(A^*) = 2 < 3$. Se cortan en una **recta común** (haz de planos).",
+    "pista": "Estudia los tres planos como un sistema lineal y compara los rangos.",
+    "formula": "$$Rg(A)=Rg(A^*)<3\\Rightarrow \\text{recta común}$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 605,
+    "dificultad": "Media",
+    "bloque": "Tema 6: Posiciones relativas",
+    "enunciado": "Comprueba si las rectas $r \\equiv \\frac{x}{1} = \\frac{y-1}{-1} = \\frac{z}{2}$ y $s \\equiv \\frac{x-1}{2} = \\frac{y}{1} = \\frac{z+1}{1}$ se cruzan o se cortan.",
+    "resolucion_latex": "Elementos: $P_r(0,1,0), \\vec{u}=(1,-1,2)$. $P_s(1,0,-1), \\vec{v}=(2,1,1)$. Vector $\\vec{P_r P_s} = (1,-1,-1)$.\\nCalculamos el determinante formado por los tres vectores:\\n$$\\begin{vmatrix} 1 & -1 & -1 \\\\ 1 & -1 & 2 \\\\ 2 & 1 & 1 \\end{vmatrix} = (-1-4-1) - (2+2-1) = -6 - 3 = -9$$\\nComo el determinante es distinto de cero, los tres vectores son linealmente independientes y por tanto las rectas no son coplanarias. Las rectas **se cruzan** en el espacio.",
+    "pista": "Usa el producto mixto con los dos vectores directores y el vector que une puntos de las rectas.",
+    "formula": "$$[\\vec{P_rP_s},\\vec{u},\\vec{v}]\\neq0\\Rightarrow \\text{rectas que se cruzan}$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 606,
+    "dificultad": "Media",
+    "bloque": "Tema 6: Posiciones relativas",
+    "enunciado": "Halla el valor de $m$ para que la recta $r \\equiv x=y=z$ y el plano $\\pi \\equiv x + my + z = 5$ sean paralelos.",
+    "resolucion_latex": "Vector director de la recta $\\vec{v_r} = (1,1,1)$. Vector normal del plano $\\vec{n_\\pi} = (1, m, 1)$.\\nSi son paralelos, la recta debe ser perpendicular a la normal del plano: $\\vec{v_r} \\cdot \\vec{n_\\pi} = 0$.\\n$$1(1) + 1(m) + 1(1) = 0 \\implies 2 + m = 0 \\implies m = -2$$",
+    "pista": "Una recta paralela a un plano tiene vector director perpendicular al vector normal del plano.",
+    "formula": "$$r\\parallel\\pi\\Rightarrow \\vec{v}_r\\cdot\\vec{n}_\\pi=0$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 607,
+    "dificultad": "Difícil",
+    "bloque": "Tema 6: Posiciones relativas",
+    "enunciado": "Estudia la posición de los planos $\\pi_1 \\equiv ax + y + z = 1$, $\\pi_2 \\equiv x + ay + z = 1$ y $\\pi_3 \\equiv x + y + az = 1$ en función del parámetro $a$.",
+    "resolucion_latex": "Determinante de coeficientes $|A| = \\begin{vmatrix} a & 1 & 1 \\\\ 1 & a & 1 \\\\ 1 & 1 & a \\end{vmatrix} = (a-1)^2(a+2)$.\\n- Si $a \\neq 1, -2$: $|A| \\neq 0 \\implies$ Se cortan en un único punto (forman un triedro).\\n- Si $a = 1$: Planos idénticos $x+y+z=1$. $Rg(A)=1=Rg(A^*)$. **Coincidentes**.\\n- Si $a = -2$: $|A|=0$. Sustituyendo, $Rg(A)=2$, pero $Rg(A^*)=3$. Se cortan dos a dos formando un **prisma triangular**.",
+    "pista": "Calcula el determinante y analiza los valores del parámetro que lo anulan.",
+    "formula": "$$|A|=(a-1)^2(a+2)$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 608,
+    "dificultad": "Difícil",
+    "bloque": "Tema 6: Posiciones relativas",
+    "enunciado": "Calcula el punto de intersección de la recta $r$, que pasa por los puntos $A(1,0,0)$ y $B(0,1,1)$, con el plano $\\pi \\equiv x - y + 2z = 3$.",
+    "resolucion_latex": "1) Ecuación de la recta $r$: vector $\\vec{AB} = (-1, 1, 1)$. Paramétricas: $x=1-t, y=t, z=t$.\\n2) Sustituimos en el plano:\\n$$(1-t) - (t) + 2(t) = 3 \\implies 1 - t - t + 2t = 3 \\implies 1 = 3$$\\nLlegamos a una contradicción (igualdad falsa). Esto significa que la recta y el plano no tienen puntos en común. Son **paralelos**. (No hay punto de intersección).",
+    "pista": "Sustituye las paramétricas de la recta en el plano; si aparece una contradicción, no hay corte.",
+    "formula": "$$\\text{contradicción}\\Rightarrow r\\parallel\\pi\\text{ sin intersección}$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 609,
+    "dificultad": "Difícil",
+    "bloque": "Tema 6: Posiciones relativas",
+    "enunciado": "Dadas dos rectas que se cruzan, $r$ y $s$, escribe las condiciones geométricas para encontrar una recta $t$ que pase por un punto exterior $P$ y apoye (corte) simultáneamente en $r$ y en $s$.",
+    "resolucion_latex": "Para que la recta $t$ pase por $P$ y corte a $r$, debe estar contenida en el plano que forman $P$ y $r$ (llamémoslo $\\pi_1$).\\nPara que corte a $s$, debe estar también en el plano formado por $P$ y $s$ ($\\pi_2$).\\nPor tanto, la recta $t$ será exactamente la intersección de esos dos planos auxiliares: $t \\equiv \\pi_1 \\cap \\pi_2$. Se calcula $\\pi_1$ con $P, P_r, \\vec{v_r}$ y $\\pi_2$ con $P, P_s, \\vec{v_s}$.",
+    "pista": "Construye dos planos auxiliares: uno con $P$ y $r$, y otro con $P$ y $s$; su intersección será la recta buscada.",
+    "formula": "$$t=\\pi(P,r)\\cap\\pi(P,s)$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 610,
+    "dificultad": "Superior",
+    "bloque": "Tema 6: Posiciones relativas",
+    "enunciado": "*(Reto Supernova)*: Demuestra mediante el Teorema de Rouché-Frobenius por qué, si el producto mixto de los vectores de dos rectas y el vector que une sus puntos es distinto de cero, las rectas se cruzan obligatoriamente.",
+    "resolucion_latex": "Sean $r(P_r, \\vec{u})$ y $s(P_s, \\vec{v})$. Sus ecuaciones paramétricas nos llevan a buscar puntos de corte igualando coordenadas: $P_r + \\lambda \\vec{u} = P_s + \\mu \\vec{v}$, lo que equivale al sistema de ecuaciones lineales:\\n$\\lambda \\vec{u} - \\mu \\vec{v} = \\vec{P_r P_s}$.\\nEste sistema tiene 3 ecuaciones (una por coordenada x, y, z) y 2 incógnitas ($\\lambda, \\mu$).\\nLa matriz ampliada del sistema está formada por los vectores columna $(\\vec{u}, -\\vec{v}, \\vec{P_r P_s})$.\\nEl determinante de esta matriz $3\\times 3$ es exactamente el producto mixto $[\\vec{u}, -\\vec{v}, \\vec{P_r P_s}]$. Si este determinante NO es cero, entonces $Rg(A^*) = 3$.\\nSin embargo, la matriz de coeficientes solo tiene 2 columnas (incógnitas), por lo que $Rg(A) \\le 2$.\\nComo $Rg(A) < Rg(A^*)$, por Rouché-Frobenius el sistema es **Incompatible** (sin solución), lo que significa geométricamente que no tienen punto de corte. Y al ser linealmente independientes sus direcciones, **se cruzan**.",
+    "pista": "Traduce el posible punto de corte a un sistema lineal y aplica Rouché-Frobenius.",
+    "formula": "$$Rg(A)<Rg(A^*)\\Rightarrow \\text{sistema incompatible}$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 701,
+    "dificultad": "Fácil",
+    "bloque": "Tema 7: Geometría métrica",
+    "enunciado": "Calcula la distancia entre el punto $P(1, 2, 3)$ y el punto $Q(4, 2, -1)$.",
+    "resolucion_latex": "Módulo del vector $\\vec{PQ} = (3, 0, -4)$.\\n$$d(P,Q) = \\sqrt{3^2 + 0^2 + (-4)^2} = \\sqrt{9 + 0 + 16} = \\sqrt{25} = 5 \\text{ u}$$",
+    "pista": "Usa la distancia entre dos puntos como el módulo del vector que los une.",
+    "formula": "$$d(P,Q)=\\sqrt{(x_2-x_1)^2+(y_2-y_1)^2+(z_2-z_1)^2}$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 702,
+    "dificultad": "Fácil",
+    "bloque": "Tema 7: Geometría métrica",
+    "enunciado": "Calcula el ángulo que forman los planos $\\pi_1 \\equiv x+y = 0$ y $\\pi_2 \\equiv y+z = 0$.",
+    "resolucion_latex": "El ángulo entre planos es el ángulo entre sus vectores normales.\\n$\\vec{n_1} = (1, 1, 0)$ y $\\vec{n_2} = (0, 1, 1)$.\\n$$\\cos(\\alpha) = \\frac{|\\vec{n_1} \\cdot \\vec{n_2}|}{|\\vec{n_1}| |\\vec{n_2}|} = \\frac{|0 + 1 + 0|}{\\sqrt{2}\\sqrt{2}} = \\frac{1}{2}$$\\n$$\\alpha = \\arccos\\left(\\frac{1}{2}\\right) = 60^\\circ = \\frac{\\pi}{3} \\text{ rad}$$",
+    "pista": "El ángulo entre dos planos se calcula usando sus vectores normales.",
+    "formula": "$$\\cos\\alpha=\\frac{|\\vec n_1\\cdot\\vec n_2|}{|\\vec n_1||\\vec n_2|}$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 703,
+    "dificultad": "Fácil",
+    "bloque": "Tema 7: Geometría métrica",
+    "enunciado": "Determina la distancia del origen de coordenadas $O(0,0,0)$ al plano $2x - 2y + z - 6 = 0$.",
+    "resolucion_latex": "Aplicamos la fórmula de distancia punto a plano:\\n$$d(O, \\pi) = \\frac{|A(0) + B(0) + C(0) + D|}{\\sqrt{A^2 + B^2 + C^2}} = \\frac{|-6|}{\\sqrt{2^2 + (-2)^2 + 1^2}} = \\frac{6}{\\sqrt{4+4+1}} = \\frac{6}{3} = 2 \\text{ u}$$",
+    "pista": "Sustituye las coordenadas del punto en la ecuación del plano y divide entre el módulo del vector normal.",
+    "formula": "$$d(P,\\pi)=\\frac{|Ax_0+By_0+Cz_0+D|}{\\sqrt{A^2+B^2+C^2}}$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 704,
+    "dificultad": "Media",
+    "bloque": "Tema 7: Geometría métrica",
+    "enunciado": "Calcula el ángulo que forma la recta $r \\equiv x = y = z$ con el plano $\\pi \\equiv x + y = 0$.",
+    "resolucion_latex": "El ángulo $\\alpha$ entre recta y plano se calcula usando el seno con el vector de la recta y el normal del plano.\\n$\\vec{v_r} = (1, 1, 1)$ y $\\vec{n_\\pi} = (1, 1, 0)$.\\n$$\\sin(\\alpha) = \\frac{|\\vec{v_r} \\cdot \\vec{n_\\pi}|}{|\\vec{v_r}| |\\vec{n_\\pi}|} = \\frac{|1+1+0|}{\\sqrt{3}\\sqrt{2}} = \\frac{2}{\\sqrt{6}} = \\frac{2\\sqrt{6}}{6} = \\frac{\\sqrt{6}}{3}$$\\n$$\\alpha = \\arcsin\\left(\\frac{\\sqrt{6}}{3}\\right) \\approx 54.7^\\circ$$",
+    "pista": "Para recta-plano se usa el seno del ángulo con el vector director de la recta y el normal del plano.",
+    "formula": "$$\\sin\\alpha=\\frac{|\\vec v_r\\cdot\\vec n_\\pi|}{|\\vec v_r||\\vec n_\\pi|}$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 705,
+    "dificultad": "Media",
+    "bloque": "Tema 7: Geometría métrica",
+    "enunciado": "Halla la distancia del punto $P(2, 0, 1)$ a la recta $r \\equiv \\frac{x-1}{2} = \\frac{y}{-1} = \\frac{z}{1}$.",
+    "resolucion_latex": "Punto de la recta $A(1, 0, 0)$, vector $\\vec{v_r} = (2, -1, 1)$. Vector $\\vec{AP} = (1, 0, 1)$.\\n$$d(P, r) = \\frac{|\\vec{AP} \\times \\vec{v_r}|}{|\\vec{v_r}|}$$\\n$$\\vec{AP} \\times \\vec{v_r} = \\begin{vmatrix} \\vec{i} & \\vec{j} & \\vec{k} \\\\ 1 & 0 & 1 \\\\ 2 & -1 & 1 \\end{vmatrix} = (1, 1, -1)$$\\n$$d(P, r) = \\frac{\\sqrt{1^2 + 1^2 + (-1)^2}}{\\sqrt{2^2 + (-1)^2 + 1^2}} = \\frac{\\sqrt{3}}{\\sqrt{6}} = \\sqrt{\\frac{1}{2}} = \\frac{\\sqrt{2}}{2} \\text{ u}$$",
+    "pista": "Toma un punto de la recta, forma el vector hasta el punto exterior y usa producto vectorial.",
+    "formula": "$$d(P,r)=\\frac{|\\vec{AP}\\times\\vec v_r|}{|\\vec v_r|}$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 706,
+    "dificultad": "Media",
+    "bloque": "Tema 7: Geometría métrica",
+    "enunciado": "Halla el área del triángulo que tiene por vértices los puntos de corte del plano $x + 2y + z = 4$ con los ejes de coordenadas.",
+    "resolucion_latex": "Corte eje X ($y=0, z=0$): $A(4, 0, 0)$.\\nCorte eje Y ($x=0, z=0$): $B(0, 2, 0)$.\\nCorte eje Z ($x=0, y=0$): $C(0, 0, 4)$.\\nVectores $\\vec{AB} = (-4, 2, 0)$ y $\\vec{AC} = (-4, 0, 4)$.\\n$$\\vec{AB} \\times \\vec{AC} = \\begin{vmatrix} \\vec{i} & \\vec{j} & \\vec{k} \\\\ -4 & 2 & 0 \\\\ -4 & 0 & 4 \\end{vmatrix} = (8, 16, 8)$$\\nÁrea $= \\frac{1}{2} \\sqrt{8^2 + 16^2 + 8^2} = \\frac{1}{2} \\sqrt{64 + 256 + 64} = \\frac{1}{2} \\sqrt{384} = 4\\sqrt{6} \\text{ u}^2$.",
+    "pista": "Encuentra los tres cortes con los ejes y calcula el área con medio módulo de un producto vectorial.",
+    "formula": "$$A_{\\triangle}=\\frac{1}{2}|\\vec{AB}\\times\\vec{AC}|$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 707,
+    "dificultad": "Difícil",
+    "bloque": "Tema 7: Geometría métrica",
+    "enunciado": "Halla la distancia mínima entre las rectas $r \\equiv x=y=z$ y $s \\equiv \\begin{cases} x = 1 \\\\ y = 0 \\end{cases}$.",
+    "resolucion_latex": "Elementos: $P_r(0,0,0), \\vec{u}=(1,1,1)$. $P_s(1,0,0), \\vec{v}=(0,0,1)$ (ya que $s$ es vertical).\\nVector $\\vec{P_r P_s} = (1, 0, 0)$.\\nProducto mixto $[\\vec{P_r P_s}, \\vec{u}, \\vec{v}] = \\begin{vmatrix} 1 & 0 & 0 \\\\ 1 & 1 & 1 \\\\ 0 & 0 & 1 \\end{vmatrix} = 1(1) - 0 = 1$.\\nProducto vectorial $\\vec{u} \\times \\vec{v} = \\begin{vmatrix} \\vec{i} & \\vec{j} & \\vec{k} \\\\ 1 & 1 & 1 \\\\ 0 & 0 & 1 \\end{vmatrix} = (1, -1, 0) \\implies |\\vec{u} \\times \\vec{v}| = \\sqrt{2}$.\\n$$d(r,s) = \\frac{|[\\vec{P_r P_s}, \\vec{u}, \\vec{v}]|}{|\\vec{u} \\times \\vec{v}|} = \\frac{1}{\\sqrt{2}} = \\frac{\\sqrt{2}}{2} \\text{ u}$$",
+    "pista": "Para rectas que se cruzan, usa producto mixto dividido entre el módulo del producto vectorial de sus directores.",
+    "formula": "$$d(r,s)=\\frac{|[\\vec{P_rP_s},\\vec u,\\vec v]|}{|\\vec u\\times\\vec v|}$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 708,
+    "dificultad": "Difícil",
+    "bloque": "Tema 7: Geometría métrica",
+    "enunciado": "Determina la ecuación del plano mediador del segmento de extremos $A(1, 1, 1)$ y $B(3, -1, 5)$.",
+    "resolucion_latex": "El plano mediador pasa por el punto medio $M$ y tiene como vector normal el vector $\\vec{AB}$.\\n1) Punto medio: $M = \\left(\\frac{1+3}{2}, \\frac{1-1}{2}, \\frac{1+5}{2}\\right) = (2, 0, 3)$.\\n2) Vector normal $\\vec{n} = \\vec{AB} = (2, -2, 4) \\equiv (1, -1, 2)$ (simplificado).\\n3) Ecuación del plano: $1(x-2) - 1(y-0) + 2(z-3) = 0 \\implies x - y + 2z - 8 = 0$.",
+    "pista": "El plano mediador pasa por el punto medio del segmento y es perpendicular al vector que une sus extremos.",
+    "formula": "$$M=\\left(\\frac{x_A+x_B}{2},\\frac{y_A+y_B}{2},\\frac{z_A+z_B}{2}\\right)$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 709,
+    "dificultad": "Difícil",
+    "bloque": "Tema 7: Geometría métrica",
+    "enunciado": "Se da una pirámide de base cuadrangular regular $ABCD$ en el plano $z=0$ y vértice $V(0,0,5)$. Si $A(2,2,0)$, halla el volumen de la pirámide.",
+    "resolucion_latex": "Por ser base cuadrangular regular centrada en el origen (dado el vértice V superior), el lado del cuadrado va de $A(2,2,0)$ a un adyacente como $B(2,-2,0)$ o $D(-2,2,0)$.\\nLado del cuadrado $= 4$. Área de la base $= 4^2 = 16 \\text{ u}^2$.\\nAltura $h = 5$ (coordenada $z$ del vértice V).\\n$$V = \\frac{1}{3} A_{base} \\cdot h = \\frac{1}{3} (16) (5) = \\frac{80}{3} \\text{ u}^3$$",
+    "pista": "El volumen de una pirámide es un tercio del área de la base por la altura.",
+    "formula": "$$V=\\frac{1}{3}A_{base}\\cdot h$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 710,
+    "dificultad": "Superior",
+    "bloque": "Tema 7: Geometría métrica",
+    "enunciado": "*(Reto Supernova)*: Deduce analíticamente la fórmula geométrica de la distancia de un punto $P_0(x_0,y_0,z_0)$ a un plano $\\pi \\equiv Ax+By+Cz+D=0$ utilizando la proyección ortogonal de vectores.",
+    "resolucion_latex": "Tomamos un punto arbitrario del plano $P(x,y,z)$ que cumple $Ax+By+Cz+D=0$. Formamos el vector $\\vec{PP_0} = (x_0-x, y_0-y, z_0-z)$.\\nEl vector normal al plano es $\\vec{n} = (A,B,C)$.\\nLa distancia pedida $d$ es exactamente la proyección ortogonal del vector $\\vec{PP_0}$ sobre la dirección del vector normal $\\vec{n}$.\\n$$d = \\text{Proy}_{\\vec{n}}(\\vec{PP_0}) = \\frac{|\\vec{PP_0} \\cdot \\vec{n}|}{|\\vec{n}|}$$\\nDesarrollamos el producto escalar en el numerador:\\n$$\\vec{PP_0} \\cdot \\vec{n} = A(x_0-x) + B(y_0-y) + C(z_0-z) = Ax_0 + By_0 + Cz_0 - (Ax+By+Cz)$$\\nComo $P$ pertenece al plano, sabemos que $Ax+By+Cz = -D$. Sustituimos:\\n$$\\vec{PP_0} \\cdot \\vec{n} = Ax_0 + By_0 + Cz_0 - (-D) = Ax_0 + By_0 + Cz_0 + D$$\\nSustituyendo el numerador y el módulo del vector $\\vec{n}$ en la fórmula original, obtenemos la demostración:\\n$$d = \\frac{|Ax_0 + By_0 + Cz_0 + D|}{\\sqrt{A^2 + B^2 + C^2}}$$",
+    "pista": "La distancia punto-plano se obtiene proyectando ortogonalmente sobre el vector normal del plano.",
+    "formula": "$$d=\\frac{|\\vec{PP_0}\\cdot\\vec n|}{|\\vec n|}$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 801,
+    "dificultad": "Fácil",
+    "bloque": "Tema 8: Límites y Continuidad",
+    "enunciado": "Calcula $\\lim_{x \\to 3} \\frac{x^2 - 9}{x - 3}$.",
+    "resolucion_latex": "Es una indeterminación $0/0$. Factorizamos el numerador (diferencia de cuadrados):\\n$$\\lim_{x \\to 3} \\frac{(x-3)(x+3)}{x-3} = \\lim_{x \\to 3} (x+3) = 6$$",
+    "pista": "Ante una indeterminación $0/0$, factoriza y simplifica antes de sustituir.",
+    "formula": "$$x^2-a^2=(x-a)(x+a)$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 802,
+    "dificultad": "Fácil",
+    "bloque": "Tema 8: Límites y Continuidad",
+    "enunciado": "Calcula el límite hacia el infinito: $\\lim_{x \\to +\\infty} \\frac{4x^3 - 2x + 1}{2x^3 + 5}$.",
+    "resolucion_latex": "Indeterminación $\\infty/\\infty$. Como los polinomios son del mismo grado (grado 3), el límite se calcula dividiendo sus coeficientes principales:\\n$$\\lim_{x \\to +\\infty} = \\frac{4}{2} = 2$$",
+    "pista": "En cocientes de polinomios del mismo grado, el límite en infinito es el cociente de coeficientes principales.",
+    "formula": "$$\\lim_{x\\to\\infty}\\frac{a_nx^n+\\cdots}{b_nx^n+\\cdots}=\\frac{a_n}{b_n}$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 803,
+    "dificultad": "Fácil",
+    "bloque": "Tema 8: Límites y Continuidad",
+    "enunciado": "Indica si la función $f(x) = \\begin{cases} x^2 & x \\le 1 \\\\ 2x-1 & x > 1 \\end{cases}$ es continua en $x=1$.",
+    "resolucion_latex": "1) $f(1) = 1^2 = 1$.\\n2) Límite izquierdo: $\\lim_{x \\to 1^-} x^2 = 1$.\\n3) Límite derecho: $\\lim_{x \\to 1^+} (2x - 1) = 2(1) - 1 = 1$.\\nComo $\\lim_{x \\to 1} f(x) = f(1)$, la función **es continua** en $x=1$.",
+    "pista": "Comprueba valor de la función, límite izquierdo y límite derecho en el punto de unión.",
+    "formula": "$$f\\text{ continua en }a\\Leftrightarrow \\lim_{x\\to a^-}f(x)=\\lim_{x\\to a^+}f(x)=f(a)$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 804,
+    "dificultad": "Media",
+    "bloque": "Tema 8: Límites y Continuidad",
+    "enunciado": "Calcula el límite con indeterminación $1^{\\infty}$: $\\lim_{x \\to +\\infty} \\left( \\frac{x+5}{x+2} \\right)^{3x}$.",
+    "resolucion_latex": "Aplicamos la regla del número e: $e^{\\lim g(x)[f(x)-1]}$.\\n$$L = e^{\\lim 3x \\left(\\frac{x+5}{x+2} - 1\\right)} = e^{\\lim 3x \\left(\\frac{x+5-x-2}{x+2}\\right)} = e^{\\lim \\frac{9x}{x+2}}$$\\nComo el límite del exponente es $9/1 = 9$, el resultado es $e^9$.",
+    "pista": "En límites tipo $1^\\infty$, transforma la expresión usando el número $e$.",
+    "formula": "$$\\lim f(x)^{g(x)}=e^{\\lim g(x)(f(x)-1)}\\quad\\text{si }f(x)\\to1$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 805,
+    "dificultad": "Media",
+    "bloque": "Tema 8: Límites y Continuidad",
+    "enunciado": "Resuelve la indeterminación usando conjugados: $\\lim_{x \\to 4} \\frac{\\sqrt{x} - 2}{x - 4}$.",
+    "resolucion_latex": "Indeterminación $0/0$. Multiplicamos arriba y abajo por $(\\sqrt{x} + 2)$:\\n$$\\lim_{x \\to 4} \\frac{(\\sqrt{x} - 2)(\\sqrt{x} + 2)}{(x-4)(\\sqrt{x} + 2)} = \\lim_{x \\to 4} \\frac{x - 4}{(x-4)(\\sqrt{x} + 2)}$$\\n$$\\lim_{x \\to 4} \\frac{1}{\\sqrt{x} + 2} = \\frac{1}{\\sqrt{4} + 2} = \\frac{1}{4}$$",
+    "pista": "Cuando aparece una resta de raíces, multiplica por el conjugado.",
+    "formula": "$$(\\sqrt{x}-a)(\\sqrt{x}+a)=x-a^2$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 806,
+    "dificultad": "Media",
+    "bloque": "Tema 8: Límites y Continuidad",
+    "enunciado": "Determina el valor de $k$ para que $f(x) = \\begin{cases} \\frac{\\sin(kx)}{x} & x < 0 \\\\ x + 3 & x \\ge 0 \\end{cases}$ sea continua en $x=0$.",
+    "resolucion_latex": "$f(0) = 3$.\\nLímite por la derecha: $3$.\\nLímite por la izquierda: $\\lim_{x \\to 0^-} \\frac{\\sin(kx)}{x} = k \\cdot \\lim_{x \\to 0^-} \\frac{\\sin(kx)}{kx} = k \\cdot 1 = k$.\\nPara que sea continua: $k = 3$.",
+    "pista": "Para continuidad en un punto, iguala el límite lateral con el valor de la función.",
+    "formula": "$$\\lim_{x\\to a^-}f(x)=f(a)=\\lim_{x\\to a^+}f(x)$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 807,
+    "dificultad": "Difícil",
+    "bloque": "Tema 8: Límites y Continuidad",
+    "enunciado": "Demuestra que la ecuación $x^3 + x - 1 = 0$ tiene al menos una solución real usando el Teorema de Bolzano.",
+    "resolucion_latex": "Definimos $f(x) = x^3 + x - 1$, que es una función polinómica y por tanto continua en todo $\\mathbb{R}$.\\nBuscamos dos puntos donde cambie de signo:\\n$f(0) = -1 < 0$.\\n$f(1) = 1 + 1 - 1 = 1 > 0$.\\nComo $f(x)$ es continua en el intervalo $[0, 1]$ y $f(0) \\cdot f(1) < 0$, el Teorema de Bolzano asegura que existe un valor $c \\in (0, 1)$ donde $f(c) = 0$.",
+    "pista": "Usa Bolzano buscando dos valores donde la función continua tenga signos opuestos.",
+    "formula": "$$f(a)\\cdot f(b)<0\\Rightarrow\\exists c\\in(a,b):f(c)=0$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 808,
+    "dificultad": "Difícil",
+    "bloque": "Tema 8: Límites y Continuidad",
+    "enunciado": "Calcula la ecuación de la asíntota oblicua de la función $f(x) = \\frac{x^2 - 3x + 2}{x + 1}$.",
+    "resolucion_latex": "La asíntota oblicua es de la forma $y = mx + n$.\\n$$m = \\lim_{x \\to \\infty} \\frac{f(x)}{x} = \\lim_{x \\to \\infty} \\frac{x^2 - 3x + 2}{x^2 + x} = 1$$\\n$$n = \\lim_{x \\to \\infty} [f(x) - mx] = \\lim_{x \\to \\infty} \\left( \\frac{x^2 - 3x + 2}{x + 1} - x \\right)$$\\n$$n = \\lim_{x \\to \\infty} \\frac{x^2 - 3x + 2 - x^2 - x}{x + 1} = \\lim_{x \\to \\infty} \\frac{-4x + 2}{x + 1} = -4$$\\nAsíntota oblicua: $y = x - 4$.",
+    "pista": "Para una asíntota oblicua $y=mx+n$, calcula primero $m$ y después $n$.",
+    "formula": "$$m=\\lim_{x\\to\\infty}\\frac{f(x)}{x},\\quad n=\\lim_{x\\to\\infty}(f(x)-mx)$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 809,
+    "dificultad": "Difícil",
+    "bloque": "Tema 8: Límites y Continuidad",
+    "enunciado": "Halla las asíntotas horizontales y verticales de la función exponencial $f(x) = e^{1/x}$.",
+    "resolucion_latex": "1) Asíntota Vertical (donde el exponente revienta, $x=0$):\\n$\\lim_{x \\to 0^+} e^{1/x} = e^{+\\infty} = +\\infty$. Hay A.V. por la derecha.\\n$\\lim_{x \\to 0^-} e^{1/x} = e^{-\\infty} = 0$. (No hay A.V. por la izquierda).\\n2) Asíntota Horizontal:\\n$\\lim_{x \\to \\pm\\infty} e^{1/x} = e^{1/\\infty} = e^0 = 1$.\\nAsíntota horizontal en $y = 1$ tanto en $+\\infty$ como en $-\\infty$.",
+    "pista": "Estudia por separado los límites laterales en el posible punto problemático y los límites en infinito.",
+    "formula": "$$\\text{A.H. }y=L\\Leftrightarrow \\lim_{x\\to\\pm\\infty}f(x)=L$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 810,
+    "dificultad": "Superior",
+    "bloque": "Tema 8: Límites y Continuidad",
+    "enunciado": "*(Reto Supernova)*: Una función continua $f(x)$ definida en el intervalo $[0, 1]$ toma valores exclusivamente en ese mismo intervalo $[0, 1]$. Utilizando el Teorema de Bolzano, demuestra que la gráfica de la función obligatoriamente cortará a la diagonal principal ($y=x$), es decir, que existe un punto fijo $f(c) = c$.",
+    "resolucion_latex": "Definimos una función auxiliar $g(x) = f(x) - x$. Nuestro objetivo es demostrar que $g(x) = 0$ en algún punto.\\n$g(x)$ es continua en $[0, 1]$ por ser resta de funciones continuas.\\nEvaluamos en los extremos del intervalo:\\n$g(0) = f(0) - 0 = f(0)$. Como $f(x) \\in [0, 1]$, $f(0) \\ge 0$, luego $g(0) \\ge 0$.\\n$g(1) = f(1) - 1$. Como $f(1) \\le 1$, entonces $f(1) - 1 \\le 0$, luego $g(1) \\le 0$.\\n- Si $g(0) = 0$ o $g(1) = 0$, el teorema ya se cumple en los extremos.\\n- Si $g(0) > 0$ y $g(1) < 0$, hay un cambio de signo en un intervalo cerrado y continuo. Por el Teorema de Bolzano, existe un $c \\in (0, 1)$ tal que $g(c) = 0$.\\nComo $g(c) = f(c) - c = 0 \\implies f(c) = c$. Demostrado.",
+    "pista": "Resta la diagonal: estudiar $f(x)=x$ equivale a estudiar los ceros de $g(x)=f(x)-x$.",
+    "formula": "$$g(x)=f(x)-x,\\quad g(c)=0\\Rightarrow f(c)=c$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 901,
+    "dificultad": "Fácil",
+    "bloque": "Tema 9: Derivadas",
+    "enunciado": "Calcula la derivada de la función $f(x) = (2x^3 - 5x + 1)^4$.",
+    "resolucion_latex": "Aplicamos la regla de la cadena (potencia exterior y luego base interior):\\n$$f'(x) = 4(2x^3 - 5x + 1)^3 \\cdot (6x^2 - 5)$$",
+    "pista": "Aplica regla de la cadena: deriva la potencia exterior y multiplica por la derivada del interior.",
+    "formula": "$$(g(x))^n{}'=n(g(x))^{n-1}g'(x)$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 902,
+    "dificultad": "Fácil",
+    "bloque": "Tema 9: Derivadas",
+    "enunciado": "Halla la derivada del producto $f(x) = x^2 \\cdot e^x$.",
+    "resolucion_latex": "Regla del producto: $(u \\cdot v)' = u'v + uv'$.\\n$$f'(x) = (2x)e^x + x^2(e^x) = e^x(x^2 + 2x)$$",
+    "pista": "Cuando hay producto de funciones, deriva la primera por la segunda más la primera por la derivada de la segunda.",
+    "formula": "$$(uv)'=u'v+uv'$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 903,
+    "dificultad": "Fácil",
+    "bloque": "Tema 9: Derivadas",
+    "enunciado": "Calcula la derivada del cociente $f(x) = \\frac{2x}{x - 1}$.",
+    "resolucion_latex": "Regla del cociente: $\\frac{u'v - uv'}{v^2}$.\\n$$f'(x) = \\frac{2(x - 1) - (2x)(1)}{(x - 1)^2} = \\frac{2x - 2 - 2x}{(x - 1)^2} = \\frac{-2}{(x - 1)^2}$$",
+    "pista": "En un cociente, deriva numerador y denominador respetando el orden $u'v-uv'$.",
+    "formula": "$$\\left(\\frac{u}{v}\\right)'=\\frac{u'v-uv'}{v^2}$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 904,
+    "dificultad": "Media",
+    "bloque": "Tema 9: Derivadas",
+    "enunciado": "Encuentra la ecuación de la recta tangente a la curva $f(x) = \\ln(x^2 + 1)$ en el punto de abscisa $x = 1$.",
+    "resolucion_latex": "Punto: $f(1) = \\ln(1^2 + 1) = \\ln(2)$. Punto $(1, \\ln(2))$.\\nDerivada: $f'(x) = \\frac{2x}{x^2 + 1}$.\\nPendiente en $x=1$: $m = f'(1) = \\frac{2}{2} = 1$.\\nRecta tangente: $y - \\ln(2) = 1(x - 1) \\implies y = x - 1 + \\ln(2)$.",
+    "pista": "La pendiente de la tangente en $x=a$ es $f'(a)$ y el punto es $(a,f(a))$.",
+    "formula": "$$y-f(a)=f'(a)(x-a)$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 905,
+    "dificultad": "Media",
+    "bloque": "Tema 9: Derivadas",
+    "enunciado": "Deriva la función $f(x) = x^x$ utilizando derivación logarítmica.",
+    "resolucion_latex": "Llamamos $y = x^x$. Aplicamos logaritmos: $\\ln(y) = x \\ln(x)$.\\nDerivamos a ambos lados (implícitamente a la izquierda):\\n$$\\frac{y'}{y} = 1 \\cdot \\ln(x) + x \\cdot \\frac{1}{x} = \\ln(x) + 1$$\\nDespejamos $y'$:\\n$$y' = y (\\ln(x) + 1) = x^x (\\ln(x) + 1)$$",
+    "pista": "Para funciones del tipo variable elevada a variable, toma logaritmos antes de derivar.",
+    "formula": "$$y=x^x\\Rightarrow \\ln y=x\\ln x$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 906,
+    "dificultad": "Media",
+    "bloque": "Tema 9: Derivadas",
+    "enunciado": "Calcula de forma implícita la derivada $y'$ de la curva $x^2 + y^2 - 2xy = 4$.",
+    "resolucion_latex": "Derivamos respecto a $x$ asumiendo que $y$ depende de $x$:\\n$$2x + 2y y' - 2(1 \\cdot y + x y') = 0$$\\n$$2x + 2yy' - 2y - 2xy' = 0$$\\nDividimos por 2 y agrupamos $y'$:\\n$$yy' - xy' = y - x \\implies y'(y - x) = y - x$$\\n$$y' = \\frac{y - x}{y - x} = 1 \\quad (\\text{si } x \\neq y)$$",
+    "pista": "En derivación implícita, cada vez que derives una expresión con $y$, multiplica por $y'$.",
+    "formula": "$$\\frac{d}{dx}(y^n)=ny^{n-1}y'$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 907,
+    "dificultad": "Difícil",
+    "bloque": "Tema 9: Derivadas",
+    "enunciado": "Dada la función $f(x) = \\frac{1}{x+2}$, halla la expresión general para su derivada n-ésima $f^{(n)}(x)$.",
+    "resolucion_latex": "Escribimos $f(x) = (x+2)^{-1}$.\\n$f'(x) = -1(x+2)^{-2}$\\n$f''(x) = (-1)(-2)(x+2)^{-3} = 2(x+2)^{-3}$\\n$f'''(x) = (-1)(-2)(-3)(x+2)^{-4} = -6(x+2)^{-4}$\\nSe observa que aparecen factoriales y alternancia de signos:\\n$$f^{(n)}(x) = (-1)^n \\cdot n! \\cdot (x+2)^{-(n+1)} = \\frac{(-1)^n n!}{(x+2)^{n+1}}$$",
+    "pista": "Calcula varias derivadas y busca factoriales, signos alternos y potencias crecientes en el denominador.",
+    "formula": "$$\\frac{d^n}{dx^n}(x+a)^{-1}=\\frac{(-1)^n n!}{(x+a)^{n+1}}$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 908,
+    "dificultad": "Difícil",
+    "bloque": "Tema 9: Derivadas",
+    "enunciado": "Halla los valores de $a$ y $b$ para que $f(x) = \\begin{cases} ax^2 + 3x & \\text{si } x \\le 2 \\\\ x^2 - bx - 4 & \\text{si } x > 2 \\end{cases}$ sea derivable en $x=2$.",
+    "resolucion_latex": "1) Continuidad en $x=2$: $f(2) = 4a + 6$. Límite derecho: $4 - 2b - 4 = -2b$. Igualando: $4a + 6 = -2b \\implies 2a + b = -3$.\\n2) Derivabilidad en $x=2$: $f'(x)$ es $2ax+3$ y $2x-b$.\\nIgualamos derivadas en $x=2$: $4a + 3 = 4 - b \\implies 4a + b = 1$.\\nResolvemos el sistema restando ecuaciones: $(4a+b) - (2a+b) = 1 - (-3) \\implies 2a = 4 \\implies a = 2$.\\nSi $a=2$, $2(2) + b = -3 \\implies 4 + b = -3 \\implies b = -7$.",
+    "pista": "Para que una función a trozos sea derivable, primero debe ser continua y luego tener derivadas laterales iguales.",
+    "formula": "$$f\\text{ derivable en }a\\Rightarrow f\\text{ continua en }a\\text{ y }f'_-(a)=f'_+(a)$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 909,
+    "dificultad": "Difícil",
+    "bloque": "Tema 9: Derivadas",
+    "enunciado": "Encuentra la ecuación de la recta normal a la función $f(x) = e^{x^2-1}$ en el punto de corte con el eje de ordenadas.",
+    "resolucion_latex": "Corte eje Y ($x=0$): $f(0) = e^{-1} = 1/e$. Punto $(0, 1/e)$.\\nDerivada: $f'(x) = 2x e^{x^2-1}$. Pendiente tangente en $x=0$: $m = f'(0) = 0$.\\nComo la tangente es horizontal ($m=0$), la recta normal (perpendicular) debe ser vertical.\\nLa ecuación de una recta vertical que pasa por $x=0$ es simplemente:\\n$$x = 0$$",
+    "pista": "La recta normal es perpendicular a la tangente; si la tangente es horizontal, la normal es vertical.",
+    "formula": "$$m_{normal}=-\\frac{1}{m_{tangente}}$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 910,
+    "dificultad": "Superior",
+    "bloque": "Tema 9: Derivadas",
+    "enunciado": "*(Reto Supernova)*: Demuestra la regla de derivación de la función inversa $(f^{-1})'(x) = \\frac{1}{f'(f^{-1}(x))}$ partiendo de la composición de funciones.",
+    "resolucion_latex": "Por definición de función inversa, sabemos que al componerlas obtenemos la identidad:\\n$$f(f^{-1}(x)) = x$$\\nDerivamos ambos lados de esta igualdad usando la Regla de la Cadena en el lado izquierdo:\\n$$f'(f^{-1}(x)) \\cdot (f^{-1})'(x) = 1$$\\nDespejamos la derivada de la función inversa:\\n$$(f^{-1})'(x) = \\frac{1}{f'(f^{-1}(x))}$$\\nQueda demostrado.",
+    "pista": "Parte de la identidad $f(f^{-1}(x))=x$ y deriva usando regla de la cadena.",
+    "formula": "$$(f^{-1})'(x)=\\frac{1}{f'(f^{-1}(x))}$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 1001,
+    "dificultad": "Fácil",
+    "bloque": "Tema 10: Aplicaciones de la derivada",
+    "enunciado": "Halla los intervalos de crecimiento y decrecimiento de $f(x) = 2x^2 - 8x + 3$.",
+    "resolucion_latex": "$f'(x) = 4x - 8$. Igualamos a cero: $4x - 8 = 0 \\implies x = 2$.\\nEn $(-\\infty, 2)$, tomamos $x=0 \\implies f'(0) = -8 < 0 \\implies$ Decreciente.\\nEn $(2, +\\infty)$, tomamos $x=3 \\implies f'(3) = 4 > 0 \\implies$ Creciente.",
+    "pista": "Estudia el signo de la derivada: negativa implica decrecimiento y positiva crecimiento.",
+    "formula": "$$f'(x)>0\\Rightarrow f\\text{ crece},\\quad f'(x)<0\\Rightarrow f\\text{ decrece}$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 1002,
+    "dificultad": "Fácil",
+    "bloque": "Tema 10: Aplicaciones de la derivada",
+    "enunciado": "Encuentra los máximos y mínimos relativos de la función anterior $f(x) = 2x^2 - 8x + 3$.",
+    "resolucion_latex": "El único punto crítico es $x=2$. Como la función pasa de decrecer a crecer, es un Mínimo.\\nCalculamos la coordenada Y: $f(2) = 2(4) - 8(2) + 3 = 8 - 16 + 3 = -5$.\\nHay un Mínimo relativo en $(2, -5)$.",
+    "pista": "Un mínimo relativo aparece cuando la función pasa de decrecer a crecer.",
+    "formula": "$$f'(x):\\ -\\to+\\Rightarrow \\text{mínimo relativo}$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 1003,
+    "dificultad": "Fácil",
+    "bloque": "Tema 10: Aplicaciones de la derivada",
+    "enunciado": "Halla los posibles puntos de inflexión de $f(x) = x^3 - 3x^2 + 2x$.",
+    "resolucion_latex": "Calculamos la segunda derivada:\\n$f'(x) = 3x^2 - 6x + 2$\\n$f''(x) = 6x - 6$\\nIgualamos a cero: $6x - 6 = 0 \\implies x = 1$.\\nComprobamos cambio de signo en $f''$: pasa de negativo a positivo en $x=1$, por lo que es punto de inflexión. Coordenada Y: $f(1) = 0$. Punto $(1, 0)$.",
+    "pista": "Los puntos de inflexión se buscan con la segunda derivada y cambio de concavidad.",
+    "formula": "$$f''(x)=0\\quad\\text{y cambia de signo}$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 1004,
+    "dificultad": "Media",
+    "bloque": "Tema 10: Aplicaciones de la derivada",
+    "enunciado": "Descompón el número 10 en dos sumandos positivos de manera que la suma de sus cuadrados sea mínima.",
+    "resolucion_latex": "Sean los números $x$ e $y$. Condición: $x+y=10 \\implies y = 10-x$.\\nFunción a minimizar: $S(x) = x^2 + y^2 = x^2 + (10-x)^2 = x^2 + 100 - 20x + x^2 = 2x^2 - 20x + 100$.\\nDerivamos: $S'(x) = 4x - 20 = 0 \\implies x = 5$.\\nSegunda derivada $S''(x) = 4 > 0$ (es mínimo). Los números son 5 y 5.",
+    "pista": "Escribe una variable en función de la otra usando la condición y minimiza con derivadas.",
+    "formula": "$$S'(x)=0,\\quad S''(x)>0\\Rightarrow \\text{mínimo}$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 1005,
+    "dificultad": "Media",
+    "bloque": "Tema 10: Aplicaciones de la derivada",
+    "enunciado": "Aplica L'Hôpital para calcular $\\lim_{x \\to 0} \\frac{e^x - 1 - x}{x^2}$.",
+    "resolucion_latex": "Da $0/0$. Aplicamos L'Hôpital:\\n$\\lim_{x \\to 0} \\frac{e^x - 1}{2x}$. Sigue dando $0/0$.\\nAplicamos L'Hôpital otra vez:\\n$\\lim_{x \\to 0} \\frac{e^x}{2} = \\frac{1}{2}$.",
+    "pista": "L'Hôpital puede aplicarse a indeterminaciones $0/0$ o $\\infty/\\infty$.",
+    "formula": "$$\\lim\\frac{f(x)}{g(x)}=\\lim\\frac{f'(x)}{g'(x)}$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 1006,
+    "dificultad": "Media",
+    "bloque": "Tema 10: Aplicaciones de la derivada",
+    "enunciado": "Comprueba si la función $f(x) = x^2 - 4x + 3$ cumple las hipótesis del Teorema de Rolle en el intervalo $[1, 3]$.",
+    "resolucion_latex": "Hipótesis:\\n1) $f$ es polinómica, por tanto continua en $[1,3]$.\\n2) Es derivable en $(1,3)$.\\n3) Evaluamos los extremos: $f(1) = 1 - 4 + 3 = 0$. $f(3) = 9 - 12 + 3 = 0$. Al ser $f(1) = f(3)$, se cumple Rolle.\\nExiste un $c \\in (1,3)$ tal que $f'(c)=0$. ($f'(x) = 2x - 4 = 0 \\implies c = 2$).",
+    "pista": "Para Rolle, comprueba continuidad, derivabilidad e igualdad de valores en los extremos.",
+    "formula": "$$f(a)=f(b)\\Rightarrow \\exists c\\in(a,b):f'(c)=0$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 1007,
+    "dificultad": "Difícil",
+    "bloque": "Tema 10: Aplicaciones de la derivada",
+    "enunciado": "Optimización: Determina el área máxima del rectángulo que se puede inscribir bajo la parábola $y = 12 - x^2$ y el eje X, teniendo un lado apoyado en el eje X.",
+    "resolucion_latex": "Sea el vértice superior derecho del rectángulo el punto $(x, 12-x^2)$ de la parábola.\\nLa base del rectángulo medirá $2x$ (por simetría) y la altura $y = 12-x^2$.\\nÁrea $A(x) = 2x(12-x^2) = 24x - 2x^3$.\\nDerivamos: $A'(x) = 24 - 6x^2 = 0 \\implies 6x^2 = 24 \\implies x^2 = 4 \\implies x = 2$.\\nEl área máxima es $A(2) = 24(2) - 2(8) = 48 - 16 = 32 \\text{ u}^2$.",
+    "pista": "Define el área en función de una sola variable y busca el máximo con la derivada.",
+    "formula": "$$A'(x)=0,\\quad A''(x)<0\\Rightarrow \\text{máximo}$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 1008,
+    "dificultad": "Difícil",
+    "bloque": "Tema 10: Aplicaciones de la derivada",
+    "enunciado": "Halla los parámetros $a, b, c$ de la función $f(x) = x^3 + ax^2 + bx + c$ sabiendo que pasa por el punto $(0,0)$ y tiene un punto de inflexión con tangente horizontal en $x=1$.",
+    "resolucion_latex": "1) Pasa por $(0,0)$: $f(0) = c = 0$.\\n2) Tangente horizontal en $x=1$: $f'(1) = 0$. $f'(x) = 3x^2 + 2ax + b \\implies 3 + 2a + b = 0$.\\n3) Inflexión en $x=1$: $f''(1) = 0$. $f''(x) = 6x + 2a \\implies 6 + 2a = 0 \\implies a = -3$.\\nSustituimos $a$ en 2): $3 + 2(-3) + b = 0 \\implies 3 - 6 + b = 0 \\implies b = 3$.\\nFunción: $f(x) = x^3 - 3x^2 + 3x$.",
+    "pista": "Traduce cada condición geométrica a una ecuación: pasar por un punto, tangente horizontal e inflexión.",
+    "formula": "$$\\text{tangente horizontal: }f'(a)=0,\\quad \\text{inflexión: }f''(a)=0$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 1009,
+    "dificultad": "Difícil",
+    "bloque": "Tema 10: Aplicaciones de la derivada",
+    "enunciado": "Aplica el Teorema del Valor Medio de Lagrange a $f(x) = x^3$ en $[0, 2]$ para encontrar el valor $c$.",
+    "resolucion_latex": "Según el TVM, existe $c \\in (0,2)$ tal que $f'(c) = \\frac{f(2) - f(0)}{2 - 0}$.\\n$f(2) = 8$, $f(0) = 0 \\implies \\frac{8 - 0}{2} = 4$.\\nDerivada $f'(x) = 3x^2$. Igualamos:\\n$3c^2 = 4 \\implies c^2 = 4/3 \\implies c = \\frac{2}{\\sqrt{3}} = \\frac{2\\sqrt{3}}{3} \\approx 1.15$.",
+    "pista": "El Teorema del Valor Medio iguala una derivada instantánea con la pendiente media del intervalo.",
+    "formula": "$$f'(c)=\\frac{f(b)-f(a)}{b-a}$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 1010,
+    "dificultad": "Superior",
+    "bloque": "Tema 10: Aplicaciones de la derivada",
+    "enunciado": "*(Reto Supernova)*: Una partícula se mueve por la curva $y = \\sqrt{x}$. ¿En qué punto $(x,y)$ la distancia al punto $A(2, 0)$ crece a la misma velocidad que su coordenada $x$?",
+    "resolucion_latex": "Distancia $D = \\sqrt{(x-2)^2 + (\\sqrt{x}-0)^2} = \\sqrt{x^2 - 4x + 4 + x} = \\sqrt{x^2 - 3x + 4}$.\\nBuscamos el punto donde la tasa de variación de la distancia sea igual a la de x, es decir, $\\frac{dD}{dt} = \\frac{dx}{dt}$.\\nPor Regla de la Cadena: $\\frac{dD}{dt} = \\frac{dD}{dx} \\cdot \\frac{dx}{dt}$.\\nPara que coincidan, necesitamos que $\\frac{dD}{dx} = 1$.\\n$\\frac{dD}{dx} = \\frac{2x - 3}{2\\sqrt{x^2 - 3x + 4}} = 1 \\implies 2x - 3 = 2\\sqrt{x^2 - 3x + 4}$.\\nElevamos al cuadrado: $(2x-3)^2 = 4(x^2 - 3x + 4) \\implies 4x^2 - 12x + 9 = 4x^2 - 12x + 16$.\\nLlegamos a $9 = 16$. No hay solución real. Nunca crecen a la misma velocidad.",
+    "pista": "Expresa la distancia como función de $x$ y compara tasas mediante la regla de la cadena.",
+    "formula": "$$\\frac{dD}{dt}=\\frac{dD}{dx}\\cdot\\frac{dx}{dt}$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 1101,
+    "dificultad": "Fácil",
+    "bloque": "Tema 11: Representación de funciones",
+    "enunciado": "Calcula el dominio de la función $f(x) = \\frac{x^2 + 3}{x^2 - 4}$.",
+    "resolucion_latex": "El denominador no puede ser cero.\\n$$x^2 - 4 = 0 \\implies x^2 = 4 \\implies x = \\pm 2$$\\nEl dominio es $Dom(f) = \\mathbb{R} \\setminus \\{-2, 2\\}$.",
+    "pista": "En funciones racionales, elimina del dominio los valores que anulan el denominador.",
+    "formula": "$$Dom\\left(\\frac{P(x)}{Q(x)}\\right)=\\mathbb{R}\\setminus\\{x:Q(x)=0\\}$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 1102,
+    "dificultad": "Fácil",
+    "bloque": "Tema 11: Representación de funciones",
+    "enunciado": "Calcula los puntos de corte con los ejes de la función $f(x) = x^2 - 5x + 6$.",
+    "resolucion_latex": "Corte con eje Y ($x=0$): $f(0) = 6 \\implies (0, 6)$.\\nCortes con eje X ($y=0$): $x^2 - 5x + 6 = 0$. Resolviendo la ecuación, $x=2$ y $x=3$.\\nPuntos de corte: $(2, 0)$ y $(3, 0)$.",
+    "pista": "Para cortar con el eje $Y$ toma $x=0$; para cortar con el eje $X$ toma $y=0$.",
+    "formula": "$$\\text{Eje }Y:x=0,\\quad \\text{Eje }X:f(x)=0$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 1103,
+    "dificultad": "Fácil",
+    "bloque": "Tema 11: Representación de funciones",
+    "enunciado": "Estudia la simetría de la función $f(x) = x^4 - 2x^2$.",
+    "resolucion_latex": "Calculamos $f(-x)$:\\n$$f(-x) = (-x)^4 - 2(-x)^2 = x^4 - 2x^2 = f(x)$$\\nComo $f(-x) = f(x)$, la función tiene simetría PAR (es simétrica respecto al eje Y).",
+    "pista": "Calcula $f(-x)$ y compárala con $f(x)$ y con $-f(x)$.",
+    "formula": "$$f(-x)=f(x)\\Rightarrow \\text{par};\\quad f(-x)=-f(x)\\Rightarrow \\text{impar}$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 1104,
+    "dificultad": "Media",
+    "bloque": "Tema 11: Representación de funciones",
+    "enunciado": "Halla los intervalos de crecimiento y decrecimiento de $f(x) = x^3 - 3x^2$.",
+    "resolucion_latex": "Calculamos la primera derivada y la igualamos a cero:\\n$$f'(x) = 3x^2 - 6x = 0 \\implies 3x(x - 2) = 0 \\implies x=0, x=2$$\\nEstudiamos el signo de $f'(x)$ en los intervalos:\\n- En $(-\\infty, 0)$, $f'(-1) = 9 > 0 \\implies$ Creciente.\\n- En $(0, 2)$, $f'(1) = -3 < 0 \\implies$ Decreciente.\\n- En $(2, +\\infty)$, $f'(3) = 9 > 0 \\implies$ Creciente.",
+    "pista": "Para crecimiento y decrecimiento, estudia el signo de la primera derivada en los intervalos críticos.",
+    "formula": "$$f'(x)>0\\Rightarrow\\text{crece};\\quad f'(x)<0\\Rightarrow\\text{decrece}$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 1105,
+    "dificultad": "Media",
+    "bloque": "Tema 11: Representación de funciones",
+    "enunciado": "Estudia la curvatura (concavidad y convexidad) y los puntos de inflexión de $f(x) = x^3 - 6x^2 + 9x$.",
+    "resolucion_latex": "Necesitamos la segunda derivada:\\n$$f'(x) = 3x^2 - 12x + 9$$\\n$$f''(x) = 6x - 12 = 0 \\implies x = 2$$\\nSigno de $f''(x)$:\\n- Si $x < 2$, $f''(0) = -12 < 0 \\implies$ Convexa (hacia abajo).\\n- Si $x > 2$, $f''(3) = 6 > 0 \\implies$ Cóncava (hacia arriba).\\nEn $x=2$ hay un punto de inflexión. Coordenada $y$: $f(2) = 8 - 24 + 18 = 2$. Punto $(2, 2)$.",
+    "pista": "La curvatura se estudia con la segunda derivada y sus cambios de signo.",
+    "formula": "$$f''(x)>0\\Rightarrow\\text{cóncava hacia arriba};\\quad f''(x)<0\\Rightarrow\\text{cóncava hacia abajo}$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 1106,
+    "dificultad": "Media",
+    "bloque": "Tema 11: Representación de funciones",
+    "enunciado": "Calcula las asíntotas de la función $f(x) = \\frac{2x^2}{x - 1}$.",
+    "resolucion_latex": "A. Vertical: $x - 1 = 0 \\implies x = 1$.\\nA. Horizontal: $\\lim_{x \\to \\infty} f(x) = \\infty$ (No tiene).\\nA. Oblicua ($y = mx + n$):\\n$$m = \\lim_{x \\to \\infty} \\frac{f(x)}{x} = \\lim \\frac{2x^2}{x^2 - x} = 2$$\\n$$n = \\lim_{x \\to \\infty} (f(x) - 2x) = \\lim \\left(\\frac{2x^2 - 2x(x-1)}{x-1}\\right) = \\lim \\frac{2x}{x-1} = 2$$\\nLa asíntota oblicua es $y = 2x + 2$.",
+    "pista": "Busca primero las verticales en ceros del denominador y luego horizontal u oblicua con límites.",
+    "formula": "$$y=mx+n,\\quad m=\\lim\\frac{f(x)}{x},\\quad n=\\lim(f(x)-mx)$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 1107,
+    "dificultad": "Difícil",
+    "bloque": "Tema 11: Representación de funciones",
+    "enunciado": "Halla los máximos y mínimos absolutos de la función $f(x) = x^3 - 3x$ en el intervalo cerrado $[-2, 2]$.",
+    "resolucion_latex": "Buscamos los puntos críticos: $f'(x) = 3x^2 - 3 = 0 \\implies x = \\pm 1$. (Ambos están en el intervalo).\\nEvaluamos la función en los críticos y en los extremos del intervalo:\\n$f(-2) = -8 + 6 = -2$\\n$f(-1) = -1 + 3 = 2$\\n$f(1) = 1 - 3 = -2$\\n$f(2) = 8 - 6 = 2$\\nMáximo absoluto es $2$ (en $x=-1$ y $x=2$). Mínimo absoluto es $-2$ (en $x=-2$ y $x=1$).",
+    "pista": "En un intervalo cerrado, evalúa extremos y puntos críticos para hallar máximos y mínimos absolutos.",
+    "formula": "$$\\text{Extremos absolutos en }[a,b]:\\text{ revisar }a,b\\text{ y }f'(x)=0$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 1108,
+    "dificultad": "Difícil",
+    "bloque": "Tema 11: Representación de funciones",
+    "enunciado": "Calcula las asíntotas de la función $f(x) = x e^{-x}$.",
+    "resolucion_latex": "A. Verticales: No tiene (el dominio es $\\mathbb{R}$).\\nA. Horizontales:\\n$$\\lim_{x \\to +\\infty} x e^{-x} = \\lim_{x \\to +\\infty} \\frac{x}{e^x} = \\left(\\frac{\\infty}{\\infty}\\right) \\xrightarrow{\\text{L'H}} \\lim \\frac{1}{e^x} = 0$$\\nHay A.H. en $y=0$ hacia $+\\infty$.\\n$$\\lim_{x \\to -\\infty} x e^{-x} = (-\\infty) \\cdot e^{+\\infty} = -\\infty$$\\nNo hay A.H. hacia $-\\infty$, rama parabólica.",
+    "pista": "Las asíntotas horizontales se estudian con límites en $+\\infty$ y $-\\infty$.",
+    "formula": "$$\\lim_{x\\to\\pm\\infty}f(x)=L\\Rightarrow y=L$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 1109,
+    "dificultad": "Difícil",
+    "bloque": "Tema 11: Representación de funciones",
+    "enunciado": "Halla los puntos de inflexión de la función gaussiana $f(x) = e^{-x^2}$.",
+    "resolucion_latex": "Calculamos $f'(x) = -2x e^{-x^2}$.\\nAplicamos regla del producto para $f''(x)$:\\n$$f''(x) = -2 e^{-x^2} + (-2x)(-2x) e^{-x^2} = e^{-x^2}(4x^2 - 2)$$\\nIgualamos a cero: $4x^2 - 2 = 0 \\implies x^2 = 1/2 \\implies x = \\pm \\frac{1}{\\sqrt{2}} \\approx \\pm 0.707$.\\nAl evaluar en la función original, los puntos de inflexión son $\\left(\\pm \\frac{1}{\\sqrt{2}}, e^{-1/2}\\right)$.",
+    "pista": "Para puntos de inflexión, iguala la segunda derivada a cero y comprueba cambio de signo.",
+    "formula": "$$f''(x)=0\\Rightarrow \\text{candidato a inflexión}$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 1110,
+    "dificultad": "Superior",
+    "bloque": "Tema 11: Representación de funciones",
+    "enunciado": "*(Reto Supernova)*: Demuestra analíticamente que la función $f(x) = x^3 + x + 1$ no tiene ningún extremo relativo y cruza el eje X exactamente una vez.",
+    "resolucion_latex": "Calculamos su derivada: $f'(x) = 3x^2 + 1$.\\nComo $x^2 \\ge 0$ para todo $x \\in \\mathbb{R}$, entonces $3x^2 + 1 \\ge 1 > 0$.\\nAl ser $f'(x)$ estrictamente positiva en todo $\\mathbb{R}$, la función es monótona creciente en todo su dominio. Por tanto, no puede tener máximos ni mínimos relativos.\\nAdemás, como $\\lim_{x \\to -\\infty} f(x) = -\\infty$ y $\\lim_{x \\to +\\infty} f(x) = +\\infty$, por el Teorema de Bolzano cruza el eje X. Y al ser estrictamente creciente, solo puede cruzarlo **exactamente una vez**.",
+    "pista": "Si la derivada es siempre positiva, la función es estrictamente creciente y no puede tener extremos relativos.",
+    "formula": "$$f'(x)>0\\ \\forall x\\Rightarrow f\\text{ estrictamente creciente}$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 1201,
+    "dificultad": "Fácil",
+    "bloque": "Tema 12: Integrales indefinidas",
+    "enunciado": "Resuelve la integral de un polinomio: $\\int (6x^2 - 4x + 3) \\,dx$.",
+    "resolucion_latex": "Integramos término a término sumando uno al exponente y dividiendo:\\n$$6\\frac{x^3}{3} - 4\\frac{x^2}{2} + 3x + C = 2x^3 - 2x^2 + 3x + C$$",
+    "pista": "Integra término a término aumentando el exponente en una unidad y dividiendo por el nuevo exponente.",
+    "formula": "$$\\int x^n\\,dx=\\frac{x^{n+1}}{n+1}+C,\\quad n\\neq -1$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 1202,
+    "dificultad": "Fácil",
+    "bloque": "Tema 12: Integrales indefinidas",
+    "enunciado": "Calcula la integral casi inmediata: $\\int \\frac{3x^2}{x^3 + 5} \\,dx$.",
+    "resolucion_latex": "Observamos que el numerador es exactamente la derivada del denominador ($u'/u$).\\nPor la regla logarítmica: $\\int \\frac{u'}{u} \\,dx = \\ln|u| + C$.\\n$$I = \\ln|x^3 + 5| + C$$",
+    "pista": "Si aparece la derivada del denominador en el numerador, piensa en logaritmo.",
+    "formula": "$$\\int \\frac{u'}{u}\\,dx=\\ln|u|+C$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 1203,
+    "dificultad": "Fácil",
+    "bloque": "Tema 12: Integrales indefinidas",
+    "enunciado": "Resuelve la integral exponencial: $\\int e^{4x} \\,dx$.",
+    "resolucion_latex": "Para integrar $e^{ax}$, necesitamos un $4$ multiplicando. Multiplicamos y dividimos por 4:\\n$$\\int e^{4x} \\,dx = \\frac{1}{4} \\int 4e^{4x} \\,dx = \\frac{1}{4} e^{4x} + C$$",
+    "pista": "Al integrar $e^{ax}$, divide entre la derivada del exponente.",
+    "formula": "$$\\int e^{ax}\\,dx=\\frac{1}{a}e^{ax}+C$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 1204,
+    "dificultad": "Media",
+    "bloque": "Tema 12: Integrales indefinidas",
+    "enunciado": "Calcula la integral mediante integración por partes: $\\int x \\cos(x) \\,dx$.",
+    "resolucion_latex": "Regla ALPES. Elegimos $u = x \\implies du = dx$.\\nElegimos $dv = \\cos(x) \\,dx \\implies v = \\sin(x)$.\\nAplicamos $\\int u \\,dv = uv - \\int v \\,du$:\\n$$I = x \\sin(x) - \\int \\sin(x) \\,dx = x \\sin(x) - (-\\cos(x)) + C = x \\sin(x) + \\cos(x) + C$$",
+    "pista": "En integración por partes, elige $u$ como la parte que se simplifica al derivar.",
+    "formula": "$$\\int u\\,dv=uv-\\int v\\,du$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 1205,
+    "dificultad": "Media",
+    "bloque": "Tema 12: Integrales indefinidas",
+    "enunciado": "Resuelve la integral por sustitución (cambio de variable): $\\int \\frac{e^x}{1 + e^{2x}} \\,dx$.",
+    "resolucion_latex": "Hacemos el cambio $t = e^x \\implies dt = e^x \\,dx$.\\nObservamos que $e^{2x} = (e^x)^2 = t^2$.\\nSustituimos en la integral:\\n$$\\int \\frac{dt}{1 + t^2} = \\arctan(t) + C$$\\nDeshacemos el cambio de variable:\\n$$I = \\arctan(e^x) + C$$",
+    "pista": "Haz el cambio $t=e^x$ para convertir el denominador en $1+t^2$.",
+    "formula": "$$\\int \\frac{1}{1+t^2}\\,dt=\\arctan(t)+C$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 1206,
+    "dificultad": "Media",
+    "bloque": "Tema 12: Integrales indefinidas",
+    "enunciado": "Calcula la integral de función racional: $\\int \\frac{1}{x^2 - 4} \\,dx$.",
+    "resolucion_latex": "Descomposición en fracciones simples:\\n$$\\frac{1}{(x-2)(x+2)} = \\frac{A}{x-2} + \\frac{B}{x+2}$$\\n$1 = A(x+2) + B(x-2)$. Si $x=2 \\implies A=1/4$. Si $x=-2 \\implies B=-1/4$.\\n$$I = \\int \\left( \\frac{1/4}{x-2} - \\frac{1/4}{x+2} \\right) dx = \\frac{1}{4}\\ln|x-2| - \\frac{1}{4}\\ln|x+2| + C = \\frac{1}{4}\\ln\\left|\\frac{x-2}{x+2}\\right| + C$$",
+    "pista": "Factoriza el denominador y descompón en fracciones simples.",
+    "formula": "$$\\frac{1}{(x-a)(x-b)}=\\frac{A}{x-a}+\\frac{B}{x-b}$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 1207,
+    "dificultad": "Difícil",
+    "bloque": "Tema 12: Integrales indefinidas",
+    "enunciado": "Calcula integrando por partes dos veces: $\\int x^2 e^x \\,dx$.",
+    "resolucion_latex": "1ª vez: $u = x^2 \\implies du = 2x \\,dx$. $dv = e^x \\,dx \\implies v = e^x$.\\n$$I = x^2 e^x - \\int 2x e^x \\,dx$$\\n2ª vez en la nueva integral: $u = 2x \\implies du = 2 \\,dx$. $dv = e^x \\,dx \\implies v = e^x$.\\n$$\\int 2x e^x \\,dx = 2x e^x - \\int 2e^x \\,dx = 2x e^x - 2e^x$$\\nJuntando todo:\\n$$I = x^2 e^x - (2x e^x - 2e^x) + C = e^x(x^2 - 2x + 2) + C$$",
+    "pista": "Si por partes aparece otra integral de producto, aplica integración por partes una segunda vez.",
+    "formula": "$$\\int u\\,dv=uv-\\int v\\,du$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 1208,
+    "dificultad": "Difícil",
+    "bloque": "Tema 12: Integrales indefinidas",
+    "enunciado": "Calcula la integral racional con raíces múltiples: $\\int \\frac{x}{(x-1)^2} \\,dx$.",
+    "resolucion_latex": "Descomponemos: $\\frac{x}{(x-1)^2} = \\frac{A}{x-1} + \\frac{B}{(x-1)^2}$.\\n$x = A(x-1) + B$. Si $x=1 \\implies B=1$. Si $x=0 \\implies 0 = -A + 1 \\implies A=1$.\\n$$I = \\int \\frac{1}{x-1} \\,dx + \\int (x-1)^{-2} \\,dx$$\\n$$I = \\ln|x-1| + \\frac{(x-1)^{-1}}{-1} + C = \\ln|x-1| - \\frac{1}{x-1} + C$$",
+    "pista": "Con raíces repetidas, incluye una fracción simple para cada potencia del factor.",
+    "formula": "$$\\frac{P(x)}{(x-a)^2}=\\frac{A}{x-a}+\\frac{B}{(x-a)^2}$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 1209,
+    "dificultad": "Difícil",
+    "bloque": "Tema 12: Integrales indefinidas",
+    "enunciado": "Resuelve la integral trigonométrica: $\\int \\sin^2(x) \\,dx$.",
+    "resolucion_latex": "Usamos la fórmula del ángulo doble para rebajar el grado: $\\sin^2(x) = \\frac{1 - \\cos(2x)}{2}$.\\n$$I = \\int \\left( \\frac{1}{2} - \\frac{\\cos(2x)}{2} \\right) dx = \\frac{1}{2} \\int 1 \\,dx - \\frac{1}{2} \\int \\cos(2x) \\,dx$$\\n$$I = \\frac{x}{2} - \\frac{1}{2} \\left( \\frac{\\sin(2x)}{2} \\right) + C = \\frac{x}{2} - \\frac{\\sin(2x)}{4} + C$$",
+    "pista": "Para potencias trigonométricas pares, usa identidades de ángulo doble.",
+    "formula": "$$\\sin^2 x=\\frac{1-\\cos(2x)}{2}$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 1210,
+    "dificultad": "Superior",
+    "bloque": "Tema 12: Integrales indefinidas",
+    "enunciado": "*(Reto Supernova)*: Resuelve la integral cíclica $\\int e^x \\sin(x) \\,dx$.",
+    "resolucion_latex": "Por partes. $u = \\sin(x) \\implies du = \\cos(x)dx$. $dv = e^xdx \\implies v = e^x$.\\n$$I = e^x \\sin(x) - \\int e^x \\cos(x) dx$$\\nOtra vez por partes para la nueva integral: $u = \\cos(x) \\implies du = -\\sin(x)dx$. $dv = e^xdx \\implies v = e^x$.\\n$$\\int e^x \\cos(x) dx = e^x \\cos(x) - \\int e^x (-\\sin(x)) dx = e^x \\cos(x) + \\int e^x \\sin(x) dx$$\\nSustituimos esto en la primera ecuación, notando que ha reaparecido $I$:\\n$$I = e^x \\sin(x) - (e^x \\cos(x) + I) = e^x \\sin(x) - e^x \\cos(x) - I$$\\nPasamos la $I$ sumando: $2I = e^x(\\sin(x) - \\cos(x))$.\\n$$I = \\frac{e^x(\\sin(x) - \\cos(x))}{2} + C$$",
+    "pista": "En integrales cíclicas, al aplicar partes dos veces reaparece la integral original; despeja $I$.",
+    "formula": "$$I=a-\\left(b+I\\right)\\Rightarrow 2I=a-b$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 1301,
+    "dificultad": "Fácil",
+    "bloque": "Tema 13: Integrales definidas",
+    "enunciado": "Aplica la Regla de Barrow para calcular $\\int_1^3 (2x + 1) \\,dx$.",
+    "resolucion_latex": "Primitiva: $F(x) = x^2 + x$.\\nAplicamos Barrow: $F(3) - F(1) = (3^2 + 3) - (1^2 + 1) = (9 + 3) - (1 + 1) = 12 - 2 = 10$.",
+    "pista": "Calcula primero una primitiva y después evalúa en el extremo superior menos el extremo inferior.",
+    "formula": "$$\\int_a^b f(x)\\,dx=F(b)-F(a)$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 1302,
+    "dificultad": "Fácil",
+    "bloque": "Tema 13: Integrales definidas",
+    "enunciado": "Sabiendo que $\\int_0^5 f(x)dx = 10$ y $\\int_2^5 f(x)dx = 3$, calcula $\\int_0^2 f(x)dx$.",
+    "resolucion_latex": "Por la propiedad de aditividad del intervalo en la integral definida:\\n$$\\int_0^5 f(x)dx = \\int_0^2 f(x)dx + \\int_2^5 f(x)dx$$\\n$$10 = \\int_0^2 f(x)dx + 3 \\implies \\int_0^2 f(x)dx = 10 - 3 = 7$$",
+    "pista": "Divide el intervalo grande en los dos intervalos pequeños que aparecen en el enunciado.",
+    "formula": "$$\\int_a^c f(x)\\,dx=\\int_a^b f(x)\\,dx+\\int_b^c f(x)\\,dx$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 1303,
+    "dificultad": "Fácil",
+    "bloque": "Tema 13: Integrales definidas",
+    "enunciado": "Calcula el área encerrada bajo la curva $y = x^2$ y el eje X, entre las abscisas $x=0$ y $x=3$.",
+    "resolucion_latex": "Como $y = x^2 \\ge 0$ en todo ese intervalo, el área es directamente la integral definida:\\n$$A = \\int_0^3 x^2 \\,dx = \\left[ \\frac{x^3}{3} \\right]_0^3 = \\frac{27}{3} - 0 = 9 \\text{ u}^2$$",
+    "pista": "Si la función es positiva en todo el intervalo, el área coincide directamente con la integral definida.",
+    "formula": "$$A=\\int_a^b f(x)\\,dx\\quad \\text{si }f(x)\\geq 0$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 1304,
+    "dificultad": "Media",
+    "bloque": "Tema 13: Integrales definidas",
+    "enunciado": "Halla el área del recinto plano limitado por las gráficas de $f(x) = x^2$ y $g(x) = x$.",
+    "resolucion_latex": "1) Puntos de intersección: $x^2 = x \\implies x^2 - x = 0 \\implies x(x-1) = 0 \\implies x=0, x=1$.\\n2) Función superior: en el intervalo $(0, 1)$, $g(x) = x$ está por encima de $f(x) = x^2$.\\n$$A = \\int_0^1 (x - x^2) \\,dx = \\left[ \\frac{x^2}{2} - \\frac{x^3}{3} \\right]_0^1 = \\left( \\frac{1}{2} - \\frac{1}{3} \\right) - 0 = \\frac{3-2}{6} = \\frac{1}{6} \\text{ u}^2$$",
+    "pista": "Primero halla los puntos de corte y luego integra función superior menos función inferior.",
+    "formula": "$$A=\\int_a^b \\bigl(f_{sup}(x)-f_{inf}(x)\\bigr)\\,dx$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 1305,
+    "dificultad": "Media",
+    "bloque": "Tema 13: Integrales definidas",
+    "enunciado": "Resuelve la integral definida con valor absoluto: $\\int_0^3 |x - 1| \\,dx$.",
+    "resolucion_latex": "La función $|x-1|$ cambia su definición en $x=1$.\\nSi $x < 1$, es $1-x$. Si $x \\ge 1$, es $x-1$. Partimos la integral:\\n$$\\int_0^1 (1-x) dx + \\int_1^3 (x-1) dx = \\left[x - \\frac{x^2}{2}\\right]_0^1 + \\left[\\frac{x^2}{2} - x\\right]_1^3$$\\n$$= \\left(1 - \\frac{1}{2}\\right) + \\left(\\left(\\frac{9}{2} - 3\\right) - \\left(\\frac{1}{2} - 1\\right)\\right) = \\frac{1}{2} + \\left(\\frac{3}{2} - \\left(-\\frac{1}{2}\\right)\\right) = \\frac{1}{2} + 2 = \\frac{5}{2}$$",
+    "pista": "Parte la integral donde el interior del valor absoluto se hace cero.",
+    "formula": "$$|x-a|=\\begin{cases}a-x,&x<a\\\\x-a,&x\\geq a\\end{cases}$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 1306,
+    "dificultad": "Media",
+    "bloque": "Tema 13: Integrales definidas",
+    "enunciado": "Calcula el valor medio de la función $f(x) = x^2$ en el intervalo $[0, 3]$ usando el Teorema del Valor Medio de las integrales.",
+    "resolucion_latex": "El valor medio $f(c)$ viene dado por la fórmula $\\frac{1}{b-a} \\int_a^b f(x) dx$.\\n$$V.M. = \\frac{1}{3-0} \\int_0^3 x^2 \\,dx = \\frac{1}{3} \\left[ \\frac{x^3}{3} \\right]_0^3 = \\frac{1}{3} (9) = 3$$\\nEl valor medio que toma la función en ese intervalo es 3.",
+    "pista": "El valor medio es la altura constante que tendría un rectángulo con la misma área bajo la curva.",
+    "formula": "$$f_{med}=\\frac{1}{b-a}\\int_a^b f(x)\\,dx$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 1307,
+    "dificultad": "Difícil",
+    "bloque": "Tema 13: Integrales definidas",
+    "enunciado": "Calcula el área delimitada por las parábolas $y = x^2 - 4$ e $y = 4 - x^2$.",
+    "resolucion_latex": "1) Intersecciones: $x^2 - 4 = 4 - x^2 \\implies 2x^2 = 8 \\implies x^2 = 4 \\implies x = \\pm 2$.\\n2) Función techo es $4 - x^2$ (cóncava hacia abajo) y suelo es $x^2 - 4$.\\n$$A = \\int_{-2}^2 ((4 - x^2) - (x^2 - 4)) dx = \\int_{-2}^2 (8 - 2x^2) dx$$\\n$$A = \\left[ 8x - \\frac{2x^3}{3} \\right]_{-2}^2 = \\left(16 - \\frac{16}{3}\\right) - \\left(-16 + \\frac{16}{3}\\right) = 32 - \\frac{32}{3} = \\frac{96 - 32}{3} = \\frac{64}{3} \\text{ u}^2$$",
+    "pista": "Al calcular áreas entre dos curvas, identifica cuál queda arriba y cuál abajo entre los puntos de corte.",
+    "formula": "$$A=\\int_a^b \\left(y_{arriba}-y_{abajo}\\right)\\,dx$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 1308,
+    "dificultad": "Difícil",
+    "bloque": "Tema 13: Integrales definidas",
+    "enunciado": "Aplica el Teorema Fundamental del Cálculo para hallar la derivada de la función $F(x) = \\int_1^{x^3} \\cos(t) \\,dt$.",
+    "resolucion_latex": "Usando la Regla de la Cadena adaptada al TFC: si $F(x) = \\int_a^{g(x)} f(t) dt$, entonces $F'(x) = f(g(x)) \\cdot g'(x)$.\\nAquí $f(t) = \\cos(t)$ y $g(x) = x^3$.\\n$$F'(x) = \\cos(x^3) \\cdot \\frac{d}{dx}(x^3) = 3x^2 \\cos(x^3)$$",
+    "pista": "Si el límite superior de la integral depende de $x$, aplica el Teorema Fundamental del Cálculo junto con la regla de la cadena.",
+    "formula": "$$\\frac{d}{dx}\\left(\\int_a^{g(x)} f(t)\\,dt\\right)=f(g(x))\\cdot g'(x)$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 1309,
+    "dificultad": "Difícil",
+    "bloque": "Tema 13: Integrales definidas",
+    "enunciado": "Halla el área comprendida entre la curva $y = \\ln(x)$, el eje de abscisas y la recta $x = e$.",
+    "resolucion_latex": "La curva corta al eje X en $x=1$ (pues $\\ln(1)=0$). El intervalo es $[1, e]$.\\n$$A = \\int_1^e \\ln(x) \\,dx$$\\nIntegramos por partes: $u=\\ln(x) \\implies du=1/x dx$; $dv=dx \\implies v=x$.\\n$$\\int \\ln(x) dx = x\\ln(x) - \\int dx = x\\ln(x) - x$$\\nEvaluamos en los límites:\\n$$A = [x\\ln(x) - x]_1^e = (e\\ln(e) - e) - (1\\ln(1) - 1) = (e - e) - (0 - 1) = 1 \\text{ u}^2$$",
+    "pista": "Busca primero dónde la curva corta al eje $X$ para fijar correctamente los límites de integración.",
+    "formula": "$$\\int \\ln(x)\\,dx=x\\ln(x)-x+C$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 1310,
+    "dificultad": "Superior",
+    "bloque": "Tema 13: Integrales definidas",
+    "enunciado": "*(Reto Supernova)*: Demuestra mediante integración que el área de una elipse de semiejes $a$ y $b$ (con ecuación $\\frac{x^2}{a^2} + \\frac{y^2}{b^2} = 1$) es exactamente $\\pi a b$.",
+    "resolucion_latex": "Despejamos la $y$ para el primer cuadrante: $y = b \\sqrt{1 - \\frac{x^2}{a^2}}$.\\nEl área total es 4 veces el área de ese cuadrante (de 0 a a):\\n$$A = 4 \\int_0^a b \\sqrt{1 - \\frac{x^2}{a^2}} dx$$\\nHacemos cambio trigonométrico $x = a \\sin(\\theta) \\implies dx = a \\cos(\\theta) d\\theta$. Límites: si $x=0 \\implies \\theta=0$; si $x=a \\implies \\theta=\\pi/2$.\\n$$A = 4b \\int_0^{\\pi/2} \\sqrt{1 - \\sin^2(\\theta)} \\cdot a \\cos(\\theta) d\\theta = 4ab \\int_0^{\\pi/2} \\cos^2(\\theta) d\\theta$$\\nUsamos la fórmula del ángulo doble $\\cos^2(\\theta) = \\frac{1+\\cos(2\\theta)}{2}$:\\n$$A = 4ab \\left[ \\frac{\\theta}{2} + \\frac{\\sin(2\\theta)}{4} \\right]_0^{\\pi/2} = 4ab \\left( \\frac{\\pi/4}{2} + 0 - 0 \\right) = 4ab \\frac{\\pi}{4} = \\pi a b$$",
+    "pista": "Usa simetría: calcula el área del primer cuadrante y multiplica por $4$.",
+    "formula": "$$\\frac{x^2}{a^2}+\\frac{y^2}{b^2}=1\\Rightarrow y=b\\sqrt{1-\\frac{x^2}{a^2}}$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 1401,
+    "dificultad": "Fácil",
+    "bloque": "Tema 14: Probabilidad",
+    "enunciado": "Sean $A$ y $B$ dos sucesos de un experimento aleatorio tales que $P(A) = 0.4$, $P(B) = 0.3$ y $P(A \\cup B) = 0.6$. Calcula la probabilidad de la intersección $P(A \\cap B)$.",
+    "resolucion_latex": "Utilizamos la fórmula general de la probabilidad de la unión:\\n$$P(A \\cup B) = P(A) + P(B) - P(A \\cap B)$$\\n$$0.6 = 0.4 + 0.3 - P(A \\cap B) \\implies 0.6 = 0.7 - P(A \\cap B)$$\\n$$P(A \\cap B) = 0.7 - 0.6 = 0.1$$",
+    "pista": "Despeja la intersección usando la fórmula de la unión de dos sucesos.",
+    "formula": "$$P(A\\cup B)=P(A)+P(B)-P(A\\cap B)$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 1402,
+    "dificultad": "Fácil",
+    "bloque": "Tema 14: Probabilidad",
+    "enunciado": "Sabiendo que $P(A) = 0.5$, $P(B) = 0.4$ y que $A$ y $B$ son incompatibles, calcula $P(A \\cup B)$.",
+    "resolucion_latex": "Dos sucesos son incompatibles si no pueden ocurrir a la vez, es decir, su intersección es el suceso imposible: $P(A \\cap B) = 0$.\\nPor tanto:\\n$$P(A \\cup B) = P(A) + P(B) - 0 = 0.5 + 0.4 = 0.9$$",
+    "pista": "Si dos sucesos son incompatibles, no pueden ocurrir a la vez.",
+    "formula": "$$A\\cap B=\\varnothing\\Rightarrow P(A\\cap B)=0$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 1403,
+    "dificultad": "Fácil",
+    "bloque": "Tema 14: Probabilidad",
+    "enunciado": "Si $P(A \\cap B) = 0.2$ y $P(B) = 0.8$, calcula la probabilidad condicionada $P(A|B)$ (probabilidad de que ocurra A sabiendo que ha ocurrido B).",
+    "resolucion_latex": "Aplicamos la definición de probabilidad condicionada:\\n$$P(A|B) = \\frac{P(A \\cap B)}{P(B)} = \\frac{0.2}{0.8} = \\frac{1}{4} = 0.25$$",
+    "pista": "La probabilidad condicionada compara la intersección con el suceso que ya sabemos que ha ocurrido.",
+    "formula": "$$P(A|B)=\\frac{P(A\\cap B)}{P(B)}$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 1404,
+    "dificultad": "Media",
+    "bloque": "Tema 14: Probabilidad",
+    "enunciado": "Dados $P(A) = 0.6$, $P(B) = 0.5$ y $P(A \\cup B) = 0.8$, razona matemáticamente si los sucesos $A$ y $B$ son independientes.",
+    "resolucion_latex": "1) Calculamos la intersección: $P(A \\cap B) = P(A) + P(B) - P(A \\cup B) = 0.6 + 0.5 - 0.8 = 0.3$.\\n2) Dos sucesos son independientes si y solo si $P(A \\cap B) = P(A) \\cdot P(B)$.\\nComprobamos: $P(A) \\cdot P(B) = 0.6 \\cdot 0.5 = 0.3$.\\nComo $0.3 = 0.3$, los sucesos **sí son independientes**.",
+    "pista": "Primero calcula la intersección y después comprueba si coincide con el producto de las probabilidades.",
+    "formula": "$$A,B\\text{ independientes}\\Leftrightarrow P(A\\cap B)=P(A)P(B)$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 1405,
+    "dificultad": "Media",
+    "bloque": "Tema 14: Probabilidad",
+    "enunciado": "En una urna hay 4 bolas rojas y 6 verdes. Se extraen dos bolas consecutivamente sin reemplazamiento. Calcula la probabilidad de que ambas sean rojas.",
+    "resolucion_latex": "Usamos la regla del producto para sucesos dependientes (sin reemplazo):\\n$$P(R_1 \\cap R_2) = P(R_1) \\cdot P(R_2 | R_1)$$\\nEn la primera extracción hay 4 rojas de 10 bolas: $P(R_1) = \\frac{4}{10}$.\\nEn la segunda extracción quedan 3 rojas de 9 bolas totales: $P(R_2 | R_1) = \\frac{3}{9}$.\\n$$P(R_1 \\cap R_2) = \\frac{4}{10} \\cdot \\frac{3}{9} = \\frac{12}{90} = \\frac{2}{15} \\approx 0.133$$",
+    "pista": "Como no hay reemplazamiento, la segunda probabilidad cambia después de la primera extracción.",
+    "formula": "$$P(A\\cap B)=P(A)\\cdot P(B|A)$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 1406,
+    "dificultad": "Media",
+    "bloque": "Tema 14: Probabilidad",
+    "enunciado": "Una fábrica tiene tres máquinas $M_1, M_2, M_3$ que producen el $50\\%$, $30\\%$ y $20\\%$ de los tornillos, respectivamente. El porcentaje de tornillos defectuosos es del $1\\%$ para $M_1$, $2\\%$ para $M_2$ y $3\\%$ para $M_3$. Calcula la probabilidad de que un tornillo elegido al azar sea defectuoso.",
+    "resolucion_latex": "Aplicamos el Teorema de la Probabilidad Total:\\n$$P(D) = P(M_1)P(D|M_1) + P(M_2)P(D|M_2) + P(M_3)P(D|M_3)$$\\n$$P(D) = (0.50 \\cdot 0.01) + (0.30 \\cdot 0.02) + (0.20 \\cdot 0.03)$$\\n$$P(D) = 0.005 + 0.006 + 0.006 = 0.017 \\text{ (un } 1.7\\%\\text{)}$$",
+    "pista": "Suma las probabilidades de defecto por cada máquina ponderadas por lo que produce cada una.",
+    "formula": "$$P(D)=\\sum_i P(M_i)P(D|M_i)$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 1407,
+    "dificultad": "Difícil",
+    "bloque": "Tema 14: Probabilidad",
+    "enunciado": "Utilizando los datos del problema anterior, si cogemos un tornillo al azar y resulta ser defectuoso, ¿cuál es la probabilidad de que haya sido fabricado por la máquina $M_2$?",
+    "resolucion_latex": "Aplicamos el Teorema de Bayes:\\n$$P(M_2 | D) = \\frac{P(M_2 \\cap D)}{P(D)} = \\frac{P(M_2) \\cdot P(D | M_2)}{P(D)}$$\\nSustituimos los valores previamente calculados:\\n$$P(M_2 | D) = \\frac{0.30 \\cdot 0.02}{0.017} = \\frac{0.006}{0.017} = \\frac{6}{17} \\approx 0.353 \\text{ (un } 35.3\\%\\text{)}$$",
+    "pista": "Usa Bayes: invierte la condición apoyándote en la probabilidad total del defecto.",
+    "formula": "$$P(M_i|D)=\\frac{P(M_i)P(D|M_i)}{P(D)}$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 1408,
+    "dificultad": "Difícil",
+    "bloque": "Tema 14: Probabilidad",
+    "enunciado": "Sean $A$ y $B$ dos sucesos tales que $P(A)=0.5$, $P(B)=0.4$ y $P(\\overline{A} \\cup \\overline{B}) = 0.8$. Calcula $P(A \\cup B)$.",
+    "resolucion_latex": "Por las Leyes de De Morgan, sabemos que $\\overline{A} \\cup \\overline{B} = \\overline{A \\cap B}$.\\nPor tanto: $P(\\overline{A \\cap B}) = 0.8 \\implies 1 - P(A \\cap B) = 0.8 \\implies P(A \\cap B) = 0.2$.\\nAhora aplicamos la fórmula de la unión:\\n$$P(A \\cup B) = P(A) + P(B) - P(A \\cap B) = 0.5 + 0.4 - 0.2 = 0.7$$",
+    "pista": "Aplica De Morgan para transformar la unión de complementarios en el complementario de una intersección.",
+    "formula": "$$\\overline{A}\\cup\\overline{B}=\\overline{A\\cap B}$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 1409,
+    "dificultad": "Difícil",
+    "bloque": "Tema 14: Probabilidad",
+    "enunciado": "Urna A con 3 bolas rojas y 2 negras. Urna B con 2 rojas y 4 negras. Sacamos una bola de A y, sin mirarla, la introducimos en B. Luego sacamos una bola de B. ¿Cuál es la probabilidad de que la bola extraída de B sea roja?",
+    "resolucion_latex": "Hay dos caminos (Probabilidad Total) para sacar Roja de B:\\n1) Sacar Roja de A (3/5) y luego Roja de B (habrá 3 rojas de 7 en B $\\implies$ 3/7).\\n2) Sacar Negra de A (2/5) y luego Roja de B (habrá 2 rojas de 7 en B $\\implies$ 2/7).\\n$$P(R_B) = P(R_A)P(R_B | R_A) + P(N_A)P(R_B | N_A)$$\\n$$P(R_B) = \\left(\\frac{3}{5} \\cdot \\frac{3}{7}\\right) + \\left(\\frac{2}{5} \\cdot \\frac{2}{7}\\right) = \\frac{9}{35} + \\frac{4}{35} = \\frac{13}{35} \\approx 0.371$$",
+    "pista": "Haz un árbol de probabilidades: primero distingue qué bola pasa de la urna A a la B.",
+    "formula": "$$P(R_B)=P(R_A)P(R_B|R_A)+P(N_A)P(R_B|N_A)$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 1410,
+    "dificultad": "Superior",
+    "bloque": "Tema 14: Probabilidad",
+    "enunciado": "*(Reto Supernova)*: Paradoja del Falso Positivo. Una enfermedad rara afecta a 1 de cada 10.000 personas. Un test tiene una fiabilidad del 99% (da positivo si estás enfermo el 99% de las veces, y da negativo si estás sano el 99% de las veces). Si te haces el test y das positivo, demuestra matemáticamente que la probabilidad de que realmente tengas la enfermedad es inferior al 1%.",
+    "resolucion_latex": "Definimos sucesos: $E$ = Enfermo ($P(E) = 0.0001$), $S$ = Sano ($P(S) = 0.9999$).\\n$+$ = Test positivo. Sabemos que $P(+|E) = 0.99$ y $P(+|S) = 0.01$ (falso positivo).\\nNos piden $P(E|+)$. Aplicamos el Teorema de Bayes:\\n$$P(E|+) = \\frac{P(+|E)P(E)}{P(+|E)P(E) + P(+|S)P(S)}$$\\n$$P(E|+) = \\frac{0.99 \\cdot 0.0001}{(0.99 \\cdot 0.0001) + (0.01 \\cdot 0.9999)} = \\frac{0.000099}{0.000099 + 0.009999} = \\frac{0.000099}{0.010098} \\approx 0.0098$$\\nLa probabilidad es del **$0.98\\%$**. Aunque el test es 99% fiable, la enfermedad es tan extremadamente rara que casi todos los positivos que da la máquina son en realidad falsos positivos de gente sana.",
+    "pista": "En enfermedades muy raras, compara los verdaderos positivos con los falsos positivos usando Bayes.",
+    "formula": "$$P(E|+)=\\frac{P(+|E)P(E)}{P(+|E)P(E)+P(+|S)P(S)}$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 1501,
+    "dificultad": "Fácil",
+    "bloque": "Tema 15: Distribuciones de probabilidad",
+    "enunciado": "Dada una variable discreta $X$ que toma los valores $\\{1, 2, 3\\}$ con probabilidades $\\{0.2, 0.5, 0.3\\}$ respectivamente. Calcula la Esperanza matemática (Media) $\\mu$.",
+    "resolucion_latex": "La esperanza es la suma del producto de cada valor por su probabilidad:\\n$$\\mu = E[X] = \\sum x_i \\cdot p_i$$\\n$$\\mu = (1 \\cdot 0.2) + (2 \\cdot 0.5) + (3 \\cdot 0.3) = 0.2 + 1.0 + 0.9 = 2.1$$",
+    "pista": "Multiplica cada valor de la variable por su probabilidad y suma todos los resultados.",
+    "formula": "$$E[X]=\\sum_i x_i p_i$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 1502,
+    "dificultad": "Fácil",
+    "bloque": "Tema 15: Distribuciones de probabilidad",
+    "enunciado": "Una moneda está trucada de forma que la probabilidad de obtener cara es $0.6$. Si lanzamos la moneda 4 veces, plantea la distribución y calcula la probabilidad de obtener exactamente 3 caras.",
+    "resolucion_latex": "Es una distribución Binomial $X \\sim B(n, p)$ con $n=4$ y $p=0.6$.\\n$$P(X=k) = \\binom{n}{k} p^k (1-p)^{n-k}$$\\n$$P(X=3) = \\binom{4}{3} (0.6)^3 (0.4)^1 = 4 \\cdot 0.216 \\cdot 0.4 = 0.3456$$",
+    "pista": "Identifica $n$, $p$ y $k$ antes de aplicar la fórmula binomial.",
+    "formula": "$$P(X=k)=\\binom{n}{k}p^k(1-p)^{n-k}$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 1503,
+    "dificultad": "Fácil",
+    "bloque": "Tema 15: Distribuciones de probabilidad",
+    "enunciado": "Si el peso de los estudiantes sigue una distribución normal $N(65, 5)$ (media 65 kg, desviación típica 5 kg), tipifica la variable para un estudiante que pesa 72 kg.",
+    "resolucion_latex": "Tipificar (o estandarizar) significa pasar la variable $X$ a la Normal Estándar $Z \\sim N(0, 1)$ mediante la fórmula:\\n$$Z = \\frac{X - \\mu}{\\sigma}$$\\n$$Z = \\frac{72 - 65}{5} = \\frac{7}{5} = 1.4$$",
+    "pista": "Tipificar significa convertir una variable normal cualquiera en una normal estándar.",
+    "formula": "$$Z=\\frac{X-\\mu}{\\sigma}$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 1504,
+    "dificultad": "Media",
+    "bloque": "Tema 15: Distribuciones de probabilidad",
+    "enunciado": "En una Normal Estándar $Z \\sim N(0, 1)$, calcula la probabilidad $P(Z > 1.25)$ sabiendo por las tablas que $P(Z \\le 1.25) = 0.8944$.",
+    "resolucion_latex": "El área total bajo la campana de Gauss es 1.\\nPor tanto, la probabilidad de ser mayor es el complementario:\\n$$P(Z > 1.25) = 1 - P(Z \\le 1.25) = 1 - 0.8944 = 0.1056$$",
+    "pista": "Para probabilidades de tipo $P(Z>a)$, usa el complementario de $P(Z\\leq a)$.",
+    "formula": "$$P(Z>a)=1-P(Z\\leq a)$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 1505,
+    "dificultad": "Media",
+    "bloque": "Tema 15: Distribuciones de probabilidad",
+    "enunciado": "Si $X \\sim B(10, 0.2)$, calcula la probabilidad de obtener al menos un éxito: $P(X \\ge 1)$.",
+    "resolucion_latex": "Calcular la suma $P(X=1) + P(X=2) + \\dots + P(X=10)$ es muy largo. Usamos el suceso contrario:\\n$$P(X \\ge 1) = 1 - P(X = 0)$$\\n$$P(X = 0) = \\binom{10}{0} (0.2)^0 (0.8)^{10} = 1 \\cdot 1 \\cdot 0.10737 = 0.10737$$\\n$$P(X \\ge 1) = 1 - 0.10737 = 0.89263$$",
+    "pista": "Para calcular 'al menos uno', es más rápido usar el suceso contrario: ninguno.",
+    "formula": "$$P(X\\geq 1)=1-P(X=0)$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 1506,
+    "dificultad": "Media",
+    "bloque": "Tema 15: Distribuciones de probabilidad",
+    "enunciado": "El tiempo de vida de una bombilla sigue una Normal $N(1000, 200)$ horas. Calcula la probabilidad de que una bombilla dure entre $800$ y $1200$ horas.",
+    "resolucion_latex": "Tipificamos ambos extremos: $z_1 = \\frac{800-1000}{200} = -1$ y $z_2 = \\frac{1200-1000}{200} = 1$.\\n$$P(800 < X < 1200) = P(-1 < Z < 1) = P(Z < 1) - P(Z < -1)$$\\nPor simetría de la campana, $P(Z < -1) = 1 - P(Z < 1)$.\\nSabiendo que $P(Z < 1) = 0.8413$:\\n$$P(-1 < Z < 1) = 0.8413 - (1 - 0.8413) = 0.8413 - 0.1587 = 0.6826 \\text{ (un } 68.26\\%\\text{)}$$",
+    "pista": "Tipifica los dos extremos y resta las probabilidades acumuladas de la normal estándar.",
+    "formula": "$$P(a<X<b)=P\\left(\\frac{a-\\mu}{\\sigma}<Z<\\frac{b-\\mu}{\\sigma}\\right)$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 1507,
+    "dificultad": "Difícil",
+    "bloque": "Tema 15: Distribuciones de probabilidad",
+    "enunciado": "Se lanza un dado perfecto 600 veces. Calcula, aproximando por la Normal, la probabilidad de que el número 5 salga más de 110 veces.",
+    "resolucion_latex": "Es una Binomial $X \\sim B(600, 1/6)$. $\\mu = np = 100$. $\\sigma = \\sqrt{npq} = \\sqrt{600 \\cdot \\frac{1}{6} \\cdot \\frac{5}{6}} = \\sqrt{83.33} \\approx 9.13$.\\nComo $np \\ge 5$ y $nq \\ge 5$, podemos aproximar a $X' \\sim N(100, 9.13)$.\\nCon corrección de Yates (continuidad) para \"más de 110\" (estricto):\\n$$P(X > 110) \\approx P(X' \\ge 110.5)$$\\nTipificamos: $Z = \\frac{110.5 - 100}{9.13} = 1.15$.\\n$$P(Z \\ge 1.15) = 1 - P(Z < 1.15) = 1 - 0.8749 = 0.1251$$",
+    "pista": "Cuando aproximas una binomial por una normal, calcula media, desviación típica y aplica corrección de continuidad.",
+    "formula": "$$B(n,p)\\approx N\\left(np,\\sqrt{np(1-p)}\\right)$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 1508,
+    "dificultad": "Difícil",
+    "bloque": "Tema 15: Distribuciones de probabilidad",
+    "enunciado": "En una distribución $N(\\mu, 4)$, sabemos que $P(X < 20) = 0.8413$. Determina el valor de la media $\\mu$.",
+    "resolucion_latex": "Buscamos en el interior de la tabla normal el valor $0.8413$, que corresponde a $z = 1.00$.\\nDesestandarizamos usando la fórmula de tipificación:\\n$$Z = \\frac{X - \\mu}{\\sigma} \\implies 1.00 = \\frac{20 - \\mu}{4}$$\\nMultiplicamos por 4:\\n$$4 = 20 - \\mu \\implies \\mu = 20 - 4 = 16$$\\nLa media de la distribución es $16$.",
+    "pista": "Busca primero el valor de $z$ en la tabla normal y después despeja la media.",
+    "formula": "$$Z=\\frac{X-\\mu}{\\sigma}$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 1509,
+    "dificultad": "Difícil",
+    "bloque": "Tema 15: Distribuciones de probabilidad",
+    "enunciado": "La probabilidad de que una flecha dé en la diana es $0.3$. ¿Cuántas flechas como mínimo hay que lanzar para que la probabilidad de acertar al menos una vez sea mayor del $90\\%$?",
+    "resolucion_latex": "Sea $n$ el número de flechas. $X \\sim B(n, 0.3)$. Nos piden que $P(X \\ge 1) > 0.9$.\\nSabemos que $P(X \\ge 1) = 1 - P(X = 0)$.\\n$$1 - \\binom{n}{0} (0.3)^0 (0.7)^n > 0.9 \\implies 1 - (0.7)^n > 0.9$$\\n$$0.1 > (0.7)^n$$\\nAplicamos logaritmos neperianos para despejar el exponente $n$:\\n$$\\ln(0.1) > n \\ln(0.7)$$\\nComo $\\ln(0.7)$ es negativo, al pasarlo dividiendo se invierte la desigualdad:\\n$$n > \\frac{\\ln(0.1)}{\\ln(0.7)} = \\frac{-2.302}{-0.356} \\approx 6.45$$\\nComo $n$ debe ser entero, se necesitan lanzar al menos **7 flechas**.",
+    "pista": "Transforma 'acertar al menos una vez' en el complementario de 'no acertar ninguna'.",
+    "formula": "$$P(X\\geq 1)=1-(1-p)^n$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º Bach",
+    "id": 1510,
+    "dificultad": "Superior",
+    "bloque": "Tema 15: Distribuciones de probabilidad",
+    "enunciado": "*(Reto Supernova)*: Demuestra matemáticamente que la suma de las probabilidades de todos los posibles resultados en una distribución Binomial $B(n, p)$ es exactamente 1.",
+    "resolucion_latex": "Por definición, la probabilidad de cada suceso $k$ en una Binomial es $P(X=k) = \\binom{n}{k} p^k q^{n-k}$, donde $q = 1-p$.\\nLa suma de todas las probabilidades desde $k=0$ hasta $k=n$ es:\\n$$\\sum_{k=0}^{n} P(X=k) = \\sum_{k=0}^{n} \\binom{n}{k} p^k q^{n-k}$$\\nEsta expresión es exactamente el desarrollo del **Binomio de Newton** para $(p + q)^n$.\\nPor tanto:\\n$$\\sum_{k=0}^{n} \\binom{n}{k} p^k q^{n-k} = (p + q)^n$$\\nComo hemos definido $q = 1 - p$, sabemos que $p + q = 1$. Sustituyendo:\\n$$= (1)^n = 1$$\\nQueda demostrado que la suma total de las probabilidades conforma el suceso seguro (1).",
+    "pista": "Reconoce la suma como el desarrollo del binomio de Newton.",
+    "formula": "$$\\sum_{k=0}^{n}\\binom{n}{k}p^kq^{n-k}=(p+q)^n$$"
+  }
+]

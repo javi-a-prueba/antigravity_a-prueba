@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A-PRUEBA | Primer Tema GRATIS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        :root {
+            --neon-math: #00f2fe;
+            --neon-physics: #ff4500;
+            --neon-chemistry: #00ff7f;
+        }
+
+        body {
+            background: #0B0E14;
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        /* Ambient Stars/Nebula */
+        .nebula {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            background:
+                radial-gradient(circle at 20% 30%, rgba(45, 110, 255, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 80% 70%, rgba(138, 43, 226, 0.15) 0%, transparent 50%);
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        .stars-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: radial-gradient(2px 2px at 20px 30px, #ffffff, rgba(0, 0, 0, 0)),
+                radial-gradient(2px 2px at 40px 70px, rgba(255, 255, 255, 0.8), rgba(0, 0, 0, 0)),
+                radial-gradient(1px 1px at 90px 40px, rgba(255, 255, 255, 0.6), rgba(0, 0, 0, 0));
+            background-repeat: repeat;
+            background-size: 200px 200px;
+            opacity: 0.3;
+            z-index: 0;
+        }
+
+        /* Navbar */
+        .navbar {
+            height: 80px;
+            padding: 0 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(10, 5, 25, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            z-index: 100;
+            position: relative;
+        }
+
+        .nav-brand {
+            font-size: 1.5rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            background: linear-gradient(90deg, #00f2fe 0%, #4facfe 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-decoration: none;
+        }
+
+        /* Layout */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+            z-index: 10;
+            position: relative;
+            flex: 1;
+            text-align: center;
+        }
+
+        .header-title {
+            margin-bottom: 4rem;
+        }
+
+        .header-title h1 {
+            font-size: 3rem;
+            color: #fff;
+            margin-bottom: 1rem;
+            text-shadow: 0 0 20px rgba(0, 242, 254, 0.5);
+        }
+
+        .header-title p {
+            font-size: 1.2rem;
+            color: #b8b8d0;
+        }
+
+        .header-title span {
+            color: #00f2fe;
+            font-weight: 700;
+            text-shadow: 0 0 10px rgba(0, 242, 254, 0.3);
+        }
+
+        /* Grid Selection */
+        .grid-lessons {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .lesson-card {
+            background: rgba(20, 20, 35, 0.4);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 20px;
+            padding: 2.5rem 2rem;
+            text-decoration: none;
+            color: white;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .lesson-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+        }
+
+        .card-fisica::before {
+            background: linear-gradient(90deg, #00f2fe, #4facfe);
+        }
+
+        .card-mates::before {
+            background: linear-gradient(90deg, #ff0844, #ffb199);
+        }
+
+        .card-quimica::before {
+            background: linear-gradient(90deg, #a18cd1, #fbc2eb);
+        }
+
+        .lesson-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .card-fisica:hover {
+            box-shadow: 0 15px 40px rgba(0, 242, 254, 0.2);
+        }
+
+        .card-mates:hover {
+            box-shadow: 0 15px 40px rgba(255, 8, 68, 0.2);
+        }
+
+        .card-quimica:hover {
+            box-shadow: 0 15px 40px rgba(161, 140, 209, 0.2);
+        }
+
+        .lesson-subject {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .card-fisica .lesson-subject {
+            color: #00f2fe;
+        }
+
+        .card-mates .lesson-subject {
+            color: #ffb199;
+        }
+
+        .card-quimica .lesson-subject {
+            color: #fbc2eb;
+        }
+
+        .lesson-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            line-height: 1.3;
+        }
+
+        .lesson-card p {
+            color: #a0a0b8;
+            font-size: 0.95rem;
+            margin-bottom: 2rem;
+            line-height: 1.5;
+        }
+
+        .play-btn {
+            align-self: flex-start;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: #fff;
+            padding: 0.6rem 1.2rem;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .lesson-card:hover .play-btn {
+            background: rgba(255, 255, 255, 1);
+            color: #000;
+            font-weight: 700;
+        }
+
+        /* Footer */
+        .footer {
+            padding: 1.5rem;
+            text-align: center;
+            background: rgba(10, 5, 25, 0.4);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            z-index: 100;
+            position: relative;
+        }
+
+        .footer p {
+            font-size: 0.85rem;
+            color: #8888a0;
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+        }
+
+        .footer-links a {
+            color: #a0a0b8;
+            text-decoration: none;
+            font-size: 0.8rem;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: #00f2fe;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="stars-bg"></div>
+    <div class="nebula"></div>
+
+    <nav class="navbar">
+        <a href="index.html" class="nav-brand">A-PRUEBA</a>
+    </nav>
+
+    <div class="container">
+        <div class="header-title">
+            <h1>¡Misión iniciada!</h1>
+            <p>Elige tu primer tema de 2º de Bachillerato <span>100% GRATIS</span></p>
+        </div>
+
+        <div class="grid-lessons" id="lessons-container">
+            <!-- El contenido se generará dinámicamente con JS -->
+        </div>
+
+    </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2026 A-PRUEBA. Todos los derechos reservados.</p>
+        <div class="footer-links">
+            <a href="#">Términos de Servicio</a>
+            <a href="#">Contacto para Padres</a>
+        </div>
+    </footer>
+    <script src="temarios.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const curso = localStorage.getItem('userCourse') || '2bach';
+            const asignatura = localStorage.getItem('userSubject') || 'mates';
+            const comunidad = localStorage.getItem('userComunidad') || 'madrid';
+
+            // Actualizar texto del título para que tenga sentido con el curso
+            const titleH1 = document.querySelector('.header-title h1');
+            const titleP = document.querySelector('.header-title p');
+
+            const cursoTexto = {
+                '2eso': '2º de ESO', '3eso': '3º de ESO', '4eso': '4º de ESO',
+                '1bach': '1º de Bachillerato', '2bach': '2º de Bachillerato'
+            }[curso] || 'TU NIVEL';
+
+            titleP.innerHTML = `Elige tu primer tema de ${cursoTexto} <span>100% GRATIS</span>`;
+
+            // Mapeo de estilos para las cards
+            const estilosAsignatura = {
+                'fisica': { clase: 'card-fisica', text: 'Física' },
+                'mates': { clase: 'card-mates', text: 'Matemáticas' },
+                'quimica': { clase: 'card-quimica', text: 'Química' }
+            };
+
+            const estilo = estilosAsignatura[asignatura] || estilosAsignatura['mates'];
+
+            // Obtener temas de la BD (asumiendo que temarios.js se cargó antes)
+            let temas;
+            if (typeof obtenerTemario === 'function') {
+                temas = obtenerTemario(curso, asignatura, comunidad);
+            } else {
+                console.error("Base de datos de temarios no cargada.");
+                temas = [];
+            }
+
+            const container = document.getElementById('lessons-container');
+            container.innerHTML = '';
+
+            if (temas.length === 0) {
+                container.innerHTML = '<p>No hay temas disponibles para esta selección actualmente.</p>';
+                return;
+            }
+
+            // Generar tarjetas dinámicamente
+            temas.forEach(tema => {
+                const aTag = document.createElement('a');
+                aTag.href = `estudio.html?tema=${tema.id}`;
+                aTag.className = `lesson-card ${estilo.clase}`;
+
+                aTag.innerHTML = `
+                    <div>
+                        <div class="lesson-subject">${estilo.text}</div>
+                        <h3>${tema.titulo}</h3>
+                        <p>${tema.desc}</p>
+                    </div>
+                    <div class="play-btn">▶ Iniciar Lección</div>
+                `;
+
+                container.appendChild(aTag);
+            });
+        });
+    </script>
+</body>
+
+</html>

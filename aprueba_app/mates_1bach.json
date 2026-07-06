@@ -1,0 +1,1502 @@
+[
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2101,
+        "dificultad": "Básica",
+        "bloque": "Tema 1: Números Reales y Complejos",
+        "enunciado": "Racionaliza y simplifica al máximo las siguientes expresiones: a) $\\frac{2\\sqrt{3}}{\\sqrt{2}}$ b) $\\frac{3}{\\sqrt{5}-2}$",
+        "resolucion_latex": "a) Multiplicamos numerador y denominador por $\\sqrt{2}$:<br>$\\frac{2\\sqrt{3}\\sqrt{2}}{\\sqrt{2}\\sqrt{2}}=\\frac{2\\sqrt{6}}{2}=\\sqrt{6}$.<br><br>b) Multiplicamos por el conjugado del denominador $(\\sqrt{5}+2)$:<br>$\\frac{3(\\sqrt{5}+2)}{(\\sqrt{5}-2)(\\sqrt{5}+2)}=\\frac{3\\sqrt{5}+6}{(\\sqrt{5})^{2}-2^{2}}=\\frac{3\\sqrt{5}+6}{5-4}=3\\sqrt{5}+6$.",
+        "pista": "Para el caso 'a', multiplica arriba y abajo por la raíz del denominador. Para el caso 'b', usa el conjugado del denominador (cámbiale el signo al medio) para crear una identidad notable.",
+        "formula": "$$(a-b)(a+b) = a^2 - b^2$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2102,
+        "dificultad": "Básica",
+        "bloque": "Tema 1: Números Reales y Complejos",
+        "enunciado": "Aplica las propiedades de los logaritmos para desarrollar la siguiente expresión: $\\log\\left(\\frac{x^{2}\\sqrt{y}}{z^{3}}\\right)$",
+        "resolucion_latex": "Aplicamos el logaritmo de un cociente, luego de un producto y finalmente la regla de los exponentes (recordando que $\\sqrt{y}=y^{1/2}$):<br><br>$\\log(x^{2}\\sqrt{y})-\\log(z^{3})=\\log(x^{2})+\\log(y^{1/2})-\\log(z^{3}) = 2\\log x+\\frac{1}{2}\\log y-3\\log z$.",
+        "pista": "Recuerda que el logaritmo de una división es una resta de logaritmos, el de una multiplicación es una suma, y los exponentes bajan multiplicando.",
+        "formula": "$$\\log\\left(\\frac{A}{B}\\right) = \\log A - \\log B \\quad ; \\quad \\log(A^n) = n \\log A$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2103,
+        "dificultad": "Básica",
+        "bloque": "Tema 1: Números Reales y Complejos",
+        "enunciado": "Dado el número complejo $z=3-4i$, calcula su módulo, su conjugado y exprésalo en forma polar.",
+        "resolucion_latex": "Conjugado: $\\overline{z}=3+4i$.<br>Módulo: $r=|z|=\\sqrt{3^{2}+(-4)^{2}}=\\sqrt{9+16}=\\sqrt{25}=5$.<br>Argumento: $\\alpha=\\arctan(-4/3) \\approx -53,13^{\\circ} \\equiv 306,87^{\\circ}$ (cuarto cuadrante).<br>Forma polar: $z=5_{306,87^{\\circ}}$",
+        "pista": "El módulo es como calcular la hipotenusa de un triángulo usando la parte real y la imaginaria. El conjugado consiste en cambiar el signo a la parte imaginaria.",
+        "formula": "$$|z| = \\sqrt{a^2 + b^2} \\quad ; \\quad \\alpha = \\arctan\\left(\\frac{b}{a}\\right)$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2104,
+        "dificultad": "Media",
+        "bloque": "Tema 1: Números Reales y Complejos",
+        "enunciado": "Resuelve la siguiente operación con números complejos y expresa el resultado en forma binómica: $\\frac{2+3i}{1-i}+i^{15}$",
+        "resolucion_latex": "Primero, dividimos multiplicando por el conjugado del denominador $(1+i)$:<br>$\\frac{(2+3i)(1+i)}{(1-i)(1+i)}=\\frac{2+2i+3i+3i^{2}}{1^{2}-i^{2}}=\\frac{2+5i-3}{1-(-1)}=\\frac{-1+5i}{2}=-\\frac{1}{2}+\\frac{5}{2}i$.<br><br>Segundo, reducimos $i^{15}$. Como $15\\div4=3$ con resto 3, $i^{15}=i^{3}=-i$.<br><br>Sumamos: $\\left(-\\frac{1}{2}+\\frac{5}{2}i\\right)-i = -\\frac{1}{2}+\\frac{3}{2}i$.",
+        "pista": "Para dividir, multiplica numerador y denominador por el conjugado del de abajo. Para las potencias altas de 'i', divide el exponente entre 4 y quédate con el resto.",
+        "formula": "$$i^1 = i, \\ i^2 = -1, \\ i^3 = -i, \\ i^4 = 1$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2105,
+        "dificultad": "Media",
+        "bloque": "Tema 1: Números Reales y Complejos",
+        "enunciado": "Calcula el valor de x en la siguiente ecuación logarítmica: $\\log_{2}(x+1)+\\log_{2}(x-1)=3$",
+        "resolucion_latex": "Suma de logaritmos es el logaritmo del producto: $\\log_{2}[(x+1)(x-1)]=3$<br>Aplicamos identidad notable: $\\log_{2}(x^{2}-1)=3$.<br>Por definición de logaritmo: $x^{2}-1=2^{3} \\Rightarrow x^{2}-1=8 \\Rightarrow x^{2}=9$.<br>Soluciones posibles: $x=3$ y $x=-3$.<br>Comprobación: Si $x=-3$, los argumentos $(x+1)$ y $(x-1)$ son negativos, y no existe el logaritmo de un número negativo.<br>Por tanto, la única solución válida es $x=3$.",
+        "pista": "Agrupa la suma de logaritmos en el logaritmo de una multiplicación. Luego, aplica la definición del logaritmo para eliminarlo y cuidado al final: ¡comprueba que tu solución no vuelva negativo el argumento del logaritmo!",
+        "formula": "$$\\log_a(x) = y \\Rightarrow a^y = x$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2106,
+        "dificultad": "Media",
+        "bloque": "Tema 1: Números Reales y Complejos",
+        "enunciado": "Simplifica al máximo la siguiente expresión con radicales, asumiendo que a, $b>0$: $\\sqrt[3]{81a^{4}b^{5}}-a\\sqrt[3]{3ab^{5}}$",
+        "resolucion_latex": "Factorizamos el $81=3^{4}$ y extraemos factores de la primera raíz:<br>$\\sqrt[3]{3^{4}a^{4}b^{5}}=3ab\\sqrt[3]{3ab^{2}}$.<br><br>El segundo término ya casi está, solo extraemos la letra b:<br>$a\\sqrt[3]{3ab^{5}}=ab\\sqrt[3]{3ab^{2}}$.<br><br>Restamos radicales semejantes (porque tienen exactamente la misma raíz):<br>$3ab\\sqrt[3]{3ab^{2}}-ab\\sqrt[3]{3ab^{2}}=2ab\\sqrt[3]{3ab^{2}}$.",
+        "pista": "Extrae de la raíz todas las letras y números que puedas dividiendo su exponente entre el índice de la raíz (3). Así lograrás que las dos raíces se vuelvan idénticas y puedas restarlas.",
+        "formula": "$$\\sqrt[n]{x^n \\cdot y} = x \\sqrt[n]{y}$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2107,
+        "dificultad": "Alta",
+        "bloque": "Tema 1: Números Reales y Complejos",
+        "enunciado": "Halla todas las soluciones complejas de la ecuación $z^{4}+16=0$ y exprésalas en forma polar.",
+        "resolucion_latex": "Buscamos las raíces cuartas de 16. Despejando: $z^4 = -16$.<br>Pasamos -16 a forma polar: $-16=16_{180^{\\circ}}$.<br>La fórmula para las raíces n-ésimas es $\\sqrt[n]{r_{\\alpha}}=(\\sqrt[n]{r})_{\\frac{\\alpha+360k}{n}}$.<br>Módulo: $\\sqrt[4]{16}=2$.<br>Argumentos para $k=0,1,2,3$:<br>$k=0 \\Rightarrow \\alpha_{1}=\\frac{180}{4}=45^{\\circ} \\Rightarrow z_{1}=2_{45^{\\circ}}$<br>$k=1 \\Rightarrow \\alpha_{2}=\\frac{180+360}{4}=135^{\\circ} \\Rightarrow z_{2}=2_{135^{\\circ}}$<br>$k=2 \\Rightarrow \\alpha_{3}=\\frac{180+720}{4}=225^{\\circ} \\Rightarrow z_{3}=2_{225^{\\circ}}$<br>$k=3 \\Rightarrow \\alpha_{4}=\\frac{180+1080}{4}=315^{\\circ} \\Rightarrow z_{4}=2_{315^{\\circ}}$",
+        "pista": "Pasa el -16 a forma polar. Piensa que un número real negativo está situado en el eje horizontal izquierdo, por lo que su ángulo es siempre de 180º. Luego usa la fórmula de Moivre.",
+        "formula": "$$z_k = (\\sqrt[n]{r})_{\\frac{\\alpha + 360^{\\circ} k}{n}}$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2108,
+        "dificultad": "Alta",
+        "bloque": "Tema 1: Números Reales y Complejos",
+        "enunciado": "Si sabemos que $\\log_{a}(b)=3$ y $\\log_{a}(c)=2$, calcula numéricamente el valor exacto de: $\\log_{a}\\left(\\frac{\\sqrt{b\\cdot c^{3}}}{a^{2}}\\right)$",
+        "resolucion_latex": "Desarrollamos usando propiedades de los logaritmos:<br>$\\log_{a}(\\sqrt{b\\cdot c^{3}})-\\log_{a}(a^{2}) = \\frac{1}{2}\\log_{a}(b\\cdot c^{3})-2\\log_{a}(a) = \\frac{1}{2}[\\log_{a}(b)+3\\log_{a}(c)]-2(1)$.<br><br>Sustituimos los valores dados $(\\log_{a}(b)=3, \\log_{a}(c)=2)$:<br>$\\frac{1}{2}[3+3(2)]-2 = \\frac{1}{2}[9]-2 = 4,5-2 = 2,5$.",
+        "pista": "Desmonta todo el logaritmo grande usando las propiedades de división, multiplicación y exponentes. Hazlo hasta que te queden logaritmos sencillos para que puedas sustituirlos por los números del enunciado.",
+        "formula": "$$\\log_a(a) = 1 \\quad ; \\quad \\log(x^n) = n \\log(x)$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2109,
+        "dificultad": "Alta",
+        "bloque": "Tema 1: Números Reales y Complejos",
+        "enunciado": "Determina los valores de $k \\in \\mathbb{R}$ para los cuales el número complejo $w=\\frac{2+ki}{1-i}$ es un número real puro (su parte imaginaria es cero).",
+        "resolucion_latex": "Realizamos la división multiplicando por el conjugado $(1+i)$:<br>$w=\\frac{(2+ki)(1+i)}{(1-i)(1+i)}=\\frac{2+2i+ki+ki^{2}}{1^{2}-i^{2}}=\\frac{(2-k)+(2+k)i}{2}$<br><br>Separamos parte real e imaginaria: $w=\\frac{2-k}{2}+\\frac{2+k}{2}i$.<br><br>Para que sea un número real puro, su parte imaginaria debe ser nula:<br>$\\frac{2+k}{2}=0 \\Rightarrow 2+k=0 \\Rightarrow k=-2$.",
+        "pista": "Primero realiza la división normal del número complejo multiplicando por el conjugado. Luego, toma todo lo que lleva 'i' (la parte imaginaria), iguálalo a cero y despeja la k.",
+        "formula": "$$w = A + Bi \\quad \\text{Real puro} \\Rightarrow B = 0$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2110,
+        "dificultad": "Superior",
+        "bloque": "Tema 1: Números Reales y Complejos",
+        "enunciado": "Ejercicio Trampa: Un alumno resuelve la siguiente operación en un examen: $\\sqrt{-4}\\cdot\\sqrt{-9}=\\sqrt{(-4)(-9)}=\\sqrt{36}=6$. El profesor le tacha el ejercicio entero. Explica el error teórico letal que ha cometido el alumno basándote en la definición de la unidad imaginaria 'i' y resuelve correctamente la operación.",
+        "resolucion_latex": "El error del alumno radica en aplicar propiedades de raíces en los números reales $(\\sqrt{A}\\cdot\\sqrt{B}=\\sqrt{A\\cdot B})$ a raíces de números negativos, lo cual es matemáticamente falso en $\\mathbb{R}$. La propiedad del producto de raíces solo es válida si A y B son reales positivos.<br><br>La forma correcta es trabajar primero con la unidad imaginaria $i$ ($\\sqrt{-1}=i$):<br>$\\sqrt{-4}=\\sqrt{4(-1)}=2i$<br>$\\sqrt{-9}=\\sqrt{9(-1)}=3i$<br><br>Ahora multiplicamos los complejos: $(2i)\\cdot(3i)=6i^{2}$.<br>Sabiendo que $i^{2}=-1$, el resultado correcto es $6(-1)=-6$.",
+        "pista": "Acuérdate de que las raíces negativas no existen en los números normales. Antes de juntarlas o multiplicarlas, tienes que convertirlas forzosamente en números complejos con su letra 'i'.",
+        "formula": "$$\\sqrt{-A} = \\sqrt{A} \\cdot i \\quad ; \\quad i^2 = -1$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2201,
+        "dificultad": "Básica",
+        "bloque": "Tema 2: Álgebra de Polinomios y Fracciones Algebraicas",
+        "enunciado": "Factoriza al máximo el siguiente polinomio indicando sus raíces: $P(x)=x^{3}-4x^{2}+x+6$",
+        "resolucion_latex": "Buscamos las raíces enteras mediante la regla de Ruffini entre los divisores del término independiente (6): $\\pm1, \\pm2, \\pm3, \\pm6$.<br>Probamos con $x=-1$; El resto es 0, por lo que una raíz es -1 y un factor es $(x+1)$.<br>El cociente queda de grado 2: $x^{2}-5x+6$.<br><br>Resolvemos la ecuación de segundo grado $x^{2}-5x+6=0$<br>$x=\\frac{5\\pm\\sqrt{25-24}}{2}=\\frac{5\\pm1}{2}$. Obtenemos $x=3$ y $x=2$.<br><br>Factorización: $P(x)=(x+1)(x-2)(x-3)$.<br>Raíces: $x_{1}=-1$, $x_{2}=2$, $x_{3}=3$.",
+        "pista": "Usa la regla de Ruffini para encontrar la primera raíz probando con divisores del 6. En cuanto el polinomio se reduzca a grado 2, párate y aplica la fórmula de segundo grado.",
+        "formula": "$$x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2202,
+        "dificultad": "Básica",
+        "bloque": "Tema 2: Álgebra de Polinomios y Fracciones Algebraicas",
+        "enunciado": "Calcula el resto de la división del polinomio $Q(x)=2x^{4}-3x^{2}+5x-1$ entre $(x+2)$ sin realizar la división completa. ¿Qué teorema has utilizado?",
+        "resolucion_latex": "Utilizamos el Teorema del Resto, que afirma que el resto de dividir un polinomio $P(x)$ entre $(x-a)$ es igual al valor numérico del polinomio para $x=a$, es decir, $P(a)$.<br><br>En este caso, dividimos por $(x+2)$, así que evaluamos en $x=-2$:<br>$R=Q(-2)=2(-2)^{4}-3(-2)^{2}+5(-2)-1=2(16)-3(4)-10-1$<br>$R=32-12-10-1=9$.<br><br>El resto de la división es 9.",
+        "pista": "No te pongas a hacer la caja de la división. Usa el Teorema del Resto: sustituye directamente las 'x' del polinomio por el número -2 y calcula.",
+        "formula": "$$\\text{Teorema del Resto: } R = P(a)$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2203,
+        "dificultad": "Básica",
+        "bloque": "Tema 2: Álgebra de Polinomios y Fracciones Algebraicas",
+        "enunciado": "Simplifica la siguiente fracción algebraica: $\\frac{x^{2}-9}{x^{2}-6x+9}$",
+        "resolucion_latex": "Factorizamos numerador y denominador usando identidades notables.<br>Numerador (suma por diferencia): $x^{2}-9=(x+3)(x-3)$.<br>Denominador (cuadrado de una resta): $x^{2}-6x+9=(x-3)^{2}$.<br><br>Simplificamos cancelando el factor $(x-3)$ común:<br>$\\frac{(x+3)(x-3)}{(x-3)^{2}}=\\frac{x+3}{x-3}$.",
+        "pista": "¡Detecta las identidades notables a simple vista! El numerador es una diferencia de cuadrados y el denominador es el cuadrado de una resta perfecta.",
+        "formula": "$$a^2 - b^2 = (a-b)(a+b) \\quad ; \\quad a^2 - 2ab + b^2 = (a-b)^2$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2204,
+        "dificultad": "Media",
+        "bloque": "Tema 2: Álgebra de Polinomios y Fracciones Algebraicas",
+        "enunciado": "Resuelve la siguiente ecuación polinómica (bicuadrada): $x^{4}-5x^{2}+4=0$",
+        "resolucion_latex": "Hacemos un cambio de variable: $t=x^{2}$ y $t^{2}=x^{4}$.<br>La ecuación se transforma en $t^{2}-5t+4=0$.<br>Resolvemos para $t$: $t=\\frac{5\\pm\\sqrt{25-16}}{2}=\\frac{5\\pm3}{2}$.<br>Obtenemos $t_{1}=4$ y $t_{2}=1$.<br><br>Deshacemos el cambio de variable $(x=\\pm\\sqrt{t})$:<br>Si $t=4 \\Rightarrow x^{2}=4 \\Rightarrow x=\\pm2$.<br>Si $t=1 \\Rightarrow x^{2}=1 \\Rightarrow x=\\pm1$.<br><br>Las soluciones son: $x \\in \\{-2,-1,1,2\\}$.",
+        "pista": "Las bicuadradas son muy fáciles si haces el cambio de variable $t=x^2$. Esto la transforma en una de segundo grado. Recuerda que al final tienes que hacer la raíz cuadrada de lo que te haya dado 't'.",
+        "formula": "$$t = x^2 \\Rightarrow x = \\pm \\sqrt{t}$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2205,
+        "dificultad": "Media",
+        "bloque": "Tema 2: Álgebra de Polinomios y Fracciones Algebraicas",
+        "enunciado": "Realiza la siguiente operación con fracciones algebraicas y simplifica el resultado: $\\frac{x}{x-1}-\\frac{2}{x+1}+\\frac{3x}{x^{2}-1}$",
+        "resolucion_latex": "El mínimo común múltiplo (m.c.m.) de los denominadores es $(x^{2}-1)=(x-1)(x+1)$.<br>Ajustamos las fracciones al común denominador:<br>$\\frac{x(x+1)}{(x-1)(x+1)}-\\frac{2(x-1)}{(x+1)(x-1)}+\\frac{3x}{(x^{2}-1)}=\\frac{x^{2}+x-(2x-2)+3x}{x^{2}-1}$<br><br>Operamos el numerador cuidando los signos:<br>$\\frac{x^{2}+x-2x+2+3x}{x^{2}-1}=\\frac{x^{2}+2x+2}{x^{2}-1}$<br><br>El numerador no tiene raíces reales (discriminante $4-8<0$), por lo que no se puede factorizar más. La fracción es irreducible.",
+        "pista": "Factoriza el tercer denominador, verás que es exactamente la multiplicación de los dos primeros. Ese será el denominador común. Vigila el signo '-' de la segunda fracción.",
+        "formula": "$$\\text{m.c.m}(A, B) \\quad ; \\quad - (a-b) = -a+b$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2206,
+        "dificultad": "Media",
+        "bloque": "Tema 2: Álgebra de Polinomios y Fracciones Algebraicas",
+        "enunciado": "Halla el valor de k para que el polinomio $P(x)=x^{3}+kx^{2}-3x+2$ sea divisible exactamente por $(x-2)$.",
+        "resolucion_latex": "Por el Teorema del Resto (o del Factor), para que un polinomio sea divisible exactamente por $(x-2)$, el resto debe ser cero, es decir, $P(2)=0$.<br><br>Evaluamos $P(2)$:<br>$2^{3}+k(2^{2})-3(2)+2=0 \\Rightarrow 8+4k-6+2=0 \\Rightarrow 4k+4=0 \\Rightarrow 4k=-4 \\Rightarrow k=-1$.",
+        "pista": "Traduce 'divisible exactamente' a idioma matemático: significa que el resto tiene que dar cero. Aplica el Teorema del Resto igualando a cero.",
+        "formula": "$$\\text{Si es divisible } \\Rightarrow P(a) = 0$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2207,
+        "dificultad": "Alta",
+        "bloque": "Tema 2: Álgebra de Polinomios y Fracciones Algebraicas",
+        "enunciado": "Calcula los valores de los parámetros a y b sabiendo que el polinomio $P(x)=ax^{3}+bx^{2}-5x+2$ es divisible por $(x-1)$ y que, al dividirlo por $(x+2)$ el resto es 12.",
+        "resolucion_latex": "Planteamos un sistema de dos ecuaciones aplicando el Teorema del Resto:<br>1) Es divisible por $(x-1) \\Rightarrow P(1)=0$<br>$a(1)^{3}+b(1)^{2}-5(1)+2=0 \\Rightarrow a+b-3=0 \\Rightarrow a+b=3$<br><br>2) Al dividir por $(x+2)$ da resto $12 \\Rightarrow P(-2)=12$<br>$a(-8)+b(4)-5(-2)+2=12 \\Rightarrow -8a+4b+12=12 \\Rightarrow -8a+4b=0$<br><br>Simplificamos la segunda ecuación dividiendo entre 4: $-2a+b=0 \\Rightarrow b=2a$<br>Sustituimos en la primera: $a+2a=3 \\Rightarrow 3a=3 \\Rightarrow a=1$<br>Por tanto, $b=2(1)=2$. Solución: $a=1, b=2$.",
+        "pista": "Al tener dos letras ocultas (a y b) te están pidiendo a gritos montar un sistema de ecuaciones. Usa las dos pistas del problema con el Teorema del Resto para sacar tus dos ecuaciones.",
+        "formula": "$$\\text{Sistema: } \\begin{cases} P(1)=0 \\\\ P(-2)=12 \\end{cases}$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2208,
+        "dificultad": "Alta",
+        "bloque": "Tema 2: Álgebra de Polinomios y Fracciones Algebraicas",
+        "enunciado": "Efectúa y simplifica al máximo la siguiente expresión combinada: $\\left(\\frac{1}{x}-\\frac{1}{x+1}\\right):\\frac{x}{x^{2}+2x+1}$",
+        "resolucion_latex": "Primero resolvemos el paréntesis restando las fracciones (m.c.m $=x(x+1)$):<br>$\\frac{1(x+1)}{x(x+1)}-\\frac{1(x)}{x(x+1)}=\\frac{x+1-x}{x(x+1)}=\\frac{1}{x(x+1)}$<br><br>Factorizamos el denominador de la segunda fracción: $x^{2}+2x+1=(x+1)^{2}$.<br>Ahora realizamos la división multiplicando en cruz:<br>$\\frac{1}{x(x+1)} : \\frac{x}{(x+1)^{2}}=\\frac{1\\cdot(x+1)^{2}}{x(x+1)\\cdot x}=\\frac{(x+1)^{2}}{x^{2}(x+1)}$<br><br>Simplificamos cancelando un $(x+1)$ del numerador y denominador: $\\frac{x+1}{x^{2}}$.",
+        "pista": "Ve por orden. Primero opera el paréntesis haciendo común denominador. Después fíjate que la fracción de la derecha se puede comprimir porque tiene una identidad notable.",
+        "formula": "$$\\frac{A}{B} : \\frac{C}{D} = \\frac{A \\cdot D}{B \\cdot C} \\quad ; \\quad a^2+2ab+b^2 = (a+b)^2$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2209,
+        "dificultad": "Alta",
+        "bloque": "Tema 2: Álgebra de Polinomios y Fracciones Algebraicas",
+        "enunciado": "Resuelve la ecuación $x^{3}+2x^{2}+x+2=0$ (Pista: Presta atención a la naturaleza de las raíces obtenidas).",
+        "resolucion_latex": "Buscamos raíces por Ruffini. Probamos con $x=-2$:<br>El resto da 0. El cociente resultante es $x^{2}+1$.<br>Factorización temporal: $(x+2)(x^{2}+1)=0$.<br><br>Igualamos a cero el segundo factor para buscar el resto de raíces:<br>$x^{2}+1=0 \\Rightarrow x^{2}=-1 \\Rightarrow x=\\pm\\sqrt{-1}$<br><br>Aquí aparecen los números complejos: $x=\\pm i$.<br>Las soluciones de la ecuación son: $x=-2$ (real), $x=i$ (compleja), $x=-i$ (compleja).",
+        "pista": "Haz Ruffini normal y llegarás rápido a un polinomio que no se puede resolver en los números reales... ¡pero sí usando los números complejos del tema anterior!",
+        "formula": "$$i = \\sqrt{-1}$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2210,
+        "dificultad": "Superior",
+        "bloque": "Tema 2: Álgebra de Polinomios y Fracciones Algebraicas",
+        "enunciado": "Ejercicio Trampa: Un alumno se encuentra en un examen con la fracción algebraica $\\frac{x^{2}+2x}{x^{2}+5}$. Para simplificarla, tacha el $x^{2}$ del numerador con el $x^{2}$ del denominador y concluye que el resultado es $\\frac{2x}{5}$. Identifica y corrige el error conceptual que ha cometido.",
+        "resolucion_latex": "El error conceptual letal es que el alumno ha simplificado (tachado) **sumandos**, cuando en las fracciones algebraicas (y numéricas) **solo se pueden simplificar factores** (términos que estén multiplicando a todo el numerador y a todo el denominador simultáneamente).<br><br>Para simplificar correctamente $\\frac{x^{2}+2x}{x^{2}+5}$, el primer paso sería intentar factorizar.<br>Numerador: sacamos factor común $\\Rightarrow x(x+2)$.<br>Denominador: $x^{2}+5$ no se puede factorizar en los números reales.<br>La fracción quedaría $\\frac{x(x+2)}{x^{2}+5}$.<br><br>Como no hay ningún factor idéntico arriba y abajo, la fracción es irreducible y **no se puede simplificar más**. El resultado original debía quedarse como estaba.",
+        "pista": "La regla más sagrada de las matemáticas: NUNCA se pueden tachar cosas que están sumando o restando, solo las que están multiplicando a TODO el bloque.",
+        "formula": "$$\\frac{A+C}{B+C} \\neq \\frac{A}{B}$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2301,
+        "dificultad": "Básica",
+        "bloque": "Tema 3: Ecuaciones, Inecuaciones y Sistemas",
+        "enunciado": "Resuelve la siguiente ecuación irracional: $\\sqrt{2x+1}-x=-1$",
+        "resolucion_latex": "Aislamos la raíz cuadrada en un lado: $\\sqrt{2x+1}=x-1$.<br>Elevamos al cuadrado ambos miembros: $(\\sqrt{2x+1})^{2}=(x-1)^{2}$.<br>Desarrollamos la identidad notable: $2x+1=x^{2}-2x+1$<br>Agrupamos términos a un lado: $x^{2}-4x=0$.<br>Factorizamos: $x(x-4)=0 \\Rightarrow x=0$, $x=4$.<br><br>Comprobación obligatoria:<br>Si $x=0 \\Rightarrow \\sqrt{1}-0=1 \\neq -1$ (Falsa. Se introdujo al elevar al cuadrado).<br>Si $x=4 \\Rightarrow \\sqrt{9}-4=3-4=-1$ (Verdadera).<br>La única solución válida es $x=4$.",
+        "pista": "Aísla la raíz cuadrada sola a un lado del igual y luego eleva todo al cuadrado. Es totalmente obligatorio que compruebes las dos soluciones finales.",
+        "formula": "$$(\\sqrt{A})^2 = B^2$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2302,
+        "dificultad": "Básica",
+        "bloque": "Tema 3: Ecuaciones, Inecuaciones y Sistemas",
+        "enunciado": "Resuelve la siguiente ecuación exponencial sacando factor común: $2^{x+1}+2^{x}=12$",
+        "resolucion_latex": "Aplicamos la propiedad de las potencias $a^{n+m}=a^{n}\\cdot a^{m}$:<br>$2^{x}\\cdot 2^{1}+2^{x}=12$<br>Sacamos $2^x$ como factor común: $2^{x}(2+1)=12 \\Rightarrow 2^{x}(3)=12$<br>Despejamos: $2^{x}=\\frac{12}{3} \\Rightarrow 2^{x}=4$<br>Como $4=2^{2}$ igualamos exponentes: $x=2$.",
+        "pista": "Para sumar exponenciales, sepáralas primero rompiendo la suma de sus exponentes. Verás que te queda una misma base ($2^x$) en ambos sitios, perfecta para sacar factor común.",
+        "formula": "$$a^{n+m} = a^n \\cdot a^m$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2303,
+        "dificultad": "Básica",
+        "bloque": "Tema 3: Ecuaciones, Inecuaciones y Sistemas",
+        "enunciado": "Resuelve la siguiente inecuación de primer grado y expresa la solución en forma de intervalo: $2(x-3)\\le4x+2$",
+        "resolucion_latex": "Quitamos paréntesis: $2x-6\\le4x+2$.<br>Agrupamos las $x$ a un lado y los números al otro: $2x-4x \\le 2+6$<br>Operamos: $-2x\\le8$.<br>Al despejar pasando un número negativo dividiendo, se invierte el sentido de la desigualdad:<br>$x \\ge \\frac{8}{-2} \\Rightarrow x \\ge -4$.<br><br>Solución en forma de intervalo: $x \\in [-4, +\\infty)$.",
+        "pista": "Resuelve todo como si fuera una ecuación normal y corriente pero ¡CUIDADO! Si al final tienes que pasar un número negativo multiplicando o dividiendo, el pico del símbolo se invierte.",
+        "formula": "$$\\text{Si } a < 0 \\text{ y } ax \\le b \\Rightarrow x \\ge \\frac{b}{a}$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2304,
+        "dificultad": "Media",
+        "bloque": "Tema 3: Ecuaciones, Inecuaciones y Sistemas",
+        "enunciado": "Resuelve la siguiente ecuación logarítmica comprobando la validez de las soluciones: $\\log(x)+\\log(x-3)=1$",
+        "resolucion_latex": "Por la propiedad de la suma de logaritmos, se multiplican los argumentos: $\\log(x(x-3))=1$.<br>Sabiendo que el logaritmo es en base 10, aplicamos su definición: $x(x-3)=10^{1}$.<br>$x^{2}-3x-10=0$<br><br>Resolvemos: $x=\\frac{3\\pm\\sqrt{9-4(1)(-10)}}{2}=\\frac{3\\pm\\sqrt{49}}{2}=\\frac{3\\pm7}{2}$.<br>Obtenemos $x_{1}=5$ y $x_{2}=-2$.<br><br>Comprobación: Si $x=-2$, tendríamos $\\log(-2)$, que no existe en los números reales.<br>La única solución válida es $x=5$.",
+        "pista": "Fusiona los logaritmos usando la propiedad de la multiplicación. Una vez estén fusionados, aplica la definición del logaritmo para deshacerte de él (recuerda que va en base 10).",
+        "formula": "$$\\log_a A + \\log_a B = \\log_a(A\\cdot B) \\quad ; \\quad \\log_{10} X = 1 \\Rightarrow 10^1 = X$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2305,
+        "dificultad": "Media",
+        "bloque": "Tema 3: Ecuaciones, Inecuaciones y Sistemas",
+        "enunciado": "Resuelve el siguiente sistema de ecuaciones lineales utilizando el método de Gauss:<br>$\\begin{cases}x+y+z=6\\\\ 2x-y+3z=9\\\\ -x+2y+z=6\\end{cases}$",
+        "resolucion_latex": "Escribimos la matriz ampliada del sistema:<br>$\\begin{pmatrix}1 & 1 & 1 & | & 6\\\\ 2 & -1 & 3 & | & 9\\\\ -1 & 2 & 1 & | & 6\\end{pmatrix}$<br><br>Hacemos ceros en la primera columna ($F2=F2-2F1$; $F3=F3+F1$):<br>$\\begin{pmatrix}1 & 1 & 1 & | & 6\\\\ 0 & -3 & 1 & | & -3\\\\ 0 & 3 & 2 & | & 12\\end{pmatrix}$<br><br>Hacemos cero en la segunda columna ($F3=F3+F2$):<br>$\\begin{pmatrix}1 & 1 & 1 & | & 6\\\\ 0 & -3 & 1 & | & -3\\\\ 0 & 0 & 3 & | & 9\\end{pmatrix}$<br><br>Reescribimos el sistema escalonado y resolvemos de abajo hacia arriba:<br>$3z=9 \\Rightarrow z=3$<br>$-3y+3=-3 \\Rightarrow -3y=-6 \\Rightarrow y=2$<br>$x+2+3=6 \\Rightarrow x+5=6 \\Rightarrow x=1$<br><br>Solución: $x=1, y=2, z=3$. (Sistema Compatible Determinado).",
+        "pista": "En el método de Gauss tienes que fabricar una escalera de ceros. Utiliza siempre la primera fila para eliminar la primera incógnita de las otras dos.",
+        "formula": "$$F_{nueva} = F_{actual} - k \\cdot F_{pivote}$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2306,
+        "dificultad": "Media",
+        "bloque": "Tema 3: Ecuaciones, Inecuaciones y Sistemas",
+        "enunciado": "Resuelve el siguiente sistema de ecuaciones no lineal:<br>$\\begin{cases}x^{2}+y^{2}=13\\\\ x-y=1\\end{cases}$",
+        "resolucion_latex": "Despejamos $x$ de la ecuación lineal (la de abajo): $x=y+1$.<br>Sustituimos en la ecuación cuadrática (la de arriba): $(y+1)^{2}+y^{2}=13$.<br>Desarrollamos: $y^{2}+2y+1+y^{2}=13 \\Rightarrow 2y^{2}+2y-12=0$.<br>Simplificamos dividiendo por 2: $y^{2}+y-6=0$<br><br>Resolvemos: $y=\\frac{-1\\pm\\sqrt{1-4(1)(-6)}}{2}=\\frac{-1\\pm5}{2}$.<br>Obtenemos $y_{1}=2$ e $y_{2}=-3$.<br><br>Calculamos los valores de $x$ correspondientes ($x=y+1$):<br>Si $y=2 \\Rightarrow x=3$.<br>Si $y=-3 \\Rightarrow x=-2$<br>Soluciones: El sistema tiene dos puntos de corte: $(3, 2)$ y $(-2, -3)$.",
+        "pista": "¡No te compliques! Despeja una letra de la ecuación que no lleva cuadrados y sustitúyela dentro de la que sí los lleva.",
+        "formula": "$$(a+b)^2 = a^2 + 2ab + b^2$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2307,
+        "dificultad": "Alta",
+        "bloque": "Tema 3: Ecuaciones, Inecuaciones y Sistemas",
+        "enunciado": "Discute y resuelve, si es posible, el siguiente sistema mediante el método de Gauss indicando de qué tipo es:<br>$\\begin{cases}x+2y-z=3\\\\ 2x-y+z=1\\\\ 3x+y=4\\end{cases}$",
+        "resolucion_latex": "Matriz ampliada:<br>$\\begin{pmatrix}1 & 2 & -1 & | & 3\\\\ 2 & -1 & 1 & | & 1\\\\ 3 & 1 & 0 & | & 4\\end{pmatrix}$<br><br>Hacemos ceros ($F2=F2-2F1$; $F3=F3-3F1$):<br>$\\begin{pmatrix}1 & 2 & -1 & | & 3\\\\ 0 & -5 & 3 & | & -5\\\\ 0 & -5 & 3 & | & -5\\end{pmatrix}$<br><br>Vemos que la fila 3 es idéntica a la 2. Si hacemos $F3=F3-F2$, se anula por completo:<br>$\\begin{pmatrix}1 & 2 & -1 & | & 3\\\\ 0 & -5 & 3 & | & -5\\\\ 0 & 0 & 0 & | & 0\\end{pmatrix}$<br><br>Como hay una fila de ceros, se trata de un Sistema Compatible Indeterminado (infinitas soluciones). Llamamos al parámetro libre $z=\\lambda$.<br>De la segunda fila: $-5y+3\\lambda=-5 \\Rightarrow 5y=3\\lambda+5 \\Rightarrow y=\\frac{3\\lambda+5}{5}$<br>De la primera fila: $x+2\\left(\\frac{3\\lambda+5}{5}\\right)-\\lambda=3 \\Rightarrow x+\\frac{6\\lambda+10-5\\lambda}{5}=3 \\Rightarrow x=\\frac{5-\\lambda}{5}$<br>Soluciones: $\\left(\\frac{5-\\lambda}{5}, \\frac{3\\lambda+5}{5}, \\lambda\\right) \\quad \\forall\\lambda\\in\\mathbb{R}$",
+        "pista": "Al hacer Gauss llegarás a que toda la última fila se anula en ceros. Eso indica que hay infinitas soluciones, por lo que tendrás que bautizar a la Z con la letra lambda y despejar en función de ella.",
+        "formula": "$$0z = 0 \\Rightarrow \\text{Sistema Compatible Indeterminado}$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2308,
+        "dificultad": "Alta",
+        "bloque": "Tema 3: Ecuaciones, Inecuaciones y Sistemas",
+        "enunciado": "Resuelve la siguiente ecuación exponencial utilizando un cambio de variable: $9^{x}-4\\cdot3^{x}+3=0$",
+        "resolucion_latex": "Recordamos que $9^{x}=(3^{2})^{x}=(3^{x})^{2}$.<br>Reescribimos la ecuación: $(3^{x})^{2}-4\\cdot 3^{x}+3=0$.<br>Realizamos el cambio de variable $t=3^{x}$, quedando: $t^{2}-4t+3=0$<br><br>Resolvemos: $t=\\frac{4\\pm\\sqrt{16-12}}{2}=\\frac{4\\pm2}{2}$<br>Raíces: $t_{1}=3$ y $t_{2}=1$<br><br>Deshacemos el cambio:<br>Si $t=3 \\Rightarrow 3^{x}=3^{1} \\Rightarrow x=1$.<br>Si $t=1 \\Rightarrow 3^{x}=1 \\Rightarrow x=0$ (ya que cualquier número elevado a cero da uno).<br>Soluciones: $x=1$ y $x=0$.",
+        "pista": "Convierte mentalmente el 9 en un $3^2$. De esa manera vas a poder hacer el cambio de variable $t=3^x$ para que la ecuación se convierta en una de segundo grado común.",
+        "formula": "$$9^x = (3^2)^x = (3^x)^2 \\quad ; \\quad a^0 = 1$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2309,
+        "dificultad": "Alta",
+        "bloque": "Tema 3: Ecuaciones, Inecuaciones y Sistemas",
+        "enunciado": "Resuelve la siguiente inecuación con fracciones algebraicas: $\\frac{x^{2}-4}{x-1}\\ge0$",
+        "resolucion_latex": "Factorizamos numerador y denominador. El numerador es una diferencia de cuadrados: $x^{2}-4=(x-2)(x+2)$.<br>La inecuación queda: $\\frac{(x-2)(x+2)}{x-1}\\ge0$<br><br>Calculamos los puntos críticos (donde se anulan numerador y denominador): $x=2$, $x=-2$ y $x=1$.<br>Colocamos las raíces en la recta real dividiéndola en intervalos: $(-\\infty,-2)$, $(-2,1)$, $(1,2)$ y $(2,+\\infty)$.<br>Probamos un valor en cada intervalo para ver el signo de la fracción:<br>Si $x=-3 \\Rightarrow \\frac{(-)(-)}{(-)} = -$ (No válido).<br>Si $x=0 \\Rightarrow \\frac{(-)(+)}{(-)} = +$ (Válido).<br>Si $x=1,5 \\Rightarrow \\frac{(-)(+)}{(+)} = -$ (No válido).<br>Si $x=3 \\Rightarrow \\frac{(+)(+)}{(+)} = +$ (Válido).<br><br>Por la condición $\\ge0$, las raíces del numerador se incluyen (corchete), pero la raíz del denominador $(x=1)$ NUNCA se incluye porque anularía el denominador.<br>Solución: $x \\in [-2,1) \\cup [2,+\\infty)$.",
+        "pista": "Busca todos los números que hacen cero la fracción por arriba o por abajo y colócalos en una recta. El número de abajo jamás podrá llevar corchete porque dividir por cero es el mal.",
+        "formula": "$$\\frac{A}{0} = \\text{Error Matemático}$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2310,
+        "dificultad": "Superior",
+        "bloque": "Tema 3: Ecuaciones, Inecuaciones y Sistemas",
+        "enunciado": "Ejercicio Trampa: Un alumno resuelve la ecuación irracional $\\sqrt{x+2}=x$. Para ello, eleva ambos miembros al cuadrado obteniendo $x+2=x^{2}$ que se transforma en $x^{2}-x-2=0$. Al aplicar la fórmula, obtiene $x=2$ y $x=-1$, y recuadra ambas como la solución final perfecta. El profesor le quita puntos en la nota final. ¿Qué paso fundamental e innegociable en las ecuaciones irracionales se ha saltado el alumno? Demuéstralo.",
+        "resolucion_latex": "El paso innegociable que se ha saltado el alumno es la comprobación final de las soluciones en la ecuación original.<br><br>Al elevar ambos miembros al cuadrado, estamos aplicando una transformación que no mantiene la equivalencia estricta, lo que puede (y suele) introducir soluciones ficticias o espurias.<br><br>Si comprobamos los resultados en la ecuación original $\\sqrt{x+2}=x$:<br>Con $x=2 \\Rightarrow \\sqrt{2+2}=2 \\Rightarrow \\sqrt{4}=2 \\Rightarrow 2=2$. (Correcta).<br>Con $x=-1 \\Rightarrow \\sqrt{-1+2}=-1 \\Rightarrow \\sqrt{1}=-1 \\Rightarrow 1=-1$. (¡Falso!).<br><br>El alumno ha dado por buena una solución irreal $(x=-1)$ generada matemáticamente por el proceso de elevar al cuadrado. La única respuesta correcta es $x=2$.",
+        "pista": "Recuerda que elevar al cuadrado es como ponerle una venda al signo negativo en matemáticas. A veces te fabricará soluciones inventadas que hay que desenmascarar.",
+        "formula": "$$\\text{Comprobación obligatoria: } x = -1 \\Rightarrow \\sqrt{1} \\neq -1$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2401,
+        "dificultad": "Básica",
+        "bloque": "Tema 4: Trigonometría I",
+        "enunciado": "Sabiendo que $\\cos \\alpha = -\\frac{4}{5}$ y que $\\alpha$ es un ángulo del tercer cuadrante ($180^{\\circ} < \\alpha < 270^{\\circ}$), calcula sin usar la calculadora el valor exacto de $\\sin \\alpha$ y $\\tan \\alpha$.",
+        "resolucion_latex": "Aplicamos la identidad fundamental de la trigonometría: $\\sin^{2}\\alpha+\\cos^{2}\\alpha=1$.<br>$\\sin^{2}\\alpha+(-\\frac{4}{5})^{2}=1 \\Rightarrow \\sin^{2}\\alpha+\\frac{16}{25}=1 \\Rightarrow \\sin^{2}\\alpha=1-\\frac{16}{25}=\\frac{9}{25}$<br><br>Al aplicar la raíz cuadrada, tomamos el signo negativo porque en el tercer cuadrante el seno es negativo:<br>$\\sin \\alpha = -\\sqrt{\\frac{9}{25}} = -\\frac{3}{5}$.<br><br>Calculamos la tangente usando $\\tan \\alpha = \\frac{\\sin \\alpha}{\\cos \\alpha}$:<br>$\\tan \\alpha = \\frac{-3/5}{-4/5} = \\frac{3}{4}$.",
+        "pista": "Usa la ecuación fundamental de la trigonometría para sacar el seno al cuadrado. Cuidado al hacer la raíz cuadrada: mira bien en qué cuadrante estás para saber si elegir el valor positivo o el negativo.",
+        "formula": "$$\\sin^2\\alpha + \\cos^2\\alpha = 1 \\quad ; \\quad \\tan\\alpha = \\frac{\\sin\\alpha}{\\cos\\alpha}$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2402,
+        "dificultad": "Básica",
+        "bloque": "Tema 4: Trigonometría I",
+        "enunciado": "Convierte los siguientes ángulos a la unidad contraria (de grados a radianes y viceversa):<br>a) $210^{\\circ}$<br>b) $\\frac{5\\pi}{3}$ rad",
+        "resolucion_latex": "Usamos el factor de conversión $\\frac{\\pi \\text{ rad}}{180^{\\circ}}$<br><br>a) $210^{\\circ}\\cdot\\frac{\\pi}{180^{\\circ}}=\\frac{210\\pi}{180}=\\frac{7\\pi}{6}$ rad.<br><br>b) $\\frac{5\\pi}{3} \\text{ rad} \\cdot \\frac{180^{\\circ}}{\\pi \\text{ rad}}=\\frac{5\\cdot 180^{\\circ}}{3}=5\\cdot 60^{\\circ}=300^{\\circ}$.",
+        "pista": "Acuérdate de la regla de oro: Media circunferencia entera ($180^{\\circ}$) equivale a exactamente $\\pi$ radianes. Haz una regla de tres sencilla.",
+        "formula": "$$180^{\\circ} = \\pi \\text{ rad}$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2403,
+        "dificultad": "Básica",
+        "bloque": "Tema 4: Trigonometría I",
+        "enunciado": "Simplifica la siguiente expresión trigonométrica utilizando las relaciones fundamentales: $\\frac{\\sin^{2}x}{1-\\cos x}$",
+        "resolucion_latex": "Recordamos la identidad fundamental $\\sin^{2}x+\\cos^{2}x=1 \\Rightarrow \\sin^{2}x=1-\\cos^{2}x$.<br>Sustituimos en el numerador: $\\frac{1-\\cos^{2}x}{1-\\cos x}$<br><br>El numerador es una diferencia de cuadrados $(a^{2}-b^{2}=(a+b)(a-b))$:<br>$\\frac{(1-\\cos x)(1+\\cos x)}{1-\\cos x}$<br><br>Simplificamos el factor común $(1-\\cos x)$: el resultado es $1+\\cos x$.",
+        "pista": "Transforma el seno al cuadrado en cosenos usando la ecuación fundamental. Al hacerlo te aparecerá una identidad notable en el numerador que podrás simplificar con la de abajo.",
+        "formula": "$$\\sin^2x = 1 - \\cos^2x \\quad ; \\quad 1 - \\cos^2x = (1 - \\cos x)(1 + \\cos x)$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2404,
+        "dificultad": "Media",
+        "bloque": "Tema 4: Trigonometría I",
+        "enunciado": "Calcula el valor exacto de $\\tan(75^{\\circ})$ utilizando las fórmulas de la suma de ángulos, sabiendo que $75^{\\circ}=45^{\\circ}+30^{\\circ}$.",
+        "resolucion_latex": "Fórmula de la tangente de una suma: $\\tan(a+b)=\\frac{\\tan a+\\tan b}{1-\\tan a\\cdot \\tan b}$<br>Sustituimos $a=45^{\\circ}$ y $b=30^{\\circ}$, recordando que $\\tan(45^{\\circ})=1$ y $\\tan(30^{\\circ})=\\frac{\\sqrt{3}}{3}$<br><br>$\\tan(75^{\\circ})=\\frac{1+\\frac{\\sqrt{3}}{3}}{1-1\\cdot\\frac{\\sqrt{3}}{3}}=\\frac{\\frac{3+\\sqrt{3}}{3}}{\\frac{3-\\sqrt{3}}{3}}=\\frac{3+\\sqrt{3}}{3-\\sqrt{3}}$.<br><br>Racionalizamos multiplicando por el conjugado $(3+\\sqrt{3})$:<br>$\\frac{(3+\\sqrt{3})(3+\\sqrt{3})}{(3-\\sqrt{3})(3+\\sqrt{3})}=\\frac{9+6\\sqrt{3}+3}{9-3}=\\frac{12+6\\sqrt{3}}{6}=2+\\sqrt{3}$.",
+        "pista": "Usa la fórmula de la tangente de la suma de dos ángulos. Sustituye los valores exactos que te sabes de memoria de 45º y 30º y finalmente racionaliza la fracción para que quede bonito.",
+        "formula": "$$\\tan(\\alpha + \\beta) = \\frac{\\tan\\alpha + \\tan\\beta}{1 - \\tan\\alpha \\cdot \\tan\\beta}$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2405,
+        "dificultad": "Media",
+        "bloque": "Tema 4: Trigonometría I",
+        "enunciado": "Resuelve la siguiente ecuación trigonométrica de primer grado (halla todas las soluciones en el primer giro, $0^{\\circ} \\le x < 360^{\\circ}$): $\\cos(2x)=\\frac{1}{2}$",
+        "resolucion_latex": "Buscamos qué ángulos tienen un coseno igual a $1/2$. Sabemos que en el primer giro son $60^{\\circ}$ (cuadrante I) y $300^{\\circ}$ (cuadrante IV).<br><br>Por tanto, el argumento $2x$ debe ser igual a esos ángulos:<br>Caso 1: $2x=60^{\\circ} \\Rightarrow x=30^{\\circ}$<br>Caso 2: $2x=300^{\\circ} \\Rightarrow x=150^{\\circ}$.<br><br>Pero cuidado, como el argumento es $2x$, debemos añadir una vuelta completa al argumento antes de dividir para no perder soluciones en el primer giro de x:<br>Caso 3: $2x=60^{\\circ}+360^{\\circ}=420^{\\circ} \\Rightarrow x=210^{\\circ}$<br>Caso 4: $2x=300^{\\circ}+360^{\\circ}=660^{\\circ} \\Rightarrow x=330^{\\circ}$<br><br>Soluciones: $x \\in \\{30^{\\circ}, 150^{\\circ}, 210^{\\circ}, 330^{\\circ}\\}$.",
+        "pista": "El coseno es positivo en el primer y cuarto cuadrante. Haz un arcocoseno para sacar el ángulo y al final divide entre dos. Recuerda darle 'vueltas extra' sumando 360 al ángulo antes de dividir para encontrar todas las soluciones del giro.",
+        "formula": "$$\\cos(\\alpha) = 1/2 \\Rightarrow \\alpha = 60^{\\circ} + 360^{\\circ}k \\quad ; \\quad \\alpha = 300^{\\circ} + 360^{\\circ}k$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2406,
+        "dificultad": "Media",
+        "bloque": "Tema 4: Trigonometría I",
+        "enunciado": "Demuestra la siguiente identidad trigonométrica: $\\frac{1-\\sin x}{\\cos x}=\\frac{\\cos x}{1+\\sin x}$",
+        "resolucion_latex": "Para demostrar una identidad, trabajamos en un lado hasta llegar al otro. Partimos del lado izquierdo: $\\frac{1-\\sin x}{\\cos x}$<br><br>Multiplicamos numerador y denominador por el conjugado del numerador, $(1+\\sin x)$:<br>$\\frac{(1-\\sin x)(1+\\sin x)}{\\cos x(1+\\sin x)}=\\frac{1-\\sin^{2}x}{\\cos x(1+\\sin x)}$<br><br>Usamos la identidad fundamental $1-\\sin^{2}x=\\cos^{2}x$:<br>$\\frac{\\cos^{2}x}{\\cos x(1+\\sin x)}$<br><br>Simplificamos dividiendo arriba y abajo entre $\\cos x$:<br>$\\frac{\\cos x}{1+\\sin x}$. Queda demostrada la igualdad.",
+        "pista": "Un buen truco para demostrar identidades raras es multiplicar arriba y abajo por el 'conjugado' de alguna de las partes, igual que hacías al racionalizar raíces.",
+        "formula": "$$(1-\\sin x)(1+\\sin x) = 1 - \\sin^2 x = \\cos^2 x$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2407,
+        "dificultad": "Alta",
+        "bloque": "Tema 4: Trigonometría I",
+        "enunciado": "Resuelve la siguiente ecuación trigonométrica expresando todas las soluciones posibles: $\\sin(2x)=\\cos x$.",
+        "resolucion_latex": "Aplicamos la fórmula del seno del ángulo doble: $\\sin(2x)=2\\sin x \\cos x$.<br>La ecuación queda: $2\\sin x \\cos x = \\cos x$<br><br>Pasamos todo al mismo lado para factorizar (¡nunca dividir por la incógnita!):<br>$2\\sin x \\cos x-\\cos x=0 \\Rightarrow \\cos x(2\\sin x-1)=0$.<br><br>Para que un producto sea cero, al menos uno de los factores debe ser cero:<br>Opción A: $\\cos x=0 \\Rightarrow x=90^{\\circ}+180^{\\circ}k$ ($k \\in \\mathbb{Z}$).<br>Opción B: $2\\sin x-1=0 \\Rightarrow \\sin x=\\frac{1}{2} \\Rightarrow x=30^{\\circ}+360^{\\circ}k$ o $x=150^{\\circ}+360^{\\circ}k$ ($k \\in \\mathbb{Z}$).",
+        "pista": "Expande el ángulo doble del seno con su fórmula. Pasa todo a un lado e iguala a cero. Luego, saca factor común, separando la ecuación en dos caminos mucho más fáciles.",
+        "formula": "$$\\sin(2x) = 2 \\sin x \\cos x$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2408,
+        "dificultad": "Alta",
+        "bloque": "Tema 4: Trigonometría I",
+        "enunciado": "Simplifica al máximo la siguiente expresión utilizando las fórmulas de suma y diferencia de ángulos: $\\frac{\\sin(a+b)+\\sin(a-b)}{\\cos(a+b)+\\cos(a-b)}$",
+        "resolucion_latex": "Desarrollamos el numerador usando las fórmulas del seno de la suma y diferencia:<br>$\\sin(a+b)=\\sin a \\cos b+\\cos a \\sin b$<br>$\\sin(a-b)=\\sin a \\cos b-\\cos a \\sin b$<br>Suma del numerador: $2\\sin a \\cos b$.<br><br>Desarrollamos el denominador con las fórmulas del coseno:<br>$\\cos(a+b)=\\cos a \\cos b-\\sin a \\sin b$<br>$\\cos(a-b)=\\cos a \\cos b+\\sin a \\sin b$<br>Suma del denominador: $2\\cos a \\cos b$.<br><br>Sustituimos en la fracción: $\\frac{2\\sin a \\cos b}{2\\cos a \\cos b}$<br>Simplificamos los 2 y los $\\cos b$: $\\frac{\\sin a}{\\cos a}=\\tan a$.",
+        "pista": "Simplemente desarrolla cada parte usando sus largas fórmulas de sumas y restas de ángulos. Al sumarlos, verás que la mitad de las cosas se anulan unas a otras por arte de magia.",
+        "formula": "$$\\sin(a \\pm b) = \\sin a\\cos b \\pm \\cos a\\sin b \\quad ; \\quad \\cos(a \\pm b) = \\cos a\\cos b \\mp \\sin a\\sin b$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2409,
+        "dificultad": "Alta",
+        "bloque": "Tema 4: Trigonometría I",
+        "enunciado": "Resuelve el siguiente sistema de ecuaciones trigonométricas para ángulos del primer cuadrante:<br>$\\begin{cases}\\sin x+\\sin y=1\\\\ x+y=90^{\\circ}\\end{cases}$",
+        "resolucion_latex": "De la segunda ecuación despejamos y: $y=90^{\\circ}-x$<br>Sustituimos en la primera: $\\sin x+\\sin(90^{\\circ}-x)=1$.<br>Sabemos por relaciones de ángulos complementarios que $\\sin(90^{\\circ}-x)=\\cos x$.<br>La ecuación queda: $\\sin x+\\cos x=1$.<br><br>Elevamos al cuadrado ambos lados: $(\\sin x+\\cos x)^{2}=1^{2} \\Rightarrow \\sin^{2}x+\\cos^{2}x+2\\sin x \\cos x=1$.<br>Como $\\sin^{2}x+\\cos^{2}x=1$, tenemos $1+\\sin(2x)=1 \\Rightarrow \\sin(2x)=0$<br><br>Soluciones para $2x$: $0^{\\circ}, 180^{\\circ}, 360^{\\circ} \\Rightarrow x \\in \\{0^{\\circ}, 90^{\\circ}, 180^{\\circ}\\}$.<br>Como nos piden ángulos del primer cuadrante, comprobamos $x=0^{\\circ}$ y $x=90^{\\circ}$:<br>Si $x=0^{\\circ} \\Rightarrow y=90^{\\circ} \\Rightarrow \\sin(0^{\\circ})+\\sin(90^{\\circ})=0+1=1$ (Válida).<br>Si $x=90^{\\circ} \\Rightarrow y=0^{\\circ} \\Rightarrow \\sin(90^{\\circ})+\\sin(0^{\\circ})=1+0=1$ (Válida).",
+        "pista": "Despeja una variable de la ecuación lineal y métela en la otra. Acuérdate de cómo se relacionan el seno y el coseno cuando dos ángulos suman exactamente 90º (son complementarios).",
+        "formula": "$$\\sin(90^{\\circ}-x) = \\cos x$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2410,
+        "dificultad": "Superior",
+        "bloque": "Tema 4: Trigonometría I",
+        "enunciado": "Ejercicio Trampa: Un alumno se enfrenta a la ecuación trigonométrica $\\sin x \\cdot \\cos x = \\sin x$. Para resolverla más rápido, divide ambos lados de la igualdad entre $\\sin x$, tachándolos y obteniendo $\\cos x=1 \\Rightarrow x=0^{\\circ}$. El profesor le indica que el resultado está incompleto. ¿Qué grave error matemático ha cometido al simplificar y qué soluciones se ha comido por el camino?",
+        "resolucion_latex": "El alumno ha cometido el error algebraico de **dividir entre una expresión que contiene la incógnita sin considerar que esta pueda ser cero**.<br><br>En matemáticas, la división por cero no está definida. Al dividir toda la ecuación entre $\\sin x$, el alumno asume implícitamente que $\\sin x \\neq 0$. Sin embargo, ¡$\\sin x=0$ es justamente una de las ramas de soluciones de esta ecuación!<br><br>El método correcto es pasar todo a un lado y sacar factor común:<br>$\\sin x \\cdot \\cos x-\\sin x=0 \\Rightarrow \\sin x(\\cos x-1)=0$.<br><br>De aquí salen las dos ramas:<br>1) $\\cos x-1=0 \\Rightarrow \\cos x=1 \\Rightarrow x=0^{\\circ}+360^{\\circ}k$ (la que encontró el alumno).<br>2) $\\sin x=0 \\Rightarrow x=0^{\\circ}+180^{\\circ}k$ (las soluciones $0^{\\circ}$, $180^{\\circ}$, $360^{\\circ}$... que se comió al simplificar de golpe).",
+        "pista": "Nunca, jamás, bajo ningún concepto, elimines tachando algo que tiene incógnita de los dos lados del igual. En su lugar, pasa las cosas restando al otro lado y saca factor común.",
+        "formula": "$$AB = A \\Rightarrow AB - A = 0 \\Rightarrow A(B - 1) = 0$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2501,
+        "dificultad": "Básica",
+        "bloque": "Tema 5: Trigonometría II (Resolución de Triángulos)",
+        "enunciado": "En un triángulo ABC, conocemos el lado $a=12$ cm, el ángulo $A=45^{\\circ}$ y el ángulo $B=60^{\\circ}$. Calcula el lado b utilizando el Teorema del Seno.",
+        "resolucion_latex": "Aplicamos el Teorema del Seno: $\\frac{a}{\\sin A}=\\frac{b}{\\sin B}$<br>Sustituimos los datos: $\\frac{12}{\\sin 45^{\\circ}}=\\frac{b}{\\sin 60^{\\circ}}$<br><br>Despejamos b: $b=\\frac{12\\cdot \\sin 60^{\\circ}}{\\sin 45^{\\circ}}=\\frac{12\\cdot\\frac{\\sqrt{3}}{2}}{\\frac{\\sqrt{2}}{2}}=\\frac{6\\sqrt{3}}{\\frac{\\sqrt{2}}{2}}=12\\sqrt{\\frac{3}{2}}=6\\sqrt{6} \\approx 14,7$ cm.",
+        "pista": "El Teorema del Seno empareja siempre a un lado con el seno del ángulo que tiene enfrente. Plantea las dos fracciones cruzadas y despeja la que te falta.",
+        "formula": "$$\\frac{a}{\\sin A} = \\frac{b}{\\sin B} = \\frac{c}{\\sin C}$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2502,
+        "dificultad": "Básica",
+        "bloque": "Tema 5: Trigonometría II (Resolución de Triángulos)",
+        "enunciado": "Dos lados de un triángulo miden $b=8$ cm y $c=10$ cm, y el ángulo que forman es $A=30^{\\circ}$. Calcula la longitud del lado a usando el Teorema del Coseno.",
+        "resolucion_latex": "Aplicamos el Teorema del Coseno: $a^{2}=b^{2}+c^{2}-2bc \\cos A$.<br><br>$a^{2}=8^{2}+10^{2}-2(8)(10)\\cos(30^{\\circ})=64+100-160\\left(\\frac{\\sqrt{3}}{2}\\right)=164-80\\sqrt{3}$.<br><br>$a=\\sqrt{164-80\\sqrt{3}} \\approx \\sqrt{164-138,56}=\\sqrt{25,44} \\approx 5,04$ cm.",
+        "pista": "Cuando te dan dos lados como los brazos de un compás y te dicen el ángulo que hay justo en medio, el Teorema del Coseno es la herramienta directa para cerrar el triángulo y medir ese lado final.",
+        "formula": "$$a^2 = b^2 + c^2 - 2bc \\cos A$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2503,
+        "dificultad": "Básica",
+        "bloque": "Tema 5: Trigonometría II (Resolución de Triángulos)",
+        "enunciado": "Calcula el área del triángulo del ejercicio anterior utilizando la fórmula trigonométrica del área.",
+        "resolucion_latex": "La fórmula del área con seno es: $S=\\frac{1}{2}b\\cdot c\\cdot \\sin A$.<br><br>Sustituimos: $S=\\frac{1}{2}(8)(10)\\sin(30^{\\circ})=40\\cdot\\frac{1}{2}=20$ cm$^{2}$.",
+        "pista": "Olvida la base por altura. El área de un triángulo cualquiera es la mitad del producto de dos lados, multiplicado por el seno del ángulo que forman.",
+        "formula": "$$\\text{Área} = \\frac{1}{2} b \\cdot c \\cdot \\sin A$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2504,
+        "dificultad": "Media",
+        "bloque": "Tema 5: Trigonometría II (Resolución de Triángulos)",
+        "enunciado": "Resuelve completamente un triángulo cuyos lados miden $a=5$ cm, $b=7$ cm y $c=9$ cm. (Halla todos sus ángulos).",
+        "resolucion_latex": "Usamos el Teorema del Coseno para el ángulo mayor (C, opuesto a $c=9$):<br>$c^{2}=a^{2}+b^{2}-2ab \\cos C \\Rightarrow 9^{2}=5^{2}+7^{2}-2(5)(7)\\cos C$<br>$81=25+49-70 \\cos C \\Rightarrow 81=74-70 \\cos C \\Rightarrow 7=-70 \\cos C \\Rightarrow \\cos C=-0,1$.<br>$C=\\arccos(-0,1) \\approx 95,74^{\\circ}$<br><br>Usamos Teorema del Seno para B: $\\frac{b}{\\sin B}=\\frac{c}{\\sin C} \\Rightarrow \\frac{7}{\\sin B}=\\frac{9}{\\sin 95,74^{\\circ}} \\Rightarrow \\sin B \\approx 0,774 \\Rightarrow B \\approx 50,70^{\\circ}$<br><br>El tercer ángulo por diferencia: $A=180^{\\circ}-(95,74^{\\circ}+50,70^{\\circ})=33,56^{\\circ}$.",
+        "pista": "Cuando te den los tres lados, empieza siempre por el Teorema del Coseno. Un truco ninja: úsalo siempre para buscar el ángulo opuesto al lado MÁS GRANDE para evitar problemas con ángulos obtusos luego.",
+        "formula": "$$\\cos C = \\frac{a^2 + b^2 - c^2}{2ab}$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2505,
+        "dificultad": "Media",
+        "bloque": "Tema 5: Trigonometría II (Resolución de Triángulos)",
+        "enunciado": "Problema de la doble observación: Desde un punto en el suelo se ve la copa de un pino bajo un ángulo de $40^{\\circ}$. Si nos alejamos 15 metros en línea recta, el ángulo de elevación pasa a ser de $25^{\\circ}$. Calcula la altura del pino.",
+        "resolucion_latex": "Planteamos un sistema con las dos tangentes (sea 'h' la altura y 'x' la distancia inicial a la base):<br>1) $\\tan(40^{\\circ})=\\frac{h}{x} \\Rightarrow h=x\\cdot \\tan(40^{\\circ})$<br>2) $\\tan(25^{\\circ})=\\frac{h}{x+15} \\Rightarrow h=(x+15)\\cdot \\tan(25^{\\circ})$<br><br>Igualamos: $x\\cdot 0,839=(x+15)\\cdot 0,466 \\Rightarrow 0,839x=0,466x+6,99 \\Rightarrow 0,373x=6,99$<br>$x \\approx 18,74$ m.<br><br>Altura $h=18,74\\cdot 0,839 \\approx 15,72$ m.",
+        "pista": "Plantea dos triángulos rectángulos distintos (el cercano y el lejano). Ambos comparten la misma altura 'h'. Plantea sus tangentes, despeja 'h' en las dos e iguala las ecuaciones.",
+        "formula": "$$\\tan\\alpha = \\frac{\\text{Cateto Opuesto}}{\\text{Cateto Contiguo}}$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2506,
+        "dificultad": "Media",
+        "bloque": "Tema 5: Trigonometría II (Resolución de Triángulos)",
+        "enunciado": "Dos barcos salen del mismo puerto al mismo tiempo. Sus trayectorias forman un ángulo de $120^{\\circ}$. El primero viaja a 30 km/h y el segundo a 40 km/h. ¿Qué distancia los separa al cabo de 2 horas?",
+        "resolucion_latex": "En 2 horas, el barco A recorre $30\\cdot 2=60$ km. El barco B recorre $40\\cdot 2=80$ km.<br><br>Forman un triángulo con lados 60, 80 y ángulo comprendido $120^{\\circ}$. La distancia 'd' es el lado opuesto.<br>Teorema del Coseno: $d^{2}=60^{2}+80^{2}-2(60)(80)\\cos(120^{\\circ})=3600+6400-9600(-0,5)=10000+4800=14800$.<br><br>$d=\\sqrt{14800} \\approx 121,65$ km.",
+        "pista": "Primero usa MRU de física elemental para ver los kilómetros que han avanzado. Esos kilómetros serán dos lados de un triángulo enorme en el mar. Remata con el Teorema del Coseno.",
+        "formula": "$$\\Delta x = v \\cdot t \\quad ; \\quad d^2 = a^2 + b^2 - 2ab \\cos \\theta$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2507,
+        "dificultad": "Alta",
+        "bloque": "Tema 5: Trigonometría II (Resolución de Triángulos)",
+        "enunciado": "Las diagonales de un paralelogramo miden 10 cm y 14 cm, y forman un ángulo de $60^{\\circ}$ entre sí. Calcula la longitud de los lados del paralelogramo.",
+        "resolucion_latex": "Las diagonales de un paralelogramo se cortan en su punto medio. Esto divide al paralelogramo en cuatro triángulos.<br>Tomamos uno con lados 5 cm, 7 cm y ángulo $60^{\\circ}$. El lado opuesto es un lado del paralelogramo (a):<br>$a^{2}=5^{2}+7^{2}-2(5)(7)\\cos(60^{\\circ})=25+49-70(0,5)=74-35=39 \\Rightarrow a=\\sqrt{39} \\approx 6,24$ cm.<br><br>El otro lado (b) se calcula con el ángulo suplementario, $120^{\\circ}$:<br>$b^{2}=5^{2}+7^{2}-2(5)(7)\\cos(120^{\\circ})=25+49-70(-0,5)=74+35=109 \\Rightarrow b=\\sqrt{109} \\approx 10,44$ cm.",
+        "pista": "Recuerda que en un paralelogramo las diagonales se cortan en su punto central. Así que tendrás triángulos cuyos lados son las mitades de las diagonales.",
+        "formula": "$$a^2 = b^2 + c^2 - 2bc \\cos \\theta \\quad ; \\quad \\text{Ángulos suplementarios } 180^{\\circ} - 60^{\\circ} = 120^{\\circ}$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2508,
+        "dificultad": "Alta",
+        "bloque": "Tema 5: Trigonometría II (Resolución de Triángulos)",
+        "enunciado": "En un triángulo ABC, sabemos que $a=10$ cm, $b=15$ cm y el ángulo $A=30^{\\circ}$. Demuestra mediante el Teorema del Seno que existen dos triángulos diferentes que cumplen estas condiciones (caso ambiguo) y calcula el ángulo B en ambos casos.",
+        "resolucion_latex": "Teorema del Seno: $\\frac{10}{\\sin 30^{\\circ}}=\\frac{15}{\\sin B} \\Rightarrow \\sin B=\\frac{15\\cdot 0,5}{10}=0,75$.<br><br>Al hacer el arcoseno de 0,75, la calculadora da $B_{1} \\approx 48,59^{\\circ}$ (primer cuadrante).<br>Sin embargo, el seno es positivo también en el segundo cuadrante, por lo que existe otro ángulo válido: $B_{2}=180^{\\circ}-48,59^{\\circ}=131,41^{\\circ}$.<br><br>Como $A+B_{2}=30^{\\circ}+131,41^{\\circ} < 180^{\\circ}$, es un triángulo físicamente posible. Existen dos soluciones válidas para el triángulo.",
+        "pista": "Al usar el Teorema del Seno para hallar un ángulo, la calculadora solo te da la respuesta aguda. Recuerda que su ángulo suplementario (180 - el que te dio) también tiene el mismo seno.",
+        "formula": "$$\\sin(180^{\\circ} - \\alpha) = \\sin \\alpha$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2509,
+        "dificultad": "Alta",
+        "bloque": "Tema 5: Trigonometría II (Resolución de Triángulos)",
+        "enunciado": "Desde un faro de 50 m de altura respecto al nivel del mar se observan dos boyas alineadas con el faro. Los ángulos de depresión bajo los cuales se ven son de $30^{\\circ}$ y $45^{\\circ}$. Calcula la distancia exacta entre ambas boyas.",
+        "resolucion_latex": "El ángulo de depresión de $45^{\\circ}$ significa que la boya más cercana forma un ángulo de elevación de $45^{\\circ}$ con la base.<br>Por tanto, es un triángulo isósceles y la distancia de la base del faro a la primera boya es $x=50$ m.<br><br>Para la segunda boya (depresión $30^{\\circ}$), la distancia a la base es y:<br>$\\tan(30^{\\circ})=\\frac{50}{y} \\Rightarrow y=\\frac{50}{\\frac{\\sqrt{3}}{3}}=50\\sqrt{3} \\approx 86,60$ m.<br><br>La distancia entre las boyas es $y-x=50\\sqrt{3}-50=50(\\sqrt{3}-1) \\approx 36,60$ m.",
+        "pista": "Dibuja bien los ángulos. Un ángulo de depresión se mide desde la horizontal (tu línea de los ojos) hacia abajo. Haz dos triángulos rectángulos grandes independientes y luego resta sus bases.",
+        "formula": "$$\\tan(30^{\\circ}) = \\frac{\\sqrt{3}}{3} \\quad ; \\quad \\tan(45^{\\circ}) = 1$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2510,
+        "dificultad": "Superior",
+        "bloque": "Tema 5: Trigonometría II (Resolución de Triángulos)",
+        "enunciado": "Ejercicio Trampa: Un problema dice: 'En un triángulo cualquiera, el lado $a=3$ y el lado $b=4$. El ángulo $C=90^{\\circ}$'. Un alumno calcula el lado c usando el Teorema del Coseno: $c^{2}=3^{2}+4^{2}-2(3)(4)\\cos(90^{\\circ})$, obteniendo $c=5$. Su compañero le dice: '¡Te has complicado! Como es $90^{\\circ}$ podías usar el Teorema de Pitágoras directamente'. El primer alumno le responde: 'No, porque Pitágoras solo funciona en algunos triángulos y el Teorema del Coseno vale para todos. Lo mío es más correcto'. ¿Quién tiene la razón matemática y por qué?",
+        "resolucion_latex": "Ambos tienen razón en parte, pero el compañero es quien tiene la razón lógica.<br><br>El Teorema de Pitágoras no es una regla inventada ajena al Teorema del Coseno; de hecho, el Teorema de Pitágoras es un caso particular del Teorema del Coseno.<br>Si observamos la fórmula general $c^{2}=a^{2}+b^{2}-2ab \\cos C$, cuando el ángulo es $C=90^{\\circ}$, el coseno de $90^{\\circ}$ es exactamente cero.<br>Ese término se anula $(-2ab(0)=0)$, y la fórmula del Teorema del Coseno colapsa directamente a $c^{2}=a^{2}+b^{2}$.<br><br>Así que el primer alumno ha demostrado Pitágoras sin darse cuenta, pero es una pérdida de tiempo operativa.",
+        "pista": "Piensa en cuánto vale el coseno de 90º. ¿Qué le pasa a la larga fórmula del Teorema del Coseno si la multiplicas por ese número?",
+        "formula": "$$\\cos(90^{\\circ}) = 0 \\Rightarrow a^2+b^2-2ab(0) = a^2+b^2$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2601,
+        "dificultad": "Básica",
+        "bloque": "Tema 6: Geometría Analítica en el Plano",
+        "enunciado": "Dados los puntos $A(-2,3)$ y $B(4,1)$, calcula las componentes del vector $\\vec{AB}$, su módulo y el punto medio del segmento AB.",
+        "resolucion_latex": "Vector $\\vec{AB}=(x_{2}-x_{1}, y_{2}-y_{1})=(4-(-2), 1-3)=(6,-2)$.<br><br>Módulo: $|\\vec{AB}|=\\sqrt{6^{2}+(-2)^{2}}=\\sqrt{36+4}=\\sqrt{40}=2\\sqrt{10} \\approx 6,32$.<br><br>Punto medio $M=\\left(\\frac{-2+4}{2}, \\frac{3+1}{2}\\right)=\\left(\\frac{2}{2}, \\frac{4}{2}\\right)=(1,2)$.",
+        "pista": "Para sacar un vector desde A hasta B, siempre se resta la punta de la flecha menos el origen (B menos A).",
+        "formula": "$$\\vec{AB} = (x_B - x_A, y_B - y_A) \\quad ; \\quad |\\vec{v}| = \\sqrt{v_x^2 + v_y^2}$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2602,
+        "dificultad": "Básica",
+        "bloque": "Tema 6: Geometría Analítica en el Plano",
+        "enunciado": "Halla todas las formas de la ecuación de la recta (vectorial, paramétrica, continua, general y explícita) que pasa por el punto $P(1,-3)$ y tiene como vector director $\\vec{v}=(2,5)$.",
+        "resolucion_latex": "Vectorial: $(x,y)=(1,-3)+t(2,5)$.<br>Paramétricas: $\\begin{cases}x=1+2t\\\\ y=-3+5t\\end{cases}$<br>Continua: $\\frac{x-1}{2}=\\frac{y+3}{5}$.<br>General (implícita): Multiplicamos en cruz $5(x-1)=2(y+3) \\Rightarrow 5x-5=2y+6 \\Rightarrow 5x-2y-11=0$.<br>Explícita: Despejamos la $y \\Rightarrow -2y=-5x+11 \\Rightarrow y=\\frac{5}{2}x-\\frac{11}{2}$.",
+        "pista": "Construye una recta detrás de otra como fichas de dominó. Partiendo de la paramétrica despejas la 't' en ambas y las igualas para sacar la continua. Si multiplicas en cruz, sacarás la general.",
+        "formula": "$$\\frac{x-P_x}{v_x} = \\frac{y-P_y}{v_y} \\quad \\text{(Continua)}$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2603,
+        "dificultad": "Básica",
+        "bloque": "Tema 6: Geometría Analítica en el Plano",
+        "enunciado": "Dada la recta $r: 2x-3y+6=0$, calcula su pendiente y los puntos de corte con los ejes coordenados.",
+        "resolucion_latex": "Para la pendiente, despejamos y: $3y=2x+6 \\Rightarrow y=\\frac{2}{3}x+2$. La pendiente es $m=\\frac{2}{3}$.<br><br>Corte eje X $(y=0)$: $2x-3(0)+6=0 \\Rightarrow 2x=-6 \\Rightarrow x=-3$. Punto $(-3,0)$.<br>Corte eje Y $(x=0)$: $2(0)-3y+6=0 \\Rightarrow -3y=-6 \\Rightarrow y=2$. Punto $(0,2)$.",
+        "pista": "Para hallar la pendiente de forma visual, despeja la letra 'y' por completo. El número que multiplique a la 'x' será tu pendiente.",
+        "formula": "$$Ax + By + C = 0 \\Rightarrow m = -\\frac{A}{B}$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2604,
+        "dificultad": "Media",
+        "bloque": "Tema 6: Geometría Analítica en el Plano",
+        "enunciado": "Calcula el ángulo que forman los vectores $\\vec{u}=(3,4)$ y $\\vec{v}=(-1,2)$ utilizando el producto escalar.",
+        "resolucion_latex": "Producto escalar analítico: $\\vec{u}\\cdot\\vec{v}=3(-1)+4(2)=-3+8=5$.<br>Módulos: $|\\vec{u}|=\\sqrt{3^{2}+4^{2}}=5$. $|\\vec{v}|=\\sqrt{(-1)^{2}+2^{2}}=\\sqrt{5}$.<br><br>Fórmula del ángulo: $\\cos \\alpha = \\frac{\\vec{u}\\cdot\\vec{v}}{|\\vec{u}|\\cdot|\\vec{v}|}=\\frac{5}{5\\sqrt{5}}=\\frac{1}{\\sqrt{5}} \\approx 0,447$.<br>$\\alpha=\\arccos(0,447) \\approx 63,43^{\\circ}$.",
+        "pista": "La fórmula del producto escalar te permite relacionar las coordenadas de los vectores con el coseno del ángulo. ¡Asegúrate de calcular los módulos primero!",
+        "formula": "$$\\cos \\alpha = \\frac{\\vec{u} \\cdot \\vec{v}}{|\\vec{u}| |\\vec{v}|}$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2605,
+        "dificultad": "Media",
+        "bloque": "Tema 6: Geometría Analítica en el Plano",
+        "enunciado": "Estudia la posición relativa de las rectas $r: 3x-4y+2=0$ y $s: 6x-8y-5=0$. ¿Se cortan?",
+        "resolucion_latex": "Comparamos los coeficientes (proporcionalidad):<br>$\\frac{A}{A'}=\\frac{3}{6}=\\frac{1}{2} \\quad \\frac{B}{B'}=\\frac{-4}{-8}=\\frac{1}{2} \\quad \\frac{C}{C'}=\\frac{2}{-5}=-\\frac{2}{5}$.<br><br>Como $\\frac{A}{A'}=\\frac{B}{B'}\\neq\\frac{C}{C'}$, las rectas tienen la misma dirección pero diferente altura. Son rectas paralelas (no se cortan).",
+        "pista": "Divide la 'X' de una entre la 'X' de la otra, y lo mismo con la 'Y' y el número suelto. Si la división de X e Y da lo mismo, tienen la misma pendiente.",
+        "formula": "$$\\frac{A}{A'} = \\frac{B}{B'} \\neq \\frac{C}{C'} \\Rightarrow \\text{Paralelas}$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2606,
+        "dificultad": "Media",
+        "bloque": "Tema 6: Geometría Analítica en el Plano",
+        "enunciado": "Halla las coordenadas del punto simétrico de $A(2,5)$ respecto al punto $P(4,1)$.",
+        "resolucion_latex": "Si $A'$ es el simétrico de A respecto a P, entonces P es el punto medio del segmento $AA'$.<br>$P=\\left(\\frac{x_{A}+x_{A'}}{2}, \\frac{y_{A}+y_{A'}}{2}\\right) \\Rightarrow (4,1)=\\left(\\frac{2+x}{2}, \\frac{5+y}{2}\\right)$<br><br>Igualamos coordenadas:<br>$4=\\frac{2+x}{2} \\Rightarrow 8=2+x \\Rightarrow x=6$.<br>$1=\\frac{5+y}{2} \\Rightarrow 2=5+y \\Rightarrow y=-3$.<br><br>El punto simétrico es $A'(6,-3)$.",
+        "pista": "Trata el punto de referencia P como si fuera un espejo colocado exactamente en medio de A y de tu nuevo punto inventado. Usa la fórmula del punto medio al revés.",
+        "formula": "$$M = \\left( \\frac{x_1 + x_2}{2}, \\frac{y_1 + y_2}{2} \\right)$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2607,
+        "dificultad": "Alta",
+        "bloque": "Tema 6: Geometría Analítica en el Plano",
+        "enunciado": "Calcula la distancia del punto $P(-1,4)$ a la recta $r: 3x+4y-5=0$.",
+        "resolucion_latex": "Aplicamos la fórmula de la distancia de un punto a una recta: $d(P,r)=\\frac{|Ax_{0}+By_{0}+C|}{\\sqrt{A^{2}+B^{2}}}$<br><br>$d(P,r)=\\frac{|3(-1)+4(4)-5|}{\\sqrt{3^{2}+4^{2}}}=\\frac{|-3+16-5|}{\\sqrt{25}}=\\frac{|8|}{5}=\\frac{8}{5}=1,6$ unidades.",
+        "pista": "Aplica de memoria la fórmula de la distancia. Acuérdate de que el numerador es meter las coordenadas del punto dentro de la fórmula de la recta con un valor absoluto.",
+        "formula": "$$d(P,r) = \\frac{|Ax_0 + By_0 + C|}{\\sqrt{A^2 + B^2}}$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2608,
+        "dificultad": "Alta",
+        "bloque": "Tema 6: Geometría Analítica en el Plano",
+        "enunciado": "Halla la ecuación de la recta perpendicular a la recta $r: x-2y+4=0$ que pasa por el punto de intersección de las rectas $s: x+y=3$ y $t: 2x-y=0$.",
+        "resolucion_latex": "$1^{\\circ}$) Intersección de s y t: Resolvemos el sistema por sustitución $(y=2x)$:<br>$x+2x=3 \\Rightarrow 3x=3 \\Rightarrow x=1 \\Rightarrow y=2(1)=2$. El punto de corte es $P(1,2)$.<br><br>$2^{\\circ}$) La recta $r: x-2y+4=0$ tiene vector normal $\\vec{n}_{r}=(1,-2)$, por lo que su vector director es $\\vec{v}_{r}=(2,1)$.<br>Como la recta que buscamos es perpendicular a r, su vector director será el normal de r, es decir, $\\vec{v}_{\\perp}=(1,-2)$.<br><br>$3^{\\circ}$) Ecuación pedida: Pasa por $P(1,2)$ con vector $(1,-2)$.<br>Continua: $\\frac{x-1}{1}=\\frac{y-2}{-2} \\Rightarrow -2x+2=y-2 \\Rightarrow 2x+y-4=0$.",
+        "pista": "Divide y vencerás: Primero resuelve un sistema entre las rectas 's' y 't' para sacar el punto. Segundo, busca el vector perpendicular de 'r'. Tercero, monta tu recta nueva.",
+        "formula": "$$\\vec{v} = (A, B) \\Rightarrow \\vec{v}_{\\perp} = (-B, A)$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2609,
+        "dificultad": "Alta",
+        "bloque": "Tema 6: Geometría Analítica en el Plano",
+        "enunciado": "Dados los puntos $A(1,2)$, $B(5,-2)$ y $C(6,3)$, halla la ecuación de la mediatriz del lado AB y calcula el área del triángulo formado por los tres puntos.",
+        "resolucion_latex": "Mediatriz de AB: Pasa por el punto medio $M_{AB}=\\left(\\frac{1+5}{2}, \\frac{2-2}{2}\\right)=(3,0)$.<br>Vector $\\vec{AB}=(4,-4)$. Un vector perpendicular a AB es $\\vec{v}_{\\perp}=(4,4)$ o simplificado $(1,1)$.<br>Recta mediatriz: $\\frac{x-3}{1}=\\frac{y-0}{1} \\Rightarrow x-y-3=0$.<br><br>Área del triángulo: Tomamos base $b=|\\vec{AB}|=\\sqrt{16+16}=\\sqrt{32}=4\\sqrt{2}$.<br>La altura es la distancia de $C(6,3)$ a la recta AB. Ecuación AB: $(x-1)/4=(y-2)/-4 \\Rightarrow -x+1=y-2 \\Rightarrow x+y-3=0$<br>$h=\\frac{|6+3-3|}{\\sqrt{1^{2}+1^{2}}}=\\frac{6}{\\sqrt{2}}=3\\sqrt{2}$.<br>Área $=\\frac{b\\cdot h}{2}=\\frac{4\\sqrt{2}\\cdot 3\\sqrt{2}}{2}=\\frac{12\\cdot 2}{2}=12 \\text{ u}^{2}$.",
+        "pista": "La mediatriz no es más que la recta perpendicular que cruza justo por en medio de A y B. Para el área, elije un lado que sea la base, y la altura es usar la fórmula de la distancia desde C hacia la recta de tu base.",
+        "formula": "$$\\text{Mediatriz: Perpendicular por el punto medio}$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2610,
+        "dificultad": "Superior",
+        "bloque": "Tema 6: Geometría Analítica en el Plano",
+        "enunciado": "Ejercicio Trampa: A un alumno se le pide escribir la ecuación continua de la recta que pasa por $P(3,4)$ con vector director $\\vec{v}=(0,2)$. Escribe: $\\frac{x-3}{0}=\\frac{y-4}{2}$. Luego, la tacha rápidamente, pone un gran aspa roja y escribe: '¡Imposible! No se puede dividir por cero, esta recta no existe'. ¿Existe la recta? ¿Cuál es su interpretación geométrica y cómo le explicarías que esa notación 'imposible' es en realidad correcta en geometría analítica?",
+        "resolucion_latex": "La recta sí existe. Geométricamente, el vector director $\\vec{v}=(0,2)$ (o simplificado (0,1)) indica que la recta no se desplaza en el eje horizontal (X constante) y solo sube/baja en el vertical. Es una recta vertical completamente paralela al eje Y.<br><br>El alumno confunde la división analítica con la notación geométrica. En la ecuación continua $\\frac{x-x_{0}}{v_{x}}=\\frac{y-y_{0}}{v_{y}}$ los denominadores no son divisores numéricos reales, sino meros \"contenedores\" de las componentes del vector.<br><br>Si multiplicamos en cruz la ecuación \"prohibida\", obtenemos:<br>$2(x-3)=0(y-4) \\Rightarrow 2x-6=0 \\Rightarrow x=3$.<br>Esta es la ecuación general (y perfecta) de una recta vertical.",
+        "pista": "Piensa que en la ecuación de la recta las fracciones no están diseñadas para dividirlas de verdad con calculadora, sino que son la plantilla visual de una receta.",
+        "formula": "$$x = c \\Rightarrow \\text{Recta vertical}$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2401,
+        "dificultad": "Básica",
+        "bloque": "Tema 4: Trigonometría I",
+        "enunciado": "Sabiendo que $\\cos \\alpha = -\\frac{4}{5}$ y que $\\alpha$ es un ángulo del tercer cuadrante ($180^{\\circ} < \\alpha < 270^{\\circ}$), calcula sin usar la calculadora el valor exacto de $\\sin \\alpha$ y $\\tan \\alpha$.",
+        "resolucion_latex": "Aplicamos la identidad fundamental de la trigonometría: $\\sin^{2}\\alpha+\\cos^{2}\\alpha=1$.<br>$\\sin^{2}\\alpha+(-\\frac{4}{5})^{2}=1 \\Rightarrow \\sin^{2}\\alpha+\\frac{16}{25}=1 \\Rightarrow \\sin^{2}\\alpha=1-\\frac{16}{25}=\\frac{9}{25}$<br><br>Al aplicar la raíz cuadrada, tomamos el signo negativo porque en el tercer cuadrante el seno es negativo:<br>$\\sin \\alpha = -\\sqrt{\\frac{9}{25}} = -\\frac{3}{5}$.<br><br>Calculamos la tangente usando $\\tan \\alpha = \\frac{\\sin \\alpha}{\\cos \\alpha}$:<br>$\\tan \\alpha = \\frac{-3/5}{-4/5} = \\frac{3}{4}$.",
+        "pista": "Usa la ecuación fundamental de la trigonometría para sacar el seno al cuadrado. Cuidado al hacer la raíz cuadrada: mira bien en qué cuadrante estás para saber si elegir el valor positivo o el negativo.",
+        "formula": "$$\\sin^2\\alpha + \\cos^2\\alpha = 1 \\quad ; \\quad \\tan\\alpha = \\frac{\\sin\\alpha}{\\cos\\alpha}$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2402,
+        "dificultad": "Básica",
+        "bloque": "Tema 4: Trigonometría I",
+        "enunciado": "Convierte los siguientes ángulos a la unidad contraria (de grados a radianes y viceversa):<br>a) $210^{\\circ}$<br>b) $\\frac{5\\pi}{3}$ rad",
+        "resolucion_latex": "Usamos el factor de conversión $\\frac{\\pi \\text{ rad}}{180^{\\circ}}$<br><br>a) $210^{\\circ}\\cdot\\frac{\\pi}{180^{\\circ}}=\\frac{210\\pi}{180}=\\frac{7\\pi}{6}$ rad.<br><br>b) $\\frac{5\\pi}{3} \\text{ rad} \\cdot \\frac{180^{\\circ}}{\\pi \\text{ rad}}=\\frac{5\\cdot 180^{\\circ}}{3}=5\\cdot 60^{\\circ}=300^{\\circ}$.",
+        "pista": "Acuérdate de la regla de oro: Media circunferencia entera ($180^{\\circ}$) equivale a exactamente $\\pi$ radianes. Haz una regla de tres sencilla.",
+        "formula": "$$180^{\\circ} = \\pi \\text{ rad}$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2403,
+        "dificultad": "Básica",
+        "bloque": "Tema 4: Trigonometría I",
+        "enunciado": "Simplifica la siguiente expresión trigonométrica utilizando las relaciones fundamentales: $\\frac{\\sin^{2}x}{1-\\cos x}$",
+        "resolucion_latex": "Recordamos la identidad fundamental $\\sin^{2}x+\\cos^{2}x=1 \\Rightarrow \\sin^{2}x=1-\\cos^{2}x$.<br>Sustituimos en el numerador: $\\frac{1-\\cos^{2}x}{1-\\cos x}$<br><br>El numerador es una diferencia de cuadrados $(a^{2}-b^{2}=(a+b)(a-b))$:<br>$\\frac{(1-\\cos x)(1+\\cos x)}{1-\\cos x}$<br><br>Simplificamos el factor común $(1-\\cos x)$: el resultado es $1+\\cos x$.",
+        "pista": "Transforma el seno al cuadrado en cosenos usando la ecuación fundamental. Al hacerlo te aparecerá una identidad notable en el numerador que podrás simplificar con la de abajo.",
+        "formula": "$$\\sin^2x = 1 - \\cos^2x \\quad ; \\quad 1 - \\cos^2x = (1 - \\cos x)(1 + \\cos x)$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2404,
+        "dificultad": "Media",
+        "bloque": "Tema 4: Trigonometría I",
+        "enunciado": "Calcula el valor exacto de $\\tan(75^{\\circ})$ utilizando las fórmulas de la suma de ángulos, sabiendo que $75^{\\circ}=45^{\\circ}+30^{\\circ}$.",
+        "resolucion_latex": "Fórmula de la tangente de una suma: $\\tan(a+b)=\\frac{\\tan a+\\tan b}{1-\\tan a\\cdot \\tan b}$<br>Sustituimos $a=45^{\\circ}$ y $b=30^{\\circ}$, recordando que $\\tan(45^{\\circ})=1$ y $\\tan(30^{\\circ})=\\frac{\\sqrt{3}}{3}$<br><br>$\\tan(75^{\\circ})=\\frac{1+\\frac{\\sqrt{3}}{3}}{1-1\\cdot\\frac{\\sqrt{3}}{3}}=\\frac{\\frac{3+\\sqrt{3}}{3}}{\\frac{3-\\sqrt{3}}{3}}=\\frac{3+\\sqrt{3}}{3-\\sqrt{3}}$.<br><br>Racionalizamos multiplicando por el conjugado $(3+\\sqrt{3})$:<br>$\\frac{(3+\\sqrt{3})(3+\\sqrt{3})}{(3-\\sqrt{3})(3+\\sqrt{3})}=\\frac{9+6\\sqrt{3}+3}{9-3}=\\frac{12+6\\sqrt{3}}{6}=2+\\sqrt{3}$.",
+        "pista": "Usa la fórmula de la tangente de la suma de dos ángulos. Sustituye los valores exactos que te sabes de memoria de 45º y 30º y finalmente racionaliza la fracción para que quede bonito.",
+        "formula": "$$\\tan(\\alpha + \\beta) = \\frac{\\tan\\alpha + \\tan\\beta}{1 - \\tan\\alpha \\cdot \\tan\\beta}$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2405,
+        "dificultad": "Media",
+        "bloque": "Tema 4: Trigonometría I",
+        "enunciado": "Resuelve la siguiente ecuación trigonométrica de primer grado (halla todas las soluciones en el primer giro, $0^{\\circ} \\le x < 360^{\\circ}$): $\\cos(2x)=\\frac{1}{2}$",
+        "resolucion_latex": "Buscamos qué ángulos tienen un coseno igual a $1/2$. Sabemos que en el primer giro son $60^{\\circ}$ (cuadrante I) y $300^{\\circ}$ (cuadrante IV).<br><br>Por tanto, el argumento $2x$ debe ser igual a esos ángulos:<br>Caso 1: $2x=60^{\\circ} \\Rightarrow x=30^{\\circ}$<br>Caso 2: $2x=300^{\\circ} \\Rightarrow x=150^{\\circ}$.<br><br>Pero cuidado, como el argumento es $2x$, debemos añadir una vuelta completa al argumento antes de dividir para no perder soluciones en el primer giro de x:<br>Caso 3: $2x=60^{\\circ}+360^{\\circ}=420^{\\circ} \\Rightarrow x=210^{\\circ}$<br>Caso 4: $2x=300^{\\circ}+360^{\\circ}=660^{\\circ} \\Rightarrow x=330^{\\circ}$<br><br>Soluciones: $x \\in \\{30^{\\circ}, 150^{\\circ}, 210^{\\circ}, 330^{\\circ}\\}$.",
+        "pista": "El coseno es positivo en el primer y cuarto cuadrante. Haz un arcocoseno para sacar el ángulo y al final divide entre dos. Recuerda darle 'vueltas extra' sumando 360 al ángulo antes de dividir para encontrar todas las soluciones del giro.",
+        "formula": "$$\\cos(\\alpha) = 1/2 \\Rightarrow \\alpha = 60^{\\circ} + 360^{\\circ}k \\quad ; \\quad \\alpha = 300^{\\circ} + 360^{\\circ}k$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2406,
+        "dificultad": "Media",
+        "bloque": "Tema 4: Trigonometría I",
+        "enunciado": "Demuestra la siguiente identidad trigonométrica: $\\frac{1-\\sin x}{\\cos x}=\\frac{\\cos x}{1+\\sin x}$",
+        "resolucion_latex": "Para demostrar una identidad, trabajamos en un lado hasta llegar al otro. Partimos del lado izquierdo: $\\frac{1-\\sin x}{\\cos x}$<br><br>Multiplicamos numerador y denominador por el conjugado del numerador, $(1+\\sin x)$:<br>$\\frac{(1-\\sin x)(1+\\sin x)}{\\cos x(1+\\sin x)}=\\frac{1-\\sin^{2}x}{\\cos x(1+\\sin x)}$<br><br>Usamos la identidad fundamental $1-\\sin^{2}x=\\cos^{2}x$:<br>$\\frac{\\cos^{2}x}{\\cos x(1+\\sin x)}$<br><br>Simplificamos dividiendo arriba y abajo entre $\\cos x$:<br>$\\frac{\\cos x}{1+\\sin x}$. Queda demostrada la igualdad.",
+        "pista": "Un buen truco para demostrar identidades raras es multiplicar arriba y abajo por el 'conjugado' de alguna de las partes, igual que hacías al racionalizar raíces.",
+        "formula": "$$(1-\\sin x)(1+\\sin x) = 1 - \\sin^2 x = \\cos^2 x$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2407,
+        "dificultad": "Alta",
+        "bloque": "Tema 4: Trigonometría I",
+        "enunciado": "Resuelve la siguiente ecuación trigonométrica expresando todas las soluciones posibles: $\\sin(2x)=\\cos x$.",
+        "resolucion_latex": "Aplicamos la fórmula del seno del ángulo doble: $\\sin(2x)=2\\sin x \\cos x$.<br>La ecuación queda: $2\\sin x \\cos x = \\cos x$<br><br>Pasamos todo al mismo lado para factorizar (¡nunca dividir por la incógnita!):<br>$2\\sin x \\cos x-\\cos x=0 \\Rightarrow \\cos x(2\\sin x-1)=0$.<br><br>Para que un producto sea cero, al menos uno de los factores debe ser cero:<br>Opción A: $\\cos x=0 \\Rightarrow x=90^{\\circ}+180^{\\circ}k$ ($k \\in \\mathbb{Z}$).<br>Opción B: $2\\sin x-1=0 \\Rightarrow \\sin x=\\frac{1}{2} \\Rightarrow x=30^{\\circ}+360^{\\circ}k$ o $x=150^{\\circ}+360^{\\circ}k$ ($k \\in \\mathbb{Z}$).",
+        "pista": "Expande el ángulo doble del seno con su fórmula. Pasa todo a un lado e iguala a cero. Luego, saca factor común, separando la ecuación en dos caminos mucho más fáciles.",
+        "formula": "$$\\sin(2x) = 2 \\sin x \\cos x$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2408,
+        "dificultad": "Alta",
+        "bloque": "Tema 4: Trigonometría I",
+        "enunciado": "Simplifica al máximo la siguiente expresión utilizando las fórmulas de suma y diferencia de ángulos: $\\frac{\\sin(a+b)+\\sin(a-b)}{\\cos(a+b)+\\cos(a-b)}$",
+        "resolucion_latex": "Desarrollamos el numerador usando las fórmulas del seno de la suma y diferencia:<br>$\\sin(a+b)=\\sin a \\cos b+\\cos a \\sin b$<br>$\\sin(a-b)=\\sin a \\cos b-\\cos a \\sin b$<br>Suma del numerador: $2\\sin a \\cos b$.<br><br>Desarrollamos el denominador con las fórmulas del coseno:<br>$\\cos(a+b)=\\cos a \\cos b-\\sin a \\sin b$<br>$\\cos(a-b)=\\cos a \\cos b+\\sin a \\sin b$<br>Suma del denominador: $2\\cos a \\cos b$.<br><br>Sustituimos en la fracción: $\\frac{2\\sin a \\cos b}{2\\cos a \\cos b}$<br>Simplificamos los 2 y los $\\cos b$: $\\frac{\\sin a}{\\cos a}=\\tan a$.",
+        "pista": "Simplemente desarrolla cada parte usando sus largas fórmulas de sumas y restas de ángulos. Al sumarlos, verás que la mitad de las cosas se anulan unas a otras por arte de magia.",
+        "formula": "$$\\sin(a \\pm b) = \\sin a\\cos b \\pm \\cos a\\sin b \\quad ; \\quad \\cos(a \\pm b) = \\cos a\\cos b \\mp \\sin a\\sin b$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2409,
+        "dificultad": "Alta",
+        "bloque": "Tema 4: Trigonometría I",
+        "enunciado": "Resuelve el siguiente sistema de ecuaciones trigonométricas para ángulos del primer cuadrante:<br>$\\begin{cases}\\sin x+\\sin y=1\\\\ x+y=90^{\\circ}\\end{cases}$",
+        "resolucion_latex": "De la segunda ecuación despejamos y: $y=90^{\\circ}-x$<br>Sustituimos en la primera: $\\sin x+\\sin(90^{\\circ}-x)=1$.<br>Sabemos por relaciones de ángulos complementarios que $\\sin(90^{\\circ}-x)=\\cos x$.<br>La ecuación queda: $\\sin x+\\cos x=1$.<br><br>Elevamos al cuadrado ambos lados: $(\\sin x+\\cos x)^{2}=1^{2} \\Rightarrow \\sin^{2}x+\\cos^{2}x+2\\sin x \\cos x=1$.<br>Como $\\sin^{2}x+\\cos^{2}x=1$, tenemos $1+\\sin(2x)=1 \\Rightarrow \\sin(2x)=0$<br><br>Soluciones para $2x$: $0^{\\circ}, 180^{\\circ}, 360^{\\circ} \\Rightarrow x \\in \\{0^{\\circ}, 90^{\\circ}, 180^{\\circ}\\}$.<br>Como nos piden ángulos del primer cuadrante, comprobamos $x=0^{\\circ}$ y $x=90^{\\circ}$:<br>Si $x=0^{\\circ} \\Rightarrow y=90^{\\circ} \\Rightarrow \\sin(0^{\\circ})+\\sin(90^{\\circ})=0+1=1$ (Válida).<br>Si $x=90^{\\circ} \\Rightarrow y=0^{\\circ} \\Rightarrow \\sin(90^{\\circ})+\\sin(0^{\\circ})=1+0=1$ (Válida).",
+        "pista": "Despeja una variable de la ecuación lineal y métela en la otra. Acuérdate de cómo se relacionan el seno y el coseno cuando dos ángulos suman exactamente 90º (son complementarios).",
+        "formula": "$$\\sin(90^{\\circ}-x) = \\cos x$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2410,
+        "dificultad": "Superior",
+        "bloque": "Tema 4: Trigonometría I",
+        "enunciado": "Ejercicio Trampa: Un alumno se enfrenta a la ecuación trigonométrica $\\sin x \\cdot \\cos x = \\sin x$. Para resolverla más rápido, divide ambos lados de la igualdad entre $\\sin x$, tachándolos y obteniendo $\\cos x=1 \\Rightarrow x=0^{\\circ}$. El profesor le indica que el resultado está incompleto. ¿Qué grave error matemático ha cometido al simplificar y qué soluciones se ha comido por el camino?",
+        "resolucion_latex": "El alumno ha cometido el error algebraico de **dividir entre una expresión que contiene la incógnita sin considerar que esta pueda ser cero**.<br><br>En matemáticas, la división por cero no está definida. Al dividir toda la ecuación entre $\\sin x$, el alumno asume implícitamente que $\\sin x \\neq 0$. Sin embargo, ¡$\\sin x=0$ es justamente una de las ramas de soluciones de esta ecuación!<br><br>El método correcto es pasar todo a un lado y sacar factor común:<br>$\\sin x \\cdot \\cos x-\\sin x=0 \\Rightarrow \\sin x(\\cos x-1)=0$.<br><br>De aquí salen las dos ramas:<br>1) $\\cos x-1=0 \\Rightarrow \\cos x=1 \\Rightarrow x=0^{\\circ}+360^{\\circ}k$ (la que encontró el alumno).<br>2) $\\sin x=0 \\Rightarrow x=0^{\\circ}+180^{\\circ}k$ (las soluciones $0^{\\circ}$, $180^{\\circ}$, $360^{\\circ}$... que se comió al simplificar de golpe).",
+        "pista": "Nunca, jamás, bajo ningún concepto, elimines tachando algo que tiene incógnita de los dos lados del igual. En su lugar, pasa las cosas restando al otro lado y saca factor común.",
+        "formula": "$$AB = A \\Rightarrow AB - A = 0 \\Rightarrow A(B - 1) = 0$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2501,
+        "dificultad": "Básica",
+        "bloque": "Tema 5: Trigonometría II (Resolución de Triángulos)",
+        "enunciado": "En un triángulo ABC, conocemos el lado $a=12$ cm, el ángulo $A=45^{\\circ}$ y el ángulo $B=60^{\\circ}$. Calcula el lado b utilizando el Teorema del Seno.",
+        "resolucion_latex": "Aplicamos el Teorema del Seno: $\\frac{a}{\\sin A}=\\frac{b}{\\sin B}$<br>Sustituimos los datos: $\\frac{12}{\\sin 45^{\\circ}}=\\frac{b}{\\sin 60^{\\circ}}$<br><br>Despejamos b: $b=\\frac{12\\cdot \\sin 60^{\\circ}}{\\sin 45^{\\circ}}=\\frac{12\\cdot\\frac{\\sqrt{3}}{2}}{\\frac{\\sqrt{2}}{2}}=\\frac{6\\sqrt{3}}{\\frac{\\sqrt{2}}{2}}=12\\sqrt{\\frac{3}{2}}=6\\sqrt{6} \\approx 14,7$ cm.",
+        "pista": "El Teorema del Seno empareja siempre a un lado con el seno del ángulo que tiene enfrente. Plantea las dos fracciones cruzadas y despeja la que te falta.",
+        "formula": "$$\\frac{a}{\\sin A} = \\frac{b}{\\sin B} = \\frac{c}{\\sin C}$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2502,
+        "dificultad": "Básica",
+        "bloque": "Tema 5: Trigonometría II (Resolución de Triángulos)",
+        "enunciado": "Dos lados de un triángulo miden $b=8$ cm y $c=10$ cm, y el ángulo que forman es $A=30^{\\circ}$. Calcula la longitud del lado a usando el Teorema del Coseno.",
+        "resolucion_latex": "Aplicamos el Teorema del Coseno: $a^{2}=b^{2}+c^{2}-2bc \\cos A$.<br><br>$a^{2}=8^{2}+10^{2}-2(8)(10)\\cos(30^{\\circ})=64+100-160\\left(\\frac{\\sqrt{3}}{2}\\right)=164-80\\sqrt{3}$.<br><br>$a=\\sqrt{164-80\\sqrt{3}} \\approx \\sqrt{164-138,56}=\\sqrt{25,44} \\approx 5,04$ cm.",
+        "pista": "Cuando te dan dos lados como los brazos de un compás y te dicen el ángulo que hay justo en medio, el Teorema del Coseno es la herramienta directa para cerrar el triángulo y medir ese lado final.",
+        "formula": "$$a^2 = b^2 + c^2 - 2bc \\cos A$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2503,
+        "dificultad": "Básica",
+        "bloque": "Tema 5: Trigonometría II (Resolución de Triángulos)",
+        "enunciado": "Calcula el área del triángulo del ejercicio anterior utilizando la fórmula trigonométrica del área.",
+        "resolucion_latex": "La fórmula del área con seno es: $S=\\frac{1}{2}b\\cdot c\\cdot \\sin A$.<br><br>Sustituimos: $S=\\frac{1}{2}(8)(10)\\sin(30^{\\circ})=40\\cdot\\frac{1}{2}=20$ cm$^{2}$.",
+        "pista": "Olvida la base por altura. El área de un triángulo cualquiera es la mitad del producto de dos lados, multiplicado por el seno del ángulo que forman.",
+        "formula": "$$\\text{Área} = \\frac{1}{2} b \\cdot c \\cdot \\sin A$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2504,
+        "dificultad": "Media",
+        "bloque": "Tema 5: Trigonometría II (Resolución de Triángulos)",
+        "enunciado": "Resuelve completamente un triángulo cuyos lados miden $a=5$ cm, $b=7$ cm y $c=9$ cm. (Halla todos sus ángulos).",
+        "resolucion_latex": "Usamos el Teorema del Coseno para el ángulo mayor (C, opuesto a $c=9$):<br>$c^{2}=a^{2}+b^{2}-2ab \\cos C \\Rightarrow 9^{2}=5^{2}+7^{2}-2(5)(7)\\cos C$<br>$81=25+49-70 \\cos C \\Rightarrow 81=74-70 \\cos C \\Rightarrow 7=-70 \\cos C \\Rightarrow \\cos C=-0,1$.<br>$C=\\arccos(-0,1) \\approx 95,74^{\\circ}$<br><br>Usamos Teorema del Seno para B: $\\frac{b}{\\sin B}=\\frac{c}{\\sin C} \\Rightarrow \\frac{7}{\\sin B}=\\frac{9}{\\sin 95,74^{\\circ}} \\Rightarrow \\sin B \\approx 0,774 \\Rightarrow B \\approx 50,70^{\\circ}$<br><br>El tercer ángulo por diferencia: $A=180^{\\circ}-(95,74^{\\circ}+50,70^{\\circ})=33,56^{\\circ}$.",
+        "pista": "Cuando te den los tres lados, empieza siempre por el Teorema del Coseno. Un truco ninja: úsalo siempre para buscar el ángulo opuesto al lado MÁS GRANDE para evitar problemas con ángulos obtusos luego.",
+        "formula": "$$\\cos C = \\frac{a^2 + b^2 - c^2}{2ab}$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2505,
+        "dificultad": "Media",
+        "bloque": "Tema 5: Trigonometría II (Resolución de Triángulos)",
+        "enunciado": "Problema de la doble observación: Desde un punto en el suelo se ve la copa de un pino bajo un ángulo de $40^{\\circ}$. Si nos alejamos 15 metros en línea recta, el ángulo de elevación pasa a ser de $25^{\\circ}$. Calcula la altura del pino.",
+        "resolucion_latex": "Planteamos un sistema con las dos tangentes (sea 'h' la altura y 'x' la distancia inicial a la base):<br>1) $\\tan(40^{\\circ})=\\frac{h}{x} \\Rightarrow h=x\\cdot \\tan(40^{\\circ})$<br>2) $\\tan(25^{\\circ})=\\frac{h}{x+15} \\Rightarrow h=(x+15)\\cdot \\tan(25^{\\circ})$<br><br>Igualamos: $x\\cdot 0,839=(x+15)\\cdot 0,466 \\Rightarrow 0,839x=0,466x+6,99 \\Rightarrow 0,373x=6,99$<br>$x \\approx 18,74$ m.<br><br>Altura $h=18,74\\cdot 0,839 \\approx 15,72$ m.",
+        "pista": "Plantea dos triángulos rectángulos distintos (el cercano y el lejano). Ambos comparten la misma altura 'h'. Plantea sus tangentes, despeja 'h' en las dos e iguala las ecuaciones.",
+        "formula": "$$\\tan\\alpha = \\frac{\\text{Cateto Opuesto}}{\\text{Cateto Contiguo}}$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2506,
+        "dificultad": "Media",
+        "bloque": "Tema 5: Trigonometría II (Resolución de Triángulos)",
+        "enunciado": "Dos barcos salen del mismo puerto al mismo tiempo. Sus trayectorias forman un ángulo de $120^{\\circ}$. El primero viaja a 30 km/h y el segundo a 40 km/h. ¿Qué distancia los separa al cabo de 2 horas?",
+        "resolucion_latex": "En 2 horas, el barco A recorre $30\\cdot 2=60$ km. El barco B recorre $40\\cdot 2=80$ km.<br><br>Forman un triángulo con lados 60, 80 y ángulo comprendido $120^{\\circ}$. La distancia 'd' es el lado opuesto.<br>Teorema del Coseno: $d^{2}=60^{2}+80^{2}-2(60)(80)\\cos(120^{\\circ})=3600+6400-9600(-0,5)=10000+4800=14800$.<br><br>$d=\\sqrt{14800} \\approx 121,65$ km.",
+        "pista": "Primero usa MRU de física elemental para ver los kilómetros que han avanzado. Esos kilómetros serán dos lados de un triángulo enorme en el mar. Remata con el Teorema del Coseno.",
+        "formula": "$$\\Delta x = v \\cdot t \\quad ; \\quad d^2 = a^2 + b^2 - 2ab \\cos \\theta$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2507,
+        "dificultad": "Alta",
+        "bloque": "Tema 5: Trigonometría II (Resolución de Triángulos)",
+        "enunciado": "Las diagonales de un paralelogramo miden 10 cm y 14 cm, y forman un ángulo de $60^{\\circ}$ entre sí. Calcula la longitud de los lados del paralelogramo.",
+        "resolucion_latex": "Las diagonales de un paralelogramo se cortan en su punto medio. Esto divide al paralelogramo en cuatro triángulos.<br>Tomamos uno con lados 5 cm, 7 cm y ángulo $60^{\\circ}$. El lado opuesto es un lado del paralelogramo (a):<br>$a^{2}=5^{2}+7^{2}-2(5)(7)\\cos(60^{\\circ})=25+49-70(0,5)=74-35=39 \\Rightarrow a=\\sqrt{39} \\approx 6,24$ cm.<br><br>El otro lado (b) se calcula con el ángulo suplementario, $120^{\\circ}$:<br>$b^{2}=5^{2}+7^{2}-2(5)(7)\\cos(120^{\\circ})=25+49-70(-0,5)=74+35=109 \\Rightarrow b=\\sqrt{109} \\approx 10,44$ cm.",
+        "pista": "Recuerda que en un paralelogramo las diagonales se cortan en su punto central. Así que tendrás triángulos cuyos lados son las mitades de las diagonales.",
+        "formula": "$$a^2 = b^2 + c^2 - 2bc \\cos \\theta \\quad ; \\quad \\text{Ángulos suplementarios } 180^{\\circ} - 60^{\\circ} = 120^{\\circ}$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2508,
+        "dificultad": "Alta",
+        "bloque": "Tema 5: Trigonometría II (Resolución de Triángulos)",
+        "enunciado": "En un triángulo ABC, sabemos que $a=10$ cm, $b=15$ cm y el ángulo $A=30^{\\circ}$. Demuestra mediante el Teorema del Seno que existen dos triángulos diferentes que cumplen estas condiciones (caso ambiguo) y calcula el ángulo B en ambos casos.",
+        "resolucion_latex": "Teorema del Seno: $\\frac{10}{\\sin 30^{\\circ}}=\\frac{15}{\\sin B} \\Rightarrow \\sin B=\\frac{15\\cdot 0,5}{10}=0,75$.<br><br>Al hacer el arcoseno de 0,75, la calculadora da $B_{1} \\approx 48,59^{\\circ}$ (primer cuadrante).<br>Sin embargo, el seno es positivo también en el segundo cuadrante, por lo que existe otro ángulo válido: $B_{2}=180^{\\circ}-48,59^{\\circ}=131,41^{\\circ}$.<br><br>Como $A+B_{2}=30^{\\circ}+131,41^{\\circ} < 180^{\\circ}$, es un triángulo físicamente posible. Existen dos soluciones válidas para el triángulo.",
+        "pista": "Al usar el Teorema del Seno para hallar un ángulo, la calculadora solo te da la respuesta aguda. Recuerda que su ángulo suplementario (180 - el que te dio) también tiene el mismo seno.",
+        "formula": "$$\\sin(180^{\\circ} - \\alpha) = \\sin \\alpha$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2509,
+        "dificultad": "Alta",
+        "bloque": "Tema 5: Trigonometría II (Resolución de Triángulos)",
+        "enunciado": "Desde un faro de 50 m de altura respecto al nivel del mar se observan dos boyas alineadas con el faro. Los ángulos de depresión bajo los cuales se ven son de $30^{\\circ}$ y $45^{\\circ}$. Calcula la distancia exacta entre ambas boyas.",
+        "resolucion_latex": "El ángulo de depresión de $45^{\\circ}$ significa que la boya más cercana forma un ángulo de elevación de $45^{\\circ}$ con la base.<br>Por tanto, es un triángulo isósceles y la distancia de la base del faro a la primera boya es $x=50$ m.<br><br>Para la segunda boya (depresión $30^{\\circ}$), la distancia a la base es y:<br>$\\tan(30^{\\circ})=\\frac{50}{y} \\Rightarrow y=\\frac{50}{\\frac{\\sqrt{3}}{3}}=50\\sqrt{3} \\approx 86,60$ m.<br><br>La distancia entre las boyas es $y-x=50\\sqrt{3}-50=50(\\sqrt{3}-1) \\approx 36,60$ m.",
+        "pista": "Dibuja bien los ángulos. Un ángulo de depresión se mide desde la horizontal (tu línea de los ojos) hacia abajo. Haz dos triángulos rectángulos grandes independientes y luego resta sus bases.",
+        "formula": "$$\\tan(30^{\\circ}) = \\frac{\\sqrt{3}}{3} \\quad ; \\quad \\tan(45^{\\circ}) = 1$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2510,
+        "dificultad": "Superior",
+        "bloque": "Tema 5: Trigonometría II (Resolución de Triángulos)",
+        "enunciado": "Ejercicio Trampa: Un problema dice: 'En un triángulo cualquiera, el lado $a=3$ y el lado $b=4$. El ángulo $C=90^{\\circ}$'. Un alumno calcula el lado c usando el Teorema del Coseno: $c^{2}=3^{2}+4^{2}-2(3)(4)\\cos(90^{\\circ})$, obteniendo $c=5$. Su compañero le dice: '¡Te has complicado! Como es $90^{\\circ}$ podías usar el Teorema de Pitágoras directamente'. El primer alumno le responde: 'No, porque Pitágoras solo funciona en algunos triángulos y el Teorema del Coseno vale para todos. Lo mío es más correcto'. ¿Quién tiene la razón matemática y por qué?",
+        "resolucion_latex": "Ambos tienen razón en parte, pero el compañero es quien tiene la razón lógica.<br><br>El Teorema de Pitágoras no es una regla inventada ajena al Teorema del Coseno; de hecho, el Teorema de Pitágoras es un caso particular del Teorema del Coseno.<br>Si observamos la fórmula general $c^{2}=a^{2}+b^{2}-2ab \\cos C$, cuando el ángulo es $C=90^{\\circ}$, el coseno de $90^{\\circ}$ es exactamente cero.<br>Ese término se anula $(-2ab(0)=0)$, y la fórmula del Teorema del Coseno colapsa directamente a $c^{2}=a^{2}+b^{2}$.<br><br>Así que el primer alumno ha demostrado Pitágoras sin darse cuenta, pero es una pérdida de tiempo operativa.",
+        "pista": "Piensa en cuánto vale el coseno de 90º. ¿Qué le pasa a la larga fórmula del Teorema del Coseno si la multiplicas por ese número?",
+        "formula": "$$\\cos(90^{\\circ}) = 0 \\Rightarrow a^2+b^2-2ab(0) = a^2+b^2$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2601,
+        "dificultad": "Básica",
+        "bloque": "Tema 6: Geometría Analítica en el Plano",
+        "enunciado": "Dados los puntos $A(-2,3)$ y $B(4,1)$, calcula las componentes del vector $\\vec{AB}$, su módulo y el punto medio del segmento AB.",
+        "resolucion_latex": "Vector $\\vec{AB}=(x_{2}-x_{1}, y_{2}-y_{1})=(4-(-2), 1-3)=(6,-2)$.<br><br>Módulo: $|\\vec{AB}|=\\sqrt{6^{2}+(-2)^{2}}=\\sqrt{36+4}=\\sqrt{40}=2\\sqrt{10} \\approx 6,32$.<br><br>Punto medio $M=\\left(\\frac{-2+4}{2}, \\frac{3+1}{2}\\right)=\\left(\\frac{2}{2}, \\frac{4}{2}\\right)=(1,2)$.",
+        "pista": "Para sacar un vector desde A hasta B, siempre se resta la punta de la flecha menos el origen (B menos A).",
+        "formula": "$$\\vec{AB} = (x_B - x_A, y_B - y_A) \\quad ; \\quad |\\vec{v}| = \\sqrt{v_x^2 + v_y^2}$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2602,
+        "dificultad": "Básica",
+        "bloque": "Tema 6: Geometría Analítica en el Plano",
+        "enunciado": "Halla todas las formas de la ecuación de la recta (vectorial, paramétrica, continua, general y explícita) que pasa por el punto $P(1,-3)$ y tiene como vector director $\\vec{v}=(2,5)$.",
+        "resolucion_latex": "Vectorial: $(x,y)=(1,-3)+t(2,5)$.<br>Paramétricas: $\\begin{cases}x=1+2t\\\\ y=-3+5t\\end{cases}$<br>Continua: $\\frac{x-1}{2}=\\frac{y+3}{5}$.<br>General (implícita): Multiplicamos en cruz $5(x-1)=2(y+3) \\Rightarrow 5x-5=2y+6 \\Rightarrow 5x-2y-11=0$.<br>Explícita: Despejamos la $y \\Rightarrow -2y=-5x+11 \\Rightarrow y=\\frac{5}{2}x-\\frac{11}{2}$.",
+        "pista": "Construye una recta detrás de otra como fichas de dominó. Partiendo de la paramétrica despejas la 't' en ambas y las igualas para sacar la continua. Si multiplicas en cruz, sacarás la general.",
+        "formula": "$$\\frac{x-P_x}{v_x} = \\frac{y-P_y}{v_y} \\quad \\text{(Continua)}$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2603,
+        "dificultad": "Básica",
+        "bloque": "Tema 6: Geometría Analítica en el Plano",
+        "enunciado": "Dada la recta $r: 2x-3y+6=0$, calcula su pendiente y los puntos de corte con los ejes coordenados.",
+        "resolucion_latex": "Para la pendiente, despejamos y: $3y=2x+6 \\Rightarrow y=\\frac{2}{3}x+2$. La pendiente es $m=\\frac{2}{3}$.<br><br>Corte eje X $(y=0)$: $2x-3(0)+6=0 \\Rightarrow 2x=-6 \\Rightarrow x=-3$. Punto $(-3,0)$.<br>Corte eje Y $(x=0)$: $2(0)-3y+6=0 \\Rightarrow -3y=-6 \\Rightarrow y=2$. Punto $(0,2)$.",
+        "pista": "Para hallar la pendiente de forma visual, despeja la letra 'y' por completo. El número que multiplique a la 'x' será tu pendiente.",
+        "formula": "$$Ax + By + C = 0 \\Rightarrow m = -\\frac{A}{B}$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2604,
+        "dificultad": "Media",
+        "bloque": "Tema 6: Geometría Analítica en el Plano",
+        "enunciado": "Calcula el ángulo que forman los vectores $\\vec{u}=(3,4)$ y $\\vec{v}=(-1,2)$ utilizando el producto escalar.",
+        "resolucion_latex": "Producto escalar analítico: $\\vec{u}\\cdot\\vec{v}=3(-1)+4(2)=-3+8=5$.<br>Módulos: $|\\vec{u}|=\\sqrt{3^{2}+4^{2}}=5$. $|\\vec{v}|=\\sqrt{(-1)^{2}+2^{2}}=\\sqrt{5}$.<br><br>Fórmula del ángulo: $\\cos \\alpha = \\frac{\\vec{u}\\cdot\\vec{v}}{|\\vec{u}|\\cdot|\\vec{v}|}=\\frac{5}{5\\sqrt{5}}=\\frac{1}{\\sqrt{5}} \\approx 0,447$.<br>$\\alpha=\\arccos(0,447) \\approx 63,43^{\\circ}$.",
+        "pista": "La fórmula del producto escalar te permite relacionar las coordenadas de los vectores con el coseno del ángulo. ¡Asegúrate de calcular los módulos primero!",
+        "formula": "$$\\cos \\alpha = \\frac{\\vec{u} \\cdot \\vec{v}}{|\\vec{u}| |\\vec{v}|}$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2605,
+        "dificultad": "Media",
+        "bloque": "Tema 6: Geometría Analítica en el Plano",
+        "enunciado": "Estudia la posición relativa de las rectas $r: 3x-4y+2=0$ y $s: 6x-8y-5=0$. ¿Se cortan?",
+        "resolucion_latex": "Comparamos los coeficientes (proporcionalidad):<br>$\\frac{A}{A'}=\\frac{3}{6}=\\frac{1}{2} \\quad \\frac{B}{B'}=\\frac{-4}{-8}=\\frac{1}{2} \\quad \\frac{C}{C'}=\\frac{2}{-5}=-\\frac{2}{5}$.<br><br>Como $\\frac{A}{A'}=\\frac{B}{B'}\\neq\\frac{C}{C'}$, las rectas tienen la misma dirección pero diferente altura. Son rectas paralelas (no se cortan).",
+        "pista": "Divide la 'X' de una entre la 'X' de la otra, y lo mismo con la 'Y' y el número suelto. Si la división de X e Y da lo mismo, tienen la misma pendiente.",
+        "formula": "$$\\frac{A}{A'} = \\frac{B}{B'} \\neq \\frac{C}{C'} \\Rightarrow \\text{Paralelas}$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2606,
+        "dificultad": "Media",
+        "bloque": "Tema 6: Geometría Analítica en el Plano",
+        "enunciado": "Halla las coordenadas del punto simétrico de $A(2,5)$ respecto al punto $P(4,1)$.",
+        "resolucion_latex": "Si $A'$ es el simétrico de A respecto a P, entonces P es el punto medio del segmento $AA'$.<br>$P=\\left(\\frac{x_{A}+x_{A'}}{2}, \\frac{y_{A}+y_{A'}}{2}\\right) \\Rightarrow (4,1)=\\left(\\frac{2+x}{2}, \\frac{5+y}{2}\\right)$<br><br>Igualamos coordenadas:<br>$4=\\frac{2+x}{2} \\Rightarrow 8=2+x \\Rightarrow x=6$.<br>$1=\\frac{5+y}{2} \\Rightarrow 2=5+y \\Rightarrow y=-3$.<br><br>El punto simétrico es $A'(6,-3)$.",
+        "pista": "Trata el punto de referencia P como si fuera un espejo colocado exactamente en medio de A y de tu nuevo punto inventado. Usa la fórmula del punto medio al revés.",
+        "formula": "$$M = \\left( \\frac{x_1 + x_2}{2}, \\frac{y_1 + y_2}{2} \\right)$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2607,
+        "dificultad": "Alta",
+        "bloque": "Tema 6: Geometría Analítica en el Plano",
+        "enunciado": "Calcula la distancia del punto $P(-1,4)$ a la recta $r: 3x+4y-5=0$.",
+        "resolucion_latex": "Aplicamos la fórmula de la distancia de un punto a una recta: $d(P,r)=\\frac{|Ax_{0}+By_{0}+C|}{\\sqrt{A^{2}+B^{2}}}$<br><br>$d(P,r)=\\frac{|3(-1)+4(4)-5|}{\\sqrt{3^{2}+4^{2}}}=\\frac{|-3+16-5|}{\\sqrt{25}}=\\frac{|8|}{5}=\\frac{8}{5}=1,6$ unidades.",
+        "pista": "Aplica de memoria la fórmula de la distancia. Acuérdate de que el numerador es meter las coordenadas del punto dentro de la fórmula de la recta con un valor absoluto.",
+        "formula": "$$d(P,r) = \\frac{|Ax_0 + By_0 + C|}{\\sqrt{A^2 + B^2}}$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2608,
+        "dificultad": "Alta",
+        "bloque": "Tema 6: Geometría Analítica en el Plano",
+        "enunciado": "Halla la ecuación de la recta perpendicular a la recta $r: x-2y+4=0$ que pasa por el punto de intersección de las rectas $s: x+y=3$ y $t: 2x-y=0$.",
+        "resolucion_latex": "$1^{\\circ}$) Intersección de s y t: Resolvemos el sistema por sustitución $(y=2x)$:<br>$x+2x=3 \\Rightarrow 3x=3 \\Rightarrow x=1 \\Rightarrow y=2(1)=2$. El punto de corte es $P(1,2)$.<br><br>$2^{\\circ}$) La recta $r: x-2y+4=0$ tiene vector normal $\\vec{n}_{r}=(1,-2)$, por lo que su vector director es $\\vec{v}_{r}=(2,1)$.<br>Como la recta que buscamos es perpendicular a r, su vector director será el normal de r, es decir, $\\vec{v}_{\\perp}=(1,-2)$.<br><br>$3^{\\circ}$) Ecuación pedida: Pasa por $P(1,2)$ con vector $(1,-2)$.<br>Continua: $\\frac{x-1}{1}=\\frac{y-2}{-2} \\Rightarrow -2x+2=y-2 \\Rightarrow 2x+y-4=0$.",
+        "pista": "Divide y vencerás: Primero resuelve un sistema entre las rectas 's' y 't' para sacar el punto. Segundo, busca el vector perpendicular de 'r'. Tercero, monta tu recta nueva.",
+        "formula": "$$\\vec{v} = (A, B) \\Rightarrow \\vec{v}_{\\perp} = (-B, A)$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2609,
+        "dificultad": "Alta",
+        "bloque": "Tema 6: Geometría Analítica en el Plano",
+        "enunciado": "Dados los puntos $A(1,2)$, $B(5,-2)$ y $C(6,3)$, halla la ecuación de la mediatriz del lado AB y calcula el área del triángulo formado por los tres puntos.",
+        "resolucion_latex": "Mediatriz de AB: Pasa por el punto medio $M_{AB}=\\left(\\frac{1+5}{2}, \\frac{2-2}{2}\\right)=(3,0)$.<br>Vector $\\vec{AB}=(4,-4)$. Un vector perpendicular a AB es $\\vec{v}_{\\perp}=(4,4)$ o simplificado $(1,1)$.<br>Recta mediatriz: $\\frac{x-3}{1}=\\frac{y-0}{1} \\Rightarrow x-y-3=0$.<br><br>Área del triángulo: Tomamos base $b=|\\vec{AB}|=\\sqrt{16+16}=\\sqrt{32}=4\\sqrt{2}$.<br>La altura es la distancia de $C(6,3)$ a la recta AB. Ecuación AB: $(x-1)/4=(y-2)/-4 \\Rightarrow -x+1=y-2 \\Rightarrow x+y-3=0$<br>$h=\\frac{|6+3-3|}{\\sqrt{1^{2}+1^{2}}}=\\frac{6}{\\sqrt{2}}=3\\sqrt{2}$.<br>Área $=\\frac{b\\cdot h}{2}=\\frac{4\\sqrt{2}\\cdot 3\\sqrt{2}}{2}=\\frac{12\\cdot 2}{2}=12 \\text{ u}^{2}$.",
+        "pista": "La mediatriz no es más que la recta perpendicular que cruza justo por en medio de A y B. Para el área, elije un lado que sea la base, y la altura es usar la fórmula de la distancia desde C hacia la recta de tu base.",
+        "formula": "$$\\text{Mediatriz: Perpendicular por el punto medio}$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2610,
+        "dificultad": "Superior",
+        "bloque": "Tema 6: Geometría Analítica en el Plano",
+        "enunciado": "Ejercicio Trampa: A un alumno se le pide escribir la ecuación continua de la recta que pasa por $P(3,4)$ con vector director $\\vec{v}=(0,2)$. Escribe: $\\frac{x-3}{0}=\\frac{y-4}{2}$. Luego, la tacha rápidamente, pone un gran aspa roja y escribe: '¡Imposible! No se puede dividir por cero, esta recta no existe'. ¿Existe la recta? ¿Cuál es su interpretación geométrica y cómo le explicarías que esa notación 'imposible' es en realidad correcta en geometría analítica?",
+        "resolucion_latex": "La recta sí existe. Geométricamente, el vector director $\\vec{v}=(0,2)$ (o simplificado (0,1)) indica que la recta no se desplaza en el eje horizontal (X constante) y solo sube/baja en el vertical. Es una recta vertical completamente paralela al eje Y.<br><br>El alumno confunde la división analítica con la notación geométrica. En la ecuación continua $\\frac{x-x_{0}}{v_{x}}=\\frac{y-y_{0}}{v_{y}}$ los denominadores no son divisores numéricos reales, sino meros \"contenedores\" de las componentes del vector.<br><br>Si multiplicamos en cruz la ecuación \"prohibida\", obtenemos:<br>$2(x-3)=0(y-4) \\Rightarrow 2x-6=0 \\Rightarrow x=3$.<br>Esta es la ecuación general (y perfecta) de una recta vertical.",
+        "pista": "Piensa que en la ecuación de la recta las fracciones no están diseñadas para dividirlas de verdad con calculadora, sino que son la plantilla visual de una receta.",
+        "formula": "$$x = c \\Rightarrow \\text{Recta vertical}$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2701,
+        "dificultad": "Básica",
+        "bloque": "Tema 7: Cónicas",
+        "enunciado": "Halla la ecuación analítica de la circunferencia que tiene su centro en el punto $C(2,-3)$ y un radio $r=5$.",
+        "resolucion_latex": "La ecuación ordinaria de una circunferencia viene dada por la expresión $(x-h)^{2}+(y-k)^{2}=r^{2}$, donde $(h,k)$ son las coordenadas del centro.<br><br>Sustituimos el centro $C(2,-3)$ y el radio $r=5$:<br>$(x-2)^{2}+(y-(-3))^{2}=5^{2}$<br>$(x-2)^{2}+(y+3)^{2}=25$.<br><br>Si queremos la ecuación general, desarrollamos los binomios:<br>$x^{2}-4x+4+y^{2}+6y+9=25 \\Rightarrow x^{2}+y^{2}-4x+6y-12=0$.",
+        "pista": "La ecuación de la circunferencia es como aplicar el teorema de Pitágoras directamente sobre el centro (h,k). ¡Cuidado con los signos al meter coordenadas negativas y no te olvides de elevar el radio al cuadrado!",
+        "formula": "$$(x-h)^2 + (y-k)^2 = r^2$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2702,
+        "dificultad": "Básica",
+        "bloque": "Tema 7: Cónicas",
+        "enunciado": "Dada la ecuación general de una circunferencia $x^2+y^2-6x+8y=0$, determina las coordenadas de su centro y la longitud de su radio.",
+        "resolucion_latex": "Completamos cuadrados para pasar a la ecuación ordinaria.<br>Agrupamos las $x$ y las $y$: $(x^2-6x) + (y^2+8y) = 0$.<br>Completamos el cuadrado de $x$: sumamos y restamos $(6/2)^2=9 \\Rightarrow (x-3)^2-9$.<br>Completamos el cuadrado de $y$: sumamos y restamos $(8/2)^2=16 \\Rightarrow (y+4)^2-16$.<br>Sustituimos en la ecuación: $(x-3)^2 - 9 + (y+4)^2 - 16 = 0$.<br>Pasamos los números a la derecha: $(x-3)^2 + (y+4)^2 = 25$.<br>El centro es $C(3,-4)$ y el radio es $r=\\sqrt{25}=5$.",
+        "pista": "Usa la técnica de 'completar cuadrados'. Tienes que sumar a cada letra la mitad de su coeficiente elevado al cuadrado, y sumar eso mismo al otro lado del igual para compensar.",
+        "formula": "$$x^2+bx \\rightarrow \\left(x+\\frac{b}{2}\\right)^2 - \\left(\\frac{b}{2}\\right)^2$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2703,
+        "dificultad": "Básica",
+        "bloque": "Tema 7: Cónicas",
+        "enunciado": "Escribe la ecuación reducida de una elipse centrada en el origen cuyo semieje mayor (horizontal) mide 5 y su semieje menor mide 4.",
+        "resolucion_latex": "La ecuación reducida de una elipse centrada en el origen es $\\frac{x^2}{a^2}+\\frac{y^2}{b^2}=1$.<br>Nos dan los semiejes: $a=5$ (horizontal) y $b=4$ (vertical).<br>Elevamos al cuadrado: $a^2=25$ y $b^2=16$.<br>La ecuación es: $\\frac{x^2}{25} + \\frac{y^2}{16} = 1$.",
+        "pista": "La ecuación de la elipse son dos fracciones sumadas e igualadas a 1. Debajo de cada letra va su semieje elevado al cuadrado.",
+        "formula": "$$\\frac{x^2}{a^2}+\\frac{y^2}{b^2}=1$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2704,
+        "dificultad": "Media",
+        "bloque": "Tema 7: Cónicas",
+        "enunciado": "Identifica la cónica dada por la ecuación $\\frac{x^2}{169} + \\frac{y^2}{144} = 1$. Calcula la semidistancia focal, las coordenadas de sus focos y su excentricidad.",
+        "resolucion_latex": "Es una elipse horizontal ($a^2=169 > b^2=144$).<br>Semiejes: $a=\\sqrt{169}=13$, $b=\\sqrt{144}=12$.<br>Semidistancia focal ($c$): En una elipse, $a^2=b^2+c^2 \\Rightarrow 169=144+c^2 \\Rightarrow c^2=25 \\Rightarrow c=5$.<br>Focos en el eje X: $F(5,0)$ y $F'(-5,0)$.<br>Excentricidad ($e$): $e=\\frac{c}{a}=\\frac{5}{13} \\approx 0,38$.",
+        "pista": "El denominador mayor siempre es $a^2$. Para hallar la distancia a los focos 'c', usa la relación fundamental de la elipse, que es como Pitágoras pero el lado mayor es 'a'.",
+        "formula": "$$a^2 = b^2 + c^2 \\quad ; \\quad e = \\frac{c}{a}$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2705,
+        "dificultad": "Media",
+        "bloque": "Tema 7: Cónicas",
+        "enunciado": "Dada la ecuación de la hipérbola $\\frac{x^2}{16} - \\frac{y^2}{9} = 1$, calcula la distancia entre sus focos y las ecuaciones de sus rectas asíntotas.",
+        "resolucion_latex": "Identificamos parámetros: $a^2=16 \\Rightarrow a=4$ y $b^2=9 \\Rightarrow b=3$.<br>En la hipérbola se cumple $c^2=a^2+b^2 \\Rightarrow c^2=16+9=25 \\Rightarrow c=5$.<br>La distancia focal (entre los dos focos) es $2c = 2(5) = 10$.<br>Las asíntotas de una hipérbola horizontal centrada en el origen son $y=\\pm\\frac{b}{a}x$.<br>Sustituimos: $y=\\frac{3}{4}x$ e $y=-\\frac{3}{4}x$.",
+        "pista": "En la hipérbola, a diferencia de la elipse, la relación fundamental es la suma directa: $c^2=a^2+b^2$. Las asíntotas son rectas que cruzan el origen con pendiente $\\pm b/a$.",
+        "formula": "$$c^2 = a^2 + b^2 \\quad ; \\quad y = \\pm \\frac{b}{a} x$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2706,
+        "dificultad": "Media",
+        "bloque": "Tema 7: Cónicas",
+        "enunciado": "Halla el foco y la directriz de la parábola de ecuación $y^2 = 12x$.",
+        "resolucion_latex": "La ecuación de una parábola con vértice en el origen y eje horizontal es $y^2 = 2px$.<br>Igualamos coeficientes: $2p = 12 \\Rightarrow p = 6$.<br>El parámetro $p$ es la distancia del foco a la directriz. El foco está en el eje X a una distancia $p/2$ del vértice.<br>Foco: $F(p/2, 0) = F(3, 0)$.<br>Directriz: Es una recta vertical situada en la parte opuesta. $x = -p/2 \\Rightarrow x = -3$.",
+        "pista": "La fórmula genérica es $y^2=2px$. Saca el valor de 'p'. El foco siempre está a la mitad de 'p' de distancia del vértice hacia adentro de la parábola.",
+        "formula": "$$y^2 = 2px \\quad ; \\quad F(p/2, 0) \\quad ; \\quad x = -p/2$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2707,
+        "dificultad": "Alta",
+        "bloque": "Tema 7: Cónicas",
+        "enunciado": "Calcula los puntos de intersección entre la recta $y = x+1$ y la circunferencia $x^2 + y^2 = 25$.",
+        "resolucion_latex": "Resolvemos el sistema no lineal por sustitución. Introducimos la recta en la circunferencia:<br>$x^2 + (x+1)^2 = 25$<br>Desarrollamos el binomio: $x^2 + x^2 + 2x + 1 = 25$<br>$2x^2 + 2x - 24 = 0$<br>Dividimos por 2 para simplificar: $x^2 + x - 12 = 0$<br>Resolvemos la ecuación de segundo grado:<br>$x = \\frac{-1 \\pm \\sqrt{1 - 4(1)(-12)}}{2} = \\frac{-1 \\pm \\sqrt{49}}{2} = \\frac{-1 \\pm 7}{2}$.<br>Soluciones: $x_1 = 3$, $x_2 = -4$.<br>Hallamos las 'y' correspondientes en la recta: Si $x=3 \\Rightarrow y=4$. Si $x=-4 \\Rightarrow y=-3$.<br>Puntos de corte: $(3,4)$ y $(-4,-3)$.",
+        "pista": "Monta un sistema de ecuaciones. Lo más fácil es sustituir la 'y' de la recta dentro de la ecuación de la circunferencia y resolver la ecuación de segundo grado que te queda.",
+        "formula": "$$(a+b)^2 = a^2+2ab+b^2$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2708,
+        "dificultad": "Alta",
+        "bloque": "Tema 7: Cónicas",
+        "enunciado": "Determina la ecuación de una elipse con centro en el origen cuyos focos están en el eje X, sabiendo que pasa por el punto $P(4, 2.4)$ y su semieje mayor es $a=5$.",
+        "resolucion_latex": "La ecuación tiene la forma $\\frac{x^2}{a^2} + \\frac{y^2}{b^2} = 1$.<br>Sabemos que $a=5$, por lo que $a^2=25$: $\\frac{x^2}{25} + \\frac{y^2}{b^2} = 1$.<br>Para hallar $b^2$, obligamos a la elipse a pasar por el punto $P(4, 2.4)$. Sustituimos $x$ e $y$:<br>$\\frac{4^2}{25} + \\frac{2.4^2}{b^2} = 1 \\Rightarrow \\frac{16}{25} + \\frac{5.76}{b^2} = 1$<br>Despejamos el término con $b^2$:<br>$\\frac{5.76}{b^2} = 1 - \\frac{16}{25} = \\frac{9}{25}$<br>Multiplicamos en cruz: $9b^2 = 5.76 \\cdot 25 \\Rightarrow 9b^2 = 144 \\Rightarrow b^2 = 16$.<br>La ecuación pedida es: $\\frac{x^2}{25} + \\frac{y^2}{16} = 1$.",
+        "pista": "Escribe la ecuación de la elipse dejando $b^2$ como incógnita. Si te dicen que pasa por un punto, eso es una llave maestra: sustituye la 'x' y la 'y' del punto en la ecuación y despeja.",
+        "formula": "$$P(x,y) \\in \\text{Elipse} \\Rightarrow \\text{Cumple la ecuación}$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2709,
+        "dificultad": "Alta",
+        "bloque": "Tema 7: Cónicas",
+        "enunciado": "La órbita de un cometa es una parábola con el Sol situado en su foco. Si en el vértice de la parábola el cometa está a $100$ millones de km del Sol, escribe la ecuación de la órbita asumiendo el vértice en el origen y el Sol en el semieje X positivo.",
+        "resolucion_latex": "Si el vértice es $V(0,0)$ y el eje es horizontal (eje X), la ecuación es $y^2 = 2px$.<br>El Sol está en el foco. La distancia del vértice al foco es de 100 millones de km.<br>Por definición, la distancia vértice-foco es $p/2$.<br>Por tanto, $p/2 = 100 \\Rightarrow p = 200$.<br>Sustituimos en la ecuación: $y^2 = 2(200)x \\Rightarrow y^2 = 400x$.<br>Las unidades de 'x' e 'y' están en millones de kilómetros.",
+        "pista": "La distancia entre el vértice de la parábola (origen) y el foco (Sol) es exactamente la mitad del parámetro 'p'. Usa ese dato para encontrar 'p' y montar la ecuación.",
+        "formula": "$$d(V, F) = \\frac{p}{2}$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2710,
+        "dificultad": "Superior",
+        "bloque": "Tema 7: Cónicas",
+        "enunciado": "Ejercicio Trampa: Un alumno examina la ecuación $\\frac{x^2}{9} + \\frac{y^2}{25} = 1$. Calcula rápidamente $c = \\sqrt{9-25} = \\sqrt{-16}$ y escribe: 'Como la raíz es negativa, la cónica es imaginaria y no tiene focos reales'. Identifica y corrige el error fatal del alumno explicando qué tipo de elipse es en realidad.",
+        "resolucion_latex": "El alumno asume mecánicamente que el primer denominador ($x^2$) siempre es $a^2$ y el segundo es $b^2$. Esto es un error grave.<br><br>En una elipse, $a^2$ SIEMPRE es el denominador de mayor valor.<br>En este caso, $25 > 9$, por lo que $a^2=25$ (asociado a la variable $y$) y $b^2=9$ (asociado a la variable $x$).<br>Esto significa que se trata de una **elipse vertical** (estirada hacia arriba y abajo).<br><br>El cálculo correcto para la distancia focal es siempre $c = \\sqrt{a^2 - b^2} = \\sqrt{25 - 9} = \\sqrt{16} = 4$.<br>Los focos no son imaginarios, existen y están situados en el eje Y: $F(0, 4)$ y $F'(0, -4)$.",
+        "pista": "En las elipses, 'a' siempre es el jefe, el más grande. No importa si está debajo de la x o de la y. El que sea más grande será 'a al cuadrado'.",
+        "formula": "$$a^2 > b^2 \\text{ siempre}$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2801,
+        "dificultad": "Básica",
+        "bloque": "Tema 8: Funciones Elementales",
+        "enunciado": "Determina el dominio de definición de la función polinómica $f(x)=2x^3 - 5x + 7$ y de la función racional $g(x)=\\frac{5}{x^2-9}$.",
+        "resolucion_latex": "Para la función polinómica $f(x)$, no hay divisiones ni raíces, por lo que su dominio son todos los números reales: $Dom(f) = \\mathbb{R}$.<br><br>Para la función racional $g(x)$, no puede haber ceros en el denominador.<br>Resolvemos $x^2-9=0 \\Rightarrow x^2=9 \\Rightarrow x=3$ y $x=-3$.<br>El dominio de $g$ son todos los reales excepto esos dos valores: $Dom(g) = \\mathbb{R} \\setminus \\{-3, 3\\}$.",
+        "pista": "Los polinomios siempre tienen dominio R. Las fracciones tienen problemas cuando lo de abajo da cero.",
+        "formula": "$$Dom(\\text{polinomio}) = \\mathbb{R}$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2802,
+        "dificultad": "Básica",
+        "bloque": "Tema 8: Funciones Elementales",
+        "enunciado": "Dadas las funciones $f(x)=x^2+1$ y $g(x)=3x-2$, calcula las composiciones $(f \\circ g)(x)$ y $(g \\circ f)(x)$.",
+        "resolucion_latex": "1) $(f \\circ g)(x) = f(g(x))$. Metemos $g(x)$ dentro de $f$:<br>$f(3x-2) = (3x-2)^2 + 1 = 9x^2 - 12x + 4 + 1 = 9x^2 - 12x + 5$.<br><br>2) $(g \\circ f)(x) = g(f(x))$. Metemos $f(x)$ dentro de $g$:<br>$g(x^2+1) = 3(x^2+1) - 2 = 3x^2 + 3 - 2 = 3x^2 + 1$.<br>Como se observa, en general la composición no es conmutativa.",
+        "pista": "Para f compuesto con g, mete toda la fórmula de g(x) dentro de los paréntesis de la x de f(x).",
+        "formula": "$$(f \\circ g)(x) = f(g(x))$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2803,
+        "dificultad": "Básica",
+        "bloque": "Tema 8: Funciones Elementales",
+        "enunciado": "Halla la función inversa (recíproca) $f^{-1}(x)$ de la función lineal $f(x)=\\frac{4x-1}{2}$.",
+        "resolucion_latex": "Paso 1: Escribimos la función como $y = \\frac{4x-1}{2}$.<br>Paso 2: Despejamos la $x$.<br>$2y = 4x - 1 \\Rightarrow 2y + 1 = 4x \\Rightarrow x = \\frac{2y+1}{4}$.<br>Paso 3: Intercambiamos las variables 'x' e 'y'.<br>$f^{-1}(x) = \\frac{2x+1}{4}$.",
+        "pista": "Cambia f(x) por 'y'. Luego, tu único objetivo en la vida es dejar la 'x' totalmente sola en un lado del igual.",
+        "formula": "$$y=f(x) \\rightarrow \\text{Despejar x} \\rightarrow \\text{Intercambiar}$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2804,
+        "dificultad": "Media",
+        "bloque": "Tema 8: Funciones Elementales",
+        "enunciado": "Calcula el dominio de la función combinada $f(x)=\\frac{\\sqrt{x+3}}{x-2}$.",
+        "resolucion_latex": "Existen dos restricciones para el dominio:<br>1. La raíz cuadrada: Lo de dentro debe ser mayor o igual a cero. $x+3 \\ge 0 \\Rightarrow x \\ge -3$. Es decir, $[-3, +\\infty)$.<br>2. El denominador: No puede ser cero. $x-2 \\neq 0 \\Rightarrow x \\neq 2$.<br><br>El dominio final es la intersección de ambas condiciones: los números desde el -3 en adelante, pero saltándonos el 2.<br>$Dom(f) = [-3, 2) \\cup (2, +\\infty)$ o también $[-3, +\\infty) \\setminus \\{2\\}$.",
+        "pista": "Tienes que cumplir las dos normas a la vez. Haz una recta numérica, pinta los números válidos para la raíz y luego tácha con una 'X' el número que estropea el denominador.",
+        "formula": "$$\\text{Raíz par: } A \\ge 0 \\quad ; \\quad \\text{Denominador: } B \\neq 0$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2805,
+        "dificultad": "Media",
+        "bloque": "Tema 8: Funciones Elementales",
+        "enunciado": "Estudia analíticamente la simetría de la función $f(x)=\\frac{x^2}{x^4-1}$.",
+        "resolucion_latex": "Sustituimos la $x$ por $(-x)$:<br>$f(-x) = \\frac{(-x)^2}{(-x)^4-1}$.<br>Como todos los exponentes (2 y 4) son pares, el signo negativo se anula: $(-x)^n = x^n$ si $n$ es par.<br>$f(-x) = \\frac{x^2}{x^4-1}$.<br><br>Observamos que $f(-x) = f(x)$. Por tanto, la función tiene **simetría par** (es simétrica respecto al eje Y).",
+        "pista": "Cambia la 'x' por '-x'. Si todos los exponentes son pares, los negativos se 'comen' mágicamente y vuelve a salir la función original.",
+        "formula": "$$f(-x) = f(x) \\Rightarrow \\text{Función Par}$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2806,
+        "dificultad": "Media",
+        "bloque": "Tema 8: Funciones Elementales",
+        "enunciado": "Calcula la función inversa de la función racional $f(x)=\\frac{2x+3}{x-1}$.",
+        "resolucion_latex": "Escribimos $y = \\frac{2x+3}{x-1}$.<br>Multiplicamos en cruz para eliminar el denominador: $y(x-1) = 2x+3 \\Rightarrow xy - y = 2x+3$.<br>Agrupamos los términos que tienen 'x' en un lado: $xy - 2x = y + 3$.<br>Sacamos 'x' como factor común: $x(y - 2) = y + 3$.<br>Despejamos la $x$: $x = \\frac{y+3}{y-2}$.<br>Intercambiamos variables: $f^{-1}(x) = \\frac{x+3}{x-2}$.",
+        "pista": "Esta inversa requiere un truco: multiplicar en cruz, pasar todo lo que lleve 'x' a la izquierda, sacar la 'x' factor común y volver a dividir. Es un método que siempre funciona.",
+        "formula": "$$xy - 2x = x(y-2)$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2807,
+        "dificultad": "Alta",
+        "bloque": "Tema 8: Funciones Elementales",
+        "enunciado": "Calcula el dominio de la función logarítmica $f(x)=\\ln(x^2-5x+6)$.",
+        "resolucion_latex": "El argumento de un logaritmo debe ser estrictamente mayor que cero.<br>$x^2-5x+6 > 0$<br>Hallamos las raíces de la ecuación cuadrática: $x_1=3$, $x_2=2$.<br>Evaluamos el signo del polinomio en los intervalos definidos por las raíces: $(-\\infty, 2)$, $(2, 3)$ y $(3, +\\infty)$.<br>Tomamos puntos de prueba:<br>Si $x=0 \\Rightarrow 6 > 0$ (Positivo).<br>Si $x=2.5 \\Rightarrow (2.5)^2-5(2.5)+6 = 6.25-12.5+6 = -0.25 < 0$ (Negativo).<br>Si $x=4 \\Rightarrow 16-20+6 = 2 > 0$ (Positivo).<br><br>Por tanto, $Dom(f) = (-\\infty, 2) \\cup (3, +\\infty)$.",
+        "pista": "Los logaritmos odian el cero y los números negativos. Forma una inecuación obligando a lo de dentro a ser '> 0' y resuélvela haciendo una tabla de signos.",
+        "formula": "$$\\log_a(P(x)) \\Rightarrow P(x) > 0$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2808,
+        "dificultad": "Alta",
+        "bloque": "Tema 8: Funciones Elementales",
+        "enunciado": "Halla las coordenadas del vértice y los puntos de corte con los ejes de la parábola $f(x)=-x^2+4x-3$. Representa un esquema de la misma.",
+        "resolucion_latex": "Coordenada X del vértice: $x_v = \\frac{-b}{2a} = \\frac{-4}{2(-1)} = 2$.<br>Coordenada Y del vértice: $y_v = f(2) = -(2)^2+4(2)-3 = -4+8-3 = 1$. Vértice: $V(2,1)$.<br><br>Corte con el eje Y (hacemos $x=0$): $f(0) = -3$. Punto: $(0,-3)$.<br>Corte con el eje X (hacemos $f(x)=0$): $-x^2+4x-3 = 0 \\Rightarrow x^2-4x+3=0$.<br>Raíces: $x_1=3$, $x_2=1$. Puntos: $(1,0)$ y $(3,0)$.<br><br>Esquema: Es una parábola con forma de \"U\" invertida (porque $a < 0$), que tiene su máximo en $(2,1)$ y corta el eje horizontal en 1 y 3.",
+        "pista": "La fórmula mágica del vértice de la parábola es -b/2a. Para el eje Y pones la x a cero, y para el eje X pones la y a cero y haces la fórmula de segundo grado.",
+        "formula": "$$x_v = \\frac{-b}{2a}$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2809,
+        "dificultad": "Alta",
+        "bloque": "Tema 8: Funciones Elementales",
+        "enunciado": "Dada la función definida a trozos $f(x) = \\begin{cases} 2x+1 & \\text{si } x \\le 0 \\\\ x^2 & \\text{si } 0 < x < 3 \\\\ 10 & \\text{si } x \\ge 3 \\end{cases}$. Calcula los valores numéricos de $f(-2)$, $f(0)$, $f(2)$ y $f(5)$.",
+        "resolucion_latex": "Para calcular el valor, debemos mirar en qué \"trozo\" encaja el número dado en la condición de la derecha.<br>1) $x = -2$. Cumple $x \\le 0$. Usamos la primera rama: $f(-2) = 2(-2)+1 = -3$.<br>2) $x = 0$. Cumple $x \\le 0$ (por el signo igual). Usamos la primera rama: $f(0) = 2(0)+1 = 1$.<br>3) $x = 2$. Cumple $0 < x < 3$. Usamos la segunda rama: $f(2) = (2)^2 = 4$.<br>4) $x = 5$. Cumple $x \\ge 3$. Usamos la tercera rama: $f(5) = 10$ (función constante).",
+        "pista": "Las funciones a trozos son como puertas con contraseña. Mira el número que te dan, fíjate en las condiciones de la derecha, y entra solo por la puerta que permita pasar a tu número.",
+        "formula": "$$x \\in \\text{Condición} \\Rightarrow \\text{Aplicar fórmula correspondiente}$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2810,
+        "dificultad": "Superior",
+        "bloque": "Tema 8: Funciones Elementales",
+        "enunciado": "Ejercicio Trampa: Se pide calcular el dominio de la función $f(x) = f(f^{-1}(x))$ sabiendo que $f(x)=\\sqrt{x}$. Un alumno afirma: 'Como componer una función con su inversa anula el efecto, $f(f^{-1}(x)) = x$. La función resultante es $y=x$, que es un polinomio, por lo que su dominio es todo $\\mathbb{R}$'. Explica por qué el alumno suspende el ejercicio.",
+        "resolucion_latex": "El alumno falla porque ha ignorado el dominio original de las funciones que componen la operación.<br><br>Si $f(x)=\\sqrt{x}$, su dominio es $[0, +\\infty)$.<br>Su inversa es $f^{-1}(x)=x^2$, pero con el dominio restringido también a $[0, +\\infty)$ para que la inversa sea válida.<br><br>Al evaluar la composición $(f \\circ f^{-1})(x) = \\sqrt{x^2}$, es cierto que algebráicamente se simplifica a $x$ (para números positivos). Sin embargo, la regla de composición exige que la $x$ pertenezca primero al dominio de la función interior, y que el resultado pertenezca al dominio de la exterior.<br>Como la función original $\\sqrt{x}$ solo admite números positivos o cero, la identidad $f(f^{-1}(x))=x$ solo es válida si $x \\ge 0$.<br>El dominio correcto es $[0, +\\infty)$, no todo $\\mathbb{R}$.",
+        "pista": "La magia de que una función se anule con su inversa solo funciona si el número que metes estaba permitido desde el principio. Una raíz nunca puede admitir negativos.",
+        "formula": "$$Dom(f \\circ g) = \\{x \\in Dom(g) \\mid g(x) \\in Dom(f)\\}$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2901,
+        "dificultad": "Básica",
+        "bloque": "Tema 9: Límites y Continuidad",
+        "enunciado": "Calcula el siguiente límite por sustitución directa: $\\lim_{x \\to 2} \\frac{x^2+1}{x-1}$.",
+        "resolucion_latex": "El primer paso siempre es sustituir la $x$ por el valor al que tiende el límite.<br>$\\frac{2^2+1}{2-1} = \\frac{4+1}{1} = \\frac{5}{1} = 5$.<br><br>Como no hay ninguna división por cero ni formas indeterminadas, el límite existe y vale 5.",
+        "pista": "¡No te compliques la vida de primeras! Cambia todas las 'x' por un 2 y calcula con la calculadora. Si te sale un número normal, se acabó el ejercicio.",
+        "formula": "$$\\lim_{x \\to a} f(x) = f(a)$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2902,
+        "dificultad": "Básica",
+        "bloque": "Tema 9: Límites y Continuidad",
+        "enunciado": "Calcula el siguiente límite en el infinito: $\\lim_{x \\to \\infty} \\frac{3x^2-5x+2}{2x^2+x-1}$.",
+        "resolucion_latex": "Al sustituir $x$ por $\\infty$, obtenemos una indeterminación del tipo $\\left[\\frac{\\infty}{\\infty}\\right]$.<br>Para resolverla, comparamos los grados del numerador y del denominador.<br>Grado del numerador: 2 (el término dominante es $3x^2$).<br>Grado del denominador: 2 (el término dominante es $2x^2$).<br>Como los grados son idénticos, el límite en el infinito es el cociente de los coeficientes de mayor grado:<br>$\\lim_{x \\to \\infty} \\frac{3x^2}{2x^2} = \\frac{3}{2}$.",
+        "pista": "En los límites al infinito, los números pequeños no importan. Quédate solo con las 'x' que tengan el exponente más grande arriba y abajo. Si el empate es total, divide sus números.",
+        "formula": "$$\\left[\\frac{\\infty}{\\infty}\\right] \\Rightarrow \\text{Comparar grados}$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2903,
+        "dificultad": "Básica",
+        "bloque": "Tema 9: Límites y Continuidad",
+        "enunciado": "Resuelve la siguiente indeterminación polinómica sencilla: $\\lim_{x \\to 3} \\frac{x^2-9}{x-3}$.",
+        "resolucion_latex": "Sustituimos $x=3$: $\\frac{3^2-9}{3-3} = \\frac{0}{0}$. Es una indeterminación evitable.<br>Factorizamos el numerador, que es una diferencia de cuadrados ($a^2-b^2=(a+b)(a-b)$):<br>$x^2-9 = (x+3)(x-3)$.<br>Reescribimos el límite: $\\lim_{x \\to 3} \\frac{(x+3)(x-3)}{x-3}$.<br>Simplificamos tachando el factor conflictivo: $\\lim_{x \\to 3} (x+3)$.<br>Sustituimos de nuevo: $3+3 = 6$.",
+        "pista": "0/0 significa que hay un factor escondido repitiéndose. Desmonta el numerador usando identidades notables para encontrarlo y tacha el de arriba con el de abajo.",
+        "formula": "$$\\left[\\frac{0}{0}\\right] \\Rightarrow \\text{Factorizar}$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2904,
+        "dificultad": "Media",
+        "bloque": "Tema 9: Límites y Continuidad",
+        "enunciado": "Resuelve el límite $\\lim_{x \\to 1} \\frac{x^2-3x+2}{x^2-1}$.",
+        "resolucion_latex": "Sustitución directa: $\\frac{1-3+2}{1-1} = \\frac{0}{0}$ (Indeterminación).<br>Factorizamos ambos polinomios.<br>Numerador ($x^2-3x+2=0$): Raíces $x=1, x=2 \\Rightarrow (x-1)(x-2)$.<br>Denominador ($x^2-1$): Identidad notable $\\Rightarrow (x-1)(x+1)$.<br>Límite: $\\lim_{x \\to 1} \\frac{(x-1)(x-2)}{(x-1)(x+1)}$.<br>Tachamos $(x-1)$ y volvemos a sustituir $x=1$:<br>$\\lim_{x \\to 1} \\frac{x-2}{x+1} = \\frac{1-2}{1+1} = -\\frac{1}{2}$.",
+        "pista": "Aplica la fórmula de segundo grado para factorizar el de arriba. Factoriza el de abajo. Tacha la caja que se repite y vuelve a sustituir la x.",
+        "formula": "$$ax^2+bx+c = a(x-x_1)(x-x_2)$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2905,
+        "dificultad": "Media",
+        "bloque": "Tema 9: Límites y Continuidad",
+        "enunciado": "Calcula los límites laterales de la función $f(x) = \\begin{cases} x+2 & \\text{si } x \\le 1 \\\\ 4-x & \\text{si } x > 1 \\end{cases}$ en el punto $x=1$ y di si el límite global existe.",
+        "resolucion_latex": "Para la rama de la izquierda ($x < 1$), el límite es: $\\lim_{x \\to 1^-} (x+2) = 1+2 = 3$.<br>Para la rama de la derecha ($x > 1$), el límite es: $\\lim_{x \\to 1^+} (4-x) = 4-1 = 3$.<br><br>Como los límites laterales coinciden (ambos valen 3), podemos afirmar que el límite global existe y su valor es: $\\lim_{x \\to 1} f(x) = 3$.",
+        "pista": "Acércate al 1 por el camino de los números menores que 1 (fórmula de arriba) y por el camino de los mayores (fórmula de abajo). Si te sale el mismo resultado, el límite existe.",
+        "formula": "$$\\text{Existe límite } \\iff L_I = L_D$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2906,
+        "dificultad": "Media",
+        "bloque": "Tema 9: Límites y Continuidad",
+        "enunciado": "Calcula $\\lim_{x \\to \\infty} \\frac{x^3+1}{5x^2-2}$.",
+        "resolucion_latex": "Al sustituir da $\\left[\\frac{\\infty}{\\infty}\\right]$.<br>Comparamos los grados.<br>Grado del numerador = 3.<br>Grado del denominador = 2.<br>Como el grado del numerador es estrictamente mayor que el grado del denominador, el límite es infinito.<br>Revisamos signos: $(+\\infty)^3 / (+5(\\infty)^2)$ da positivo, por tanto, el límite es $+\\infty$.",
+        "pista": "Regla de los grados: si el numerador le gana en grado al denominador en el infinito, la función se descontrola y se va a infinito.",
+        "formula": "$$\\text{Grado N } > \\text{ Grado D} \\Rightarrow \\pm \\infty$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2907,
+        "dificultad": "Alta",
+        "bloque": "Tema 9: Límites y Continuidad",
+        "enunciado": "Calcula el siguiente límite que presenta raíces: $\\lim_{x \\to 4} \\frac{\\sqrt{x}-2}{x-4}$.",
+        "resolucion_latex": "Al sustituir $x=4$: $\\frac{\\sqrt{4}-2}{4-4} = \\frac{2-2}{0} = \\left[\\frac{0}{0}\\right]$.<br>Para quitar la raíz, multiplicamos numerador y denominador por el conjugado del numerador: $(\\sqrt{x}+2)$.<br>$\\lim_{x \\to 4} \\frac{(\\sqrt{x}-2)(\\sqrt{x}+2)}{(x-4)(\\sqrt{x}+2)}$<br>El numerador es una diferencia de cuadrados: $(\\sqrt{x})^2 - 2^2 = x - 4$.<br>$\\lim_{x \\to 4} \\frac{x-4}{(x-4)(\\sqrt{x}+2)}$<br>Tachamos el factor $(x-4)$: $\\lim_{x \\to 4} \\frac{1}{\\sqrt{x}+2}$.<br>Sustituimos: $\\frac{1}{\\sqrt{4}+2} = \\frac{1}{2+2} = \\frac{1}{4}$.",
+        "pista": "0/0 con raíces = multiplicar arriba y abajo por el 'conjugado' (lo mismo pero cambiando el signo del medio). Arriba te quedará una identidad notable mágica.",
+        "formula": "$$(A-B)(A+B) = A^2-B^2$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2908,
+        "dificultad": "Alta",
+        "bloque": "Tema 9: Límites y Continuidad",
+        "enunciado": "Halla las asíntotas horizontales y verticales de la función $f(x) = \\frac{2x}{x-1}$.",
+        "resolucion_latex": "1. Asíntota Vertical (Anula el denominador):<br>$x-1 = 0 \\Rightarrow x=1$.<br>Comprobamos con límite: $\\lim_{x \\to 1} \\frac{2x}{x-1} = \\frac{2}{0} = \\infty$. Hay una AV en $x=1$.<br><br>2. Asíntota Horizontal (Límite en el infinito):<br>$\\lim_{x \\to \\infty} \\frac{2x}{x-1} = \\left[\\frac{\\infty}{\\infty}\\right]$.<br>Ambos polinomios tienen grado 1. Dividimos coeficientes: $2/1 = 2$.<br>Hay una AH en $y=2$.",
+        "pista": "Asíntota Vertical = Número prohibido del denominador. Asíntota Horizontal = Límite al infinito de la función.",
+        "formula": "$$AV: \\lim_{x \\to c} f(x) = \\infty \\quad ; \\quad AH: \\lim_{x \\to \\infty} f(x) = L$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2909,
+        "dificultad": "Alta",
+        "bloque": "Tema 9: Límites y Continuidad",
+        "enunciado": "Encuentra el valor del parámetro $k$ para que la función $f(x) = \\begin{cases} x^2 - 1 & \\text{si } x \\le 2 \\\\ kx + 5 & \\text{si } x > 2 \\end{cases}$ sea continua en todo $\\mathbb{R}$.",
+        "resolucion_latex": "Los polinomios son continuos en sus tramos. El único punto crítico es el 'empalme' en $x=2$.<br>Para que sea continua allí, deben coincidir:<br>1) Límite por la izquierda: $\\lim_{x \\to 2^-} (x^2-1) = 2^2-1 = 3$.<br>2) Límite por la derecha: $\\lim_{x \\to 2^+} (kx+5) = 2k+5$.<br><br>Igualamos ambos límites para garantizar la continuidad:<br>$3 = 2k+5 \\Rightarrow -2 = 2k \\Rightarrow k = -1$.<br>Si $k=-1$, la función es continua.",
+        "pista": "Calcula el límite normal en el trozo de arriba. Luego sustituye la 'x' por el número en el trozo de abajo. Iguala ambos resultados matemáticamente para despejar tu incógnita 'k'.",
+        "formula": "$$\\lim_{x \\to a^-} f(x) = \\lim_{x \\to a^+} f(x)$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 2910,
+        "dificultad": "Superior",
+        "bloque": "Tema 9: Límites y Continuidad",
+        "enunciado": "Ejercicio Trampa: Un alumno se enfrenta al límite $\\lim_{x \\to 0} \\frac{1}{x}$. Sustituye el 0, obtiene $\\frac{1}{0}$ y escribe directamente que el límite es $+\\infty$. Explica el gravísimo error que ha cometido y demuestra por qué en realidad ese límite no existe.",
+        "resolucion_latex": "El error del alumno es dar por hecho que cualquier división por cero tiende a un único valor infinito positivo, olvidándose de estudiar los límites laterales obligatorios en puntos de discontinuidad.<br><br>Analizamos los límites laterales:<br>Límite por la izquierda ($x \\to 0^-$): Tomamos un valor muy pequeño y negativo (ej. -0.001). $1 / (-0.001) = -1000$. El límite tiende a $-\\infty$.<br>Límite por la derecha ($x \\to 0^+$): Tomamos un valor muy pequeño y positivo (ej. +0.001). $1 / (+0.001) = +1000$. El límite tiende a $+\\infty$.<br><br>Como $\\lim_{x \\to 0^-} f(x) \\neq \\lim_{x \\to 0^+} f(x)$, el límite global **no existe** en absoluto. La gráfica de $1/x$ se parte diametralmente en el origen.",
+        "pista": "Cualquier número entre cero da infinito, sí, pero... ¿infinito positivo o negativo? Acércate al cero por el lado de los números negativos y verás qué sorpresa.",
+        "formula": "$$L_I \\neq L_D \\Rightarrow \\nexists \\lim$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 21001,
+        "dificultad": "Básica",
+        "bloque": "Tema 10: Introducción a las Derivadas",
+        "enunciado": "Calcula, aplicando la definición de derivada mediante el límite ($f'(x) = \\lim_{h \\to 0} \\frac{f(x+h)-f(x)}{h}$), la derivada de la función $f(x)=x^2+3x$.",
+        "resolucion_latex": "Aplicamos la definición:<br>$f'(x) = \\lim_{h \\to 0} \\frac{[(x+h)^2 + 3(x+h)] - [x^2 + 3x]}{h}$<br>Desarrollamos el binomio y multiplicamos:<br>$\\lim_{h \\to 0} \\frac{x^2+2xh+h^2+3x+3h-x^2-3x}{h}$<br>Se cancelan los términos que no tienen $h$ ($x^2$ y $3x$):<br>$\\lim_{h \\to 0} \\frac{2xh+h^2+3h}{h}$<br>Sacamos factor común la $h$ en el numerador:<br>$\\lim_{h \\to 0} \\frac{h(2x+h+3)}{h} = \\lim_{h \\to 0} (2x+h+3)$<br>Sustituimos $h$ por $0$:<br>$f'(x) = 2x + 0 + 3 = 2x+3$.",
+        "pista": "Sustituye la 'x' por '(x+h)' en tu función para montar la primera parte de la fracción. Luego réstale la función normal. Desarrolla, tacha todo lo que no lleve 'h' y saca factor común para eliminar el denominador.",
+        "formula": "$$f'(x) = \\lim_{h \\to 0} \\frac{f(x+h)-f(x)}{h}$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 21002,
+        "dificultad": "Básica",
+        "bloque": "Tema 10: Introducción a las Derivadas",
+        "enunciado": "Calcula las derivadas de las siguientes funciones polinómicas y con radicales: a) $f(x)=4x^5-2x^3+7x-1$ b) $g(x)=3\\sqrt{x}+\\frac{2}{x}$",
+        "resolucion_latex": "a) Para polinomios, el exponente baja multiplicando y restamos uno al exponente:<br>$f'(x) = 20x^4 - 6x^2 + 7$.<br><br>b) Reescribimos la función con exponentes fraccionarios y negativos para facilitar la derivada:<br>$g(x) = 3x^{1/2} + 2x^{-1}$.<br>Derivamos aplicando la misma regla:<br>$g'(x) = 3\\left(\\frac{1}{2}\\right)x^{-1/2} + 2(-1)x^{-2} = \\frac{3}{2}x^{-1/2} - 2x^{-2}$.<br>Volvemos a notación normal:<br>$g'(x) = \\frac{3}{2\\sqrt{x}} - \\frac{2}{x^2}$.",
+        "pista": "Para las raíces y fracciones, pásalas a exponente arriba antes de derivar. La raíz cuadrada es elevar a 1/2, y dividir por 'x' es elevar a -1.",
+        "formula": "$$(x^n)' = n x^{n-1}$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 21003,
+        "dificultad": "Básica",
+        "bloque": "Tema 10: Introducción a las Derivadas",
+        "enunciado": "Aplica la regla de la cadena para derivar la siguiente función compuesta: $h(x)=(3x^2-5)^4$",
+        "resolucion_latex": "Aplicamos la regla de la cadena. Primero derivamos la potencia (el \"contenedor\" exterior) y luego lo multiplicamos por la derivada del polinomio interior.<br><br>$h'(x) = 4(3x^2-5)^3 \\cdot \\frac{d}{dx}(3x^2-5)$<br><br>Calculamos la derivada del interior: $(3x^2-5)' = 6x$.<br><br>Sustituimos y ordenamos multiplicando los coeficientes:<br>$h'(x) = 4(3x^2-5)^3 \\cdot (6x) = 24x(3x^2-5)^3$.",
+        "pista": "Deriva primero de fuera hacia adentro. Baja el 4, réstale 1, pero no toques lo de dentro del paréntesis. Al final, añade una multiplicación por la derivada de lo de dentro.",
+        "formula": "$$[f(g(x))]' = f'(g(x)) \\cdot g'(x)$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 21004,
+        "dificultad": "Media",
+        "bloque": "Tema 10: Introducción a las Derivadas",
+        "enunciado": "Aplica las reglas de derivación de operaciones para: a) $f(x)=x^3 \\cdot e^x$ b) $g(x)=\\frac{2x+1}{x^2-3}$",
+        "resolucion_latex": "a) Regla del producto: $(u \\cdot v)' = u'v + uv'$.<br>$u=x^3 \\Rightarrow u'=3x^2$<br>$v=e^x \\Rightarrow v'=e^x$<br>$f'(x) = (3x^2)(e^x) + (x^3)(e^x) = e^x(3x^2 + x^3)$.<br><br>b) Regla del cociente: $\\left(\\frac{u}{v}\\right)' = \\frac{u'v - uv'}{v^2}$.<br>$u=2x+1 \\Rightarrow u'=2$<br>$v=x^2-3 \\Rightarrow v'=2x$<br>$g'(x) = \\frac{2(x^2-3) - (2x+1)(2x)}{(x^2-3)^2}$<br>Operamos el numerador: $2x^2-6 - 4x^2 - 2x = -2x^2 - 2x - 6$.<br>$g'(x) = \\frac{-2x^2 - 2x - 6}{(x^2-3)^2}$.",
+        "pista": "En el producto es 'el primero derivado por el segundo sin derivar, MÁS el primero sin derivar por el segundo derivado'. En el cociente es igual pero con un MENOS y dividido todo entre el de abajo al cuadrado.",
+        "formula": "$$(u\\cdot v)' = u'v + uv' \\quad ; \\quad \\left(\\frac{u}{v}\\right)' = \\frac{u'v - uv'}{v^2}$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 21005,
+        "dificultad": "Media",
+        "bloque": "Tema 10: Introducción a las Derivadas",
+        "enunciado": "Halla la ecuación de la recta tangente a la curva $f(x)=x^2-4x+5$ en el punto de abscisa $x=3$.",
+        "resolucion_latex": "Para hallar la recta tangente $y-y_0=m(x-x_0)$, necesitamos el punto completo $(x_0, y_0)$ y la pendiente $m$.<br><br>1. Calculamos la coordenada y del punto ($y_0$):<br>$f(3) = 3^2 - 4(3) + 5 = 9 - 12 + 5 = 2$. El punto es $P(3, 2)$.<br><br>2. Calculamos la pendiente ($m$), que es el valor de la derivada en $x=3$:<br>$f'(x) = 2x - 4$<br>$m = f'(3) = 2(3) - 4 = 6 - 4 = 2$.<br><br>3. Montamos la ecuación de la recta punto-pendiente:<br>$y - 2 = 2(x - 3) \\Rightarrow y = 2x - 6 + 2 \\Rightarrow y = 2x - 4$.",
+        "pista": "La derivada de una función es, ni más ni menos, que la pendiente de su recta tangente. Sustituye la 'x' en la función original para sacar la altura del punto, y en la derivada para sacar la inclinación.",
+        "formula": "$$y - f(x_0) = f'(x_0)(x - x_0)$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 21006,
+        "dificultad": "Media",
+        "bloque": "Tema 10: Introducción a las Derivadas",
+        "enunciado": "Estudia la monotonía (crecimiento y decrecimiento) de la función $f(x)=\\frac{1}{3}x^3-x^2-3x+4$ determinando sus máximos y mínimos relativos.",
+        "resolucion_latex": "1. Calculamos la primera derivada:<br>$f'(x) = x^2 - 2x - 3$.<br><br>2. Igualamos a cero para buscar los puntos críticos:<br>$x^2 - 2x - 3 = 0 \\Rightarrow x = \\frac{2 \\pm \\sqrt{4 - 4(1)(-3)}}{2} = \\frac{2 \\pm 4}{2}$.<br>Soluciones: $x_1 = 3$ y $x_2 = -1$.<br><br>3. Estudiamos el signo de $f'(x)$ en los intervalos generados:<br>Intervalo $(-\\infty, -1)$: probamos $x=-2 \\Rightarrow f'(-2) = 4+4-3 = 5 > 0$ (Crece).<br>Intervalo $(-1, 3)$: probamos $x=0 \\Rightarrow f'(0) = -3 < 0$ (Decrece).<br>Intervalo $(3, +\\infty)$: probamos $x=4 \\Rightarrow f'(4) = 16-8-3 = 5 > 0$ (Crece).<br><br>Conclusión: Crece en $(-\\infty, -1) \\cup (3, +\\infty)$ y decrece en $(-1, 3)$.<br>Hay un Máximo relativo en $x=-1$ y un Mínimo relativo en $x=3$.",
+        "pista": "Cuando la montaña sube, su derivada es positiva. Cuando baja, es negativa. En la cima y en el valle (máximos y mínimos), la pendiente es exactamente plana (derivada = 0).",
+        "formula": "$$f'(x) > 0 \\Rightarrow \\text{Crece} \\quad ; \\quad f'(x) = 0 \\Rightarrow \\text{Punto Crítico}$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 21007,
+        "dificultad": "Alta",
+        "bloque": "Tema 10: Introducción a las Derivadas",
+        "enunciado": "Deriva y simplifica al máximo la siguiente función logarítmica: $f(x)=\\ln\\left(\\sqrt{\\frac{x+1}{x-1}}\\right)$",
+        "resolucion_latex": "Truco: Antes de derivar, aplicamos las propiedades de los logaritmos para simplificar drásticamente la función.<br>La raíz es un exponente $1/2$ que pasa multiplicando fuera del logaritmo:<br>$f(x) = \\ln\\left(\\left(\\frac{x+1}{x-1}\\right)^{1/2}\\right) = \\frac{1}{2} \\ln\\left(\\frac{x+1}{x-1}\\right)$.<br>El logaritmo de un cociente es la resta de logaritmos:<br>$f(x) = \\frac{1}{2} [\\ln(x+1) - \\ln(x-1)]$.<br><br>Ahora derivamos (es mucho más sencillo):<br>$f'(x) = \\frac{1}{2} \\left( \\frac{1}{x+1} - \\frac{1}{x-1} \\right)$.<br><br>Hacemos denominador común en el paréntesis:<br>$f'(x) = \\frac{1}{2} \\left( \\frac{(x-1) - (x+1)}{(x+1)(x-1)} \\right) = \\frac{1}{2} \\left( \\frac{x-1-x-1}{x^2-1} \\right) = \\frac{1}{2} \\left( \\frac{-2}{x^2-1} \\right)$.<br>Simplificamos el 2:<br>$f'(x) = \\frac{-1}{x^2-1}$.",
+        "pista": "Si intentas derivar esto a lo bestia te va a quedar una fracción triple infernal. Despeina el logaritmo usando sus propiedades antes de ponerte a derivar. ¡Baja la raíz!",
+        "formula": "$$\\ln(A^n) = n\\ln A \\quad ; \\quad \\ln(A/B) = \\ln A - \\ln B \\quad ; \\quad [\\ln x]' = 1/x$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 21008,
+        "dificultad": "Alta",
+        "bloque": "Tema 10: Introducción a las Derivadas",
+        "enunciado": "Determina los puntos de la curva $f(x)=x^3-3x^2+2x$ en los que la recta tangente sea paralela a la recta de ecuación $y=2x+5$.",
+        "resolucion_latex": "Si dos rectas son paralelas, tienen la misma pendiente.<br>La pendiente de la recta dada $y=2x+5$ es $m=2$.<br>La pendiente de las rectas tangentes a la curva es su derivada $f'(x)$.<br><br>Por tanto, obligamos a la derivada a valer 2:<br>$f'(x) = 3x^2 - 6x + 2$<br>$3x^2 - 6x + 2 = 2 \\Rightarrow 3x^2 - 6x = 0$.<br><br>Sacamos factor común:<br>$3x(x - 2) = 0$.<br>Soluciones: $x_1 = 0$ y $x_2 = 2$.<br><br>Buscamos las coordenadas completas de los puntos en la curva original:<br>Si $x=0 \\Rightarrow y=f(0)=0$. Punto $(0,0)$.<br>Si $x=2 \\Rightarrow y=f(2)=2^3-3(2^2)+2(2) = 8-12+4 = 0$. Punto $(2,0)$.",
+        "pista": "Dos cosas son paralelas cuando su inclinación (pendiente) es exactamente la misma. Iguala tu derivada al número que acompaña a la 'x' en la recta y resuelve la ecuación.",
+        "formula": "$$r \\parallel s \\iff m_r = m_s \\iff f'(x) = m$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 21009,
+        "dificultad": "Alta",
+        "bloque": "Tema 10: Introducción a las Derivadas",
+        "enunciado": "Problema de Optimización: Se quiere construir un corral rectangular para animales aprovechando el muro de una casa ya existente (no necesita valla en ese lado). Si disponemos de 40 metros de valla para cerrar los otros tres lados, calcula qué dimensiones debe tener el corral para que el área encerrada sea máxima.",
+        "resolucion_latex": "Llamamos $x$ a la profundidad del corral (dos lados) e $y$ a la anchura paralela al muro (un lado).<br>Condición de la valla: $2x + y = 40 \\Rightarrow y = 40 - 2x$.<br><br>La función que queremos maximizar es el Área: $A = x \\cdot y$.<br>Sustituimos $y$ para que quede en función de una sola variable:<br>$A(x) = x(40 - 2x) = 40x - 2x^2$.<br><br>Para hallar el máximo, derivamos e igualamos a cero:<br>$A'(x) = 40 - 4x$<br>$40 - 4x = 0 \\Rightarrow 4x = 40 \\Rightarrow x = 10$ metros.<br><br>Calculamos el otro lado:<br>$y = 40 - 2(10) = 40 - 20 = 20$ metros.<br>Las dimensiones óptimas son 10m de profundidad y 20m de ancho. (Área máx = 200 $m^2$).",
+        "pista": "Monta dos fórmulas: una para el perímetro (los 40 metros que tienes) y otra para el Área. Usa el perímetro para despejar una letra, métela en el Área, y deriva eso igualando a cero.",
+        "formula": "$$\\text{Maximizar } f(x) \\Rightarrow f'(x) = 0$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 21010,
+        "dificultad": "Superior",
+        "bloque": "Tema 10: Introducción a las Derivadas",
+        "enunciado": "Ejercicio Trampa: En un examen se pide calcular la derivada de $f(x)=e^3+\\ln(5)$. Un alumno aplica las reglas de derivación de exponenciales y logaritmos y escribe como solución: $f'(x)=3e^2+\\frac{1}{5}$. El profesor le puntúa con un 0. Identifica el error de bulto que ha cometido el alumno y da el resultado correcto.",
+        "resolucion_latex": "El alumno ha memorizado reglas sin entender qué está derivando. Ha tratado las constantes como si tuvieran una variable $x$.<br><br>Las expresiones $e^3$ y $\\ln(5)$ NO son funciones que dependan de $x$; son simples números reales (constantes fijas). Como no cambian ni varían, su tasa de variación (su derivada) es nula.<br><br>La regla básica de las derivadas establece que la derivada de cualquier constante es cero.<br>Por lo tanto, la resolución correcta y única es:<br>$f'(x) = 0 + 0 = 0$.",
+        "pista": "Míralo bien. ¿Ves alguna letra 'x' escondida por ahí? Si no hay ninguna variable, estás derivando un bloque de hormigón que no se mueve. ¿Cuál es su pendiente?",
+        "formula": "$$C' = 0 \\text{ (donde C es una constante)}$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 21101,
+        "dificultad": "Básica",
+        "bloque": "Tema 11: Estadística Bidimensional",
+        "enunciado": "Dada la siguiente distribución bidimensional con 5 pares de datos $(x_i, y_i)$: (2,5), (3,7), (4,6), (5,8), (6,9). Calcula las medias marginales $\\bar{x}$ e $\\bar{y}$.",
+        "resolucion_latex": "La media es la suma de los valores dividida entre el número total de datos ($N=5$).<br><br>Media de X ($\\bar{x}$):<br>$\\sum x_i = 2+3+4+5+6 = 20$<br>$\\bar{x} = \\frac{20}{5} = 4$.<br><br>Media de Y ($\\bar{y}$):<br>$\\sum y_i = 5+7+6+8+9 = 35$<br>$\\bar{y} = \\frac{35}{5} = 7$.",
+        "pista": "Trabaja con cada columna por separado. Suma todos los datos de X y divídelos por 5. Haz exactamente lo mismo con los datos de Y.",
+        "formula": "$$\\bar{x} = \\frac{\\sum x_i}{N} \\quad ; \\quad \\bar{y} = \\frac{\\sum y_i}{N}$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 21102,
+        "dificultad": "Básica",
+        "bloque": "Tema 11: Estadística Bidimensional",
+        "enunciado": "Utilizando los datos del ejercicio anterior y sabiendo que sus medias son $\\bar{x}=4$ e $\\bar{y}=7$, calcula las varianzas marginales $\\sigma_x^2$ y $\\sigma_y^2$.",
+        "resolucion_latex": "La varianza es la media de los cuadrados menos el cuadrado de la media.<br><br>Varianza de X ($\\sigma_x^2$):<br>$\\sum x_i^2 = 2^2+3^2+4^2+5^2+6^2 = 4+9+16+25+36 = 90$<br>$\\sigma_x^2 = \\frac{90}{5} - 4^2 = 18 - 16 = 2$.<br><br>Varianza de Y ($\\sigma_y^2$):<br>$\\sum y_i^2 = 5^2+7^2+6^2+8^2+9^2 = 25+49+36+64+81 = 255$<br>$\\sigma_y^2 = \\frac{255}{5} - 7^2 = 51 - 49 = 2$.",
+        "pista": "Crea dos columnas nuevas elevando todos los números al cuadrado. Suma esas columnas, divídelas entre 5 y acuérdate de restarle la media original elevada al cuadrado.",
+        "formula": "$$\\sigma^2 = \\frac{\\sum x_i^2}{N} - \\bar{x}^2$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 21103,
+        "dificultad": "Básica",
+        "bloque": "Tema 11: Estadística Bidimensional",
+        "enunciado": "Siguiendo con la distribución (2,5), (3,7), (4,6), (5,8), (6,9) y sabiendo sus medias $\\bar{x}=4$ e $\\bar{y}=7$, calcula la covarianza $\\sigma_{xy}$.",
+        "resolucion_latex": "La covarianza se halla sumando el producto de cada par, dividiendo entre N y restando el producto de las medias.<br><br>1) Suma de productos ($x_i \\cdot y_i$):<br>$\\sum x_i y_i = (2\\cdot 5) + (3\\cdot 7) + (4\\cdot 6) + (5\\cdot 8) + (6\\cdot 9)$<br>$\\sum x_i y_i = 10 + 21 + 24 + 40 + 54 = 149$<br><br>2) Aplicamos la fórmula:<br>$\\sigma_{xy} = \\frac{149}{5} - (\\bar{x} \\cdot \\bar{y}) = 29,8 - (4 \\cdot 7) = 29,8 - 28 = 1,8$.",
+        "pista": "Haz una columna final multiplicando el valor de 'X' con su pareja de 'Y'. Súmalos, divide entre 5 y réstale la multiplicación de las dos medias.",
+        "formula": "$$\\sigma_{xy} = \\frac{\\sum x_i y_i}{N} - \\bar{x}\\bar{y}$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 21104,
+        "dificultad": "Media",
+        "bloque": "Tema 11: Estadística Bidimensional",
+        "enunciado": "A partir de los resultados anteriores (varianzas $\\sigma_x^2=2$, $\\sigma_y^2=2$ y covarianza $\\sigma_{xy}=1,8$), halla el coeficiente de correlación lineal de Pearson ($r$) e interpreta si la correlación es fuerte, débil, directa o inversa.",
+        "resolucion_latex": "El coeficiente de Pearson es $r = \\frac{\\sigma_{xy}}{\\sigma_x \\sigma_y}$.<br><br>Primero hallamos las desviaciones típicas (raíz cuadrada de las varianzas):<br>$\\sigma_x = \\sqrt{2} \\approx 1,41$<br>$\\sigma_y = \\sqrt{2} \\approx 1,41$<br><br>Calculamos el coeficiente:<br>$r = \\frac{1,8}{\\sqrt{2} \\cdot \\sqrt{2}} = \\frac{1,8}{2} = 0,9$.<br><br>Interpretación: Como $r = 0,9 > 0$, la correlación es **directa** (si aumenta X, aumenta Y). Al ser un valor muy próximo a 1, la correlación lineal es **muy fuerte**.",
+        "pista": "El coeficiente 'r' es dividir la covarianza entre la multiplicación de las desviaciones típicas. Ojo: tú tienes las varianzas. ¡Tienes que hacerles la raíz cuadrada primero!",
+        "formula": "$$r = \\frac{\\sigma_{xy}}{\\sigma_x \\cdot \\sigma_y}$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 21105,
+        "dificultad": "Media",
+        "bloque": "Tema 11: Estadística Bidimensional",
+        "enunciado": "Conociendo los parámetros del problema anterior ($\\bar{x}=4$, $\\bar{y}=7$, $\\sigma_x^2=2$, $\\sigma_{xy}=1,8$), halla la ecuación explícita de la recta de regresión de Y sobre X.",
+        "resolucion_latex": "La ecuación de la recta de regresión de Y sobre X pasa por el centro de gravedad $(\\bar{x}, \\bar{y})$ y tiene como pendiente $m = \\frac{\\sigma_{xy}}{\\sigma_x^2}$.<br><br>1) Calculamos la pendiente:<br>$m = \\frac{1,8}{2} = 0,9$<br><br>2) Montamos la ecuación punto-pendiente:<br>$y - \\bar{y} = m(x - \\bar{x})$<br>$y - 7 = 0,9(x - 4)$<br><br>3) Pasamos a forma explícita ($y = mx + n$):<br>$y = 0,9x - 3,6 + 7 \\Rightarrow y = 0,9x + 3,4$.",
+        "pista": "La recta de regresión es una recta punto-pendiente. Su punto es el centro de masas (las dos medias) y su pendiente es dividir la covarianza entre la varianza de la letra que no quieres despejar.",
+        "formula": "$$y - \\bar{y} = \\frac{\\sigma_{xy}}{\\sigma_x^2} (x - \\bar{x})$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 21106,
+        "dificultad": "Media",
+        "bloque": "Tema 11: Estadística Bidimensional",
+        "enunciado": "Sabiendo que el centro de gravedad de una distribución es $(3, 10)$ y que el coeficiente de regresión (pendiente) es $1,5$, escribe la ecuación de la recta de regresión y estima el valor de $Y$ cuando $X=5$.",
+        "resolucion_latex": "Partimos directamente de la forma punto-pendiente con $(\\bar{x},\\bar{y})=(3,10)$ y $m=1,5$:<br>$y - 10 = 1,5(x - 3)$<br>$y = 1,5x - 4,5 + 10 \\Rightarrow y = 1,5x + 5,5$.<br><br>Estimamos para $x=5$ sustituyendo en la ecuación:<br>$y = 1,5(5) + 5,5 = 7,5 + 5,5 = 13$.<br>La estimación para $Y$ es 13.",
+        "pista": "Te han dado el ejercicio masticado. Usa la ecuación punto-pendiente de toda la vida y, una vez que la tengas bonita, cambia la 'x' por un 5.",
+        "formula": "$$y = mx + n$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 21107,
+        "dificultad": "Alta",
+        "bloque": "Tema 11: Estadística Bidimensional",
+        "enunciado": "Utiliza la recta de regresión del Ejercicio 5 ($y = 0,9x + 3,4$) para predecir el valor de $Y$ si $X=4,5$. Sabiendo que $r=0,9$, justifica si esta predicción se puede considerar fiable o no.",
+        "resolucion_latex": "Predicción sustituyendo $X=4,5$ en la recta:<br>$y = 0,9(4,5) + 3,4 = 4,05 + 3,4 = 7,45$.<br><br>Justificación de la fiabilidad:<br>Para medir la fiabilidad, usamos el coeficiente de determinación $R^2 = r^2$.<br>$R^2 = (0,9)^2 = 0,81$ (un 81%).<br>Como el $R^2$ es muy cercano a 1 (mayor al 75%), la bondad del ajuste de la recta es alta.<br>Además, el valor a predecir ($X=4,5$) está dentro del rango de los datos iniciales ($X \\in [2, 6]$), por lo que se trata de una **interpolación**.<br>Conclusión: Al tener una correlación fuerte y ser una interpolación, la predicción es altamente **fiable**.",
+        "pista": "La fiabilidad de adivinar el futuro en estadística depende de dos cosas: que tu recta cuadre muy bien con los datos (coeficiente de determinación r cuadrado) y que no intentes adivinar un número que esté lejísimo de tus datos reales.",
+        "formula": "$$R^2 = r^2 \\quad \\text{(Coeficiente de determinación)}$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 21108,
+        "dificultad": "Alta",
+        "bloque": "Tema 11: Estadística Bidimensional",
+        "enunciado": "En un estudio, la varianza de X es 4, la varianza de Y es 9 y el coeficiente de correlación de Pearson es $r = -0,8$. Calcula el valor de la covarianza $\\sigma_{xy}$.",
+        "resolucion_latex": "Partimos de la fórmula del coeficiente de correlación: $r = \\frac{\\sigma_{xy}}{\\sigma_x \\sigma_y}$.<br><br>Despejamos la covarianza:<br>$\\sigma_{xy} = r \\cdot \\sigma_x \\cdot \\sigma_y$<br><br>Cuidado, nos han dado las varianzas cuadradas. Debemos hallar las desviaciones típicas:<br>$\\sigma_x = \\sqrt{4} = 2$<br>$\\sigma_y = \\sqrt{9} = 3$<br><br>Sustituimos en la ecuación despejada:<br>$\\sigma_{xy} = (-0,8) \\cdot (2) \\cdot (3) = -0,8 \\cdot 6 = -4,8$.",
+        "pista": "Escribe la fórmula del coeficiente de Pearson y despeja el numerador pasándolo todo multiplicando. No caigas en la trampa: te han dado las varianzas, hazles la raíz cuadrada primero.",
+        "formula": "$$\\sigma_{xy} = r \\cdot \\sigma_x \\cdot \\sigma_y$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 21109,
+        "dificultad": "Alta",
+        "bloque": "Tema 11: Estadística Bidimensional",
+        "enunciado": "Se han calculado las dos rectas de regresión de un estudio bidimensional: $y = 2x + 4$ (Y sobre X) y $x = 0,4y - 1$ (X sobre Y). A partir de ellas, averigua las coordenadas del centro de gravedad de la distribución $(\\bar{x}, \\bar{y})$.",
+        "resolucion_latex": "El centro de gravedad $(\\bar{x}, \\bar{y})$ es el único punto del plano por el que pasan invariablemente ambas rectas de regresión. Por tanto, es el punto de intersección entre ellas.<br><br>Resolvemos el sistema de ecuaciones formadas por las dos rectas. Sustituimos $y$ de la primera en la segunda:<br>$x = 0,4(2x + 4) - 1$<br>$x = 0,8x + 1,6 - 1$<br>$x - 0,8x = 0,6 \\Rightarrow 0,2x = 0,6$<br>$x = \\frac{0,6}{0,2} = 3$.<br><br>Calculamos $\\bar{y}$ sustituyendo en la primera ecuación:<br>$y = 2(3) + 4 = 6 + 4 = 10$.<br><br>El centro de gravedad es $(\\bar{x}, \\bar{y}) = (3, 10)$.",
+        "pista": "Un secreto matemático: Las dos rectas de regresión se cruzan formando una 'X' exactamente en el centro de gravedad de los datos. Resuelve el sistema entre ambas rectas.",
+        "formula": "$$M = (\\bar{x}, \\bar{y}) = \\text{Intersección de las dos rectas}$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 21110,
+        "dificultad": "Superior",
+        "bloque": "Tema 11: Estadística Bidimensional",
+        "enunciado": "Ejercicio Trampa: En un estudio real de una ciudad costera, se tabuló la venta mensual de helados (X) y el número mensual de ahogamientos en la playa (Y). El coeficiente de Pearson dio $r = 0,95$. Un titular de prensa afirmó: '¡Confirmado estadísticamente! Comer helado es un factor de riesgo mortal que causa ahogamientos'. Identifica la falacia y explica cuál es la verdadera relación matemática entre estas variables.",
+        "resolucion_latex": "El titular comete el mayor error de la estadística: asumir que **correlación implica causalidad**.<br><br>Que dos variables matemáticas crezcan a la vez ($r$ cercano a 1) solo significa que están sincronizadas, no que una sea la causa física de la otra. <br>En este caso, la correlación altísima se debe a una **variable oculta o variable de confusión**: la temperatura exterior (el verano).<br><br>Durante el verano hace mucho calor. Esto causa que simultáneamente mucha más gente compre helados y mucha más gente vaya a bañarse al mar, lo que aumenta la probabilidad estadística de que haya más accidentes en el agua.<br>Ambas variables dependen de una tercera, pero no tienen ninguna relación causal entre sí.",
+        "pista": "La estadística te dice si dos cosas bailan al mismo ritmo, no quién empuja a quién a la pista de baile. Piensa qué cosa externa y calurosa puede hacer que suban ambos datos en agosto y bajen en diciembre.",
+        "formula": "$$\\text{Correlación } (r \\approx 1) \\neq \\text{ Causalidad}$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 21201,
+        "dificultad": "Básica",
+        "bloque": "Tema 12: Probabilidad y Combinatoria",
+        "enunciado": "En la final olímpica de los 100m lisos participan 8 atletas. ¿De cuántas formas distintas se pueden repartir las medallas de Oro, Plata y Bronce?",
+        "resolucion_latex": "Identificamos el modelo combinatorio:<br>¿Importa el orden? Sí, no es lo mismo ganar el oro que el bronce.<br>¿Se pueden repetir? No, un atleta no puede ganar dos medallas.<br>Por tanto, son Variaciones sin repetición de 8 elementos tomados de 3 en 3 ($V_{8,3}$).<br><br>$V_{8,3} = 8 \\cdot 7 \\cdot 6 = 336$ formas distintas de ocupar el podio.",
+        "pista": "Hazte tres preguntas: ¿Importa el orden? ¿Participan todos? ¿Se repiten? Si importa el orden pero no participan los 8, estás ante una variación. Multiplica el número total de atletas bajando posiciones hasta tener 3 números.",
+        "formula": "$$V_{n,k} = \\frac{n!}{(n-k)!} = n \\cdot (n-1) \\cdots (n-k+1)$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 21202,
+        "dificultad": "Básica",
+        "bloque": "Tema 12: Probabilidad y Combinatoria",
+        "enunciado": "Se extrae una carta al azar de una baraja española de 40 cartas. Calcula la probabilidad de que la carta extraída sea un Rey o una figura de Oros.",
+        "resolucion_latex": "Identificamos los sucesos:<br>A = \"Sacar un Rey\". $P(A) = 4/40$<br>B = \"Sacar Oros\". $P(B) = 10/40$<br><br>Los sucesos no son mutuamente excluyentes, existe la intersección $A \\cap B$ = \"Sacar el Rey de Oros\". Hay un solo Rey de Oros, así que $P(A \\cap B) = 1/40$.<br><br>Aplicamos la regla de la suma: $P(A \\cup B) = P(A) + P(B) - P(A \\cap B)$.<br>$P(A \\cup B) = \\frac{4}{40} + \\frac{10}{40} - \\frac{1}{40} = \\frac{13}{40}$.",
+        "pista": "La regla de la suma universal. Suma la probabilidad de ser Rey más la probabilidad de ser Oro. Luego, réstale el Rey de Oros, porque si no, lo habrás contado dos veces.",
+        "formula": "$$P(A \\cup B) = P(A) + P(B) - P(A \\cap B)$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 21203,
+        "dificultad": "Básica",
+        "bloque": "Tema 12: Probabilidad y Combinatoria",
+        "enunciado": "Conociendo las siguientes probabilidades de dos sucesos: $P(A)=0,5$, $P(B)=0,4$ y $P(A \\cap B)=0,1$. Calcula la probabilidad de la unión $P(A \\cup B)$ y la probabilidad del suceso contrario de A, $P(\\bar{A})$.",
+        "resolucion_latex": "1) Para la probabilidad de la unión, aplicamos la fórmula directa:<br>$P(A \\cup B) = P(A) + P(B) - P(A \\cap B)$<br>$P(A \\cup B) = 0,5 + 0,4 - 0,1 = 0,8$.<br><br>2) La probabilidad del suceso contrario se calcula restándole la probabilidad original al suceso seguro (1):<br>$P(\\bar{A}) = 1 - P(A) = 1 - 0,5 = 0,5$.",
+        "pista": "Esta es la base de todo. La fórmula de la 'U' es sumar y restar la intersección. Lo contrario a que pase algo es que pase el 100% de las veces menos las veces que sí ocurre.",
+        "formula": "$$P(A \\cup B) = P(A) + P(B) - P(A \\cap B) \\quad ; \\quad P(\\bar{A}) = 1 - P(A)$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 21204,
+        "dificultad": "Media",
+        "bloque": "Tema 12: Probabilidad y Combinatoria",
+        "enunciado": "En un cajón hay 4 calcetines negros y 6 blancos. Si sacamos dos calcetines al azar, de forma consecutiva y sin reemplazo (sin devolver el primero), calcula la probabilidad de que ambos sean del mismo color.",
+        "resolucion_latex": "Tenemos 10 calcetines en total. Al ser \"sin reemplazo\", las probabilidades de la segunda extracción cambian.<br>Hay dos caminos para lograr que sean del mismo color: Negro y Negro, o Blanco y Blanco.<br><br>Camino 1 (N y N):<br>$P(N_1 \\cap N_2) = P(N_1) \\cdot P(N_2|N_1) = \\frac{4}{10} \\cdot \\frac{3}{9} = \\frac{12}{90}$.<br><br>Camino 2 (B y B):<br>$P(B_1 \\cap B_2) = P(B_1) \\cdot P(B_2|B_1) = \\frac{6}{10} \\cdot \\frac{5}{9} = \\frac{30}{90}$.<br><br>La probabilidad total es la suma de ambos caminos favorables:<br>$P(\\text{Mismo color}) = \\frac{12}{90} + \\frac{30}{90} = \\frac{42}{90} = \\frac{7}{15} \\approx 0,466$.",
+        "pista": "Haz un esquema mental o un diagrama de árbol. Necesitas multiplicar la fracción de sacar uno, por la fracción de sacar otro igual (ojo, acuérdate de descontar un calcetín del total y del color elegido para la segunda fracción).",
+        "formula": "$$P(A \\cap B) = P(A) \\cdot P(B|A)$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 21205,
+        "dificultad": "Media",
+        "bloque": "Tema 12: Probabilidad y Combinatoria",
+        "enunciado": "En una clase, el 60% de los alumnos aprueba Matemáticas, el 50% aprueba Física, y el 30% aprueba ambas asignaturas. Si escogemos al azar a un alumno que resulta haber aprobado Matemáticas, ¿cuál es la probabilidad de que también haya aprobado Física?",
+        "resolucion_latex": "Se trata de un problema de **probabilidad condicionada**. Nos piden $P(F|M)$ (Probabilidad de aprobar Física sabiendo que ha aprobado Mates).<br><br>Datos: $P(M) = 0,60$; $P(F) = 0,50$; $P(M \\cap F) = 0,30$.<br><br>Aplicamos la fórmula de la probabilidad condicionada:<br>$P(F|M) = \\frac{P(F \\cap M)}{P(M)} = \\frac{0,30}{0,60} = 0,5$.<br><br>La probabilidad es de un 50%.",
+        "pista": "La baraja entera de alumnos ya no importa. Tu universo se ha reducido únicamente a los alumnos que aprobaron Mates (que van abajo). Arriba pon a los que tienen las dos aprobadas.",
+        "formula": "$$P(B|A) = \\frac{P(A \\cap B)}{P(A)}$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 21206,
+        "dificultad": "Media",
+        "bloque": "Tema 12: Probabilidad y Combinatoria",
+        "enunciado": "Sabiendo que $P(A \\cup B)=0,8$, $P(A)=0,6$ y $P(A \\cap B)=0,2$, calcula de forma analítica el valor de $P(B)$.",
+        "resolucion_latex": "Partimos de la fórmula de la probabilidad de la unión de dos sucesos cualquiera:<br>$P(A \\cup B) = P(A) + P(B) - P(A \\cap B)$.<br><br>Sustituimos los valores conocidos en la ecuación:<br>$0,8 = 0,6 + P(B) - 0,2$<br><br>Agrupamos los términos conocidos:<br>$0,8 = 0,4 + P(B)$<br><br>Despejamos la incógnita:<br>$P(B) = 0,8 - 0,4 = 0,4$.",
+        "pista": "Escribe la fórmula madre de la unión de conjuntos y trata al P(B) como si fuera la letra 'x' de una ecuación de primer grado.",
+        "formula": "$$P(A \\cup B) = P(A) + P(B) - P(A \\cap B)$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 21207,
+        "dificultad": "Alta",
+        "bloque": "Tema 12: Probabilidad y Combinatoria",
+        "enunciado": "Una fábrica tiene 3 máquinas (A, B y C) que producen el 45%, 30% y 25% de las piezas, respectivamente. Los porcentajes de piezas defectuosas de cada máquina son 3%, 4% y 5%. Si al seleccionar una pieza al azar descubrimos que es defectuosa, ¿cuál es la probabilidad de que haya sido fabricada por la máquina B?",
+        "resolucion_latex": "Es un problema inverso clásico. Aplicamos el Teorema de Bayes.<br>1º) Calculamos la Probabilidad Total de que una pieza sea defectuosa (D):<br>$P(D) = P(A)P(D|A) + P(B)P(D|B) + P(C)P(D|C)$<br>$P(D) = (0,45 \\cdot 0,03) + (0,30 \\cdot 0,04) + (0,25 \\cdot 0,05)$<br>$P(D) = 0,0135 + 0,012 + 0,0125 = 0,038$ (El 3,8% del total).<br><br>2º) Aplicamos Bayes para aislar la máquina B:<br>$P(B|D) = \\frac{P(B \\cap D)}{P(D)} = \\frac{0,30 \\cdot 0,04}{0,038} = \\frac{0,012}{0,038} \\approx 0,316$.<br>Hay un 31,6% de probabilidad de que provenga de la máquina B.",
+        "pista": "El teorema de Bayes aterroriza, pero es lógica. Divide a los defectuosos que son exclusivamente de la máquina B, entre el saco gigante de todos los defectuosos sumados.",
+        "formula": "$$P(B|D) = \\frac{P(B)P(D|B)}{P(D)}$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 21208,
+        "dificultad": "Alta",
+        "bloque": "Tema 12: Probabilidad y Combinatoria",
+        "enunciado": "Sean A y B dos sucesos estadísticamente independientes donde $P(A)=0,4$ y $P(B)=0,7$. Calcula la probabilidad de que ocurra A pero no ocurra B, es decir, $P(A \\cap \\bar{B})$.",
+        "resolucion_latex": "Como los sucesos son independientes, la probabilidad de su intersección es el producto de sus probabilidades:<br>$P(A \\cap B) = P(A) \\cdot P(B) = 0,4 \\cdot 0,7 = 0,28$.<br><br>Para calcular que ocurra A y no B ($A \\cap \\bar{B}$), podemos usar las propiedades de conjuntos. Ese sector es toda la 'galleta' de A menos el trozo central donde se solapa con B:<br>$P(A \\cap \\bar{B}) = P(A) - P(A \\cap B)$<br>$P(A \\cap \\bar{B}) = 0,4 - 0,28 = 0,12$.",
+        "pista": "La palabra clave es 'independientes'. Esa es tu licencia para multiplicar directamente P(A) con P(B) para hallar la intersección. Después, réstale esa intersección a P(A).",
+        "formula": "$$\\text{Independientes: } P(A\\cap B)=P(A)P(B) \\quad ; \\quad P(A\\cap\\bar{B})=P(A)-P(A\\cap B)$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 21209,
+        "dificultad": "Alta",
+        "bloque": "Tema 12: Probabilidad y Combinatoria",
+        "enunciado": "Demuestra teóricamente la relación $P(\\bar{A} \\cap \\bar{B}) = 1 - P(A \\cup B)$. Después, calcula su valor si $P(A)=0,3$ y $P(B)=0,5$, asumiendo que son sucesos independientes.",
+        "resolucion_latex": "Demostración:<br>Por las Leyes de De Morgan, la intersección de los complementarios es igual al complementario de la unión: $\\bar{A} \\cap \\bar{B} = \\overline{A \\cup B}$.<br>Por la propiedad del suceso contrario, la probabilidad de cualquier complementario es 1 menos el suceso. Luego, $P(\\overline{A \\cup B}) = 1 - P(A \\cup B)$. Demostrado.<br><br>Cálculo:<br>Al ser independientes: $P(A \\cap B) = 0,3 \\cdot 0,5 = 0,15$.<br>Calculamos la unión: $P(A \\cup B) = 0,3 + 0,5 - 0,15 = 0,65$.<br>Aplicamos la fórmula demostrada:<br>$P(\\bar{A} \\cap \\bar{B}) = 1 - 0,65 = 0,35$.",
+        "pista": "Las Leyes de Morgan dicen que decir 'Ni A, Ni B' es exactamente lo mismo que negar que haya pasado 'O A, o B'. ¡Saca la intersección multiplicando, halla la unión y réstalo a 1!",
+        "formula": "$$\\overline{A\\cup B} = \\bar{A}\\cap \\bar{B}$$"
+    },
+    {
+        "asignatura": "Matemáticas 1º Bach",
+        "id": 21210,
+        "dificultad": "Superior",
+        "bloque": "Tema 12: Probabilidad y Combinatoria",
+        "enunciado": "Ejercicio Trampa: Un alumno se enfrenta al siguiente experimento: Tirar un dado y sacar Par (A) y tirar el mismo dado y sacar Impar (B). El alumno argumenta: 'Como sacar Par e Impar son sucesos totalmente incompatibles y mutuamente excluyentes que no pueden ocurrir a la vez, entonces son estadísticamente independientes'. Explica por qué este argumento es un error de concepto colosal.",
+        "resolucion_latex": "El alumno confunde la incompatibilidad de conjuntos con la independencia estadística, siendo ambas propiedades casi excluyentes entre sí.<br><br>1. Dos sucesos son incompatibles si no pueden ocurrir a la vez: $P(A \\cap B) = 0$. (Un número no puede ser par e impar a la vez).<br><br>2. Dos sucesos son independientes si el hecho de que ocurra uno no afecta a la probabilidad del otro: $P(A \\cap B) = P(A) \\cdot P(B)$.<br><br>Si A y B son posibles ($P(A)>0, P(B)>0$) y son incompatibles, $P(A \\cap B) = 0$, pero $P(A)\\cdot P(B) \\neq 0$. Por tanto, **no son independientes**.<br>Intuitivamente: Si yo tiro el dado y te chivo que ha salido Par, la probabilidad de Impar cae inmediatamente del 50% al 0%. Como un suceso afecta brutalmente al otro, son sucesos altamente **dependientes**.",
+        "pista": "Si el hecho de que pase A, 'destruye' completamente las opciones de que pase B, ¿realmente B es independiente de A? Al contrario, está totalmente atado y condicionado por él.",
+        "formula": "$$\\text{Incompatibilidad } \\neq \\text{ Independencia estadística}$$"
+    }
+]

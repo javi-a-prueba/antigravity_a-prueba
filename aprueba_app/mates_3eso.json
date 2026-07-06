@@ -1,0 +1,702 @@
+[
+  {
+    "asignatura": "Matemáticas 3º ESO",
+    "id": 3001,
+    "dificultad": "Básica",
+    "bloque": "Tema 1: Números racionales, potencias y raíces",
+    "enunciado": "Calcula y simplifica la fracción: $\\frac{3}{4}+\\frac{1}{6}$.",
+    "resolucion_latex": "Buscamos el mínimo común múltiplo de $4$ y $6$, que es $12$.<br>Transformamos las fracciones:<br>$\\frac{3}{4}=\\frac{9}{12}$ y $\\frac{1}{6}=\\frac{2}{12}$.<br>Sumamos:<br>$\\frac{9}{12}+\\frac{2}{12}=\\frac{11}{12}$.<br>Resultado final:<br>$\\frac{11}{12}$.",
+    "pista": "Para sumar fracciones con distinto denominador, busca primero un denominador común.",
+    "formula": "$$\\frac{a}{b}+\\frac{c}{d}=\\frac{ad+bc}{bd}$$"
+  },
+  {
+    "asignatura": "Matemáticas 3º ESO",
+    "id": 3002,
+    "dificultad": "Básica",
+    "bloque": "Tema 1: Números racionales, potencias y raíces",
+    "enunciado": "Calcula: $\\frac{5}{6}-\\frac{1}{3}$.",
+    "resolucion_latex": "Buscamos un denominador común. Como $\\frac{1}{3}=\\frac{2}{6}$, tenemos:<br>$\\frac{5}{6}-\\frac{1}{3}=\\frac{5}{6}-\\frac{2}{6}$.<br>Restamos los numeradores:<br>$\\frac{5-2}{6}=\\frac{3}{6}$.<br>Simplificamos:<br>$\\frac{3}{6}=\\frac{1}{2}$.<br>Resultado final:<br>$\\frac{1}{2}$.",
+    "pista": "Convierte las fracciones para que tengan el mismo denominador antes de restar.",
+    "formula": "$$\\frac{a}{b}-\\frac{c}{b}=\\frac{a-c}{b}$$"
+  },
+  {
+    "asignatura": "Matemáticas 3º ESO",
+    "id": 3003,
+    "dificultad": "Básica",
+    "bloque": "Tema 1: Números racionales, potencias y raíces",
+    "enunciado": "Simplifica la potencia: $2^3\\cdot 2^4$.",
+    "resolucion_latex": "Cuando multiplicamos potencias de la misma base, sumamos los exponentes:<br>$2^3\\cdot 2^4=2^{3+4}=2^7$.<br>Calculamos:<br>$2^7=128$.<br>Resultado final:<br>$128$.",
+    "pista": "Si las potencias tienen la misma base y se multiplican, se suman los exponentes.",
+    "formula": "$$a^m\\cdot a^n=a^{m+n}$$"
+  },
+  {
+    "asignatura": "Matemáticas 3º ESO",
+    "id": 3004,
+    "dificultad": "Media",
+    "bloque": "Tema 1: Números racionales, potencias y raíces",
+    "enunciado": "Calcula: $\\frac{2}{3}\\cdot\\frac{9}{4}$ y simplifica el resultado.",
+    "resolucion_latex": "Multiplicamos numerador por numerador y denominador por denominador:<br>$\\frac{2}{3}\\cdot\\frac{9}{4}=\\frac{2\\cdot 9}{3\\cdot 4}=\\frac{18}{12}$.<br>Simplificamos dividiendo numerador y denominador entre $6$:<br>$\\frac{18}{12}=\\frac{3}{2}$.<br>Resultado final:<br>$\\frac{3}{2}$.",
+    "pista": "En la multiplicación de fracciones no hace falta buscar denominador común.",
+    "formula": "$$\\frac{a}{b}\\cdot\\frac{c}{d}=\\frac{ac}{bd}$$"
+  },
+  {
+    "asignatura": "Matemáticas 3º ESO",
+    "id": 3005,
+    "dificultad": "Media",
+    "bloque": "Tema 1: Números racionales, potencias y raíces",
+    "enunciado": "Expresa en notación científica el número $4500000$.",
+    "resolucion_latex": "La notación científica escribe un número como producto de un número entre $1$ y $10$ por una potencia de $10$.<br>Movemos la coma decimal hasta obtener $4,5$:<br>$4500000=4,5\\cdot 1000000$.<br>Como $1000000=10^6$, tenemos:<br>$4500000=4,5\\cdot 10^6$.",
+    "pista": "La parte decimal debe quedar entre $1$ y $10$. Cuenta cuántos lugares se mueve la coma.",
+    "formula": "$$N=a\\cdot 10^n,\\quad 1\\leq a<10$$"
+  },
+  {
+    "asignatura": "Matemáticas 3º ESO",
+    "id": 3006,
+    "dificultad": "Media",
+    "bloque": "Tema 1: Números racionales, potencias y raíces",
+    "enunciado": "Calcula y simplifica: $\\left(\\frac{2}{3}\\right)^2+\\frac{5}{9}$.",
+    "resolucion_latex": "Primero calculamos la potencia:<br>$\\left(\\frac{2}{3}\\right)^2=\\frac{2^2}{3^2}=\\frac{4}{9}$.<br>Ahora sumamos:<br>$\\frac{4}{9}+\\frac{5}{9}=\\frac{9}{9}=1$.<br>Resultado final:<br>$1$.",
+    "pista": "Primero resuelve la potencia de la fracción y después suma.",
+    "formula": "$$\\left(\\frac{a}{b}\\right)^n=\\frac{a^n}{b^n}$$"
+  },
+  {
+    "asignatura": "Matemáticas 3º ESO",
+    "id": 3007,
+    "dificultad": "Alta",
+    "bloque": "Tema 1: Números racionales, potencias y raíces",
+    "enunciado": "Calcula la operación combinada: $\\frac{3}{5}+\\frac{2}{3}\\cdot\\frac{9}{4}$.",
+    "resolucion_latex": "Primero hacemos la multiplicación:<br>$\\frac{2}{3}\\cdot\\frac{9}{4}=\\frac{18}{12}=\\frac{3}{2}$.<br>Ahora sumamos:<br>$\\frac{3}{5}+\\frac{3}{2}$.<br>El mínimo común múltiplo de $5$ y $2$ es $10$.<br>$\\frac{3}{5}=\\frac{6}{10}$ y $\\frac{3}{2}=\\frac{15}{10}$.<br>Sumamos:<br>$\\frac{6}{10}+\\frac{15}{10}=\\frac{21}{10}$.<br>Resultado final:<br>$\\frac{21}{10}$.",
+    "pista": "Respeta la jerarquía de operaciones: primero multiplicaciones y divisiones, después sumas y restas.",
+    "formula": "$$\\text{Primero }\\cdot,\\div\\quad \\text{después }+, -$$"
+  },
+  {
+    "asignatura": "Matemáticas 3º ESO",
+    "id": 3008,
+    "dificultad": "Alta",
+    "bloque": "Tema 1: Números racionales, potencias y raíces",
+    "enunciado": "Simplifica usando propiedades de potencias: $\\frac{3^5\\cdot 3^{-2}}{3^1}$.",
+    "resolucion_latex": "Primero multiplicamos potencias de la misma base sumando exponentes:<br>$3^5\\cdot 3^{-2}=3^{5+(-2)}=3^3$.<br>Ahora dividimos potencias de la misma base restando exponentes:<br>$\\frac{3^3}{3^1}=3^{3-1}=3^2$.<br>Calculamos:<br>$3^2=9$.<br>Resultado final:<br>$9$.",
+    "pista": "Los exponentes negativos también se suman o restan siguiendo las mismas reglas.",
+    "formula": "$$\\frac{a^m}{a^n}=a^{m-n}$$"
+  },
+  {
+    "asignatura": "Matemáticas 3º ESO",
+    "id": 3009,
+    "dificultad": "Alta",
+    "bloque": "Tema 1: Números racionales, potencias y raíces",
+    "enunciado": "Aproxima $\\sqrt{50}$ entre dos números enteros consecutivos y simplifica el radical.",
+    "resolucion_latex": "Buscamos cuadrados perfectos cercanos a $50$:<br>$7^2=49$ y $8^2=64$.<br>Por tanto:<br>$7<\\sqrt{50}<8$.<br><br>Ahora simplificamos el radical:<br>$\\sqrt{50}=\\sqrt{25\\cdot 2}=\\sqrt{25}\\cdot\\sqrt{2}=5\\sqrt{2}$.<br>Resultado:<br>$\\sqrt{50}$ está entre $7$ y $8$, y simplificado es $5\\sqrt{2}$.",
+    "pista": "Busca el cuadrado perfecto más cercano por debajo y por encima.",
+    "formula": "$$\\sqrt{ab}=\\sqrt{a}\\cdot\\sqrt{b}$$"
+  },
+  {
+    "asignatura": "Matemáticas 3º ESO",
+    "id": 3010,
+    "dificultad": "Superior",
+    "bloque": "Tema 1: Números racionales, potencias y raíces",
+    "enunciado": "Ejercicio trampa: Un alumno afirma que $(-2)^4$ y $-2^4$ valen lo mismo porque en ambos aparece el número $2$ elevado a $4$. Explica el error y calcula ambos valores.",
+    "resolucion_latex": "El error está en no distinguir entre tener el signo negativo dentro o fuera de la potencia.<br>En $(-2)^4$, la base completa es $-2$, por tanto:<br>$(-2)^4=(-2)\\cdot(-2)\\cdot(-2)\\cdot(-2)=16$.<br><br>En $-2^4$, la potencia afecta solo al $2$, y el signo negativo queda fuera:<br>$-2^4=-(2^4)=-16$.<br>Por tanto:<br>$(-2)^4=16$, pero $-2^4=-16$.",
+    "pista": "Los paréntesis cambian la base de la potencia. Sin paréntesis, el signo negativo no forma parte de la base.",
+    "formula": "$$(-a)^n\\neq -a^n\\text{ si }n\\text{ es par}$$"
+  },
+  {
+    "asignatura": "Matemáticas 3º ESO",
+    "id": 3011,
+    "dificultad": "Básica",
+    "bloque": "Tema 2: Proporcionalidad, porcentajes y problemas financieros básicos",
+    "enunciado": "En una receta para $4$ personas se necesitan $300$ g de arroz. ¿Cuánto arroz se necesitará para $6$ personas?",
+    "resolucion_latex": "Es una proporcionalidad directa: si aumentan las personas, aumenta la cantidad de arroz.<br>Planteamos una regla de tres:<br>$4$ personas $\\rightarrow 300$ g.<br>$6$ personas $\\rightarrow x$ g.<br><br>$x=\\frac{6\\cdot 300}{4}=\\frac{1800}{4}=450$ g.<br>Se necesitarán $450$ g de arroz.",
+    "pista": "Más personas implican más cantidad de arroz, por tanto es proporcionalidad directa.",
+    "formula": "$$x=\\frac{b\\cdot c}{a}$$"
+  },
+  {
+    "asignatura": "Matemáticas 3º ESO",
+    "id": 3012,
+    "dificultad": "Básica",
+    "bloque": "Tema 2: Proporcionalidad, porcentajes y problemas financieros básicos",
+    "enunciado": "Calcula el $20\\%$ de $150$.",
+    "resolucion_latex": "Para calcular un porcentaje, multiplicamos la cantidad por el porcentaje dividido entre $100$:<br>$20\\%$ de $150$ es:<br>$150\\cdot\\frac{20}{100}=150\\cdot 0,20=30$.<br>Resultado:<br>$30$.",
+    "pista": "El $20\\%$ equivale a multiplicar por $0,20$.",
+    "formula": "$$p\\%\\text{ de }N=N\\cdot\\frac{p}{100}$$"
+  },
+  {
+    "asignatura": "Matemáticas 3º ESO",
+    "id": 3013,
+    "dificultad": "Básica",
+    "bloque": "Tema 2: Proporcionalidad, porcentajes y problemas financieros básicos",
+    "enunciado": "Un mapa tiene escala $1:50000$. Si dos pueblos están separados $4$ cm en el mapa, ¿qué distancia real hay entre ellos en kilómetros?",
+    "resolucion_latex": "La escala $1:50000$ significa que $1$ cm en el mapa equivale a $50000$ cm en la realidad.<br>Si en el mapa hay $4$ cm:<br>$4\\cdot 50000=200000$ cm reales.<br>Pasamos a metros:<br>$200000$ cm $=2000$ m.<br>Pasamos a kilómetros:<br>$2000$ m $=2$ km.<br>La distancia real es $2$ km.",
+    "pista": "Primero calcula la distancia real en centímetros y después cambia de unidades.",
+    "formula": "$$\\text{distancia real}=\\text{distancia mapa}\\cdot\\text{escala}$$"
+  },
+  {
+    "asignatura": "Matemáticas 3º ESO",
+    "id": 3014,
+    "dificultad": "Media",
+    "bloque": "Tema 2: Proporcionalidad, porcentajes y problemas financieros básicos",
+    "enunciado": "Un coche consume $6$ litros de gasolina cada $100$ km. ¿Cuántos litros consumirá en $250$ km?",
+    "resolucion_latex": "Es una proporcionalidad directa: a más kilómetros, más consumo.<br>Planteamos:<br>$100$ km $\\rightarrow 6$ L.<br>$250$ km $\\rightarrow x$ L.<br><br>$x=\\frac{250\\cdot 6}{100}=15$ L.<br>El coche consumirá $15$ litros.",
+    "pista": "El consumo aumenta en la misma proporción que los kilómetros recorridos.",
+    "formula": "$$\\frac{x_1}{y_1}=\\frac{x_2}{y_2}$$"
+  },
+  {
+    "asignatura": "Matemáticas 3º ESO",
+    "id": 3015,
+    "dificultad": "Media",
+    "bloque": "Tema 2: Proporcionalidad, porcentajes y problemas financieros básicos",
+    "enunciado": "Un producto cuesta $80$ € y le aplican una rebaja del $15\\%$. Calcula el precio final.",
+    "resolucion_latex": "Primero calculamos la rebaja:<br>$15\\%$ de $80$ es:<br>$80\\cdot\\frac{15}{100}=12$ €.<br>Restamos la rebaja al precio inicial:<br>$80-12=68$ €.<br>El precio final es $68$ €.",
+    "pista": "Calcula primero cuánto dinero te descuentan y luego réstalo al precio inicial.",
+    "formula": "$$\\text{precio final}=P\\cdot\\left(1-\\frac{r}{100}\\right)$$"
+  },
+  {
+    "asignatura": "Matemáticas 3º ESO",
+    "id": 3016,
+    "dificultad": "Media",
+    "bloque": "Tema 2: Proporcionalidad, porcentajes y problemas financieros básicos",
+    "enunciado": "Tres trabajadores tardan $12$ días en terminar una obra. Si trabajan $6$ trabajadores al mismo ritmo, ¿cuántos días tardarán?",
+    "resolucion_latex": "Es una proporcionalidad inversa: si hay más trabajadores, se tarda menos tiempo.<br>El producto trabajadores por días se mantiene constante:<br>$3\\cdot 12=6\\cdot x$.<br>Calculamos:<br>$36=6x$.<br>$x=\\frac{36}{6}=6$ días.<br>Con $6$ trabajadores tardarán $6$ días.",
+    "pista": "Más trabajadores implican menos días si todos trabajan al mismo ritmo.",
+    "formula": "$$a\\cdot b=c\\cdot d$$"
+  },
+  {
+    "asignatura": "Matemáticas 3º ESO",
+    "id": 3017,
+    "dificultad": "Alta",
+    "bloque": "Tema 2: Proporcionalidad, porcentajes y problemas financieros básicos",
+    "enunciado": "Un móvil costaba $240$ €. Primero sube un $10\\%$ y después baja un $10\\%$. Calcula el precio final.",
+    "resolucion_latex": "Primero aplicamos la subida del $10\\%$:<br>$240\\cdot 1,10=264$ €.<br>Después aplicamos la bajada del $10\\%$ sobre el nuevo precio, no sobre el precio inicial:<br>$264\\cdot 0,90=237,6$ €.<br>El precio final es $237,60$ €.",
+    "pista": "Una subida del $10\\%$ y una bajada del $10\\%$ no se anulan, porque la segunda se aplica sobre una cantidad distinta.",
+    "formula": "$$P_f=P_i\\cdot\\left(1+\\frac{a}{100}\\right)\\cdot\\left(1-\\frac{b}{100}\\right)$$"
+  },
+  {
+    "asignatura": "Matemáticas 3º ESO",
+    "id": 3018,
+    "dificultad": "Alta",
+    "bloque": "Tema 2: Proporcionalidad, porcentajes y problemas financieros básicos",
+    "enunciado": "Se depositan $500$ € en una cuenta con interés simple anual del $4\\%$ durante $3$ años. Calcula el interés obtenido y el capital final.",
+    "resolucion_latex": "Usamos la fórmula del interés simple:<br>$I=C\\cdot r\\cdot t$.<br>El capital inicial es $C=500$, el tipo de interés es $r=0,04$ y el tiempo es $t=3$.<br>Sustituimos:<br>$I=500\\cdot 0,04\\cdot 3=60$ €.<br>El capital final será:<br>$C_f=500+60=560$ €.<br>Interés obtenido: $60$ €.<br>Capital final: $560$ €.",
+    "pista": "En interés simple, el interés se calcula siempre sobre el capital inicial.",
+    "formula": "$$I=C\\cdot r\\cdot t$$"
+  },
+  {
+    "asignatura": "Matemáticas 3º ESO",
+    "id": 3019,
+    "dificultad": "Alta",
+    "bloque": "Tema 2: Proporcionalidad, porcentajes y problemas financieros básicos",
+    "enunciado": "En una clase, el $60\\%$ del alumnado son chicas. Si hay $18$ chicas, ¿cuántos alumnos hay en total?",
+    "resolucion_latex": "Sabemos que el $60\\%$ del total equivale a $18$ chicas.<br>Sea $x$ el número total de alumnos:<br>$0,60x=18$.<br>Despejamos:<br>$x=\\frac{18}{0,60}=30$.<br>Por tanto, en la clase hay $30$ alumnos en total.",
+    "pista": "Aquí te dan la parte y el porcentaje. Tienes que calcular el total.",
+    "formula": "$$\\text{parte}=\\text{total}\\cdot\\frac{p}{100}$$"
+  },
+  {
+    "asignatura": "Matemáticas 3º ESO",
+    "id": 3020,
+    "dificultad": "Superior",
+    "bloque": "Tema 2: Proporcionalidad, porcentajes y problemas financieros básicos",
+    "enunciado": "Ejercicio trampa: Un alumno dice que si un producto sube un $20\\%$ y después baja un $20\\%$, vuelve exactamente al precio inicial. Comprueba si es cierto con un producto de $100$ € y explica el error.",
+    "resolucion_latex": "Partimos de un precio inicial de $100$ €.<br>Primero sube un $20\\%$:<br>$100\\cdot 1,20=120$ €.<br>Ahora baja un $20\\%$, pero sobre $120$ €, no sobre $100$ €:<br>$120\\cdot 0,80=96$ €.<br>El precio final es $96$ €, no $100$ €.<br>El error está en pensar que los porcentajes se aplican siempre sobre la misma cantidad. En realidad, cada porcentaje se aplica sobre el precio que hay en ese momento.",
+    "pista": "El segundo porcentaje se aplica sobre el precio ya modificado, no sobre el precio inicial.",
+    "formula": "$$100\\cdot 1,20\\cdot 0,80=96$$"
+  },
+  {
+    "asignatura": "Matemáticas 3º ESO",
+    "id": 3021,
+    "dificultad": "Básica",
+    "bloque": "Tema 3: Álgebra: expresiones algebraicas, polinomios y ecuaciones",
+    "enunciado": "Calcula el valor numérico de la expresión $3x+5$ para $x=4$.",
+    "resolucion_latex": "Sustituimos $x=4$ en la expresión:<br>$3x+5=3\\cdot 4+5$.<br>Calculamos:<br>$3\\cdot 4=12$.<br>Entonces:<br>$12+5=17$.<br>El valor numérico es $17$.",
+    "pista": "Sustituye la letra por el número que te dan y respeta el orden de operaciones.",
+    "formula": "$$P(a)=\\text{valor de la expresión al sustituir }x=a$$"
+  },
+  {
+    "asignatura": "Matemáticas 3º ESO",
+    "id": 3022,
+    "dificultad": "Básica",
+    "bloque": "Tema 3: Álgebra: expresiones algebraicas, polinomios y ecuaciones",
+    "enunciado": "Reduce la expresión algebraica: $4x+3x-2x+5$.",
+    "resolucion_latex": "Agrupamos los términos semejantes con $x$:<br>$4x+3x-2x=(4+3-2)x=5x$.<br>El término independiente es $5$.<br>Por tanto:<br>$4x+3x-2x+5=5x+5$.",
+    "pista": "Solo se pueden sumar o restar términos que tengan la misma parte literal.",
+    "formula": "$$ax+bx=(a+b)x$$"
+  },
+  {
+    "asignatura": "Matemáticas 3º ESO",
+    "id": 3023,
+    "dificultad": "Básica",
+    "bloque": "Tema 3: Álgebra: expresiones algebraicas, polinomios y ecuaciones",
+    "enunciado": "Resuelve la ecuación de primer grado: $2x+3=11$.",
+    "resolucion_latex": "Partimos de la ecuación:<br>$2x+3=11$.<br>Restamos $3$ en ambos lados:<br>$2x=8$.<br>Dividimos entre $2$:<br>$x=4$.<br>La solución es $x=4$.",
+    "pista": "Primero elimina el número que suma o resta, y después el número que multiplica a la incógnita.",
+    "formula": "$$ax+b=c \\Rightarrow x=\\frac{c-b}{a}$$"
+  },
+  {
+    "asignatura": "Matemáticas 3º ESO",
+    "id": 3024,
+    "dificultad": "Media",
+    "bloque": "Tema 3: Álgebra: expresiones algebraicas, polinomios y ecuaciones",
+    "enunciado": "Desarrolla y simplifica: $3(x-2)+2x$.",
+    "resolucion_latex": "Aplicamos la propiedad distributiva:<br>$3(x-2)=3x-6$.<br>Entonces:<br>$3(x-2)+2x=3x-6+2x$.<br>Agrupamos términos semejantes:<br>$3x+2x=5x$.<br>Resultado final:<br>$5x-6$.",
+    "pista": "Primero quita paréntesis multiplicando cada término del paréntesis por el número de fuera.",
+    "formula": "$$a(b+c)=ab+ac$$"
+  },
+  {
+    "asignatura": "Matemáticas 3º ESO",
+    "id": 3025,
+    "dificultad": "Media",
+    "bloque": "Tema 3: Álgebra: expresiones algebraicas, polinomios y ecuaciones",
+    "enunciado": "Resuelve la ecuación: $3(x-1)=2x+5$.",
+    "resolucion_latex": "Quitamos el paréntesis:<br>$3x-3=2x+5$.<br>Pasamos las incógnitas a un lado y los números al otro:<br>$3x-2x=5+3$.<br>Entonces:<br>$x=8$.<br>La solución es $x=8$.",
+    "pista": "Quita primero el paréntesis y después agrupa letras con letras y números con números.",
+    "formula": "$$a(b+c)=ab+ac$$"
+  },
+  {
+    "asignatura": "Matemáticas 3º ESO",
+    "id": 3026,
+    "dificultad": "Media",
+    "bloque": "Tema 3: Álgebra: expresiones algebraicas, polinomios y ecuaciones",
+    "enunciado": "Desarrolla la identidad notable: $(x+4)^2$.",
+    "resolucion_latex": "Usamos la identidad notable del cuadrado de una suma:<br>$(a+b)^2=a^2+2ab+b^2$.<br>En este caso, $a=x$ y $b=4$.<br>Entonces:<br>$(x+4)^2=x^2+2\\cdot x\\cdot 4+4^2$.<br>Resultado:<br>$x^2+8x+16$.",
+    "pista": "El cuadrado de una suma no es solo la suma de los cuadrados: aparece el doble producto.",
+    "formula": "$$(a+b)^2=a^2+2ab+b^2$$"
+  },
+  {
+    "asignatura": "Matemáticas 3º ESO",
+    "id": 3027,
+    "dificultad": "Alta",
+    "bloque": "Tema 3: Álgebra: expresiones algebraicas, polinomios y ecuaciones",
+    "enunciado": "Resuelve la ecuación con fracciones: $\\frac{x}{3}+2=5$.",
+    "resolucion_latex": "Partimos de:<br>$\\frac{x}{3}+2=5$.<br>Restamos $2$ en ambos lados:<br>$\\frac{x}{3}=3$.<br>Multiplicamos ambos lados por $3$:<br>$x=9$.<br>La solución es $x=9$.",
+    "pista": "Aísla primero la fracción y luego elimina el denominador multiplicando.",
+    "formula": "$$\\frac{x}{a}=b \\Rightarrow x=ab$$"
+  },
+  {
+    "asignatura": "Matemáticas 3º ESO",
+    "id": 3028,
+    "dificultad": "Alta",
+    "bloque": "Tema 3: Álgebra: expresiones algebraicas, polinomios y ecuaciones",
+    "enunciado": "Resuelve la ecuación de segundo grado sencilla: $x^2-9=0$.",
+    "resolucion_latex": "Partimos de la ecuación:<br>$x^2-9=0$.<br>Pasamos el $9$ al otro lado:<br>$x^2=9$.<br>Tomamos raíz cuadrada en ambos lados:<br>$x=\\pm\\sqrt{9}=\\pm 3$.<br>Por tanto, las soluciones son:<br>$x=3$ y $x=-3$.",
+    "pista": "Si tienes $x^2=a$, recuerda que normalmente hay dos soluciones: una positiva y otra negativa.",
+    "formula": "$$x^2=a \\Rightarrow x=\\pm\\sqrt{a}$$"
+  },
+  {
+    "asignatura": "Matemáticas 3º ESO",
+    "id": 3029,
+    "dificultad": "Alta",
+    "bloque": "Tema 3: Álgebra: expresiones algebraicas, polinomios y ecuaciones",
+    "enunciado": "Un número aumentado en su doble da $36$. Plantea una ecuación y calcula el número.",
+    "resolucion_latex": "Llamamos $x$ al número desconocido.<br>Su doble es $2x$.<br>El número aumentado en su doble es:<br>$x+2x$.<br>Según el enunciado:<br>$x+2x=36$.<br>Sumamos términos semejantes:<br>$3x=36$.<br>Dividimos entre $3$:<br>$x=12$.<br>El número es $12$.",
+    "pista": "Traduce poco a poco el enunciado al lenguaje algebraico.",
+    "formula": "$$x+2x=36$$"
+  },
+  {
+    "asignatura": "Matemáticas 3º ESO",
+    "id": 3030,
+    "dificultad": "Superior",
+    "bloque": "Tema 3: Álgebra: expresiones algebraicas, polinomios y ecuaciones",
+    "enunciado": "Ejercicio trampa: Un alumno desarrolla $(x+3)^2$ como $x^2+9$. Explica el error y desarrolla correctamente la expresión.",
+    "resolucion_latex": "El error está en olvidar el doble producto. El cuadrado de una suma no es igual a la suma de los cuadrados.<br>La identidad correcta es:<br>$(a+b)^2=a^2+2ab+b^2$.<br>Aplicamos con $a=x$ y $b=3$:<br>$(x+3)^2=x^2+2\\cdot x\\cdot 3+3^2$.<br>Por tanto:<br>$(x+3)^2=x^2+6x+9$.",
+    "pista": "Cuando elevas un binomio al cuadrado, siempre aparece el término central $2ab$.",
+    "formula": "$$(a+b)^2=a^2+2ab+b^2$$"
+  },
+  {
+    "asignatura": "Matemáticas 3º ESO",
+    "id": 3031,
+    "dificultad": "Básica",
+    "bloque": "Tema 4: Sistemas de ecuaciones lineales",
+    "enunciado": "Resuelve el sistema: $\\begin{cases} x+y=7 \\ x-y=1 \\end{cases}$.",
+    "resolucion_latex": "Sumamos las dos ecuaciones para eliminar $y$:<br>$(x+y)+(x-y)=7+1$.<br>Entonces:<br>$2x=8$.<br>Dividimos entre $2$:<br>$x=4$.<br>Sustituimos en la primera ecuación:<br>$4+y=7$.<br>$y=3$.<br>La solución es:<br>$x=4$, $y=3$.",
+    "pista": "Al sumar las dos ecuaciones, la incógnita $y$ desaparece.",
+    "formula": "$$\\begin{cases} x+y=a \\ x-y=b \\end{cases}$$"
+  },
+  {
+    "asignatura": "Matemáticas 3º ESO",
+    "id": 3032,
+    "dificultad": "Básica",
+    "bloque": "Tema 4: Sistemas de ecuaciones lineales",
+    "enunciado": "Resuelve por sustitución: $\\begin{cases} y=x+2 \\ x+y=8 \\end{cases}$.",
+    "resolucion_latex": "Como ya tenemos despejada $y$, sustituimos en la segunda ecuación:<br>$x+y=8$.<br>$x+(x+2)=8$.<br>Sumamos:<br>$2x+2=8$.<br>Restamos $2$:<br>$2x=6$.<br>Dividimos entre $2$:<br>$x=3$.<br>Ahora calculamos $y$:<br>$y=x+2=3+2=5$.<br>La solución es $x=3$, $y=5$.",
+    "pista": "Cuando una incógnita ya está despejada, sustituye su valor en la otra ecuación.",
+    "formula": "$$y=f(x)$$"
+  },
+  {
+    "asignatura": "Matemáticas 3º ESO",
+    "id": 3033,
+    "dificultad": "Básica",
+    "bloque": "Tema 4: Sistemas de ecuaciones lineales",
+    "enunciado": "Comprueba si $x=2$, $y=3$ es solución del sistema $\\begin{cases} x+y=5 \\ 2x+y=7 \\end{cases}$.",
+    "resolucion_latex": "Sustituimos $x=2$ e $y=3$ en la primera ecuación:<br>$x+y=2+3=5$. Se cumple.<br><br>Sustituimos en la segunda ecuación:<br>$2x+y=2\\cdot 2+3=4+3=7$. También se cumple.<br>Como cumple las dos ecuaciones, $x=2$, $y=3$ sí es solución del sistema.",
+    "pista": "Para comprobar una solución, debe cumplir todas las ecuaciones del sistema.",
+    "formula": "$$\\text{solución} \\Rightarrow \\text{cumple todas las ecuaciones}$$"
+  },
+  {
+    "asignatura": "Matemáticas 3º ESO",
+    "id": 3034,
+    "dificultad": "Media",
+    "bloque": "Tema 4: Sistemas de ecuaciones lineales",
+    "enunciado": "Resuelve por reducción: $\\begin{cases} 2x+y=10 \\ x-y=2 \\end{cases}$.",
+    "resolucion_latex": "Sumamos las dos ecuaciones para eliminar $y$:<br>$(2x+y)+(x-y)=10+2$.<br>Entonces:<br>$3x=12$.<br>Dividimos entre $3$:<br>$x=4$.<br>Sustituimos en la segunda ecuación:<br>$x-y=2$.<br>$4-y=2$.<br>$-y=-2$.<br>$y=2$.<br>La solución es:<br>$x=4$, $y=2$.",
+    "pista": "Busca sumar o restar las ecuaciones para que una incógnita se elimine.",
+    "formula": "$$\\text{reducción: eliminar una incógnita sumando o restando ecuaciones}$$"
+  },
+  {
+    "asignatura": "Matemáticas 3º ESO",
+    "id": 3035,
+    "dificultad": "Media",
+    "bloque": "Tema 4: Sistemas de ecuaciones lineales",
+    "enunciado": "Resuelve por igualación: $\\begin{cases} y=2x+1 \\ y=5x-8 \\end{cases}$.",
+    "resolucion_latex": "Como las dos ecuaciones tienen despejada $y$, igualamos las expresiones:<br>$2x+1=5x-8$.<br>Pasamos términos:<br>$1+8=5x-2x$.<br>$9=3x$.<br>$x=3$.<br>Sustituimos en $y=2x+1$:<br>$y=2\\cdot 3+1=7$.<br>La solución es:<br>$x=3$, $y=7$.",
+    "pista": "Si ambas ecuaciones tienen despejada la misma incógnita, puedes igualarlas.",
+    "formula": "$$y=A(x),\\ y=B(x) \\Rightarrow A(x)=B(x)$$"
+  },
+  {
+    "asignatura": "Matemáticas 3º ESO",
+    "id": 3036,
+    "dificultad": "Media",
+    "bloque": "Tema 4: Sistemas de ecuaciones lineales",
+    "enunciado": "Resuelve el sistema: $\\begin{cases} 3x+2y=16 \\ x+y=7 \\end{cases}$.",
+    "resolucion_latex": "De la segunda ecuación despejamos:<br>$y=7-x$.<br>Sustituimos en la primera:<br>$3x+2(7-x)=16$.<br>Quitamos paréntesis:<br>$3x+14-2x=16$.<br>Simplificamos:<br>$x+14=16$.<br>$x=2$.<br>Ahora calculamos $y$:<br>$y=7-2=5$.<br>La solución es:<br>$x=2$, $y=5$.",
+    "pista": "Despeja una incógnita de la ecuación más sencilla y sustitúyela en la otra.",
+    "formula": "$$y=7-x$$"
+  },
+  {
+    "asignatura": "Matemáticas 3º ESO",
+    "id": 3037,
+    "dificultad": "Alta",
+    "bloque": "Tema 4: Sistemas de ecuaciones lineales",
+    "enunciado": "En una tienda, $2$ cuadernos y $3$ bolígrafos cuestan $7$ €. Además, $1$ cuaderno y $2$ bolígrafos cuestan $4,5$ €. Calcula el precio de un cuaderno y de un bolígrafo.",
+    "resolucion_latex": "Llamamos $x$ al precio de un cuaderno e $y$ al precio de un bolígrafo.<br>Planteamos el sistema:<br>$\\begin{cases} 2x+3y=7 \\ x+2y=4,5 \\end{cases}$.<br>De la segunda ecuación despejamos:<br>$x=4,5-2y$.<br>Sustituimos en la primera:<br>$2(4,5-2y)+3y=7$.<br>$9-4y+3y=7$.<br>$9-y=7$.<br>$-y=-2$.<br>$y=2$.<br>Ahora calculamos $x$:<br>$x+2\\cdot 2=4,5$.<br>$x+4=4,5$.<br>$x=0,5$.<br>Un cuaderno cuesta $0,50$ € y un bolígrafo cuesta $2$ €.",
+    "pista": "Define una incógnita para cada precio y traduce cada frase del problema a una ecuación.",
+    "formula": "$$\\begin{cases} 2x+3y=7 \\ x+2y=4,5 \\end{cases}$$"
+  },
+  {
+    "asignatura": "Matemáticas 3º ESO",
+    "id": 3038,
+    "dificultad": "Alta",
+    "bloque": "Tema 4: Sistemas de ecuaciones lineales",
+    "enunciado": "La suma de dos números es $25$ y su diferencia es $7$. Calcula ambos números.",
+    "resolucion_latex": "Llamamos $x$ e $y$ a los dos números.<br>La suma es $25$:<br>$x+y=25$.<br>La diferencia es $7$:<br>$x-y=7$.<br>Sumamos las dos ecuaciones:<br>$2x=32$.<br>$x=16$.<br>Sustituimos en $x+y=25$:<br>$16+y=25$.<br>$y=9$.<br>Los números son $16$ y $9$.",
+    "pista": "Cuando tienes suma y diferencia, el método de reducción suele ser muy rápido.",
+    "formula": "$$\\begin{cases} x+y=S \\ x-y=D \\end{cases}$$"
+  },
+  {
+    "asignatura": "Matemáticas 3º ESO",
+    "id": 3039,
+    "dificultad": "Alta",
+    "bloque": "Tema 4: Sistemas de ecuaciones lineales",
+    "enunciado": "Resuelve e interpreta el sistema: $\\begin{cases} y=2x+1 \\ y=2x-3 \\end{cases}$.",
+    "resolucion_latex": "Igualamos las dos expresiones de $y$:<br>$2x+1=2x-3$.<br>Restamos $2x$ en ambos lados:<br>$1=-3$.<br>Esto es imposible.<br>Por tanto, el sistema no tiene solución.<br>Interpretación gráfica: las dos rectas tienen la misma pendiente $m=2$, pero distinta ordenada en el origen. Son rectas paralelas y no se cortan.",
+    "pista": "Si al resolver aparece una igualdad imposible, el sistema no tiene solución.",
+    "formula": "$$m_1=m_2,\\ n_1\\neq n_2 \\Rightarrow \\text{sin solución}$$"
+  },
+  {
+    "asignatura": "Matemáticas 3º ESO",
+    "id": 3040,
+    "dificultad": "Superior",
+    "bloque": "Tema 4: Sistemas de ecuaciones lineales",
+    "enunciado": "Ejercicio trampa: Un alumno resuelve un sistema y obtiene $0=0$. Afirma que eso significa que la solución es $x=0$, $y=0$. Explica el error e interpreta correctamente el resultado.",
+    "resolucion_latex": "El error está en interpretar $0=0$ como si fuera una solución concreta. En realidad, $0=0$ es una igualdad siempre verdadera.<br>Cuando al resolver un sistema aparece $0=0$, significa que las dos ecuaciones son equivalentes o representan la misma recta.<br>Por tanto, el sistema tiene infinitas soluciones: todos los puntos de esa recta cumplen ambas ecuaciones.<br>No significa necesariamente que la única solución sea $(0,0)$.",
+    "pista": "$0=0$ no da un valor para las incógnitas; indica que las ecuaciones dicen lo mismo.",
+    "formula": "$$0=0 \\Rightarrow \\text{sistema compatible indeterminado}$$"
+  },
+  {
+    "asignatura": "Matemáticas 3º ESO",
+    "id": 3041,
+    "dificultad": "Básica",
+    "bloque": "Tema 5: Funciones y gráficas",
+    "enunciado": "Dada la función $f(x)=2x+1$, calcula $f(0)$, $f(2)$ y $f(-1)$.",
+    "resolucion_latex": "Sustituimos cada valor de $x$ en la función.<br>Para $x=0$:<br>$f(0)=2\\cdot 0+1=1$.<br>Para $x=2$:<br>$f(2)=2\\cdot 2+1=5$.<br>Para $x=-1$:<br>$f(-1)=2\\cdot(-1)+1=-2+1=-1$.<br>Por tanto:<br>$f(0)=1$, $f(2)=5$ y $f(-1)=-1$.",
+    "pista": "Calcular una imagen significa sustituir la $x$ por el valor que te dan.",
+    "formula": "$$f(a)=\\text{valor de la función cuando }x=a$$"
+  },
+  {
+    "asignatura": "Matemáticas 3º ESO",
+    "id": 3042,
+    "dificultad": "Básica",
+    "bloque": "Tema 5: Funciones y gráficas",
+    "enunciado": "Completa la tabla de valores de la función $y=x+3$ para $x=-1$, $x=0$, $x=1$ y $x=2$.",
+    "resolucion_latex": "Sustituimos cada valor de $x$ en la función $y=x+3$.<br>Si $x=-1$:<br>$y=-1+3=2$.<br>Si $x=0$:<br>$y=0+3=3$.<br>Si $x=1$:<br>$y=1+3=4$.<br>Si $x=2$:<br>$y=2+3=5$.<br>La tabla queda:<br>$(-1,2)$, $(0,3)$, $(1,4)$ y $(2,5)$.",
+    "pista": "Una tabla de valores se construye sustituyendo cada valor de $x$ en la función.",
+    "formula": "$$y=x+3$$"
+  },
+  {
+    "asignatura": "Matemáticas 3º ESO",
+    "id": 3043,
+    "dificultad": "Básica",
+    "bloque": "Tema 5: Funciones y gráficas",
+    "enunciado": "Indica la pendiente y la ordenada en el origen de la recta $y=4x-2$.",
+    "resolucion_latex": "Una recta escrita como $y=mx+n$ tiene pendiente $m$ y ordenada en el origen $n$.<br>En la función $y=4x-2$, el número que multiplica a $x$ es $4$, por tanto:<br>$m=4$.<br>El término independiente es $-2$, por tanto:<br>$n=-2$.<br>La pendiente es $4$ y la ordenada en el origen es $-2$.",
+    "pista": "En $y=mx+n$, la pendiente es el coeficiente de $x$.",
+    "formula": "$$y=mx+n$$"
+  },
+  {
+    "asignatura": "Matemáticas 3º ESO",
+    "id": 3044,
+    "dificultad": "Media",
+    "bloque": "Tema 5: Funciones y gráficas",
+    "enunciado": "Calcula los puntos de corte con los ejes de la función $y=2x-6$.",
+    "resolucion_latex": "Corte con el eje $Y$: ponemos $x=0$.<br>$y=2\\cdot 0-6=-6$.<br>Por tanto, corta el eje $Y$ en $(0,-6)$.<br><br>Corte con el eje $X$: ponemos $y=0$.<br>$0=2x-6$.<br>$2x=6$.<br>$x=3$.<br>Por tanto, corta el eje $X$ en $(3,0)$.",
+    "pista": "Para el eje $Y$, usa $x=0$. Para el eje $X$, usa $y=0$.",
+    "formula": "$$\\text{Eje }Y: x=0 \\quad ; \\quad \\text{Eje }X: y=0$$"
+  },
+  {
+    "asignatura": "Matemáticas 3º ESO",
+    "id": 3045,
+    "dificultad": "Media",
+    "bloque": "Tema 5: Funciones y gráficas",
+    "enunciado": "Halla la ecuación de la recta que tiene pendiente $m=2$ y ordenada en el origen $n=5$.",
+    "resolucion_latex": "La forma general de una función afín es:<br>$y=mx+n$.<br>Nos dan $m=2$ y $n=5$.<br>Sustituimos en la expresión:<br>$y=2x+5$.<br>Por tanto, la ecuación de la recta es:<br>$y=2x+5$.",
+    "pista": "Solo tienes que colocar la pendiente y la ordenada en la fórmula $y=mx+n$.",
+    "formula": "$$y=mx+n$$"
+  },
+  {
+    "asignatura": "Matemáticas 3º ESO",
+    "id": 3046,
+    "dificultad": "Media",
+    "bloque": "Tema 5: Funciones y gráficas",
+    "enunciado": "Una tarifa de taxi cobra $3$ € de bajada de bandera y $1,20$ € por cada kilómetro recorrido. Escribe la función que da el precio $P$ en función de los kilómetros $x$ y calcula el precio para $8$ km.",
+    "resolucion_latex": "El precio tiene una parte fija de $3$ € y una parte variable de $1,20$ € por cada kilómetro.<br>Por tanto, la función es:<br>$P(x)=3+1,20x$.<br>Para $x=8$ km:<br>$P(8)=3+1,20\\cdot 8$.<br>$P(8)=3+9,60=12,60$ €.<br>El precio para $8$ km es $12,60$ €.",
+    "pista": "La parte fija es la ordenada en el origen y el precio por kilómetro es la pendiente.",
+    "formula": "$$P(x)=\\text{fijo}+\\text{precio por km}\\cdot x$$"
+  },
+  {
+    "asignatura": "Matemáticas 3º ESO",
+    "id": 3047,
+    "dificultad": "Alta",
+    "bloque": "Tema 5: Funciones y gráficas",
+    "enunciado": "Halla la ecuación de la recta que pasa por los puntos $A(1,3)$ y $B(4,9)$.",
+    "resolucion_latex": "Primero calculamos la pendiente:<br>$m=\\frac{y_B-y_A}{x_B-x_A}=\\frac{9-3}{4-1}=\\frac{6}{3}=2$.<br>La recta tiene forma:<br>$y=2x+n$.<br>Usamos el punto $A(1,3)$ para encontrar $n$:<br>$3=2\\cdot 1+n$.<br>$3=2+n$.<br>$n=1$.<br>Por tanto, la ecuación de la recta es:<br>$y=2x+1$.",
+    "pista": "Con dos puntos, primero calcula la pendiente y luego sustituye uno de los puntos para hallar $n$.",
+    "formula": "$$m=\\frac{y_B-y_A}{x_B-x_A}$$"
+  },
+  {
+    "asignatura": "Matemáticas 3º ESO",
+    "id": 3048,
+    "dificultad": "Alta",
+    "bloque": "Tema 5: Funciones y gráficas",
+    "enunciado": "Una función lineal pasa por el origen y por el punto $(3,12)$. Halla su ecuación.",
+    "resolucion_latex": "Una función lineal que pasa por el origen tiene forma:<br>$y=mx$.<br>Como pasa por el punto $(3,12)$, sustituimos:<br>$12=m\\cdot 3$.<br>Despejamos:<br>$m=\\frac{12}{3}=4$.<br>Por tanto, la función es:<br>$y=4x$.",
+    "pista": "Si pasa por el origen, no hay término independiente: la función es $y=mx$.",
+    "formula": "$$y=mx$$"
+  },
+  {
+    "asignatura": "Matemáticas 3º ESO",
+    "id": 3049,
+    "dificultad": "Alta",
+    "bloque": "Tema 5: Funciones y gráficas",
+    "enunciado": "Dada la función cuadrática $f(x)=x^2-4$, calcula los cortes con los ejes y explica si su gráfica abre hacia arriba o hacia abajo.",
+    "resolucion_latex": "La función es $f(x)=x^2-4$.<br>Como el coeficiente de $x^2$ es positivo, la parábola abre hacia arriba.<br><br>Corte con el eje $Y$: ponemos $x=0$.<br>$f(0)=0^2-4=-4$.<br>Corta el eje $Y$ en $(0,-4)$.<br><br>Cortes con el eje $X$: ponemos $f(x)=0$.<br>$x^2-4=0$.<br>$x^2=4$.<br>$x=\\pm 2$.<br>Corta el eje $X$ en $(-2,0)$ y $(2,0)$.",
+    "pista": "Para los cortes con el eje $X$, la función debe valer cero.",
+    "formula": "$$f(x)=0 \\quad ; \\quad a>0\\Rightarrow \\text{abre hacia arriba}$$"
+  },
+  {
+    "asignatura": "Matemáticas 3º ESO",
+    "id": 3050,
+    "dificultad": "Superior",
+    "bloque": "Tema 5: Funciones y gráficas",
+    "enunciado": "Ejercicio trampa: Un alumno afirma que la recta $y=3x+2$ corta al eje $X$ en el punto $(0,2)$ porque el $2$ es el término independiente. Explica el error y calcula correctamente los cortes con los ejes.",
+    "resolucion_latex": "El error está en confundir el corte con el eje $Y$ con el corte con el eje $X$.<br>En una recta $y=mx+n$, el término independiente $n$ indica el corte con el eje $Y$, no con el eje $X$.<br><br>Corte con el eje $Y$: ponemos $x=0$.<br>$y=3\\cdot 0+2=2$.<br>Corte con el eje $Y$: $(0,2)$.<br><br>Corte con el eje $X$: ponemos $y=0$.<br>$0=3x+2$.<br>$3x=-2$.<br>$x=-\\frac{2}{3}$.<br>Corte con el eje $X$: $\\left(-\\frac{2}{3},0\\right)$.",
+    "pista": "El punto $(0,n)$ es el corte con el eje vertical, no con el horizontal.",
+    "formula": "$$\\text{Eje }Y: x=0 \\quad ; \\quad \\text{Eje }X: y=0$$"
+  },
+  {
+    "asignatura": "Matemáticas 3º ESO",
+    "id": 3051,
+    "dificultad": "Básica",
+    "bloque": "Tema 6: Geometría plana y cuerpos geométricos",
+    "enunciado": "Calcula la hipotenusa de un triángulo rectángulo cuyos catetos miden $6$ cm y $8$ cm.",
+    "resolucion_latex": "Aplicamos el teorema de Pitágoras:<br>$h^2=6^2+8^2$.<br>Calculamos:<br>$h^2=36+64=100$.<br>Tomamos raíz cuadrada:<br>$h=\\sqrt{100}=10$ cm.<br>La hipotenusa mide $10$ cm.",
+    "pista": "En un triángulo rectángulo, la hipotenusa es el lado más largo.",
+    "formula": "$$h^2=a^2+b^2$$"
+  },
+  {
+    "asignatura": "Matemáticas 3º ESO",
+    "id": 3052,
+    "dificultad": "Básica",
+    "bloque": "Tema 6: Geometría plana y cuerpos geométricos",
+    "enunciado": "Calcula el área de un triángulo de base $12$ cm y altura $5$ cm.",
+    "resolucion_latex": "El área de un triángulo se calcula con:<br>$A=\\frac{b\\cdot h}{2}$.<br>Sustituimos:<br>$A=\\frac{12\\cdot 5}{2}=\\frac{60}{2}=30 \\text{ cm}^2$.<br>El área del triángulo es $30 \\text{ cm}^2$.",
+    "pista": "El área de un triángulo es la mitad del área de un rectángulo con la misma base y altura.",
+    "formula": "$$A=\\frac{b\\cdot h}{2}$$"
+  },
+  {
+    "asignatura": "Matemáticas 3º ESO",
+    "id": 3053,
+    "dificultad": "Básica",
+    "bloque": "Tema 6: Geometría plana y cuerpos geométricos",
+    "enunciado": "Calcula la longitud de una circunferencia de radio $7$ cm. Usa $\\pi\\approx 3,14$.",
+    "resolucion_latex": "La longitud de una circunferencia se calcula con:<br>$L=2\\pi r$.<br>Sustituimos:<br>$L=2\\cdot 3,14\\cdot 7$.<br>$L=43,96$ cm.<br>La longitud de la circunferencia es $43,96$ cm.",
+    "pista": "La longitud de la circunferencia es el perímetro del círculo.",
+    "formula": "$$L=2\\pi r$$"
+  },
+  {
+    "asignatura": "Matemáticas 3º ESO",
+    "id": 3054,
+    "dificultad": "Media",
+    "bloque": "Tema 6: Geometría plana y cuerpos geométricos",
+    "enunciado": "Calcula el área de un círculo de radio $5$ cm. Usa $\\pi\\approx 3,14$.",
+    "resolucion_latex": "El área de un círculo se calcula con:<br>$A=\\pi r^2$.<br>Sustituimos:<br>$A=3,14\\cdot 5^2$.<br>$A=3,14\\cdot 25=78,5 \\text{ cm}^2$.<br>El área del círculo es $78,5 \\text{ cm}^2$.",
+    "pista": "No olvides elevar el radio al cuadrado.",
+    "formula": "$$A=\\pi r^2$$"
+  },
+  {
+    "asignatura": "Matemáticas 3º ESO",
+    "id": 3055,
+    "dificultad": "Media",
+    "bloque": "Tema 6: Geometría plana y cuerpos geométricos",
+    "enunciado": "Dos triángulos semejantes tienen razón de semejanza $3$. Si un lado del triángulo pequeño mide $4$ cm, ¿cuánto mide el lado correspondiente del triángulo grande?",
+    "resolucion_latex": "La razón de semejanza indica por cuánto se multiplican las longitudes del triángulo pequeño para obtener las del grande.<br>Como la razón es $3$, multiplicamos:<br>$4\\cdot 3=12$ cm.<br>El lado correspondiente del triángulo grande mide $12$ cm.",
+    "pista": "En figuras semejantes, todos los lados correspondientes guardan la misma proporción.",
+    "formula": "$$\\frac{L_{grande}}{L_{pequeño}}=k$$"
+  },
+  {
+    "asignatura": "Matemáticas 3º ESO",
+    "id": 3056,
+    "dificultad": "Media",
+    "bloque": "Tema 6: Geometría plana y cuerpos geométricos",
+    "enunciado": "Calcula el volumen de un prisma rectangular de dimensiones $4$ cm, $5$ cm y $10$ cm.",
+    "resolucion_latex": "El volumen de un prisma rectangular se calcula multiplicando sus tres dimensiones:<br>$V=l\\cdot a\\cdot h$.<br>Sustituimos:<br>$V=4\\cdot 5\\cdot 10=200 \\text{ cm}^3$.<br>El volumen del prisma es $200 \\text{ cm}^3$.",
+    "pista": "En un prisma rectangular, el volumen es largo por ancho por alto.",
+    "formula": "$$V=l\\cdot a\\cdot h$$"
+  },
+  {
+    "asignatura": "Matemáticas 3º ESO",
+    "id": 3057,
+    "dificultad": "Alta",
+    "bloque": "Tema 6: Geometría plana y cuerpos geométricos",
+    "enunciado": "Una escalera de $13$ m está apoyada en una pared. Si la base de la escalera está a $5$ m de la pared, ¿a qué altura llega la escalera?",
+    "resolucion_latex": "La escalera, la pared y el suelo forman un triángulo rectángulo.<br>La escalera es la hipotenusa: $13$ m.<br>La distancia a la pared es un cateto: $5$ m.<br>Aplicamos Pitágoras:<br>$13^2=5^2+h^2$.<br>$169=25+h^2$.<br>$h^2=144$.<br>$h=\\sqrt{144}=12$ m.<br>La escalera llega a una altura de $12$ m.",
+    "pista": "La escalera es el lado más largo del triángulo rectángulo.",
+    "formula": "$$c^2=a^2+b^2$$"
+  },
+  {
+    "asignatura": "Matemáticas 3º ESO",
+    "id": 3058,
+    "dificultad": "Alta",
+    "bloque": "Tema 6: Geometría plana y cuerpos geométricos",
+    "enunciado": "Calcula el volumen de un cilindro de radio $3$ cm y altura $10$ cm. Usa $\\pi\\approx 3,14$.",
+    "resolucion_latex": "El volumen de un cilindro se calcula con:<br>$V=\\pi r^2h$.<br>Sustituimos:<br>$V=3,14\\cdot 3^2\\cdot 10$.<br>$V=3,14\\cdot 9\\cdot 10=282,6 \\text{ cm}^3$.<br>El volumen del cilindro es $282,6 \\text{ cm}^3$.",
+    "pista": "El cilindro es como muchos círculos iguales apilados en altura.",
+    "formula": "$$V=\\pi r^2h$$"
+  },
+  {
+    "asignatura": "Matemáticas 3º ESO",
+    "id": 3059,
+    "dificultad": "Alta",
+    "bloque": "Tema 6: Geometría plana y cuerpos geométricos",
+    "enunciado": "Una maqueta está hecha a escala $1:50$. Si una pared mide $8$ cm en la maqueta, ¿cuánto mide en la realidad en metros?",
+    "resolucion_latex": "La escala $1:50$ significa que $1$ cm en la maqueta equivale a $50$ cm en la realidad.<br>Si la pared mide $8$ cm en la maqueta:<br>$8\\cdot 50=400$ cm reales.<br>Pasamos a metros:<br>$400$ cm $=4$ m.<br>La pared mide $4$ m en la realidad.",
+    "pista": "Multiplica la medida de la maqueta por el factor de escala y luego cambia de unidades.",
+    "formula": "$$\\text{medida real}=\\text{medida maqueta}\\cdot\\text{escala}$$"
+  },
+  {
+    "asignatura": "Matemáticas 3º ESO",
+    "id": 3060,
+    "dificultad": "Superior",
+    "bloque": "Tema 6: Geometría plana y cuerpos geométricos",
+    "enunciado": "Ejercicio trampa: Un alumno calcula el área de un círculo de radio $6$ cm usando $A=2\\pi r$ y obtiene $37,68 \\text{ cm}^2$. Explica el error y calcula el área correcta. Usa $\\pi\\approx 3,14$.",
+    "resolucion_latex": "El error está en usar la fórmula de la longitud de la circunferencia en lugar de la fórmula del área del círculo.<br>La fórmula $2\\pi r$ calcula el perímetro o longitud de la circunferencia, no el área.<br>El área correcta se calcula con:<br>$A=\\pi r^2$.<br>Sustituimos $r=6$:<br>$A=3,14\\cdot 6^2=3,14\\cdot 36=113,04 \\text{ cm}^2$.<br>El área correcta es $113,04 \\text{ cm}^2$.",
+    "pista": "$2\\pi r$ es longitud. Para área necesitas elevar el radio al cuadrado.",
+    "formula": "$$A=\\pi r^2 \\quad ; \\quad L=2\\pi r$$"
+  },
+  {
+    "asignatura": "Matemáticas 3º ESO",
+    "id": 3061,
+    "dificultad": "Básica",
+    "bloque": "Tema 7: Estadística y probabilidad",
+    "enunciado": "Calcula la media aritmética de los datos: $6$, $8$, $10$, $12$ y $14$.",
+    "resolucion_latex": "La media aritmética se calcula sumando todos los datos y dividiendo entre el número total de datos.<br>Sumamos:<br>$6+8+10+12+14=50$.<br>Hay $5$ datos, por tanto:<br>$\\bar{x}=\\frac{50}{5}=10$.<br>La media aritmética es $10$.",
+    "pista": "Suma todos los datos y divide entre cuántos datos hay.",
+    "formula": "$$\\bar{x}=\\frac{x_1+x_2+\\cdots+x_n}{n}$$"
+  },
+  {
+    "asignatura": "Matemáticas 3º ESO",
+    "id": 3062,
+    "dificultad": "Básica",
+    "bloque": "Tema 7: Estadística y probabilidad",
+    "enunciado": "Calcula la mediana de los datos: $4$, $9$, $2$, $7$ y $8$.",
+    "resolucion_latex": "Primero ordenamos los datos de menor a mayor:<br>$2$, $4$, $7$, $8$, $9$.<br>Como hay $5$ datos, la mediana es el dato central.<br>El dato central es $7$.<br>Por tanto, la mediana es $7$.",
+    "pista": "Para calcular la mediana, ordena siempre los datos primero.",
+    "formula": "$$Me=\\text{valor central de los datos ordenados}$$"
+  },
+  {
+    "asignatura": "Matemáticas 3º ESO",
+    "id": 3063,
+    "dificultad": "Básica",
+    "bloque": "Tema 7: Estadística y probabilidad",
+    "enunciado": "En una bolsa hay $5$ bolas rojas, $3$ azules y $2$ verdes. Se extrae una bola al azar. Calcula la probabilidad de que sea azul.",
+    "resolucion_latex": "Primero calculamos el número total de bolas:<br>$5+3+2=10$.<br>Los casos favorables son las $3$ bolas azules.<br>Por tanto:<br>$P(\\text{azul})=\\frac{3}{10}$.<br>La probabilidad de sacar una bola azul es $\\frac{3}{10}$.",
+    "pista": "La probabilidad es casos favorables dividido entre casos posibles.",
+    "formula": "$$P(A)=\\frac{\\text{casos favorables}}{\\text{casos posibles}}$$"
+  },
+  {
+    "asignatura": "Matemáticas 3º ESO",
+    "id": 3064,
+    "dificultad": "Media",
+    "bloque": "Tema 7: Estadística y probabilidad",
+    "enunciado": "Calcula la moda y el rango de los datos: $3$, $5$, $5$, $6$, $8$, $8$, $8$ y $10$.",
+    "resolucion_latex": "La moda es el valor que más se repite.<br>El número $8$ aparece tres veces, más que cualquier otro dato.<br>Por tanto, la moda es $8$.<br><br>El rango se calcula restando el dato menor al dato mayor:<br>$R=10-3=7$.<br>Por tanto, la moda es $8$ y el rango es $7$.",
+    "pista": "La moda es el dato más repetido y el rango mide la diferencia entre el mayor y el menor.",
+    "formula": "$$R=x_{max}-x_{min}$$"
+  },
+  {
+    "asignatura": "Matemáticas 3º ESO",
+    "id": 3065,
+    "dificultad": "Media",
+    "bloque": "Tema 7: Estadística y probabilidad",
+    "enunciado": "Se lanza un dado equilibrado de seis caras. Calcula la probabilidad de obtener un número par.",
+    "resolucion_latex": "Los resultados posibles al lanzar un dado son:<br>$1$, $2$, $3$, $4$, $5$ y $6$.<br>Los números pares son:<br>$2$, $4$ y $6$.<br>Hay $3$ casos favorables de $6$ posibles.<br>Por tanto:<br>$P(\\text{par})=\\frac{3}{6}=\\frac{1}{2}$.",
+    "pista": "Cuenta cuántos resultados cumplen la condición y divídelos entre todos los resultados posibles.",
+    "formula": "$$P(A)=\\frac{\\text{casos favorables}}{\\text{casos posibles}}$$"
+  },
+  {
+    "asignatura": "Matemáticas 3º ESO",
+    "id": 3066,
+    "dificultad": "Media",
+    "bloque": "Tema 7: Estadística y probabilidad",
+    "enunciado": "En una clase de $30$ alumnos, $12$ practican baloncesto. Calcula la frecuencia relativa de alumnos que practican baloncesto y exprésala como fracción, decimal y porcentaje.",
+    "resolucion_latex": "La frecuencia relativa se calcula dividiendo la frecuencia absoluta entre el total de datos:<br>$f_r=\\frac{12}{30}$.<br>Simplificamos:<br>$\\frac{12}{30}=\\frac{2}{5}$.<br>En decimal:<br>$\\frac{2}{5}=0,4$.<br>En porcentaje:<br>$0,4=40\\%$.<br>Por tanto, la frecuencia relativa es $\\frac{2}{5}$, $0,4$ o $40\\%$.",
+    "pista": "La frecuencia relativa compara una parte con el total.",
+    "formula": "$$f_r=\\frac{f_i}{N}$$"
+  },
+  {
+    "asignatura": "Matemáticas 3º ESO",
+    "id": 3067,
+    "dificultad": "Alta",
+    "bloque": "Tema 7: Estadística y probabilidad",
+    "enunciado": "Calcula la media ponderada de un alumno que ha obtenido un $7$ en un examen que vale el $60\\%$ de la nota y un $9$ en un trabajo que vale el $40\\%$.",
+    "resolucion_latex": "Multiplicamos cada nota por su peso correspondiente:<br>$7\\cdot 0,60=4,2$.<br>$9\\cdot 0,40=3,6$.<br>Sumamos:<br>$4,2+3,6=7,8$.<br>La nota final del alumno es $7,8$.",
+    "pista": "Cuando cada parte pesa distinto, no se hace una media normal.",
+    "formula": "$$\\bar{x}_p=x_1p_1+x_2p_2+\\cdots+x_np_n$$"
+  },
+  {
+    "asignatura": "Matemáticas 3º ESO",
+    "id": 3068,
+    "dificultad": "Alta",
+    "bloque": "Tema 7: Estadística y probabilidad",
+    "enunciado": "Se lanzan dos monedas. Calcula la probabilidad de obtener al menos una cara.",
+    "resolucion_latex": "Los resultados posibles son:<br>$(C,C)$, $(C,X)$, $(X,C)$ y $(X,X)$, donde $C$ es cara y $X$ es cruz.<br>Hay $4$ casos posibles.<br>Los casos en los que aparece al menos una cara son:<br>$(C,C)$, $(C,X)$ y $(X,C)$.<br>Hay $3$ casos favorables.<br>Por tanto:<br>$P(\\text{al menos una cara})=\\frac{3}{4}$.",
+    "pista": "Al menos una cara significa una cara o dos caras.",
+    "formula": "$$P(A)=\\frac{\\text{casos favorables}}{\\text{casos posibles}}$$"
+  },
+  {
+    "asignatura": "Matemáticas 3º ESO",
+    "id": 3069,
+    "dificultad": "Alta",
+    "bloque": "Tema 7: Estadística y probabilidad",
+    "enunciado": "En una urna hay $4$ bolas rojas y $6$ azules. Se extraen dos bolas con reemplazo. Calcula la probabilidad de que ambas sean rojas.",
+    "resolucion_latex": "Como la extracción es con reemplazo, después de sacar la primera bola se devuelve a la urna, así que las probabilidades no cambian.<br>La probabilidad de sacar una bola roja es:<br>$P(R)=\\frac{4}{10}=\\frac{2}{5}$.<br>La probabilidad de sacar dos rojas es:<br>$P(RR)=\\frac{2}{5}\\cdot\\frac{2}{5}=\\frac{4}{25}$.<br>Por tanto, la probabilidad de que ambas sean rojas es $\\frac{4}{25}$.",
+    "pista": "Con reemplazo significa que la primera bola se devuelve antes de sacar la segunda.",
+    "formula": "$$P(A\\cap B)=P(A)\\cdot P(B)$$"
+  },
+  {
+    "asignatura": "Matemáticas 3º ESO",
+    "id": 3070,
+    "dificultad": "Superior",
+    "bloque": "Tema 7: Estadística y probabilidad",
+    "enunciado": "Ejercicio trampa: Un alumno dice que si la media de tres números es $10$, entonces necesariamente uno de los números tiene que ser $10$. Explica por qué es falso y pon un ejemplo.",
+    "resolucion_latex": "La afirmación es falsa porque la media representa un equilibrio entre los datos, pero no tiene por qué coincidir con uno de ellos.<br>Por ejemplo, los números $8$, $10$ y $12$ tienen media:<br>$\\bar{x}=\\frac{8+10+12}{3}=\\frac{30}{3}=10$, y en este caso sí aparece el $10$.<br>Pero también podemos usar los números $7$, $11$ y $12$:<br>$\\bar{x}=\\frac{7+11+12}{3}=\\frac{30}{3}=10$.<br>En este segundo ejemplo, ninguno de los datos es $10$, pero la media sí es $10$.<br>Por tanto, la media no tiene por qué ser uno de los datos.",
+    "pista": "La media puede ser un valor representativo, aunque no aparezca en la lista de datos.",
+    "formula": "$$\\bar{x}=\\frac{x_1+x_2+x_3}{3}$$"
+  }
+]

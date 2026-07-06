@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A-PRUEBA | Acceso Estelar</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        :root {
+            --neon-math: #00f2fe;
+            --neon-physics: #ff4500;
+            --neon-chemistry: #00ff7f;
+        }
+
+        body {
+            background: #0B0E14;
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            overflow-x: hidden;
+            position: relative;
+            animation: fadeIn 1.5s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes fadeOut {
+            from { opacity: 1; }
+            to { opacity: 0; }
+        }
+
+        .nebula {
+            position: absolute;
+            width: 800px;
+            height: 800px;
+            background: radial-gradient(circle, rgba(138, 43, 226, 0.15) 0%, transparent 70%);
+            top: -200px;
+            left: -200px;
+            border-radius: 50%;
+            pointer-events: none;
+        }
+
+        .nebula2 {
+            position: absolute;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(43, 107, 226, 0.15) 0%, transparent 70%);
+            bottom: -100px;
+            right: -100px;
+            border-radius: 50%;
+            pointer-events: none;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 500px;
+            padding: 2rem;
+            z-index: 10;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 2.5rem;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            letter-spacing: 4px;
+            background: linear-gradient(90deg, #00f2fe 0%, #4facfe 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 0.5rem;
+            text-shadow: 0 0 30px rgba(79, 172, 254, 0.3);
+        }
+
+        header p {
+            font-size: 1.1rem;
+            color: #a0a0b8;
+            font-weight: 300;
+        }
+
+        .glass-panel {
+            background: rgba(20, 20, 35, 0.6);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 24px;
+            padding: 2.5rem;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+
+        .input-group {
+            margin-bottom: 1.5rem;
+            text-align: left;
+        }
+
+        .input-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-size: 0.85rem;
+            color: #b8b8d0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 1rem 1.5rem;
+            background-color: rgba(10, 5, 20, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 12px;
+            color: white;
+            font-size: 1rem;
+            outline: none;
+            transition: all 0.3s ease;
+        }
+
+        .input-group input:focus {
+            border-color: #00f2fe;
+            box-shadow: 0 0 15px rgba(0, 242, 254, 0.3);
+            background-color: rgba(20, 10, 40, 0.8);
+        }
+
+        .btn-primary {
+            width: 100%;
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            color: #000;
+            border: none;
+            padding: 1rem;
+            font-size: 1.1rem;
+            font-weight: 700;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 15px rgba(79, 172, 254, 0.4);
+            margin-bottom: 1rem;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 0 25px rgba(79, 172, 254, 0.6);
+        }
+
+        .btn-secondary {
+            width: 100%;
+            background: transparent;
+            color: #b9f2ff;
+            border: 1px solid rgba(0, 242, 254, 0.4);
+            padding: 1rem;
+            font-size: 1rem;
+            font-weight: 600;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-bottom: 1.5rem;
+        }
+
+        .btn-secondary:hover {
+            background: rgba(0, 242, 254, 0.1);
+            border-color: #00f2fe;
+        }
+
+        .divider {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: #606080;
+            margin-bottom: 1.5rem;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .divider::before,
+        .divider::after {
+            content: '';
+            flex: 1;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .divider::before {
+            margin-right: .5em;
+        }
+
+        .divider::after {
+            margin-left: .5em;
+        }
+
+        .btn-google {
+            width: 100%;
+            background: white;
+            color: #333;
+            border: none;
+            padding: 1rem;
+            font-size: 1rem;
+            font-weight: 600;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .btn-google:hover {
+            background: #f1f1f1;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
+        }
+
+        .btn-google img {
+            width: 20px;
+            height: 20px;
+        }
+
+        .error-msg {
+            color: #ff4a4a;
+            font-size: 0.9rem;
+            margin-top: 1rem;
+            display: none;
+        }
+
+        /* Loading Overlay */
+        #loading {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: rgba(5, 2, 10, 0.9);
+            z-index: 1000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color: #00f2fe;
+            font-weight: 600;
+            display: none;
+        }
+
+        .spinner {
+            width: 50px;
+            height: 50px;
+            border: 3px solid rgba(0, 242, 254, 0.2);
+            border-top-color: #00f2fe;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin-bottom: 1rem;
+        }
+
+        @keyframes spin {
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nebula"></div>
+    <div class="nebula2"></div>
+
+    <div id="loading">
+        <div class="spinner"></div>
+        <p>Autenticando coordenadas...</p>
+    </div>
+
+    <div class="container">
+        <header>
+            <h1>A-PRUEBA</h1>
+            <p>Acceso al Centro de Mando Estelar</p>
+        </header>
+
+        <div class="glass-panel">
+            <div class="input-group">
+                <label for="email">Email Académico</label>
+                <input type="email" id="email" placeholder="alumno@universo.com">
+            </div>
+
+            <div class="input-group">
+                <label for="password">Clave de Seguridad</label>
+                <input type="password" id="password" placeholder="••••••••">
+            </div>
+
+            <!-- Campos obligatorios del Tutor Legal (ocultos inicialmente para login) -->
+            <div id="registerFields" style="display: none;">
+                <div class="divider">Datos del Alumno</div>
+                <div class="input-group">
+                    <label for="studentName">Nombre del Alumno *</label>
+                    <input type="text" id="studentName" placeholder="Tu nombre">
+                </div>
+                <div class="input-group">
+                    <label for="studentSurname">Apellidos del Alumno *</label>
+                    <input type="text" id="studentSurname" placeholder="Tus apellidos">
+                </div>
+
+                <div class="divider" style="margin-top: 1.5rem;">Datos del Tutor Legal</div>
+                <div class="input-group">
+                    <label for="tutorName">Nombre del Tutor *</label>
+                    <input type="text" id="tutorName" placeholder="Nombre">
+                </div>
+                <div class="input-group">
+                    <label for="tutorSurname">Apellidos del Tutor *</label>
+                    <input type="text" id="tutorSurname" placeholder="Apellidos">
+                </div>
+                <div class="input-group">
+                    <label for="tutorPhone">Teléfono del Tutor Legal *</label>
+                    <input type="tel" id="tutorPhone" placeholder="+34 600 000 000">
+                </div>
+                <div class="input-group">
+                    <label for="tutorEmail">Email del Tutor Legal *</label>
+                    <input type="email" id="tutorEmail" placeholder="tutor@universo.com">
+                </div>
+                <p style="font-size: 0.8rem; color: #a0a0b8; margin-bottom: 1.5rem;">Estos datos son obligatorios para enviar reportes de evolución.</p>
+            </div>
+
+            <button id="btnLogin" class="btn-primary">INICIAR SESIÓN</button>
+            <button id="btnRegister" class="btn-secondary">CREAR CUENTA ESTELAR</button>
+
+            <div class="divider" id="dividerAuth">O</div>
+
+            <button id="btnGoogle" class="btn-google">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" alt="Google">
+                Continuar con Google
+            </button>
+
+            <p id="errorTxt" class="error-msg"></p>
+        </div>
+    </div>
+
+    <script type="module">
+        import { auth, db, googleProvider, signInWithPopup, signInWithEmailAndPassword, createUserWithEmailAndPassword, onAuthStateChanged, getDoc, doc, setDoc } from './firebase-config.js';
+
+        const emailIn = document.getElementById('email');
+        const passIn = document.getElementById('password');
+        const btnLogin = document.getElementById('btnLogin');
+        const btnRegister = document.getElementById('btnRegister');
+        const btnGoogle = document.getElementById('btnGoogle');
+        const errorTxt = document.getElementById('errorTxt');
+        const loading = document.getElementById('loading');
+        const registerFields = document.getElementById('registerFields');
+        const dividerAuth = document.getElementById('dividerAuth');
+
+        function showError(msg) {
+            errorTxt.innerText = msg;
+            errorTxt.style.display = 'block';
+            loading.style.display = 'none';
+        }
+
+        // Evaluar redirección: Si ya tiene perfil en Firestore → seleccion.html, si no → index (onboarding)
+        async function routeUser(user) {
+            document.body.style.animation = 'fadeOut 0.5s forwards';
+            setTimeout(async () => {
+                try {
+                    const userDoc = await getDoc(doc(db, "usuarios", user.uid));
+                    if (userDoc.exists() && userDoc.data().curso) {
+                        const data = userDoc.data();
+                        // Sync key user data to localStorage for mapa/estudio fallback
+                        if (data.curso)      localStorage.setItem('userCourse', data.curso);
+                        if (data.comunidad)  localStorage.setItem('userComunidad', data.comunidad);
+                        if (data.asignatura) localStorage.setItem('userSubject', data.asignatura);
+                        if (data.perfil)     localStorage.setItem('userProfile', data.perfil);
+                        if (data.userStreak) localStorage.setItem('userStreak', data.userStreak);
+                        // ── NEW: always go to mission selector first ──
+                        window.location.href = 'seleccion.html';
+                    } else {
+                        // No profile yet or incomplete profile → onboarding
+                        window.location.href = 'index.html';
+                    }
+                } catch (error) {
+                    console.error("Error validando usuario: ", error);
+                    window.location.href = 'index.html';
+                }
+            }, 450);
+        }
+
+        // Listener activo por si un usuario logueado vuelve a /login.html
+        onAuthStateChanged(auth, (user) => {
+            if (user) {
+                loading.style.display = 'flex';
+                routeUser(user);
+            }
+        });
+
+        btnLogin.addEventListener('click', () => {
+            const email = emailIn.value.trim();
+            const pass = passIn.value.trim();
+            if (!email || !pass) return showError("Completa las credenciales estelares.");
+
+            loading.style.display = 'flex';
+            signInWithEmailAndPassword(auth, email, pass)
+                .catch((error) => {
+                    let msg = "Error de acceso: " + error.message;
+                    if (error.code === 'auth/user-not-found' || error.code === 'auth/invalid-credential') msg = "Usuario no encontrado o credenciales inválidas.";
+                    if (error.code === 'auth/wrong-password') msg = "Clave de seguridad incorrecta.";
+                    showError(msg);
+                });
+        });
+
+        btnRegister.addEventListener('click', async () => {
+            if (registerFields.style.display === 'none') {
+                registerFields.style.display = 'block';
+                btnLogin.style.display = 'none';
+                btnGoogle.style.display = 'none';
+                dividerAuth.style.display = 'none';
+                btnRegister.innerText = 'CONFIRMAR REGISTRO';
+                return;
+            }
+
+            const email = emailIn.value.trim();
+            const pass = passIn.value.trim();
+            const studentName = document.getElementById('studentName').value.trim();
+            const studentSurname = document.getElementById('studentSurname').value.trim();
+            const tutorName = document.getElementById('tutorName').value.trim();
+            const tutorSurname = document.getElementById('tutorSurname').value.trim();
+            const tutorPhone = document.getElementById('tutorPhone').value.trim();
+            const tutorEmail = document.getElementById('tutorEmail').value.trim();
+
+            if (!email || !pass) return showError("Completa las credenciales estelares.");
+            if (!studentName || !studentSurname) return showError("Completa los datos del alumno.");
+            if (!tutorName || !tutorSurname || !tutorPhone || !tutorEmail) return showError("Completa los datos del tutor legal obligatorios.");
+            if (pass.length < 6) return showError("La clave debe tener al menos 6 caracteres.");
+
+            loading.style.display = 'flex';
+            try {
+                const userCredential = await createUserWithEmailAndPassword(auth, email, pass);
+                // Guardar datos del alumno y tutor en Firestore inmediatamente
+                await setDoc(doc(db, "usuarios", userCredential.user.uid), {
+                    rol: "alumno",
+                    datos_alumno: {
+                        nombre: studentName,
+                        apellidos: studentSurname,
+                        email: email
+                    },
+                    datos_tutor: {
+                        nombre: tutorName,
+                        apellidos: tutorSurname,
+                        email: tutorEmail,
+                        telefono: tutorPhone
+                    },
+                    fechaRegistro: new Date()
+                }, { merge: true });
+                // Note: onAuthStateChanged will trigger routeUser(user) which will redirect to index.html
+            } catch (error) {
+                let msg = "Fallo en la creación: " + error.message;
+                if (error.code === 'auth/email-already-in-use') msg = "Ese email ya tiene una cuenta estelar.";
+                showError(msg);
+            }
+        });
+
+        btnGoogle.addEventListener('click', () => {
+            loading.style.display = 'flex';
+            signInWithPopup(auth, googleProvider)
+                .catch((error) => showError("Autenticación con Google fallida: " + error.message));
+        });
+
+    </script>
+</body>
+
+</html>

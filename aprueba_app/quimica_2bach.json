@@ -1,0 +1,1702 @@
+[
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 101,
+    "dificultad": "Fácil",
+    "bloque": "Tema 1: Modelo Mecánico-Cuántico",
+    "enunciado": "Calcula la longitud de onda de De Broglie asociada a un electrón que se mueve con una velocidad de $3 \\times 10^6 \\text{ m/s}$. (Datos: $h = 6.63 \\times 10^{-34} \\text{ J s}$, $m_e = 9.11 \\times 10^{-31} \\text{ kg}$).",
+    "resolucion_latex": "Aplicamos la ecuación de De Broglie: $\\lambda = \\frac{h}{m \\cdot v}$.\\n$$\\lambda = \\frac{6.63 \\times 10^{-34}}{9.11 \\times 10^{-31} \\cdot 3 \\times 10^6} = \\frac{6.63 \\times 10^{-34}}{2.733 \\times 10^{-24}} \\approx 2.43 \\times 10^{-10} \\text{ m}$$",
+    "pista": "Usa De Broglie: cuanto mayor sea el momento lineal de la partícula, menor será su longitud de onda asociada.",
+    "formula": "$$\\lambda=\\frac{h}{m\\cdot v}$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 102,
+    "dificultad": "Fácil",
+    "bloque": "Tema 1: Modelo Mecánico-Cuántico",
+    "enunciado": "Escribe la configuración electrónica en estado fundamental del átomo de Cloro ($Z=17$).",
+    "resolucion_latex": "Siguiendo el principio de Aufbau (diagrama de Moeller) hasta completar 17 electrones:\\n$1s^2 2s^2 2p^6 3s^2 3p^5$.",
+    "pista": "Rellena los orbitales siguiendo el orden energético y suma hasta llegar a los 17 electrones.",
+    "formula": "$$1s^2\\,2s^2\\,2p^6\\,3s^2\\,3p^5$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 103,
+    "dificultad": "Fácil",
+    "bloque": "Tema 1: Modelo Mecánico-Cuántico",
+    "enunciado": "Indica si la siguiente combinación de números cuánticos $(n, l, m_l, m_s)$ es posible para un electrón en un átomo, justificando la respuesta: $(2, 2, 0, +1/2)$.",
+    "resolucion_latex": "La combinación **NO es posible**.\\nEl número cuántico azimutal $l$ debe cumplir la condición $0 \\le l < n$. Si $n=2$, el valor máximo permitido para $l$ es 1 (orbitales $2s$ y $2p$). Un valor de $l=2$ implicaría un orbital $2d$, que no existe en la naturaleza.",
+    "pista": "Comprueba primero que el número cuántico secundario cumpla que va desde 0 hasta n-1.",
+    "formula": "$$0\\leq l\\leq n-1$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 104,
+    "dificultad": "Media",
+    "bloque": "Tema 1: Modelo Mecánico-Cuántico",
+    "enunciado": "Aplicando el Principio de Incertidumbre de Heisenberg ($\\Delta x \\cdot \\Delta p \\ge h/4\\pi$), calcula la incertidumbre en la posición de un protón si su velocidad se conoce con un error de $10^3 \\text{ m/s}$. (Dato: $m_p = 1.67 \\times 10^{-27} \\text{ kg}$).",
+    "resolucion_latex": "Sabemos que $\\Delta p = m \\cdot \\Delta v$. Sustituyendo:\\n$$\\Delta x \\cdot m \\cdot \\Delta v \\ge \\frac{h}{4\\pi} \\implies \\Delta x \\ge \\frac{h}{4\\pi \\cdot m \\cdot \\Delta v}$$\\n$$\\Delta x \\ge \\frac{6.63 \\times 10^{-34}}{4\\pi \\cdot 1.67 \\times 10^{-27} \\cdot 10^3} \\approx \\frac{6.63 \\times 10^{-34}}{2.1 \\times 10^{-23}} \\approx 3.16 \\times 10^{-11} \\text{ m}$$",
+    "pista": "Transforma la incertidumbre de velocidad en incertidumbre de momento antes de aplicar Heisenberg.",
+    "formula": "$$\\Delta x\\cdot\\Delta p\\geq\\frac{h}{4\\pi},\\quad \\Delta p=m\\cdot\\Delta v$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 105,
+    "dificultad": "Media",
+    "bloque": "Tema 1: Modelo Mecánico-Cuántico",
+    "enunciado": "Escribe la configuración electrónica del ión $Fe^{2+}$ sabiendo que el átomo neutro de Hierro tiene $Z=26$.",
+    "resolucion_latex": "1) Hierro neutro ($Z=26$): $1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^6$.\\n2) Formación del catión: Se pierden los electrones de la capa de valencia más externa (nivel de mayor $n$), en este caso el nivel 4.\\nConfiguración del $Fe^{2+}$: $1s^2 2s^2 2p^6 3s^2 3p^6 3d^6$ (o $[Ar] 3d^6$).",
+    "pista": "En cationes de metales de transición, se pierden antes los electrones del nivel con mayor n, normalmente el 4s antes que el 3d.",
+    "formula": "$$Fe:[Ar]4s^2 3d^6\\quad ;\\quad Fe^{2+}:[Ar]3d^6$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 106,
+    "dificultad": "Media",
+    "bloque": "Tema 1: Modelo Mecánico-Cuántico",
+    "enunciado": "Deduce cuáles son los cuatro números cuánticos posibles para el electrón diferenciador (el último en entrar) del átomo de Sodio ($Z=11$).",
+    "resolucion_latex": "Configuración del Na: $1s^2 2s^2 2p^6 3s^1$.\\nEl electrón diferenciador se encuentra en el orbital $3s$.\\n- Nivel principal ($n$): 3.\\n- Subnivel ($l$): para el orbital $s$, $l=0$.\\n- Orbital magnético ($m_l$): si $l=0$, el único valor de $m_l$ es 0.\\n- Espín ($m_s$): puede ser $+1/2$ o $-1/2$. (Convencionalmente se asigna primero $+1/2$).\\nPosible conjunto: $(3, 0, 0, +1/2)$.",
+    "pista": "Localiza el último electrón en la configuración electrónica; sus números cuánticos salen del orbital donde entra.",
+    "formula": "$$s\\Rightarrow l=0,\\quad m_l=0$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 107,
+    "dificultad": "Difícil",
+    "bloque": "Tema 1: Modelo Mecánico-Cuántico",
+    "enunciado": "La energía de ionización de un metal es $400 \\text{ kJ/mol}$. Calcula la frecuencia mínima que debe tener un fotón para poder arrancar un electrón de dicho metal. (Datos: $N_A = 6.022 \\times 10^{23} \\text{ mol}^{-1}$, $h = 6.63 \\times 10^{-34} \\text{ J s}$).",
+    "resolucion_latex": "1) Calculamos la energía necesaria para un solo átomo (arrancar 1 electrón):\\n$$E_{\\text{átomo}} = \\frac{400 \\times 10^3 \\text{ J/mol}}{6.022 \\times 10^{23} \\text{ átomos/mol}} \\approx 6.64 \\times 10^{-19} \\text{ J/átomo}$$\\n2) Por la ecuación de Planck ($E = h \\cdot f$), despejamos la frecuencia umbral:\\n$$f = \\frac{E}{h} = \\frac{6.64 \\times 10^{-19}}{6.63 \\times 10^{-34}} \\approx 1.00 \\times 10^{15} \\text{ Hz}$$",
+    "pista": "Convierte primero la energía por mol en energía por átomo y después aplica la relación de Planck.",
+    "formula": "$$E=h\\cdot f,\\quad E_{átomo}=\\frac{E_{mol}}{N_A}$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 108,
+    "dificultad": "Difícil",
+    "bloque": "Tema 1: Modelo Mecánico-Cuántico",
+    "enunciado": "Justifica por qué la configuración electrónica del Cobre ($Z=29$) es $[Ar] 4s^1 3d^{10}$ y no la esperada teóricamente $[Ar] 4s^2 3d^9$.",
+    "resolucion_latex": "Esta es una excepción al Principio de Aufbau.\\nUn subnivel $d$ completamente lleno ($3d^{10}$) o semilleno ($3d^5$) proporciona una estabilidad extra al átomo por su simetría esférica y menor repulsión interelectrónica.\\nEl Cobre 'promociona' un electrón del orbital $4s$ al $3d$ (ya que sus niveles de energía son muy similares) para alcanzar la configuración altamente estable $d^{10}$, sacrificando el orbital $s$ completo.",
+    "pista": "Recuerda que los subniveles d semillenos o llenos tienen estabilidad extra.",
+    "formula": "$$Cu:[Ar]4s^1 3d^{10}$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 109,
+    "dificultad": "Difícil",
+    "bloque": "Tema 1: Modelo Mecánico-Cuántico",
+    "enunciado": "Halla la energía emitida cuando un electrón del átomo de hidrógeno salta del nivel $n=4$ al nivel $n=2$. ¿A qué serie espectral pertenece? (Dato: $R_H = 1.097 \\times 10^7 \\text{ m}^{-1}$).",
+    "resolucion_latex": "Fórmula de Rydberg: $\\frac{1}{\\lambda} = R_H \\left(\\frac{1}{n_1^2} - \\frac{1}{n_2^2}\\right)$. ($n_1 < n_2$)\\n$$\\frac{1}{\\lambda} = 1.097 \\times 10^7 \\left(\\frac{1}{2^2} - \\frac{1}{4^2}\\right) = 1.097 \\times 10^7 \\left(\\frac{1}{4} - \\frac{1}{16}\\right) = 1.097 \\times 10^7 \\left(\\frac{3}{16}\\right) \\approx 2.057 \\times 10^6 \\text{ m}^{-1}$$\\nLongitud de onda $\\lambda = \\frac{1}{2.057 \\times 10^6} \\approx 4.86 \\times 10^{-7} \\text{ m} = 486 \\text{ nm}$.\\nEnergía: $E = \\frac{hc}{\\lambda} = \\frac{6.63 \\times 10^{-34} \\cdot 3 \\times 10^8}{4.86 \\times 10^{-7}} \\approx 4.09 \\times 10^{-19} \\text{ J}$.\\nComo cae al nivel fundamental $n=2$, pertenece a la **Serie de Balmer** (espectro visible).",
+    "pista": "Para una emisión, el electrón cae de un nivel mayor a otro menor y la energía del fotón es positiva.",
+    "formula": "$$\\frac{1}{\\lambda}=R_H\\left(\\frac{1}{n_1^2}-\\frac{1}{n_2^2}\\right),\\quad E=\\frac{hc}{\\lambda}$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 110,
+    "dificultad": "Superior",
+    "bloque": "Tema 1: Modelo Mecánico-Cuántico",
+    "enunciado": "*(Reto Supernova)*: Según la mecánica cuántica, no podemos conocer la trayectoria del electrón, pero definimos orbitales atómicos. Explica el significado físico de la función de onda $\\psi$ y de su cuadrado $|\\psi|^2$ en la interpretación de Born.",
+    "resolucion_latex": "En la ecuación de Schrödinger, la función de onda ($\\psi$) es una amplitud de probabilidad puramente matemática, que puede tomar valores positivos, negativos o incluso complejos, y carece de significado físico directo medible.\\nSin embargo, la interpretación de Max Born establece que el cuadrado del módulo de la función de onda ($|\\psi|^2$) representa la **densidad de probabilidad**. Físicamente, multiplicando este valor por un elemento de volumen ($dV$), obtenemos la probabilidad estricta de encontrar al electrón en esa pequeña región del espacio alrededor del núcleo. Un orbital es, de hecho, la región del espacio donde la integral de $|\\psi|^2$ es cercana al 90-95%.",
+    "pista": "La función de onda no se interpreta directamente como probabilidad; su módulo al cuadrado sí.",
+    "formula": "$$|\\psi|^2=\\text{densidad de probabilidad}$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 201,
+    "dificultad": "Fácil",
+    "bloque": "Tema 2: Sistema Periódico",
+    "enunciado": "Dada la configuración electrónica $[Ne] 3s^2 3p^4$, indica a qué grupo y período pertenece el elemento.",
+    "resolucion_latex": "El mayor nivel de energía es $n=3$, por tanto está en el **Período 3**.\\nTiene 6 electrones de valencia ($2+4$). Al terminar en $p$, pertenece al bloque representativo. Grupo $10 + 6 =$ **Grupo 16** (Anfígenos/Calcógenos).",
+    "pista": "El período lo da el mayor nivel n y el grupo, en los elementos representativos, se deduce de los electrones de valencia.",
+    "formula": "$$ns^a np^b\\Rightarrow grupo=10+a+b$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 202,
+    "dificultad": "Fácil",
+    "bloque": "Tema 2: Sistema Periódico",
+    "enunciado": "Ordena los siguientes elementos de menor a mayor radio atómico: $Na (Z=11)$, $Mg (Z=12)$, $K (Z=19)$.",
+    "resolucion_latex": "El radio atómico aumenta al bajar en un grupo (más capas) y disminuye al avanzar hacia la derecha en un período (mayor carga nuclear efectiva que atrae a los electrones).\\nNa y Mg están en el período 3. Mg está más a la derecha, luego es más pequeño: $Mg < Na$.\\nEl K está en el período 4 debajo del Na, luego es el más grande.\\nOrden: **$Mg < Na < K$**.",
+    "pista": "El radio aumenta al bajar en un grupo y disminuye al avanzar hacia la derecha en un período.",
+    "formula": "$$r\\uparrow\\text{ hacia abajo},\\quad r\\downarrow\\text{ hacia la derecha}$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 203,
+    "dificultad": "Fácil",
+    "bloque": "Tema 2: Sistema Periódico",
+    "enunciado": "Define el concepto de Energía de Ionización.",
+    "resolucion_latex": "La Energía de Ionización (EI) es la energía mínima necesaria que hay que suministrar a un átomo neutro, en estado gaseoso y fundamental, para arrancarle su electrón más externo y débilmente retenido, convirtiéndolo en un catión.",
+    "pista": "Piensa en la energía necesaria para convertir un átomo neutro gaseoso en catión gaseoso.",
+    "formula": "$$X(g)\\rightarrow X^+(g)+e^-$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 204,
+    "dificultad": "Media",
+    "bloque": "Tema 2: Sistema Periódico",
+    "enunciado": "Justifica por qué el catión $Na^+$ es mucho más pequeño que el átomo neutro de $Na$.",
+    "resolucion_latex": "El Na neutro ($1s^2 2s^2 2p^6 3s^1$) tiene su electrón de valencia en el nivel $n=3$.\\nAl formar el catión $Na^+$ ($1s^2 2s^2 2p^6$), pierde todo el nivel 3. Además, como sigue teniendo 11 protones atrayendo ahora a solo 10 electrones, la fuerza nuclear por electrón aumenta, provocando una drástica contracción de la nube electrónica.",
+    "pista": "Al formar un catión, el átomo pierde electrones y a veces incluso toda la capa externa.",
+    "formula": "$$Na\\rightarrow Na^++e^-$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 205,
+    "dificultad": "Media",
+    "bloque": "Tema 2: Sistema Periódico",
+    "enunciado": "Compara razonadamente la primera energía de ionización del Oxígeno ($1s^2 2s^2 2p^4$) y la del Nitrógeno ($1s^2 2s^2 2p^3$).",
+    "resolucion_latex": "Como regla general, la EI aumenta hacia la derecha en el período. Sin embargo, el **N ($Z=7$) tiene mayor EI que el O ($Z=8$)**.\\nEl motivo es que el Nitrógeno tiene su subnivel $2p$ exactamente semilleno ($p_x^1, p_y^1, p_z^1$), aportando una estabilidad cuántica extra. En el Oxígeno, hay un electrón apareado ($p_x^2$) que sufre fuerte repulsión repulsión con su compañero, siendo más fácil de extraer que los electrones del N.",
+    "pista": "Las excepciones en energía de ionización suelen deberse a subniveles semillenos o a repulsiones entre electrones apareados.",
+    "formula": "$$p^3\\text{ semilleno}\\Rightarrow\\text{estabilidad extra}$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 206,
+    "dificultad": "Media",
+    "bloque": "Tema 2: Sistema Periódico",
+    "enunciado": "Ordena las especies isoelectrónicas $O^{2-}$, $F^-$ y $Ne$ de mayor a menor radio iónico.",
+    "resolucion_latex": "Todas las especies tienen exactamente la misma configuración electrónica (10 electrones, isoelectrónicas).\\nLa diferencia está en la carga nuclear ($Z$): Ne tiene 10 protones, F tiene 9, O tiene 8.\\nA mayor número de protones, mayor fuerza de atracción sobre la misma cantidad de electrones, lo que encoge más la nube.\\nPor tanto, la que menos protones tiene es la mayor: **$O^{2-} > F^- > Ne$**.",
+    "pista": "En especies isoelectrónicas, la que tiene más protones atrae más fuerte la misma nube electrónica y es más pequeña.",
+    "formula": "$$\\text{mismos }e^-:\\ Z\\uparrow\\Rightarrow r\\downarrow$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 207,
+    "dificultad": "Difícil",
+    "bloque": "Tema 2: Sistema Periódico",
+    "enunciado": "Se observan las siguientes energías de ionización sucesivas (en kJ/mol) para un elemento del segundo período: EI_1 = 801, EI_2 = 2427, EI_3 = 3660, EI_4 = 25026, EI_5 = 32822. Identifica de qué elemento se trata y a qué grupo pertenece.",
+    "resolucion_latex": "Observamos un salto inmenso de energía entre la tercera (3660) y la cuarta ionización (25026).\\nEste \"escalón\" indica que los tres primeros electrones eran de la capa de valencia, y el cuarto ya pertenece a una capa interior completa (capa de gas noble), mucho más cerca del núcleo y muy estable.\\nEl elemento tiene 3 electrones de valencia. Al ser del Período 2, es el **Boro ($B$)**, que pertenece al **Grupo 13**.",
+    "pista": "El gran salto entre dos ionizaciones sucesivas indica que ya se han arrancado todos los electrones de valencia.",
+    "formula": "$$\\text{salto grande en }EI\\Rightarrow\\text{nº de electrones de valencia}$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 208,
+    "dificultad": "Difícil",
+    "bloque": "Tema 2: Sistema Periódico",
+    "enunciado": "Define el concepto de Afinidad Electrónica (AE) y explica por qué la del Flúor libera energía mientras que la del Neón absorbe energía (es positiva).",
+    "resolucion_latex": "La Afinidad Electrónica es la energía intercambiada cuando un átomo gaseoso en estado fundamental capta un electrón para formar un anión.\\nEn el Flúor ($2s^2 2p^5$), captar un electrón le permite alcanzar la configuración hiper-estable de gas noble ($2p^6$), por lo que el proceso es muy favorable termodinámicamente y se libera energía (proceso exotérmico, AE < 0).\\nEl Neón ($2p^6$) ya es estable. Obligarle a captar un electrón implica meterlo en una capa superior ($3s^1$), lo que es energéticamente desfavorable, requiriendo un aporte de energía externa (proceso endotérmico, AE > 0).",
+    "pista": "Captar electrones es favorable si acerca al átomo a una configuración de gas noble; es desfavorable si rompe una capa cerrada.",
+    "formula": "$$X(g)+e^-\\rightarrow X^-(g)$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 209,
+    "dificultad": "Difícil",
+    "bloque": "Tema 2: Sistema Periódico",
+    "enunciado": "Discute cómo varía la electronegatividad en el Sistema Periódico y relaciónalo con el tipo de enlace que formarán dos elementos muy distanciados en la tabla.",
+    "resolucion_latex": "La electronegatividad (tendencia de un átomo a atraer hacia sí el par de electrones de un enlace) aumenta hacia la derecha y hacia arriba (el Flúor es el más electronegativo, el Francio el que menos).\\nSi unimos elementos muy alejados (ej. Grupo 1 con Grupo 17), la diferencia de electronegatividad ($\\Delta EN$) será muy alta ($\\Delta EN > 1.7$). El elemento muy electronegativo arrancará literalmente el electrón al menos electronegativo, formándose un **enlace iónico** por atracción electrostática.",
+    "pista": "Cuanto mayor sea la diferencia de electronegatividad, más iónico será el enlace.",
+    "formula": "$$\\Delta EN\\text{ grande}\\Rightarrow\\text{enlace iónico}$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 210,
+    "dificultad": "Superior",
+    "bloque": "Tema 2: Sistema Periódico",
+    "enunciado": "*(Reto Supernova)*: El efecto pantalla de los electrones internos reduce la atracción nuclear sobre los electrones de valencia. Explica por qué, en los metales de transición (bloque d), la adición sucesiva de electrones a medida que avanzamos en el periodo provoca una contracción atómica mucho menor que la que ocurre en los elementos de los bloques s o p.",
+    "resolucion_latex": "A medida que avanzamos por el bloque $d$ (por ejemplo, del Sc al Zn), los protones añadidos al núcleo se compensan con electrones que entran en la subcapa interna $(n-1)d$, y NO en la capa de valencia $ns$.\\nEstos electrones de la capa interna $d$ ejercen un **efecto pantalla excelente** (interponiéndose entre el núcleo y los electrones más externos $ns$). Este apantallamiento anula casi por completo el aumento de la carga nuclear ($Z$).\\nComo resultado, la Carga Nuclear Efectiva ($Z^*$) que sienten los electrones periféricos apenas varía a lo largo de la serie de transición, por lo que el radio atómico se mantiene casi constante (ligera contracción), en claro contraste con las bruscas disminuciones observadas en el bloque $p$.",
+    "pista": "En el bloque d, los electrones añadidos apantallan parcialmente el aumento de carga nuclear.",
+    "formula": "$$Z^*=Z-\\sigma$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 301,
+    "dificultad": "Fácil",
+    "bloque": "Tema 3: Enlace Iónico y Metálico",
+    "enunciado": "Describe cómo se forma el enlace iónico en el Fluoruro de Litio ($LiF$) indicando qué ion forma cada elemento.",
+    "resolucion_latex": "El Litio (Grupo 1) tiene un electrón de valencia ($2s^1$). El Flúor (Grupo 17) tiene 7 electrones ($2s^2 2p^5$).\\nEl Litio transfiere permanentemente su electrón al Flúor. El Li se convierte en el catión $Li^+$ (estable como He) y el F en el anión $F^-$ (estable como Ne).\\nLa atracción electrostática entre cargas de distinto signo genera el enlace.",
+    "pista": "Identifica qué átomo pierde electrones y cuál los gana para alcanzar configuración estable.",
+    "formula": "$$Li\\rightarrow Li^++e^-\\quad ;\\quad F+e^-\\rightarrow F^-$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 302,
+    "dificultad": "Fácil",
+    "bloque": "Tema 3: Enlace Iónico y Metálico",
+    "enunciado": "Cita tres propiedades físicas características macroscópicas de los compuestos iónicos.",
+    "resolucion_latex": "1) Son sólidos cristalinos a temperatura ambiente (altos puntos de fusión y ebullición debido a la fuerte red reticular).\\n2) Son duros pero frágiles (al golpearlos, las capas iónicas se desplazan, se enfrentan iones del mismo signo y el cristal se fractura por repulsión).\\n3) No conducen la electricidad en estado sólido, pero son excelentes conductores fundidos o disueltos en agua (los iones quedan libres).",
+    "pista": "Relaciona las propiedades macroscópicas con una red de iones fuertemente atraídos.",
+    "formula": "$$\\text{red iónica}=\\text{cationes}+\\text{aniones}$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 303,
+    "dificultad": "Fácil",
+    "bloque": "Tema 3: Enlace Iónico y Metálico",
+    "enunciado": "Explica la conductividad eléctrica de los metales utilizando el modelo del 'mar de electrones'.",
+    "resolucion_latex": "En los metales, los átomos ceden sus electrones de valencia y se transforman en cationes que forman una red fija.\\nLos electrones deslocalizados forman un \"mar o nube\" que fluye libremente entre todos los cationes de la red.\\nAl aplicar una diferencia de potencial, esta nube electrónica se desplaza casi sin resistencia, lo que explica la excelente conductividad eléctrica (y térmica).",
+    "pista": "En los metales, la clave es que los electrones de valencia no pertenecen a un solo átomo.",
+    "formula": "$$\\text{metal}=\\text{cationes fijos}+e^-\\text{ deslocalizados}$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 304,
+    "dificultad": "Media",
+    "bloque": "Tema 3: Enlace Iónico y Metálico",
+    "enunciado": "Utilizando la fórmula de la Energía Reticular de Born-Landé ($U = -K \\frac{q_1 q_2}{d_0}$), justifica razonadamente cuál de estos compuestos tendrá mayor punto de fusión: $NaCl$ o $MgO$.",
+    "resolucion_latex": "La energía de la red reticular (y por tanto, la estabilidad y el punto de fusión) depende directamente de las cargas iónicas y de forma inversa a la distancia entre ellas.\\n- En el $NaCl$: Las cargas son $q_1 = +1$ y $q_2 = -1$.\\n- En el $MgO$: Las cargas son $q_1 = +2$ y $q_2 = -2$.\\nComo las cargas en el $MgO$ son el doble, el numerador de la energía reticular ($-2 \\cdot 2 = 4$) es cuatro veces mayor que en el NaCl. Esta fuerza electrostática inmensamente mayor otorga al **MgO un punto de fusión muchísimo más alto**.",
+    "pista": "Compara las cargas de los iones: cargas mayores producen una red más fuerte.",
+    "formula": "$$U\\propto-\\frac{q_1q_2}{d_0}$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 305,
+    "dificultad": "Media",
+    "bloque": "Tema 3: Enlace Iónico y Metálico",
+    "enunciado": "Escribe las ecuaciones termoquímicas correspondientes a las dos primeras etapas del Ciclo de Born-Haber para la formación del cristal de $KCl(s)$ desde sus elementos estándar.",
+    "resolucion_latex": "Formación estándar: $K(s) + \\frac{1}{2}Cl_2(g) \\rightarrow KCl(s)$.\\nEtapa 1 (Sublimación del metal): El potasio sólido pasa a gas.\\n$K(s) \\rightarrow K(g) \\quad \\Delta H_{\\text{sublimación}}$\\nEtapa 2 (Disociación del no metal): La molécula de cloro se rompe en átomos.\\n$\\frac{1}{2}Cl_2(g) \\rightarrow Cl(g) \\quad \\frac{1}{2} \\Delta H_{\\text{disociación}}$",
+    "pista": "En Born-Haber, empieza convirtiendo los elementos estándar en átomos gaseosos.",
+    "formula": "$$K(s)\\rightarrow K(g),\\quad \\frac12Cl_2(g)\\rightarrow Cl(g)$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 306,
+    "dificultad": "Media",
+    "bloque": "Tema 3: Enlace Iónico y Metálico",
+    "enunciado": "Teniendo en cuenta el modelo de la Teoría de Bandas, explica la diferencia en la conductividad eléctrica entre un conductor, un semiconductor y un aislante.",
+    "resolucion_latex": "La conductividad depende de la \"banda prohibida\" (gap) de energía entre la banda de valencia (llena de electrones) y la banda de conducción (vacía).\\n1) **Conductor**: Ambas bandas se solapan. Los electrones fluyen libremente sin energía extra.\\n2) **Aislante**: Existe una banda prohibida muy grande. Los electrones no tienen energía suficiente para \"saltarla\".\\n3) **Semiconductor**: La banda prohibida es estrecha. A 0 K no conduce, pero con un poco de energía externa (luz o temperatura ambiente), los electrones saltan y conducen la corriente.",
+    "pista": "La diferencia está en la separación energética entre banda de valencia y banda de conducción.",
+    "formula": "$$E_g\\text{ pequeño}\\Rightarrow\\text{semiconductor};\\quad E_g\\text{ grande}\\Rightarrow\\text{aislante}$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 307,
+    "dificultad": "Difícil",
+    "bloque": "Tema 3: Enlace Iónico y Metálico",
+    "enunciado": "En el ciclo de Born-Haber del $NaCl$, ¿por qué es fundamental tener en cuenta el signo termodinámico de la energía reticular ($U$) y qué indica este físicamente en el balance general de formación?",
+    "resolucion_latex": "El proceso de formación de un catión y un anión a partir de sus elementos gaseosos siempre absorbe más energía (Energía de Ionización) de la que libera (Afinidad Electrónica). Si el proceso se quedara ahí, las sales jamás se formarían porque serían endotérmicas.\\nLa **Energía Reticular ($U$) tiene un signo fuertemente negativo (exotérmico)** porque representa el \"choque\" y estabilización electrostática de billones de iones en un cristal ordenado.\\nEs este colosal \"premio energético\" reticular el que compensa todo el gasto anterior, haciendo que el balance de la Entalpía de formación total ($\\Delta H_f$) sea negativo y el cristal sea estable termodinámicamente en la naturaleza.",
+    "pista": "La formación del cristal libera mucha energía porque se crea una red de atracciones electrostáticas.",
+    "formula": "$$\\Delta H_f=\\Delta H_{subl}+EI+\\frac12D+AE+U$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 308,
+    "dificultad": "Difícil",
+    "bloque": "Tema 3: Enlace Iónico y Metálico",
+    "enunciado": "Explica el comportamiento de la maleabilidad en los metales en contraste con la fragilidad iónica cuando ambos sufren un fuerte impacto mecánico.",
+    "resolucion_latex": "Al golpear un cristal **iónico**, la fuerza mecánica desplaza los planos cristalográficos. Los cationes se alinean frente a otros cationes y los aniones frente a aniones. La repulsión electrostática colosal e instantánea resquebraja el cristal (fragilidad).\\nAl golpear un cristal **metálico**, los planos de cationes también se desplazan. Sin embargo, el \"mar de electrones\" deslocalizados actúa como un pegamento flexible que fluye e impide que los cationes se repelan. Los planos resbalan y adoptan una nueva forma sin romperse (maleabilidad y ductilidad).",
+    "pista": "Compara qué ocurre al desplazar capas: en iónicos aparecen repulsiones, en metales los electrones amortiguan el desplazamiento.",
+    "formula": "$$\\text{mar de electrones}\\Rightarrow\\text{maleabilidad}$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 309,
+    "dificultad": "Difícil",
+    "bloque": "Tema 3: Enlace Iónico y Metálico",
+    "enunciado": "Comparando los cloruros alcalinos $LiCl$, $NaCl$ y $KCl$, ¿cuál de ellos esperas que sea más soluble en agua? Justifica tu respuesta basándote en la energía reticular.",
+    "resolucion_latex": "La solubilidad depende del balance entre la Energía de Hidratación (agua rodeando a los iones) y la Energía Reticular (fuerza que los une).\\nEn esta serie, la carga es constante (+1 y -1), por lo que la Energía Reticular depende del radio: a mayor radio, menor atracción en el cristal y menor energía reticular.\\nEl orden de radios catiónicos es $K^+ > Na^+ > Li^+$.\\nEl cristal de $KCl$ es el que tiene la red más dilatada y débil (menor Energía Reticular), por lo que el agua requiere menos esfuerzo para \"desmontarlo\". El **$KCl$ es el más soluble** de los tres.",
+    "pista": "A igualdad de cargas, una red con iones más grandes suele tener menor energía reticular.",
+    "formula": "$$d_0\\uparrow\\Rightarrow |U|\\downarrow$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 310,
+    "dificultad": "Superior",
+    "bloque": "Tema 3: Enlace Iónico y Metálico",
+    "enunciado": "*(Reto Supernova)*: Algunos semiconductores intrínsecos como el Silicio (Si) pueden transformarse en semiconductores extrínsecos dopados. Explica el mecanismo de dopaje tipo 'p' y justifica cómo un 'hueco' contribuye al paso de la corriente eléctrica.",
+    "resolucion_latex": "El Silicio tiene 4 electrones de valencia formados en una red de enlaces covalentes perfectos.\\nEn el dopaje tipo 'p' (positivo), se inyectan impurezas de átomos del Grupo 13 (como el Boro o Galio) que solo tienen 3 electrones de valencia.\\nEl átomo intruso forma enlaces con los Si vecinos, pero le falta un electrón para completar el cuarto enlace, generando un \"hueco\" electrónico.\\nBajo voltaje, un electrón de un enlace vecino salta y llena ese hueco, pero deja un nuevo hueco detrás. A nivel macroscópico, el \"hueco\" se desplaza como si fuera una **partícula imaginaria con carga positiva y masa efectiva**, fluyendo hacia el polo negativo del campo eléctrico y aumentando brutalmente la conductividad del material (base de toda la microelectrónica actual).",
+    "pista": "El dopaje tipo p introduce átomos con menos electrones de valencia y crea huecos móviles.",
+    "formula": "$$\\text{dopaje tipo p}\\Rightarrow\\text{huecos }(+)$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 401,
+    "dificultad": "Fácil",
+    "bloque": "Tema 4: Enlace Covalente",
+    "enunciado": "Dibuja la estructura de Lewis para la molécula de agua ($H_2O$) e indica cuántos pares de electrones enlazantes y no enlazantes tiene.",
+    "resolucion_latex": "El Oxígeno (Grupo 16) tiene 6 electrones de valencia y cada Hidrógeno (Grupo 1) tiene 1. Total: $6 + 2(1) = 8$ electrones (4 pares).\\nEl O es el átomo central y se une a los H mediante dos enlaces simples.\\nPara completar el octeto del O, le colocamos 2 pares solitarios.\\nResultado: **2 pares enlazantes** (los enlaces O-H) y **2 pares no enlazantes** sobre el átomo de Oxígeno.",
+    "pista": "Cuenta los electrones de valencia y reparte pares hasta completar el octeto del oxígeno.",
+    "formula": "$$e^-_{valencia}=6+2\\cdot1=8$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 402,
+    "dificultad": "Fácil",
+    "bloque": "Tema 4: Enlace Covalente",
+    "enunciado": "Según la Teoría de Repulsión de Pares de Electrones de la Capa de Valencia (TRPECV), ¿cuál es la geometría molecular del Metano ($CH_4$)?",
+    "resolucion_latex": "En el $CH_4$, el átomo central de Carbono está rodeado por 4 pares de electrones enlazantes y ningún par solitario ($AX_4$).\\nPara minimizar las repulsiones electrónicas, estos 4 pares se orientan en el espacio dirigiéndose a los vértices de un tetraedro.\\nLa geometría molecular es **Tetraédrica**, con ángulos de enlace exactos de $109.5^\\circ$.",
+    "pista": "Con cuatro pares enlazantes y ningún par libre alrededor del átomo central, la geometría es tetraédrica.",
+    "formula": "$$AX_4\\Rightarrow\\text{tetraédrica}$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 403,
+    "dificultad": "Fácil",
+    "bloque": "Tema 4: Enlace Covalente",
+    "enunciado": "Clasifica los siguientes enlaces como covalentes polares o apolares: a) $H-H$, b) $C-Cl$, c) $O=O$.",
+    "resolucion_latex": "La polaridad del enlace depende de la diferencia de electronegatividad ($\\Delta EN$) entre los átomos.\\na) $H-H$: Átomos idénticos, $\\Delta EN = 0$. Enlace **covalente apolar**.\\nb) $C-Cl$: Átomos distintos (Cl es más electronegativo), $\\Delta EN > 0$. Enlace **covalente polar**.\\nc) $O=O$: Átomos idénticos, $\\Delta EN = 0$. Enlace **covalente apolar**.",
+    "pista": "Un enlace entre átomos iguales es apolar; entre átomos distintos suele ser polar si hay diferencia de electronegatividad.",
+    "formula": "$$\\Delta EN=0\\Rightarrow\\text{apolar};\\quad \\Delta EN>0\\Rightarrow\\text{polar}$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 404,
+    "dificultad": "Media",
+    "bloque": "Tema 4: Enlace Covalente",
+    "enunciado": "Justifica la geometría y el ángulo de enlace de la molécula de Amoníaco ($NH_3$) basándote en la TRPECV.",
+    "resolucion_latex": "El Nitrógeno central tiene 5 electrones de valencia. Forma 3 enlaces simples con los Hidrógenos y le sobra 1 par no enlazante (aislado).\\nTiene 4 nubes electrónicas en total ($AX_3E_1$), cuya disposición base es tetraédrica.\\nSin embargo, la geometría molecular solo describe la posición de los átomos, resultando en una **Pirámide Trigonal**.\\nComo el par solitario repulsa con mayor fuerza a los pares enlazantes, los \"aplasta\", cerrando el ángulo tetraédrico de $109.5^\\circ$ a aproximadamente **$107^\\circ$**.",
+    "pista": "Distingue geometría electrónica y molecular: el par libre ocupa espacio pero no aparece como átomo en la forma.",
+    "formula": "$$AX_3E\\Rightarrow\\text{pirámide trigonal}$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 405,
+    "dificultad": "Media",
+    "bloque": "Tema 4: Enlace Covalente",
+    "enunciado": "Explica por qué la molécula de Dióxido de Carbono ($CO_2$) es apolar a pesar de tener enlaces covalentes polares.",
+    "resolucion_latex": "El enlace $C=O$ es polar porque el Oxígeno es más electronegativo, creando dipolos de enlace orientados hacia los oxígenos.\\nPor TRPECV, el $CO_2$ no tiene pares solitarios en el C y forma 2 dobles enlaces ($AX_2$), lo que le da una **geometría Lineal** ($180^\\circ$).\\nDebido a esta geometría simétrica, los dos vectores de los momentos dipolares de los enlaces tienen la misma magnitud pero sentido opuesto, por lo que se anulan matemáticamente ($\\sum \\vec{\\mu} = 0$). La molécula es globalmente **apolar**.",
+    "pista": "Aunque los enlaces sean polares, una geometría simétrica puede anular el momento dipolar total.",
+    "formula": "$$\\sum\\vec{\\mu}=0\\Rightarrow\\text{molécula apolar}$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 406,
+    "dificultad": "Media",
+    "bloque": "Tema 4: Enlace Covalente",
+    "enunciado": "Utilizando la Teoría de Enlace de Valencia (TEV), indica la hibridación de los átomos de carbono y cuenta cuántos enlaces sigma ($\\sigma$) y pi ($\\pi$) hay en el Eteno ($CH_2=CH_2$).",
+    "resolucion_latex": "En el Eteno, cada Carbono está unido a 3 átomos (2 H y 1 C) y no tiene pares libres. Necesita 3 orbitales idénticos, por lo que sufre una **hibridación $sp^2$** (geometría plana trigonal, $120^\\circ$).\\nEl doble enlace $C=C$ consta de un enlace frontal $\\sigma$ (solapamiento de orbitales $sp^2-sp^2$) y un enlace lateral $\\pi$ (solapamiento de los orbitales $p$ puros que quedaron sin hibridar).\\nLos 4 enlaces $C-H$ son de tipo $\\sigma$ ($sp^2-s$).\\nTotal: **5 enlaces $\\sigma$ y 1 enlace $\\pi$**.",
+    "pista": "En un doble enlace hay un enlace sigma y un enlace pi; los enlaces simples son sigma.",
+    "formula": "$$C=C\\Rightarrow1\\sigma+1\\pi$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 407,
+    "dificultad": "Difícil",
+    "bloque": "Tema 4: Enlace Covalente",
+    "enunciado": "Explica el enlace de la molécula de Dicloruro de Berilio ($BeCl_2$) aplicando la Teoría de Hibridación. (Datos: Z(Be) = 4, Z(Cl) = 17).",
+    "resolucion_latex": "Configuración del Berilio: $1s^2 2s^2$. En su estado fundamental no tiene electrones desapareados, ¡no podría formar enlaces!\\nPromoción: Un electrón del $2s$ salta al orbital vacío $2p$, quedando $2s^1 2p_x^1$ (2 electrones desapareados).\\nHibridación: Se mezclan el orbital $s$ y el $p$ para dar lugar a **dos orbitales híbridos $sp$** idénticos, lineales y orientados a $180^\\circ$.\\nEstos orbitales $sp$ solapan frontalmente con los orbitales $3p$ de los cloros, formando 2 enlaces covalentes $\\sigma$ fuertemente direccionales y dando a la molécula una geometría estrictamente **lineal**.",
+    "pista": "La hibridación se deduce del número de regiones electrónicas alrededor del átomo central.",
+    "formula": "$$2\\text{ regiones electrónicas}\\Rightarrow sp\\Rightarrow180^\\circ$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 408,
+    "dificultad": "Difícil",
+    "bloque": "Tema 4: Enlace Covalente",
+    "enunciado": "Justifica por qué existe la molécula de Pentacloruro de Fósforo ($PCl_5$) pero no existe la molécula de Pentacloruro de Nitrógeno ($NCl_5$), si ambos átomos centrales pertenecen al grupo 15.",
+    "resolucion_latex": "El Nitrógeno pertenece al Período 2 ($n=2$), donde solo existen orbitales $2s$ y $2p$. El N no puede tener más de 8 electrones en su capa de valencia, por lo que cumple estrictamente la regla del octeto (máximo 4 enlaces).\\nEl Fósforo pertenece al Período 3 ($n=3$). En este nivel **ya existen orbitales $3d$ vacíos**. El P puede promocionar electrones a estos orbitales $d$ y formar una capa de valencia expandida (hipervalencia) con 10 electrones, lo que le permite formar 5 enlaces en el $PCl_5$ (hibridación $sp^3d$).",
+    "pista": "Los elementos del segundo período no pueden expandir el octeto porque no tienen orbitales d disponibles en esa capa.",
+    "formula": "$$n=2\\Rightarrow 2s,2p\\text{ solamente}$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 409,
+    "dificultad": "Difícil",
+    "bloque": "Tema 4: Enlace Covalente",
+    "enunciado": "Indica razonadamente si el Trifluoruro de Boro ($BF_3$) es polar o apolar. (Dato: Z(B) = 5).",
+    "resolucion_latex": "El Boro central tiene 3 electrones de valencia y forma 3 enlaces con los F, sin dejar pares libres ($AX_3$). Es una molécula hipovalente (6 e-).\\nPor TRPECV, los 3 dominios electrónicos se separan al máximo en un plano, resultando en una **geometría Plana Trigonal** con ángulos de $120^\\circ$.\\nLos enlaces $B-F$ son muy polares, generando tres vectores momento dipolar. Al estar orientados simétricamente a $120^\\circ$ en un plano, su suma vectorial es cero ($\\sum \\vec{\\mu} = 0$). La molécula es globalmente **apolar**.",
+    "pista": "Mira si la suma vectorial de los dipolos de enlace se anula por simetría.",
+    "formula": "$$AX_3\\Rightarrow\\text{trigonal plana},\\quad \\sum\\vec{\\mu}=0$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 410,
+    "dificultad": "Superior",
+    "bloque": "Tema 4: Enlace Covalente",
+    "enunciado": "*(Reto Supernova)*: El ión carbonato ($CO_3^{2-}$) presenta experimentalmente tres enlaces $C-O$ exactamente de la misma longitud, intermedia entre un enlace simple y uno doble. Explica este hecho utilizando el concepto de resonancia.",
+    "resolucion_latex": "Al dibujar la estructura de Lewis del $CO_3^{2-}$, necesitamos colocar un doble enlace $C=O$ y dos enlaces simples $C-O^-$ para completar el octeto del carbono. \\nSin embargo, podemos colocar el doble enlace en cualquiera de los 3 oxígenos, obteniendo 3 estructuras de Lewis equivalentes (estructuras resonantes).\\nEn la realidad, la molécula no alterna entre ellas, sino que es un **híbrido de resonancia**. Los dos electrones del enlace $\\pi$ están deslocalizados por igual sobre los 3 enlaces $C-O$. Como resultado, no hay un enlace doble y dos simples, sino tres enlaces idénticos con un **orden de enlace fraccionario de 4/3** ($1.33$), lo que justifica su longitud y energía intermedias e idénticas.",
+    "pista": "Si varias estructuras de Lewis equivalentes son posibles, la estructura real es un híbrido con electrones deslocalizados.",
+    "formula": "$$\\text{orden de enlace}=\\frac{\\text{enlaces totales}}{\\text{posiciones equivalentes}}$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 501,
+    "dificultad": "Fácil",
+    "bloque": "Tema 5: Fuerzas Intermoleculares",
+    "enunciado": "Identifica qué tipo de fuerza intermolecular principal es responsable de que el agua ($H_2O$) sea líquida a temperatura ambiente.",
+    "resolucion_latex": "La fuerza principal son los **Puentes de Hidrógeno**. Esta es una fuerza dipolo-dipolo excepcionalmente intensa que ocurre cuando el Hidrógeno está unido a átomos muy pequeños y muy electronegativos (F, O, N). En el agua, cada molécula puede formar hasta 4 puentes de hidrógeno, creando una red cohesiva que la mantiene líquida.",
+    "pista": "El puente de hidrógeno aparece cuando H está unido a F, O o N.",
+    "formula": "$$H-F,\\ H-O,\\ H-N\\Rightarrow\\text{puente de hidrógeno}$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 502,
+    "dificultad": "Fácil",
+    "bloque": "Tema 5: Fuerzas Intermoleculares",
+    "enunciado": "¿Qué tipo de fuerzas mantienen unidas a las moléculas apolares de Yodo ($I_2$) en estado sólido?",
+    "resolucion_latex": "Como la molécula de $I_2$ es apolar, no tiene momento dipolar permanente. Las únicas fuerzas que pueden actuar son las **Fuerzas de dispersión de London** (dipolo instantáneo - dipolo inducido). Al ser un átomo muy grande, su nube electrónica es muy polarizable, por lo que estas fuerzas de London son lo suficientemente intensas como para que sea sólido.",
+    "pista": "En moléculas apolares, las fuerzas intermoleculares principales son las de London.",
+    "formula": "$$\\text{apolar}\\Rightarrow\\text{London}$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 503,
+    "dificultad": "Fácil",
+    "bloque": "Tema 5: Fuerzas Intermoleculares",
+    "enunciado": "¿Qué tipo de interacción hay entre las moléculas gaseosas de Cloruro de Hidrógeno ($HCl$)?",
+    "resolucion_latex": "El $HCl$ es una molécula polar (el Cl es más electronegativo que el H, $\\Delta EN \\approx 1.0$), por lo que posee un momento dipolar permanente.\\nLas fuerzas principales que actúan entre ellas son las **Fuerzas Dipolo-Dipolo** (Keesom), en las que el polo positivo de una atrae al polo negativo de la vecina. (También hay fuerzas de London, pero las dipolo-dipolo justifican su comportamiento polar).",
+    "pista": "Una molécula polar presenta interacciones dipolo-dipolo además de fuerzas de London.",
+    "formula": "$$\\text{molécula polar}\\Rightarrow\\text{dipolo-dipolo}$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 504,
+    "dificultad": "Media",
+    "bloque": "Tema 5: Fuerzas Intermoleculares",
+    "enunciado": "Explica la diferencia entre un enlace covalente y una fuerza intermolecular en términos de energía.",
+    "resolucion_latex": "El enlace covalente es una **fuerza intramolecular** (dentro de la molécula) que une átomos compartiendo electrones. Su energía de ruptura es altísima (aprox. $150-1000 \\text{ kJ/mol}$).\\nLas fuerzas intermoleculares (Van der Waals, Puentes de Hidrógeno) actúan **entre moléculas** ya formadas. Son fuerzas de naturaleza electrostática residual y mucho más débiles (aprox. $2-40 \\text{ kJ/mol}$). Romper un enlace covalente requiere una reacción química, romper una fuerza intermolecular solo provoca un cambio de estado físico.",
+    "pista": "No confundas enlaces dentro de una molécula con fuerzas entre moléculas distintas.",
+    "formula": "$$E_{covalente}\\gg E_{intermolecular}$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 505,
+    "dificultad": "Media",
+    "bloque": "Tema 5: Fuerzas Intermoleculares",
+    "enunciado": "Justifica la siguiente serie de puntos de ebullición en los halógenos: Flúor ($F_2$, $-188^\\circ C$), Cloro ($Cl_2$, $-34^\\circ C$), Bromo ($Br_2$, $59^\\circ C$) e Yodo ($I_2$, $184^\\circ C$).",
+    "resolucion_latex": "Todos los halógenos son moléculas diatómicas apolares, por lo que solo experimentan **Fuerzas de dispersión de London**.\\nLa intensidad de estas fuerzas depende de la **polarizabilidad** de la nube electrónica, que aumenta con el tamaño y la masa molecular.\\nAl descender en el grupo ($F_2 \\rightarrow Cl_2 \\rightarrow Br_2 \\rightarrow I_2$), los átomos son cada vez más grandes, sus nubes electrónicas se deforman más fácilmente creando dipolos instantáneos más intensos. A mayor fuerza intermolecular, mayor punto de ebullición, explicando el paso de gas (F, Cl) a líquido (Br) y a sólido (I).",
+    "pista": "En moléculas apolares de una misma familia, al aumentar la masa aumenta la polarizabilidad y sube el punto de ebullición.",
+    "formula": "$$M\\uparrow\\Rightarrow\\text{London}\\uparrow\\Rightarrow T_{eb}\\uparrow$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 506,
+    "dificultad": "Media",
+    "bloque": "Tema 5: Fuerzas Intermoleculares",
+    "enunciado": "Basándote en la frase 'lo semejante disuelve a lo semejante', justifica si el Yodo sólido ($I_2$) será más soluble en agua ($H_2O$) o en Tetracloruro de carbono ($CCl_4$).",
+    "resolucion_latex": "El yodo ($I_2$) es una molécula **apolar**.\\nEl agua ($H_2O$) es un disolvente fuertemente **polar** (con puentes de H).\\nEl tetracloruro de carbono ($CCl_4$) es un disolvente **apolar** (geometría tetraédrica simétrica que anula sus dipolos).\\nPor la regla de solubilidad, el $I_2$ no puede romper la fuerte red de puentes de hidrógeno del agua, pero se integrará perfectamente entre las fuerzas de London del $CCl_4$. Será **mucho más soluble en $CCl_4$**.",
+    "pista": "Compara la polaridad del soluto y del disolvente: lo apolar se disuelve mejor en disolventes apolares.",
+    "formula": "$$\\text{semejante disuelve a semejante}$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 507,
+    "dificultad": "Difícil",
+    "bloque": "Tema 5: Fuerzas Intermoleculares",
+    "enunciado": "El Dióxido de Silicio ($SiO_2$, cuarzo) es un sólido muy duro que funde a $1713^\\circ C$, mientras que el Dióxido de Carbono ($CO_2$) es un gas a temperatura ambiente que sublima a $-78^\\circ C$. Justifica esta enorme diferencia estructural.",
+    "resolucion_latex": "Ambos son dióxidos del grupo 14, pero sus estructuras cristalinas son totalmente distintas.\\nEl $CO_2$ forma moléculas individuales apolares unidas únicamente por débiles fuerzas intermoleculares de London. Romper estas fuerzas para pasar a gas requiere poquísima energía (Sólido Molecular).\\nEl $SiO_2$, por su tamaño, no puede formar dobles enlaces $\\pi$ estables. En su lugar, cada átomo de Si se une por enlaces covalentes simples a cuatro O, y cada O a dos Si, formando una **red covalente tridimensional gigante**. Fundir el cuarzo requiere romper millones de enlaces covalentes verdaderos, lo que demanda una cantidad inmensa de energía.",
+    "pista": "Distingue un sólido molecular de una red covalente gigante: no se rompen las mismas interacciones al fundir.",
+    "formula": "$$\\text{red covalente}\\Rightarrow T_f\\text{ muy alto}$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 508,
+    "dificultad": "Difícil",
+    "bloque": "Tema 5: Fuerzas Intermoleculares",
+    "enunciado": "Sabiendo que la masa molecular del agua ($18 \\text{ u}$) es mucho menor que la del sulfuro de hidrógeno ($H_2S$, $34 \\text{ u}$), justifica de forma detallada por qué el punto de ebullición del $H_2O$ es $100^\\circ C$ y el del $H_2S$ es $-60^\\circ C$.",
+    "resolucion_latex": "Por masa molecular (fuerzas de London), esperaríamos que el $H_2S$ tuviera un punto de ebullición mayor.\\nSin embargo, el Oxígeno es mucho más electronegativo y pequeño que el Azufre. Esto permite que en el agua se formen **Puentes de Hidrógeno** entre las moléculas.\\nEl Azufre, al ser más grande y menos electronegativo, no puede formar puentes de hidrógeno; sus moléculas se atraen solo por **fuerzas dipolo-dipolo** (Keesom).\\nComo los puentes de H son extraordinariamente más intensos que las fuerzas dipolo-dipolo normales, se requiere muchísima más energía térmica para separar las moléculas de agua, disparando su punto de ebullición respecto al $H_2S$.",
+    "pista": "La masa no lo explica todo: los puentes de hidrógeno pueden dominar el punto de ebullición.",
+    "formula": "$$H_2O:\\text{puentes de H};\\quad H_2S:\\text{dipolo-dipolo}$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 509,
+    "dificultad": "Difícil",
+    "bloque": "Tema 5: Fuerzas Intermoleculares",
+    "enunciado": "Explica la elevada solubilidad del Cloruro de Sodio ($NaCl$) en agua utilizando el concepto de fuerzas Ion-Dipolo.",
+    "resolucion_latex": "El agua es una molécula muy polar: el oxígeno acumula densidad de carga negativa ($\\delta-$) y los hidrógenos carga positiva ($\\delta+$).\\nCuando el cristal de $NaCl$ entra en contacto con el agua, las moléculas de agua rodean los iones de la red cristalina en un proceso llamado hidratación o solvatación.\\nLos polos ($\\delta-$) de los oxígenos se orientan hacia los cationes $Na^+$, mientras que los polos ($\\delta+$) de los hidrógenos se orientan hacia los aniones $Cl^-$.\\nLa suma de millones de interacciones termodinámicas **Ion-Dipolo** compensa y supera a la Energía Reticular que unía el cristal, desmontándolo y disolviendo la sal.",
+    "pista": "El agua orienta sus polos hacia los iones y estabiliza la disolución mediante hidratación.",
+    "formula": "$$\\text{ion}+\\text{dipolo}\\Rightarrow\\text{hidratación}$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 510,
+    "dificultad": "Superior",
+    "bloque": "Tema 5: Fuerzas Intermoleculares",
+    "enunciado": "*(Reto Supernova)*: ¿Por qué el hielo flota en el agua líquida? Explica este fenómeno único basándote en la direccionalidad termodinámica de los Puentes de Hidrógeno a nivel cristalino.",
+    "resolucion_latex": "En la mayoría de sustancias, la fase sólida es más densa porque las moléculas se compactan más. El agua es una anomalía.\\nAl congelarse (por debajo de $4^\\circ C$), la energía cinética cae, y las moléculas deben optimizar todos y cada uno de los 4 Puentes de Hidrógeno posibles para estabilizarse. Debido a la geometría angular del agua, para maximizar estos enlaces sin repulsión, las moléculas adoptan una **red cristalina hexagonal muy abierta y hueca** (estructura similar al diamante).\\nEstos huecos microscópicos hacen que, para una misma masa de agua, el volumen en estado sólido sea un $9\\%$ mayor que en estado líquido. Como $Densidad = masa / volumen$, la densidad del hielo baja, permitiendo que flote sobre el agua líquida (lo que sostiene la vida bajo lagos congelados).",
+    "pista": "La red abierta del hielo se debe a la orientación espacial de los puentes de hidrógeno.",
+    "formula": "$$\\rho=\\frac{m}{V},\\quad V_{hielo}\\uparrow\\Rightarrow\\rho_{hielo}\\downarrow$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 601,
+    "dificultad": "Fácil",
+    "bloque": "Tema 6: Termoquímica",
+    "enunciado": "Define reacción exotérmica y reacción endotérmica, indicando el signo de la variación de entalpía ($\\Delta H$) para cada una.",
+    "resolucion_latex": "Una **reacción exotérmica** es aquella que libera calor al entorno (los productos tienen menos energía que los reactivos). Su variación de entalpía es negativa (**$\\Delta H < 0$**).\\nUna **reacción endotérmica** es aquella que absorbe calor del entorno para poder producirse (los productos tienen más energía que los reactivos). Su variación de entalpía es positiva (**$\\Delta H > 0$**).",
+    "pista": "Fíjate en si el sistema libera o absorbe calor del entorno.",
+    "formula": "$$\\Delta H<0:\\text{exotérmica};\\quad \\Delta H>0:\\text{endotérmica}$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 602,
+    "dificultad": "Fácil",
+    "bloque": "Tema 6: Termoquímica",
+    "enunciado": "Escribe la ecuación química de formación estándar del Dióxido de Carbono gaseoso ($CO_2$).",
+    "resolucion_latex": "La ecuación de formación estándar describe la síntesis de **1 mol de producto** a partir de sus elementos constituyentes en su **estado de referencia más estable** a 25ºC y 1 atm.\\nEl estado estándar del Carbono es sólido (grafito) y el del Oxígeno es gas diatómico ($O_2$).\\nEcuación: $C(s, \\text{grafito}) + O_2(g) \\rightarrow CO_2(g) \\quad \\Delta H^0_f = -393.5 \\text{ kJ/mol}$.",
+    "pista": "Una entalpía de formación estándar siempre forma 1 mol de compuesto desde elementos en estado estándar.",
+    "formula": "$$C(s)+O_2(g)\\rightarrow CO_2(g)$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 603,
+    "dificultad": "Fácil",
+    "bloque": "Tema 6: Termoquímica",
+    "enunciado": "En un proceso isobárico (presión constante), el sistema libera $50 \\text{ kJ}$ de calor y realiza un trabajo de expansión sobre el entorno de $10 \\text{ kJ}$. Calcula la variación de la Energía Interna ($\\Delta U$) y de la Entalpía ($\\Delta H$).",
+    "resolucion_latex": "Por el Primer Principio de la Termodinámica: $\\Delta U = q + w$.\\nCalor liberado: $q = -50 \\text{ kJ}$.\\nTrabajo realizado por el sistema (expansión): $w = -10 \\text{ kJ}$.\\n$$\\Delta U = -50 + (-10) = -60 \\text{ kJ}$$.\\nComo el proceso es a presión constante, el calor intercambiado es igual a la variación de entalpía: $q_p = \\Delta H$. Por tanto, $\\Delta H = -50 \\text{ kJ}$.",
+    "pista": "Usa el convenio: calor liberado y trabajo hecho por el sistema tienen signo negativo.",
+    "formula": "$$\\Delta U=q+w,\\quad q_p=\\Delta H$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 604,
+    "dificultad": "Media",
+    "bloque": "Tema 6: Termoquímica",
+    "enunciado": "Calcula la entalpía estándar de combustión del Metano ($CH_4$) sabiendo que las entalpías de formación estándar de $CH_4(g)$, $CO_2(g)$ y $H_2O(l)$ son respectivamente $-74.8$, $-393.5$ y $-285.8 \\text{ kJ/mol}$.",
+    "resolucion_latex": "1) Ecuación ajustada de combustión: $CH_4(g) + 2O_2(g) \\rightarrow CO_2(g) + 2H_2O(l)$.\\n2) Aplicamos la fórmula: $\\Delta H^0_{rxn} = \\sum n \\cdot \\Delta H^0_f(\\text{productos}) - \\sum m \\cdot \\Delta H^0_f(\\text{reactivos})$.\\nSabiendo que el $\\Delta H^0_f$ de un elemento puro como el $O_2$ es cero:\\n$$\\Delta H^0_c = [1(-393.5) + 2(-285.8)] - [1(-74.8) + 2(0)]$$\\n$$\\Delta H^0_c = [-393.5 - 571.6] - [-74.8] = -965.1 + 74.8 = -890.3 \\text{ kJ/mol}$$",
+    "pista": "Calcula productos menos reactivos usando entalpías de formación; los elementos en estado estándar valen cero.",
+    "formula": "$$\\Delta H^0_{rxn}=\\sum n\\Delta H^0_f(productos)-\\sum m\\Delta H^0_f(reactivos)$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 605,
+    "dificultad": "Media",
+    "bloque": "Tema 6: Termoquímica",
+    "enunciado": "Estima la entalpía de formación del Cloruro de Hidrógeno gaseoso ($HCl$) a partir de las energías medias de enlace: $E(H-H) = 436 \\text{ kJ/mol}$, $E(Cl-Cl) = 242 \\text{ kJ/mol}$ y $E(H-Cl) = 431 \\text{ kJ/mol}$.",
+    "resolucion_latex": "1) Reacción de formación: $\\frac{1}{2} H_2(g) + \\frac{1}{2} Cl_2(g) \\rightarrow HCl(g)$.\\n2) Fórmula con energías de enlace: $\\Delta H_{rxn} \\approx \\sum E_{\\text{enlaces rotos}} - \\sum E_{\\text{enlaces formados}}$.\\nEnlaces rotos (reactivos): $\\frac{1}{2} \\text{ mol de } H-H$ y $\\frac{1}{2} \\text{ mol de } Cl-Cl$.\\nEnlaces formados (productos): $1 \\text{ mol de } H-Cl$.\\n$$\\Delta H_f = [\\frac{1}{2}(436) + \\frac{1}{2}(242)] - [1(431)]$$\\n$$\\Delta H_f = [218 + 121] - 431 = 339 - 431 = -92 \\text{ kJ/mol}$$",
+    "pista": "Romper enlaces consume energía y formar enlaces libera energía.",
+    "formula": "$$\\Delta H\\approx\\sum E_{rotos}-\\sum E_{formados}$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 606,
+    "dificultad": "Media",
+    "bloque": "Tema 6: Termoquímica",
+    "enunciado": "Si al quemar 10 gramos de carbón ($C$, masa atómica $12 \\text{ u}$) se desprenden $328 \\text{ kJ}$ de calor, calcula la entalpía de combustión molar del carbón (en kJ/mol).",
+    "resolucion_latex": "1) Calculamos los moles de carbón quemados:\\n$$n = \\frac{m}{M} = \\frac{10 \\text{ g}}{12 \\text{ g/mol}} = 0.833 \\text{ moles}$$.\\n2) Sabiendo que $0.833 \\text{ moles}$ liberan $328 \\text{ kJ}$, calculamos el calor por 1 mol:\\n$$\\Delta H_c = \\frac{q}{n} = \\frac{-328 \\text{ kJ}}{0.833 \\text{ moles}} \\approx -393.8 \\text{ kJ/mol}$$.\\n(El calor liberado debe llevar signo negativo por convenio termodinámico).",
+    "pista": "Pasa primero la masa a moles y recuerda que si se libera calor, el signo de la entalpía es negativo.",
+    "formula": "$$n=\\frac{m}{M},\\quad \\Delta H=\\frac{q}{n}$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 607,
+    "dificultad": "Difícil",
+    "bloque": "Tema 6: Termoquímica",
+    "enunciado": "Aplica la Ley de Hess para calcular el calor de la reacción: $C(s) + 1/2 O_2(g) \\rightarrow CO(g)$. Datos:\\n1) $C(s) + O_2(g) \\rightarrow CO_2(g) \\quad \\Delta H_1 = -393.5 \\text{ kJ}$.\\n2) $CO(g) + 1/2 O_2(g) \\rightarrow CO_2(g) \\quad \\Delta H_2 = -283.0 \\text{ kJ}$.",
+    "resolucion_latex": "Buscamos dejar la ecuación objetivo $C + 1/2 O_2 \\rightarrow CO$.\\n- La ecuación (1) la mantenemos igual porque el $C(s)$ está en reactivos.\\n- La ecuación (2) la **invertimos** para que el $CO(g)$ pase a ser producto. Al invertir, cambia el signo de la entalpía: $\\Delta H_2' = +283.0 \\text{ kJ}$.\\nEcuaciones ajustadas:\\n1) $C(s) + O_2(g) \\rightarrow CO_2(g) \\quad \\Delta H = -393.5$\\n2) $CO_2(g) \\rightarrow CO(g) + 1/2 O_2(g) \\quad \\Delta H = +283.0$\\nSumamos ambas ecuaciones: El $CO_2(g)$ se cancela. 1 mol de $O_2$ menos $1/2$ mol queda $1/2$ mol en reactivos.\\nGlobal: $C(s) + 1/2 O_2(g) \\rightarrow CO(g)$.\\nEntalpía: $\\Delta H = -393.5 + 283.0 = -110.5 \\text{ kJ}$.",
+    "pista": "Invierte las ecuaciones necesarias para que las sustancias queden en el lado correcto; al invertir, cambia el signo de la entalpía.",
+    "formula": "$$\\Delta H_{global}=\\sum\\Delta H_i$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 608,
+    "dificultad": "Difícil",
+    "bloque": "Tema 6: Termoquímica",
+    "enunciado": "La entalpía de combustión del Propano gaseoso ($C_3H_8$) a $25^\\circ C$ es $\\Delta H = -2220 \\text{ kJ/mol}$. Calcula la variación de su Energía Interna ($\\Delta U$) a esa misma temperatura. (Dato: $R = 8.31 \\text{ J/(K mol)}$).",
+    "resolucion_latex": "La relación entre entalpía y energía interna en gases es $\\Delta H = \\Delta U + \\Delta n_g \\cdot R \\cdot T$.\\n1) Ajustamos la combustión: $C_3H_8(g) + 5O_2(g) \\rightarrow 3CO_2(g) + 4H_2O(l)$.\\n2) Calculamos el cambio de moles gaseosos ($\\Delta n_g$): Solo cuentan los gases.\\n$\\Delta n_g = n_{productos(g)} - n_{reactivos(g)} = 3 - (1 + 5) = 3 - 6 = -3 \\text{ moles}$.\\n3) Aplicamos la fórmula. Pasamos $R$ a kJ: $R = 8.31 \\times 10^{-3} \\text{ kJ/(K mol)}$. $T = 298 \\text{ K}$.\\n$$-2220 = \\Delta U + (-3) \\cdot (8.31 \\times 10^{-3}) \\cdot 298$$\\n$$-2220 = \\Delta U - 7.43 \\implies \\Delta U = -2220 + 7.43 = -2212.57 \\text{ kJ/mol}$$",
+    "pista": "Cuenta solo los moles gaseosos para relacionar entalpía y energía interna.",
+    "formula": "$$\\Delta H=\\Delta U+\\Delta n_gRT$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 609,
+    "dificultad": "Difícil",
+    "bloque": "Tema 6: Termoquímica",
+    "enunciado": "En un calorímetro de vaso de café, se mezclan $100 \\text{ mL}$ de $HCl \\, 1\\text{M}$ y $100 \\text{ mL}$ de $NaOH \\, 1\\text{M}$, ambos a $20^\\circ C$. Tras la reacción de neutralización, la temperatura sube a $26.8^\\circ C$. Suponiendo que la densidad y el calor específico de la mezcla son los del agua ($1 \\text{ g/mL}$ y $4.18 \\text{ J/(g }^\\circ\\text{C)}$), calcula la entalpía de neutralización (en kJ/mol de agua formada).",
+    "resolucion_latex": "1) Calculamos el calor absorbido por la disolución ($q = m \\cdot c \\cdot \\Delta T$):\\nMasa total $= 100 + 100 = 200 \\text{ g}$. $\\Delta T = 26.8 - 20 = 6.8^\\circ C$.\\n$$q_{sol} = 200 \\text{ g} \\cdot 4.18 \\text{ J/(g }^\\circ\\text{C)} \\cdot 6.8^\\circ C = 5684.8 \\text{ J} \\approx 5.68 \\text{ kJ}$$\\nEl calor cedido por la reacción será negativo: $q_{rxn} = -5.68 \\text{ kJ}$.\\n2) Moles de agua formados: Tenemos $0.1 \\text{ L} \\cdot 1 \\text{ mol/L} = 0.1 \\text{ moles}$ de $H^+$ y $0.1 \\text{ moles}$ de $OH^-$, que formarán $0.1 \\text{ moles}$ de $H_2O$.\\n3) Entalpía molar: $\\Delta H = \\frac{q_{rxn}}{n} = \\frac{-5.68 \\text{ kJ}}{0.1 \\text{ moles}} = -56.8 \\text{ kJ/mol}$.",
+    "pista": "El calor que gana la disolución lo pierde la reacción; por eso sus signos son opuestos.",
+    "formula": "$$q=m\\cdot c\\cdot\\Delta T,\\quad q_{rxn}=-q_{sol}$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 610,
+    "dificultad": "Superior",
+    "bloque": "Tema 6: Termoquímica",
+    "enunciado": "*(Reto Supernova)*: A nivel microscópico, ¿por qué los calores de formación de moléculas covalentes gaseosas suelen ser muy endotérmicos o muy exotérmicos, mientras que sus energías de vaporización siempre son endotérmicas pero de valor absoluto mucho menor?",
+    "resolucion_latex": "El calor de formación ($\\Delta H_f$) involucra la ruptura y formación de **enlaces covalentes**, los cuales operan en el rango de los cientos de kJ/mol (energías intra-moleculares muy intensas dictadas por la mecánica cuántica de los solapamientos de orbitales). Dependiendo de si los enlaces formados son mucho más fuertes o más débiles que los reactivos, el saldo energético global es inmenso.\\nPor el contrario, el proceso físico de vaporización solo implica vencer las **fuerzas intermoleculares** (fuerzas de London, dipolo-dipolo, puentes de hidrógeno) para separar las moléculas intactas, y siempre requiere absorber energía (proceso endotérmico). Como estas fuerzas electrostáticas secundarias son de 10 a 100 veces más débiles que un enlace covalente, el salto entálpico necesario es siempre muy inferior al implicado en las verdaderas reacciones químicas.",
+    "pista": "La vaporización separa moléculas, mientras que la formación química rompe y forma enlaces dentro de moléculas.",
+    "formula": "$$E_{enlace\\ covalente}\\gg E_{fuerza\\ intermolecular}$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 701,
+    "dificultad": "Fácil",
+    "bloque": "Tema 7: Espontaneidad de las Reacciones",
+    "enunciado": "Define el concepto de Entropía ($\\Delta S$) y predice si su variación será positiva o negativa en la sublimación del Yodo: $I_2(s) \\rightarrow I_2(g)$.",
+    "resolucion_latex": "La entropía ($S$) es una magnitud termodinámica que mide el grado de desorden o caos de un sistema a nivel microscópico.\\nEn la sublimación, pasamos de un sólido (red cristalina altamente ordenada) a un gas (moléculas moviéndose libremente con máximo desorden).\\nPor tanto, el desorden aumenta significativamente, lo que implica que **$\\Delta S > 0$** (positiva).",
+    "pista": "Compara el orden microscópico de los estados físicos: un gas suele tener mucha más entropía que un sólido.",
+    "formula": "$$\\Delta S=S_{productos}-S_{reactivos}$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 702,
+    "dificultad": "Fácil",
+    "bloque": "Tema 7: Espontaneidad de las Reacciones",
+    "enunciado": "Escribe la ecuación de la Energía Libre de Gibbs ($\\Delta G$) e indica la condición termodinámica para que un proceso sea espontáneo.",
+    "resolucion_latex": "La ecuación es: $$\\Delta G = \\Delta H - T \\cdot \\Delta S$$\\nDonde $\\Delta H$ es la variación de entalpía, $T$ la temperatura absoluta en Kelvin y $\\Delta S$ la variación de entropía.\\nPara que un proceso químico o físico sea espontáneo, se debe cumplir estrictamente que la variación de energía libre sea negativa: **$\\Delta G < 0$**.",
+    "pista": "Recuerda trabajar siempre con la temperatura absoluta en kelvin al usar Gibbs.",
+    "formula": "$$\\Delta G=\\Delta H-T\\Delta S$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 703,
+    "dificultad": "Fácil",
+    "bloque": "Tema 7: Espontaneidad de las Reacciones",
+    "enunciado": "Una reacción química es exotérmica y aumenta el desorden del sistema. Justifica si será espontánea a cualquier temperatura, a altas o a bajas.",
+    "resolucion_latex": "Analizamos los signos en la ecuación $\\Delta G = \\Delta H - T\\Delta S$.\\nSi es exotérmica: $\\Delta H < 0$ (favorable).\\nSi aumenta el desorden: $\\Delta S > 0$ (favorable).\\nAl sustituir en la fórmula: $\\Delta G = (negativo) - T \\cdot (positivo) = negativo - positivo = \\text{siempre negativo}$.\\nComo $\\Delta G$ será negativo independientemente del valor de $T$, la reacción es **espontánea a cualquier temperatura**.",
+    "pista": "Estudia los signos: entalpía negativa y entropía positiva favorecen la espontaneidad.",
+    "formula": "$$\\Delta H<0,\\ \\Delta S>0\\Rightarrow \\Delta G<0$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 704,
+    "dificultad": "Media",
+    "bloque": "Tema 7: Espontaneidad de las Reacciones",
+    "enunciado": "Calcula la variación de entropía estándar ($\\Delta S^0$) de la reacción $N_2(g) + 3H_2(g) \\rightarrow 2NH_3(g)$. Datos de entropías molares estándar ($S^0$ en $\\text{J/(mol K)}$): $N_2(g) = 191.5$, $H_2(g) = 130.6$, $NH_3(g) = 192.3$.",
+    "resolucion_latex": "Aplicamos la ley de aditividad: $\\Delta S^0_{rxn} = \\sum n \\cdot S^0(\\text{productos}) - \\sum m \\cdot S^0(\\text{reactivos})$.\\n$$\\Delta S^0 = [2 \\cdot S^0(NH_3)] - [1 \\cdot S^0(N_2) + 3 \\cdot S^0(H_2)]$$\\n$$\\Delta S^0 = [2 \\cdot 192.3] - [191.5 + 3 \\cdot 130.6] = 384.6 - (191.5 + 391.8) = 384.6 - 583.3 = -198.7 \\text{ J/K}$$.\\nEl signo negativo era esperable porque pasamos de 4 moles de gas a 2 moles de gas (disminuye el desorden).",
+    "pista": "Multiplica cada entropía molar por su coeficiente estequiométrico antes de restar.",
+    "formula": "$$\\Delta S^0=\\sum nS^0_{productos}-\\sum mS^0_{reactivos}$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 705,
+    "dificultad": "Media",
+    "bloque": "Tema 7: Espontaneidad de las Reacciones",
+    "enunciado": "Calcula $\\Delta G^0$ a $25^\\circ C$ para una reacción en la que $\\Delta H^0 = -85.2 \\text{ kJ}$ y $\\Delta S^0 = -170.5 \\text{ J/K}$. Indica si es espontánea.",
+    "resolucion_latex": "1) Pasamos la temperatura a Kelvin: $T = 25 + 273 = 298 \\text{ K}$.\\n2) Homogeneizamos unidades. Pasamos $\\Delta S^0$ a kJ/K: $-170.5 \\text{ J/K} = -0.1705 \\text{ kJ/K}$.\\n3) Aplicamos Gibbs: $\\Delta G^0 = \\Delta H^0 - T\\Delta S^0$.\\n$$\\Delta G^0 = -85.2 - 298 \\cdot (-0.1705) = -85.2 - (-50.8) = -85.2 + 50.8 = -34.4 \\text{ kJ}$$.\\nComo $\\Delta G^0 < 0$, la reacción **es espontánea** a $25^\\circ C$.",
+    "pista": "Antes de aplicar Gibbs, pasa la entropía de J/K a kJ/K o la entalpía a J.",
+    "formula": "$$\\Delta G^0=\\Delta H^0-T\\Delta S^0$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 706,
+    "dificultad": "Media",
+    "bloque": "Tema 7: Espontaneidad de las Reacciones",
+    "enunciado": "Para una reacción endotérmica ($\\Delta H > 0$) donde aumenta la entropía ($\\Delta S > 0$), define a partir de qué temperatura comenzará a ser espontánea.",
+    "resolucion_latex": "El límite de espontaneidad se encuentra en el punto de equilibrio termodinámico, donde $\\Delta G = 0$.\\n$$0 = \\Delta H - T_{eq}\\Delta S \\implies \\Delta H = T_{eq}\\Delta S \\implies T_{eq} = \\frac{\\Delta H}{\\Delta S}$$\\nComo el término $-T\\Delta S$ se hace más negativo a medida que $T$ crece, la reacción será espontánea ($\\Delta G < 0$) para cualquier temperatura que cumpla **$T > \\frac{\\Delta H}{\\Delta S}$** (a altas temperaturas).",
+    "pista": "La temperatura límite aparece cuando el proceso está justo en equilibrio, es decir, cuando \\Delta G=0.",
+    "formula": "$$T_{eq}=\\frac{\\Delta H}{\\Delta S}$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 707,
+    "dificultad": "Difícil",
+    "bloque": "Tema 7: Espontaneidad de las Reacciones",
+    "enunciado": "Calcula la temperatura umbral a partir de la cual deja de ser espontánea la reacción de síntesis del amoniaco, sabiendo que $\\Delta H^0 = -92.2 \\text{ kJ}$ y $\\Delta S^0 = -198.7 \\text{ J/K}$.",
+    "resolucion_latex": "Al ser $\\Delta H < 0$ y $\\Delta S < 0$, es espontánea solo a **bajas temperaturas**.\\nCalculamos la temperatura de equilibrio ($T_{eq}$), asegurándonos de usar las mismas unidades (pasamos J a kJ):\\n$$T_{eq} = \\frac{\\Delta H}{\\Delta S} = \\frac{-92.2 \\text{ kJ}}{-0.1987 \\text{ kJ/K}} \\approx 464 \\text{ K} \\text{ (unos } 191^\\circ C\\text{)}$$\\nLa reacción es espontánea a temperaturas **inferiores a 464 K** (o $191^\\circ C$). Si calentamos el reactor por encima de esa temperatura, la reacción se volverá no espontánea y el amoniaco se descompondrá.",
+    "pista": "Como \\Delta H y \\Delta S son negativos, la reacción solo será espontánea por debajo de la temperatura umbral.",
+    "formula": "$$\\Delta G=0\\Rightarrow T=\\frac{\\Delta H}{\\Delta S}$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 708,
+    "dificultad": "Difícil",
+    "bloque": "Tema 7: Espontaneidad de las Reacciones",
+    "enunciado": "Justifica termodinámicamente (usando $\\Delta H$, $\\Delta S$ y $\\Delta G$) qué ocurre cuando tenemos agua líquida e hielo mezclados exactamente a $0^\\circ C$ ($273 \\text{ K}$) a presión de 1 atm.",
+    "resolucion_latex": "El proceso de fusión del hielo ($H_2O(s) \\rightarrow H_2O(l)$) es endotérmico ($\\Delta H > 0$) y aumenta el desorden ($\\Delta S > 0$).\\nEl punto de fusión normal del agua es exactamente $0^\\circ C$ ($273 \\text{ K}$). En cualquier cambio de estado a presión y temperatura constantes, el sistema se encuentra en **equilibrio termodinámico**.\\nEsto significa que a $273 \\text{ K}$, se cumple estrictamente que $\\Delta G = 0$. Por tanto, $\\Delta H = T\\Delta S$. Las velocidades de fusión y congelación se igualan y coexisten ambas fases de forma estable.",
+    "pista": "En un cambio de estado en equilibrio, las dos fases coexisten y la energía libre no favorece a ninguna.",
+    "formula": "$$\\Delta G=0\\quad \\text{en equilibrio}$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 709,
+    "dificultad": "Difícil",
+    "bloque": "Tema 7: Espontaneidad de las Reacciones",
+    "enunciado": "Sabiendo que para una reacción $\\Delta G^0 = 15 \\text{ kJ/mol}$, explica qué significa este valor y cómo se puede lograr que la reacción ocurra en la industria mediante el concepto de reacciones acopladas.",
+    "resolucion_latex": "Un $\\Delta G^0 = 15 \\text{ kJ/mol} > 0$ indica que la reacción es termodinámicamente **no espontánea** (endorgónica) en condiciones estándar; no sucederá por sí sola.\\nEn la industria o en los seres vivos (ej. ATP), para que ocurra, se utiliza el **acoplamiento de reacciones**: se hace transcurrir simultáneamente en el mismo medio otra reacción que sea muy espontánea (ej. $\\Delta G^0 = -50 \\text{ kJ/mol}$).\\nSi la suma de ambas $\\Delta G$ da un saldo negativo ($15 - 50 = -35 \\text{ kJ/mol}$), el proceso global se vuelve espontáneo.",
+    "pista": "Una reacción no espontánea puede hacerse posible si se suma con otra suficientemente espontánea.",
+    "formula": "$$\\Delta G_{global}=\\Delta G_1+\\Delta G_2$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 710,
+    "dificultad": "Superior",
+    "bloque": "Tema 7: Espontaneidad de las Reacciones",
+    "enunciado": "*(Reto Supernova)*: Demuestra algebraicamente cómo la ecuación de Gibbs $\\Delta G = \\Delta H - T\\Delta S$ es en realidad una reformulación del Segundo Principio de la Termodinámica ($\\Delta S_{\\text{universo}} > 0$).",
+    "resolucion_latex": "1) El 2º Principio establece que un proceso es espontáneo si $\\Delta S_{\\text{univ}} = \\Delta S_{\\text{sistema}} + \\Delta S_{\\text{entorno}} > 0$.\\n2) A presión y temperatura constantes, el calor absorbido por el entorno es el liberado por el sistema: $q_{\\text{entorno}} = -\\Delta H_{\\text{sis}}$.\\n3) La variación de entropía del entorno es $\\Delta S_{\\text{ent}} = \\frac{q_{\\text{ent}}}{T} = -\\frac{\\Delta H_{\\text{sis}}}{T}$.\\n4) Sustituimos en el 2º Principio:\\n$$\\Delta S_{\\text{univ}} = \\Delta S_{\\text{sis}} - \\frac{\\Delta H_{\\text{sis}}}{T} > 0$$\\n5) Multiplicamos toda la inecuación por $-T$ (al multiplicar por negativo, el signo $>$ cambia a $<$):\\n$$-T\\Delta S_{\\text{univ}} = -T\\Delta S_{\\text{sis}} + \\Delta H_{\\text{sis}} < 0$$\\nReordenando, queda $\\Delta H_{\\text{sis}} - T\\Delta S_{\\text{sis}} < 0$. A este conjunto de variables del sistema se le llamó $\\Delta G$. Por eso la condición $\\Delta G < 0$ equivale a decir que la entropía del universo aumenta.",
+    "pista": "Relaciona la espontaneidad con el aumento de entropía del universo y después reordena la desigualdad.",
+    "formula": "$$\\Delta S_{univ}=\\Delta S_{sis}+\\Delta S_{ent}$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 801,
+    "dificultad": "Fácil",
+    "bloque": "Tema 8: Cinética Química",
+    "enunciado": "Define el concepto de Velocidad de Reacción e indica cuáles son sus unidades en el Sistema Internacional para disoluciones.",
+    "resolucion_latex": "La velocidad de reacción ($v$) se define como la variación de la concentración (molaridad) de un reactivo o producto por unidad de tiempo.\\nPara reactivos lleva signo negativo (desaparecen) y para productos positivo: $v = -\\frac{d[Reactivos]}{dt} = +\\frac{d[Productos]}{dt}$.\\nSus unidades en el S.I. (y en disoluciones) son **$\\text{mol} \\cdot \\text{L}^{-1} \\cdot \\text{s}^{-1}$** (M/s).",
+    "pista": "La velocidad mide cuánto cambia la concentración por unidad de tiempo.",
+    "formula": "$$v=-\\frac{d[R]}{dt}=\\frac{d[P]}{dt}$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 802,
+    "dificultad": "Fácil",
+    "bloque": "Tema 8: Cinética Química",
+    "enunciado": "Dada la ecuación de velocidad empírica $v = k [A]^2 [B]$, ¿cuál es el orden parcial respecto a $A$, respecto a $B$, y el orden total de la reacción?",
+    "resolucion_latex": "Los órdenes de reacción son los exponentes a los que están elevadas las concentraciones en la ley de velocidad.\\n- Orden parcial respecto a $A$: **2** (segundo orden).\\n- Orden parcial respecto a $B$: **1** (primer orden).\\n- Orden total de la reacción: suma de los órdenes parciales $\\implies 2 + 1 =$ **3**.",
+    "pista": "Los exponentes de la ley de velocidad son los órdenes parciales; el orden total es su suma.",
+    "formula": "$$v=k[A]^a[B]^b\\quad ;\\quad n=a+b$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 803,
+    "dificultad": "Fácil",
+    "bloque": "Tema 8: Cinética Química",
+    "enunciado": "¿Cómo afecta la adición de un catalizador positivo a la Energía de Activación ($E_a$) y a la entalpía ($\\Delta H$) de la reacción?",
+    "resolucion_latex": "Un catalizador positivo proporciona un mecanismo alternativo para la reacción que tiene una **Energía de Activación menor**. Al bajar la \"barrera energética\", más moléculas pueden reaccionar, aumentando la velocidad.\\nSin embargo, el catalizador **no afecta a la entalpía de la reacción ($\\Delta H$)**, ya que la energía de los reactivos iniciales y productos finales sigue siendo exactamente la misma. Tampoco altera el equilibrio termodinámico.",
+    "pista": "Un catalizador cambia el camino de reacción, pero no las energías iniciales ni finales.",
+    "formula": "$$E_a\\downarrow\\quad ;\\quad \\Delta H\\text{ no cambia}$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 804,
+    "dificultad": "Media",
+    "bloque": "Tema 8: Cinética Química",
+    "enunciado": "Deduce las unidades de la constante de velocidad ($k$) para una reacción cuya cinética es de segundo orden global.",
+    "resolucion_latex": "Si es de 2º orden global, la ley de velocidad es $v = k \\cdot [A]^2$ (o $k[A][B]$).\\nSabemos que la velocidad siempre se mide en $\\text{M} \\cdot \\text{s}^{-1}$ (o $\\text{mol} \\cdot \\text{L}^{-1} \\cdot \\text{s}^{-1}$) y las concentraciones en $\\text{M}$.\\nSustituimos unidades: $\\text{M} \\cdot \\text{s}^{-1} = k \\cdot \\text{M}^2$.\\nDespejamos $k$:\\n$$k = \\frac{\\text{M} \\cdot \\text{s}^{-1}}{\\text{M}^2} = \\text{M}^{-1} \\cdot \\text{s}^{-1} \\quad \\text{o} \\quad \\text{L} \\cdot \\text{mol}^{-1} \\cdot \\text{s}^{-1}$$",
+    "pista": "Despeja las unidades de k comparando las unidades de la velocidad con las concentraciones.",
+    "formula": "$$[k]=\\frac{M\\,s^{-1}}{M^n}=M^{1-n}s^{-1}$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 805,
+    "dificultad": "Media",
+    "bloque": "Tema 8: Cinética Química",
+    "enunciado": "En la reacción $N_2(g) + 3H_2(g) \\rightarrow 2NH_3(g)$, el amoniaco se forma a una velocidad de $0.060 \\text{ M/s}$. ¿A qué velocidad está desapareciendo el hidrógeno ($H_2$)?",
+    "resolucion_latex": "La velocidad de reacción única ($v$) se relaciona con las velocidades parciales dividiéndolas por sus coeficientes estequiométricos:\\n$$v = -\\frac{v(N_2)}{1} = -\\frac{v(H_2)}{3} = +\\frac{v(NH_3)}{2}$$\\nDespejamos la velocidad de desaparición del $H_2$:\\n$$-\\frac{v(H_2)}{3} = \\frac{0.060}{2} \\implies -v(H_2) = 3 \\cdot 0.030 = 0.090 \\text{ M/s}$$\\nEl hidrógeno desaparece a un ritmo de $0.090 \\text{ M/s}$.",
+    "pista": "Relaciona las velocidades parciales dividiendo por los coeficientes estequiométricos.",
+    "formula": "$$v=-\\frac{1}{a}\\frac{d[A]}{dt}=\\frac{1}{p}\\frac{d[P]}{dt}$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 806,
+    "dificultad": "Media",
+    "bloque": "Tema 8: Cinética Química",
+    "enunciado": "Escribe la ecuación de Arrhenius y explica cualitativamente por qué un aumento de la temperatura incrementa exponencialmente la velocidad de la reacción.",
+    "resolucion_latex": "La ecuación es: $k = A \\cdot e^{-E_a / (RT)}$.\\nAl aumentar la temperatura ($T$), el término exponente $\\frac{E_a}{RT}$ se hace más pequeño.\\nComo el exponente es negativo ($-E_a/RT$), el valor de la función exponencial ($e^{\\text{algo menos negativo}}$) aumenta rápidamente.\\nFísicamente, a mayor temperatura, mayor energía cinética tienen las moléculas. Una mayor fracción de las colisiones superará la Energía de Activación ($E_a$), disparando el valor de $k$ y, por tanto, la velocidad de reacción.",
+    "pista": "En Arrhenius, al subir la temperatura aumenta el factor exponencial y por tanto aumenta k.",
+    "formula": "$$k=Ae^{-E_a/(RT)}$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 807,
+    "dificultad": "Difícil",
+    "bloque": "Tema 8: Cinética Química",
+    "enunciado": "Para la reacción $A + B \\rightarrow C$, se observa que al duplicar la concentración de $A$ (manteniendo B constante), la velocidad se multiplica por 4. Al duplicar la concentración de $B$ (manteniendo A constante), la velocidad se reduce a la mitad. Escribe la ecuación de velocidad.",
+    "resolucion_latex": "La ley es $v = k[A]^a[B]^b$.\\n- Si $[A]$ se multiplica por 2 $\\implies$ $v$ se multiplica por $2^a$. Como sabemos que se multiplica por 4, entonces $2^a = 4 \\implies a = 2$.\\n- Si $[B]$ se multiplica por 2 $\\implies$ $v$ se multiplica por $2^b$. Como se reduce a la mitad (se multiplica por $1/2$), entonces $2^b = 1/2 \\implies 2^b = 2^{-1} \\implies b = -1$.\\nLa ecuación de velocidad es: **$v = k [A]^2 [B]^{-1}$** o $v = k \\frac{[A]^2}{[B]}$.",
+    "pista": "Traduce cada cambio experimental como potencia: si duplicas una concentración, la velocidad se multiplica por 2 elevado al orden.",
+    "formula": "$$\\frac{v_2}{v_1}=\\left(\\frac{[A]_2}{[A]_1}\\right)^a$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 808,
+    "dificultad": "Difícil",
+    "bloque": "Tema 8: Cinética Química",
+    "enunciado": "La constante de velocidad de una reacción se duplica al pasar de $300 \\text{ K}$ a $310 \\text{ K}$. Calcula la Energía de Activación ($E_a$) en kJ/mol. (Dato: $R = 8.31 \\text{ J/(K mol)}$).",
+    "resolucion_latex": "Usamos la ecuación de Arrhenius integrada para dos temperaturas:\\n$$\\ln\\left(\\frac{k_2}{k_1}\\right) = \\frac{E_a}{R} \\left( \\frac{1}{T_1} - \\frac{1}{T_2} \\right)$$\\nSabiendo que $k_2 = 2k_1$, entonces $k_2/k_1 = 2$. $T_1 = 300$, $T_2 = 310$.\\n$$\\ln(2) = \\frac{E_a}{8.31} \\left( \\frac{1}{300} - \\frac{1}{310} \\right)$$\\n$$0.693 = \\frac{E_a}{8.31} \\left( \\frac{310 - 300}{300 \\cdot 310} \\right) = \\frac{E_a}{8.31} \\left( \\frac{10}{93000} \\right)$$\\n$$E_a = \\frac{0.693 \\cdot 8.31 \\cdot 93000}{10} \\approx 53558 \\text{ J/mol} \\approx 53.6 \\text{ kJ/mol}$$",
+    "pista": "Usa la forma integrada de Arrhenius y mantén la temperatura en kelvin.",
+    "formula": "$$\\ln\\left(\\frac{k_2}{k_1}\\right)=\\frac{E_a}{R}\\left(\\frac{1}{T_1}-\\frac{1}{T_2}\\right)$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 809,
+    "dificultad": "Difícil",
+    "bloque": "Tema 8: Cinética Química",
+    "enunciado": "El mecanismo de la reacción global $NO_2 + CO \\rightarrow NO + CO_2$ transcurre en dos etapas elementales: \\n1) $NO_2 + NO_2 \\rightarrow NO_3 + NO$ (Lenta)\\n2) $NO_3 + CO \\rightarrow NO_2 + CO_2$ (Rápida)\\nIdentifica el intermedio de reacción y justifica cuál será la ecuación de velocidad empírica.",
+    "resolucion_latex": "El **intermedio de reacción es el $NO_3$**, ya que se produce en una etapa inicial y se consume totalmente en una posterior, no apareciendo en la reacción global.\\nLa etapa 1 (lenta) es la **etapa limitante** de la velocidad. Como es una reacción elemental, la velocidad empírica depende directamente de la estequiometría de esta única etapa limitante.\\nLos reactivos de la etapa lenta son dos moléculas de $NO_2$.\\nPor tanto, la ley de velocidad será: **$v = k [NO_2]^2$**. (Sorprendentemente, el $CO$ no afecta a la velocidad y tiene orden 0).",
+    "pista": "La ley de velocidad viene determinada por la etapa lenta si esta es elemental.",
+    "formula": "$$v=k[NO_2]^2$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 810,
+    "dificultad": "Superior",
+    "bloque": "Tema 8: Cinética Química",
+    "enunciado": "*(Reto Supernova)*: Compara la Teoría de las Colisiones con la Teoría del Estado de Transición (Complejo Activado). Explica qué representa físicamente el factor estérico ($p$) en la ecuación extendida de colisiones ($k = p \\cdot Z \\cdot e^{-E_a/RT}$).",
+    "resolucion_latex": "La **Teoría de Colisiones** trata a las moléculas como esferas rígidas: la reacción ocurre si chocan con energía suficiente ($>E_a$) y orientación adecuada. La **Teoría del Estado de Transición** es más sofisticada termodinámicamente: postula que al chocar, los reactivos se deforman formando un \"complejo activado\" transitorio altamente inestable (en el pico de energía) que no es ni reactivo ni producto, y que puede desintegrarse hacia un lado u otro.\\nEl **factor estérico ($p$)** es una corrección cuántica que añade la Teoría de Colisiones. Refleja la probabilidad de que las moléculas colisionen con la **orientación espacial exacta** requerida para que los orbitales solapen y los enlaces puedan romperse/formarse. En moléculas grandes y complejas (ej. enzimas o polímeros), el valor de $p$ es diminuto ($10^{-5}$), ya que la gran mayoría de choques suficientemente energéticos ocurren \"por el lado equivocado\" de la molécula y rebotan sin reaccionar.",
+    "pista": "Distingue entre choques con energía suficiente y choques con orientación adecuada.",
+    "formula": "$$k=p\\,Z\\,e^{-E_a/(RT)}$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 901,
+    "dificultad": "Fácil",
+    "bloque": "Tema 9: Equilibrio Químico Homogéneo",
+    "enunciado": "Escribe la expresión de la constante de equilibrio en función de las concentraciones ($K_c$) para el proceso de síntesis de yoduro de hidrógeno gaseoso: $H_2(g) + I_2(g) \\rightleftharpoons 2HI(g)$.",
+    "resolucion_latex": "Aplicamos la Ley de Acción de Masas (LAM). En el numerador los productos elevados a su coeficiente estequiométrico, y en el denominador los reactivos.\\n$$K_c = \\frac{[HI]^2}{[H_2] \\cdot [I_2]}$$",
+    "pista": "En Kc, productos arriba y reactivos abajo, todos elevados a sus coeficientes.",
+    "formula": "$$K_c=\\frac{[HI]^2}{[H_2][I_2]}$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 902,
+    "dificultad": "Fácil",
+    "bloque": "Tema 9: Equilibrio Químico Homogéneo",
+    "enunciado": "Si para una reacción a cierta temperatura el valor de la constante de equilibrio es extremadamente alto ($K_c = 10^{25}$), ¿qué significa esto a nivel práctico respecto al rendimiento de la reacción?",
+    "resolucion_latex": "Un valor de $K_c \\gg 1$ significa que el numerador (concentración de productos) es inmensamente mayor que el denominador (reactivos).\\nA nivel práctico, el equilibrio está **totalmente desplazado hacia la derecha**. Se puede considerar que la reacción es cuantitativa o completa, ya que los reactivos se consumirán casi en su totalidad dando un rendimiento cercano al 100%.",
+    "pista": "Un K muy grande indica que en equilibrio predominan claramente los productos.",
+    "formula": "$$K_c\\gg1\\Rightarrow \\text{equilibrio hacia productos}$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 903,
+    "dificultad": "Fácil",
+    "bloque": "Tema 9: Equilibrio Químico Homogéneo",
+    "enunciado": "Escribe la relación matemática entre la constante referida a concentraciones ($K_c$) y la referida a presiones parciales ($K_p$) para reacciones entre gases ideales.",
+    "resolucion_latex": "La ecuación que las relaciona es:\\n$$K_p = K_c \\cdot (R \\cdot T)^{\\Delta n}$$\\nDonde $R$ es la constante de los gases ($0.082 \\text{ atm L/(mol K)}$), $T$ es la temperatura en Kelvin, y $\\Delta n$ es la variación del número de moles exclusivamente **gaseosos** ($\\Delta n = \\text{moles productos(g)} - \\text{moles reactivos(g)}$).",
+    "pista": "Calcula \\Delta n solo con los moles gaseosos de productos menos reactivos.",
+    "formula": "$$K_p=K_c(RT)^{\\Delta n}$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 904,
+    "dificultad": "Media",
+    "bloque": "Tema 9: Equilibrio Químico Homogéneo",
+    "enunciado": "Para la reacción $N_2O_4(g) \\rightleftharpoons 2NO_2(g)$, el valor de $K_c$ a $25^\\circ C$ es $4.63 \\times 10^{-3}$. Calcula el valor de $K_p$ a esa misma temperatura.",
+    "resolucion_latex": "1) Calculamos $\\Delta n$: $2 \\text{ moles de producto} - 1 \\text{ mol de reactivo} = +1$.\\n2) Pasamos $T$ a Kelvin: $25 + 273 = 298 \\text{ K}$.\\n3) Aplicamos la fórmula: $K_p = K_c (RT)^1$.\\n$$K_p = 4.63 \\times 10^{-3} \\cdot (0.082 \\cdot 298)^1$$\\n$$K_p = 4.63 \\times 10^{-3} \\cdot 24.436 \\approx 0.113$$",
+    "pista": "Primero calcula \\Delta n y recuerda pasar la temperatura a kelvin.",
+    "formula": "$$K_p=K_c(RT)^{\\Delta n}$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 905,
+    "dificultad": "Media",
+    "bloque": "Tema 9: Equilibrio Químico Homogéneo",
+    "enunciado": "En un recipiente se introducen ciertas cantidades de $H_2$, $I_2$ y $HI$ de modo que el Cociente de Reacción ($Q_c$) en ese instante vale $50$. Sabiendo que a esa temperatura la constante de equilibrio es $K_c = 54$, deduce hacia dónde evolucionará la mezcla.",
+    "resolucion_latex": "Comparamos el Cociente de Reacción actual con la Constante de Equilibrio:\\n$$Q_c < K_c \\quad (50 < 54)$$\\nComo el cociente es menor que la constante, la proporción de productos en el numerador es menor de lo que debería ser en el equilibrio.\\nEl sistema evolucionará **desplazándose hacia la derecha** (hacia los productos), consumiendo $H_2$ e $I_2$ para generar más $HI$ hasta que $Q_c$ iguale a $K_c$.",
+    "pista": "Compara Q con K: si Q<K, faltan productos; si Q>K, sobran productos.",
+    "formula": "$$Q_c<K_c\\Rightarrow \\text{evoluciona a productos}$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 906,
+    "dificultad": "Media",
+    "bloque": "Tema 9: Equilibrio Químico Homogéneo",
+    "enunciado": "En un reactor de 2 Litros se alcanza el equilibrio $SO_2(g) + NO_2(g) \\rightleftharpoons SO_3(g) + NO(g)$. En el equilibrio hay 0.4 moles de $SO_2$, 0.1 moles de $NO_2$, 0.6 moles de $SO_3$ y 0.2 moles de $NO$. Calcula $K_c$.",
+    "resolucion_latex": "1) Calculamos las concentraciones en equilibrio dividiendo entre el volumen ($V=2\\text{L}$):\\n$[SO_2] = 0.4/2 = 0.2 \\text{ M}$\\n$[NO_2] = 0.1/2 = 0.05 \\text{ M}$\\n$[SO_3] = 0.6/2 = 0.3 \\text{ M}$\\n$[NO] = 0.2/2 = 0.1 \\text{ M}$\\n2) Expresión de $K_c = \\frac{[SO_3][NO]}{[SO_2][NO_2]}$.\\n$$K_c = \\frac{0.3 \\cdot 0.1}{0.2 \\cdot 0.05} = \\frac{0.03}{0.01} = 3$$\\n(Nota: al tener $\\Delta n = 0$, los volúmenes se habrían cancelado).",
+    "pista": "Convierte moles a concentración dividiendo entre el volumen antes de sustituir en Kc.",
+    "formula": "$$K_c=\\frac{[SO_3][NO]}{[SO_2][NO_2]}$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 907,
+    "dificultad": "Difícil",
+    "bloque": "Tema 9: Equilibrio Químico Homogéneo",
+    "enunciado": "En un matraz de 1 Litro se introduce 1 mol de $PCl_5(g)$ y se calienta a $250^\\circ C$, estableciéndose el equilibrio $PCl_5(g) \\rightleftharpoons PCl_3(g) + Cl_2(g)$. Si en el equilibrio se han formado 0.6 moles de $Cl_2$, calcula el grado de disociación ($\\alpha$) y la constante $K_c$.",
+    "resolucion_latex": "Construimos la tabla de moles (Inicio - Reacciona - Equilibrio):\\n$PCl_5 \\rightleftharpoons PCl_3 + Cl_2$\\n- Inicio: 1 mol | 0 | 0\\n- Cambio: $-x$ | $+x$ | $+x$\\n- Equil: $1-x$ | $x$ | $x$\\nSabemos que en equilibrio hay 0.6 moles de $Cl_2$, por tanto $x = 0.6$.\\nMoles equilibrio: $n(PCl_5) = 1 - 0.6 = 0.4$. $n(PCl_3) = 0.6$. $n(Cl_2) = 0.6$.\\n1) Grado de disociación $\\alpha$: Es la fracción disociada $\\alpha = x / n_{inicial} = 0.6 / 1 = 0.6$ ($60\\%$).\\n2) Como $V=1\\text{L}$, los moles son Molaridad.\\n$$K_c = \\frac{[PCl_3][Cl_2]}{[PCl_5]} = \\frac{0.6 \\cdot 0.6}{0.4} = \\frac{0.36}{0.4} = 0.9$$",
+    "pista": "Haz una tabla inicial-cambio-equilibrio usando x o el grado de disociación.",
+    "formula": "$$K_c=\\frac{[PCl_3][Cl_2]}{[PCl_5]}$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 908,
+    "dificultad": "Difícil",
+    "bloque": "Tema 9: Equilibrio Químico Homogéneo",
+    "enunciado": "A $25^\\circ C$, la constante de equilibrio de una reacción es $K = 5.4 \\times 10^3$. Calcula la variación de la Energía Libre de Gibbs estándar ($\\Delta G^0$) en kJ/mol y discute la espontaneidad termodinámica. (Dato: $R = 8.31 \\text{ J/(K mol)}$).",
+    "resolucion_latex": "Relación entre equilibrio y termodinámica: $\\Delta G^0 = -R \\cdot T \\cdot \\ln(K)$.\\n1) $T = 298 \\text{ K}$.\\n$$\\Delta G^0 = -8.31 \\cdot 298 \\cdot \\ln(5.4 \\times 10^3)$$\\n$$\\Delta G^0 = -2476.38 \\cdot 8.594 \\approx -21282 \\text{ J/mol} = -21.3 \\text{ kJ/mol}$$.\\nAl ser $\\Delta G^0 < 0$, la reacción de reactivos puros a productos puros en condiciones estándar es **fuertemente espontánea**, lo que concuerda con tener un $K > 1$ (equilibrio muy desplazado a la derecha).",
+    "pista": "Cuando K>1, ln(K) es positivo y \\Delta G^0 sale negativo.",
+    "formula": "$$\\Delta G^0=-RT\\ln K$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 909,
+    "dificultad": "Difícil",
+    "bloque": "Tema 9: Equilibrio Químico Homogéneo",
+    "enunciado": "Dada la reacción $A \\rightleftharpoons B$ con $K_1 = 4$, y la reacción $B \\rightleftharpoons C + D$ con $K_2 = 0.5$, calcula el valor de la constante de equilibrio ($K_3$) para la reacción global $2A \\rightleftharpoons 2C + 2D$.",
+    "resolucion_latex": "1) Reacción global intermedia $A \\rightleftharpoons C + D$. Se obtiene sumando la primera y la segunda.\\nCuando se suman dos ecuaciones, sus constantes de equilibrio se multiplican:\\n$$K_{int} = K_1 \\cdot K_2 = 4 \\cdot 0.5 = 2$$\\n2) La reacción final $2A \\rightleftharpoons 2C + 2D$ es la intermedia multiplicada por 2.\\nCuando se multiplica una ecuación por un coeficiente $n$, la constante se eleva a esa potencia:\\n$$K_3 = (K_{int})^2 = 2^2 = 4$$",
+    "pista": "Al sumar reacciones se multiplican las constantes; al multiplicar una reacción, K se eleva a esa potencia.",
+    "formula": "$$K_{global}=K_1\\cdot K_2\\quad ;\\quad K_{n\\,reacción}=K^n$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 910,
+    "dificultad": "Superior",
+    "bloque": "Tema 9: Equilibrio Químico Homogéneo",
+    "enunciado": "*(Reto Supernova)*: En las expresiones de la constante de equilibrio $K_c$, nunca se incluyen sólidos puros ni líquidos puros como disolventes. Demuestra termodinámicamente o matemáticamente por qué esto es estrictamente correcto y no una simple \"aproximación\".",
+    "resolucion_latex": "La constante termodinámica verdadera ($K_{eq}$) no se formula con concentraciones (Molaridad) ni con presiones, sino con **Actividades** ($a$). La actividad es una medida de la \"concentración efectiva\" respecto a un estado estándar.\\nLa actividad de una sustancia ideal es $a_i = C_i / C^0$ (donde $C^0 = 1\\text{M}$).\\nSin embargo, para un **sólido puro o un líquido puro (disolvente)** en condiciones normales de presión, su estado es casi incompresible, y su densidad (por tanto, la cantidad de moles por unidad de volumen) se mantiene absolutamente constante durante toda la reacción, independientemente de cuánto se consuma.\\nComo no cambia su concentración, su Actividad respecto a su estado estándar se define matemáticamente como la unidad (**$a = 1$**). Al valer exactamente 1, actúa como un factor neutro en el producto o cociente de la constante de equilibrio, \"desapareciendo\" formalmente de la ecuación de la Ley de Acción de Masas.",
+    "pista": "La constante rigurosa se escribe con actividades; sólidos y líquidos puros tienen actividad uno.",
+    "formula": "$$a_{sólido\\ puro}=a_{líquido\\ puro}=1$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 1001,
+    "dificultad": "Fácil",
+    "bloque": "Tema 10: Principio de Le Chatelier",
+    "enunciado": "Enuncia el Principio de Le Chatelier.",
+    "resolucion_latex": "El Principio de Le Chatelier establece que si un sistema en equilibrio químico es sometido a una perturbación externa (cambio en la concentración, presión, volumen o temperatura), el sistema evolucionará desplazando su posición de equilibrio en el sentido que tienda a contrarrestar o minimizar dicha perturbación.",
+    "pista": "Piensa que el sistema responde intentando compensar el cambio impuesto desde fuera.",
+    "formula": "$$\\text{perturbación}\\Rightarrow\\text{desplazamiento que la contrarresta}$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 1002,
+    "dificultad": "Fácil",
+    "bloque": "Tema 10: Principio de Le Chatelier",
+    "enunciado": "Dado el equilibrio $N_2(g) + 3H_2(g) \\rightleftharpoons 2NH_3(g)$, predice hacia dónde se desplazará el equilibrio si extraemos amoniaco ($NH_3$) a medida que se va formando.",
+    "resolucion_latex": "Al extraer un producto ($NH_3$), su concentración disminuye. Según Le Chatelier, el sistema intentará reponer lo que hemos quitado. Para ello, el equilibrio se desplazará hacia la **derecha** (hacia la formación de productos), consumiendo más $N_2$ y $H_2$.",
+    "pista": "Si se retira producto, el equilibrio avanza para producir más.",
+    "formula": "$$Q<K\\Rightarrow\\text{desplazamiento a la derecha}$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 1003,
+    "dificultad": "Fácil",
+    "bloque": "Tema 10: Principio de Le Chatelier",
+    "enunciado": "El equilibrio $H_2(g) + I_2(g) \\rightleftharpoons 2HI(g)$ se encuentra en un recipiente cerrado con un émbolo móvil. Si disminuimos el volumen a la mitad, ¿hacia dónde se desplazará el equilibrio?",
+    "resolucion_latex": "Al disminuir el volumen, aumenta la presión total del sistema. Le Chatelier dice que el sistema se desplazará hacia donde haya **menor número de moles gaseosos** para reducir la presión.\\nEn este caso, hay 2 moles de gas en los reactivos y 2 moles de gas en los productos ($\\Delta n = 0$).\\nPor tanto, el cambio de presión o volumen **no altera el equilibrio**.",
+    "pista": "Solo los cambios de presión afectan al equilibrio si cambia el número de moles gaseosos.",
+    "formula": "$$\\Delta n_g=0\\Rightarrow\\text{la presión no desplaza}$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 1004,
+    "dificultad": "Media",
+    "bloque": "Tema 10: Principio de Le Chatelier",
+    "enunciado": "Para la reacción endotérmica $N_2O_4(g) \\rightleftharpoons 2NO_2(g)$, explica cómo afectará un aumento de temperatura a la concentración de $NO_2$ y al valor de la constante de equilibrio ($K_c$).",
+    "resolucion_latex": "Al ser endotérmica ($\\Delta H > 0$), la reacción absorbe calor, por lo que podemos considerar el calor como un 'reactivo'.\\nSi aumentamos la temperatura, el sistema intentará consumir ese exceso de calor desplazándose en el sentido endotérmico, es decir, hacia la **derecha**.\\nEsto provoca que la concentración de $NO_2$ **aumente**.\\nAl desplazarse hacia los productos modificando la temperatura, el valor numérico de la constante de equilibrio **$K_c$ también aumenta**.",
+    "pista": "En una reacción endotérmica, el calor se comporta como un reactivo.",
+    "formula": "$$\\Delta H>0:\\ \\text{calor}+reactivos\\rightleftharpoons productos$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 1005,
+    "dificultad": "Media",
+    "bloque": "Tema 10: Principio de Le Chatelier",
+    "enunciado": "¿Qué efecto tiene sobre las concentraciones de equilibrio la adición de un gas inerte como el Argón a volumen constante?",
+    "resolucion_latex": "La adición de un gas inerte a volumen constante aumenta la presión total del recipiente. Sin embargo, no altera el volumen del recipiente ni los moles de los gases reaccionantes, por lo que las **presiones parciales y las concentraciones molares de los gases implicados no cambian**.\\nComo las presiones parciales siguen intactas en la expresión de $K_p$, el sistema no sufre ninguna perturbación real. **El equilibrio no se desplaza**.",
+    "pista": "A volumen constante no cambian las concentraciones ni las presiones parciales de los gases reactivos.",
+    "formula": "$$V=cte\\Rightarrow [i]=\\frac{n_i}{V}\\text{ no cambia}$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 1006,
+    "dificultad": "Media",
+    "bloque": "Tema 10: Principio de Le Chatelier",
+    "enunciado": "Discute si la adición de un catalizador sólido aumenta el rendimiento (cantidad de producto final) de una reacción reversible.",
+    "resolucion_latex": "Un catalizador disminuye la energía de activación tanto de la reacción directa como de la inversa exactamente en la misma proporción.\\nComo resultado, el sistema alcanza el estado de equilibrio mucho más rápido, pero **no modifica las proporciones de equilibrio**. El rendimiento termodinámico de la reacción será exactamente el mismo; por tanto, **no aumenta la cantidad de producto final**.",
+    "pista": "Un catalizador acelera la ida y la vuelta, pero no cambia K ni el equilibrio final.",
+    "formula": "$$K\\text{ no cambia con catalizador}$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 1007,
+    "dificultad": "Difícil",
+    "bloque": "Tema 10: Principio de Le Chatelier",
+    "enunciado": "Sabiendo que el $N_2O_4$ es un gas incoloro y el $NO_2$ es un gas marrón pardo, ¿qué observarás visualmente si comprimes rápidamente un émbolo que contiene el equilibrio $N_2O_4(g) \\rightleftharpoons 2NO_2(g)$? Razona los dos efectos visuales secuenciales.",
+    "resolucion_latex": "1) **Efecto cinético inmediato**: Al reducir el volumen, la concentración de todos los gases aumenta de golpe. Como hay moléculas de $NO_2$ más juntas, el color inicial se volverá súbitamente **más oscuro**.\\n2) **Efecto termodinámico (Le Chatelier)**: Tras la compresión, aumenta la presión. El equilibrio intentará bajar la presión desplazándose hacia donde haya menos moles de gas (de 2 moles de $NO_2$ a 1 mol de $N_2O_4$). El equilibrio se desplaza a la izquierda, consumiendo parte del gas pardo.\\nPor tanto, visualmente, primero se oscurece bruscamente y luego se va **aclarando poco a poco** hasta llegar a un nuevo equilibrio (aunque más oscuro que el estado inicial original debido a la concentración global).",
+    "pista": "Distingue el oscurecimiento inmediato por concentración del desplazamiento posterior por presión.",
+    "formula": "$$N_2O_4(g)\\rightleftharpoons2NO_2(g)$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 1008,
+    "dificultad": "Difícil",
+    "bloque": "Tema 10: Principio de Le Chatelier",
+    "enunciado": "Optimización industrial (Proceso Haber-Bosch): $N_2(g) + 3H_2(g) \\rightleftharpoons 2NH_3(g) \\quad \\Delta H < 0$. Para maximizar el rendimiento termodinámico se requieren altas presiones y bajas temperaturas. Sin embargo, industrialmente se usan unos $450^\\circ C$. Justifica esta contradicción.",
+    "resolucion_latex": "Por Le Chatelier, al ser exotérmica, las bajas temperaturas favorecen termodinámicamente la producción de $NH_3$ (mayor constante de equilibrio).\\nSin embargo, a temperaturas muy bajas, la **cinética de la reacción es extremadamente lenta**; el amoniaco tardaría años en formarse. A nivel industrial, el tiempo es dinero.\\nSe elige una temperatura de compromiso ($450^\\circ C$): suficientemente alta para que la reacción sea rápida (especialmente usando un catalizador de Fe), pero suficientemente baja para que el rendimiento termodinámico no sea desastroso.",
+    "pista": "Se busca un compromiso entre rendimiento termodinámico y velocidad de reacción.",
+    "formula": "$$\\Delta H<0:\\ T\\downarrow\\Rightarrow K\\uparrow$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 1009,
+    "dificultad": "Difícil",
+    "bloque": "Tema 10: Principio de Le Chatelier",
+    "enunciado": "En el equilibrio de formación de un éster $CH_3COOH(l) + CH_3CH_2OH(l) \\rightleftharpoons CH_3COOCH_2CH_3(l) + H_2O(l)$, se añade un reactivo desecante que elimina el agua producida. Demuestra con el Cociente de Reacción ($Q$) por qué el sistema se desplaza a la derecha.",
+    "resolucion_latex": "La expresión del cociente de reacción es $Q = \\frac{[Éster][H_2O]}{[Ácido][Alcohol]}$.\\nAl eliminar el agua del medio reaccionante mediante el desecante, la concentración de $H_2O$ cae drásticamente.\\nEsto provoca que el valor del numerador disminuya, por lo que $Q$ se hace menor que la constante de equilibrio ($Q < K_c$).\\nComo la naturaleza tiende siempre a igualar $Q$ con $K_c$, el sistema debe aumentar el numerador produciendo más éster (y más agua), lo que se traduce en un **desplazamiento neto hacia la derecha**, maximizando el rendimiento de la esterificación.",
+    "pista": "Eliminar un producto disminuye Q, así que el sistema produce más productos hasta recuperar K.",
+    "formula": "$$Q=\\frac{[éster][H_2O]}{[ácido][alcohol]}$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 1010,
+    "dificultad": "Superior",
+    "bloque": "Tema 10: Principio de Le Chatelier",
+    "enunciado": "*(Reto Supernova)*: Demuestra el Principio de Le Chatelier respecto a la temperatura basándote en la ecuación de Van 't Hoff: $\\ln\\left(\\frac{K_2}{K_1}\\right) = \\frac{\\Delta H^0}{R} \\left(\\frac{1}{T_1} - \\frac{1}{T_2}\\right)$.",
+    "resolucion_latex": "Asumamos un aumento de temperatura ($T_2 > T_1$). Esto hace que $\\frac{1}{T_1} - \\frac{1}{T_2} > 0$ (el paréntesis es positivo).\\nCaso 1: **Reacción endotérmica** ($\\Delta H^0 > 0$). El término de la derecha es $(+)\\cdot(+) = (+)$. Por tanto, $\\ln(K_2/K_1) > 0 \\implies K_2 > K_1$. La constante aumenta, el equilibrio se desplaza a productos, contrarrestando el aumento de $T$ absorbiendo calor.\\nCaso 2: **Reacción exotérmica** ($\\Delta H^0 < 0$). El término de la derecha es $(-)\\cdot(+) = (-)$. Por tanto, $\\ln(K_2/K_1) < 0 \\implies K_2 < K_1$. La constante disminuye, el equilibrio retrocede a reactivos, consumiendo el calor excedentario (ya que la reacción inversa será endotérmica).\\nQueda demostrado analíticamente el principio cualitativo de Le Chatelier.",
+    "pista": "Analiza el signo de la ecuación de Van 't Hoff cuando T2 es mayor que T1.",
+    "formula": "$$\\ln\\left(\\frac{K_2}{K_1}\\right)=\\frac{\\Delta H^0}{R}\\left(\\frac{1}{T_1}-\\frac{1}{T_2}\\right)$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 1101,
+    "dificultad": "Fácil",
+    "bloque": "Tema 11: Equilibrios Heterogéneos (Solubilidad)",
+    "enunciado": "Escribe la ecuación química de disociación y la expresión de la constante de producto de solubilidad ($K_s$) para el Cloruro de Plata ($AgCl$) sólido en agua.",
+    "resolucion_latex": "Ecuación: $AgCl(s) \\rightleftharpoons Ag^+(aq) + Cl^-(aq)$.\\nExpresión de $K_s$: El sólido no se incluye en la constante porque su actividad es 1.\\n$$K_s = [Ag^+] \\cdot [Cl^-]$$",
+    "pista": "No incluyas el sólido puro en Ks; solo aparecen los iones acuosos.",
+    "formula": "$$K_s=[Ag^+][Cl^-]$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 1102,
+    "dificultad": "Fácil",
+    "bloque": "Tema 11: Equilibrios Heterogéneos (Solubilidad)",
+    "enunciado": "Si la solubilidad molar ($s$) del Sulfato de Bario ($BaSO_4$) es $1.05 \\times 10^{-5} \\text{ M}$, calcula su producto de solubilidad ($K_s$).",
+    "resolucion_latex": "Disociación: $BaSO_4(s) \\rightleftharpoons Ba^{2+}(aq) + SO_4^{2-}(aq)$.\\nLas concentraciones en el equilibrio son $[Ba^{2+}] = s$ y $[SO_4^{2-}] = s$.\\n$$K_s = [Ba^{2+}] \\cdot [SO_4^{2-}] = s \\cdot s = s^2$$\\n$$K_s = (1.05 \\times 10^{-5})^2 = 1.1 \\times 10^{-10}$$",
+    "pista": "Para una sal 1:1, las concentraciones de ambos iones son iguales a la solubilidad molar.",
+    "formula": "$$K_s=s^2$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 1103,
+    "dificultad": "Fácil",
+    "bloque": "Tema 11: Equilibrios Heterogéneos (Solubilidad)",
+    "enunciado": "Explica cualitativamente el Efecto del Ion Común en la solubilidad de una sal poco soluble.",
+    "resolucion_latex": "Según el Principio de Le Chatelier, si a una disolución saturada de una sal le añadimos una sustancia soluble que contiene uno de los iones presentes en el equilibrio (ion común), la concentración de ese ion en disolución aumenta.\\nEl sistema reacciona desplazando el equilibrio hacia la izquierda (hacia la formación del sólido) para consumir el exceso, provocando que la **solubilidad de la sal disminuya**.",
+    "pista": "Añadir un ion ya presente desplaza el equilibrio hacia el sólido y reduce la solubilidad.",
+    "formula": "$$\\text{ion común}\\Rightarrow s\\downarrow$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 1104,
+    "dificultad": "Media",
+    "bloque": "Tema 11: Equilibrios Heterogéneos (Solubilidad)",
+    "enunciado": "El producto de solubilidad del Fluoruro de Calcio ($CaF_2$) es $K_s = 3.9 \\times 10^{-11}$. Calcula su solubilidad molar ($s$).",
+    "resolucion_latex": "Disociación: $CaF_2(s) \\rightleftharpoons Ca^{2+}(aq) + 2F^-(aq)$.\\nEn equilibrio: $[Ca^{2+}] = s$, y $[F^-] = 2s$.\\nLa expresión es $K_s = [Ca^{2+}] \\cdot [F^-]^2 = (s) \\cdot (2s)^2 = 4s^3$.\\nDespejamos $s$:\\n$$s = \\sqrt[3]{\\frac{K_s}{4}} = \\sqrt[3]{\\frac{3.9 \\times 10^{-11}}{4}} = \\sqrt[3]{9.75 \\times 10^{-12}} \\approx 2.14 \\times 10^{-4} \\text{ M}$$",
+    "pista": "Ten cuidado con el coeficiente 2 del fluoruro: su concentración será 2s.",
+    "formula": "$$K_s=s(2s)^2=4s^3$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 1105,
+    "dificultad": "Media",
+    "bloque": "Tema 11: Equilibrios Heterogéneos (Solubilidad)",
+    "enunciado": "Calcula la solubilidad del Cloruro de Plata ($AgCl$, $K_s = 1.8 \\times 10^{-10}$) en una disolución que ya contiene $0.1 \\text{ M}$ de $NaCl$. Compárala con su solubilidad en agua pura.",
+    "resolucion_latex": "1) En agua pura: $s_0 = \\sqrt{K_s} = \\sqrt{1.8 \\times 10^{-10}} \\approx 1.34 \\times 10^{-5} \\text{ M}$.\\n2) En $NaCl$ 0.1 M: El $NaCl$ aporta una concentración inicial de $Cl^- = 0.1 \\text{ M}$.\\nEquilibrio $AgCl$: $[Ag^+] = s$, $[Cl^-] = s + 0.1 \\approx 0.1$ (asumiendo que $s$ será minúscula).\\n$$K_s = [Ag^+] \\cdot [Cl^-] \\implies 1.8 \\times 10^{-10} = s \\cdot 0.1$$\\n$$s = \\frac{1.8 \\times 10^{-10}}{0.1} = 1.8 \\times 10^{-9} \\text{ M}$$\\nLa solubilidad ha disminuido unas 10.000 veces por el **efecto del ion común**.",
+    "pista": "En presencia de ion común, aproxima la concentración del ion añadido como constante si es mucho mayor que s.",
+    "formula": "$$K_s=[Ag^+][Cl^-]$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 1106,
+    "dificultad": "Media",
+    "bloque": "Tema 11: Equilibrios Heterogéneos (Solubilidad)",
+    "enunciado": "¿Precipitará Carbonato de Bario ($BaCO_3$, $K_s = 5.1 \\times 10^{-9}$) si mezclamos volúmenes iguales de disoluciones de $BaCl_2 \\, 0.002 \\text{ M}$ y $Na_2CO_3 \\, 0.0002 \\text{ M}$?",
+    "resolucion_latex": "Al mezclar volúmenes iguales, el volumen total se duplica, por lo que las concentraciones iniciales caen a la mitad:\\n$[Ba^{2+}] = 0.001 \\text{ M}$ ($10^{-3} \\text{ M}$).\\n$[CO_3^{2-}] = 0.0001 \\text{ M}$ ($10^{-4} \\text{ M}$).\\nCalculamos el producto iónico (Cociente de reacción $Q_s$):\\n$$Q_s = [Ba^{2+}] \\cdot [CO_3^{2-}] = (10^{-3}) \\cdot (10^{-4}) = 10^{-7}$$\\nComparamos con $K_s$:\\n$$Q_s (10^{-7}) > K_s (5.1 \\times 10^{-9})$$\\nComo el producto iónico supera a la constante, la disolución está sobresaturada y **SÍ precipitará** $BaCO_3$.",
+    "pista": "Calcula el producto iónico Qs y compáralo con Ks para decidir si precipita.",
+    "formula": "$$Q_s>K_s\\Rightarrow\\text{precipita}$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 1107,
+    "dificultad": "Difícil",
+    "bloque": "Tema 11: Equilibrios Heterogéneos (Solubilidad)",
+    "enunciado": "Una disolución contiene iones $Cl^-$ y $CrO_4^{2-}$ a concentraciones $0.1 \\text{ M}$ cada una. Se añade gota a gota una disolución de $AgNO_3$. Sabiendo que $K_s(AgCl) = 1.8 \\times 10^{-10}$ y $K_s(Ag_2CrO_4) = 1.1 \\times 10^{-12}$, calcula qué sal precipitará primero.",
+    "resolucion_latex": "Precipitará primero la sal que necesite **menor concentración de $Ag^+$** para iniciar la precipitación.\\nPara el $AgCl$: $[Ag^+] = \\frac{K_s}{[Cl^-]} = \\frac{1.8 \\times 10^{-10}}{0.1} = 1.8 \\times 10^{-9} \\text{ M}$.\\nPara el $Ag_2CrO_4$: $K_s = [Ag^+]^2 \\cdot [CrO_4^{2-}] \\implies [Ag^+] = \\sqrt{\\frac{1.1 \\times 10^{-12}}{0.1}} = \\sqrt{1.1 \\times 10^{-11}} \\approx 3.3 \\times 10^{-6} \\text{ M}$.\\nComo $1.8 \\times 10^{-9} < 3.3 \\times 10^{-6}$, se requiere mucha menos plata para el cloruro.\\n**Precipita primero el $AgCl$** (precipitación fraccionada).",
+    "pista": "Precipita primero la sal que requiere menor concentración del ion añadido.",
+    "formula": "$$[Ag^+]_{inicio}=\\frac{K_s}{[Cl^-]}$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 1108,
+    "dificultad": "Difícil",
+    "bloque": "Tema 11: Equilibrios Heterogéneos (Solubilidad)",
+    "enunciado": "Sabiendo que el producto de solubilidad del Hidróxido de Magnesio ($Mg(OH)_2$) es $K_s = 1.8 \\times 10^{-11}$, calcula su solubilidad molar en una disolución tampón mantenida a pH 12.",
+    "resolucion_latex": "1) Calculamos la concentración de $[OH^-]$ del tampón:\\n$$pH = 12 \\implies pOH = 14 - 12 = 2 \\implies [OH^-] = 10^{-2} \\text{ M}$$.\\n2) Planteamos el equilibrio $Mg(OH)_2(s) \\rightleftharpoons Mg^{2+} + 2OH^-$.\\nEl medio ya impone un $[OH^-] = 10^{-2} \\text{ M}$ (efecto ion común, el aporte del sólido será despreciable en comparación).\\n3) La expresión es $K_s = [Mg^{2+}] \\cdot [OH^-]^2$.\\nLa solubilidad $s$ del compuesto será igual a la concentración del ion metálico $[Mg^{2+}]$.\\n$$1.8 \\times 10^{-11} = s \\cdot (10^{-2})^2 = s \\cdot 10^{-4}$$\\n$$s = \\frac{1.8 \\times 10^{-11}}{10^{-4}} = 1.8 \\times 10^{-7} \\text{ M}$$",
+    "pista": "Usa el pH para hallar pOH y después la concentración de hidróxido.",
+    "formula": "$$pOH=14-pH\\quad ;\\quad [OH^-]=10^{-pOH}$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 1109,
+    "dificultad": "Difícil",
+    "bloque": "Tema 11: Equilibrios Heterogéneos (Solubilidad)",
+    "enunciado": "Justifica qué ocurrirá con la solubilidad del Carbonato de Calcio ($CaCO_3$, sal poco soluble) si añadimos una disolución de Ácido Clorhídrico ($HCl$) al medio.",
+    "resolucion_latex": "El $CaCO_3$ se disocia según: $CaCO_3(s) \\rightleftharpoons Ca^{2+} + CO_3^{2-}$.\\nAl añadir un ácido fuerte como el $HCl$, aportamos protones $H^+$ al medio.\\nEl ion carbonato ($CO_3^{2-}$) es una base de Brønsted moderadamente fuerte y reaccionará con los protones para formar ácido carbónico ($H_2CO_3$), el cual se descompone rápidamente en gas $CO_2$ y agua, escapando del medio.\\nAl desaparecer los iones carbonato, Le Chatelier dicta que el equilibrio sólido-disolución se desplazará netamente hacia la derecha para reponer el $CO_3^{2-}$.\\nPor tanto, la adición de ácido **aumenta enormemente la solubilidad** de la sal, llegando a disolverla por completo.",
+    "pista": "Si el ácido consume el anión de la sal, el equilibrio se desplaza hacia la disolución.",
+    "formula": "$$CO_3^{2-}+2H^+\\rightarrow CO_2+H_2O$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 1110,
+    "dificultad": "Superior",
+    "bloque": "Tema 11: Equilibrios Heterogéneos (Solubilidad)",
+    "enunciado": "*(Reto Supernova)*: Termodinámica de la disolución. A nivel molecular, el proceso de disolución de una sal depende del balance entre la Energía Reticular ($U$) y la Entalpía de Hidratación ($\\Delta H_{hid}$). Basándote en la ecuación de Gibbs, explica por qué algunas sales solubles se enfrían al disolverse en agua (ej. $NH_4NO_3$).",
+    "resolucion_latex": "La disolución de un cristal requiere romper la red (proceso endotérmico, $+U$) e hidratar los iones (proceso exotérmico, $\\Delta H_{hid} < 0$). La suma de ambas es la Entalpía de Disolución ($\\Delta H_{sol}$).\\nEn el $NH_4NO_3$, la energía requerida para romper el cristal es mayor que la energía liberada al hidratarse. Por tanto, $\\Delta H_{sol} > 0$ (es globalmente **endotérmica**), lo que explica por qué el vaso se enfría (absorbe calor del entorno).\\n¿Cómo puede ser espontánea ($\\Delta G < 0$) si $\\Delta H$ juega en contra? \\nPorque el paso de un cristal rígido a iones moviéndose caóticamente por todo el disolvente supone un **incremento brutal de la Entropía** ($\\Delta S \\gg 0$). A temperatura ambiente, el término $T\\Delta S$ supera con creces al $\\Delta H$ desfavorable, haciendo que $\\Delta G = \\Delta H - T\\Delta S$ sea negativo y la sal sea altamente soluble impulsada exclusivamente por el caos.",
+    "pista": "Aunque la disolución sea endotérmica, puede ser espontánea si el aumento de entropía compensa.",
+    "formula": "$$\\Delta G=\\Delta H-T\\Delta S$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 1201,
+    "dificultad": "Fácil",
+    "bloque": "Tema 12: Teorías Ácido-Base",
+    "enunciado": "Define qué es un ácido y qué es una base según la teoría de Arrhenius y señala su principal limitación.",
+    "resolucion_latex": "Según Arrhenius, un **ácido** es una sustancia que, en disolución acuosa, se disocia produciendo protones ($H^+$ o $H_3O^+$). Una **base** es una sustancia que se disocia produciendo iones hidróxido ($OH^-$).\\nSu principal limitación es que **solo es válida en disoluciones acuosas** y no puede explicar el comportamiento básico de sustancias que no contienen el grupo $OH$ en su fórmula, como el amoniaco ($NH_3$).",
+    "pista": "Arrhenius solo habla de especies que generan H3O+ u OH- en agua.",
+    "formula": "$$\\text{ácido}\\rightarrow H_3O^+\\quad ;\\quad \\text{base}\\rightarrow OH^-$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 1202,
+    "dificultad": "Fácil",
+    "bloque": "Tema 12: Teorías Ácido-Base",
+    "enunciado": "Define ácido y base según la teoría de Brønsted-Lowry.",
+    "resolucion_latex": "Para Brønsted-Lowry, un **ácido** es cualquier especie química (molécula o ion) capaz de **ceder o donar un protón ($H^+$)** a otra sustancia.\\nUna **base** es cualquier especie química capaz de **aceptar un protón ($H^+$)** de otra sustancia. (Esto introduce el concepto de pares ácido-base conjugados).",
+    "pista": "Brønsted-Lowry se basa en transferencia de protones.",
+    "formula": "$$\\text{ácido}=dona\\ H^+\\quad ;\\quad \\text{base}=acepta\\ H^+$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 1203,
+    "dificultad": "Fácil",
+    "bloque": "Tema 12: Teorías Ácido-Base",
+    "enunciado": "Identifica los pares ácido-base conjugados en el siguiente equilibrio: $NH_3(aq) + H_2O(l) \\rightleftharpoons NH_4^+(aq) + OH^-(aq)$.",
+    "resolucion_latex": "1) El $NH_3$ acepta un protón para convertirse en $NH_4^+$. Por tanto, el amoniaco es la **base** y el amonio es su **ácido conjugado**. (Par 1: $NH_4^+ / NH_3$).\\n2) El $H_2O$ cede un protón para convertirse en $OH^-$. Por tanto, el agua actúa como **ácido** y el hidróxido es su **base conjugada**. (Par 2: $H_2O / OH^-$).",
+    "pista": "Busca qué especie gana H+ y cuál lo pierde para formar los pares conjugados.",
+    "formula": "$$\\text{ácido}\\rightleftharpoons\\text{base conjugada}+H^+$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 1204,
+    "dificultad": "Media",
+    "bloque": "Tema 12: Teorías Ácido-Base",
+    "enunciado": "Demuestra con dos ecuaciones químicas el carácter anfótero del ion hidrogenocarbonato ($HCO_3^-$) en agua.",
+    "resolucion_latex": "Una sustancia anfótera o anfolito puede actuar como ácido o como base dependiendo de con quién reaccione.\\n1) **Como ácido** (cede $H^+$ al agua):\\n$HCO_3^- + H_2O \\rightleftharpoons CO_3^{2-} + H_3O^+$\\n2) **Como base** (capta $H^+$ del agua):\\n$HCO_3^- + H_2O \\rightleftharpoons H_2CO_3 + OH^-$",
+    "pista": "Un anfótero puede ceder un protón o aceptar un protón según el medio.",
+    "formula": "$$HCO_3^-\\rightleftharpoons CO_3^{2-}\\quad ;\\quad HCO_3^-\\rightleftharpoons H_2CO_3$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 1205,
+    "dificultad": "Media",
+    "bloque": "Tema 12: Teorías Ácido-Base",
+    "enunciado": "Explica en qué consiste la Teoría Ácido-Base de Lewis usando como ejemplo la reacción entre el trifluoruro de boro ($BF_3$) y el amoniaco ($NH_3$).",
+    "resolucion_latex": "Lewis amplió las definiciones basándose en electrones en lugar de protones.\\nUn **Ácido de Lewis** es una especie capaz de aceptar un par de electrones, y una **Base de Lewis** es una especie capaz de donar un par de electrones.\\nEl $NH_3$ tiene un par de electrones solitarios en el Nitrógeno (actúa como base de Lewis).\\nEl $BF_3$ tiene su capa de valencia incompleta (6 electrones), por lo que tiene un orbital vacío dispuesto a aceptar electrones (actúa como ácido de Lewis).\\nReaccionan formando un enlace covalente dativo (coordinado): $F_3B - NH_3$.",
+    "pista": "En Lewis, fíjate en quién dona el par electrónico y quién lo acepta.",
+    "formula": "$$\\text{ácido Lewis}=acepta\\ e^-\\quad ;\\quad \\text{base Lewis}=dona\\ e^-$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 1206,
+    "dificultad": "Media",
+    "bloque": "Tema 12: Teorías Ácido-Base",
+    "enunciado": "El ácido acético ($CH_3COOH$) es un ácido débil. Justifica cualitativamente cómo será la fuerza de su base conjugada, el ion acetato ($CH_3COO^-$).",
+    "resolucion_latex": "En la teoría de Brønsted-Lowry existe una relación inversa entre la fuerza de un ácido y su base conjugada, dictada matemáticamente por $K_a \\cdot K_b = K_w$.\\nComo el ácido acético es un ácido débil (tiende poco a ceder su protón, $K_a \\approx 10^{-5}$), su base conjugada, el ion acetato, será una **base de fuerza moderada/relativamente fuerte** (tendrá una tendencia apreciable a recuperar ese protón frente al agua).",
+    "pista": "Cuanto más débil es un ácido, más apreciable suele ser la basicidad de su base conjugada.",
+    "formula": "$$K_a\\cdot K_b=K_w$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 1207,
+    "dificultad": "Difícil",
+    "bloque": "Tema 12: Teorías Ácido-Base",
+    "enunciado": "Sabiendo que el Fluoruro de Hidrógeno ($HF$) es un ácido débil, deduce cualitativamente y plantea la ecuación si el pH de una disolución de Fluoruro de Sodio ($NaF$) en agua será ácido, básico o neutro.",
+    "resolucion_latex": "El $NaF$ es una sal que se disocia completamente: $NaF \\rightarrow Na^+ + F^-$.\\n- El $Na^+$ procede del $NaOH$ (base muy fuerte), por lo que es un ácido conjugado extraordinariamente débil. Se considera un ion espectador y **no sufre hidrólisis**.\\n- El $F^-$ procede del $HF$ (ácido débil), por lo que es una base conjugada relativamente fuerte y **sí sufre hidrólisis** frente al agua:\\n$$F^-(aq) + H_2O(l) \\rightleftharpoons HF(aq) + OH^-(aq)$$\\nLa liberación de iones $OH^-$ hace que la disolución de la sal tenga un **pH básico** ($pH > 7$).",
+    "pista": "Identifica primero si el ácido o la base es fuerte o débil y plantea el equilibrio adecuado.",
+    "formula": "$$pH=-\\log[H_3O^+]\\quad ;\\quad pOH=-\\log[OH^-]$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 1208,
+    "dificultad": "Difícil",
+    "bloque": "Tema 12: Teorías Ácido-Base",
+    "enunciado": "Justifica basándote en la estructura molecular y la electronegatividad por qué el Ácido Perclórico ($HClO_4$) es un ácido muchísimo más fuerte que el Ácido Hipocloroso ($HClO$).",
+    "resolucion_latex": "Ambos son oxoácidos del cloro, y su acidez depende de la facilidad con la que se rompa el enlace $O-H$.\\nEl $HClO_4$ ($HO-ClO_3$) tiene 3 átomos de oxígeno terminales unidos al cloro central, mientras que el $HClO$ ($HO-Cl$) no tiene ninguno.\\nLos oxígenos adicionales son muy electronegativos e inducen un fuerte efecto de polarización (efecto inductivo), retirando densidad electrónica del átomo de cloro y, en consecuencia, debilitando fuertemente el enlace $O-H$. Al estar tan polarizado, el protón $H^+$ se libera con tremenda facilidad, haciendo del $HClO_4$ uno de los ácidos más fuertes que existen.",
+    "pista": "Identifica primero si el ácido o la base es fuerte o débil y plantea el equilibrio adecuado.",
+    "formula": "$$pH=-\\log[H_3O^+]\\quad ;\\quad pOH=-\\log[OH^-]$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 1209,
+    "dificultad": "Difícil",
+    "bloque": "Tema 12: Teorías Ácido-Base",
+    "enunciado": "¿Qué es el 'efecto nivelador' del disolvente? Pon un ejemplo utilizando agua como disolvente y los ácidos $HCl$ y $HNO_3$.",
+    "resolucion_latex": "El efecto nivelador es un fenómeno por el cual un disolvente limita la fuerza máxima de un ácido o una base que puede existir en él.\\nEn agua, el ácido más fuerte que puede existir estable es su ion conjugado $H_3O^+$.\\nTanto el $HCl$ como el $HNO_3$ son ácidos intrínsecamente más fuertes que el $H_3O^+$. Al ponerlos en agua, el agua actúa como una base tan dispuesta que les arranca el protón al $100\\%$ a ambos.\\nComo ambos se disocian totalmente, en disolución acuosa parecen ser \"igual de fuertes\" (su fuerza queda nivelada por la formación masiva de $H_3O^+$). Para distinguir cuál es realmente más fuerte habría que usar un disolvente menos básico que el agua (ej. ácido acético puro).",
+    "pista": "Identifica primero si el ácido o la base es fuerte o débil y plantea el equilibrio adecuado.",
+    "formula": "$$pH=-\\log[H_3O^+]\\quad ;\\quad pOH=-\\log[OH^-]$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 1210,
+    "dificultad": "Superior",
+    "bloque": "Tema 12: Teorías Ácido-Base",
+    "enunciado": "*(Reto Supernova)*: Si preparamos una disolución de Cloruro Amónico ($NH_4Cl$) y Acetato Sódico ($CH_3COONa$), los iones sufren hidrólisis cruzada. Sabiendo que $K_a(HAc) = 1.8 \\times 10^{-5}$ y $K_b(NH_3) = 1.8 \\times 10^{-5}$, predice analíticamente el pH del sistema sin hacer ningún cálculo de concentraciones.",
+    "resolucion_latex": "Las sales aportan $NH_4^+$ (ácido conjugado débil) y $CH_3COO^-$ (base conjugada débil). Ambos sufren hidrólisis:\\n1) $NH_4^+ + H_2O \\rightleftharpoons NH_3 + H_3O^+$. Su constante es $K_h(ácida) = \\frac{K_w}{K_b} = \\frac{10^{-14}}{1.8 \\times 10^{-5}}$.\\n2) $CH_3COO^- + H_2O \\rightleftharpoons CH_3COOH + OH^-$. Su constante es $K_h(básica) = \\frac{K_w}{K_a} = \\frac{10^{-14}}{1.8 \\times 10^{-5}}$.\\nComo las constantes de acidez y basicidad de las especies débiles de origen son numéricamente idénticas ($1.8 \\times 10^{-5}$), el grado de hidrólisis de ambos iones es exactamente el mismo.\\nSe formarán exactamente la misma cantidad de iones $H_3O^+$ por culpa del amonio que iones $OH^-$ por culpa del acetato. Al anularse mutuamente, el **pH resultante de la mezcla será estrictamente neutro (pH = 7)**.",
+    "pista": "Identifica primero si el ácido o la base es fuerte o débil y plantea el equilibrio adecuado.",
+    "formula": "$$pH=-\\log[H_3O^+]\\quad ;\\quad pOH=-\\log[OH^-]$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 1301,
+    "dificultad": "Fácil",
+    "bloque": "Tema 13: Cálculos Ácido-Base",
+    "enunciado": "Calcula el pH de una disolución acuosa de Ácido Clorhídrico ($HCl$) $0.05 \\text{ M}$.",
+    "resolucion_latex": "El $HCl$ es un ácido fuerte y se disocia completamente: $HCl \\rightarrow H^+ + Cl^-$.\\nLa concentración de protones es igual a la concentración inicial del ácido: $[H^+] = 0.05 \\text{ M}$.\\n$$pH = -\\log[H^+] = -\\log(0.05) \\approx 1.30$$",
+    "pista": "Identifica primero si el ácido o la base es fuerte o débil y plantea el equilibrio adecuado.",
+    "formula": "$$pH=-\\log[H_3O^+]\\quad ;\\quad pOH=-\\log[OH^-]$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 1302,
+    "dificultad": "Fácil",
+    "bloque": "Tema 13: Cálculos Ácido-Base",
+    "enunciado": "Si el pH de una disolución es $3.5$, calcula su pOH y la concentración de iones hidróxido $[OH^-]$.",
+    "resolucion_latex": "Sabemos que a $25^\\circ C$, $pH + pOH = 14$.\\n$$pOH = 14 - 3.5 = 10.5$$\\nPara hallar la concentración de hidróxidos:\\n$$[OH^-] = 10^{-pOH} = 10^{-10.5} \\approx 3.16 \\times 10^{-11} \\text{ M}$$",
+    "pista": "Identifica primero si el ácido o la base es fuerte o débil y plantea el equilibrio adecuado.",
+    "formula": "$$pH=-\\log[H_3O^+]\\quad ;\\quad pOH=-\\log[OH^-]$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 1303,
+    "dificultad": "Fácil",
+    "bloque": "Tema 13: Cálculos Ácido-Base",
+    "enunciado": "¿Qué volumen de disolución de $NaOH \\, 0.1 \\text{ M}$ se necesita para neutralizar exactamente $20 \\text{ mL}$ de una disolución de $HNO_3 \\, 0.2 \\text{ M}$?",
+    "resolucion_latex": "En el punto de equivalencia de una neutralización monoprótica: $V_a \\cdot M_a = V_b \\cdot M_b$.\\n$$20 \\text{ mL} \\cdot 0.2 \\text{ M} = V_b \\cdot 0.1 \\text{ M}$$\\n$$V_b = \\frac{20 \\cdot 0.2}{0.1} = \\frac{4}{0.1} = 40 \\text{ mL}$$",
+    "pista": "Identifica primero si el ácido o la base es fuerte o débil y plantea el equilibrio adecuado.",
+    "formula": "$$pH=-\\log[H_3O^+]\\quad ;\\quad pOH=-\\log[OH^-]$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 1304,
+    "dificultad": "Media",
+    "bloque": "Tema 13: Cálculos Ácido-Base",
+    "enunciado": "Calcula el pH de una disolución de Ácido Acético ($CH_3COOH$) $0.1 \\text{ M}$. Dato: $K_a = 1.8 \\times 10^{-5}$.",
+    "resolucion_latex": "Planteamos el equilibrio: $HAc \\rightleftharpoons Ac^- + H^+$.\\n- Inicio: $0.1 \\quad | \\quad 0 \\quad | \\quad 0$\\n- Equil: $0.1-x \\quad | \\quad x \\quad | \\quad x$\\n$$K_a = \\frac{[Ac^-][H^+]}{[HAc]} \\implies 1.8 \\times 10^{-5} = \\frac{x^2}{0.1 - x}$$\\nComo $K_a$ es pequeña, aproximamos $0.1 - x \\approx 0.1$:\\n$$x^2 = 1.8 \\times 10^{-6} \\implies x = \\sqrt{1.8 \\times 10^{-6}} \\approx 1.34 \\times 10^{-3} \\text{ M} = [H^+]$$\\n$$pH = -\\log(1.34 \\times 10^{-3}) \\approx 2.87$$",
+    "pista": "Identifica primero si el ácido o la base es fuerte o débil y plantea el equilibrio adecuado.",
+    "formula": "$$pH=-\\log[H_3O^+]\\quad ;\\quad pOH=-\\log[OH^-]$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 1305,
+    "dificultad": "Media",
+    "bloque": "Tema 13: Cálculos Ácido-Base",
+    "enunciado": "Una disolución $0.2 \\text{ M}$ de una base débil $B$ tiene un grado de disociación del $1.5\\%$ ($\\alpha = 0.015$). Calcula su constante de basicidad ($K_b$).",
+    "resolucion_latex": "Equilibrio: $B + H_2O \\rightleftharpoons BH^+ + OH^-$.\\nEn el equilibrio las concentraciones son: $[B] = c(1-\\alpha)$, $[BH^+] = c\\alpha$, $[OH^-] = c\\alpha$.\\n$$K_b = \\frac{(c\\alpha) \\cdot (c\\alpha)}{c(1-\\alpha)} = \\frac{c\\alpha^2}{1-\\alpha}$$\\nSustituimos $c = 0.2$ y $\\alpha = 0.015$:\\n$$K_b = \\frac{0.2 \\cdot (0.015)^2}{1 - 0.015} = \\frac{0.2 \\cdot 0.000225}{0.985} = \\frac{0.000045}{0.985} \\approx 4.57 \\times 10^{-5}$$",
+    "pista": "Identifica primero si el ácido o la base es fuerte o débil y plantea el equilibrio adecuado.",
+    "formula": "$$pH=-\\log[H_3O^+]\\quad ;\\quad pOH=-\\log[OH^-]$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 1306,
+    "dificultad": "Media",
+    "bloque": "Tema 13: Cálculos Ácido-Base",
+    "enunciado": "Calcula el pH de una disolución acuosa $0.1 \\text{ M}$ de Cianuro de Sodio ($NaCN$). Dato: $K_a(HCN) = 6.2 \\times 10^{-10}$.",
+    "resolucion_latex": "El $NaCN$ se disocia en $Na^+$ (no se hidroliza) y $CN^-$ (base conjugada fuerte que se hidroliza).\\nReacción de hidrólisis: $CN^- + H_2O \\rightleftharpoons HCN + OH^-$.\\nConstante de hidrólisis: $K_h = \\frac{K_w}{K_a} = \\frac{10^{-14}}{6.2 \\times 10^{-10}} \\approx 1.61 \\times 10^{-5}$.\\n$$K_h = \\frac{[HCN][OH^-]}{[CN^-]} \\implies 1.61 \\times 10^{-5} = \\frac{x^2}{0.1 - x} \\approx \\frac{x^2}{0.1}$$\\n$$x = \\sqrt{1.61 \\times 10^{-6}} \\approx 1.27 \\times 10^{-3} \\text{ M} = [OH^-]$$\\n$$pOH = -\\log(1.27 \\times 10^{-3}) \\approx 2.90 \\implies pH = 14 - 2.90 = 11.10$$",
+    "pista": "Identifica primero si el ácido o la base es fuerte o débil y plantea el equilibrio adecuado.",
+    "formula": "$$pH=-\\log[H_3O^+]\\quad ;\\quad pOH=-\\log[OH^-]$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 1307,
+    "dificultad": "Difícil",
+    "bloque": "Tema 13: Cálculos Ácido-Base",
+    "enunciado": "Calcula el pH de una disolución tampón formada por $0.2 \\text{ M}$ de Amoniaco ($NH_3$) y $0.3 \\text{ M}$ de Cloruro Amónico ($NH_4Cl$). Dato: $K_b(NH_3) = 1.8 \\times 10^{-5}$.",
+    "resolucion_latex": "Usamos la ecuación de Henderson-Hasselbalch para tampones básicos:\\n$$pOH = pK_b + \\log\\left(\\frac{[Sal]}{[Base]}\\right)$$\\n$$pK_b = -\\log(1.8 \\times 10^{-5}) = 4.74$$\\n$$pOH = 4.74 + \\log\\left(\\frac{0.3}{0.2}\\right) = 4.74 + \\log(1.5) = 4.74 + 0.176 = 4.92$$\\n$$pH = 14 - 4.92 = 9.08$$",
+    "pista": "En una disolución tampón, trabaja con el cociente entre base conjugada y ácido, preferentemente usando moles si el volumen final es común.",
+    "formula": "$$pH=pK_a+\\log\\left(\\frac{[A^-]}{[HA]}\\right)$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 1308,
+    "dificultad": "Difícil",
+    "bloque": "Tema 13: Cálculos Ácido-Base",
+    "enunciado": "Se mezclan $50 \\text{ mL}$ de $HCl \\, 0.1 \\text{ M}$ con $50 \\text{ mL}$ de $NaOH \\, 0.05 \\text{ M}$. Calcula el pH final de la mezcla asumiendo volúmenes aditivos.",
+    "resolucion_latex": "1) Calculamos los moles iniciales:\\nMoles $H^+ = 0.050 \\text{ L} \\cdot 0.1 \\text{ mol/L} = 0.005 \\text{ moles}$.\\nMoles $OH^- = 0.050 \\text{ L} \\cdot 0.05 \\text{ mol/L} = 0.0025 \\text{ moles}$.\\n2) Reacción de neutralización: El reactivo limitante es el $OH^-$. Se consumen $0.0025$ moles de ambos.\\nSobran moles de $H^+ = 0.005 - 0.0025 = 0.0025 \\text{ moles}$ en exceso.\\n3) Concentración final de protones en el volumen total ($V_t = 50+50 = 100 \\text{ mL} = 0.1 \\text{ L}$):\\n$$[H^+] = \\frac{0.0025 \\text{ moles}}{0.1 \\text{ L}} = 0.025 \\text{ M}$$\\n$$pH = -\\log(0.025) \\approx 1.60$$",
+    "pista": "Identifica primero si el ácido o la base es fuerte o débil y plantea el equilibrio adecuado.",
+    "formula": "$$pH=-\\log[H_3O^+]\\quad ;\\quad pOH=-\\log[OH^-]$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 1309,
+    "dificultad": "Difícil",
+    "bloque": "Tema 13: Cálculos Ácido-Base",
+    "enunciado": "Calcula el pH en el punto de equivalencia de la valoración de $50 \\text{ mL}$ de Ácido Fórmico ($HCOOH$) $0.1 \\text{ M}$ con Hidróxido de Sodio ($NaOH$) $0.1 \\text{ M}$. (Dato: $K_a = 1.8 \\times 10^{-4}$).",
+    "resolucion_latex": "1) Volumen de NaOH para la equivalencia: Como las molaridades son iguales, se necesitan $50 \\text{ mL}$ de $NaOH$. Volumen total $= 100 \\text{ mL}$.\\n2) En el punto de equivalencia, todo el ácido se ha convertido en su base conjugada (ión formiato, $HCOO^-$). Moles de formiato $= 0.050 \\text{ L} \\cdot 0.1 \\text{ M} = 0.005 \\text{ moles}$.\\n3) Concentración de la sal: $[HCOO^-] = 0.005 / 0.100 = 0.05 \\text{ M}$.\\n4) El formiato sufre hidrólisis básica: $HCOO^- + H_2O \\rightleftharpoons HCOOH + OH^-$.\\n$K_h = \\frac{10^{-14}}{1.8 \\times 10^{-4}} = 5.56 \\times 10^{-11}$.\\n$$5.56 \\times 10^{-11} = \\frac{x^2}{0.05} \\implies x = \\sqrt{2.78 \\times 10^{-12}} = 1.67 \\times 10^{-6} \\text{ M} = [OH^-]$$\\n$$pOH = -\\log(1.67 \\times 10^{-6}) \\approx 5.78 \\implies pH = 8.22$$",
+    "pista": "En una neutralización, iguala los equivalentes ácido-base y localiza primero el punto de equivalencia.",
+    "formula": "$$n_{ácido}\\cdot a=n_{base}\\cdot b$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 1310,
+    "dificultad": "Superior",
+    "bloque": "Tema 13: Cálculos Ácido-Base",
+    "enunciado": "*(Reto Supernova)*: A $1 \\text{ L}$ de una disolución tampón que es $0.5 \\text{ M}$ en Ácido Acético y $0.5 \\text{ M}$ en Acetato Sódico, se le añaden $0.1 \\text{ moles}$ de $HCl$ gas (sin alterar el volumen). Sabiendo que el $pK_a$ del acético es $4.74$, demuestra analíticamente el poder amortiguador calculando el pH antes y después de la adición.",
+    "resolucion_latex": "1) **pH inicial** (antes de añadir HCl):\\nPor Henderson-Hasselbalch: $pH = pK_a + \\log\\left(\\frac{0.5}{0.5}\\right) = 4.74 + \\log(1) = 4.74$.\\n2) **Adición del ácido fuerte**: Los $0.1 \\text{ moles}$ de $H^+$ añadidos reaccionan estequiométricamente y al $100\\%$ con la base del tampón (el Acetato) para formar más Ácido Acético.\\n$Ac^- + H^+ \\rightarrow HAc$\\n- Nuevos moles de $Ac^-$ (base) $= 0.5 - 0.1 = 0.4 \\text{ moles}$.\\n- Nuevos moles de $HAc$ (ácido) $= 0.5 + 0.1 = 0.6 \\text{ moles}$.\\n3) **pH final**:\\n$$pH = 4.74 + \\log\\left(\\frac{0.4}{0.6}\\right) = 4.74 + \\log(0.667) = 4.74 - 0.18 = 4.56$$\\n**Conclusión**: A pesar de añadir una cantidad brutal de ácido fuerte (que en agua pura habría bajado el pH a 1.0), el pH de la disolución tampón apenas ha descendido $0.18$ unidades, demostrando su altísima capacidad amortiguadora.",
+    "pista": "En una disolución tampón, trabaja con el cociente entre base conjugada y ácido, preferentemente usando moles si el volumen final es común.",
+    "formula": "$$pH=pK_a+\\log\\left(\\frac{[A^-]}{[HA]}\\right)$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 1401,
+    "dificultad": "Fácil",
+    "bloque": "Tema 14: Oxidación-Reducción (Redox)",
+    "enunciado": "Determina el número de oxidación de todos los elementos presentes en el Dicromato de Potasio ($K_2Cr_2O_7$).",
+    "resolucion_latex": "La molécula es neutra, la suma de números de oxidación es 0.\\n- El Potasio ($K$) es un alcalino: $+1$.\\n- El Oxígeno ($O$) generalmente es: $-2$.\\nSea $x$ el estado de oxidación del Cromo ($Cr$):\\n$$2(+1) + 2(x) + 7(-2) = 0$$\\n$$2 + 2x - 14 = 0 \\implies 2x = 12 \\implies x = +6$$\\nPor tanto: $K(+1), Cr(+6), O(-2)$.",
+    "pista": "Usa que la suma de números de oxidación debe igualar la carga total del compuesto.",
+    "formula": "$$\\sum n.o.=0\\quad \\text{en compuestos neutros}$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 1402,
+    "dificultad": "Fácil",
+    "bloque": "Tema 14: Oxidación-Reducción (Redox)",
+    "enunciado": "En la reacción: $Zn(s) + Cu^{2+}(aq) \\rightarrow Zn^{2+}(aq) + Cu(s)$, identifica qué especie se oxida, cuál se reduce, cuál es el agente oxidante y cuál el agente reductor.",
+    "resolucion_latex": "El Cinc pasa de estado $0$ a $+2$ (pierde electrones): **se oxida**. Por tanto, el $Zn$ es el **agente reductor**.\\nEl Cobre pasa de $+2$ a $0$ (gana electrones): **se reduce**. Por tanto, el $Cu^{2+}$ es el **agente oxidante**.",
+    "pista": "Recuerda: oxidarse es perder electrones y reducirse es ganarlos.",
+    "formula": "$$\\text{oxidación}:\\ e^-\\text{ salen}\\quad ;\\quad \\text{reducción}:\\ e^-\\text{ entran}$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 1403,
+    "dificultad": "Fácil",
+    "bloque": "Tema 14: Oxidación-Reducción (Redox)",
+    "enunciado": "Ajusta la siguiente semirreacción de oxidación en medio ácido: $Fe^{2+} \\rightarrow Fe^{3+}$.",
+    "resolucion_latex": "Los átomos de hierro ya están ajustados (1 a cada lado).\\nPara ajustar las cargas, añadimos electrones en el lado más positivo para equilibrar.\\nLa carga en reactivos es $+2$ y en productos es $+3$. Añadimos 1 electrón a los productos:\\n$$Fe^{2+} \\rightarrow Fe^{3+} + 1e^{-}$$",
+    "pista": "En una oxidación, los electrones aparecen en los productos.",
+    "formula": "$$Fe^{2+}\\rightarrow Fe^{3+}+e^-$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 1404,
+    "dificultad": "Media",
+    "bloque": "Tema 14: Oxidación-Reducción (Redox)",
+    "enunciado": "Ajusta la semirreacción de reducción del ion Permanganato ($MnO_4^-$) a ion Manganeso (II) ($Mn^{2+}$) en medio ácido.",
+    "resolucion_latex": "1) Elemento principal: $MnO_4^- \\rightarrow Mn^{2+}$ (Ajustado).\\n2) Ajuste de Oxígenos: Añadimos agua en el lado deficiente. Faltan 4 oxígenos en productos, añadimos $4H_2O$.\\n$$MnO_4^- \\rightarrow Mn^{2+} + 4H_2O$$\\n3) Ajuste de Hidrógenos: Añadimos protones ($H^+$) en reactivos. Hay 8 H en productos, añadimos $8H^+$.\\n$$MnO_4^- + 8H^+ \\rightarrow Mn^{2+} + 4H_2O$$\\n4) Ajuste de Cargas: Reactivos ($-1 + 8 = +7$), Productos ($+2$). Añadimos $5e^-$ en reactivos.\\n$$MnO_4^- + 8H^+ + 5e^- \\rightarrow Mn^{2+} + 4H_2O$$",
+    "pista": "En medio ácido, ajusta oxígenos con agua, hidrógenos con $H^+$ y cargas con electrones.",
+    "formula": "$$MnO_4^-+8H^++5e^-\\rightarrow Mn^{2+}+4H_2O$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 1405,
+    "dificultad": "Media",
+    "bloque": "Tema 14: Oxidación-Reducción (Redox)",
+    "enunciado": "Ajusta la semirreacción de oxidación del ion sulfito ($SO_3^{2-}$) a ion sulfato ($SO_4^{2-}$) en **medio básico**.",
+    "resolucion_latex": "1) Base: $SO_3^{2-} \\rightarrow SO_4^{2-}$.\\n2) Oxígenos y medio básico: En medio básico, por cada O excedente se añade un $H_2O$ en ese mismo lado y el doble de $OH^-$ en el opuesto.\\nFalta 1 oxígeno en reactivos. Añadimos $2OH^-$ en reactivos y $1H_2O$ en productos.\\n$$SO_3^{2-} + 2OH^- \\rightarrow SO_4^{2-} + H_2O$$\\n3) Ajuste de cargas: Reactivos ($-2 - 2 = -4$), Productos ($-2$). Añadimos $2e^-$ en productos.\\n$$SO_3^{2-} + 2OH^- \\rightarrow SO_4^{2-} + H_2O + 2e^-$$",
+    "pista": "En medio básico puedes ajustar con $OH^-$ y $H_2O$, y al final equilibrar cargas con electrones.",
+    "formula": "$$SO_3^{2-}+2OH^-\\rightarrow SO_4^{2-}+H_2O+2e^-$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 1406,
+    "dificultad": "Media",
+    "bloque": "Tema 14: Oxidación-Reducción (Redox)",
+    "enunciado": "Escribe la ecuación molecular ajustada de la reacción entre el Permanganato de potasio y el Cloruro de hierro (II) en presencia de Ácido clorhídrico, sabiendo que se forma Cloruro de manganeso (II), Cloruro de hierro (III), Cloruro de potasio y agua.",
+    "resolucion_latex": "1) Semirreacciones (ya vistas en ejercicios anteriores):\\nRed: $MnO_4^- + 8H^+ + 5e^- \\rightarrow Mn^{2+} + 4H_2O$\\nOx: $Fe^{2+} \\rightarrow Fe^{3+} + 1e^-$\\n2) Multiplicamos la de oxidación por 5 para igualar electrones y sumamos (Ecuación iónica):\\n$$MnO_4^- + 8H^+ + 5Fe^{2+} \\rightarrow Mn^{2+} + 4H_2O + 5Fe^{3+}$$\\n3) Trasladamos a las especies moleculares completando con los iones espectadores ($K^+$ y $Cl^-$):\\n$$KMnO_4 + 8HCl + 5FeCl_2 \\rightarrow MnCl_2 + 4H_2O + 5FeCl_3 + KCl$$",
+    "pista": "Primero ajusta la reacción iónica y después añade los iones espectadores para obtener la molecular.",
+    "formula": "$$MnO_4^-+8H^++5Fe^{2+}\\rightarrow Mn^{2+}+4H_2O+5Fe^{3+}$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 1407,
+    "dificultad": "Difícil",
+    "bloque": "Tema 14: Oxidación-Reducción (Redox)",
+    "enunciado": "Para valorar $25 \\text{ mL}$ de una disolución de Agua Oxigenada ($H_2O_2$) en medio ácido, se han consumido $18 \\text{ mL}$ de una disolución de $KMnO_4 \\, 0.05 \\text{ M}$. Sabiendo que el peróxido se oxida a gas $O_2$, calcula la molaridad del agua oxigenada.",
+    "resolucion_latex": "1) Estequiometría de la reacción: El $MnO_4^-$ capta $5e^-$. El $H_2O_2 \\rightarrow O_2 + 2H^+ + 2e^-$ libera $2e^-$.\\nMultiplicamos el manganeso por 2 y el peróxido por 5.\\nLa relación es: $2 \\text{ moles de } KMnO_4$ reaccionan con $5 \\text{ moles de } H_2O_2$.\\n2) Moles de $KMnO_4$ consumidos: $0.018 \\text{ L} \\cdot 0.05 \\text{ M} = 0.0009 \\text{ moles}$.\\n3) Moles de $H_2O_2$ neutralizados:\\n$$0.0009 \\text{ mol } KMnO_4 \\cdot \\frac{5 \\text{ mol } H_2O_2}{2 \\text{ mol } KMnO_4} = 0.00225 \\text{ moles de } H_2O_2$$\\n4) Molaridad de la disolución de peróxido:\\n$$M = \\frac{0.00225 \\text{ moles}}{0.025 \\text{ L}} = 0.09 \\text{ M}$$",
+    "pista": "La clave es usar la relación estequiométrica entre permanganato y peróxido: $2:5$.",
+    "formula": "$$M=\\frac{n}{V}$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 1408,
+    "dificultad": "Difícil",
+    "bloque": "Tema 14: Oxidación-Reducción (Redox)",
+    "enunciado": "Ajusta la siguiente reacción de dismutación (o desproporción) en medio básico: $Cl_2 \\rightarrow Cl^- + ClO_3^-$.",
+    "resolucion_latex": "El Cloro elemental (estado 0) actúa a la vez como oxidante y como reductor.\\n- Reducción: $Cl_2 + 2e^- \\rightarrow 2Cl^-$\\n- Oxidación: $Cl_2 \\rightarrow 2ClO_3^-$. Ajustamos O con $H_2O$ y $OH^-$:\\nFaltan 6 O en reactivos. Sumamos $12OH^-$ en reactivos y $6H_2O$ en productos.\\n$$Cl_2 + 12OH^- \\rightarrow 2ClO_3^- + 6H_2O + 10e^-$$\\nIgualamos electrones multiplicando la reducción por 5:\\n$$5Cl_2 + 10e^- \\rightarrow 10Cl^-$$\\nSumamos: $6Cl_2 + 12OH^- \\rightarrow 10Cl^- + 2ClO_3^- + 6H_2O$.\\nSimplificamos dividiendo todos los coeficientes entre 2:\\n$$3Cl_2 + 6OH^- \\rightarrow 5Cl^- + ClO_3^- + 3H_2O$$",
+    "pista": "En una dismutación, el mismo elemento se oxida y se reduce a la vez.",
+    "formula": "$$3Cl_2+6OH^-\\rightarrow 5Cl^-+ClO_3^-+3H_2O$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 1409,
+    "dificultad": "Difícil",
+    "bloque": "Tema 14: Oxidación-Reducción (Redox)",
+    "enunciado": "Teniendo en cuenta los potenciales estándar de reducción: $E^0(Cu^{2+}/Cu) = +0.34\\text{V}$, $E^0(H^+/H_2) = 0.00\\text{V}$ y $E^0(NO_3^-/NO) = +0.96\\text{V}$, justifica por qué el Cobre metálico no se disuelve en Ácido Clorhídrico ($HCl$) pero sí se disuelve en Ácido Nítrico ($HNO_3$).",
+    "resolucion_latex": "Para que un metal se disuelva, debe oxidarse a su catión ($Cu \\rightarrow Cu^{2+} + 2e^-$), cuyo potencial de oxidación es el inverso de la reducción: $-0.34\\text{V}$.\\n- **Con HCl**: El único agente oxidante posible son los protones ($H^+ \\rightarrow H_2$). El potencial global de la pila sería $E^0_{pila} = -0.34 + 0.00 = -0.34\\text{V}$. Al ser $E^0 < 0$, la reacción no es espontánea ($\\Delta G > 0$). El cobre no se disuelve.\\n- **Con HNO3**: Además de los protones, el ion nitrato ($NO_3^-$) es un fuerte agente oxidante. El potencial de la pila con el nitrato sería $E^0_{pila} = -0.34 + 0.96 = +0.62\\text{V}$. Al ser $E^0 > 0$, el proceso es fuertemente espontáneo, desprendiéndose gas $NO$ y disolviéndose el Cobre.",
+    "pista": "Compara el potencial global: si $E^0_{pila}>0$, la reacción redox es espontánea.",
+    "formula": "$$E^0_{pila}=E^0_{cátodo}-E^0_{ánodo}$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 1410,
+    "dificultad": "Superior",
+    "bloque": "Tema 14: Oxidación-Reducción (Redox)",
+    "enunciado": "*(Reto Supernova)*: Una pila está formada por el par $Fe^{2+}/Fe$ ($E^0 = -0.44\\text{V}$) y el par $Ag^+/Ag$ ($E^0 = +0.80\\text{V}$). Demuestra matemáticamente, utilizando la Ecuación de Nernst, cuál sería el potencial real de la pila si la concentración de $Fe^{2+}$ es de $0.1\\text{M}$ y la de $Ag^+$ ha caído a $10^{-4}\\text{M}$ por estar casi agotada. (Dato: $0.0592$ a $25^\\circ C$).",
+    "resolucion_latex": "1) Identificamos cátodo y ánodo: La Plata tiene mayor $E^0$, se reduce (Cátodo). El Hierro se oxida (Ánodo).\\nReacción global: $Fe(s) + 2Ag^+(aq) \\rightarrow Fe^{2+}(aq) + 2Ag(s)$.\\nElectrones intercambiados ($n$): 2.\\n2) Potencial estándar de la pila:\\n$$E^0_{pila} = E^0_{catodo} - E^0_{anodo} = 0.80 - (-0.44) = 1.24 \\text{ V}$$\\n3) Aplicamos la Ecuación de Nernst para calcular el potencial en condiciones no estándar:\\n$$E = E^0 - \\frac{0.0592}{n} \\log Q = 1.24 - \\frac{0.0592}{2} \\log \\left( \\frac{[Fe^{2+}]}{[Ag^+]^2} \\right)$$\\nLos sólidos no entran en la Q. Sustituimos valores:\\n$$E = 1.24 - 0.0296 \\cdot \\log \\left( \\frac{0.1}{(10^{-4})^2} \\right) = 1.24 - 0.0296 \\cdot \\log \\left( \\frac{10^{-1}}{10^{-8}} \\right)$$\\n$$E = 1.24 - 0.0296 \\cdot \\log(10^7) = 1.24 - 0.0296 \\cdot 7 = 1.24 - 0.2072 = 1.0328 \\text{ V}$$\\nEl potencial de la pila ha caído notablemente (de $1.24\\text{V}$ a $1.03\\text{V}$) porque los reactivos están casi agotados.",
+    "pista": "En Nernst, no incluyas sólidos en el cociente de reacción $Q$.",
+    "formula": "$$E=E^0-\\frac{0.0592}{n}\\log Q$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 1501,
+    "dificultad": "Fácil",
+    "bloque": "Tema 15: Electroquímica",
+    "enunciado": "En la notación estándar de una pila galvánica, se escribe $Zn(s) | Zn^{2+}(aq) || Cu^{2+}(aq) | Cu(s)$. Identifica qué electrodo es el ánodo, cuál es el cátodo, y qué significan las líneas simples y la línea doble.",
+    "resolucion_latex": "Por convenio de la IUPAC:\\n- A la **izquierda** siempre se escribe el **Ánodo** (donde ocurre la oxidación, electrodo negativo). En este caso, el $Zn$.\\n- A la **derecha** se escribe el **Cátodo** (donde ocurre la reducción, electrodo positivo). Aquí, el $Cu$.\\n- La **línea simple ($|$)** separa distintas fases (estado sólido de acuoso).\\n- La **línea doble ($||$)** representa el **puente salino** que conecta ambas semiceldas para mantener la neutralidad eléctrica.",
+    "pista": "En una pila, la oxidación ocurre en el ánodo y la reducción en el cátodo.",
+    "formula": "$$\\text{ánodo}:\\text{oxidación}\\quad ;\\quad \\text{cátodo}:\\text{reducción}$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 1502,
+    "dificultad": "Fácil",
+    "bloque": "Tema 15: Electroquímica",
+    "enunciado": "¿Hacia qué semicelda migran los aniones (iones negativos) del puente salino en una pila en funcionamiento?",
+    "resolucion_latex": "Los aniones del puente salino migran hacia la semicelda del **Ánodo**.\\nEsto se debe a que en el ánodo se está produciendo la oxidación, liberando cationes positivos a la disolución (ej. $Zn \\rightarrow Zn^{2+}$). Para evitar que la disolución se vuelva positivamente cargada (lo que detendría la pila), los aniones negativos viajan hacia allí para neutralizar esa carga.",
+    "pista": "El puente salino compensa las cargas que se acumulan en cada semicelda.",
+    "formula": "$$\\text{aniones}\\rightarrow\\text{ánodo}$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 1503,
+    "dificultad": "Fácil",
+    "bloque": "Tema 15: Electroquímica",
+    "enunciado": "Calcula la carga total que ha circulado por un circuito si se mantiene una corriente constante de $5 \\text{ Amperios}$ durante $2 \\text{ horas}$.",
+    "resolucion_latex": "Aplicamos la ecuación fundamental de la electroquímica: $Q = I \\cdot t$.\\nLa corriente debe estar en Amperios y el tiempo estrictamente en segundos.\\n$$t = 2 \\text{ h} \\cdot 3600 \\text{ s/h} = 7200 \\text{ s}$$\\n$$Q = 5 \\text{ A} \\cdot 7200 \\text{ s} = 36000 \\text{ Culombios (C)}$$",
+    "pista": "Convierte siempre el tiempo a segundos antes de calcular la carga.",
+    "formula": "$$Q=I\\cdot t$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 1504,
+    "dificultad": "Media",
+    "bloque": "Tema 15: Electroquímica",
+    "enunciado": "Aplica la Ley de Faraday para calcular los gramos de Cobre metálico que se depositan en el cátodo de una celda electrolítica si pasamos una corriente de $3 \\text{ A}$ a través de una disolución de $CuSO_4$ durante $30 \\text{ minutos}$. (Datos: Masa atómica Cu = 63.5, 1 F = 96485 C).",
+    "resolucion_latex": "1) Calculamos la carga total: $Q = I \\cdot t = 3 \\text{ A} \\cdot (30 \\cdot 60 \\text{ s}) = 5400 \\text{ C}$.\\n2) Reacción catódica: $Cu^{2+} + 2e^- \\rightarrow Cu$. Se requieren 2 moles de electrones por cada mol de cobre ($n=2$).\\n3) Aplicamos la ecuación de Faraday: $m = \\frac{Q \\cdot M_m}{n \\cdot F}$.\\n$$m = \\frac{5400 \\cdot 63.5}{2 \\cdot 96485} = \\frac{342900}{192970} \\approx 1.777 \\text{ gramos de Cobre}$$",
+    "pista": "Relaciona carga, moles de electrones y masa depositada con la ley de Faraday.",
+    "formula": "$$m=\\frac{Q\\cdot M}{n\\cdot F}$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 1505,
+    "dificultad": "Media",
+    "bloque": "Tema 15: Electroquímica",
+    "enunciado": "Para una reacción redox el potencial estándar de la celda es $E^0 = +0.46 \\text{ V}$. Sabiendo que se intercambian 2 electrones, calcula la variación de Energía Libre estándar ($\\Delta G^0$) en kJ e indica si es un proceso galvánico o electrolítico.",
+    "resolucion_latex": "La ecuación que relaciona termodinámica y electroquímica es $\\Delta G^0 = -n \\cdot F \\cdot E^0$.\\n$$\\Delta G^0 = -2 \\text{ mol e}^- \\cdot 96485 \\text{ C/mol e}^- \\cdot 0.46 \\text{ V}$$\\n$$\\Delta G^0 = -88766 \\text{ J} = -88.76 \\text{ kJ}$$.\\nAl ser $\\Delta G^0 < 0$ y $E^0 > 0$, la reacción es espontánea y genera electricidad. Pertenece a un proceso **galvánico** (una pila), no requiere energía externa para funcionar (electrolítico).",
+    "pista": "Si el potencial de la pila es positivo, la energía libre será negativa.",
+    "formula": "$$\\Delta G^0=-nFE^0$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 1506,
+    "dificultad": "Media",
+    "bloque": "Tema 15: Electroquímica",
+    "enunciado": "¿Qué volumen de gas cloro ($Cl_2$) a Condiciones Normales ($0^\\circ C, 1 \\text{ atm}$) se desprende en el ánodo al electrolizar Cloruro de Sodio fundido si pasa una corriente de $10 \\text{ A}$ durante $1 \\text{ hora}$?",
+    "resolucion_latex": "1) Carga: $Q = 10 \\cdot 3600 = 36000 \\text{ C}$.\\n2) Semirreacción del ánodo: $2Cl^- \\rightarrow Cl_2 + 2e^-$. Se intercambian $n=2$ moles de electrones por cada mol de $Cl_2$.\\n3) Moles de $Cl_2$ producidos: $moles = \\frac{Q}{nF} = \\frac{36000}{2 \\cdot 96485} \\approx 0.1866 \\text{ moles}$.\\n4) En C.N., 1 mol de gas ideal ocupa $22.4 \\text{ L}$.\\n$$Volumen = 0.1866 \\text{ moles} \\cdot 22.4 \\text{ L/mol} \\approx 4.18 \\text{ Litros de gas } Cl_2$$",
+    "pista": "Primero calcula moles con Faraday y después convierte a volumen usando $22,4\\ \\text{L/mol}$ en C.N.",
+    "formula": "$$n=\\frac{Q}{zF}$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 1507,
+    "dificultad": "Difícil",
+    "bloque": "Tema 15: Electroquímica",
+    "enunciado": "A diferencia del NaCl fundido, si electrolizamos una disolución acuosa de $NaCl$, no obtenemos Sodio metálico en el cátodo. Explica termodinámicamente (por potenciales) qué se obtiene en su lugar.",
+    "resolucion_latex": "En una disolución acuosa hay competencia en el cátodo por reducirse entre los iones $Na^+$ y las moléculas de agua ($H_2O$).\\nSe reducirá la especie con el **potencial de reducción mayor** (la más fácil de reducir).\\n- Potencial del Sodio: $Na^+ + 1e^- \\rightarrow Na \\quad (E^0 = -2.71\\text{V})$.\\n- Potencial del Agua: $2H_2O + 2e^- \\rightarrow H_2 + 2OH^- \\quad (E^0 = -0.83\\text{V})$.\\nComo $-0.83\\text{V} > -2.71\\text{V}$, el agua es muchísimo más fácil de reducir que el catión sodio. Por tanto, en el cátodo **se desprenderá gas Hidrógeno ($H_2$)** y la disolución se volverá básica por los $OH^-$, sin depositarse ni un solo gramo de Sodio metálico.",
+    "pista": "En el cátodo se reduce la especie con mayor potencial de reducción.",
+    "formula": "$$E^0_{H_2O/H_2}>E^0_{Na^+/Na}$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 1508,
+    "dificultad": "Difícil",
+    "bloque": "Tema 15: Electroquímica",
+    "enunciado": "Dos celdas electrolíticas están conectadas en serie. La celda A contiene una disolución de $AgNO_3$ y la celda B una disolución de $CuSO_4$. Tras pasar la corriente durante un tiempo determinado, se han depositado $2.16 \\text{ g}$ de Plata en la celda A. ¿Cuántos gramos de Cobre se habrán depositado simultáneamente en la celda B? (Datos: Ma(Ag)=108, Ma(Cu)=63.5).",
+    "resolucion_latex": "Como están en serie, **por ambas celdas circula exactamente la misma cantidad de carga eléctrica ($Q$) y los mismos moles de electrones**.\\n1) Celdas A: $Ag^+ + 1e^- \\rightarrow Ag$ ($n_A = 1$).\\nMoles de Ag = $2.16 / 108 = 0.02 \\text{ moles}$. Moles de electrones = $0.02 \\text{ moles}$.\\n2) Celdas B: $Cu^{2+} + 2e^- \\rightarrow Cu$ ($n_B = 2$).\\nComo disponemos de $0.02 \\text{ moles de electrones}$, y el cobre necesita 2 electrones por átomo, se formarán la mitad de moles de Cobre:\\nMoles de Cu = $0.02 / 2 = 0.01 \\text{ moles}$.\\n3) Masa de Cu depositada: $0.01 \\text{ moles} \\cdot 63.5 \\text{ g/mol} = 0.635 \\text{ gramos de Cobre}$.",
+    "pista": "En celdas en serie pasa la misma carga por todas; por tanto, circulan los mismos moles de electrones.",
+    "formula": "$$n(e^-)=\\frac{Q}{F}$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 1509,
+    "dificultad": "Difícil",
+    "bloque": "Tema 15: Electroquímica",
+    "enunciado": "Diseñas una \"Pila de Concentración\" utilizando dos vasos con electrodos de Cobre idénticos. El cátodo está en una disolución de $CuSO_4 \\, 1 \\text{ M}$ y el ánodo en $CuSO_4 \\, 0.01 \\text{ M}$. Calcula el potencial de esta pila. ¿Por qué funciona si los electrodos son del mismo material?",
+    "resolucion_latex": "Funciona por el **gradiente de concentración**. El sistema intentará igualar las concentraciones espontáneamente: oxidando el cobre donde está diluido (ánodo) y reduciendo cobre donde está concentrado (cátodo).\\nEl potencial estándar $E^0 = E^0_{Cu} - E^0_{Cu} = 0 \\text{ V}$.\\nAplicamos Nernst: $E = E^0 - \\frac{0.0592}{n} \\log \\left( \\frac{[Ánodo \\, oxidado]}{[Cátodo \\, a \\, reducir]} \\right)$.\\n$n=2$ (del $Cu^{2+}$).\\n$$E = 0 - \\frac{0.0592}{2} \\log \\left( \\frac{0.01}{1} \\right) = -0.0296 \\cdot \\log(10^{-2})$$\\n$$E = -0.0296 \\cdot (-2) = +0.0592 \\text{ V}$$\\nSe genera un pequeño voltaje útil que dura hasta que ambas disoluciones igualen su molaridad.",
+    "pista": "Una pila de concentración funciona porque el sistema tiende a igualar concentraciones.",
+    "formula": "$$E= -\\frac{0.0592}{n}\\log Q$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 1510,
+    "dificultad": "Superior",
+    "bloque": "Tema 15: Electroquímica",
+    "enunciado": "*(Reto Supernova)*: En la electrólisis industrial de salmuera concentrada ($NaCl(aq)$ concentrado) para el proceso cloro-álcali, termodinámicamente el agua ($E^0 = -1.23\\text{V}$ oxidándose a $O_2$) debería oxidarse en el ánodo mucho antes que el ion cloruro ($E^0 = -1.36\\text{V}$ oxidándose a $Cl_2$). Sin embargo, la industria extrae millones de toneladas de gas cloro en este proceso. Justifica esta brutal violación de la termodinámica clásica introduciendo el concepto de 'sobrepotencial'.",
+    "resolucion_latex": "La termodinámica clásica de potenciales estándar nos dice qué reacción es más favorable *energéticamente*, pero no nos dice nada de la *cinética* (velocidad) a nivel de la superficie del electrodo.\\nLa oxidación del agua a oxígeno gaseoso es cinéticamente un proceso extremadamente complejo y lento en la superficie de los electrodos industriales (requiere romper fuertemente enlaces O-H y reorganizar átomos).\\nPara forzar que esta reacción transcurra a una velocidad apreciable, se requiere aplicar un voltaje extra enorme conocido como **Sobrepotencial (o sobretensión)**. El sobrepotencial de formación de $O_2$ sobre el grafito o titanio es tan sumamente alto que desplaza el \"potencial real efectivo\" de oxidación del agua muy por debajo de los $-1.36\\text{V}$ del Cloro.\\nComo la formación del gas Cloro tiene un sobrepotencial casi nulo (es cinéticamente muy fácil y rápido que dos cloruros se junten), resulta que en condiciones de operación industrial real, \"cuesta menos voltaje\" arrancar electrones al cloruro que al agua, desprendiéndose masivamente gas Cloro y salvando a la industria.",
+    "pista": "El sobrepotencial explica por qué la reacción real puede no coincidir con la predicción puramente termodinámica.",
+    "formula": "$$E_{real}=E^0+\\eta$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 1601,
+    "dificultad": "Fácil",
+    "bloque": "Tema 16: Química del Carbono e Isomería",
+    "enunciado": "Nombra el siguiente compuesto orgánico según las normas de la IUPAC: $CH_3-CH_2-CH(CH_3)-CH_3$.",
+    "resolucion_latex": "1) Identificamos la cadena principal más larga que contiene los carbonos: 4 carbonos (butano).\\n2) Numeramos desde el extremo más cercano al sustituyente para darle el localizador más bajo: de derecha a izquierda, el sustituyente queda en la posición 2.\\n3) El sustituyente es un grupo metilo ($-CH_3$).\\nNombre IUPAC: **2-metilbutano**.",
+    "pista": "Busca la cadena principal más larga y numera desde el extremo que dé el localizador más bajo.",
+    "formula": "$$\\text{cadena principal}+\\text{sustituyentes}$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 1602,
+    "dificultad": "Fácil",
+    "bloque": "Tema 16: Química del Carbono e Isomería",
+    "enunciado": "Escribe la fórmula semidesarrollada del compuesto: Ácido butanoico.",
+    "resolucion_latex": "La raíz 'butan' indica una cadena de 4 carbonos.\\nEl sufijo '-oico' con la palabra 'Ácido' indica la presencia de un grupo carboxilo ($-COOH$) en el carbono terminal (C1).\\nFórmula: $CH_3-CH_2-CH_2-COOH$.",
+    "pista": "El sufijo ácido '-oico' indica el grupo terminal $-COOH$.",
+    "formula": "$$R-COOH\\rightarrow\\text{ácido carboxílico}$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 1603,
+    "dificultad": "Fácil",
+    "bloque": "Tema 16: Química del Carbono e Isomería",
+    "enunciado": "Define qué son compuestos isómeros.",
+    "resolucion_latex": "Los isómeros son compuestos químicos que tienen exactamente la misma fórmula molecular (mismo número y tipo de átomos) pero diferente estructura o disposición espacial de los átomos, lo que les confiere propiedades físicas y químicas distintas.",
+    "pista": "Misma fórmula molecular no significa necesariamente misma estructura.",
+    "formula": "$$\\text{misma fórmula molecular}+\\text{distinta estructura}=\\text{isómeros}$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 1604,
+    "dificultad": "Media",
+    "bloque": "Tema 16: Química del Carbono e Isomería",
+    "enunciado": "Formula el compuesto 3-etil-2-metilpentan-1-ol y señala cuál es su grupo funcional principal.",
+    "resolucion_latex": "Grupo principal: Alcohol (sufijo '-ol' en el C1). Cadena principal: 5 carbonos ('pent').\\nEn el C2 hay un grupo metil ($-CH_3$) y en el C3 un grupo etil ($-CH_2-CH_3$).\\nFórmula: $CH_3-CH_2-CH(CH_2CH_3)-CH(CH_3)-CH_2OH$.",
+    "pista": "Localiza primero el grupo funcional principal y después coloca los sustituyentes.",
+    "formula": "$$\\text{alcohol}\\rightarrow R-OH$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 1605,
+    "dificultad": "Media",
+    "bloque": "Tema 16: Química del Carbono e Isomería",
+    "enunciado": "Escribe y nombra dos isómeros de función para la fórmula molecular $C_3H_6O$.",
+    "resolucion_latex": "La fórmula molecular $C_3H_6O$ obedece a la fórmula general $C_nH_{2n}O$, que es típica de aldehídos y cetonas (isómeros de función entre sí).\\n1) Aldehído (grupo carbonilo en el extremo): $CH_3-CH_2-CHO$ (**propanal**).\\n2) Cetona (grupo carbonilo en carbono secundario): $CH_3-CO-CH_3$ (**propanona** o acetona).",
+    "pista": "Los aldehídos y cetonas pueden tener la misma fórmula molecular pero distinto grupo funcional.",
+    "formula": "$$R-CHO\\quad ;\\quad R-CO-R'$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 1606,
+    "dificultad": "Media",
+    "bloque": "Tema 16: Química del Carbono e Isomería",
+    "enunciado": "Escribe un isómero de posición y un isómero de cadena para el 1-butanol ($CH_3-CH_2-CH_2-CH_2OH$).",
+    "resolucion_latex": "- **Isómero de posición**: Cambiamos de sitio el grupo funcional funcional sin alterar la cadena carbonada. Ejemplo: mover el $-OH$ al carbono 2 $\\implies CH_3-CH_2-CH(OH)-CH_3$ (**butan-2-ol**).\\n- **Isómero de cadena**: Cambiamos la estructura del esqueleto carbonado manteniendo el grupo funcional. Ejemplo: acortar la cadena a 3 carbonos y poner una ramificación $\\implies CH_3-CH(CH_3)-CH_2OH$ (**2-metilpropan-1-ol**).",
+    "pista": "En isomería de posición cambia la localización del grupo funcional; en isomería de cadena cambia el esqueleto carbonado.",
+    "formula": "$$\\text{posición}\\neq\\text{cadena}$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 1607,
+    "dificultad": "Difícil",
+    "bloque": "Tema 16: Química del Carbono e Isomería",
+    "enunciado": "Justifica si el 2-buteno y el 1-buteno presentan isomería geométrica (cis-trans).",
+    "resolucion_latex": "La isomería geométrica aparece en los dobles enlaces si cada carbono del doble enlace está unido a dos grupos distintos.\\n- En el **1-buteno** ($CH_2=CH-CH_2-CH_3$), el Carbono 1 está unido a dos hidrógenos idénticos. **NO presenta isomería geométrica**.\\n- En el **2-buteno** ($CH_3-CH=CH-CH_3$), el Carbono 2 está unido a un H y a un $CH_3$, y el Carbono 3 igual. Como tienen grupos distintos, **SÍ presenta isomería geométrica**:\\n- Isómero cis: los dos $CH_3$ quedan del mismo lado del doble enlace.\\n- Isómero trans: los dos $CH_3$ quedan en lados opuestos.",
+    "pista": "Para que haya isomería cis-trans, cada carbono del doble enlace debe tener dos sustituyentes distintos.",
+    "formula": "$$C=C\\quad \\text{con sustituyentes distintos}\\Rightarrow\\text{cis-trans}$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 1608,
+    "dificultad": "Difícil",
+    "bloque": "Tema 16: Química del Carbono e Isomería",
+    "enunciado": "Determina si el ácido 2-hidroxipropanoico (ácido láctico) presenta isomería óptica. Justifica tu respuesta identificando el elemento estructural necesario.",
+    "resolucion_latex": "Para presentar isomería óptica (enantiometría), la molécula debe poseer al menos un **carbono quiral (o asimétrico)**, que es aquel unido a cuatro sustituyentes diferentes.\\nLa fórmula es: $CH_3-C^*H(OH)-COOH$.\\nEl Carbono 2 (marcado con $^*$) está unido a:\\n1) Un grupo $-H$\\n2) Un grupo $-OH$\\n3) Un grupo $-CH_3$\\n4) Un grupo $-COOH$\\nComo los 4 grupos son distintos, el carbono es quiral y la molécula **SÍ presenta isomería óptica** (tendrá un enantiómero R y otro S que desviarán la luz polarizada en sentidos opuestos).",
+    "pista": "Busca un carbono unido a cuatro grupos diferentes.",
+    "formula": "$$C^*\\rightarrow\\text{carbono quiral}$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 1609,
+    "dificultad": "Difícil",
+    "bloque": "Tema 16: Química del Carbono e Isomería",
+    "enunciado": "Considera el compuesto 2-cloro-2-metilbutano. Determina si tiene carbonos asimétricos y nombra su isómero de cadena que sí posea actividad óptica.",
+    "resolucion_latex": "Estructura del 2-cloro-2-metilbutano: $CH_3-C(Cl)(CH_3)-CH_2-CH_3$.\\nEl C2 está unido a dos grupos metilo ($-CH_3$) idénticos. No es asimétrico. **No tiene isomería óptica**.\\nBuscamos un isómero de cadena con un C quiral. Movemos el metilo al carbono 3 para formar el 2-cloro-3-metilbutano: $CH_3-C^*H(Cl)-CH(CH_3)_2$.\\nEn este nuevo compuesto, el Carbono 2 está unido a: $-H, -Cl, -CH_3$ y $-CH(CH_3)_2$. Como los cuatro son distintos, es un carbono quiral y presenta **actividad óptica**.",
+    "pista": "Un carbono con dos sustituyentes iguales no puede ser quiral.",
+    "formula": "$$C^*:\\ 4\\ \\text{sustituyentes distintos}$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 1610,
+    "dificultad": "Superior",
+    "bloque": "Tema 16: Química del Carbono e Isomería",
+    "enunciado": "*(Reto Supernova)*: Una molécula presenta la fórmula estructural $CH_3-CH(OH)-CH=CH-CH(Cl)-CH_3$. Calcula el número máximo posible de estereoisómeros (isómeros espaciales) que puede formar esta molécula, justificando cada centro estereogénico.",
+    "resolucion_latex": "Contamos los centros estereogénicos (origen de isomería espacial):\\n1) Carbono 2: Está unido a $-CH_3, -H, -OH$ y al resto de la cadena. Es un **carbono quiral** (genera 2 isómeros ópticos R/S).\\n2) Doble enlace C3=C4: Cada carbono del doble enlace tiene sustituyentes distintos ($-H$ frente a resto de cadena). Genera **isomería geométrica** (2 configuraciones: cis/trans o E/Z).\\n3) Carbono 5: Está unido a $-CH_3, -H, -Cl$ y al resto de la cadena. Es **otro carbono quiral** (2 isómeros R/S).\\nEl número máximo de estereoisómeros viene dado por la regla de Van 't Hoff: $2^n$, donde $n$ es el número de centros estereogénicos.\\nAquí $n = 1 + 1 + 1 = 3$.\\nPor tanto, el compuesto tiene un máximo de $2^3 = 8$ estereoisómeros distintos.",
+    "pista": "Cuenta todos los centros estereogénicos: carbonos quirales y dobles enlaces con isomería geométrica.",
+    "formula": "$$N_{estereoisómeros}=2^n$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 1701,
+    "dificultad": "Fácil",
+    "bloque": "Tema 17: Reactividad Orgánica",
+    "enunciado": "Clasifica la siguiente reacción orgánica: $CH_3-CH_3 + Cl_2 \\xrightarrow{luz} CH_3-CH_2Cl + HCl$.",
+    "resolucion_latex": "Un átomo de hidrógeno del alcano ha sido intercambiado por un átomo de cloro. Como no cambian los enlaces múltiples (no los hay), se trata de una reacción de **Sustitución** (específicamente, halogenación radicalaria).",
+    "pista": "Si un átomo se cambia por otro sin romper una insaturación, suele ser sustitución.",
+    "formula": "$$R-H+Cl_2\\rightarrow R-Cl+HCl$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 1702,
+    "dificultad": "Fácil",
+    "bloque": "Tema 17: Reactividad Orgánica",
+    "enunciado": "Clasifica la siguiente reacción: $CH_2=CH_2 + H_2 \\xrightarrow{Ni} CH_3-CH_3$.",
+    "resolucion_latex": "Dos átomos de hidrógeno se han incorporado a la molécula rompiendo el doble enlace del eteno para formar enlaces simples en el etano. Es una reacción de **Adición** (hidrogenación).",
+    "pista": "En una adición se rompe un enlace múltiple y se incorporan átomos nuevos.",
+    "formula": "$$C=C+H_2\\rightarrow C-C$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 1703,
+    "dificultad": "Fácil",
+    "bloque": "Tema 17: Reactividad Orgánica",
+    "enunciado": "Escribe la reacción de combustión completa del etanol ($CH_3CH_2OH$) e iguala la ecuación.",
+    "resolucion_latex": "La combustión de cualquier compuesto orgánico con oxígeno produce siempre dióxido de carbono y agua.\\nEcuación sin ajustar: $C_2H_6O + O_2 \\rightarrow CO_2 + H_2O$.\\n- Ajustamos Carbono: 2 C $\\implies 2CO_2$.\\n- Ajustamos Hidrógeno: 6 H $\\implies 3H_2O$.\\n- Ajustamos Oxígeno: En productos hay $4 + 3 = 7$ O. En el etanol ya hay 1. Faltan 6. $\\implies 3O_2$.\\nEcuación ajustada: $CH_3CH_2OH + 3O_2 \\rightarrow 2CO_2 + 3H_2O$.",
+    "pista": "En una combustión completa de un compuesto orgánico se forman $CO_2$ y $H_2O$.",
+    "formula": "$$C_2H_6O+3O_2\\rightarrow 2CO_2+3H_2O$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 1704,
+    "dificultad": "Media",
+    "bloque": "Tema 17: Reactividad Orgánica",
+    "enunciado": "Predice el producto principal de la reacción de adición de Ácido Bromhídrico ($HBr$) al Propeno ($CH_3-CH=CH_2$) justificando tu respuesta según la Regla de Markovnikov.",
+    "resolucion_latex": "Reacción: $CH_3-CH=CH_2 + HBr \\rightarrow ?$\\nLa **Regla de Markovnikov** establece que en la adición asimétrica a un doble enlace, el hidrógeno del reactivo se une al carbono del doble enlace que ya tiene mayor número de hidrógenos (para formar el carbocatión intermedio más estable).\\n- El $C_1$ ($-CH_2$) tiene 2 hidrógenos.\\n- El $C_2$ ($-CH=$) tiene 1 hidrógeno.\\nPor tanto, el H se une al $C_1$ y el Br al $C_2$.\\nEl producto principal (mayoritario) es el **2-bromopropano**: $CH_3-CH(Br)-CH_3$.",
+    "pista": "Aplica Markovnikov: el hidrógeno entra en el carbono del doble enlace que ya tiene más hidrógenos.",
+    "formula": "$$CH_3-CH=CH_2+HBr\\rightarrow CH_3-CH(Br)-CH_3$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 1705,
+    "dificultad": "Media",
+    "bloque": "Tema 17: Reactividad Orgánica",
+    "enunciado": "Formula la reacción de deshidratación del butan-2-ol ($CH_3-CH(OH)-CH_2-CH_3$) con ácido sulfúrico en caliente, e identifica el producto principal aplicando la Regla de Zaitsev (Saytzeff).",
+    "resolucion_latex": "Es una reacción de **Eliminación**. Se elimina el grupo $-OH$ del C2 y un átomo de H de un carbono adyacente (C1 o C3) formando un doble enlace y agua.\\nLa **Regla de Zaitsev** establece que en una reacción de eliminación se forma mayoritariamente el alqueno más sustituido (el doble enlace queda entre los carbonos que tenían menos hidrógenos).\\n- Si eliminamos H del C1 $\\implies 1-buteno$ (menos sustituido).\\n- Si eliminamos H del C3 $\\implies 2-buteno$ (más sustituido).\\nProducto principal: **but-2-eno** ($CH_3-CH=CH-CH_3$).\\nEcuación: $CH_3-CH(OH)-CH_2-CH_3 \\xrightarrow{H_2SO_4, \\Delta} CH_3-CH=CH-CH_3 + H_2O$.",
+    "pista": "En eliminación, Zaitsev favorece el alqueno más sustituido.",
+    "formula": "$$\\text{alcohol}\\xrightarrow{H_2SO_4,\\Delta}\\text{alqueno}+H_2O$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 1706,
+    "dificultad": "Media",
+    "bloque": "Tema 17: Reactividad Orgánica",
+    "enunciado": "Escribe la reacción química entre el ácido etanoico (ácido acético) y el propan-1-ol en presencia de un catalizador ácido. Nombra el compuesto orgánico resultante.",
+    "resolucion_latex": "Es una reacción de **Esterificación** (sustitución nucleófila en el grupo acilo).\\nEl ácido carboxílico reacciona con el alcohol, perdiendo una molécula de agua, para formar un éster.\\nReacción: $CH_3-COOH + CH_3-CH_2-CH_2OH \\rightleftharpoons CH_3-COO-CH_2-CH_2-CH_3 + H_2O$.\\nNombre del éster (primero la parte del ácido con terminación '-ato', luego la del alcohol con terminación '-ilo'): **Etanoato de propilo** (o acetato de propilo).",
+    "pista": "Un ácido carboxílico y un alcohol forman un éster y agua.",
+    "formula": "$$R-COOH+R'-OH\\rightleftharpoons R-COO-R'+H_2O$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 1707,
+    "dificultad": "Difícil",
+    "bloque": "Tema 17: Reactividad Orgánica",
+    "enunciado": "Justifica las diferencias en los productos obtenidos al hacer reaccionar propan-1-ol y propan-2-ol con un oxidante fuerte (como el dicromato de potasio, $K_2Cr_2O_7$) en exceso.",
+    "resolucion_latex": "La oxidación de alcoholes depende de si el carbono al que está unido el $-OH$ es primario, secundario o terciario.\\n1) El **propan-1-ol** es un alcohol primario ($CH_3-CH_2-CH_2OH$). Al oxidarse pierde dos hidrógenos, pasando primero a aldehído (propanal). Como el oxidante es fuerte y está en exceso, la oxidación continúa, insertando un oxígeno para dar el ácido carboxílico.\\nProducto final: **ácido propanoico** ($CH_3-CH_2-COOH$).\\n2) El **propan-2-ol** es un alcohol secundario ($CH_3-CH(OH)-CH_3$). Se oxida formando un doble enlace con el oxígeno, dando lugar a una cetona.\\nProducto final: **propanona** ($CH_3-CO-CH_3$). (Las cetonas no pueden oxidarse más sin romper la cadena).",
+    "pista": "Los alcoholes primarios pueden oxidarse hasta ácidos; los secundarios, hasta cetonas.",
+    "formula": "$$R-CH_2OH\\rightarrow R-COOH\\quad ;\\quad R_2CHOH\\rightarrow R_2CO$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 1708,
+    "dificultad": "Difícil",
+    "bloque": "Tema 17: Reactividad Orgánica",
+    "enunciado": "Distingue entre polímeros de adición y polímeros de condensación, indicando un ejemplo cotidiano de cada uno y su monómero de partida.",
+    "resolucion_latex": "1) **Polimerización por Adición**: Los monómeros (que suelen tener dobles enlaces) se van sumando unos a otros abriendo su doble enlace, formando una cadena continua sin perder ningún átomo en el proceso. La masa del polímero es la suma exacta de los monómeros.\\nEjemplo: El polietileno (plástico de bolsas), cuyo monómero es el eteno ($CH_2=CH_2$).\\n2) **Polimerización por Condensación**: Los monómeros (con dos grupos funcionales reactivos) se unen entre sí perdiendo en cada unión una molécula pequeña (usualmente agua, $H_2O$).\\nEjemplo: El PET (tereftalato de polietileno, de las botellas de agua), formado a partir de ácido tereftálico y etilenglicol, o el Nylon.",
+    "pista": "En adición no se pierde molécula pequeña; en condensación sí suele eliminarse agua u otra molécula.",
+    "formula": "$$n\\,CH_2=CH_2\\rightarrow (-CH_2-CH_2-)_n$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 1709,
+    "dificultad": "Difícil",
+    "bloque": "Tema 17: Reactividad Orgánica",
+    "enunciado": "Diseña una secuencia de síntesis en dos etapas para obtener propan-2-ol a partir de propeno. Indica los reactivos necesarios para cada etapa.",
+    "resolucion_latex": "El propeno es un alqueno ($CH_3-CH=CH_2$) y queremos llegar al alcohol secundario propan-2-ol ($CH_3-CH(OH)-CH_3$). Podría hacerse en 1 etapa (hidratación ácida), pero si piden 2 etapas:\\n- **Etapa 1: Adición de halógeno (hidrohalogenación)**. Hacemos reaccionar el propeno con Ácido Clorhídrico ($HCl$). Por la regla de Markovnikov, el Cl va al C central.\\n$CH_3-CH=CH_2 + HCl \\rightarrow CH_3-CH(Cl)-CH_3$ (2-cloropropano).\\n- **Etapa 2: Sustitución nucleófila (hidrólisis básica)**. Tratamos el haluro con Hidróxido de Sodio ($NaOH$) en disolución acuosa para sustituir el cloro por el $OH$.\\n$CH_3-CH(Cl)-CH_3 + NaOH(aq) \\rightarrow CH_3-CH(OH)-CH_3 + NaCl$.\\nObjetivo conseguido.",
+    "pista": "Puedes transformar un alqueno en alcohol pasando primero por un haluro de alquilo.",
+    "formula": "$$CH_3-CH=CH_2\\rightarrow CH_3-CH(Cl)-CH_3\\rightarrow CH_3-CH(OH)-CH_3$$"
+  },
+  {
+    "asignatura": "Química 2º Bach",
+    "id": 1710,
+    "dificultad": "Superior",
+    "bloque": "Tema 17: Reactividad Orgánica",
+    "enunciado": "*(Reto Supernova)*: Cuando reacciona 2-bromo-2-metilbutano con Hidróxido de Potasio ($KOH$), el producto depende fuertemente de las condiciones del medio. Describe las reacciones que ocurren en medio acuoso frente a las que ocurren en medio alcohólico caliente (etanol, $\\Delta$), identificando el mecanismo dominante ($S_N1$, $S_N2$, $E1$, $E2$) y los productos mayoritarios en cada caso.",
+    "resolucion_latex": "El sustrato es un haluro de alquilo terciario ($CH_3-C(Br)(CH_3)-CH_2-CH_3$), cuyo impedimento estérico bloquea mecanismos bimoleculares directos por la cara posterior ($S_N2$).\\n1) **En medio acuoso**: El agua actúa como disolvente polar y estabiliza los carbocationes. La concentración y fuerza de la base disminuye por solvatación. El mecanismo predominante es la Sustitución Nucleófila unimolecular (**$S_N1$**).\\nEl bromo sale formando un carbocatión terciario muy estable, que luego es atacado por el $OH^-$.\\nProducto mayoritario (Sustitución): **2-metilbutan-2-ol** ($CH_3-C(OH)(CH_3)-CH_2-CH_3$).\\n2) **En medio alcohólico y calor**: El $OH^-$ en etanol forma etóxidos fuertemente básicos, y el calor ($\\Delta$) favorece termodinámicamente el desorden (entropía). El mecanismo predominante es la Eliminación bimolecular o unimolecular hacia alquenos (**$E2/E1$**).\\nLa base fuerte arranca un protón adyacente forzando la expulsión del bromo. Por la **Regla de Zaitsev**, se forma el alqueno más sustituido (doble enlace hacia el $CH_2$ y no hacia el $CH_3$).\\nProducto mayoritario (Eliminación): **2-metilbut-2-eno** ($CH_3-C(CH_3)=CH-CH_3$).",
+    "pista": "El medio acuoso favorece sustitución en haluros terciarios; el medio alcohólico caliente favorece eliminación.",
+    "formula": "$$S_N1\\rightarrow\\text{alcohol}\\quad ;\\quad E1/E2\\rightarrow\\text{alqueno}$$"
+  }
+]

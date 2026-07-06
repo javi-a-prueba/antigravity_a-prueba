@@ -1,0 +1,1600 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A-PRUEBA | Mapa de Constelaciones</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        :root {
+            --neon-math: #00f2fe;
+            --neon-physics: #ff4500;
+            --neon-chemistry: #00ff88;
+            --current-neon: var(--neon-math);
+        }
+
+        button {
+            transition: all 0.3s ease;
+        }
+
+        button:hover {
+            box-shadow: 0 0 15px var(--current-neon, rgba(0, 242, 254, 0.5));
+            filter: brightness(1.2);
+        }
+
+        body {
+            background: #0B0E14;
+            color: #ffffff;
+            height: 100vh;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .stars-bg {
+            position: absolute;
+            top: -5%;
+            left: -5%;
+            width: 110%;
+            height: 110%;
+            background-image: radial-gradient(2px 2px at 20px 30px, #ffffff, rgba(0, 0, 0, 0)),
+                radial-gradient(2px 2px at 40px 70px, rgba(255, 255, 255, 0.8), rgba(0, 0, 0, 0)),
+                radial-gradient(1px 1px at 90px 40px, rgba(255, 255, 255, 0.6), rgba(0, 0, 0, 0));
+            background-repeat: repeat;
+            background-size: 200px 200px;
+            opacity: 0.3;
+            z-index: 0;
+            transition: transform 0.1s ease-out;
+        }
+
+        .nebula {
+            position: absolute;
+            top: -5%;
+            left: -5%;
+            width: 110%;
+            height: 110%;
+            background:
+                radial-gradient(circle at 20% 30%, rgba(45, 110, 255, 0.15) 0%, transparent 40%),
+                radial-gradient(circle at 80% 70%, rgba(138, 43, 226, 0.15) 0%, transparent 40%);
+            z-index: 0;
+            pointer-events: none;
+            transition: transform 0.1s ease-out;
+        }
+
+        /* HUD Top Bar -> Transformed to general Navbar */
+        .top-bar {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 80px;
+            background: rgba(10, 5, 25, 0.6);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 3rem;
+            z-index: 100;
+        }
+
+        .brand a {
+            font-size: 1.5rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            background: linear-gradient(90deg, #00f2fe 0%, #4facfe 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+            margin-left: auto;
+            margin-right: 2rem;
+        }
+
+        .nav-links a {
+            color: #b8b8d0;
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: #00f2fe;
+            text-shadow: 0 0 10px rgba(0, 242, 254, 0.5);
+        }
+
+        .stats-hud {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .stat-badge {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 0.5rem 1.2rem;
+            border-radius: 50px;
+            font-weight: 600;
+        }
+
+        .rank-diamond {
+            color: #b9f2ff;
+            text-shadow: 0 0 10px rgba(185, 242, 255, 0.5);
+        }
+
+        /* Barra Supernova unificada */
+        .supernova-bar-container {
+            width: 100%;
+            background: rgba(255, 255, 255, 0.04);
+            border-top: 1px solid rgba(255,255,255,0.06);
+            position: absolute;
+            top: 80px;
+            left: 0;
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 0 3rem;
+            height: 28px;
+        }
+        .supernova-bar-track {
+            flex: 1;
+            height: 5px;
+            background: rgba(255, 255, 255, 0.08);
+            border-radius: 3px;
+            overflow: hidden;
+            position: relative;
+        }
+        .supernova-bar-fill {
+            height: 100%;
+            width: 0%;
+            background: linear-gradient(90deg, #00f2fe, #4facfe, #8c52ff, #f9a8d4);
+            box-shadow: 0 0 12px rgba(0,242,254,0.6);
+            border-radius: 3px;
+            transition: width 1.2s ease-in-out;
+        }
+        .supernova-rank-label {
+            color: #b9f2ff;
+            font-size: 0.72rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            font-weight: 600;
+            white-space: nowrap;
+            text-shadow: 0 0 8px rgba(0, 242, 254, 0.4);
+        }
+        .supernova-xp-label {
+            color: rgba(185, 242, 255, 0.55);
+            font-size: 0.68rem;
+            letter-spacing: 1px;
+            white-space: nowrap;
+        }
+        .rank-diamond span.icon {
+            color: #00f2fe;
+            font-size: 1.2rem;
+        }
+
+        .streak-fire {
+            color: #fceabb;
+            text-shadow: 0 0 10px rgba(252, 234, 187, 0.5);
+            border-color: rgba(252, 234, 187, 0.3);
+        }
+
+        /* Footer */
+        .footer {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 1rem;
+            text-align: center;
+            background: rgba(10, 5, 25, 0.4);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            z-index: 100;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 3rem;
+        }
+
+        .footer p {
+            font-size: 0.85rem;
+            color: #8888a0;
+            margin: 0;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .footer-links a {
+            color: #a0a0b8;
+            text-decoration: none;
+            font-size: 0.8rem;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: #00f2fe;
+        }
+
+        /* Constellation Map UI */
+        .map-container {
+            position: absolute;
+            top: 80px;
+            left: 0;
+            right: 0;
+            bottom: 60px;
+            z-index: 5;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: grab;
+            will-change: transform;
+        }
+
+        .map-container.active,
+        .map-container:active {
+            cursor: grabbing;
+        }
+
+        .map-canvas {
+            width: 2000px;
+            height: 1000px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform-origin: center center;
+            transform: translate3d(-50%, -50%, 0) scale(1);
+            will-change: transform;
+        }
+
+        /* Hide scrollbar */
+        .map-container::-webkit-scrollbar {
+            display: none;
+        }
+
+        svg.connections {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+
+        line.path {
+            stroke: rgba(0, 242, 254, 0.3);
+            stroke-width: 3;
+            stroke-dasharray: 10, 10;
+            animation: dash 30s linear infinite;
+        }
+
+        line.path.active {
+            stroke: rgba(0, 242, 254, 0.8);
+            stroke-dasharray: none;
+            filter: drop-shadow(0 0 8px rgba(0, 242, 254, 0.8));
+        }
+
+        @keyframes dash {
+            to {
+                stroke-dashoffset: 1000;
+            }
+        }
+
+        /* Stars / Lessons */
+        @keyframes float {
+            0% {
+                transform: translate(-50%, -50%) translateY(0px);
+            }
+
+            50% {
+                transform: translate(-50%, -50%) translateY(-15px);
+            }
+
+            100% {
+                transform: translate(-50%, -50%) translateY(0px);
+            }
+        }
+
+        @keyframes pulse-float {
+            0% {
+                box-shadow: 0 0 20px var(--current-neon, #00f2fe), inset 0 0 10px var(--current-neon, #00f2fe);
+                transform: translate(-50%, -50%) translateY(0px) scale(1.2);
+            }
+
+            50% {
+                box-shadow: 0 0 40px var(--current-neon, #00f2fe), inset 0 0 20px var(--current-neon, #00f2fe);
+                transform: translate(-50%, -50%) translateY(-15px) scale(1.2);
+            }
+
+            100% {
+                box-shadow: 0 0 20px var(--current-neon, #00f2fe), inset 0 0 10px var(--current-neon, #00f2fe);
+                transform: translate(-50%, -50%) translateY(0px) scale(1.2);
+            }
+        }
+
+        .star-node {
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            background: rgba(10, 5, 25, 0.8);
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 2;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            backdrop-filter: blur(5px);
+            transform: translate(-50%, -50%);
+            animation: float 4s ease-in-out infinite;
+        }
+
+        .star-node.completed {
+            border-color: #00f2fe;
+            box-shadow: 0 0 35px rgba(0, 242, 254, 0.8), inset 0 0 15px rgba(0, 242, 254, 0.5);
+            background: rgba(0, 242, 254, 0.05);
+        }
+
+        .star-node.current {
+            border-color: #b9f2ff;
+            background: rgba(0, 242, 254, 0.15);
+            animation: pulse-float 3s infinite ease-in-out;
+        }
+
+        .star-node:hover {
+            z-index: 10;
+            filter: brightness(1.2);
+        }
+
+        .star-core {
+            width: 16px;
+            height: 16px;
+            background: #fff;
+            border-radius: 50%;
+            box-shadow: 0 0 10px #fff;
+        }
+
+        .star-node.completed .star-core {
+            background: #00f2fe;
+            box-shadow: 0 0 15px #00f2fe;
+        }
+
+        .star-node.current .star-core {
+            background: #fff;
+            box-shadow: 0 0 20px #fff;
+        }
+
+        .star-node.locked {
+            border-color: #222;
+            background: radial-gradient(circle at center, #000 0%, #0a0a0a 100%);
+            box-shadow: inset 0 0 20px #000, 0 0 15px rgba(0, 0, 0, 0.8);
+            cursor: not-allowed;
+        }
+
+        .star-node.locked .star-core {
+            background: transparent;
+            box-shadow: none;
+            color: #555;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+        }
+
+        .star-label {
+            position: absolute;
+            top: 75px;
+            width: 120px;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #b8b8d0;
+            pointer-events: none;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+        }
+
+        .star-node.current .star-label {
+            color: #00f2fe;
+            font-weight: 700;
+        }
+
+        /* Pestañas de Asignaturas */
+        .subject-tabs {
+            position: absolute;
+            top: 100px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 1rem;
+            background: rgba(10, 5, 25, 0.6);
+            backdrop-filter: blur(10px);
+            padding: 0.5rem 1rem;
+            border-radius: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            z-index: 50;
+        }
+
+        .subject-tab {
+            padding: 0.5rem 1.5rem;
+            border-radius: 20px;
+            color: #a0a0b8;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            border: 1px solid transparent;
+        }
+
+        .subject-tab.active {
+            color: #00f2fe;
+            background: rgba(0, 242, 254, 0.1);
+            border-color: rgba(0, 242, 254, 0.5);
+            box-shadow: 0 0 15px rgba(0, 242, 254, 0.2);
+        }
+
+        .constellation-group {
+            opacity: 0;
+            pointer-events: none;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: opacity 0.6s ease;
+            display: flex;
+        }
+
+        .constellation-group.active {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        /* Floating Panel */
+        .side-panel {
+            position: absolute;
+            right: 30px;
+            top: 120px;
+            width: 320px;
+            background: rgba(15, 10, 30, 0.65);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid var(--current-neon, rgba(138, 43, 226, 0.3));
+            border-radius: 20px;
+            padding: 1.5rem;
+            z-index: 10;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+        }
+
+        .floating-tutor-btn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            background: rgba(15, 10, 30, 0.8);
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--current-neon, #00f2fe);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            z-index: 1000;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 15px var(--current-neon, rgba(0, 242, 254, 0.3));
+        }
+
+        .floating-tutor-btn:hover {
+            box-shadow: 0 0 25px var(--current-neon, rgba(0, 242, 254, 0.8));
+            transform: scale(1.1);
+        }
+
+        /* ----- Nuevas clases de Gamificación y Estados ----- */
+        .star-node.diamond-challenge {
+            box-shadow: 0 0 30px #ffffff, inset 0 0 15px #b9f2ff;
+            border-color: #ffffff;
+            animation: diamond-sparkle 2s infinite alternate;
+        }
+
+        @keyframes diamond-sparkle {
+            0% { box-shadow: 0 0 20px #ffffff, inset 0 0 10px #b9f2ff; }
+            100% { box-shadow: 0 0 50px #ffffff, inset 0 0 30px #b9f2ff; filter: brightness(1.3); }
+        }
+
+        .glass-tooltip {
+            position: fixed;
+            background: rgba(15, 10, 30, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid var(--current-neon, #00f2fe);
+            border-radius: 12px;
+            padding: 1rem;
+            color: #fff;
+            min-width: 200px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+            pointer-events: none;
+            z-index: 2000;
+            opacity: 0;
+            transition: opacity 0.2s ease;
+            transform: translate(-50%, -120%);
+        }
+        .glass-tooltip.show {
+            opacity: 1;
+        }
+        .glass-tooltip h4 {
+            color: var(--current-neon, #00f2fe);
+            margin-bottom: 0.5rem;
+            font-size: 1.05rem;
+            font-weight: 600;
+        }
+        .glass-tooltip p {
+            margin: 0.3rem 0;
+            color: #b8b8d0;
+            font-size: 0.85rem;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .side-panel h3 {
+            color: #b9f2ff;
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding-bottom: 0.5rem;
+        }
+
+        /* Controles de Zoom manuales */
+        .zoom-controls {
+            position: fixed;
+            bottom: 30px;
+            left: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            z-index: 1000;
+        }
+
+        .zoom-btn {
+            width: 45px;
+            height: 45px;
+            background: rgba(15, 10, 30, 0.8);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid var(--current-neon, #00f2fe);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 1.5rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            outline: none;
+        }
+
+        .zoom-btn:hover {
+            box-shadow: 0 0 20px var(--current-neon, rgba(0, 242, 254, 0.6));
+            transform: scale(1.1);
+        }
+
+        .mission-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            padding: 0.8rem;
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 12px;
+            transition: background 0.3s;
+        }
+
+        .mission-item:hover {
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        .mission-icon {
+            width: 40px;
+            height: 40px;
+            background: rgba(138, 43, 226, 0.2);
+            border: 1px solid rgba(138, 43, 226, 0.5);
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #e0b0ff;
+        }
+
+        .mission-info h4 {
+            font-size: 0.95rem;
+            margin-bottom: 0.2rem;
+        }
+
+        .mission-info p {
+            font-size: 0.8rem;
+            color: #a0a0b8;
+        }
+
+        @keyframes fadeSlideIn {
+            from { opacity: 0; transform: translateY(20px) scale(0.97); }
+            to   { opacity: 1; transform: translateY(0) scale(1); }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Tooltip Glassmorphism para nodos (sin campo Dificultad) -->
+    <div id="hover-tooltip" class="glass-tooltip">
+        <h4 id="tt-title">Tema</h4>
+        <p><span>Progreso:</span> <span id="tt-prog">--</span></p>
+    </div>
+
+    <!-- Modal Contacto para Padres -->
+    <div id="modal-contacto" style="display:none; position:fixed; inset:0; background:rgba(5,2,15,0.7); backdrop-filter:blur(8px); z-index:5000; justify-content:center; align-items:center;">
+        <div style="background:rgba(15,10,30,0.9); border:1px solid rgba(37,211,102,0.5); border-radius:24px; padding:2.5rem 2rem; max-width:420px; width:90%; text-align:center; box-shadow:0 0 40px rgba(37,211,102,0.3); animation:fadeSlideIn 0.4s ease-out both; position:relative;">
+            <button onclick="document.getElementById('modal-contacto').style.display='none'" style="position:absolute;top:1rem;right:1.2rem;background:none;border:none;color:#606080;font-size:1.4rem;cursor:pointer;">✕</button>
+            <div style="font-size:3rem; margin-bottom:1rem;">🟢</div>
+            <h2 style="font-size:1.35rem; font-weight:700; margin-bottom:0.8rem; color:#25d366;">Central de Ingeniería</h2>
+            <p style="font-size:1.1rem; font-weight:600; color:#fff; margin-bottom:0.5rem;">📱 +34 600 000 000</p>
+            <p style="font-size:0.9rem; color:#a0a0b8; line-height:1.6; margin-bottom:1.8rem;">Resolvemos dudas sobre planes Pro y seguimiento de progreso de tu alumno.</p>
+            <a href="https://wa.me/34600000000" target="_blank" style="display:inline-block; background:linear-gradient(135deg,#25d366,#128c7e); color:#fff; font-weight:700; padding:0.9rem 2.5rem; border-radius:50px; text-decoration:none; font-size:0.95rem; box-shadow:0 0 20px rgba(37,211,102,0.4); transition:all 0.3s;">Abrir WhatsApp</a>
+        </div>
+    </div>
+
+    <!-- Auth Loading Overlay — se muestra hasta que Firebase Auth responde -->
+    <div id="authLoading"
+        style="position:fixed;top:0;left:0;width:100vw;height:100vh;background:#05010f;z-index:9999;display:flex;justify-content:center;align-items:center;flex-direction:column;gap:1.2rem;color:#00f2fe;font-family:'Montserrat',sans-serif;">
+        <div
+            style="width:50px;height:50px;border:3px solid rgba(0,242,254,0.2);border-top-color:#00f2fe;border-radius:50%;animation:spin 1s linear infinite;">
+        </div>
+        <style>
+            @keyframes spin { 100% { transform: rotate(360deg); } }
+            @keyframes pulse-star {
+                0%, 100% { transform: scale(1);   opacity: 0.7; }
+                50%       { transform: scale(1.3); opacity: 1;   }
+            }
+        </style>
+        <p id="authLoading-msg" style="font-weight:600;letter-spacing:1px;color:#00f2fe;">Autorizando coordenadas estelares...</p>
+        <!-- Panel de error: oculto por defecto, visible si Firebase tarda más de 5s -->
+        <div id="authLoading-retry" style="display:none;flex-direction:column;align-items:center;gap:1rem;">
+            <p style="color:#ff4b4b;font-size:0.95rem;">⚠️ Error de conexión con la base de datos</p>
+            <button onclick="window.location.reload()" style="
+                background:transparent;border:1px solid #ff4b4b;color:#ff4b4b;
+                padding:0.6rem 2rem;border-radius:20px;cursor:pointer;
+                font-family:'Montserrat',sans-serif;font-size:0.9rem;transition:all 0.3s;
+            ">🔄 Reintentar</button>
+        </div>
+    </div>
+    <div class="stars-bg"></div>
+    <div class="nebula"></div>
+
+    <header class="top-bar">
+        <div class="brand">
+            <a href="index.html">A-PRUEBA</a>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Inicio</a>
+            <a href="seleccion.html">🎯 Cambiar Misión</a>
+            <a href="mapa.html" class="active">Mapa</a>
+            <a href="perfil.html">Perfil</a>
+            <a href="config.html">Configuración</a>
+            <a href="#" id="btn-logout" style="color: #ff4b4b; border: 1px solid rgba(255,75,75,0.3); padding: 5px 15px; border-radius: 20px;">Salir</a>
+        </div>
+        <div class="stats-hud">
+            <!-- Badge: Brillo Estelar (racha) — actualizado dinámicamente por changeSubject() -->
+            <div class="stat-badge streak-fire" id="stat-racha" style="cursor: pointer;" onclick="openStreakModal()">
+                <span class="icon">⭐</span> Brillo Estelar: —
+            </div>
+            <!-- Badge: Rango actual del alumno — actualizado por updateRankBar() tras leer Firestore -->
+            <div class="stat-badge rank-diamond" id="stat-rank">
+                <span class="icon">⏳</span> Cargando...
+            </div>
+        </div>
+    </header>
+
+    <!-- Barra Supernova unificada -->
+    <div class="supernova-bar-container">
+        <span class="supernova-rank-label" id="supernova-rank-label">⬡ Calculando...</span>
+        <div class="supernova-bar-track">
+            <div class="supernova-bar-fill" id="supernova-progress"></div>
+        </div>
+        <span class="supernova-xp-label" id="supernova-xp-label">— XP</span>
+    </div>
+
+    <!-- Pro status header: updated dynamically by auth block -->
+    <div id="mapa-pro-header" style="text-align:center; padding:0.4rem 1rem; font-size:0.85rem; font-weight:600; color:transparent; letter-spacing:0.5px; min-height:1.6rem;"></div>
+
+    <div class="subject-tabs">
+        <div class="subject-tab tab-fisica active" onclick="changeSubject('fisica')">&#9883;&#65039; Física</div>
+        <div class="subject-tab tab-mates" onclick="changeSubject('mates')">&#128208; Matemáticas</div>
+        <div class="subject-tab tab-quimica" onclick="changeSubject('quimica')">&#129514; Química</div>
+    </div>
+
+    <div class="map-container parallax" data-speed="4" id="mapa-scroll">
+        <div class="map-canvas">
+            <!-- Contenedores generados dinámicamente -->
+            <div id="const-fisica" class="constellation-group active"></div>
+            <div id="const-mates" class="constellation-group"></div>
+            <div id="const-quimica" class="constellation-group"></div>
+        </div>
+    </div>
+
+    <!-- Tutor Socrático Button -->
+    <a href="#" class="floating-tutor-btn" title="Tutor Socrático">
+        <span style="font-size: 1.5rem;">🤖</span>
+    </a>
+
+    <aside class="side-panel">
+        <h3>🌌 Misiones Actuales</h3>
+
+        <div class="mission-item" id="side-panel-consejo" style="display: none; border-color: rgba(0, 242, 254, 0.5);">
+            <div class="mission-icon" style="color: #00f2fe;">💡</div>
+            <div class="mission-info">
+                <h4>Consejo del Revisor</h4>
+                <p>N/A</p>
+            </div>
+        </div>
+
+        <!-- Dynamic Mission Panel -->
+        <div class="mission-item" id="dynamic-mission-item" style="cursor: pointer;" onclick="window.location.href='estudio.html'">
+            <div class="mission-icon" id="dynamic-mission-icon">⚙️</div>
+            <div class="mission-info">
+                <h4 id="mission-title-1">Misión Actual</h4>
+                <p id="dynamic-mission-desc">Domina las bases del tema actual</p>
+            </div>
+        </div>
+
+        <div class="mission-item">
+            <div class="mission-icon">🛡️</div>
+            <div class="mission-info">
+                <h4>Reto Supernova Maestra</h4>
+                <p>Alcanza Supernova Maestra para desafío épico</p>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Controles de Zoom manual -->
+    <div class="zoom-controls">
+        <button id="btn-zoom-in" class="zoom-btn">+</button>
+        <button id="btn-zoom-out" class="zoom-btn">-</button>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2026 A-PRUEBA</p>
+        <div class="footer-links">
+            <a href="#">Términos de Servicio</a>
+            <a href="#" onclick="event.preventDefault(); document.getElementById('modal-contacto').style.display='flex';">Contacto para Padres</a>
+        </div>
+    </footer>
+
+    <script src="config.js"></script>
+    <script src="temarios.js"></script>
+    <script type="module">
+        import { auth, onAuthStateChanged, db, getDoc, doc, collection, query, where, getDocs } from './firebase-config.js';
+
+        // ── Estado global de progreso (relleno por el bloque async de Firebase) ──
+        window.userMapProgress = {
+            temas_completados: [],
+            aciertos: {}
+        };
+
+        // ── CAMBIO DE ASIGNATURA ACTIVA ───────────────────────────────────────────
+        // Función principal de navegación entre asignaturas.
+        // Acciones: (1) Persiste en localStorage, (2) actualiza tabs con color neón correcto,
+        // (3) hace fade entre constelaciones, (4) recalcula rango/XP desde localStorage,
+        // (5) actualiza el panel lateral de misión y el Consejo del Revisor.
+        // También se llama desde el bloque async de Firebase tras leer el perfil del alumno.
+        window.changeSubject = function(subject) {
+            // Persistir la asignatura activa ANTES de cualquier otra acción
+            localStorage.setItem('userSubject', subject);
+
+            // Update tabs
+            document.querySelectorAll('.subject-tab').forEach(t => t.classList.remove('active'));
+            if (document.querySelector('.tab-' + subject)) {
+                document.querySelector('.tab-' + subject).classList.add('active');
+            }
+
+            // ── COLORES NEÓN POR ASIGNATURA ───────────────────────────────────────
+            // Actualiza la variable CSS global --current-neon que usamos en TODA la UI:
+            //   Física   → --neon-physics  (#ff4500, naranja/rojo)
+            //   Mates    → --neon-math     (#00f2fe, cian)
+            //   Química  → --neon-chemistry (#00ff88, verde)
+            // Esta variable afecta bordes, sombras, tooltips, zoom-btns y barra Supernova.
+            if (subject === 'fisica') {
+                document.documentElement.style.setProperty('--current-neon', 'var(--neon-physics)');
+            } else if (subject === 'mates') {
+                document.documentElement.style.setProperty('--current-neon', 'var(--neon-math)');
+            } else if (subject === 'quimica') {
+                document.documentElement.style.setProperty('--current-neon', 'var(--neon-chemistry)');
+            }
+
+            // Actualizar Constelaciones con fade-out / fade-in
+            document.querySelectorAll('.constellation-group').forEach(c => {
+                c.classList.remove('active');
+            });
+            setTimeout(() => {
+                document.getElementById('const-' + subject).classList.add('active');
+            }, 50);
+
+            // ── Rango desde XP almacenado (fue set por updateRankBar al cargar auth) ──
+            // Usamos window._RANKS (expuesto por el módulo async) para consistencia
+            const rachaEl = document.getElementById('stat-racha');
+            const rankEl  = document.getElementById('stat-rank');
+            let userStreak = parseInt(localStorage.getItem('userStreak')) || 1;
+            let xp = parseInt(localStorage.getItem('userXP')) || 0;
+
+            // Obtener el rango actual usando la función compartida del módulo async
+            const currentRank = window._getRank ? window._getRank(xp) : { name:'Bronce I', color:'#cd7f32', icon:'🥉' };
+
+            // Actualizar badge Brillo Estelar
+            if (rachaEl) rachaEl.innerHTML = `<span class="icon" style="text-shadow:0 0 ${Math.min(userStreak*3,40)}px ${currentRank.color};">⭐</span> Brillo Estelar: ${userStreak} Días`;
+
+            // Actualizar badge de rango
+            if (rankEl) {
+                rankEl.innerHTML = `<span class="icon">${currentRank.icon}</span> ${currentRank.name}`;
+                rankEl.className = 'stat-badge rank-diamond'; // Mantener el estilo neutral
+            }
+
+            // Actualizar etiquetas de la barra Supernova
+            const rankLabelEl = document.getElementById('supernova-rank-label');
+            const xpLabelEl   = document.getElementById('supernova-xp-label');
+            if (rankLabelEl) rankLabelEl.textContent = `${currentRank.icon} ${currentRank.name}`;
+            if (xpLabelEl)   xpLabelEl.textContent   = `${xp} XP`;
+
+            // ── Panel de Misión Dinámica ──────────────────────────────────────────
+            const SUBJ_ICON = { fisica: '⚛️', mates: '📐', quimica: '🧪' };
+            const missionIconEl  = document.getElementById('dynamic-mission-icon');
+            const missionDescEl  = document.getElementById('dynamic-mission-desc');
+            const missionTitleEl = document.getElementById('mission-title-1');
+
+            if (missionIconEl) missionIconEl.textContent = SUBJ_ICON[subject] || '⚙️';
+
+            // Tema activo — preferir el último tema conocido para esta asignatura
+            const temaId     = localStorage.getItem('seleccion_tema_id') || '';
+            const temaTitulo = localStorage.getItem('seleccion_tema_titulo') || localStorage.getItem('currentTopicTitle') || 'el tema seleccionado';
+
+            // Progreso por tema desde el mapa de progreso de Firestore (poblado en DOMContentLoaded)
+            const completedTopics = window.userMapProgress?.temas_completados || [];
+            const aciertosData    = window.userMapProgress?.aciertos || {};
+            const aciertoEntry    = aciertosData[temaId] || null;
+            const aciertoScore    = aciertoEntry ? (aciertoEntry.score || 0) : 0;
+
+            const isCompleted  = temaId && (completedTopics.includes(temaId));
+            const isInProgress = temaId && !isCompleted && aciertoScore > 0;
+            const rankNameLower = currentRank.name.toLowerCase();
+            const isHighRank    = rankNameLower.includes('oro') || rankNameLower.includes('diamante') || rankNameLower.includes('supernova');
+
+            let missionTitle, missionDesc;
+
+            if (!temaId || (!isCompleted && !isInProgress && aciertoScore === 0)) {
+                // ── Estado 1: Tema no iniciado ───────────────────────────────────
+                missionTitle = '🚀 Inicia la Ignición';
+                missionDesc  = `Misión: Inicia la ignición en "${temaTitulo}". Objetivo: Completar la Fase de Afianzamiento (Bronce).`;
+            } else if (isHighRank || (isCompleted && aciertoScore >= 90)) {
+                // ── Estado 3: Oro / Diamante / Supernova ─────────────────────────
+                missionTitle = '🌌 Misión Crítica';
+                missionDesc  = `Dominio total de "${temaTitulo}". Prepárate para el Reto Final de Ingeniería.`;
+            } else {
+                // ── Estado 2: En Bronce / avanzando ──────────────────────────────
+                missionTitle = '🥉 Afianzando el Tema';
+                missionDesc  = `Afianzando "${temaTitulo}". Pulsa en Ejercicios para escalar a los niveles de examen real (Plata/Oro).`;
+            }
+
+            if (missionTitleEl) missionTitleEl.textContent = missionTitle;
+            if (missionDescEl)  missionDescEl.textContent  = missionDesc;
+
+            // ── Consejo del Revisor (sin cambios) ───────────────────────────────────
+            const consejoEl = document.getElementById('side-panel-consejo');
+            const consejoPEl = document.querySelector('#side-panel-consejo p');
+            if (subject === 'mates' && window.currentMathConsejo) {
+                consejoEl.style.display = 'block';
+                consejoPEl.innerText = window.currentMathConsejo;
+            } else if (subject === 'fisica' && window.currentFisicaConsejo) {
+                consejoEl.style.display = 'block';
+                consejoPEl.innerText = window.currentFisicaConsejo;
+            } else if (subject === 'quimica' && window.currentQuimicaConsejo) {
+                consejoEl.style.display = 'block';
+                consejoPEl.innerText = window.currentQuimicaConsejo;
+            } else {
+                consejoEl.style.display = 'none';
+            }
+        };
+
+        // Efecto Parallax optimizado
+        let parallaxElements = [];
+        let rAF_Active = false;
+        let mouseX = 0, mouseY = 0;
+
+        document.addEventListener('mousemove', (e) => {
+            mouseX = (window.innerWidth - e.pageX) / 90;
+            mouseY = (window.innerHeight - e.pageY) / 90;
+
+            if (!rAF_Active) {
+                rAF_Active = true;
+                requestAnimationFrame(() => {
+                    if (parallaxElements.length === 0) {
+                        parallaxElements = Array.from(document.querySelectorAll('.parallax')).map(el => ({
+                            el, speed: parseFloat(el.getAttribute('data-speed')) || 1
+                        }));
+                    }
+                    parallaxElements.forEach(item => {
+                        item.el.style.transform = `translate3d(${mouseX * item.speed}px, ${mouseY * item.speed}px, 0)`;
+                    });
+                    rAF_Active = false;
+                });
+            }
+        });
+
+        // ── PROGRESO INICIAL (evita que injectConstellationNodes falle antes del async) ──
+        // Se sobreescribe con datos reales de Firestore cuando onAuthStateChanged responde.
+        window.userMapProgress = { temas_completados: [], aciertos: {} };
+
+        document.addEventListener('DOMContentLoaded', () => {
+            // ── MAPA DE CONSTELACIONES ──────────────────────────────────────────────
+            // Parallax: ajusta posición de fondo y nebulosa según movimiento del ratón
+            document.querySelector('.stars-bg').classList.add('parallax');
+            document.querySelector('.stars-bg').setAttribute('data-speed', '1');
+            document.querySelector('.nebula').classList.add('parallax');
+            document.querySelector('.nebula').setAttribute('data-speed', '2');
+
+            // ── CONFIGURACIÓN INICIAL DEL ALUMNO (desde localStorage) ────────────
+            // Lee con doble clave para compatibilidad: index.html guarda ambas versiones.
+            // El bloque async de Firebase sobreescribirá estos valores con los de Firestore.
+            let cursoRaw   = localStorage.getItem('userCourse')    || localStorage.getItem('curso')     || '2_bachillerato';
+            let asignatura = localStorage.getItem('userSubject')   || localStorage.getItem('asignatura') || 'fisica';
+            let comunidad  = localStorage.getItem('userComunidad') || localStorage.getItem('comunidad')  || 'madrid';
+
+            let curso = String(cursoRaw).toLowerCase().replace(/º/g, '').replace(/\s+/g, '_').replace('bachillerato', 'bachillerato');
+            if (cursoRaw === '2bach' || cursoRaw === '2º Bachillerato' || cursoRaw === '2º bachillerato') {
+                curso = '2_bachillerato';
+            }
+
+            // Inicialización correcta — comunidad, asignatura y curso listos para dibujar el mapa
+
+            // Dibujar estrellas dinámicamente: Expansión y Distribución Lineal ZigZag
+            const posicionesGenerales = [
+                { x: 5, y: 50 }, { x: 12, y: 35 }, { x: 18, y: 60 }, { x: 25, y: 40 },
+                { x: 32, y: 65 }, { x: 38, y: 45 }, { x: 45, y: 30 }, { x: 52, y: 55 },
+                { x: 58, y: 65 }, { x: 65, y: 40 }, { x: 72, y: 55 }, { x: 78, y: 30 },
+                { x: 85, y: 60 }, { x: 92, y: 45 }, { x: 98, y: 55 }
+            ];
+
+            // ── GENERACIÓN DEL MAPA DE CONSTELACIONES ──────────────────────────────
+            // Dibuja dinámicamente los nodos-estrella (temas) en el canvas del mapa.
+            // Recibe: id del contenedor SVG, array de temas, tema estrella dorado (opcional)
+            // y flag isPro (desbloquea todos los nodos). Se llama 3 veces: física, mates, química.
+            // window.isPro se establece en el bloque async de Firebase una vez que Firestore responde.
+            function injectConstellationNodes(id, temas, temaEstrella = null, isPro = false) {
+                const constel = document.getElementById(id);
+                if (!constel || !temas || temas.length === 0) return;
+
+                constel.innerHTML = ''; // Start pristine
+
+                const positions = posicionesGenerales.slice(0, Math.min(15, temas.length));
+                const svgNS = "http://www.w3.org/2000/svg";
+                const svg = document.createElementNS(svgNS, 'svg');
+                svg.setAttribute('class', 'connections');
+
+                let completedTopics = window.userMapProgress.temas_completados || [];
+                let aciertosTokens = window.userMapProgress.aciertos || {};
+
+                for (let i = 0; i < positions.length - 1; i++) {
+                    const line = document.createElementNS(svgNS, 'line');
+                    line.setAttribute('x1', positions[i].x + '%');
+                    line.setAttribute('y1', positions[i].y + '%');
+                    line.setAttribute('x2', positions[i + 1].x + '%');
+                    line.setAttribute('y2', positions[i + 1].y + '%');
+
+                    // ACCESO TOTAL: Desbloqueamos todos los nodos para la fase de pruebas
+                    let isUnlocked = true; // isPro || completedTopics.includes(temas[i].id) || completedTopics.includes(temas[i].titulo);
+                    if (isUnlocked || i === 0) {
+                        line.setAttribute('class', 'path active');
+                        line.style.stroke = 'var(--current-neon, #00f2fe)';
+                        line.style.opacity = '0.8';
+                    } else {
+                        line.setAttribute('class', 'path');
+                        line.style.stroke = 'rgba(255, 255, 255, 0.1)';
+                    }
+                    svg.appendChild(line);
+                }
+                constel.appendChild(svg);
+
+                temas.slice(0, 15).forEach((tema, index) => {
+                    const star = document.createElement('div');
+                    let statusClass = 'locked';
+                    let coreContent = '🔒';
+                    
+                    let isCompleted = completedTopics.includes(tema.id) || completedTopics.includes(tema.titulo);
+                    let isCurrent = false;
+
+                    if (isCompleted) {
+                        statusClass = 'completed';
+                        coreContent = '✅';
+                    } else {
+                        // NAVEGACIÓN LIBRE: Todos los temas accesibles sin restricción
+                        statusClass = 'current';
+                        coreContent = '';
+                        isCurrent = true;
+                    }
+
+                    star.className = `star-node ${statusClass}`;
+                    
+                    // Reto Diamante badge for high-scorers
+                    let aciertoObj = aciertosTokens[tema.id] || aciertosTokens[tema.titulo];
+                    let aciertoScore = aciertoObj ? (aciertoObj.score || 0) : 0;
+                    if (isCompleted && aciertoScore >= 90) {
+                        star.classList.add('diamond-challenge');
+                    }
+
+                    star.style.left = positions[index].x + '%';
+                    star.style.top = positions[index].y + '%';
+
+                    const delay = (Math.random() * 2).toFixed(2);
+                    star.style.animationDelay = `-${delay}s`;
+
+                    if (statusClass !== 'locked') {
+                        const asigActiva = localStorage.getItem('userSubject') || 'mates';
+                        star.onclick = () => {
+                            localStorage.setItem('userSubject', asigActiva);
+                            window.location.href = `estudio.html?tema=${tema.id}&asig=${asigActiva}`;
+                        };
+                    }
+                    
+                    // Tooltip Logic (sin campo Dificultad)
+                    star.addEventListener('mouseenter', (e) => {
+                        const tt = document.getElementById('hover-tooltip');
+                        if(!tt) return;
+                        document.getElementById('tt-title').innerText = tema.titulo;
+                        const ttProgText = isCompleted ? '100% Completo ✅'
+                            : (isPro && !isCompleted) ? '⚡ Acceso Pro'
+                            : (isCurrent ? '▶ Siguiente Reto' : '🔒 Bloqueado');
+                        document.getElementById('tt-prog').innerText = ttProgText;
+                        
+                        tt.style.left = e.clientX + 'px';
+                        tt.style.top = e.clientY + 'px';
+                        tt.classList.add('show');
+                        
+                        star.onmousemove = (mv) => {
+                            tt.style.left = mv.clientX + 'px';
+                            tt.style.top = mv.clientY + 'px';
+                        };
+                    });
+                    
+                    star.addEventListener('mouseleave', () => {
+                        const tt = document.getElementById('hover-tooltip');
+                        if(tt) tt.classList.remove('show');
+                        star.onmousemove = null;
+                    });
+                    
+                    let isEstrella = false;
+                    if (temaEstrella && typeof temaEstrella === 'string' && tema.titulo && tema.titulo.includes(temaEstrella)) {
+                        isEstrella = true;
+                    } else if (temaEstrella && typeof temaEstrella === 'string' && temaEstrella === tema.titulo) {
+                        isEstrella = true;
+                    }
+
+                    star.innerHTML = `
+                        <div class="star-core" style="${isEstrella ? 'box-shadow: 0 0 20px #ffd700; border-color: #ffd700;' : ''}">${isEstrella && statusClass !== 'completed' ? '⭐' : coreContent}</div>
+                        <div class="star-label">${tema.titulo}</div>
+                    `;
+                    constel.appendChild(star);
+                });
+            }
+
+            // ── FALLBACK LOCAL DE TEMARIOS ───────────────────────────────────────
+            // Se usa temarios.js como fuente local. Firestore puede reemplazar estos datos
+            // a continuación con los temarios oficiales de la comunidad del alumno.
+            const temaF = obtenerTemario(curso, 'fisica', comunidad);
+            let temaM = obtenerTemario(curso, 'mates', comunidad);
+            const temaQ = obtenerTemario(curso, 'quimica', comunidad);
+            // Normalizar región para coincidir con IDs de Firestore
+            const regionNormalized = typeof comunidad === "string"
+                ? comunidad.toLowerCase()
+                    .replace(/á/g, 'a').replace(/é/g, 'e').replace(/í/g, 'i')
+                    .replace(/ó/g, 'o').replace(/ú/g, 'u').replace(/ñ/g, 'n')
+                    .replace(/\s+/g, '-')
+                : "madrid";
+
+            // ── FIRESTORE: Carga de temarios por comunidad y asignatura ─────────────
+            // Patrón de documento: "${regionNormalized}_${asignatura}" ej: "madrid_matematicas"
+            // Flujo de 3 llamadas paralelas (una por asignatura):
+            //   1. Se consulta Firestore con getDoc() (solo lectura, sin suscripción en tiempo real)
+            //   2. Si el doc existe → se usa lista_temas de Firestore (BOE oficial)
+            //   3. Si no existe o falla → se mantiene el fallback local de temarios.js
+            // Nota: las llamadas son .then() independientes para no bloquear el renderizado.
+            // === CARGA DINÁMICA PARA CURSOS NO-EBAU ===
+            const asigTextosDyn = { 'fisica': 'Física', 'mates': 'Matemáticas', 'quimica': 'Química' };
+            const cursoTextosDyn = { '2eso': '2º ESO', '3eso': '3º ESO', '4eso': '4º ESO', '1bach': '1º Bach', '2bach': '2º Bach', '2_bachillerato': '2º Bach' };
+            const cursoNameDyn = cursoTextosDyn[curso] || '2º Bach';
+
+            function loadDynamicTopics(subjectId, containerId) {
+                const asigFullName = `${asigTextosDyn[subjectId]} ${cursoNameDyn}`;
+                const q = query(collection(db, 'ejercicios_base'), where('asignatura', '==', asigFullName));
+                getDocs(q).then(snapshot => {
+                    const bloquesSet = new Set();
+                    snapshot.forEach(doc => {
+                        if (doc.data().bloque) bloquesSet.add(doc.data().bloque);
+                    });
+                    const temas = Array.from(bloquesSet).map((b, i) => ({ id: `${subjectId}_fire_${i}`, titulo: b, desc: "Cargado dinámicamente" }));
+                    temas.sort((a, b) => {
+                        const matchA = a.titulo.match(/\d+/);
+                        const matchB = b.titulo.match(/\d+/);
+                        if (matchA && matchB) return parseInt(matchA[0]) - parseInt(matchB[0]);
+                        return a.titulo.localeCompare(b.titulo);
+                    });
+                    
+                    if (temas.length > 0) {
+                        injectConstellationNodes(containerId, temas, null, window.isPro);
+                    } else {
+                        const constel = document.getElementById(containerId);
+                        constel.innerHTML = `
+                            <div style="position: absolute; top: 40%; left: 50%; transform: translate(-50%, -50%); text-align: center; width: 80%; max-width: 600px;">
+                                <h2 style="color: #00f2fe; text-shadow: 0 0 20px rgba(0,242,254,0.5); font-size: 2rem; margin-bottom: 1rem;">Estamos preparando tu constelación</h2>
+                                <p style="color: #a0a0b8; font-size: 1.1rem; line-height: 1.6;">Todavía no hay temas disponibles para ${asigFullName}. 🚀</p>
+                            </div>
+                        `;
+                    }
+                }).catch(e => {
+                    console.error("Error loading dynamic topics", e);
+                });
+            }
+
+            // === CARGA QUÍMICA DESDE FIRESTORE ===
+            if (curso === '2_bachillerato') {
+                const docQuimicaName = `${regionNormalized}_quimica`;
+                getDoc(doc(db, "temarios", docQuimicaName)).then(docSnap => {
+                    if (docSnap.exists()) {
+                        const data = docSnap.data();
+                        let temaQuimicaFire = temaQ;
+                        if (data.lista_temas && Array.isArray(data.lista_temas)) {
+                            temaQuimicaFire = data.lista_temas.map((t, i) => ({ id: `q_fire_${i}`, titulo: t, desc: "Firestore BOE Química" }));
+                        }
+                        if (data.matiz_revisor) {
+                            window.currentQuimicaConsejo = data.matiz_revisor;
+                            if (asignatura === 'quimica') {
+                                document.getElementById('side-panel-consejo').style.display = 'block';
+                                document.querySelector('#side-panel-consejo p').innerText = window.currentQuimicaConsejo;
+                            }
+                        }
+                        injectConstellationNodes('const-quimica', temaQuimicaFire, data.tema_estrella, window.isPro);
+                    } else {
+                        injectConstellationNodes('const-quimica', temaQ, null, window.isPro);
+                    }
+                }).catch(e => {
+                    console.error("Error cargando Química de Firestore:", e);
+                    injectConstellationNodes('const-quimica', temaQ, null, window.isPro);
+                });
+            } else {
+                loadDynamicTopics('quimica', 'const-quimica');
+            }
+
+
+            // === CARGA FÍSICA DESDE FIRESTORE ===
+            if (curso === '2_bachillerato') {
+                const docFisicaName = `${regionNormalized}_fisica`;
+                getDoc(doc(db, "temarios", docFisicaName)).then(docSnap => {
+                    if (docSnap.exists()) {
+                        const data = docSnap.data();
+                        let temaFisicaFire = temaF;
+                        if (data.lista_temas && Array.isArray(data.lista_temas)) {
+                            temaFisicaFire = data.lista_temas.map((t, i) => ({ id: `f_fire_${i}`, titulo: t, desc: "Firestore BOE Física" }));
+                        }
+                        if (data.matiz_revisor) {
+                            window.currentFisicaConsejo = data.matiz_revisor;
+                            if (asignatura === 'fisica') {
+                                document.getElementById('side-panel-consejo').style.display = 'block';
+                                document.querySelector('#side-panel-consejo p').innerText = window.currentFisicaConsejo;
+                            }
+                        }
+                        injectConstellationNodes('const-fisica', temaFisicaFire, data.tema_estrella, window.isPro);
+                    } else {
+                        loadDynamicTopics('fisica', 'const-fisica');
+                    }
+                }).catch(e => {
+                    console.error("Error cargando Física de Firestore:", e);
+                    loadDynamicTopics('fisica', 'const-fisica');
+                });
+            } else {
+                loadDynamicTopics('fisica', 'const-fisica');
+            }
+
+            // === CARGA MATEMÁTICAS DESDE FIRESTORE ===
+            if (curso === '2_bachillerato') {
+                const docName = `${regionNormalized}_matematicas`;
+                getDoc(doc(db, "temarios", docName)).then(docSnap => {
+                    if (docSnap.exists()) {
+                        const data = docSnap.data();
+                        if (data.lista_temas && Array.isArray(data.lista_temas)) {
+                            temaM = data.lista_temas.map((t, i) => ({ id: `m_fire_${i}`, titulo: t, desc: "Firestore BOE" }));
+                        }
+                        if (data.matiz_revisor) {
+                            window.currentMathConsejo = data.matiz_revisor;
+                            if (asignatura === 'mates') {
+                                document.getElementById('side-panel-consejo').style.display = 'block';
+                                document.querySelector('#side-panel-consejo p').innerText = window.currentMathConsejo;
+                            }
+                        }
+                        injectConstellationNodes('const-mates', temaM, data.tema_estrella, window.isPro);
+                    } else {
+                        injectConstellationNodes('const-mates', temaM, null, window.isPro);
+                    }
+                }).catch(e => {
+                    console.error("No se pudo cargar de Firestore:", e);
+                    injectConstellationNodes('const-mates', temaM, null, window.isPro);
+                });
+            } else {
+                loadDynamicTopics('mates', 'const-mates');
+            }
+
+
+            // Dynamic Text panel
+            const cursoTextos = {
+                '2eso': '2º ESO', '3eso': '3º ESO', '4eso': '4º ESO',
+                '1bach': '1º Bachillerato', '2bach': '2º Bachillerato', '2_bachillerato': '2º Bachillerato'
+            };
+            const asigTextos = {
+                'fisica': 'Física', 'mates': 'Matemáticas', 'quimica': 'Química'
+            };
+            document.getElementById('mission-title-1').innerText = `Misión actual: ${asigTextos[asignatura]} - ${cursoTextos[curso]}`;
+
+            // ── MOTOR DE MAPA: DRAG & ZOOM INTERACTIVO ───────────────────────────
+            // El alumno puede arrastrar el mapa con el ratón (mousedown + mousemove)
+            // y hacer zoom con la rueda del ratón o los botones +/- de la esquina inferior.
+            // El canvas (2000×1000px) se transforma con translate3d + scale para rendimiento GPU.
+            // Rango de zoom: 0.3x (alejado) hasta 3x (muy cercano). Centrado inicial en -1000,-500.
+            const mapContainer = document.getElementById('mapa-scroll');
+            const mapCanvas = document.querySelector('.map-canvas');
+            
+            let isDownMap = false;
+            let startX, startY;
+            let currentX = -1000;
+            let currentY = -500;
+            let scale = 1;
+
+            if (mapContainer && mapCanvas) {
+                // Apply initial centered state
+                mapCanvas.style.transform = `translate3d(${currentX}px, ${currentY}px, 0) scale(${scale})`;
+
+                mapContainer.addEventListener('mousedown', (e) => {
+                    if(e.target.closest('.star-node') || e.target.closest('.zoom-btn')) return;
+                    isDownMap = true;
+                    mapContainer.classList.add('active');
+                    startX = e.clientX - currentX;
+                    startY = e.clientY - currentY;
+                });
+                
+                window.addEventListener('mouseup', () => {
+                    isDownMap = false;
+                    if(mapContainer) mapContainer.classList.remove('active');
+                });
+                
+                window.addEventListener('mousemove', (e) => {
+                    if (!isDownMap) return;
+                    e.preventDefault();
+                    currentX = e.clientX - startX;
+                    currentY = e.clientY - startY;
+                    requestAnimationFrame(() => {
+                        mapCanvas.style.transform = `translate3d(${currentX}px, ${currentY}px, 0) scale(${scale})`;
+                    });
+                });
+
+                // Zoom with wheel (Soporte para trackpad y mouse regular)
+                mapContainer.addEventListener('wheel', (e) => {
+                    e.preventDefault();
+                    
+                    const zoomIntensity = 0.002;
+                    scale -= e.deltaY * zoomIntensity;
+                    scale = Math.min(Math.max(0.3, scale), 3);
+                    
+                    requestAnimationFrame(() => {
+                        mapCanvas.style.transform = `translate3d(${currentX}px, ${currentY}px, 0) scale(${scale})`;
+                    });
+                }, { passive: false });
+
+                // Controles manuales de Zoom +/-
+                document.getElementById('btn-zoom-in')?.addEventListener('click', () => {
+                    scale = Math.min(3, scale + 0.3);
+                    mapCanvas.style.transform = `translate3d(${currentX}px, ${currentY}px, 0) scale(${scale})`;
+                });
+                document.getElementById('btn-zoom-out')?.addEventListener('click', () => {
+                    scale = Math.max(0.3, scale - 0.3);
+                    mapCanvas.style.transform = `translate3d(${currentX}px, ${currentY}px, 0) scale(${scale})`;
+                });
+            }
+        });
+
+        // Telemetry Modal Logic
+        window.openStreakModal = function() {
+            const streakModal = document.getElementById('streak-modal');
+            const daysEl = document.getElementById('streak-modal-days');
+            const barEl = document.getElementById('streak-modal-bar');
+            const nextEl = document.getElementById('streak-modal-next');
+            const msgEl = document.getElementById('streak-modal-msg');
+
+            let userStreak = parseInt(localStorage.getItem('userStreak')) || 15;
+            if (daysEl) daysEl.innerText = userStreak;
+
+            // Calculate next milestone (7, 14, 21, 30, 60, 90, 365)
+            const milestones = [7, 14, 21, 30, 60, 90, 365];
+            let nextMilestone = milestones.find(m => m > userStreak) || (userStreak + 30);
+            let prevMilestone = milestones.slice().reverse().find(m => m <= userStreak) || 0;
+
+            let progressLevel = ((userStreak - prevMilestone) / (nextMilestone - prevMilestone)) * 100;
+            if (barEl) {
+                barEl.style.width = '0%'; // Reset for animation
+                setTimeout(() => { barEl.style.width = `${progressLevel}%`; }, 100);
+            }
+            if (nextEl) nextEl.innerText = `${nextMilestone} Días`;
+
+            // Text projection
+            let retention = Math.min(99, 40 + (userStreak * 2));
+            if (msgEl) msgEl.innerText = `La constancia actual proyecta una retención del temario del ${retention}%.`;
+
+            if (streakModal) streakModal.style.display = 'flex';
+        }
+
+        window.closeStreakModal = function() {
+            document.getElementById('streak-modal').style.display = 'none';
+        }
+    </script>
+
+    <!-- Telemetry Modal -->
+    <div id="streak-modal"
+        style="display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(5, 2, 10, 0.95); backdrop-filter: blur(15px); -webkit-backdrop-filter: blur(15px); z-index: 2000; justify-content: center; align-items: center;">
+        <div
+            style="background: rgba(15, 10, 30, 0.85); border: 1px solid rgba(0, 242, 254, 0.3); box-shadow: 0 0 40px rgba(0, 242, 254, 0.1); border-radius: 12px; padding: 3rem 4rem; width: 90%; max-width: 500px; text-align: center; position: relative;">
+            <button onclick="closeStreakModal()"
+                style="position: absolute; top: 15px; right: 20px; background: transparent; border: none; color: #a0a0b8; font-size: 2rem; cursor: pointer; transition: color 0.3s;">&times;</button>
+
+            <h2
+                style="color: #00f2fe; font-size: 1rem; text-transform: uppercase; letter-spacing: 3px; font-weight: 300; margin-bottom: 2rem; border-bottom: 1px solid rgba(0, 242, 254, 0.2); padding-bottom: 1rem;">
+                Panel de Telemetría</h2>
+
+            <div style="margin-bottom: 2.5rem;">
+                <h3 id="streak-modal-days"
+                    style="color: #fff; font-size: 4.5rem; font-weight: 300; line-height: 1; margin-bottom: 0.5rem; text-shadow: 0 0 20px rgba(0,242,254,0.3);">
+                    15</h3>
+                <p style="color: #00f2fe; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 2px;">Días de
+                    Actividad Consecutiva</p>
+            </div>
+
+            <div style="margin-bottom: 2.5rem; text-align: left;">
+                <div
+                    style="display: flex; justify-content: space-between; margin-bottom: 0.5rem; font-size: 0.85rem; color: #a0a0b8;">
+                    <span>Progreso hasta el siguiente Hito</span>
+                    <span id="streak-modal-next">21 Días</span>
+                </div>
+                <div
+                    style="height: 4px; background: rgba(255, 255, 255, 0.1); border-radius: 2px; overflow: hidden; position: relative;">
+                    <div id="streak-modal-bar"
+                        style="height: 100%; width: 70%; background: #00f2fe; box-shadow: 0 0 10px #00f2fe; transition: width 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);">
+                    </div>
+                </div>
+            </div>
+
+            <div
+                style="background: rgba(0, 242, 254, 0.05); border-left: 3px solid #00f2fe; padding: 1rem; text-align: left;">
+                <p id="streak-modal-msg" style="color: #b8b8d0; font-size: 0.9rem; line-height: 1.5; margin: 0;">La
+                    constancia actual proyecta una retención del temario del 87%.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Async Load OnAuthStateChanged & User Progress Data -->
+    <script type="module">
+        import { auth, onAuthStateChanged, db, getDoc, doc } from './firebase-config.js';
+
+        // ── Escalafón de Rangos ──────────────────────────────────────────────────
+        const RANKS = [
+            { name: 'Bronce I',          min: 0,    color: '#cd7f32', icon: '🥉' },
+            { name: 'Bronce II',         min: 100,  color: '#cd7f32', icon: '🥉' },
+            { name: 'Bronce III',        min: 200,  color: '#cd7f32', icon: '🥉' },
+            { name: 'Plata I',           min: 350,  color: '#c0c0c0', icon: '🥈' },
+            { name: 'Plata II',          min: 500,  color: '#c0c0c0', icon: '🥈' },
+            { name: 'Plata III',         min: 700,  color: '#c0c0c0', icon: '🥈' },
+            { name: 'Oro I',             min: 900,  color: '#ffd700', icon: '🥇' },
+            { name: 'Oro II',            min: 1200, color: '#ffd700', icon: '🥇' },
+            { name: 'Oro III',           min: 1600, color: '#ffd700', icon: '🥇' },
+            { name: 'Diamante I',        min: 2100, color: '#b9f2ff', icon: '💎' },
+            { name: 'Diamante II',       min: 2700, color: '#b9f2ff', icon: '💎' },
+            { name: 'Diamante III',      min: 3400, color: '#b9f2ff', icon: '💎' },
+            { name: 'Supernova Maestra', min: 4200, color: '#8c52ff', icon: '🌟' }
+        ];
+
+        // ── getRank: definida ANTES de cualquier uso ──────────────────────────────
+        // CRÍTICO: esta función debe estar declarada antes de window._getRank = getRank
+        // para evitar ReferenceError que rompe silenciosamente el bloque async.
+        function getRank(xp) {
+            for (let i = RANKS.length - 1; i >= 0; i--) {
+                if (xp >= RANKS[i].min) return RANKS[i];
+            }
+            return RANKS[0];
+        }
+
+        // ══════════════════════════════════════════════════════════════════
+        // BLOQUE ASYNC — Firebase Auth + Datos del Alumno
+        // ══════════════════════════════════════════════════════════════════
+        // Flujo: onAuthStateChanged → getDoc(usuarios/uid) → isPro + XP + progreso
+        //        → updateRankBar() → changeSubject() → injectConstellationNodes()
+        // window._getRank y window._RANKS se exponen al scope global para
+        // que changeSubject() (script no-módulo) pueda calcular rangos.
+        // ══════════════════════════════════════════════════════════════════
+
+        // Exponer al scope global DESPUÉS de definir la función
+        window._RANKS   = RANKS;
+        window._getRank = getRank;
+
+        // ── TIMEOUT DE SEGURIDAD: 5 segundos ─────────────────────────────────────
+        // Si Firebase no responde en 5s, muestra error en lugar de bucle infinito.
+        const loadingTimeout = setTimeout(() => {
+            const msg   = document.getElementById('authLoading-msg');
+            const retry = document.getElementById('authLoading-retry');
+            if (msg)   msg.style.display   = 'none';
+            if (retry) retry.style.display = 'flex';
+            console.error('[A-PRUEBA] ⏱ Timeout: Firebase no respondió en 5s. Verifica conexión o reglas de Firestore.');
+        }, 5000);
+
+        function updateRankBar(xp, isPro) {
+            const rank = getRank(xp);
+            const nextRank = RANKS[RANKS.indexOf(rank) + 1];
+            const progressRatio = nextRank
+                ? (xp - rank.min) / (nextRank.min - rank.min)
+                : 1;
+
+            const progEl     = document.getElementById('supernova-progress');
+            const rankLabel  = document.getElementById('supernova-rank-label');
+            const xpLabel    = document.getElementById('supernova-xp-label');
+            const statRankEl = document.getElementById('stat-rank');
+
+            if (progEl)    progEl.style.width       = Math.round(progressRatio * 100) + '%';
+            if (rankLabel) rankLabel.textContent     = `${rank.icon} ${rank.name}`;
+            if (xpLabel)   xpLabel.textContent       = `${Math.floor(xp)} XP`;
+            if (statRankEl) {
+                statRankEl.innerHTML   = `<span class="icon">${rank.icon}</span> ${rank.name}${isPro ? ' ⚡' : ''}`;
+            }
+            // Persist XP for changeSubject()  
+            localStorage.setItem('userXP', Math.floor(xp));
+        }
+
+        window.isPro = false; // default, set once Firestore responds
+
+        onAuthStateChanged(auth, async (user) => {
+            clearTimeout(loadingTimeout); // Cancela el timeout si Firebase respondió
+
+            if (!user) {
+                window.location.href = 'login.html';
+                return;
+            }
+            const loader = document.getElementById('authLoading');
+
+            try {
+                const docSnap = await getDoc(doc(db, "usuarios", user.uid));
+
+                if (!docSnap.exists()) {
+                    // El usuario está autenticado pero NO tiene documento en Firestore.
+                    // Esto ocurre si el registro fue incompleto. Se redirige al onboarding.
+                    console.error('[A-PRUEBA] ❌ Datos insuficientes: el documento del usuario no existe en Firestore.', {
+                        uid: user.uid,
+                        email: user.email
+                    });
+                    window.location.href = 'index.html';
+                    return;
+                }
+
+                const data = docSnap.data();
+
+                // ── DIAGNÓSTICO DE DATOS INSUFICIENTES ────────────────────────────────
+                // Verifica que los campos críticos existen en el documento del alumno.
+                // Si faltan comunidad o curso, redirige al onboarding para completarlos.
+                const camposFaltantes = [];
+                if (!data.comunidad) camposFaltantes.push('comunidad');
+                if (!data.curso)     camposFaltantes.push('curso');
+                if (camposFaltantes.length > 0) {
+                    console.error('[A-PRUEBA] ❌ Datos insuficientes en Firestore. Campos que faltan:', camposFaltantes, '| Datos recibidos:', data);
+                    // Redirige al onboarding para que el alumno complete su perfil
+                    window.location.href = 'index.html';
+                    return;
+                }
+
+                // ── Sincronizar Firestore → localStorage ──────────────────────────────
+                // Actualiza localStorage con los valores de Firestore para garantizar
+                // que el mapa use siempre los datos más recientes del perfil del alumno.
+                localStorage.setItem('userComunidad', data.comunidad);
+                localStorage.setItem('userCourse',    data.curso);
+                if (data.asignatura) localStorage.setItem('userSubject', data.asignatura);
+
+                // ── VERIFICACIÓN DE PLAN PRO ──────────────────────────────────────────
+                // Lee el campo 'plan_pro' (boolean) del documento Firestore del alumno.
+                // Si es true: desbloquea todos los nodos del mapa, muestra header dorado
+                // y elimina cualquier CTA de pago que quede en el DOM.
+                // Si es false (default): el mapa aplica el desbloqueo secuencial de temas.
+                window.isPro = data.plan_pro === true;
+                localStorage.setItem('isPro', window.isPro ? '1' : '0');
+
+                // ── Progreso del alumno (temas completados y aciertos) ────────────────
+                window.userMapProgress = {
+                    temas_completados: data.temas_completados || [],
+                    aciertos: data.aciertos || {}
+                };
+
+                // ── XP total calculado desde los scores de aciertos ───────────────────
+                const xp = Object.values(window.userMapProgress.aciertos)
+                    .reduce((sum, item) => sum + (item.score || 0), 0);
+
+                // ── Actualizar barra de rango en tiempo real ──────────────────────────
+                updateRankBar(xp, window.isPro);
+
+                // ── Actualizar badge Brillo Estelar desde Firestore ───────────────────
+                const rachaEl = document.getElementById('stat-racha');
+                if (rachaEl) {
+                    const streak = data.racha || data.userStreak || localStorage.getItem('userStreak') || 0;
+                    rachaEl.innerHTML = `<span class="icon">⭐</span> Brillo Estelar: ${streak} Día${streak !== 1 ? 's' : ''}`;
+                }
+
+                // ── Header Pro (si el alumno tiene plan activo) ───────────────────────
+                if (window.isPro) {
+                    const proHeader = document.getElementById('mapa-pro-header');
+                    if (proHeader) {
+                        proHeader.textContent = '⚡ Bienvenido al Centro de Mando, Supernova. Toda la constelación está a tu disposición.';
+                        proHeader.style.color = '#ffd700';
+                        proHeader.style.textShadow = '0 0 18px rgba(255,215,0,0.5)';
+                    }
+                    document.querySelectorAll('.pro-cta-btn, .btn-activate-pro').forEach(el => el.remove());
+                }
+
+            } catch (e) {
+                console.error('[A-PRUEBA] ❌ Error cargando perfil del usuario desde Firestore:', e);
+                // En caso de error de red, el mapa se renderiza con los datos de localStorage
+            }
+
+            // Ocultar overlay de carga
+            if (loader) loader.style.display = 'none';
+
+            // Disparar render del mapa con la asignatura activa
+            const asignaturaActual = localStorage.getItem('userSubject') || 'fisica';
+            if (window.changeSubject) {
+                window.changeSubject(asignaturaActual);
+            }
+        });
+
+        // Logout
+        document.getElementById('btn-logout')?.addEventListener('click', (e) => {
+            e.preventDefault();
+            import('./firebase-config.js').then((module) => {
+                module.signOut(auth).then(() => {
+                    window.location.href = 'index.html';
+                }).catch(err => console.error(err));
+            });
+        });
+    </script>
+</body>
+
+</html>

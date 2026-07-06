@@ -1,0 +1,602 @@
+[
+  {
+    "asignatura": "Química 3º ESO",
+    "id": 3201,
+    "dificultad": "Básica",
+    "bloque": "Tema 1: La materia, sus propiedades y las leyes de los gases",
+    "enunciado": "Indica si las siguientes propiedades son generales o específicas de la materia: masa, volumen, densidad y temperatura de fusión.",
+    "resolucion_latex": "La masa es una propiedad general porque toda materia tiene masa.<br>El volumen es una propiedad general porque toda materia ocupa un espacio.<br>La densidad es una propiedad específica porque ayuda a identificar sustancias.<br>La temperatura de fusión también es una propiedad específica porque depende de cada sustancia.<br>Por tanto:<br>Propiedades generales: masa y volumen.<br>Propiedades específicas: densidad y temperatura de fusión.",
+    "pista": "Las propiedades generales no identifican sustancias; las específicas sí ayudan a diferenciarlas.",
+    "formula": "$$\\text{materia}=\\text{masa}+\\text{volumen}$$"
+  },
+  {
+    "asignatura": "Química 3º ESO",
+    "id": 3202,
+    "dificultad": "Básica",
+    "bloque": "Tema 1: La materia, sus propiedades y las leyes de los gases",
+    "enunciado": "Calcula la densidad de un objeto que tiene una masa de $120\\ \\text{g}$ y un volumen de $40\\ \\text{cm}^3$.",
+    "resolucion_latex": "La densidad se calcula dividiendo la masa entre el volumen:<br>$\\rho=\\frac{m}{V}$.<br>Sustituimos:<br>$\\rho=\\frac{120}{40}=3\\ \\text{g/cm}^3$.<br>La densidad del objeto es $3\\ \\text{g/cm}^3$.",
+    "pista": "La densidad indica cuánta masa hay en cada unidad de volumen.",
+    "formula": "$$\\rho=\\frac{m}{V}$$"
+  },
+  {
+    "asignatura": "Química 3º ESO",
+    "id": 3203,
+    "dificultad": "Básica",
+    "bloque": "Tema 1: La materia, sus propiedades y las leyes de los gases",
+    "enunciado": "Convierte $25\\ ^\\circ\\text{C}$ a kelvin.",
+    "resolucion_latex": "Para pasar de grados Celsius a kelvin usamos:<br>$T(K)=T(^\\circ\\text{C})+273$.<br>Sustituimos:<br>$T=25+273=298\\ \\text{K}$.<br>Por tanto, $25\\ ^\\circ\\text{C}$ equivalen a $298\\ \\text{K}$.",
+    "pista": "En las leyes de los gases, la temperatura debe expresarse siempre en kelvin.",
+    "formula": "$$T(K)=T(^\\circ\\text{C})+273$$"
+  },
+  {
+    "asignatura": "Química 3º ESO",
+    "id": 3204,
+    "dificultad": "Media",
+    "bloque": "Tema 1: La materia, sus propiedades y las leyes de los gases",
+    "enunciado": "Un gas ocupa $4\\ \\text{L}$ a una presión de $2\\ \\text{atm}$. Si la temperatura permanece constante y la presión aumenta hasta $4\\ \\text{atm}$, calcula el nuevo volumen.",
+    "resolucion_latex": "Como la temperatura permanece constante, aplicamos la ley de Boyle-Mariotte:<br>$P_1V_1=P_2V_2$.<br>Sustituimos:<br>$2\\cdot 4=4\\cdot V_2$.<br>$8=4V_2$.<br>Despejamos:<br>$V_2=\\frac{8}{4}=2\\ \\text{L}$.<br>El nuevo volumen es $2\\ \\text{L}$.",
+    "pista": "A temperatura constante, si aumenta la presión, disminuye el volumen.",
+    "formula": "$$P_1V_1=P_2V_2$$"
+  },
+  {
+    "asignatura": "Química 3º ESO",
+    "id": 3205,
+    "dificultad": "Media",
+    "bloque": "Tema 1: La materia, sus propiedades y las leyes de los gases",
+    "enunciado": "Un gas ocupa $3\\ \\text{L}$ a $300\\ \\text{K}$. Si la presión se mantiene constante y la temperatura sube a $600\\ \\text{K}$, calcula el nuevo volumen.",
+    "resolucion_latex": "Como la presión permanece constante, aplicamos la ley de Charles:<br>$\\frac{V_1}{T_1}=\\frac{V_2}{T_2}$.<br>Sustituimos:<br>$\\frac{3}{300}=\\frac{V_2}{600}$.<br>Despejamos:<br>$V_2=\\frac{3\\cdot 600}{300}=6\\ \\text{L}$.<br>El nuevo volumen es $6\\ \\text{L}$.",
+    "pista": "A presión constante, volumen y temperatura son directamente proporcionales.",
+    "formula": "$$\\frac{V_1}{T_1}=\\frac{V_2}{T_2}$$"
+  },
+  {
+    "asignatura": "Química 3º ESO",
+    "id": 3206,
+    "dificultad": "Media",
+    "bloque": "Tema 1: La materia, sus propiedades y las leyes de los gases",
+    "enunciado": "Un gas tiene una presión de $1,5\\ \\text{atm}$ a $300\\ \\text{K}$. Si el volumen permanece constante y la temperatura aumenta hasta $400\\ \\text{K}$, calcula la nueva presión.",
+    "resolucion_latex": "Como el volumen permanece constante, aplicamos la ley de Gay-Lussac:<br>$\\frac{P_1}{T_1}=\\frac{P_2}{T_2}$.<br>Sustituimos:<br>$\\frac{1,5}{300}=\\frac{P_2}{400}$.<br>Despejamos:<br>$P_2=\\frac{1,5\\cdot 400}{300}=2\\ \\text{atm}$.<br>La nueva presión es $2\\ \\text{atm}$.",
+    "pista": "A volumen constante, presión y temperatura son directamente proporcionales.",
+    "formula": "$$\\frac{P_1}{T_1}=\\frac{P_2}{T_2}$$"
+  },
+  {
+    "asignatura": "Química 3º ESO",
+    "id": 3207,
+    "dificultad": "Alta",
+    "bloque": "Tema 1: La materia, sus propiedades y las leyes de los gases",
+    "enunciado": "Un gas ocupa $5\\ \\text{L}$ a $2\\ \\text{atm}$ y $300\\ \\text{K}$. Si pasa a una presión de $1\\ \\text{atm}$ y una temperatura de $450\\ \\text{K}$, calcula el nuevo volumen.",
+    "resolucion_latex": "Usamos la ley combinada de los gases:<br>$\\frac{P_1V_1}{T_1}=\\frac{P_2V_2}{T_2}$.<br>Sustituimos:<br>$\\frac{2\\cdot 5}{300}=\\frac{1\\cdot V_2}{450}$.<br>Despejamos:<br>$V_2=\\frac{2\\cdot 5\\cdot 450}{300\\cdot 1}$.<br>$V_2=\\frac{4500}{300}=15\\ \\text{L}$.<br>El nuevo volumen es $15\\ \\text{L}$.",
+    "pista": "Usa la ley combinada cuando cambian presión, volumen y temperatura. La temperatura debe estar en kelvin.",
+    "formula": "$$\\frac{P_1V_1}{T_1}=\\frac{P_2V_2}{T_2}$$"
+  },
+  {
+    "asignatura": "Química 3º ESO",
+    "id": 3208,
+    "dificultad": "Alta",
+    "bloque": "Tema 1: La materia, sus propiedades y las leyes de los gases",
+    "enunciado": "Un gas ocupa $2\\ \\text{L}$ a $27\\ ^\\circ\\text{C}$. Si la presión se mantiene constante y el volumen aumenta hasta $3\\ \\text{L}$, calcula la temperatura final en kelvin y en grados Celsius.",
+    "resolucion_latex": "Primero pasamos la temperatura inicial a kelvin:<br>$T_1=27+273=300\\ \\text{K}$.<br>Como la presión permanece constante, usamos la ley de Charles:<br>$\\frac{V_1}{T_1}=\\frac{V_2}{T_2}$.<br>Sustituimos:<br>$\\frac{2}{300}=\\frac{3}{T_2}$.<br>Despejamos:<br>$T_2=\\frac{3\\cdot 300}{2}=450\\ \\text{K}$.<br>Pasamos a grados Celsius:<br>$T(^\\circ\\text{C})=450-273=177\\ ^\\circ\\text{C}$.<br>La temperatura final es $450\\ \\text{K}$, es decir, $177\\ ^\\circ\\text{C}$.",
+    "pista": "Antes de usar leyes de gases, convierte siempre la temperatura a kelvin.",
+    "formula": "$$\\frac{V_1}{T_1}=\\frac{V_2}{T_2}$$"
+  },
+  {
+    "asignatura": "Química 3º ESO",
+    "id": 3209,
+    "dificultad": "Alta",
+    "bloque": "Tema 1: La materia, sus propiedades y las leyes de los gases",
+    "enunciado": "Un material tiene una masa de $540\\ \\text{g}$ y una densidad de $2,7\\ \\text{g/cm}^3$. Calcula su volumen.",
+    "resolucion_latex": "La densidad se calcula con:<br>$\\rho=\\frac{m}{V}$.<br>Despejamos el volumen:<br>$V=\\frac{m}{\\rho}$.<br>Sustituimos:<br>$V=\\frac{540}{2,7}=200\\ \\text{cm}^3$.<br>El volumen del material es $200\\ \\text{cm}^3$.",
+    "pista": "Si conoces masa y densidad, el volumen se calcula dividiendo masa entre densidad.",
+    "formula": "$$V=\\frac{m}{\\rho}$$"
+  },
+  {
+    "asignatura": "Química 3º ESO",
+    "id": 3210,
+    "dificultad": "Superior",
+    "bloque": "Tema 1: La materia, sus propiedades y las leyes de los gases",
+    "enunciado": "Ejercicio trampa: Un alumno usa la ley de Charles con una temperatura de $25\\ ^\\circ\\text{C}$ directamente, sin pasarla a kelvin. Explica el error y por qué en las leyes de los gases debe usarse la escala Kelvin.",
+    "resolucion_latex": "El error está en usar grados Celsius directamente en una ley de gases. Las leyes de los gases relacionan presión, volumen y temperatura absoluta, por lo que la temperatura debe expresarse en kelvin.<br>La escala Celsius no parte del cero absoluto, así que usar $25$ en lugar de $298\\ \\text{K}$ altera completamente la proporción.<br>La conversión correcta es:<br>$T(K)=T(^\\circ\\text{C})+273$.<br>Por tanto:<br>$25\\ ^\\circ\\text{C}=25+273=298\\ \\text{K}$.<br>En las leyes de los gases siempre debe utilizarse la temperatura en kelvin.",
+    "pista": "En gases, la temperatura debe representar energía térmica absoluta; por eso se usa Kelvin.",
+    "formula": "$$T(K)=T(^\\circ\\text{C})+273$$"
+  },
+  {
+    "asignatura": "Química 3º ESO",
+    "id": 3211,
+    "dificultad": "Básica",
+    "bloque": "Tema 2: Sustancias puras, mezclas y disoluciones",
+    "enunciado": "Clasifica las siguientes sustancias como sustancia pura o mezcla: agua destilada, aire, agua con sal y oxígeno.",
+    "resolucion_latex": "El agua destilada es una sustancia pura, porque está formada solo por agua.<br>El aire es una mezcla de varios gases.<br>El agua con sal es una mezcla homogénea, porque contiene agua y sal disuelta.<br>El oxígeno es una sustancia pura, porque está formado solo por átomos de oxígeno.<br>Por tanto:<br>Sustancias puras: agua destilada y oxígeno.<br>Mezclas: aire y agua con sal.",
+    "pista": "Una sustancia pura tiene composición fija; una mezcla combina varias sustancias.",
+    "formula": "$$\\text{sustancia pura}\\neq\\text{mezcla}$$"
+  },
+  {
+    "asignatura": "Química 3º ESO",
+    "id": 3212,
+    "dificultad": "Básica",
+    "bloque": "Tema 2: Sustancias puras, mezclas y disoluciones",
+    "enunciado": "Indica cuál es el soluto y cuál es el disolvente en una disolución formada por $10\\ \\text{g}$ de sal y $200\\ \\text{g}$ de agua.",
+    "resolucion_latex": "En una disolución, el disolvente suele ser la sustancia que está en mayor cantidad y el soluto la que se disuelve.<br>En este caso, hay $200\\ \\text{g}$ de agua y $10\\ \\text{g}$ de sal.<br>Por tanto, el agua es el disolvente y la sal es el soluto.",
+    "pista": "El disolvente suele estar en mayor cantidad.",
+    "formula": "$$\\text{disolución}=\\text{soluto}+\\text{disolvente}$$"
+  },
+  {
+    "asignatura": "Química 3º ESO",
+    "id": 3213,
+    "dificultad": "Básica",
+    "bloque": "Tema 2: Sustancias puras, mezclas y disoluciones",
+    "enunciado": "Indica el método de separación más adecuado para separar arena y agua.",
+    "resolucion_latex": "La arena no se disuelve en el agua, por lo que forman una mezcla heterogénea.<br>Para separar un sólido insoluble de un líquido, el método más adecuado es la filtración.<br>El filtro retiene la arena y deja pasar el agua.<br>Por tanto, el método adecuado es la filtración.",
+    "pista": "Si hay un sólido insoluble mezclado con un líquido, piensa en filtrar.",
+    "formula": "$$\\text{sólido insoluble}+\\text{líquido}\\rightarrow\\text{filtración}$$"
+  },
+  {
+    "asignatura": "Química 3º ESO",
+    "id": 3214,
+    "dificultad": "Media",
+    "bloque": "Tema 2: Sustancias puras, mezclas y disoluciones",
+    "enunciado": "Calcula la concentración en $\\text{g/L}$ de una disolución que contiene $20\\ \\text{g}$ de azúcar disueltos en $0,5\\ \\text{L}$ de disolución.",
+    "resolucion_latex": "La concentración en $\\text{g/L}$ se calcula dividiendo la masa de soluto entre el volumen de disolución:<br>$C=\\frac{m}{V}$.<br>Sustituimos:<br>$C=\\frac{20}{0,5}=40\\ \\text{g/L}$.<br>La concentración de la disolución es $40\\ \\text{g/L}$.",
+    "pista": "Divide los gramos de soluto entre los litros de disolución.",
+    "formula": "$$C=\\frac{m_{soluto}}{V_{disolución}}$$"
+  },
+  {
+    "asignatura": "Química 3º ESO",
+    "id": 3215,
+    "dificultad": "Media",
+    "bloque": "Tema 2: Sustancias puras, mezclas y disoluciones",
+    "enunciado": "Una disolución contiene $15\\ \\text{g}$ de sal y $135\\ \\text{g}$ de agua. Calcula el porcentaje en masa de sal.",
+    "resolucion_latex": "Primero calculamos la masa total de la disolución:<br>$m_{disolución}=15+135=150\\ \\text{g}$.<br>El porcentaje en masa se calcula con:<br>$\\%m=\\frac{m_{soluto}}{m_{disolución}}\\cdot 100$.<br>Sustituimos:<br>$\\%m=\\frac{15}{150}\\cdot 100=10\\%$.<br>La disolución tiene un $10\\%$ en masa de sal.",
+    "pista": "La masa total de la disolución es la suma de soluto y disolvente.",
+    "formula": "$$\\%m=\\frac{m_{soluto}}{m_{disolución}}\\cdot 100$$"
+  },
+  {
+    "asignatura": "Química 3º ESO",
+    "id": 3216,
+    "dificultad": "Media",
+    "bloque": "Tema 2: Sustancias puras, mezclas y disoluciones",
+    "enunciado": "Indica qué método usarías para separar una mezcla de agua y alcohol, sabiendo que son líquidos miscibles con diferentes temperaturas de ebullición.",
+    "resolucion_latex": "El agua y el alcohol forman una mezcla homogénea de dos líquidos miscibles.<br>Como tienen diferentes temperaturas de ebullición, pueden separarse mediante destilación.<br>Al calentar, el líquido con menor temperatura de ebullición se evapora antes y luego se condensa para recogerlo separado.<br>Por tanto, el método adecuado es la destilación.",
+    "pista": "Para separar líquidos miscibles con distintos puntos de ebullición, se usa destilación.",
+    "formula": "$$\\text{líquidos miscibles}+\\Delta T_{ebullición}\\rightarrow\\text{destilación}$$"
+  },
+  {
+    "asignatura": "Química 3º ESO",
+    "id": 3217,
+    "dificultad": "Alta",
+    "bloque": "Tema 2: Sustancias puras, mezclas y disoluciones",
+    "enunciado": "Se preparan $250\\ \\text{mL}$ de una disolución con $5\\ \\text{g}$ de sal. Calcula su concentración en $\\text{g/L}$.",
+    "resolucion_latex": "Primero pasamos el volumen a litros:<br>$250\\ \\text{mL}=0,250\\ \\text{L}$.<br>La concentración en $\\text{g/L}$ es:<br>$C=\\frac{m}{V}$.<br>Sustituimos:<br>$C=\\frac{5}{0,250}=20\\ \\text{g/L}$.<br>La concentración de la disolución es $20\\ \\text{g/L}$.",
+    "pista": "Antes de calcular $\\text{g/L}$, convierte los mililitros a litros.",
+    "formula": "$$1\\ \\text{L}=1000\\ \\text{mL}$$"
+  },
+  {
+    "asignatura": "Química 3º ESO",
+    "id": 3218,
+    "dificultad": "Alta",
+    "bloque": "Tema 2: Sustancias puras, mezclas y disoluciones",
+    "enunciado": "Una disolución tiene concentración $30\\ \\text{g/L}$. ¿Qué masa de soluto habrá en $2,5\\ \\text{L}$ de disolución?",
+    "resolucion_latex": "Usamos la fórmula:<br>$C=\\frac{m}{V}$.<br>Despejamos la masa:<br>$m=C\\cdot V$.<br>Sustituimos:<br>$m=30\\cdot 2,5=75\\ \\text{g}$.<br>En $2,5\\ \\text{L}$ de disolución hay $75\\ \\text{g}$ de soluto.",
+    "pista": "Si sabes cuántos gramos hay por litro, multiplica por los litros totales.",
+    "formula": "$$m=C\\cdot V$$"
+  },
+  {
+    "asignatura": "Química 3º ESO",
+    "id": 3219,
+    "dificultad": "Alta",
+    "bloque": "Tema 2: Sustancias puras, mezclas y disoluciones",
+    "enunciado": "Se mezclan $100\\ \\text{mL}$ de una disolución con concentración $20\\ \\text{g/L}$ con agua hasta obtener $500\\ \\text{mL}$ de disolución final. Calcula la nueva concentración.",
+    "resolucion_latex": "Primero calculamos la masa de soluto inicial.<br>Pasamos $100\\ \\text{mL}$ a litros:<br>$100\\ \\text{mL}=0,100\\ \\text{L}$.<br>Usamos:<br>$m=C\\cdot V$.<br>$m=20\\cdot 0,100=2\\ \\text{g}$.<br><br>Al añadir agua, la masa de soluto sigue siendo $2\\ \\text{g}$.<br>El volumen final es:<br>$500\\ \\text{mL}=0,500\\ \\text{L}$.<br>Nueva concentración:<br>$C=\\frac{m}{V}=\\frac{2}{0,500}=4\\ \\text{g/L}$.<br>La nueva concentración es $4\\ \\text{g/L}$.",
+    "pista": "Al diluir, cambia el volumen pero no cambia la masa de soluto.",
+    "formula": "$$m_{soluto}=C\\cdot V$$"
+  },
+  {
+    "asignatura": "Química 3º ESO",
+    "id": 3220,
+    "dificultad": "Superior",
+    "bloque": "Tema 2: Sustancias puras, mezclas y disoluciones",
+    "enunciado": "Ejercicio trampa: Un alumno dice que al añadir agua a una disolución, la cantidad de soluto disminuye porque la disolución queda menos concentrada. Explica el error.",
+    "resolucion_latex": "El error está en confundir cantidad de soluto con concentración.<br>Al añadir agua a una disolución, aumenta la cantidad de disolvente y el volumen total, pero la masa de soluto sigue siendo la misma si no se añade ni se retira soluto.<br>Por eso la concentración disminuye, porque la misma cantidad de soluto queda repartida en más volumen.<br>Por ejemplo, si hay $5\\ \\text{g}$ de sal y añadimos más agua, sigue habiendo $5\\ \\text{g}$ de sal, pero la concentración en $\\text{g/L}$ será menor.",
+    "pista": "Diluir no significa quitar soluto: significa añadir disolvente.",
+    "formula": "$$C=\\frac{m_{soluto}}{V_{disolución}}$$"
+  },
+  {
+    "asignatura": "Química 3º ESO",
+    "id": 3221,
+    "dificultad": "Básica",
+    "bloque": "Tema 3: Estructura atómica básica",
+    "enunciado": "Indica qué partículas forman el átomo y qué carga eléctrica tiene cada una.",
+    "resolucion_latex": "El átomo está formado por protones, neutrones y electrones.<br>Los protones tienen carga positiva y se encuentran en el núcleo.<br>Los neutrones no tienen carga eléctrica y también se encuentran en el núcleo.<br>Los electrones tienen carga negativa y se encuentran alrededor del núcleo.<br>Por tanto:<br>Protón: carga positiva.<br>Neutrón: carga neutra.<br>Electrón: carga negativa.",
+    "pista": "Recuerda: protón positivo, electrón negativo y neutrón neutro.",
+    "formula": "$$p^+ \\quad ; \\quad n^0 \\quad ; \\quad e^-$$"
+  },
+  {
+    "asignatura": "Química 3º ESO",
+    "id": 3222,
+    "dificultad": "Básica",
+    "bloque": "Tema 3: Estructura atómica básica",
+    "enunciado": "Un átomo neutro tiene número atómico $Z=8$. ¿Cuántos protones y electrones tiene?",
+    "resolucion_latex": "El número atómico $Z$ indica el número de protones.<br>Por tanto, si $Z=8$, el átomo tiene $8$ protones.<br>Como el átomo es neutro, tiene el mismo número de protones que de electrones.<br>Por tanto, también tiene $8$ electrones.<br>Resultado:<br>$8$ protones y $8$ electrones.",
+    "pista": "En un átomo neutro, el número de electrones coincide con el número de protones.",
+    "formula": "$$Z=p^+$$"
+  },
+  {
+    "asignatura": "Química 3º ESO",
+    "id": 3223,
+    "dificultad": "Básica",
+    "bloque": "Tema 3: Estructura atómica básica",
+    "enunciado": "Calcula el número de neutrones de un átomo con número atómico $Z=11$ y número másico $A=23$.",
+    "resolucion_latex": "El número másico $A$ es la suma de protones y neutrones.<br>Para calcular los neutrones usamos:<br>$n=A-Z$.<br>Sustituimos:<br>$n=23-11=12$.<br>El átomo tiene $12$ neutrones.",
+    "pista": "Resta el número atómico al número másico.",
+    "formula": "$$n=A-Z$$"
+  },
+  {
+    "asignatura": "Química 3º ESO",
+    "id": 3224,
+    "dificultad": "Media",
+    "bloque": "Tema 3: Estructura atómica básica",
+    "enunciado": "Un átomo neutro tiene $17$ protones y número másico $A=35$. Calcula su número atómico, sus electrones y sus neutrones.",
+    "resolucion_latex": "El número atómico coincide con el número de protones:<br>$Z=17$.<br>Como el átomo es neutro, tiene el mismo número de electrones que de protones:<br>$e^-=17$.<br>Calculamos los neutrones:<br>$n=A-Z=35-17=18$.<br>Por tanto, tiene $Z=17$, $17$ electrones y $18$ neutrones.",
+    "pista": "Si el átomo es neutro, protones y electrones son iguales.",
+    "formula": "$$A=Z+n$$"
+  },
+  {
+    "asignatura": "Química 3º ESO",
+    "id": 3225,
+    "dificultad": "Media",
+    "bloque": "Tema 3: Estructura atómica básica",
+    "enunciado": "El ion $\\text{Na}^{+}$ tiene número atómico $Z=11$ y número másico $A=23$. Calcula protones, neutrones y electrones.",
+    "resolucion_latex": "El número atómico indica el número de protones:<br>$p^+=11$.<br>Calculamos los neutrones:<br>$n=A-Z=23-11=12$.<br>El ion $\\text{Na}^{+}$ tiene carga positiva, lo que significa que ha perdido $1$ electrón respecto al átomo neutro.<br>El sodio neutro tendría $11$ electrones, por tanto:<br>$e^-=11-1=10$.<br>Resultado:<br>$11$ protones, $12$ neutrones y $10$ electrones.",
+    "pista": "Un ion positivo ha perdido electrones.",
+    "formula": "$$\\text{catión }X^+:\\ e^-=Z-1$$"
+  },
+  {
+    "asignatura": "Química 3º ESO",
+    "id": 3226,
+    "dificultad": "Media",
+    "bloque": "Tema 3: Estructura atómica básica",
+    "enunciado": "Explica qué son los isótopos usando como ejemplo $^{12}\\text{C}$ y $^{14}\\text{C}$.",
+    "resolucion_latex": "Los isótopos son átomos del mismo elemento que tienen el mismo número de protones, pero distinto número de neutrones.<br>El carbono siempre tiene $Z=6$, por tanto $^{12}\\text{C}$ y $^{14}\\text{C}$ tienen $6$ protones.<br>Para $^{12}\\text{C}$:<br>$n=12-6=6$ neutrones.<br>Para $^{14}\\text{C}$:<br>$n=14-6=8$ neutrones.<br>Son isótopos porque ambos son carbono, pero tienen diferente número de neutrones.",
+    "pista": "Los isótopos tienen igual número de protones y distinto número de neutrones.",
+    "formula": "$$n=A-Z$$"
+  },
+  {
+    "asignatura": "Química 3º ESO",
+    "id": 3227,
+    "dificultad": "Alta",
+    "bloque": "Tema 3: Estructura atómica básica",
+    "enunciado": "Un ion tiene $16$ protones, $18$ electrones y $17$ neutrones. Determina su número atómico, número másico y carga.",
+    "resolucion_latex": "El número atómico es igual al número de protones:<br>$Z=16$.<br>El número másico es la suma de protones y neutrones:<br>$A=16+17=33$.<br>Para calcular la carga, comparamos protones y electrones.<br>Tiene $16$ protones positivos y $18$ electrones negativos, es decir, tiene $2$ electrones más que protones.<br>Por tanto, su carga es $2-$.<br>Resultado:<br>$Z=16$, $A=33$ y carga $2-$.",
+    "pista": "La carga depende de la diferencia entre protones y electrones.",
+    "formula": "$$A=p^++n \\quad ; \\quad q=p^+-e^-$$"
+  },
+  {
+    "asignatura": "Química 3º ESO",
+    "id": 3228,
+    "dificultad": "Alta",
+    "bloque": "Tema 3: Estructura atómica básica",
+    "enunciado": "Completa la información del símbolo nuclear $^{40}*{20}\\text{Ca}$: número atómico, número másico, protones, neutrones y electrones si es neutro.",
+    "resolucion_latex": "En el símbolo $^{40}*{20}\\text{Ca}$, el número inferior es el número atómico:<br>$Z=20$.<br>El número superior es el número másico:<br>$A=40$.<br>El número de protones es igual a $Z$:<br>$p^+=20$.<br>Calculamos los neutrones:<br>$n=A-Z=40-20=20$.<br>Como el átomo es neutro, tiene $20$ electrones.<br>Resultado:<br>$Z=20$, $A=40$, $20$ protones, $20$ neutrones y $20$ electrones.",
+    "pista": "En la notación nuclear, arriba va $A$ y abajo va $Z$.",
+    "formula": "$$^{A}_{Z}X$$"
+  },
+  {
+    "asignatura": "Química 3º ESO",
+    "id": 3229,
+    "dificultad": "Alta",
+    "bloque": "Tema 3: Estructura atómica básica",
+    "enunciado": "Ordena cronológicamente los modelos atómicos de Dalton, Thomson, Rutherford y Bohr, y explica brevemente una idea principal de cada uno.",
+    "resolucion_latex": "El orden histórico es:<br>1. Dalton.<br>2. Thomson.<br>3. Rutherford.<br>4. Bohr.<br><br>Dalton propuso que la materia estaba formada por átomos indivisibles.<br>Thomson descubrió el electrón y propuso un modelo con cargas negativas dentro de una masa positiva.<br>Rutherford propuso que el átomo tiene un núcleo pequeño y positivo, y que la mayor parte del átomo está vacía.<br>Bohr propuso que los electrones se sitúan en niveles de energía alrededor del núcleo.",
+    "pista": "Recuerda la evolución: átomo indivisible, electrón, núcleo y niveles de energía.",
+    "formula": "$$\\text{Dalton}\\rightarrow\\text{Thomson}\\rightarrow\\text{Rutherford}\\rightarrow\\text{Bohr}$$"
+  },
+  {
+    "asignatura": "Química 3º ESO",
+    "id": 3230,
+    "dificultad": "Superior",
+    "bloque": "Tema 3: Estructura atómica básica",
+    "enunciado": "Ejercicio trampa: Un alumno afirma que si un átomo gana electrones, se transforma en otro elemento porque cambia su número de partículas. Explica el error.",
+    "resolucion_latex": "El error está en pensar que cualquier cambio en el número de partículas cambia el elemento.<br>El elemento químico queda determinado por el número de protones, es decir, por su número atómico $Z$.<br>Si un átomo gana electrones, cambia su carga eléctrica, pero no cambia su número de protones.<br>Por tanto, no se transforma en otro elemento: se convierte en un ion negativo o anión.<br>Por ejemplo, si un átomo de cloro gana un electrón, pasa a ser $\\text{Cl}^{-}$, pero sigue siendo cloro.",
+    "pista": "Lo que define al elemento es el número de protones, no el número de electrones.",
+    "formula": "$$Z=p^+$$"
+  },
+  {
+    "asignatura": "Química 3º ESO",
+    "id": 3231,
+    "dificultad": "Básica",
+    "bloque": "Tema 4: Tabla periódica y enlace químico básico",
+    "enunciado": "Indica si los siguientes elementos son metales, no metales o gases nobles: sodio ($\\text{Na}$), oxígeno ($\\text{O}$), hierro ($\\text{Fe}$), neón ($\\text{Ne}$) y cloro ($\\text{Cl}$).",
+    "resolucion_latex": "El sodio ($\\text{Na}$) es un metal.<br>El oxígeno ($\\text{O}$) es un no metal.<br>El hierro ($\\text{Fe}$) es un metal.<br>El neón ($\\text{Ne}$) es un gas noble.<br>El cloro ($\\text{Cl}$) es un no metal.<br>Por tanto:<br>Metales: $\\text{Na}$ y $\\text{Fe}$.<br>No metales: $\\text{O}$ y $\\text{Cl}$.<br>Gas noble: $\\text{Ne}$.",
+    "pista": "Los gases nobles están en el último grupo de la tabla periódica.",
+    "formula": "$$\\text{metales} \\quad ; \\quad \\text{no metales} \\quad ; \\quad \\text{gases nobles}$$"
+  },
+  {
+    "asignatura": "Química 3º ESO",
+    "id": 3232,
+    "dificultad": "Básica",
+    "bloque": "Tema 4: Tabla periódica y enlace químico básico",
+    "enunciado": "Explica qué tienen en común los elementos de un mismo grupo de la tabla periódica.",
+    "resolucion_latex": "Los elementos de un mismo grupo están en la misma columna de la tabla periódica.<br>Suelen tener el mismo número de electrones de valencia, es decir, electrones en la última capa.<br>Por eso tienen propiedades químicas parecidas.<br>Por ejemplo, los elementos del grupo 1 tienden a perder un electrón y formar iones con carga $+1$.",
+    "pista": "Los grupos son las columnas de la tabla periódica.",
+    "formula": "$$\\text{mismo grupo}\\Rightarrow\\text{propiedades parecidas}$$"
+  },
+  {
+    "asignatura": "Química 3º ESO",
+    "id": 3233,
+    "dificultad": "Básica",
+    "bloque": "Tema 4: Tabla periódica y enlace químico básico",
+    "enunciado": "Indica qué tipo de enlace es más probable en $\\text{NaCl}$, $\\text{O}_2$ y $\\text{Fe}$.",
+    "resolucion_latex": "$\\text{NaCl}$ está formado por sodio, que es un metal, y cloro, que es un no metal. Por tanto, presenta enlace iónico.<br>$\\text{O}_2$ está formado por dos átomos de oxígeno, ambos no metales. Por tanto, presenta enlace covalente.<br>$\\text{Fe}$ es hierro, un metal. Por tanto, presenta enlace metálico.<br>Resultado:<br>$\\text{NaCl}$: enlace iónico.<br>$\\text{O}_2$: enlace covalente.<br>$\\text{Fe}$: enlace metálico.",
+    "pista": "Metal con no metal suele formar enlace iónico; no metal con no metal, covalente; metal con metal, metálico.",
+    "formula": "$$\\text{metal-no metal: iónico} \\quad ; \\quad \\text{no metal-no metal: covalente}$$"
+  },
+  {
+    "asignatura": "Química 3º ESO",
+    "id": 3234,
+    "dificultad": "Media",
+    "bloque": "Tema 4: Tabla periódica y enlace químico básico",
+    "enunciado": "Explica la regla del octeto de forma sencilla.",
+    "resolucion_latex": "La regla del octeto dice que muchos átomos tienden a ganar, perder o compartir electrones para tener $8$ electrones en su capa de valencia.<br>Esta configuración suele ser más estable, parecida a la de los gases nobles.<br>Por ejemplo, el sodio tiende a perder un electrón y el cloro tiende a ganar uno, formando $\\text{Na}^{+}$ y $\\text{Cl}^{-}$.",
+    "pista": "Los átomos buscan una configuración más estable, parecida a la de los gases nobles.",
+    "formula": "$$\\text{octeto}=8\\text{ electrones de valencia}$$"
+  },
+  {
+    "asignatura": "Química 3º ESO",
+    "id": 3235,
+    "dificultad": "Media",
+    "bloque": "Tema 4: Tabla periódica y enlace químico básico",
+    "enunciado": "Explica por qué el sodio forma $\\text{Na}^{+}$ y el cloro forma $\\text{Cl}^{-}$.",
+    "resolucion_latex": "El sodio tiene un electrón en su capa de valencia y tiende a perderlo para alcanzar una configuración más estable.<br>Al perder un electrón, queda con una carga positiva:<br>$\\text{Na}\\rightarrow\\text{Na}^{+}+e^-$.<br><br>El cloro tiene siete electrones de valencia y tiende a ganar uno para completar el octeto.<br>Al ganar un electrón, queda con una carga negativa:<br>$\\text{Cl}+e^-\\rightarrow\\text{Cl}^{-}$.<br>Por eso el sodio forma $\\text{Na}^{+}$ y el cloro forma $\\text{Cl}^{-}$.",
+    "pista": "Los metales suelen perder electrones y los no metales suelen ganarlos.",
+    "formula": "$$\\text{Na}\\rightarrow\\text{Na}^{+}+e^- \\quad ; \\quad \\text{Cl}+e^-\\rightarrow\\text{Cl}^{-}$$"
+  },
+  {
+    "asignatura": "Química 3º ESO",
+    "id": 3236,
+    "dificultad": "Media",
+    "bloque": "Tema 4: Tabla periódica y enlace químico básico",
+    "enunciado": "Compara de forma sencilla un enlace iónico y un enlace covalente.",
+    "resolucion_latex": "En un enlace iónico, un átomo cede electrones y otro los gana. Se forman iones de carga opuesta que se atraen.<br>Este tipo de enlace suele darse entre un metal y un no metal, como en $\\text{NaCl}$.<br><br>En un enlace covalente, los átomos comparten electrones.<br>Suele darse entre no metales, como en $\\text{O}_2$ o $\\text{H}_2\\text{O}$.<br>Por tanto, en el enlace iónico hay transferencia de electrones, mientras que en el covalente hay compartición de electrones.",
+    "pista": "Iónico: se transfieren electrones. Covalente: se comparten electrones.",
+    "formula": "$$\\text{iónico: transferencia} \\quad ; \\quad \\text{covalente: compartición}$$"
+  },
+  {
+    "asignatura": "Química 3º ESO",
+    "id": 3237,
+    "dificultad": "Alta",
+    "bloque": "Tema 4: Tabla periódica y enlace químico básico",
+    "enunciado": "Razona qué tipo de enlace presentará el compuesto formado por calcio ($\\text{Ca}$) y oxígeno ($\\text{O}$), y escribe la fórmula sabiendo que forman $\\text{Ca}^{2+}$ y $\\text{O}^{2-}$.",
+    "resolucion_latex": "El calcio es un metal y el oxígeno es un no metal, por tanto formarán un enlace iónico.<br>El calcio forma el ion $\\text{Ca}^{2+}$ y el oxígeno forma el ion $\\text{O}^{2-}$.<br>Como las cargas tienen el mismo valor absoluto, se combinan en proporción $1:1$.<br>La fórmula del compuesto es:<br>$\\text{CaO}$.",
+    "pista": "En un compuesto iónico, la suma total de cargas debe ser cero.",
+    "formula": "$$\\text{Ca}^{2+}+\\text{O}^{2-}\\rightarrow\\text{CaO}$$"
+  },
+  {
+    "asignatura": "Química 3º ESO",
+    "id": 3238,
+    "dificultad": "Alta",
+    "bloque": "Tema 4: Tabla periódica y enlace químico básico",
+    "enunciado": "Explica por qué los metales suelen ser buenos conductores de la electricidad.",
+    "resolucion_latex": "Los metales presentan enlace metálico.<br>En este tipo de enlace, los átomos metálicos quedan ordenados formando una estructura en la que algunos electrones pueden moverse con facilidad.<br>Estos electrones móviles permiten el paso de la corriente eléctrica.<br>Por eso los metales, como el cobre o el aluminio, suelen ser buenos conductores de la electricidad.",
+    "pista": "La clave del enlace metálico es que hay electrones que pueden moverse.",
+    "formula": "$$\\text{electrones móviles}\\Rightarrow\\text{conducción eléctrica}$$"
+  },
+  {
+    "asignatura": "Química 3º ESO",
+    "id": 3239,
+    "dificultad": "Alta",
+    "bloque": "Tema 4: Tabla periódica y enlace químico básico",
+    "enunciado": "Compara las propiedades básicas de una sustancia iónica como $\\text{NaCl}$ y una sustancia covalente molecular como $\\text{CO}_2$.",
+    "resolucion_latex": "El $\\text{NaCl}$ es una sustancia iónica. Está formada por iones positivos y negativos ordenados en una red cristalina.<br>Por eso suele tener punto de fusión alto y puede conducir la electricidad cuando está fundida o disuelta en agua.<br><br>El $\\text{CO}_2$ es una sustancia covalente molecular. Está formado por moléculas independientes.<br>Sus fuerzas entre moléculas son más débiles, por lo que suele tener puntos de fusión y ebullición más bajos y normalmente no conduce la electricidad.<br>Por tanto, el tipo de enlace influye mucho en las propiedades de las sustancias.",
+    "pista": "Piensa si las partículas forman una red de iones o moléculas independientes.",
+    "formula": "$$\\text{iónico: red de iones} \\quad ; \\quad \\text{covalente molecular: moléculas}$$"
+  },
+  {
+    "asignatura": "Química 3º ESO",
+    "id": 3240,
+    "dificultad": "Superior",
+    "bloque": "Tema 4: Tabla periódica y enlace químico básico",
+    "enunciado": "Ejercicio trampa: Un alumno dice que el enlace iónico consiste en compartir electrones entre un metal y un no metal. Explica el error.",
+    "resolucion_latex": "El error está en confundir el enlace iónico con el enlace covalente.<br>En el enlace covalente, los átomos comparten electrones.<br>En cambio, en el enlace iónico, un átomo cede electrones y otro los gana. Así se forman iones de carga opuesta que se atraen.<br>Por ejemplo, en $\\text{NaCl}$, el sodio pierde un electrón y forma $\\text{Na}^{+}$, mientras que el cloro gana un electrón y forma $\\text{Cl}^{-}$.<br>Por tanto, el enlace iónico no consiste en compartir electrones, sino en una atracción entre iones.",
+    "pista": "Compartir electrones es covalente; transferir electrones y formar iones es iónico.",
+    "formula": "$$\\text{iónico}=\\text{transferencia de electrones}+\\text{atracción entre iones}$$"
+  },
+  {
+    "asignatura": "Química 3º ESO",
+    "id": 3241,
+    "dificultad": "Básica",
+    "bloque": "Tema 5: Formulación química básica",
+    "enunciado": "Indica cuántos átomos de cada elemento hay en la fórmula $\\text{H}_2\\text{O}$.",
+    "resolucion_latex": "La fórmula $\\text{H}_2\\text{O}$ representa el agua.<br>El subíndice $2$ junto al hidrógeno indica que hay $2$ átomos de hidrógeno.<br>El oxígeno no tiene subíndice, por tanto hay $1$ átomo de oxígeno.<br>Por tanto, en $\\text{H}_2\\text{O}$ hay $2$ átomos de hidrógeno y $1$ átomo de oxígeno.",
+    "pista": "Si un elemento no tiene subíndice, significa que hay un solo átomo.",
+    "formula": "$$\\text{H}_2\\text{O}:\\ 2\\text{ H y }1\\text{ O}$$"
+  },
+  {
+    "asignatura": "Química 3º ESO",
+    "id": 3242,
+    "dificultad": "Básica",
+    "bloque": "Tema 5: Formulación química básica",
+    "enunciado": "Nombra el compuesto $\\text{NaCl}$.",
+    "resolucion_latex": "$\\text{NaCl}$ está formado por sodio ($\\text{Na}$) y cloro ($\\text{Cl}$).<br>Es una sal binaria formada por un metal y un no metal.<br>En las sales binarias, el no metal se nombra con la terminación '-uro'.<br>Por tanto, $\\text{NaCl}$ se llama cloruro de sodio.",
+    "pista": "En una sal binaria, el no metal suele acabar en '-uro'.",
+    "formula": "$$\\text{NaCl}:\\ \\text{cloruro de sodio}$$"
+  },
+  {
+    "asignatura": "Química 3º ESO",
+    "id": 3243,
+    "dificultad": "Básica",
+    "bloque": "Tema 5: Formulación química básica",
+    "enunciado": "Formula el óxido de calcio sabiendo que el calcio forma $\\text{Ca}^{2+}$ y el oxígeno forma $\\text{O}^{2-}$.",
+    "resolucion_latex": "El calcio tiene carga $2+$ y el oxígeno tiene carga $2-$.<br>Como las cargas tienen el mismo valor absoluto, se combinan en proporción $1:1$.<br>Por tanto, la fórmula del óxido de calcio es:<br>$\\text{CaO}$.",
+    "pista": "La fórmula final debe ser eléctricamente neutra.",
+    "formula": "$$\\text{Ca}^{2+}+\\text{O}^{2-}\\rightarrow\\text{CaO}$$"
+  },
+  {
+    "asignatura": "Química 3º ESO",
+    "id": 3244,
+    "dificultad": "Media",
+    "bloque": "Tema 5: Formulación química básica",
+    "enunciado": "Formula el cloruro de magnesio sabiendo que el magnesio forma $\\text{Mg}^{2+}$ y el cloro forma $\\text{Cl}^{-}$.",
+    "resolucion_latex": "El magnesio tiene carga $2+$ y el cloro tiene carga $1-$.<br>Para compensar la carga $+2$ del magnesio, hacen falta dos iones cloruro:<br>$\\text{Mg}^{2+}+2\\text{Cl}^{-}\\rightarrow\\text{MgCl}_2$.<br>Por tanto, la fórmula del cloruro de magnesio es:<br>$\\text{MgCl}_2$.",
+    "pista": "Cruza las cargas para obtener los subíndices y comprueba que la suma total sea cero.",
+    "formula": "$$\\text{Mg}^{2+}+2\\text{Cl}^{-}\\rightarrow\\text{MgCl}_2$$"
+  },
+  {
+    "asignatura": "Química 3º ESO",
+    "id": 3245,
+    "dificultad": "Media",
+    "bloque": "Tema 5: Formulación química básica",
+    "enunciado": "Nombra el compuesto $\\text{FeO}$ usando nomenclatura de Stock, sabiendo que el oxígeno actúa con número de oxidación $-2$.",
+    "resolucion_latex": "El oxígeno actúa con número de oxidación $-2$.<br>En $\\text{FeO}$ hay un átomo de oxígeno, por tanto la carga negativa total es $-2$.<br>Para que el compuesto sea neutro, el hierro debe actuar con número de oxidación $+2$.<br>Por tanto, el nombre es:<br>óxido de hierro(II).",
+    "pista": "En nomenclatura de Stock, el número romano indica el número de oxidación del metal.",
+    "formula": "$$\\text{Fe}^{2+}+\\text{O}^{2-}\\rightarrow\\text{FeO}$$"
+  },
+  {
+    "asignatura": "Química 3º ESO",
+    "id": 3246,
+    "dificultad": "Media",
+    "bloque": "Tema 5: Formulación química básica",
+    "enunciado": "Formula el hidróxido de aluminio sabiendo que el aluminio forma $\\text{Al}^{3+}$ y el grupo hidróxido es $\\text{OH}^{-}$.",
+    "resolucion_latex": "El aluminio tiene carga $3+$ y el grupo hidróxido tiene carga $1-$.<br>Para compensar la carga $+3$ del aluminio, hacen falta tres grupos hidróxido:<br>$\\text{Al}^{3+}+3\\text{OH}^{-}\\rightarrow\\text{Al(OH)}_3$.<br>Por tanto, la fórmula del hidróxido de aluminio es:<br>$\\text{Al(OH)}_3$.",
+    "pista": "Si un grupo poliatómico aparece varias veces, se escribe entre paréntesis.",
+    "formula": "$$\\text{Al}^{3+}+3\\text{OH}^{-}\\rightarrow\\text{Al(OH)}_3$$"
+  },
+  {
+    "asignatura": "Química 3º ESO",
+    "id": 3247,
+    "dificultad": "Alta",
+    "bloque": "Tema 5: Formulación química básica",
+    "enunciado": "Nombra los compuestos $\\text{Cu}_2\\text{O}$ y $\\text{CuO}$ usando nomenclatura de Stock.",
+    "resolucion_latex": "En ambos compuestos, el oxígeno actúa con número de oxidación $-2$.<br><br>Para $\\text{Cu}_2\\text{O}$:<br>Hay un oxígeno con carga $-2$, así que los dos cobres deben sumar $+2$.<br>Cada cobre actúa con $+1$.<br>Nombre: óxido de cobre(I).<br><br>Para $\\text{CuO}$:<br>Hay un oxígeno con carga $-2$, así que el cobre debe actuar con $+2$.<br>Nombre: óxido de cobre(II).",
+    "pista": "El mismo metal puede actuar con distintos números de oxidación.",
+    "formula": "$$\\text{Cu}_2\\text{O}:\\ \\text{Cu(I)} \\quad ; \\quad \\text{CuO}:\\ \\text{Cu(II)}$$"
+  },
+  {
+    "asignatura": "Química 3º ESO",
+    "id": 3248,
+    "dificultad": "Alta",
+    "bloque": "Tema 5: Formulación química básica",
+    "enunciado": "Formula el sulfato de aluminio sabiendo que el aluminio forma $\\text{Al}^{3+}$ y el ion sulfato es $\\text{SO}_4^{2-}$.",
+    "resolucion_latex": "El aluminio tiene carga $3+$ y el sulfato tiene carga $2-$.<br>Buscamos la proporción más pequeña que haga que la suma de cargas sea cero.<br>El mínimo común múltiplo de $3$ y $2$ es $6$.<br>Necesitamos $2$ iones aluminio para sumar $+6$:<br>$2\\cdot(+3)=+6$.<br>Necesitamos $3$ iones sulfato para sumar $-6$:<br>$3\\cdot(-2)=-6$.<br>Por tanto, la fórmula es:<br>$\\text{Al}_2(\\text{SO}_4)_3$.",
+    "pista": "Cuando un ion poliatómico se repite, debes ponerlo entre paréntesis.",
+    "formula": "$$2\\text{Al}^{3+}+3\\text{SO}_4^{2-}\\rightarrow\\text{Al}_2(\\text{SO}_4)_3$$"
+  },
+  {
+    "asignatura": "Química 3º ESO",
+    "id": 3249,
+    "dificultad": "Alta",
+    "bloque": "Tema 5: Formulación química básica",
+    "enunciado": "Nombra el compuesto $\\text{PbO}_2$ usando nomenclatura de Stock.",
+    "resolucion_latex": "El oxígeno actúa con número de oxidación $-2$.<br>En $\\text{PbO}_2$ hay dos átomos de oxígeno, así que la carga total del oxígeno es:<br>$2\\cdot(-2)=-4$.<br>Para que el compuesto sea neutro, el plomo debe actuar con número de oxidación $+4$.<br>Por tanto, el nombre del compuesto es:<br>óxido de plomo(IV).",
+    "pista": "Multiplica el número de oxígenos por $-2$ para calcular la carga total negativa.",
+    "formula": "$$x+2(-2)=0\\Rightarrow x=+4$$"
+  },
+  {
+    "asignatura": "Química 3º ESO",
+    "id": 3250,
+    "dificultad": "Superior",
+    "bloque": "Tema 5: Formulación química básica",
+    "enunciado": "Ejercicio trampa: Un alumno formula el cloruro de calcio como $\\text{CaCl}$ porque solo une los símbolos de calcio y cloro una vez. Explica el error y escribe la fórmula correcta.",
+    "resolucion_latex": "El error está en unir los símbolos sin tener en cuenta las cargas de los iones.<br>El calcio forma $\\text{Ca}^{2+}$ y el cloro forma $\\text{Cl}^{-}$.<br>Para compensar la carga $+2$ del calcio, hacen falta dos iones cloruro:<br>$\\text{Ca}^{2+}+2\\text{Cl}^{-}\\rightarrow\\text{CaCl}_2$.<br>Por tanto, la fórmula correcta es $\\text{CaCl}_2$, no $\\text{CaCl}$.",
+    "pista": "No basta con unir símbolos: hay que compensar cargas.",
+    "formula": "$$\\text{Ca}^{2+}+2\\text{Cl}^{-}\\rightarrow\\text{CaCl}_2$$"
+  },
+  {
+    "asignatura": "Química 3º ESO",
+    "id": 3251,
+    "dificultad": "Básica",
+    "bloque": "Tema 6: Cambios químicos y reacciones químicas",
+    "enunciado": "Indica si los siguientes procesos son cambios físicos o químicos: derretir hielo, quemar papel, evaporar agua y oxidarse un clavo de hierro.",
+    "resolucion_latex": "Derretir hielo es un cambio físico, porque cambia el estado del agua, pero sigue siendo agua.<br>Quemar papel es un cambio químico, porque se forman sustancias nuevas.<br>Evaporar agua es un cambio físico, porque el agua pasa de líquido a gas, pero sigue siendo agua.<br>Oxidarse un clavo de hierro es un cambio químico, porque se forma óxido de hierro.<br>Por tanto:<br>Cambios físicos: derretir hielo y evaporar agua.<br>Cambios químicos: quemar papel y oxidarse un clavo.",
+    "pista": "En un cambio químico aparecen sustancias nuevas; en un cambio físico no.",
+    "formula": "$$\\text{cambio químico}\\Rightarrow\\text{sustancias nuevas}$$"
+  },
+  {
+    "asignatura": "Química 3º ESO",
+    "id": 3252,
+    "dificultad": "Básica",
+    "bloque": "Tema 6: Cambios químicos y reacciones químicas",
+    "enunciado": "Identifica los reactivos y los productos en la reacción: $\\text{CH}_4+2\\text{O}_2\\rightarrow\\text{CO}_2+2\\text{H}_2\\text{O}$.",
+    "resolucion_latex": "En una reacción química, los reactivos aparecen a la izquierda de la flecha y los productos a la derecha.<br>En esta reacción:<br>$\\text{CH}_4+2\\text{O}_2$ son los reactivos.<br>$\\text{CO}_2+2\\text{H}_2\\text{O}$ son los productos.<br>Por tanto:<br>Reactivos: metano y oxígeno.<br>Productos: dióxido de carbono y agua.",
+    "pista": "La flecha separa lo que reacciona de lo que se forma.",
+    "formula": "$$\\text{reactivos}\\rightarrow\\text{productos}$$"
+  },
+  {
+    "asignatura": "Química 3º ESO",
+    "id": 3253,
+    "dificultad": "Básica",
+    "bloque": "Tema 6: Cambios químicos y reacciones químicas",
+    "enunciado": "Ajusta la reacción química: $\\text{H}_2+\\text{O}_2\\rightarrow\\text{H}_2\\text{O}$.",
+    "resolucion_latex": "Contamos átomos en ambos lados.<br>En los reactivos hay $2$ hidrógenos y $2$ oxígenos.<br>En el producto $\\text{H}_2\\text{O}$ hay $2$ hidrógenos y $1$ oxígeno.<br>Para tener $2$ oxígenos en productos, ponemos un $2$ delante del agua:<br>$\\text{H}_2+\\text{O}_2\\rightarrow2\\text{H}_2\\text{O}$.<br>Ahora hay $4$ hidrógenos en productos, así que ponemos un $2$ delante del hidrógeno:<br>$2\\text{H}_2+\\text{O}_2\\rightarrow2\\text{H}_2\\text{O}$.<br>La reacción ajustada es:<br>$2\\text{H}_2+\\text{O}_2\\rightarrow2\\text{H}_2\\text{O}$.",
+    "pista": "Ajustar significa tener el mismo número de átomos de cada elemento a ambos lados.",
+    "formula": "$$2\\text{H}_2+\\text{O}_2\\rightarrow2\\text{H}_2\\text{O}$$"
+  },
+  {
+    "asignatura": "Química 3º ESO",
+    "id": 3254,
+    "dificultad": "Media",
+    "bloque": "Tema 6: Cambios químicos y reacciones químicas",
+    "enunciado": "Ajusta la reacción: $\\text{Fe}+\\text{O}_2\\rightarrow\\text{Fe}_2\\text{O}_3$.",
+    "resolucion_latex": "Queremos tener el mismo número de átomos a ambos lados.<br>El oxígeno aparece como $\\text{O}_2$ en reactivos y como $\\text{O}_3$ en productos. Buscamos un múltiplo común de $2$ y $3$, que es $6$.<br>Colocamos $3\\text{O}_2$ en reactivos y $2\\text{Fe}_2\\text{O}_3$ en productos:<br>$\\text{Fe}+3\\text{O}_2\\rightarrow2\\text{Fe}_2\\text{O}_3$.<br>Ahora hay $4$ átomos de hierro en productos, así que ponemos $4\\text{Fe}$ en reactivos:<br>$4\\text{Fe}+3\\text{O}_2\\rightarrow2\\text{Fe}_2\\text{O}_3$.<br>La reacción ajustada es:<br>$4\\text{Fe}+3\\text{O}_2\\rightarrow2\\text{Fe}_2\\text{O}*3$.",
+    "pista": "Ajusta primero el oxígeno buscando un múltiplo común entre $2$ y $3$.",
+    "formula": "$$4\\text{Fe}+3\\text{O}*2\\rightarrow2\\text{Fe}*2\\text{O}*3$$"
+  },
+  {
+    "asignatura": "Química 3º ESO",
+    "id": 3255,
+    "dificultad": "Media",
+    "bloque": "Tema 6: Cambios químicos y reacciones químicas",
+    "enunciado": "Según la ley de conservación de la masa, si reaccionan $12\\ \\text{g}$ de carbono con $32\\ \\text{g}$ de oxígeno, ¿qué masa de dióxido de carbono se forma?",
+    "resolucion_latex": "La ley de conservación de la masa dice que la masa total de los reactivos es igual a la masa total de los productos.<br>Sumamos las masas de los reactivos:<br>$12\\ \\text{g}+32\\ \\text{g}=44\\ \\text{g}$.<br>Por tanto, se forman $44\\ \\text{g}$ de dióxido de carbono.",
+    "pista": "En una reacción química, la masa no desaparece: se conserva.",
+    "formula": "$$m*{reactivos}=m*{productos}$$"
+  },
+  {
+    "asignatura": "Química 3º ESO",
+    "id": 3256,
+    "dificultad": "Media",
+    "bloque": "Tema 6: Cambios químicos y reacciones químicas",
+    "enunciado": "En una reacción, $4\\ \\text{g}$ de hidrógeno reaccionan completamente con $32\\ \\text{g}$ de oxígeno para formar agua. ¿Qué masa de agua se obtiene?",
+    "resolucion_latex": "Aplicamos la ley de conservación de la masa.<br>La masa total de los reactivos es:<br>$4\\ \\text{g}+32\\ \\text{g}=36\\ \\text{g}$.<br>Si reaccionan completamente, toda esa masa pasa a formar el producto.<br>Por tanto, se obtienen $36\\ \\text{g}$ de agua.",
+    "pista": "Suma las masas de los reactivos si se transforman completamente en el producto.",
+    "formula": "$$m*{reactivos}=m*{productos}$$"
+  },
+  {
+    "asignatura": "Química 3º ESO",
+    "id": 3257,
+    "dificultad": "Alta",
+    "bloque": "Tema 6: Cambios químicos y reacciones químicas",
+    "enunciado": "Ajusta la combustión del metano: $\\text{CH}_4+\\text{O}_2\\rightarrow\\text{CO}_2+\\text{H}_2\\text{O}$.",
+    "resolucion_latex": "Primero ajustamos el carbono. Hay $1$ carbono en $\\text{CH}_4$ y $1$ en $\\text{CO}_2$, así que ya está ajustado.<br>Ahora ajustamos el hidrógeno. En $\\text{CH}_4$ hay $4$ hidrógenos, así que ponemos $2$ delante del agua:<br>$\\text{CH}_4+\\text{O}_2\\rightarrow\\text{CO}_2+2\\text{H}_2\\text{O}$.<br>Ahora contamos oxígenos en productos:<br>$\\text{CO}_2$ tiene $2$ oxígenos y $2\\text{H}_2\\text{O}$ tiene $2$ oxígenos más. En total hay $4$ oxígenos.<br>Por tanto, ponemos $2$ delante del oxígeno en reactivos:<br>$\\text{CH}_4+2\\text{O}_2\\rightarrow\\text{CO}_2+2\\text{H}_2\\text{O}$.<br>La reacción ajustada es:<br>$\\text{CH}_4+2\\text{O}_2\\rightarrow\\text{CO}_2+2\\text{H}_2\\text{O}$.",
+    "pista": "En combustiones, ajusta primero carbono, luego hidrógeno y deja oxígeno para el final.",
+    "formula": "$$\\text{CH}_4+2\\text{O}_2\\rightarrow\\text{CO}_2+2\\text{H}*2\\text{O}$$"
+  },
+  {
+    "asignatura": "Química 3º ESO",
+    "id": 3258,
+    "dificultad": "Alta",
+    "bloque": "Tema 6: Cambios químicos y reacciones químicas",
+    "enunciado": "El hidrógeno y el oxígeno reaccionan para formar agua en la proporción $1:8$ en masa. ¿Qué masa de oxígeno reaccionará con $5\\ \\text{g}$ de hidrógeno?",
+    "resolucion_latex": "La proporción en masa hidrógeno:oxígeno es $1:8$.<br>Esto significa que por cada $1\\ \\text{g}$ de hidrógeno reaccionan $8\\ \\text{g}$ de oxígeno.<br>Si tenemos $5\\ \\text{g}$ de hidrógeno, multiplicamos por $8$:<br>$5\\cdot 8=40\\ \\text{g}$.<br>Por tanto, reaccionarán $40\\ \\text{g}$ de oxígeno.",
+    "pista": "Usa una proporción directa entre las masas que reaccionan.",
+    "formula": "$$\\frac{m_H}{m_O}=\\frac{1}{8}$$"
+  },
+  {
+    "asignatura": "Química 3º ESO",
+    "id": 3259,
+    "dificultad": "Alta",
+    "bloque": "Tema 6: Cambios químicos y reacciones químicas",
+    "enunciado": "Para formar sulfuro de hierro reaccionan hierro y azufre en la proporción $7:4$ en masa. Si reaccionan $21\\ \\text{g}$ de hierro, calcula la masa de azufre necesaria y la masa de sulfuro de hierro formada.",
+    "resolucion_latex": "La proporción hierro:azufre es $7:4$.<br>Esto significa que por cada $7\\ \\text{g}$ de hierro reaccionan $4\\ \\text{g}$ de azufre.<br>Si tenemos $21\\ \\text{g}$ de hierro:<br>$21\\ \\text{g}$ es $3$ veces $7\\ \\text{g}$.<br>Entonces la masa de azufre también será $3$ veces $4\\ \\text{g}$:<br>$3\\cdot 4=12\\ \\text{g}$.<br><br>La masa del producto será la suma de las masas que reaccionan:<br>$21+12=33\\ \\text{g}$.<br>Se necesitan $12\\ \\text{g}$ de azufre y se forman $33\\ \\text{g}$ de sulfuro de hierro.",
+    "pista": "Mantén la proporción entre las masas y aplica conservación de la masa.",
+    "formula": "$$\\frac{m*{Fe}}{m_S}=\\frac{7}{4}$$"
+  },
+  {
+    "asignatura": "Química 3º ESO",
+    "id": 3260,
+    "dificultad": "Superior",
+    "bloque": "Tema 6: Cambios químicos y reacciones químicas",
+    "enunciado": "Ejercicio trampa: Un alumno ajusta una reacción cambiando los subíndices de las fórmulas, por ejemplo cambiando $\\text{H}_2\\text{O}$ por $\\text{H}_2\\text{O}_2$. Explica el error.",
+    "resolucion_latex": "El error está en cambiar la fórmula de una sustancia para ajustar la reacción.<br>Los subíndices forman parte de la identidad de la sustancia. Si cambiamos $\\text{H}_2\\text{O}$ por $\\text{H}_2\\text{O}_2$, ya no tenemos agua, sino peróxido de hidrógeno, que es otra sustancia.<br>Para ajustar una reacción química solo se pueden cambiar los coeficientes que van delante de las fórmulas.<br>Por ejemplo:<br>$2\\text{H}_2+\\text{O}_2\\rightarrow2\\text{H}_2\\text{O}$.<br>En este caso se conserva la fórmula del agua y solo se añaden coeficientes.",
+    "pista": "Los coeficientes se pueden cambiar; los subíndices no.",
+    "formula": "$$\\text{coeficientes: sí} \\quad ; \\quad \\text{subíndices: no}$$"
+  }
+]

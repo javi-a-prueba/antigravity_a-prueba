@@ -1,0 +1,602 @@
+[
+  {
+    "asignatura": "Matemáticas 2º ESO",
+    "id": 20101,
+    "dificultad": "Básica",
+    "bloque": "Tema 1: Números y operaciones",
+    "enunciado": "Calcula el resultado de la siguiente operación combinada con números enteros prestando atención a la regla de los signos: $-5 + 3 \\cdot (4 - 7) - (-2)$",
+    "resolucion_latex": "Siguiendo la jerarquía de las operaciones (PEMDAS), resolvemos primero el interior del paréntesis:<br>$-5 + 3 \\cdot (-3) - (-2)$<br><br>A continuación, realizamos la multiplicación:<br>$-5 + (-9) - (-2)$<br><br>Finalmente, quitamos los paréntesis aplicando la regla de los signos ($+ \\cdot - = -$ y $- \\cdot - = +$) y realizamos las sumas y restas:<br>$-5 - 9 + 2 = -14 + 2 = -12$.",
+    "pista": "Recuerda la jerarquía: primero el paréntesis, luego la multiplicación y al final las sumas y restas. ¡Cuidado con el menos delante de un menos, que se convierte en un más!",
+    "formula": "$$\\text{Jerarquía: } () \\rightarrow \\times / \\div \\rightarrow + / - \\quad ; \\quad - \\cdot - = +$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º ESO",
+    "id": 20102,
+    "dificultad": "Básica",
+    "bloque": "Tema 1: Números y operaciones",
+    "enunciado": "Realiza la siguiente suma y resta de fracciones, dando el resultado como fracción irreducible: $\\frac{3}{4} - \\frac{1}{6} + \\frac{5}{2}$",
+    "resolucion_latex": "Para sumar o restar fracciones con distinto denominador, necesitamos calcular el mínimo común múltiplo (m.c.m.) de los denominadores (4, 6 y 2).<br>Factorizamos: $4 = 2^2$, $6 = 2 \\cdot 3$, $2 = 2$.<br>El m.c.m. es $2^2 \\cdot 3 = 12$.<br><br>Ajustamos los numeradores dividiendo 12 entre el denominador original y multiplicando por el numerador:<br>$\\frac{3 \\cdot 3}{12} - \\frac{1 \\cdot 2}{12} + \\frac{5 \\cdot 6}{12} = \\frac{9}{12} - \\frac{2}{12} + \\frac{30}{12}$<br><br>Sumamos y restamos los numeradores:<br>$\\frac{9 - 2 + 30}{12} = \\frac{37}{12}$.<br><br>Como 37 es un número primo y no comparte divisores con 12, la fracción ya es irreducible.",
+    "pista": "No puedes sumar trozos de pizza de distinto tamaño. Calcula el mínimo común múltiplo (m.c.m.) de los números de abajo para poner a todas las fracciones el mismo denominador.",
+    "formula": "$$\\frac{a}{b} \\pm \\frac{c}{d} = \\frac{a \\cdot d \\pm c \\cdot b}{b \\cdot d} \\text{ (o usando m.c.m.)}$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º ESO",
+    "id": 20103,
+    "dificultad": "Básica",
+    "bloque": "Tema 1: Números y operaciones",
+    "enunciado": "Un kilo de manzanas cuesta 1,45 €. Si compramos 2,4 kg en la frutería y pagamos con un billete de 5 €, ¿cuánto dinero nos devolverán?",
+    "resolucion_latex": "Primero calculamos el coste total de las manzanas multiplicando el precio de un kilo por los kilos comprados:<br>Coste = $1,45 \\cdot 2,4 = 3,48$ €.<br><br>Para saber el cambio, restamos el coste al valor del billete que entregamos:<br>Cambio = $5,00 - 3,48 = 1,52$ €.<br><br>Nos devolverán 1,52 €.",
+    "pista": "Plantea el problema en dos pasos: primero haz la multiplicación con decimales para saber la cuenta de la frutería, y luego una resta para saber las vueltas.",
+    "formula": "$$\\text{Devolución} = \\text{Dinero entregado} - (\\text{Precio unidad} \\cdot \\text{Cantidad})$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º ESO",
+    "id": 20104,
+    "dificultad": "Media",
+    "bloque": "Tema 1: Números y operaciones",
+    "enunciado": "Resuelve aplicando la jerarquía de las operaciones y las propiedades de las potencias y raíces: $(-2)^3 + \\sqrt{81} : (-3) - (-5)^2$",
+    "resolucion_latex": "Por la jerarquía (PEMDAS), primero calculamos las potencias y las raíces:<br>$(-2)^3 = -8$ (base negativa y exponente impar, resultado negativo).<br>$\\sqrt{81} = 9$<br>$(-5)^2 = 25$ (base negativa y exponente par, resultado positivo).<br><br>Sustituimos en la operación original:<br>$-8 + 9 : (-3) - 25$<br><br>A continuación hacemos las divisiones o multiplicaciones:<br>$9 : (-3) = -3$<br><br>Sustituimos y resolvemos las sumas y restas:<br>$-8 + (-3) - 25 = -8 - 3 - 25 = -36$.",
+    "pista": "Si un número negativo va entre paréntesis y está elevado a un número par, se vuelve positivo. Si está elevado a un número impar, sigue siendo negativo. Resuelve raíces y potencias antes de dividir.",
+    "formula": "$$(-a)^{\\text{par}} = +a^{\\text{par}} \\quad ; \\quad (-a)^{\\text{impar}} = -a^{\\text{impar}}$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º ESO",
+    "id": 20105,
+    "dificultad": "Media",
+    "bloque": "Tema 1: Números y operaciones",
+    "enunciado": "Calcula la siguiente operación combinada de fracciones y simplifica el resultado al máximo: $\\left( \\frac{2}{3} - \\frac{1}{2} \\right) : \\frac{5}{6} + \\frac{1}{4} \\cdot \\frac{2}{3}$",
+    "resolucion_latex": "1) Primero resolvemos el paréntesis (m.c.m. de 3 y 2 es 6):<br>$\\frac{2}{3} - \\frac{1}{2} = \\frac{4}{6} - \\frac{3}{6} = \\frac{1}{6}$<br><br>2) La operación nos queda: $\\frac{1}{6} : \\frac{5}{6} + \\frac{1}{4} \\cdot \\frac{2}{3}$<br><br>3) Hacemos la división (multiplicando en cruz) y la multiplicación (en línea recta):<br>$\\frac{1}{6} : \\frac{5}{6} = \\frac{1 \\cdot 6}{6 \\cdot 5} = \\frac{6}{30} = \\frac{1}{5}$<br>$\\frac{1}{4} \\cdot \\frac{2}{3} = \\frac{2}{12} = \\frac{1}{6}$<br><br>4) Hacemos la suma final (m.c.m. de 5 y 6 es 30):<br>$\\frac{1}{5} + \\frac{1}{6} = \\frac{6}{30} + \\frac{5}{30} = \\frac{11}{30}$. Fracción irreducible.",
+    "pista": "Divide y vencerás. Haz primero la resta del paréntesis. Después, en el nuevo escenario, tienes una división y una multiplicación; haz ambas de forma independiente y suma los dos resultados finales.",
+    "formula": "$$\\frac{a}{b} : \\frac{c}{d} = \\frac{a \\cdot d}{b \\cdot c}$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º ESO",
+    "id": 20106,
+    "dificultad": "Media",
+    "bloque": "Tema 1: Números y operaciones",
+    "enunciado": "Pasa a fracción los números decimales $0,2$ y $1,333...$ (periódico puro) y súmalos expresando el resultado como fracción irreducible.",
+    "resolucion_latex": "Primero pasamos los decimales a fracción (fracción generatriz):<br>Decimal exacto: $0,2 = \\frac{2}{10} = \\frac{1}{5}$.<br>Decimal periódico puro: $1,333... = 1,\\widehat{3} = \\frac{13 - 1}{9} = \\frac{12}{9}$. Simplificando entre 3 nos da $\\frac{4}{3}$.<br><br>Ahora realizamos la suma de las dos fracciones:<br>$\\frac{1}{5} + \\frac{4}{3}$<br><br>Calculamos el m.c.m. de 5 y 3, que es 15:<br>$\\frac{3}{15} + \\frac{20}{15} = \\frac{23}{15}$.<br>Como 23 es un número primo, la fracción es irreducible.",
+    "pista": "No intentes sumar los decimales directamente, perderías la precisión del infinito del periodo. Convierte cada uno a fracción por sus propias reglas y luego realiza una suma de fracciones normal.",
+    "formula": "$$\\text{P. Puro} = \\frac{\\text{Número sin coma} - \\text{Parte no periódica}}{99...9}$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º ESO",
+    "id": 20107,
+    "dificultad": "Alta",
+    "bloque": "Tema 1: Números y operaciones",
+    "enunciado": "Un ciclista recorre por la mañana $\\frac{1}{3}$ de un trayecto. Por la tarde, recorre $\\frac{2}{5}$ de lo que le quedaba todavía. Si al final del día aún le faltan 24 km para llegar a su destino, ¿cuántos kilómetros tiene el trayecto total?",
+    "resolucion_latex": "Calculamos qué parte del camino le va quedando en cada paso.<br>Por la mañana recorre $\\frac{1}{3}$, por lo tanto le quedan sin recorrer $\\frac{2}{3}$.<br><br>Por la tarde recorre $\\frac{2}{5}$ de lo que le quedaba:<br>$\\frac{2}{5} \\text{ de } \\frac{2}{3} = \\frac{2}{5} \\cdot \\frac{2}{3} = \\frac{4}{15}$ del trayecto total.<br><br>Sumamos lo recorrido en total:<br>$\\frac{1}{3} + \\frac{4}{15} = \\frac{5}{15} + \\frac{4}{15} = \\frac{9}{15}$. Simplificando $\\Rightarrow \\frac{3}{5}$ recorridos en total.<br><br>Si ha recorrido $\\frac{3}{5}$, le faltan por recorrer $\\frac{2}{5}$ del camino.<br>El enunciado nos dice que esa fracción sobrante equivale a 24 km:<br>$\\frac{2}{5} \\text{ de } X = 24 \\Rightarrow 2X = 24 \\cdot 5 \\Rightarrow 2X = 120 \\Rightarrow X = 60$ km.<br>El trayecto total tiene 60 km.",
+    "pista": "Mucho ojo con la trampa del lenguaje: por la tarde no recorre 2/5 del total, sino 2/5 de lo que le sobró de la mañana. Para calcular una 'fracción de una fracción', multiplícalas.",
+    "formula": "$$\\frac{a}{b} \\text{ de } \\frac{c}{d} = \\frac{a \\cdot c}{b \\cdot d}$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º ESO",
+    "id": 20108,
+    "dificultad": "Alta",
+    "bloque": "Tema 1: Números y operaciones",
+    "enunciado": "Simplifica la siguiente expresión descomponiendo los números en factores primos y expresando el resultado como una única potencia: $\\frac{8^2 \\cdot 4^{-3}}{2^5 \\cdot 16^{-2}}$",
+    "resolucion_latex": "Descomponemos todas las bases en potencias de 2:<br>$8 = 2^3 \\Rightarrow 8^2 = (2^3)^2 = 2^6$<br>$4 = 2^2 \\Rightarrow 4^{-3} = (2^2)^{-3} = 2^{-6}$<br>$16 = 2^4 \\Rightarrow 16^{-2} = (2^4)^{-2} = 2^{-8}$<br><br>Sustituimos en la fracción original:<br>$\\frac{2^6 \\cdot 2^{-6}}{2^5 \\cdot 2^{-8}}$<br><br>Operamos el numerador (sumando exponentes): $2^{6 + (-6)} = 2^0 = 1$.<br>Operamos el denominador (sumando exponentes): $2^{5 + (-8)} = 2^{-3}$.<br><br>Nos queda: $\\frac{1}{2^{-3}}$. Para pasarlo al numerador y volver el exponente positivo, le damos la vuelta:<br>$2^3 = 8$.",
+    "pista": "El 8, el 4 y el 16 son familia del 2. Cámbialos todos a base 2 (por ejemplo, el 8 cámbialo por $2^3$) y usa la propiedad de 'potencia de una potencia' para multiplicar sus exponentes.",
+    "formula": "$$(a^n)^m = a^{n \\cdot m}$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º ESO",
+    "id": 20109,
+    "dificultad": "Alta",
+    "bloque": "Tema 1: Números y operaciones",
+    "enunciado": "Calcula el resultado del siguiente 'castillo de fracciones' simplificando paso a paso: $\\frac{1 - \\frac{1}{3}}{1 + \\frac{1}{1 - \\frac{1}{2}}}$",
+    "resolucion_latex": "Resolvemos el castillo desde la parte más baja hacia arriba.<br><br>1) Resta del denominador inferior: $1 - \\frac{1}{2} = \\frac{2}{2} - \\frac{1}{2} = \\frac{1}{2}$.<br>La fracción de abajo queda: $\\frac{1}{\\frac{1}{2}}$.<br><br>2) Dividir un número entre una fracción es multiplicarlo por su inversa: $\\frac{1}{\\frac{1}{2}} = 1 \\cdot \\frac{2}{1} = 2$.<br>El denominador principal queda ahora como: $1 + 2 = 3$.<br><br>3) Ahora resolvemos el numerador principal:<br>$1 - \\frac{1}{3} = \\frac{3}{3} - \\frac{1}{3} = \\frac{2}{3}$.<br><br>4) Juntamos numerador y denominador finales:<br>$\\frac{\\frac{2}{3}}{3} = \\frac{2}{3} : 3 = \\frac{2}{3 \\cdot 3} = \\frac{2}{9}$.",
+    "pista": "No te asustes por el tamaño. En los castillos de fracciones siempre tienes que empezar a resolver por el \"piso\" más pequeño que esté más abajo del todo e ir subiendo nivel a nivel.",
+    "formula": "$$\\frac{a}{\\frac{b}{c}} = a \\cdot \\frac{c}{b}$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º ESO",
+    "id": 20110,
+    "dificultad": "Superior",
+    "bloque": "Tema 1: Números y operaciones",
+    "enunciado": "Ejercicio Trampa: Un alumno en un examen de recuperación calcula la potencia $-2^4$ y escribe como resultado $+16$, justificando que 'la regla dice que toda base negativa elevada a un exponente par siempre da un resultado positivo'. El profesor le pone un 0 en el ejercicio. Explica el grave error conceptual que ha cometido con la notación matemática y da el resultado verdadero.",
+    "resolucion_latex": "El alumno ha cometido un error conceptual al no diferenciar la expresión $(-2)^4$ de la expresión $-2^4$.<br><br>1. En la expresión $(-2)^4$, el paréntesis indica que el signo negativo forma parte de la base. Por tanto, se multiplica la base negativa cuatro veces: $(-2) \\cdot (-2) \\cdot (-2) \\cdot (-2) = +16$. Aquí sí aplica la regla del exponente par.<br><br>2. En la expresión de su examen, $-2^4$, **no hay paréntesis**. Esto significa, por la jerarquía de las matemáticas, que el exponente 4 SOLO afecta al número 2, no al signo negativo que tiene delante. El signo menos se mantiene a la espera como si fuera una multiplicación por $-1$.<br>El cálculo real es: $-(2 \\cdot 2 \\cdot 2 \\cdot 2) = -(16) = -16$.<br><br>El profesor tiene razón: el resultado correcto es $-16$.",
+    "pista": "Para que un signo menos se vea afectado por una potencia, tiene que estar metido dentro del mismo \"coche\" (un paréntesis) que el número. Si no hay paréntesis, el menos se queda esperando fuera.",
+    "formula": "$$-a^n \\neq (-a)^n \\text{ (si n es par)}$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º ESO",
+    "id": 20201,
+    "dificultad": "Básica",
+    "bloque": "Tema 2: Proporcionalidad y porcentajes",
+    "enunciado": "En una frutería, 3 kg de naranjas cuestan 4,50 €. ¿Cuánto costarán 8 kg de esas mismas naranjas?",
+    "resolucion_latex": "Es un problema de proporcionalidad directa (a más kilos, más dinero).<br>Aplicamos una regla de tres simple directa:<br>$3 \\text{ kg} \\longrightarrow 4,50$ €<br>$8 \\text{ kg} \\longrightarrow x$ €<br><br>$x = \\frac{8 \\cdot 4,50}{3} = \\frac{36}{3} = 12$ €.<br>Los 8 kg costarán 12 €.",
+    "pista": "Aplica una regla de tres directa. Multiplica en cruz los datos que tienes y divide por el número que se queda solo.",
+    "formula": "$$x = \\frac{b \\cdot c}{a}$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º ESO",
+    "id": 20202,
+    "dificultad": "Básica",
+    "bloque": "Tema 2: Proporcionalidad y porcentajes",
+    "enunciado": "Un equipo de fútbol ha ganado el 60% de los 35 partidos que ha jugado esta temporada. ¿Cuántos partidos ha ganado?",
+    "resolucion_latex": "Para calcular el porcentaje de una cantidad, multiplicamos la cantidad por el porcentaje y dividimos entre 100.<br><br>$60\\% \\text{ de } 35 = \\frac{60 \\cdot 35}{100} = \\frac{2100}{100} = 21$.<br>El equipo ha ganado 21 partidos.",
+    "pista": "El porcentaje es solo una fracción con denominador 100. Multiplica el número total por 60 y divídelo entre 100.",
+    "formula": "$$\\text{Parte} = \\text{Total} \\cdot \\frac{\\%}{100}$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º ESO",
+    "id": 20203,
+    "dificultad": "Básica",
+    "bloque": "Tema 2: Proporcionalidad y porcentajes",
+    "enunciado": "Cuatro obreros tardan 6 días en levantar un muro. ¿Cuántos días tardarían en hacer el mismo trabajo 3 obreros?",
+    "resolucion_latex": "Es un problema de proporcionalidad inversa (a menos obreros, más días tardarán).<br>Regla de tres inversa:<br>$4 \\text{ obreros} \\longrightarrow 6 \\text{ días}$<br>$3 \\text{ obreros} \\longrightarrow x \\text{ días}$<br><br>En la inversa se multiplica en línea recta:<br>$x = \\frac{4 \\cdot 6}{3} = \\frac{24}{3} = 8$ días.<br>Tardarán 8 días.",
+    "pista": "¡Cuidado! Si hay menos trabajadores tardarán MÁS tiempo. Es una regla de tres inversa, así que no multipliques en cruz, multiplica en línea recta (los dos de arriba) y divide por el de abajo.",
+    "formula": "$$x = \\frac{a \\cdot b}{c} \\text{ (Inversa)}$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º ESO",
+    "id": 20204,
+    "dificultad": "Media",
+    "bloque": "Tema 2: Proporcionalidad y porcentajes",
+    "enunciado": "Un ordenador cuesta 450 € sin IVA. Si el IVA es del 21%, ¿cuál será el precio final que tendremos que pagar?",
+    "resolucion_latex": "Calculamos el aumento porcentual. Hay dos formas, calculando el IVA y sumándolo, o usando el índice de variación.<br>Método índice de variación: Pagar el 100% más el 21% de IVA significa pagar el 121% del precio original.<br>Índice de variación = $1 + 0,21 = 1,21$.<br><br>Precio final = $450 \\cdot 1,21 = 544,50$ €.<br>Tendremos que pagar 544,50 €.",
+    "pista": "Puedes calcular el 21% de 450 y sumárselo al precio inicial. O, para ir más rápido, multiplicar directamente 450 por 1,21.",
+    "formula": "$$\\text{Precio final} = \\text{Precio inicial} \\cdot \\left(1 + \\frac{\\text{IVA}}{100}\\right)$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º ESO",
+    "id": 20205,
+    "dificultad": "Media",
+    "bloque": "Tema 2: Proporcionalidad y porcentajes",
+    "enunciado": "He comprado unas zapatillas en rebajas por 64 €. Si tenían un descuento del 20%, ¿cuál era su precio original antes de las rebajas?",
+    "resolucion_latex": "Si me han descontado un 20%, significa que he pagado el 80% del precio original.<br>Llamamos $x$ al precio original.<br>El 80% de $x = 64$ €.<br>$\\frac{80}{100} \\cdot x = 64 \\Rightarrow 0,8x = 64$.<br><br>Despejamos $x$:<br>$x = \\frac{64}{0,8} = 80$ €.<br>El precio original era 80 €.",
+    "pista": "Si te rebajan un 20%, tú solo pagas el 80% del producto. ¡Cuidado! No puedes calcular el 20% de 64 y sumarlo, porque el porcentaje se aplica sobre el precio antiguo desconocido, no sobre el nuevo.",
+    "formula": "$$\\text{Precio inicial} = \\frac{\\text{Precio final}}{\\text{Índice de variación}}$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º ESO",
+    "id": 20206,
+    "dificultad": "Media",
+    "bloque": "Tema 2: Proporcionalidad y porcentajes",
+    "enunciado": "Un abuelo quiere repartir 450 € entre sus tres nietos de 8, 12 y 16 años de forma directamente proporcional a sus edades. ¿Cuánto dinero recibirá cada uno?",
+    "resolucion_latex": "Es un reparto directamente proporcional.<br>Sumamos las edades totales: $8 + 12 + 16 = 36$ años.<br><br>Calculamos la constante de proporcionalidad (a cuánto dinero toca cada 'año' de edad):<br>$k = \\frac{\\text{Total dinero}}{\\text{Total edades}} = \\frac{450}{36} = 12,5$ € por año.<br><br>Multiplicamos la constante por la edad de cada nieto:<br>Nieto 1 (8 años): $8 \\cdot 12,5 = 100$ €.<br>Nieto 2 (12 años): $12 \\cdot 12,5 = 150$ €.<br>Nieto 3 (16 años): $16 \\cdot 12,5 = 200$ €.<br><br>Comprobación: $100 + 150 + 200 = 450$ €.",
+    "pista": "Suma todas las edades para saber las 'partes' totales que hay. Divide el dinero entre esas partes para saber a cuánto sale cada parte, y dáselas a cada nieto según su edad.",
+    "formula": "$$k = \\frac{\\text{Cantidad a repartir}}{a + b + c} \\quad ; \\quad P_a = a \\cdot k$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º ESO",
+    "id": 20207,
+    "dificultad": "Alta",
+    "bloque": "Tema 2: Proporcionalidad y porcentajes",
+    "enunciado": "Una chaqueta costaba 50 €. Primero se le aplicó un aumento del 10% por la inflación, y meses después, en el Black Friday, se le aplicó un descuento del 10%. ¿Cuál es el precio final de la chaqueta? ¿Ha vuelto a costar 50 €?",
+    "resolucion_latex": "Calculamos los porcentajes de forma encadenada (nunca se suman o restan los porcentajes directamente).<br>1) Aumento del 10%: El índice de variación es $1 + 0,10 = 1,10$.<br>Precio tras el aumento = $50 \\cdot 1,10 = 55$ €.<br><br>2) Descuento del 10%: Se aplica sobre el NUEVO precio (55 €). El índice de variación es $1 - 0,10 = 0,90$.<br>Precio final = $55 \\cdot 0,90 = 49,50$ €.<br><br>El precio final es 49,50 €. No cuesta lo mismo porque el descuento del 10% se hizo sobre una cantidad mayor (55), por lo que se descuenta más dinero del que se sumó inicialmente.",
+    "pista": "¡Nunca sumes ni restes porcentajes de golpe! Aplica el primer porcentaje al precio original. Luego, aplica el segundo porcentaje al nuevo resultado que te ha dado.",
+    "formula": "$$\\text{Precio Final} = P_i \\cdot IV_1 \\cdot IV_2$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º ESO",
+    "id": 20208,
+    "dificultad": "Alta",
+    "bloque": "Tema 2: Proporcionalidad y porcentajes",
+    "enunciado": "En un campamento, 15 niños tienen comida para 12 días. Si de repente se apuntan 3 niños más al campamento, ¿para cuántos días les llegará la comida?",
+    "resolucion_latex": "A más niños, la comida durará menos días. Es proporcionalidad inversa.<br>Niños iniciales = 15.<br>Niños finales = $15 + 3 = 18$ niños.<br><br>Planteamos la regla de tres inversa:<br>$15 \\text{ niños} \\longrightarrow 12 \\text{ días}$<br>$18 \\text{ niños} \\longrightarrow x \\text{ días}$<br><br>Multiplicamos en línea recta:<br>$x = \\frac{15 \\cdot 12}{18} = \\frac{180}{18} = 10$ días.<br>La comida les durará solo 10 días.",
+    "pista": "Suma los niños nuevos a los que ya había para tener el total real. Al ser comida, cuantos más bocas haya, menos tiempo durará la despensa. ¡Aplica proporcionalidad inversa!",
+    "formula": "$$x = \\frac{a \\cdot b}{c}$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º ESO",
+    "id": 20209,
+    "dificultad": "Alta",
+    "bloque": "Tema 2: Proporcionalidad y porcentajes",
+    "enunciado": "Se mezcla café de 6 €/kg con café de 9 €/kg. Si mezclamos 2 kg del primer café con 4 kg del segundo, ¿a qué precio sale el kilo de la mezcla final?",
+    "resolucion_latex": "En los problemas de mezclas calculamos el coste total y lo dividimos entre los kilos totales.<br><br>Coste del café 1 = $2 \\text{ kg} \\cdot 6$ €/kg = $12$ €.<br>Coste del café 2 = $4 \\text{ kg} \\cdot 9$ €/kg = $36$ €.<br><br>Coste total = $12 + 36 = 48$ €.<br>Kilos totales = $2 + 4 = 6$ kg.<br><br>Precio de la mezcla = $\\frac{\\text{Coste total}}{\\text{Kilos totales}} = \\frac{48}{6} = 8$ €/kg.<br>El café mezclado saldrá a 8 €/kg.",
+    "pista": "Suma todo el dinero que vale la mercancía por un lado. Luego suma todos los kilos que pesan por otro. Divide el dinero total entre los kilos totales.",
+    "formula": "$$\\text{Precio mezcla} = \\frac{C_1 \\cdot m_1 + C_2 \\cdot m_2}{m_1 + m_2}$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º ESO",
+    "id": 20210,
+    "dificultad": "Superior",
+    "bloque": "Tema 2: Proporcionalidad y porcentajes",
+    "enunciado": "Ejercicio Trampa: Un grifo 'A' es capaz de llenar una piscina entera él solo en 6 horas. Otro grifo 'B' llena la misma piscina él solo en 3 horas. Un alumno razona: 'Si abro los dos a la vez, tardarán $6 + 3 = 9$ horas o la media, 4,5 horas'. Demuestra el gravísimo error lógico y matemático y calcula cuánto tardarían realmente si se abren los dos a la vez.",
+    "resolucion_latex": "El error lógico es pensar que al usar dos grifos a la vez vas a tardar MÁS tiempo (9h) o la media (4,5h) que el grifo rápido solo (3h). ¡Si abres dos grifos, se llenará mucho más rápido que usando solo el mejor de ellos!<br><br>Para resolverlo, hay que calcular qué fracción de piscina llena cada uno en 1 sola hora:<br>Grifo A: Llena $\\frac{1}{6}$ de piscina por hora.<br>Grifo B: Llena $\\frac{1}{3}$ de piscina por hora.<br><br>Juntos en 1 hora llenan:<br>$\\frac{1}{6} + \\frac{1}{3} = \\frac{1}{6} + \\frac{2}{6} = \\frac{3}{6} = \\frac{1}{2}$ de la piscina.<br><br>Si juntos llenan $\\frac{1}{2}$ (la mitad) de la piscina en 1 hora, significa que tardarán exactamente 2 horas en llenarla entera. El alumno suspendió por falta de sentido común.",
+    "pista": "Si un grifo lo hace en 3 horas, ¿cómo van a tardar más si le pones otro grifo a ayudarle? Tienes que calcular qué 'trocito' de piscina llena cada grifo en una sola hora y sumarlos.",
+    "formula": "$$\\frac{1}{t_{\\text{total}}} = \\frac{1}{t_A} + \\frac{1}{t_B}$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º ESO",
+    "id": 20301,
+    "dificultad": "Básica",
+    "bloque": "Tema 3: Iniciación al Álgebra",
+    "enunciado": "Calcula el valor numérico de la expresión algebraica $P(x) = 2x^2 - 3x + 1$ cuando $x = -2$.",
+    "resolucion_latex": "Para calcular el valor numérico, sustituimos todas las '$x$' por el número $-2$, poniéndolo siempre entre paréntesis para no fallar con los signos.<br><br>$P(-2) = 2(-2)^2 - 3(-2) + 1$<br><br>Resolvemos primero la potencia:<br>$(-2)^2 = 4$<br>$P(-2) = 2(4) - 3(-2) + 1$<br><br>Hacemos las multiplicaciones:<br>$P(-2) = 8 + 6 + 1$<br><br>Sumamos: $P(-2) = 15$.",
+    "pista": "Cambia la 'x' por un -2 metido en un paréntesis. Luego, recuerda que cualquier número negativo elevado al cuadrado se vuelve positivo.",
+    "formula": "$$\\text{Sustituir } x = a \\text{ en } P(x)$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º ESO",
+    "id": 20302,
+    "dificultad": "Básica",
+    "bloque": "Tema 3: Iniciación al Álgebra",
+    "enunciado": "Simplifica la siguiente expresión algebraica agrupando los monomios semejantes: $4x^2 - 3x + 5 - x^2 + 7x - 2$",
+    "resolucion_latex": "Solo se pueden sumar y restar los monomios que tengan exactamente la misma parte literal (misma letra y mismo exponente).<br><br>Agrupamos los términos con $x^2$:<br>$4x^2 - 1x^2 = 3x^2$<br><br>Agrupamos los términos con $x$:<br>$-3x + 7x = +4x$<br><br>Agrupamos los términos independientes (números solos):<br>$5 - 2 = +3$<br><br>Juntamos todo: $3x^2 + 4x + 3$.",
+    "pista": "Las manzanas con las manzanas y las peras con las peras. Junta los 'x al cuadrado' por un lado, las 'x' normales por otro, y los números sueltos por otro.",
+    "formula": "$$ax^n + bx^n = (a+b)x^n$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º ESO",
+    "id": 20303,
+    "dificultad": "Básica",
+    "bloque": "Tema 3: Iniciación al Álgebra",
+    "enunciado": "Resuelve la siguiente ecuación de primer grado básica: $5x - 4 = 2x + 11$",
+    "resolucion_latex": "Para resolverla, pasamos todos los términos con $x$ al lado izquierdo del igual, y todos los números sueltos al derecho. Al saltar el igual, cambian de signo.<br><br>$5x - 2x = 11 + 4$<br><br>Operamos en cada lado:<br>$3x = 15$<br><br>Despejamos la $x$ pasando el 3, que está multiplicando, a dividir:<br>$x = \\frac{15}{3} = 5$.",
+    "pista": "Manda las 'x' a la izquierda y los números a la derecha. Si algo cruza el puente del '=', se le cambia el signo (de más a menos y de menos a más).",
+    "formula": "$$ax = b \\Rightarrow x = \\frac{b}{a}$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º ESO",
+    "id": 20304,
+    "dificultad": "Media",
+    "bloque": "Tema 3: Iniciación al Álgebra",
+    "enunciado": "Resuelve la siguiente ecuación de primer grado con paréntesis: $3(x - 2) - 2(2x - 1) = 4$",
+    "resolucion_latex": "Primero eliminamos los paréntesis multiplicando el número de fuera por cada término de dentro. ¡Cuidado con el signo negativo del -2!<br><br>$3 \\cdot x - 3 \\cdot 2 - 2 \\cdot 2x - 2 \\cdot (-1) = 4$<br>$3x - 6 - 4x + 2 = 4$<br><br>Agrupamos las $x$ a la izquierda y los números a la derecha:<br>$3x - 4x = 4 + 6 - 2$<br>$-1x = 8$<br><br>Cambiamos el signo a todo para que la $x$ quede positiva (o pasamos el -1 dividiendo):<br>$x = -8$.",
+    "pista": "Para quitar un paréntesis, el número de fuera tiene que multiplicarse por TODOS los inquilinos de dentro. ¡Vigila el signo menos del segundo bloque, le cambia el signo a todo!",
+    "formula": "$$a(b+c) = ab + ac$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º ESO",
+    "id": 20305,
+    "dificultad": "Media",
+    "bloque": "Tema 3: Iniciación al Álgebra",
+    "enunciado": "Resuelve la siguiente ecuación con denominadores: $\\frac{x}{3} - \\frac{x - 1}{2} = 1$",
+    "resolucion_latex": "Buscamos el mínimo común múltiplo (m.c.m.) de los denominadores (3 y 2), que es 6. Multiplicamos TODA la ecuación por 6 para eliminar las fracciones.<br><br>$6 \\cdot \\frac{x}{3} - 6 \\cdot \\frac{x-1}{2} = 6 \\cdot 1$<br><br>Dividimos el 6 entre los denominadores y queda:<br>$2x - 3(x - 1) = 6$<br><br>Quitamos el paréntesis (¡cuidado con el signo -3!):<br>$2x - 3x + 3 = 6$<br><br>Agrupamos:<br>$-1x = 6 - 3$<br>$-x = 3 \\Rightarrow x = -3$.",
+    "pista": "Saca el mínimo común múltiplo de la parte de abajo. Divide ese m.c.m por el número de abajo y el resultado multiplícalo por lo de arriba para cargarte las fracciones.",
+    "formula": "$$\\text{m.c.m. de los denominadores para suprimir fracciones}$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º ESO",
+    "id": 20306,
+    "dificultad": "Media",
+    "bloque": "Tema 3: Iniciación al Álgebra",
+    "enunciado": "Un padre tiene el triple de la edad de su hijo. Si la suma de sus edades es 48 años, ¿cuántos años tiene cada uno? Resuélvelo planteando una ecuación.",
+    "resolucion_latex": "Llamamos '$x$' a la edad del hijo (que es el más joven).<br>Como el padre tiene el triple, su edad será '$3x$'.<br><br>Planteamos la ecuación sumando ambas edades:<br>$x + 3x = 48$<br><br>Resolvemos:<br>$4x = 48$<br>$x = \\frac{48}{4} = 12$<br><br>El hijo tiene 12 años.<br>El padre tiene $3 \\cdot 12 = 36$ años.<br>Comprobación: $12 + 36 = 48$.",
+    "pista": "Bautiza al personaje más joven con la letra 'x'. Luego, usa las palabras clave: 'triple' significa multiplicar por 3. Súmalos e iguala a 48.",
+    "formula": "$$\\text{Hijo} = x \\quad ; \\quad \\text{Padre} = 3x$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º ESO",
+    "id": 20307,
+    "dificultad": "Alta",
+    "bloque": "Tema 3: Iniciación al Álgebra",
+    "enunciado": "Multiplica los siguientes polinomios y agrupa los términos semejantes: $(2x - 1) \\cdot (x^2 + 3x - 2)$",
+    "resolucion_latex": "Aplicamos la propiedad distributiva: cada término del primer paréntesis multiplica a TODOS los términos del segundo paréntesis.<br><br>Primero el $2x$:<br>$2x \\cdot x^2 = 2x^3$<br>$2x \\cdot 3x = 6x^2$<br>$2x \\cdot (-2) = -4x$<br><br>Luego el $-1$:<br>$-1 \\cdot x^2 = -x^2$<br>$-1 \\cdot 3x = -3x$<br>$-1 \\cdot (-2) = +2$<br><br>Juntamos todo en un polinomio largo:<br>$2x^3 + 6x^2 - 4x - x^2 - 3x + 2$<br><br>Agrupamos los términos semejantes:<br>$2x^3 + (6 - 1)x^2 + (-4 - 3)x + 2 = 2x^3 + 5x^2 - 7x + 2$.",
+    "pista": "Es como repartir cartas. El primer inquilino del primer paréntesis le da la mano a todos los del segundo. Cuando termine, el segundo inquilino hace lo mismo. Después, agrupa las letras iguales.",
+    "formula": "$$(a+b)(c+d+e) = ac+ad+ae + bc+bd+be$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º ESO",
+    "id": 20308,
+    "dificultad": "Alta",
+    "bloque": "Tema 3: Iniciación al Álgebra",
+    "enunciado": "La base de un campo rectangular mide 3 metros más que su altura. Si el perímetro total del campo es de 26 metros, ¿cuáles son las dimensiones del rectángulo?",
+    "resolucion_latex": "Llamamos '$x$' a la altura (el lado menor).<br>La base medirá '$x + 3$'.<br><br>El perímetro es la suma de los 4 lados del rectángulo (dos bases y dos alturas):<br>$P = 2 \\cdot \\text{altura} + 2 \\cdot \\text{base}$<br>$2x + 2(x + 3) = 26$<br><br>Resolvemos la ecuación:<br>$2x + 2x + 6 = 26$<br>$4x = 26 - 6$<br>$4x = 20$<br>$x = \\frac{20}{4} = 5$ metros.<br><br>La altura mide 5 metros y la base mide $5 + 3 = 8$ metros.<br>Comprobación: $5 + 5 + 8 + 8 = 26$.",
+    "pista": "Dibuja un rectángulo. Llama 'x' a la altura. La base será 'x+3'. Recuerda que un rectángulo tiene 4 lados, no 2, así que al sumar el perímetro tienes que sumar las 'x' y las bases dos veces.",
+    "formula": "$$\\text{Perímetro rectángulo} = 2 \\cdot \\text{base} + 2 \\cdot \\text{altura}$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º ESO",
+    "id": 20309,
+    "dificultad": "Alta",
+    "bloque": "Tema 3: Iniciación al Álgebra",
+    "enunciado": "Resuelve la siguiente ecuación de primer grado compleja con paréntesis y denominadores: $\\frac{2(x - 1)}{3} - \\frac{x + 2}{4} = x - 2$",
+    "resolucion_latex": "1) Calculamos el m.c.m. de los denominadores (3 y 4) que es 12.<br>2) Multiplicamos todos los términos de la ecuación (¡incluyendo la parte derecha!) por 12.<br>$12 \\cdot \\frac{2(x - 1)}{3} - 12 \\cdot \\frac{x + 2}{4} = 12 \\cdot (x - 2)$<br><br>3) Dividimos el 12 entre los denominadores:<br>$4 \\cdot 2(x - 1) - 3(x + 2) = 12x - 24$<br>$8(x - 1) - 3(x + 2) = 12x - 24$<br><br>4) Quitamos paréntesis:<br>$8x - 8 - 3x - 6 = 12x - 24$<br><br>5) Agrupamos las $x$ en la izquierda y los números en la derecha:<br>$8x - 3x - 12x = -24 + 8 + 6$<br>$-7x = -10$<br><br>6) Despejamos $x$:<br>$x = \\frac{-10}{-7} = \\frac{10}{7}$.",
+    "pista": "Es el jefe final de las ecuaciones de 2º ESO. Saca el m.c.m., divídelo por los de abajo y ponlo multiplicando a los de arriba. ¡Atento! Lo que no tiene fracción a la derecha también hay que multiplicarlo por el m.c.m.",
+    "formula": "$$\\text{Multiplicar toda la ecuación por el m.c.m.}$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º ESO",
+    "id": 20310,
+    "dificultad": "Superior",
+    "bloque": "Tema 3: Iniciación al Álgebra",
+    "enunciado": "Ejercicio Trampa: En un examen se pide desarrollar la expresión $(x + 3)^2$. Un alumno escribe alegremente: $(x + 3)^2 = x^2 + 3^2 = x^2 + 9$. El profesor lo tacha entero y le pone un 0. ¿Qué monstruosidad matemática ha cometido el alumno? Demuestra por qué está mal y desarrolla la expresión correctamente.",
+    "resolucion_latex": "El alumno ha cometido uno de los errores más clásicos y letales del álgebra: creer que la potencia de una suma es igual a la suma de las potencias. ¡Falso!<br>El exponente NO se puede repartir cuando hay un signo de '+' o '-' dentro del paréntesis.<br><br>La expresión $(x + 3)^2$ significa multiplicar la base por sí misma dos veces:<br>$(x + 3) \\cdot (x + 3)$<br><br>Si multiplicamos todos por todos:<br>$x \\cdot x + x \\cdot 3 + 3 \\cdot x + 3 \\cdot 3$<br>$x^2 + 3x + 3x + 9$<br>$x^2 + 6x + 9$<br><br>Al alumno se le olvidó por completo el término cruzado ($+6x$). Se trata de una **Identidad Notable** (el cuadrado de una suma), cuya fórmula real es el cuadrado del primero, más el doble del primero por el segundo, más el cuadrado del segundo: $(a+b)^2 = a^2 + 2ab + b^2$.",
+    "pista": "Cuidado con los 'superpoderes' falsos. Un exponente solo puede repartirse por dentro del paréntesis si los números se están multiplicando, ¡NUNCA sumando! Usa la Identidad Notable.",
+    "formula": "$$(a+b)^2 = a^2 + 2ab + b^2 \\neq a^2 + b^2$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º ESO",
+    "id": 20401,
+    "dificultad": "Básica",
+    "bloque": "Tema 4: Iniciación a Funciones y Gráficas",
+    "enunciado": "Dado el punto $P(-3, 4)$ en el plano cartesiano, indica qué coordenada representa el eje de abscisas, cuál el eje de ordenadas y en qué cuadrante se encuentra.",
+    "resolucion_latex": "Un punto en el plano siempre se escribe en el formato $(x, y)$.<br>1) Eje de abscisas (eje horizontal, $X$): La coordenada es $-3$.<br>2) Eje de ordenadas (eje vertical, $Y$): La coordenada es $4$.<br>3) Cuadrantes: Como la $x$ es negativa (izquierda) y la $y$ es positiva (arriba), el punto cae en la zona superior izquierda. Esto corresponde al **Segundo Cuadrante** (II).",
+    "pista": "La 'x' siempre es el primer número, la de la cruz tumbada (abscisas). La 'y' es el segundo, la cruz de pie (ordenadas). Imagina la cruz: arriba a la derecha es el 1º, y giran en contra del reloj.",
+    "formula": "$$P(x,y) \\Rightarrow x = \\text{abscisas} \\quad ; \\quad y = \\text{ordenadas}$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º ESO",
+    "id": 20402,
+    "dificultad": "Básica",
+    "bloque": "Tema 4: Iniciación a Funciones y Gráficas",
+    "enunciado": "Dada la función $y = 3x - 2$, construye una tabla de valores calculando cuánto vale 'y' para $x = -1$, $x = 0$ y $x = 2$.",
+    "resolucion_latex": "Para encontrar los valores de 'y' (variable dependiente), simplemente sustituimos los valores de 'x' (variable independiente) en la fórmula de la función.<br><br>Si $x = -1 \\Rightarrow y = 3(-1) - 2 = -3 - 2 = -5$. Punto $(-1, -5)$.<br>Si $x = 0 \\Rightarrow y = 3(0) - 2 = 0 - 2 = -2$. Punto $(0, -2)$.<br>Si $x = 2 \\Rightarrow y = 3(2) - 2 = 6 - 2 = 4$. Punto $(2, 4)$.<br><br>Tabla de valores:<br>$x \\quad | \\quad y$<br>$-1 \\quad | \\ -5$<br>$0 \\quad | \\ -2$<br>$2 \\quad | \\quad 4$",
+    "pista": "La función es como una máquina. Metes el número de la 'x', lo multiplicas por 3, le restas 2, y el resultado que sale por el otro lado es tu letra 'y'.",
+    "formula": "$$y = f(x)$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º ESO",
+    "id": 20403,
+    "dificultad": "Básica",
+    "bloque": "Tema 4: Iniciación a Funciones y Gráficas",
+    "enunciado": "Imagina una gráfica que tiene forma de círculo cerrado. Si le aplicas la definición estricta matemática, ¿esa gráfica puede representar a una función real? Justifica tu respuesta.",
+    "resolucion_latex": "La respuesta es NO.<br>La definición estricta de una función exige que a cada valor de la variable independiente ($x$) le corresponda **UN ÚNICO** valor de la variable dependiente ($y$).<br><br>Si trazamos una línea recta vertical sobre un círculo dibujado en un papel (Test de la línea vertical), la recta cortará al círculo en dos puntos distintos (uno por arriba y otro por abajo). Esto significa que para una misma $x$, la gráfica devuelve dos $y$ distintas, lo cual viola la norma absoluta de las funciones. Es una relación, pero no una función.",
+    "pista": "Aplica el 'test de la línea vertical'. Coge un lápiz y pásalo de pie de izquierda a derecha. Si el lápiz toca la línea dibujada en dos sitios a la vez, eso rompe las reglas de las funciones.",
+    "formula": "$$\\text{Test línea vertical: Si corta }> 1 \\text{ vez, no es función}$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º ESO",
+    "id": 20404,
+    "dificultad": "Media",
+    "bloque": "Tema 4: Iniciación a Funciones y Gráficas",
+    "enunciado": "Calcula la pendiente de la recta que pasa por los puntos $A(1, 2)$ y $B(3, 8)$. ¿La función es creciente o decreciente?",
+    "resolucion_latex": "La pendiente '$m$' de una recta es la relación entre lo que sube o baja (eje Y) y lo que avanza (eje X) al ir de un punto a otro.<br>Fórmula: $m = \\frac{y_2 - y_1}{x_2 - x_1}$<br><br>Sustituimos los puntos $A(1,2)$ y $B(3,8)$:<br>$m = \\frac{8 - 2}{3 - 1} = \\frac{6}{2} = 3$.<br><br>La pendiente es 3. Al ser un número positivo ($m > 0$), significa que la recta va subiendo hacia la derecha, por lo que es una función **creciente**.",
+    "pista": "La pendiente es medir cuántos pisos subes en un ascensor por cada paso que das en el pasillo. Resta las dos 'y' (pisos) y divídelo entre la resta de las dos 'x' (pasillos).",
+    "formula": "$$m = \\frac{y_B - y_A}{x_B - x_A}$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º ESO",
+    "id": 20405,
+    "dificultad": "Media",
+    "bloque": "Tema 4: Iniciación a Funciones y Gráficas",
+    "enunciado": "Dada la función afín $y = -2x + 4$, indica cuánto vale su pendiente, su ordenada en el origen y calcula matemáticamente en qué punto exacto corta al eje horizontal (eje X).",
+    "resolucion_latex": "En la forma $y = mx + n$:<br>La pendiente es $m = -2$ (función decreciente).<br>La ordenada en el origen es $n = 4$ (corta al eje vertical Y en $y=4$).<br><br>Para calcular dónde corta al eje X, sabemos que en todo el suelo (eje horizontal), la altura es cero. Por tanto, obligamos a que $y = 0$:<br>$0 = -2x + 4$<br>Pasamos la $x$ a la izquierda:<br>$2x = 4$<br>$x = \\frac{4}{2} = 2$.<br>El punto de corte con el eje X es exactamente $(2, 0)$.",
+    "pista": "El número que acompaña a la 'x' es la pendiente. El número que va solo es la ordenada al origen. Para cortar el eje de las 'X', la función tiene que estar pisando el suelo, así que iguala la 'y' a cero.",
+    "formula": "$$y = mx + n \\quad ; \\quad \\text{Corte X } \\Rightarrow y=0$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º ESO",
+    "id": 20406,
+    "dificultad": "Media",
+    "bloque": "Tema 4: Iniciación a Funciones y Gráficas",
+    "enunciado": "La gráfica del viaje de un ciclista muestra que la línea es recta ascendente durante las 2 primeras horas hasta llegar a los 40 km. Luego se vuelve totalmente horizontal durante 1 hora. ¿Qué significa ese tramo horizontal en el contexto del viaje? ¿A qué velocidad fue el ciclista en el primer tramo?",
+    "resolucion_latex": "1) Significado del tramo horizontal: En una gráfica donde el eje Y es la distancia y el eje X es el tiempo, una línea horizontal significa que el tiempo sigue pasando pero la distancia no aumenta. El ciclista ha estado **parado o descansando** durante esa hora.<br><br>2) Velocidad en el primer tramo: La velocidad es la distancia partida por el tiempo, que gráficamente coincide con la pendiente de la recta.<br>Sube 40 km (eje Y) en 2 horas (eje X).<br>Velocidad = $m = \\frac{40}{2} = 20$ km/h.<br>El ciclista fue a 20 km/h en las primeras 2 horas.",
+    "pista": "Si la línea sube, se aleja. Si la línea baja, vuelve a casa. Si la línea es totalmente plana, el reloj hace 'tic-tac' pero él no se mueve del sitio.",
+    "formula": "$$v = \\frac{d}{t} \\quad \\text{(que equivale a la pendiente } m)$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º ESO",
+    "id": 20407,
+    "dificultad": "Alta",
+    "bloque": "Tema 4: Iniciación a Funciones y Gráficas",
+    "enunciado": "La compañía telefónica 'HablaMás' cobra 10 € fijos al mes solo por mantener la línea, más 0,05 € por cada minuto que llames. Escribe la fórmula algebraica de la función que calcula el coste de tu factura (y) en base a los minutos hablados (x). ¿Cuánto pagarías si hablas 120 minutos?",
+    "resolucion_latex": "Es un modelo de función afín ($y = mx + n$).<br>El coste fijo (que pagas hables o no hables) es la ordenada en el origen: $n = 10$.<br>El coste variable (lo que aumenta por cada minuto) es la pendiente: $m = 0,05$.<br><br>La función es: $y = 0,05x + 10$.<br><br>Para calcular el pago por 120 minutos, sustituimos $x = 120$:<br>$y = 0,05(120) + 10$<br>$y = 6 + 10 = 16$ €.<br>La factura sería de 16 euros.",
+    "pista": "Las funciones no solo son números sin sentido. La tarifa base, la que te cobran sí o sí, es el número suelto 'n'. Lo que te cobran por cada trocito de tiempo o uso es el número que acompaña a la 'x'.",
+    "formula": "$$\\text{Coste total} = (\\text{Precio unidad} \\cdot x) + \\text{Coste fijo}$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º ESO",
+    "id": 20408,
+    "dificultad": "Alta",
+    "bloque": "Tema 4: Iniciación a Funciones y Gráficas",
+    "enunciado": "Averigua la ecuación completa (en formato $y=mx+n$) de la recta que pasa por el punto $A(0, 5)$ y por el punto $B(2, 9)$.",
+    "resolucion_latex": "Paso 1: Calculamos la pendiente '$m$'.<br>$m = \\frac{y_2 - y_1}{x_2 - x_1} = \\frac{9 - 5}{2 - 0} = \\frac{4}{2} = 2$.<br>Nuestra recta tiene la forma $y = 2x + n$.<br><br>Paso 2: Encontramos la ordenada en el origen '$n$'.<br>Podemos hacerlo con un pequeño truco: el punto $A(0, 5)$ es exactamente el punto de corte con el eje Y (porque $x=0$). Por definición, el corte con el eje Y es '$n$'. Así que $n = 5$.<br><br>(También podríamos hacerlo sustituyendo la $x$ y la $y$ del punto B en la ecuación: $9 = 2(2) + n \\Rightarrow 9 = 4 + n \\Rightarrow n = 5$).<br><br>La ecuación final es: $y = 2x + 5$.",
+    "pista": "Primero calcula la pendiente restando las dos 'y' entre las dos 'x'. Después, fíjate muy bien en el punto A... ¡tiene un cero en la 'x'! Eso es un regalo que te dice directamente el valor de la letra 'n'.",
+    "formula": "$$m = \\frac{y_B - y_A}{x_B - x_A} \\quad ; \\quad y = mx + n$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º ESO",
+    "id": 20409,
+    "dificultad": "Alta",
+    "bloque": "Tema 4: Iniciación a Funciones y Gráficas",
+    "enunciado": "Dadas las dos funciones lineales $y = 2x - 1$ y $y = -x + 5$, encuentra analíticamente (matemáticamente) en qué punto exacto $(x, y)$ se cruzan ambas rectas.",
+    "resolucion_latex": "Para encontrar el punto en el que dos gráficas se cruzan, debemos resolver el sistema que forman sus dos ecuaciones. El método más directo aquí es la Igualación, ya que ambas tienen la '$y$' despejada.<br><br>Igualamos ambas expresiones:<br>$2x - 1 = -x + 5$<br><br>Pasamos las $x$ a un lado y los números al otro:<br>$2x + x = 5 + 1$<br>$3x = 6$<br>$x = \\frac{6}{3} = 2$.<br><br>Ahora que sabemos que se cruzan en $x=2$, sustituimos este valor en CUALQUIERA de las dos ecuaciones originales para hallar la '$y$':<br>$y = 2(2) - 1 = 4 - 1 = 3$.<br>(Si usamos la otra: $y = -2 + 5 = 3$. ¡Da lo mismo!)<br><br>El punto de cruce es el $P(2, 3)$.",
+    "pista": "Un cruce entre dos líneas en una gráfica no es más que un simple sistema de ecuaciones escondido. Coge la parte de la derecha de ambas ecuaciones y pégalas con un signo '=' en medio.",
+    "formula": "$$y_1 = y_2 \\Rightarrow m_1 x + n_1 = m_2 x + n_2$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º ESO",
+    "id": 20410,
+    "dificultad": "Superior",
+    "bloque": "Tema 4: Iniciación a Funciones y Gráficas",
+    "enunciado": "Ejercicio Trampa: Un alumno recibe el siguiente problema: 'Registramos la temperatura exterior de un patio cada hora desde las 8:00 de la mañana hasta las 20:00 de la tarde'. El alumno dibuja el plano y pone las Temperaturas en el eje horizontal (eje X) y la Hora del reloj en el eje vertical (eje Y). El profesor le resta un punto por grave error de planteamiento. ¿Cuál es el error conceptual y cómo debe colocarse correctamente?",
+    "resolucion_latex": "El alumno ha confundido la Variable Independiente con la Variable Dependiente. En matemáticas, la variable independiente siempre va en el eje horizontal (X), y la dependiente en el vertical (Y).<br><br>El **Tiempo (la hora)** es la variable independiente suprema por naturaleza física; el tiempo avanza solo, no depende de nada, y no podemos controlarlo. <br>La **Temperatura** es la variable dependiente, ya que la temperatura que haga *depende* de la hora del día en la que miremos.<br><br>Por lo tanto, la gráfica siempre debe ir al revés de lo que hizo el alumno: las horas del reloj (X) desfilando por el suelo, y los grados de temperatura subiendo y bajando por la pared (Y).",
+    "pista": "Piensa con lógica: ¿La hora cambia según el calor que haga en la calle? ¡No! El calor cambia según la hora que sea. El que manda y va a su bola, siempre se tumba a descansar en el eje X.",
+    "formula": "$$X = \\text{Independiente (Causa)} \\quad ; \\quad Y = \\text{Dependiente (Efecto)}$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º ESO",
+    "id": 20501,
+    "dificultad": "Básica",
+    "bloque": "Tema 5: Geometría",
+    "enunciado": "Calcula la longitud de la hipotenusa de un triángulo rectángulo cuyos catetos miden 3 cm y 4 cm.",
+    "resolucion_latex": "Aplicamos el Teorema de Pitágoras: $h^2 = c_1^2 + c_2^2$.<br><br>Sustituimos los valores de los catetos:<br>$h^2 = 3^2 + 4^2$<br>$h^2 = 9 + 16$<br>$h^2 = 25$<br><br>Despejamos la hipotenusa calculando la raíz cuadrada:<br>$h = \\sqrt{25} = 5$ cm.",
+    "pista": "El Teorema de Pitágoras dice que la hipotenusa al cuadrado es igual a la suma de los cuadrados de los catetos. Acuérdate de hacer la raíz cuadrada al final.",
+    "formula": "$$h^2 = a^2 + b^2$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º ESO",
+    "id": 20502,
+    "dificultad": "Básica",
+    "bloque": "Tema 5: Geometría",
+    "enunciado": "Una parcela rectangular tiene 8 metros de largo y 5 metros de ancho. Calcula su perímetro y su área.",
+    "resolucion_latex": "El perímetro es la suma de todos los lados (dos largos y dos anchos):<br>Perímetro = $2 \\cdot 8 + 2 \\cdot 5 = 16 + 10 = 26$ metros.<br><br>El área de un rectángulo es el producto de su base por su altura:<br>Área = $8 \\cdot 5 = 40 \\text{ m}^2$.",
+    "pista": "El perímetro es la valla que rodea la parcela (suma los 4 lados). El área es el césped que cabe dentro (multiplica base por altura). ¡Ojo con las unidades cuadradas!",
+    "formula": "$$P = 2b + 2h \\quad ; \\quad A = b \\cdot h$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º ESO",
+    "id": 20503,
+    "dificultad": "Básica",
+    "bloque": "Tema 5: Geometría",
+    "enunciado": "Calcula la longitud de la circunferencia y el área de un círculo cuyo radio mide 10 cm. (Usa $\\pi \\approx 3,14$).",
+    "resolucion_latex": "Longitud de la circunferencia (el borde):<br>$L = 2 \\cdot \\pi \\cdot r$<br>$L = 2 \\cdot 3,14 \\cdot 10 = 6,28 \\cdot 10 = 62,8$ cm.<br><br>Área del círculo (el interior):<br>$A = \\pi \\cdot r^2$<br>$A = 3,14 \\cdot 10^2 = 3,14 \\cdot 100 = 314 \\text{ cm}^2$.",
+    "pista": "Son las dos fórmulas sagradas del círculo. Para la longitud (el perímetro) se multiplica por '2r'. Para el área, se multiplica por el radio elevado al cuadrado.",
+    "formula": "$$L = 2\\pi r \\quad ; \\quad A = \\pi r^2$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º ESO",
+    "id": 20504,
+    "dificultad": "Media",
+    "bloque": "Tema 5: Geometría",
+    "enunciado": "Una escalera de 5 metros de largo está apoyada en una pared vertical. Si la base de la escalera está a 3 metros de distancia de la pared, ¿a qué altura llega la escalera?",
+    "resolucion_latex": "La escalera, el suelo y la pared forman un triángulo rectángulo.<br>La escalera es la hipotenusa ($h=5$). El suelo es un cateto ($c_1=3$). La altura de la pared es el otro cateto ($c_2$).<br><br>Aplicamos Pitágoras: $h^2 = c_1^2 + c_2^2$<br>$5^2 = 3^2 + c_2^2$<br>$25 = 9 + c_2^2$<br><br>Despejamos el cateto desconocido:<br>$c_2^2 = 25 - 9 = 16$<br>$c_2 = \\sqrt{16} = 4$ metros.<br>La escalera alcanza una altura de 4 metros.",
+    "pista": "Dibuja la situación. Fíjate que la escalera es el lado más largo (la hipotenusa), y tú estás buscando uno de los lados rectos (un cateto). Tienes que pasar restando el cuadrado del cateto conocido.",
+    "formula": "$$c^2 = h^2 - c_1^2$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º ESO",
+    "id": 20505,
+    "dificultad": "Media",
+    "bloque": "Tema 5: Geometría",
+    "enunciado": "Calcula el área de un hexágono regular cuyo lado mide 6 cm y su apotema mide 5,2 cm.",
+    "resolucion_latex": "El área de un polígono regular es la mitad del producto de su perímetro por su apotema.<br><br>1) Calculamos el Perímetro: como es un hexágono, tiene 6 lados iguales.<br>$P = 6 \\cdot 6 = 36$ cm.<br><br>2) Aplicamos la fórmula del área:<br>$A = \\frac{P \\cdot ap}{2}$<br>$A = \\frac{36 \\cdot 5,2}{2} = \\frac{187,2}{2} = 93,6 \\text{ cm}^2$.",
+    "pista": "Primero calcula el perímetro sumando los 6 lados del hexágono. Luego multiplica ese perímetro por la apotema (la línea que va del centro al medio de un lado) y pártelo por dos.",
+    "formula": "$$A = \\frac{P \\cdot ap}{2}$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º ESO",
+    "id": 20506,
+    "dificultad": "Media",
+    "bloque": "Tema 5: Geometría",
+    "enunciado": "Calcula el volumen de una lata de refresco cilíndrica que tiene 3 cm de radio en la base y 10 cm de altura. (Usa $\\pi \\approx 3,14$).",
+    "resolucion_latex": "El volumen de un cilindro (y de cualquier prisma) es el área de su base multiplicada por su altura.<br><br>1) Área de la base circular:<br>$A_{base} = \\pi \\cdot r^2 = 3,14 \\cdot 3^2 = 3,14 \\cdot 9 = 28,26 \\text{ cm}^2$.<br><br>2) Multiplicamos por la altura para hallar el volumen:<br>$V = A_{base} \\cdot h$<br>$V = 28,26 \\cdot 10 = 282,6 \\text{ cm}^3$.",
+    "pista": "Visualiza el cilindro como una pila de monedas. Primero calcula el área de una moneda redonda (la base) y luego multiplícala por la altura total del paquete.",
+    "formula": "$$V = \\pi \\cdot r^2 \\cdot h$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º ESO",
+    "id": 20507,
+    "dificultad": "Alta",
+    "bloque": "Tema 5: Geometría",
+    "enunciado": "Dentro de un cuadrado de 4 cm de lado se ha dibujado un círculo que toca los cuatro bordes del cuadrado. Calcula el área de la región sombreada (las cuatro esquinas que sobran entre el círculo y el cuadrado).",
+    "resolucion_latex": "El área sombreada se calcula restando el área de la figura interior al área de la figura exterior.<br><br>1) Área del cuadrado exterior:<br>$A_{cuad} = l^2 = 4^2 = 16 \\text{ cm}^2$.<br><br>2) Área del círculo interior. Como el círculo encaja justo en el cuadrado, su diámetro es 4 cm, por lo que su radio es 2 cm.<br>$A_{circ} = \\pi \\cdot r^2 = 3,14 \\cdot 2^2 = 3,14 \\cdot 4 = 12,56 \\text{ cm}^2$.<br><br>3) Área sombreada:<br>$A_{somb} = 16 - 12,56 = 3,44 \\text{ cm}^2$.",
+    "pista": "Calcula el área del cuadrado grande y réstale el área del círculo como si lo recortaras con unas tijeras. Si el cuadrado mide 4 de ancho, el radio del círculo es la mitad.",
+    "formula": "$$A_{\\text{sombreada}} = A_{\\text{exterior}} - A_{\\text{interior}}$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º ESO",
+    "id": 20508,
+    "dificultad": "Alta",
+    "bloque": "Tema 5: Geometría",
+    "enunciado": "Calcula el área de un triángulo isósceles cuyos lados iguales miden 5 cm y cuya base mide 6 cm.",
+    "resolucion_latex": "Para calcular el área ($A = \\frac{b \\cdot h}{2}$) necesitamos la altura '$h$', que no la sabemos.<br>Trazamos la altura desde el vértice superior, dividiendo el triángulo isósceles en dos triángulos rectángulos idénticos.<br>La base de uno de esos triángulos rectángulos es la mitad de la base total: $6 / 2 = 3$ cm. La hipotenusa es el lado igual de 5 cm.<br><br>Aplicamos Pitágoras para hallar la altura ($h$ es un cateto):<br>$5^2 = h^2 + 3^2$<br>$25 = h^2 + 9$<br>$h^2 = 25 - 9 = 16 \\Rightarrow h = \\sqrt{16} = 4$ cm.<br><br>Ahora calculamos el área total del triángulo original:<br>$A = \\frac{6 \\cdot 4}{2} = \\frac{24}{2} = 12 \\text{ cm}^2$.",
+    "pista": "No tienes la altura. Corta el triángulo por la mitad y usa Pitágoras en ese medio triángulo rectángulo para encontrarla. La base del triangulito será la mitad de la base original.",
+    "formula": "$$A = \\frac{b \\cdot h}{2}$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º ESO",
+    "id": 20509,
+    "dificultad": "Alta",
+    "bloque": "Tema 5: Geometría",
+    "enunciado": "Calcula el volumen de un cono de helado si el radio de su base es de 5 cm y su generatriz (la longitud de la galleta lateral) mide 13 cm.",
+    "resolucion_latex": "El volumen de un cono es un tercio del volumen de un cilindro: $V = \\frac{\\pi \\cdot r^2 \\cdot h}{3}$.<br>Nos falta la altura ($h$). El radio, la altura y la generatriz forman un triángulo rectángulo donde la generatriz es la hipotenusa.<br><br>Aplicamos Pitágoras:<br>$13^2 = h^2 + 5^2$<br>$169 = h^2 + 25$<br>$h^2 = 169 - 25 = 144 \\Rightarrow h = \\sqrt{144} = 12$ cm.<br><br>Calculamos el volumen:<br>$V = \\frac{3,14 \\cdot 5^2 \\cdot 12}{3} = \\frac{3,14 \\cdot 25 \\cdot 12}{3} = \\frac{942}{3} = 314 \\text{ cm}^3$.",
+    "pista": "La fórmula del volumen necesita la altura recta del cono, no el lado inclinado (generatriz). Tienes que usar Pitágoras para encontrar la altura recta, formando un triángulo rectángulo dentro del cono.",
+    "formula": "$$V = \\frac{\\pi \\cdot r^2 \\cdot h}{3} \\quad ; \\quad g^2 = h^2 + r^2$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º ESO",
+    "id": 20510,
+    "dificultad": "Superior",
+    "bloque": "Tema 5: Geometría",
+    "enunciado": "Ejercicio Trampa: En una pizzería, una pizza pequeña de 15 cm de diámetro cuesta 5 €. Una pizza familiar de 30 cm de diámetro cuesta 15 €. Un alumno dice: '¡Qué timo! Si el diámetro es el doble (30 frente a 15), la pizza debería costar el doble (10 €), no 15 €'. Demuestra matemáticamente que el alumno se equivoca y que, de hecho, la pizza familiar es mucho más barata en proporción a la comida que te dan.",
+    "resolucion_latex": "El alumno confunde la longitud del radio con el Área (que es la cantidad de comida real).<br><br>Pizza Pequeña (radio = 7,5 cm):<br>$A_1 = \\pi \\cdot (7,5)^2 = 3,14 \\cdot 56,25 = 176,6 \\text{ cm}^2$ de comida.<br>Precio: 5 € $\\rightarrow$ pagamos unos 35 $\\text{cm}^2$ por cada euro.<br><br>Pizza Familiar (radio = 15 cm):<br>$A_2 = \\pi \\cdot (15)^2 = 3,14 \\cdot 225 = 706,5 \\text{ cm}^2$ de comida.<br><br>Como vemos, al duplicar el radio de un círculo, su área no se duplica, ¡se cuadruplica! ($2^2 = 4$). La pizza familiar trae 4 veces más comida que la pequeña.<br>Por tanto, el precio 'justo' matemático serían $5 \\cdot 4 = 20$ €. Como solo cobran 15 €, la familiar es en realidad un chollo y una gran oferta.",
+    "pista": "Las áreas están elevadas al cuadrado. Si tú haces el doble de grande el radio de un círculo, su área no se hace el doble de grande... calcula las dos áreas y compáralas.",
+    "formula": "$$A = \\pi r^2 \\Rightarrow \\text{Si } r \\text{ se multiplica por 2, el área se multiplica por } 4$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º ESO",
+    "id": 20601,
+    "dificultad": "Básica",
+    "bloque": "Tema 6: Estadística básica",
+    "enunciado": "Las notas de Juan en matemáticas han sido: 5, 7, 7, 8, 3. Calcula la media aritmética y la moda de sus notas.",
+    "resolucion_latex": "La media es la suma de todos los datos dividida entre el número de datos:<br>Media ($\\bar{x}$) = $\\frac{5 + 7 + 7 + 8 + 3}{5} = \\frac{30}{5} = 6$.<br><br>La moda (Mo) es el valor que más veces se repite en el conjunto de datos.<br>Moda = 7 (se repite dos veces, más que cualquier otra nota).",
+    "pista": "Para la media, suma todo y repártelo a partes iguales. Para la moda, busca simplemente el número que esté de moda, el que más aparezca en la lista.",
+    "formula": "$$\\bar{x} = \\frac{\\sum x_i}{N}$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º ESO",
+    "id": 20602,
+    "dificultad": "Básica",
+    "bloque": "Tema 6: Estadística básica",
+    "enunciado": "En una bolsa hay bolas de colores. Se han sacado: 10 rojas, 5 azules y 5 verdes. Construye una tabla indicando la frecuencia absoluta y la frecuencia relativa de cada color.",
+    "resolucion_latex": "La frecuencia absoluta ($f_i$) es el recuento directo. El número total de bolas es $N = 10 + 5 + 5 = 20$.<br>La frecuencia relativa ($h_i$) es la absoluta dividida entre el total ($f_i / N$).<br><br>Tabla:<br>Rojas: $f_i = 10 \\quad ; \\quad h_i = 10/20 = 0,5$<br>Azules: $f_i = 5 \\quad ; \\quad h_i = 5/20 = 0,25$<br>Verdes: $f_i = 5 \\quad ; \\quad h_i = 5/20 = 0,25$<br><br>Comprobación: La suma de las frecuencias relativas da exactamente $0,5 + 0,25 + 0,25 = 1$.",
+    "pista": "Absoluta es el recuento con los dedos. Relativa es dividir ese recuento por el total de cosas que hay. La suma de todas las relativas tiene que dar siempre 1.",
+    "formula": "$$h_i = \\frac{f_i}{N}$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º ESO",
+    "id": 20603,
+    "dificultad": "Básica",
+    "bloque": "Tema 6: Estadística básica",
+    "enunciado": "Clasifica las siguientes variables estadísticas en cualitativas, cuantitativas discretas o cuantitativas continuas: a) El color de ojos de tus compañeros. b) El número de hermanos. c) El peso exacto de un melón.",
+    "resolucion_latex": "a) Color de ojos: No se puede medir con números (son palabras como azul, verde, marrón). Es una **Variable Cualitativa**.<br><br>b) Número de hermanos: Se mide con números, pero solo pueden ser enteros (0, 1, 2... no puedes tener 1,5 hermanos). Es una **Variable Cuantitativa Discreta**.<br><br>c) Peso del melón: Se mide con números y puede tener infinitos decimales dependiendo de la precisión de la báscula (ej. 2,345 kg). Es una **Variable Cuantitativa Continua**.",
+    "pista": "Cualitativa = Letras. Cuantitativa = Números. Discreta = Números que puedes contar con los dedos (saltos). Continua = Números con decimales infinitos donde caben todos.",
+    "formula": "$$\\text{Discreta: valores aislados } ; \\text{ Continua: valores en intervalos}$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º ESO",
+    "id": 20604,
+    "dificultad": "Media",
+    "bloque": "Tema 6: Estadística básica",
+    "enunciado": "Calcula la media de una clase donde las edades se agrupan así: hay 5 alumnos de 13 años, 10 alumnos de 14 años y 5 alumnos de 15 años.",
+    "resolucion_latex": "Como tenemos muchos datos repetidos, usamos la fórmula de la media para tablas de frecuencias: multiplicamos cada dato ($x_i$) por las veces que se repite ($f_i$) y dividimos entre el total de alumnos.<br><br>Total de alumnos ($N$) = $5 + 10 + 5 = 20$ alumnos.<br><br>Suma total de años = $(13 \\cdot 5) + (14 \\cdot 10) + (15 \\cdot 5)$<br>Suma total = $65 + 140 + 75 = 280$ años en total en la clase.<br><br>Media = $\\frac{280}{20} = 14$ años de edad media.",
+    "pista": "No sumes 13+14+15. Tienes que multiplicar cada edad por la cantidad de alumnos que la tienen. Luego sumas esos resultados y divides entre los 20 alumnos.",
+    "formula": "$$\\bar{x} = \\frac{\\sum (x_i \\cdot f_i)}{N}$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º ESO",
+    "id": 20605,
+    "dificultad": "Media",
+    "bloque": "Tema 6: Estadística básica",
+    "enunciado": "Para hacer un diagrama de sectores (quesitos) con los datos de las frutas favoritas de 40 personas, sabemos que 10 personas prefieren manzanas. ¿Cuántos grados debe medir el sector de las manzanas en el círculo?",
+    "resolucion_latex": "Un círculo completo tiene $360^{\\circ}$. Tenemos que repartir esos $360^{\\circ}$ entre las 40 personas. Es decir, es una regla de tres directa.<br><br>$40 \\text{ personas} \\longrightarrow 360^{\\circ}$<br>$10 \\text{ personas} \\longrightarrow x^{\\circ}$<br><br>$x = \\frac{10 \\cdot 360}{40} = \\frac{3600}{40} = 90^{\\circ}$.<br>El sector de las manzanas será exactamente un ángulo recto ($90^{\\circ}$), lo cual tiene sentido visual, ya que 10 personas son exactamente un cuarto de 40 personas.",
+    "pista": "Plantea una regla de tres directa. Si el total de personas se lleva la tarta entera (360 grados), ¿cuántos grados de la tarta se llevan las personas que prefieren manzanas?",
+    "formula": "$$\\alpha = \\frac{f_i \\cdot 360^{\\circ}}{N}$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º ESO",
+    "id": 20606,
+    "dificultad": "Media",
+    "bloque": "Tema 6: Estadística básica",
+    "enunciado": "Calcula la mediana del siguiente conjunto de notas: 4, 2, 8, 7, 1, 9.",
+    "resolucion_latex": "La mediana (Me) es el número que queda exactamente en el medio cuando los ordenamos de menor a mayor.<br><br>1) Ordenamos los datos: 1, 2, 4, 7, 8, 9.<br>2) Como la cantidad de datos es par (hay 6 números), no hay un único número en el centro. Los dos números centrales son el 4 y el 7.<br>3) La mediana es la media aritmética de estos dos números centrales:<br>Me = $\\frac{4 + 7}{2} = \\frac{11}{2} = 5,5$.",
+    "pista": "¡ATENCIÓN! La mediana no se puede sacar a lo loco. El primer paso innegociable es ORDENAR los números de menor a mayor. Si te quedan dos atrapados en el centro, súmalos y pártelos por dos.",
+    "formula": "$$\\text{Ordenar y buscar centro. Si es par: } \\frac{x_1 + x_2}{2}$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º ESO",
+    "id": 20607,
+    "dificultad": "Alta",
+    "bloque": "Tema 6: Estadística básica",
+    "enunciado": "Un alumno ha hecho tres exámenes de inglés y sus notas son 5, 6 y 4. Le falta un cuarto y último examen. Si necesita que la nota media de la asignatura sea exactamente un 6 para obtener un premio, ¿qué nota debe sacar en el último examen?",
+    "resolucion_latex": "Llamamos '$x$' a la nota del último examen.<br>La fórmula de la media de 4 exámenes será:<br>Media = $\\frac{5 + 6 + 4 + x}{4} = 6$<br><br>Resolvemos la ecuación resultante:<br>$\\frac{15 + x}{4} = 6$<br><br>Pasamos el 4 multiplicando:<br>$15 + x = 6 \\cdot 4$<br>$15 + x = 24$<br><br>Despejamos '$x$':<br>$x = 24 - 15 = 9$.<br>El alumno necesita sacar un 9 en el último examen.",
+    "pista": "Convierte el problema en una ecuación. Escribe la fórmula de la media de los 4 exámenes (poniendo una 'x' en la nota desconocida) y pon que todo eso tiene que ser igual a 6.",
+    "formula": "$$\\frac{x_1 + x_2 + \\dots + x}{N} = \\text{Media deseada}$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º ESO",
+    "id": 20608,
+    "dificultad": "Alta",
+    "bloque": "Tema 6: Estadística básica",
+    "enunciado": "En una tabla de frecuencias relativas ($h_i$) de cuatro datos (A, B, C, D), se han anotado los siguientes valores: $h_A = 0,25$, $h_B = 0,40$, $h_C = 0,50$ y $h_D = 0,15$. Demuestra matemáticamente que el alumno que hizo la tabla se ha inventado los datos.",
+    "resolucion_latex": "Una de las propiedades matemáticas fundamentales de la estadística es que la suma de TODAS las frecuencias relativas ($h_i$) de un estudio debe dar exactamente 1 (que representa el 100% de la muestra).<br><br>Sumamos los valores dados por el alumno:<br>$\\sum h_i = 0,25 + 0,40 + 0,50 + 0,15$<br>$\\sum h_i = 1,30$.<br><br>Como la suma da 1,30 (un 130%), es matemáticamente imposible que la tabla sea correcta, ya que implicaría que hay más personas en los resultados que personas encuestadas.",
+    "pista": "Las frecuencias relativas son como trozos de una misma tarta. ¿Qué número exacto y perfecto tiene que dar siempre la suma de las frecuencias relativas de un ejercicio bien hecho?",
+    "formula": "$$\\sum h_i = 1 \\quad (100\\%)$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º ESO",
+    "id": 20609,
+    "dificultad": "Alta",
+    "bloque": "Tema 6: Estadística básica",
+    "enunciado": "Un fabricante de pantalones quiere saber qué talla (S, M, L o XL) debe fabricar en mayor cantidad para su nueva colección. Calcula qué parámetro de centralización (Media, Mediana o Moda) es el ÚNICO que tiene sentido estadístico utilizar aquí.",
+    "resolucion_latex": "Analicemos los datos: Las tallas S, M, L y XL son variables **cualitativas ordinales** (categorías con un orden).<br><br>1) La Media no se puede calcular. No puedes sumar letras ($S + M + L$) y dividirlas por 3.<br>2) La Mediana se podría encontrar ordenándolas, pero no representaría a la mayoría de la gente, solo a la persona del medio.<br>3) La **Moda** es el dato que más se repite. <br><br>El fabricante necesita la Moda, porque estadísticamente le dirá cuál es la talla que solicita la mayor cantidad de clientes para poder fabricar más unidades de ese tipo específico.",
+    "pista": "Piensa en el tipo de datos. Son letras, no números reales. Intenta imaginarte haciendo una suma matemática con una 'S' y una 'M' a ver si tiene sentido. ¿Qué parámetro se salva?",
+    "formula": "$$\\text{Para variables cualitativas, el único parámetro seguro es la Moda.}$$"
+  },
+  {
+    "asignatura": "Matemáticas 2º ESO",
+    "id": 20610,
+    "dificultad": "Superior",
+    "bloque": "Tema 6: Estadística básica",
+    "enunciado": "Ejercicio Trampa: Una empresa tiene 5 empleados. Cuatro de ellos (becarios) cobran 1.000 € al mes cada uno. El director (dueño) cobra 16.000 € al mes. El director pone un anuncio en el periódico: '¡Únete a nosotros! El salario medio de mi empresa es de 4.000 € al mes, somos muy generosos'. Explica por qué el director no está mintiendo matemáticamente, pero por qué es una trampa estadística engañosa.",
+    "resolucion_latex": "Matemáticamente, el director dice la verdad. Calculamos la media:<br>Media = $\\frac{1000 + 1000 + 1000 + 1000 + 16000}{5} = \\frac{20000}{5} = 4000$ €.<br><br>Sin embargo, es una trampa estadística muy común. La **media aritmética es extremadamente sensible a valores atípicos o extremos**. El altísimo sueldo del director distorsiona todo el resultado, desplazando la media hacia arriba y creando una ilusión de riqueza.<br><br>En distribuciones tan desiguales, se debe usar la **Mediana**, que es mucho más representativa. Ordenando los sueldos (1000, 1000, **1000**, 1000, 16000), la Mediana es **1.000 €**. Esta es la cifra real que representa lo que cobra la mayoría de la empresa. Nadie salvo el jefe cobra esos 4.000 euros ilusorios.",
+    "pista": "Suma todos los sueldos y divídelos entre cinco para ver que el jefe no miente con las mates. Sin embargo, piensa qué pasa si un gigante entra a una habitación llena de hormigas: la altura media dirá que todos son enormes.",
+    "formula": "$$\\text{La media se distorsiona con datos extremos. Usar la Mediana.}$$"
+  }
+]

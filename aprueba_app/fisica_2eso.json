@@ -1,0 +1,502 @@
+[
+  {
+    "asignatura": "Física 2º ESO",
+    "id": 2101,
+    "dificultad": "Básica",
+    "bloque": "Tema 1: El movimiento",
+    "enunciado": "Indica si las siguientes situaciones describen reposo o movimiento: un libro sobre una mesa, un coche circulando por una carretera y una persona sentada en un banco.",
+    "resolucion_latex": "Un cuerpo está en reposo si no cambia su posición respecto a un sistema de referencia.<br>Un cuerpo está en movimiento si cambia su posición respecto a un sistema de referencia.<br>El libro sobre la mesa está en reposo respecto a la mesa.<br>El coche circulando por una carretera está en movimiento respecto a la carretera.<br>La persona sentada en un banco está en reposo respecto al banco.<br>Por tanto:<br>Reposo: libro y persona sentada.<br>Movimiento: coche circulando.",
+    "pista": "Piensa si la posición cambia o no respecto a un punto de referencia.",
+    "formula": "$$\\text{movimiento} \\Rightarrow \\text{cambio de posición}$$"
+  },
+  {
+    "asignatura": "Física 2º ESO",
+    "id": 2102,
+    "dificultad": "Básica",
+    "bloque": "Tema 1: El movimiento",
+    "enunciado": "Un alumno camina $60\\ \\text{m}$ en $20\\ \\text{s}$. Calcula su velocidad media.",
+    "resolucion_latex": "La velocidad media se calcula dividiendo la distancia recorrida entre el tiempo empleado:<br>$v=\\frac{s}{t}$.<br>Sustituimos:<br>$v=\\frac{60}{20}=3\\ \\text{m/s}$.<br>La velocidad media del alumno es $3\\ \\text{m/s}$.",
+    "pista": "La velocidad media indica cuántos metros se recorren cada segundo.",
+    "formula": "$$v=\\frac{s}{t}$$"
+  },
+  {
+    "asignatura": "Física 2º ESO",
+    "id": 2103,
+    "dificultad": "Básica",
+    "bloque": "Tema 1: El movimiento",
+    "enunciado": "Explica la diferencia entre trayectoria y distancia recorrida.",
+    "resolucion_latex": "La trayectoria es el camino o línea que sigue un cuerpo durante su movimiento.<br>La distancia recorrida es la longitud total de ese camino.<br>Por ejemplo, si una persona camina haciendo una curva, la trayectoria es la curva que describe y la distancia recorrida es la medida total de esa curva.<br>Por tanto, trayectoria es el camino seguido y distancia es cuánto mide ese camino.",
+    "pista": "La trayectoria es la forma del camino; la distancia es cuánto se recorre.",
+    "formula": "$$\\text{distancia recorrida}=\\text{longitud de la trayectoria}$$"
+  },
+  {
+    "asignatura": "Física 2º ESO",
+    "id": 2104,
+    "dificultad": "Media",
+    "bloque": "Tema 1: El movimiento",
+    "enunciado": "Un coche recorre $150\\ \\text{km}$ en $3\\ \\text{h}$. Calcula su velocidad media en $\\text{km/h}$.",
+    "resolucion_latex": "La velocidad media se calcula con:<br>$v=\\frac{s}{t}$.<br>Sustituimos:<br>$v=\\frac{150}{3}=50\\ \\text{km/h}$.<br>La velocidad media del coche es $50\\ \\text{km/h}$.",
+    "pista": "Divide la distancia recorrida entre el tiempo empleado.",
+    "formula": "$$v=\\frac{s}{t}$$"
+  },
+  {
+    "asignatura": "Física 2º ESO",
+    "id": 2105,
+    "dificultad": "Media",
+    "bloque": "Tema 1: El movimiento",
+    "enunciado": "Un ciclista se mueve con velocidad media de $8\\ \\text{m/s}$ durante $15\\ \\text{s}$. Calcula la distancia recorrida.",
+    "resolucion_latex": "Usamos la fórmula de la velocidad media:<br>$v=\\frac{s}{t}$.<br>Despejamos la distancia:<br>$s=v\\cdot t$.<br>Sustituimos:<br>$s=8\\cdot 15=120\\ \\text{m}$.<br>El ciclista recorre $120\\ \\text{m}$.",
+    "pista": "Si sabes velocidad y tiempo, multiplica para obtener la distancia.",
+    "formula": "$$s=v\\cdot t$$"
+  },
+  {
+    "asignatura": "Física 2º ESO",
+    "id": 2106,
+    "dificultad": "Media",
+    "bloque": "Tema 1: El movimiento",
+    "enunciado": "Un móvil pasa de la posición $x_i=2\\ \\text{m}$ a la posición $x_f=14\\ \\text{m}$. Calcula su desplazamiento.",
+    "resolucion_latex": "El desplazamiento se calcula restando la posición inicial a la posición final:<br>$\\Delta x=x_f-x_i$.<br>Sustituimos:<br>$\\Delta x=14-2=12\\ \\text{m}$.<br>El desplazamiento es $12\\ \\text{m}$.",
+    "pista": "El desplazamiento compara la posición final con la posición inicial.",
+    "formula": "$$\\Delta x=x_f-x_i$$"
+  },
+  {
+    "asignatura": "Física 2º ESO",
+    "id": 2107,
+    "dificultad": "Alta",
+    "bloque": "Tema 1: El movimiento",
+    "enunciado": "Una persona camina $100\\ \\text{m}$ hacia el norte y después $40\\ \\text{m}$ hacia el sur. Calcula la distancia recorrida y el desplazamiento final.",
+    "resolucion_latex": "La distancia recorrida es todo el camino realizado:<br>$100+40=140\\ \\text{m}$.<br><br>Para calcular el desplazamiento, tomamos el norte como sentido positivo.<br>Entonces:<br>$\\Delta x=100-40=60\\ \\text{m}$.<br>Por tanto, la distancia recorrida es $140\\ \\text{m}$ y el desplazamiento final es $60\\ \\text{m}$ hacia el norte.",
+    "pista": "La distancia suma todo el camino; el desplazamiento tiene en cuenta el inicio y el final.",
+    "formula": "$$\\text{distancia}=\\text{camino total} \\quad ; \\quad \\Delta x=x_f-x_i$$"
+  },
+  {
+    "asignatura": "Física 2º ESO",
+    "id": 2108,
+    "dificultad": "Alta",
+    "bloque": "Tema 1: El movimiento",
+    "enunciado": "Un tren viaja a $72\\ \\text{km/h}$. Convierte esta velocidad a $\\text{m/s}$.",
+    "resolucion_latex": "Para pasar de $\\text{km/h}$ a $\\text{m/s}$ dividimos entre $3,6$:<br>$v=\\frac{72}{3,6}=20\\ \\text{m/s}$.<br>Por tanto:<br>$72\\ \\text{km/h}=20\\ \\text{m/s}$.",
+    "pista": "Para convertir de $\\text{km/h}$ a $\\text{m/s}$ se divide entre $3,6$.",
+    "formula": "$$v(\\text{m/s})=\\frac{v(\\text{km/h})}{3,6}$$"
+  },
+  {
+    "asignatura": "Física 2º ESO",
+    "id": 2109,
+    "dificultad": "Alta",
+    "bloque": "Tema 1: El movimiento",
+    "enunciado": "Un coche tarda $25\\ \\text{s}$ en recorrer $500\\ \\text{m}$. Calcula su velocidad media y explica si eso significa que ha ido siempre exactamente a esa velocidad.",
+    "resolucion_latex": "Calculamos la velocidad media:<br>$v=\\frac{s}{t}=\\frac{500}{25}=20\\ \\text{m/s}$.<br>La velocidad media es $20\\ \\text{m/s}$.<br><br>Pero esto no significa necesariamente que el coche haya ido siempre a $20\\ \\text{m/s}$. Puede haber ido más rápido en algunos momentos y más lento en otros.<br>La velocidad media solo relaciona la distancia total con el tiempo total.",
+    "pista": "La velocidad media resume todo el recorrido, pero no describe cada instante.",
+    "formula": "$$v_{media}=\\frac{\\text{distancia total}}{\\text{tiempo total}}$$"
+  },
+  {
+    "asignatura": "Física 2º ESO",
+    "id": 2110,
+    "dificultad": "Superior",
+    "bloque": "Tema 1: El movimiento",
+    "enunciado": "Ejercicio trampa: Un alumno dice que si una persona vuelve al punto de partida, no se ha movido. Explica el error usando distancia y desplazamiento.",
+    "resolucion_latex": "El error está en confundir distancia recorrida con desplazamiento.<br>Si una persona camina $50\\ \\text{m}$ y luego vuelve $50\\ \\text{m}$ al punto de partida, sí se ha movido porque ha recorrido camino.<br>La distancia recorrida es:<br>$50+50=100\\ \\text{m}$.<br>Pero el desplazamiento es $0\\ \\text{m}$ porque acaba en el mismo punto donde empezó.<br>Por tanto, aunque el desplazamiento sea cero, la persona sí se ha movido.",
+    "pista": "Volver al punto inicial no borra el camino recorrido.",
+    "formula": "$$\\text{distancia recorrida}\\neq\\text{desplazamiento}$$"
+  },
+  {
+    "asignatura": "Física 2º ESO",
+    "id": 2111,
+    "dificultad": "Básica",
+    "bloque": "Tema 2: Las fuerzas",
+    "enunciado": "Explica qué es una fuerza y escribe su unidad en el Sistema Internacional.",
+    "resolucion_latex": "Una fuerza es una interacción capaz de cambiar el movimiento de un cuerpo o deformarlo.<br>Por ejemplo, al empujar una puerta aplicamos una fuerza que puede hacer que se mueva.<br>La unidad de fuerza en el Sistema Internacional es el newton, cuyo símbolo es $\\text{N}$.<br>Por tanto, las fuerzas se miden en newtons.",
+    "pista": "Una fuerza puede mover, frenar, cambiar la dirección o deformar un cuerpo.",
+    "formula": "$$\\text{fuerza}\\rightarrow\\text{cambio de movimiento o deformación}$$"
+  },
+  {
+    "asignatura": "Física 2º ESO",
+    "id": 2112,
+    "dificultad": "Básica",
+    "bloque": "Tema 2: Las fuerzas",
+    "enunciado": "Indica si las siguientes acciones pueden producir movimiento, deformación o ambos: empujar una caja, estirar una goma y chutar un balón.",
+    "resolucion_latex": "Empujar una caja puede producir movimiento, porque la caja puede desplazarse.<br>Estirar una goma produce deformación, porque cambia su forma.<br>Chutar un balón puede producir movimiento y también una pequeña deformación momentánea del balón.<br>Por tanto:<br>Empujar una caja: movimiento.<br>Estirar una goma: deformación.<br>Chutar un balón: movimiento y deformación.",
+    "pista": "Piensa si el objeto cambia de posición, de forma o las dos cosas.",
+    "formula": "$$\\text{fuerza}\\Rightarrow\\text{movimiento y/o deformación}$$"
+  },
+  {
+    "asignatura": "Física 2º ESO",
+    "id": 2113,
+    "dificultad": "Básica",
+    "bloque": "Tema 2: Las fuerzas",
+    "enunciado": "Calcula el peso de un objeto de masa $5\\ \\text{kg}$ en la Tierra. Usa $g=9,8\\ \\text{m/s}^2$.",
+    "resolucion_latex": "El peso es una fuerza y se calcula multiplicando la masa por la gravedad:<br>$P=m\\cdot g$.<br>Sustituimos:<br>$P=5\\cdot 9,8=49\\ \\text{N}$.<br>El peso del objeto es $49\\ \\text{N}$.",
+    "pista": "La masa se mide en kilogramos, pero el peso se mide en newtons.",
+    "formula": "$$P=m\\cdot g$$"
+  },
+  {
+    "asignatura": "Física 2º ESO",
+    "id": 2114,
+    "dificultad": "Media",
+    "bloque": "Tema 2: Las fuerzas",
+    "enunciado": "Explica la diferencia entre masa y peso.",
+    "resolucion_latex": "La masa es la cantidad de materia que tiene un cuerpo y se mide en kilogramos ($\\text{kg}$).<br>El peso es la fuerza con la que la gravedad atrae a ese cuerpo y se mide en newtons ($\\text{N}$).<br>La masa de un cuerpo no cambia aunque esté en otro planeta, pero el peso sí cambia porque depende de la gravedad.<br>Por ejemplo, una persona tiene la misma masa en la Tierra y en la Luna, pero pesa menos en la Luna.",
+    "pista": "La masa depende del cuerpo; el peso depende también de la gravedad.",
+    "formula": "$$P=m\\cdot g$$"
+  },
+  {
+    "asignatura": "Física 2º ESO",
+    "id": 2115,
+    "dificultad": "Media",
+    "bloque": "Tema 2: Las fuerzas",
+    "enunciado": "Sobre una caja actúan dos fuerzas en la misma dirección y sentido: $10\\ \\text{N}$ y $15\\ \\text{N}$. Calcula la fuerza resultante.",
+    "resolucion_latex": "Cuando dos fuerzas tienen la misma dirección y el mismo sentido, se suman.<br>Calculamos:<br>$F_R=10+15=25\\ \\text{N}$.<br>La fuerza resultante es $25\\ \\text{N}$ en el mismo sentido que las fuerzas aplicadas.",
+    "pista": "Si las dos fuerzas empujan hacia el mismo lado, se suman.",
+    "formula": "$$F_R=F_1+F_2$$"
+  },
+  {
+    "asignatura": "Física 2º ESO",
+    "id": 2116,
+    "dificultad": "Media",
+    "bloque": "Tema 2: Las fuerzas",
+    "enunciado": "Sobre un objeto actúan dos fuerzas opuestas: $18\\ \\text{N}$ hacia la derecha y $7\\ \\text{N}$ hacia la izquierda. Calcula la fuerza resultante e indica su sentido.",
+    "resolucion_latex": "Cuando dos fuerzas actúan en la misma dirección pero en sentidos opuestos, se restan.<br>La fuerza mayor es $18\\ \\text{N}$ hacia la derecha.<br>Calculamos:<br>$F_R=18-7=11\\ \\text{N}$.<br>La fuerza resultante es $11\\ \\text{N}$ hacia la derecha.",
+    "pista": "Si las fuerzas van en sentidos contrarios, gana la mayor.",
+    "formula": "$$F_R=F_{mayor}-F_{menor}$$"
+  },
+  {
+    "asignatura": "Física 2º ESO",
+    "id": 2117,
+    "dificultad": "Alta",
+    "bloque": "Tema 2: Las fuerzas",
+    "enunciado": "Un objeto de masa $3\\ \\text{kg}$ está en la Tierra. Calcula su peso y explica si su masa cambiaría al llevarlo a la Luna.",
+    "resolucion_latex": "Calculamos el peso en la Tierra usando:<br>$P=m\\cdot g$.<br>Sustituimos:<br>$P=3\\cdot 9,8=29,4\\ \\text{N}$.<br>El peso en la Tierra es $29,4\\ \\text{N}$.<br><br>Su masa no cambiaría al llevarlo a la Luna. Seguiría siendo $3\\ \\text{kg}$ porque la masa mide la cantidad de materia.<br>Lo que sí cambiaría sería su peso, porque la gravedad lunar es menor.",
+    "pista": "La masa permanece igual; el peso depende de la gravedad.",
+    "formula": "$$P=m\\cdot g$$"
+  },
+  {
+    "asignatura": "Física 2º ESO",
+    "id": 2118,
+    "dificultad": "Alta",
+    "bloque": "Tema 2: Las fuerzas",
+    "enunciado": "Un muelle mide $12\\ \\text{cm}$ en reposo y $17\\ \\text{cm}$ cuando se cuelga una pesa. Calcula cuánto se ha deformado el muelle.",
+    "resolucion_latex": "La deformación o alargamiento se calcula restando la longitud inicial a la longitud final:<br>$\\Delta L=L_f-L_i$.<br>Sustituimos:<br>$\\Delta L=17-12=5\\ \\text{cm}$.<br>El muelle se ha deformado $5\\ \\text{cm}$.",
+    "pista": "La deformación es el cambio de longitud.",
+    "formula": "$$\\Delta L=L_f-L_i$$"
+  },
+  {
+    "asignatura": "Física 2º ESO",
+    "id": 2119,
+    "dificultad": "Alta",
+    "bloque": "Tema 2: Las fuerzas",
+    "enunciado": "Sobre una caja actúan tres fuerzas horizontales: $20\\ \\text{N}$ hacia la derecha, $8\\ \\text{N}$ hacia la izquierda y $5\\ \\text{N}$ hacia la izquierda. Calcula la fuerza resultante.",
+    "resolucion_latex": "Tomamos como positivo el sentido hacia la derecha.<br>La fuerza hacia la derecha es $+20\\ \\text{N}$.<br>Las fuerzas hacia la izquierda son $-8\\ \\text{N}$ y $-5\\ \\text{N}$.<br>Sumamos:<br>$F_R=20-8-5=7\\ \\text{N}$.<br>La fuerza resultante es $7\\ \\text{N}$ hacia la derecha.",
+    "pista": "Suma las fuerzas que van hacia un lado y resta las que van hacia el lado contrario.",
+    "formula": "$$F_R=\\sum F$$"
+  },
+  {
+    "asignatura": "Física 2º ESO",
+    "id": 2120,
+    "dificultad": "Superior",
+    "bloque": "Tema 2: Las fuerzas",
+    "enunciado": "Ejercicio trampa: Un alumno afirma que un objeto que pesa $50\\ \\text{N}$ tiene una masa de $50\\ \\text{kg}$. Explica el error y calcula aproximadamente su masa usando $g=10\\ \\text{m/s}^2$.",
+    "resolucion_latex": "El error está en confundir peso y masa.<br>El peso se mide en newtons ($\\text{N}$), mientras que la masa se mide en kilogramos ($\\text{kg}$).<br>Usamos la relación:<br>$P=m\\cdot g$.<br>Despejamos la masa:<br>$m=\\frac{P}{g}$.<br>Sustituimos:<br>$m=\\frac{50}{10}=5\\ \\text{kg}$.<br>Por tanto, un objeto que pesa $50\\ \\text{N}$ tiene una masa aproximada de $5\\ \\text{kg}$, no de $50\\ \\text{kg}$.",
+    "pista": "No confundas la unidad de peso con la unidad de masa.",
+    "formula": "$$m=\\frac{P}{g}$$"
+  },
+  {
+    "asignatura": "Física 2º ESO",
+    "id": 2121,
+    "dificultad": "Básica",
+    "bloque": "Tema 3: La energía",
+    "enunciado": "Explica qué es la energía y escribe su unidad en el Sistema Internacional.",
+    "resolucion_latex": "La energía es la capacidad que tiene un cuerpo o sistema para producir cambios.<br>Por ejemplo, puede producir movimiento, calor, luz, sonido o transformaciones químicas.<br>La unidad de energía en el Sistema Internacional es el julio, cuyo símbolo es $\\text{J}$.<br>Por tanto, la energía se mide en julios.",
+    "pista": "Piensa en la energía como aquello que permite que ocurran cambios.",
+    "formula": "$$\\text{energía}\\rightarrow\\text{capacidad de producir cambios}$$"
+  },
+  {
+    "asignatura": "Física 2º ESO",
+    "id": 2122,
+    "dificultad": "Básica",
+    "bloque": "Tema 3: La energía",
+    "enunciado": "Clasifica las siguientes formas de energía: energía de un coche en movimiento, energía de una maceta situada en una ventana, energía de una pila y energía de una estufa encendida.",
+    "resolucion_latex": "Un coche en movimiento tiene energía cinética, porque se está moviendo.<br>Una maceta situada en una ventana tiene energía potencial gravitatoria, porque está a cierta altura.<br>Una pila tiene energía química almacenada.<br>Una estufa encendida proporciona energía térmica.<br>Por tanto:<br>Coche: energía cinética.<br>Maceta: energía potencial gravitatoria.<br>Pila: energía química.<br>Estufa: energía térmica.",
+    "pista": "Relaciona cada situación con movimiento, altura, sustancias químicas o calor.",
+    "formula": "$$E_c:\\text{movimiento} \\quad ; \\quad E_p:\\text{altura}$$"
+  },
+  {
+    "asignatura": "Física 2º ESO",
+    "id": 2123,
+    "dificultad": "Básica",
+    "bloque": "Tema 3: La energía",
+    "enunciado": "Indica si las siguientes fuentes de energía son renovables o no renovables: solar, carbón, petróleo, eólica y gas natural.",
+    "resolucion_latex": "La energía solar es renovable porque procede del Sol y no se agota a escala humana.<br>El carbón es no renovable porque tarda millones de años en formarse.<br>El petróleo es no renovable.<br>La energía eólica es renovable porque procede del viento.<br>El gas natural es no renovable.<br>Por tanto:<br>Renovables: solar y eólica.<br>No renovables: carbón, petróleo y gas natural.",
+    "pista": "Las fuentes renovables se regeneran de forma natural en poco tiempo; las no renovables tardan muchísimo en formarse.",
+    "formula": "$$\\text{renovable}\\neq\\text{inagotable si se usa mal}$$"
+  },
+  {
+    "asignatura": "Física 2º ESO",
+    "id": 2124,
+    "dificultad": "Media",
+    "bloque": "Tema 3: La energía",
+    "enunciado": "Calcula la energía cinética de un objeto de masa $4\\ \\text{kg}$ que se mueve a $3\\ \\text{m/s}$.",
+    "resolucion_latex": "La energía cinética se calcula con:<br>$E_c=\\frac{1}{2}mv^2$.<br>Sustituimos:<br>$E_c=\\frac{1}{2}\\cdot 4\\cdot 3^2$.<br>$E_c=2\\cdot 9=18\\ \\text{J}$.<br>La energía cinética del objeto es $18\\ \\text{J}$.",
+    "pista": "La velocidad está elevada al cuadrado, así que primero calcula $v^2$.",
+    "formula": "$$E_c=\\frac{1}{2}mv^2$$"
+  },
+  {
+    "asignatura": "Física 2º ESO",
+    "id": 2125,
+    "dificultad": "Media",
+    "bloque": "Tema 3: La energía",
+    "enunciado": "Calcula la energía potencial gravitatoria de un objeto de masa $2\\ \\text{kg}$ situado a $5\\ \\text{m}$ de altura. Usa $g=9,8\\ \\text{m/s}^2$.",
+    "resolucion_latex": "La energía potencial gravitatoria se calcula con:<br>$E_p=mgh$.<br>Sustituimos:<br>$E_p=2\\cdot 9,8\\cdot 5$.<br>$E_p=98\\ \\text{J}$.<br>La energía potencial gravitatoria es $98\\ \\text{J}$.",
+    "pista": "La energía potencial aumenta si aumenta la masa, la gravedad o la altura.",
+    "formula": "$$E_p=mgh$$"
+  },
+  {
+    "asignatura": "Física 2º ESO",
+    "id": 2126,
+    "dificultad": "Media",
+    "bloque": "Tema 3: La energía",
+    "enunciado": "Un cuerpo tiene $30\\ \\text{J}$ de energía cinética y $70\\ \\text{J}$ de energía potencial. Calcula su energía mecánica.",
+    "resolucion_latex": "La energía mecánica es la suma de la energía cinética y la energía potencial:<br>$E_m=E_c+E_p$.<br>Sustituimos:<br>$E_m=30+70=100\\ \\text{J}$.<br>La energía mecánica del cuerpo es $100\\ \\text{J}$.",
+    "pista": "La energía mecánica combina la energía del movimiento y la energía de la posición.",
+    "formula": "$$E_m=E_c+E_p$$"
+  },
+  {
+    "asignatura": "Física 2º ESO",
+    "id": 2127,
+    "dificultad": "Alta",
+    "bloque": "Tema 3: La energía",
+    "enunciado": "Una pelota de masa $0,5\\ \\text{kg}$ se mueve a $10\\ \\text{m/s}$ y está a $2\\ \\text{m}$ de altura. Calcula su energía cinética, su energía potencial y su energía mecánica. Usa $g=9,8\\ \\text{m/s}^2$.",
+    "resolucion_latex": "Calculamos primero la energía cinética:<br>$E_c=\\frac{1}{2}mv^2=\\frac{1}{2}\\cdot 0,5\\cdot 10^2$.<br>$E_c=0,25\\cdot 100=25\\ \\text{J}$.<br><br>Calculamos ahora la energía potencial:<br>$E_p=mgh=0,5\\cdot 9,8\\cdot 2=9,8\\ \\text{J}$.<br><br>La energía mecánica es:<br>$E_m=E_c+E_p=25+9,8=34,8\\ \\text{J}$.<br>Por tanto, $E_c=25\\ \\text{J}$, $E_p=9,8\\ \\text{J}$ y $E_m=34,8\\ \\text{J}$.",
+    "pista": "Calcula por separado la energía de movimiento y la energía de altura.",
+    "formula": "$$E_m=E_c+E_p$$"
+  },
+  {
+    "asignatura": "Física 2º ESO",
+    "id": 2128,
+    "dificultad": "Alta",
+    "bloque": "Tema 3: La energía",
+    "enunciado": "Explica qué transformación de energía ocurre en una bombilla, en una placa solar y en una bicicleta en movimiento.",
+    "resolucion_latex": "En una bombilla, la energía eléctrica se transforma principalmente en energía luminosa y también en energía térmica.<br>En una placa solar, la energía luminosa del Sol se transforma en energía eléctrica.<br>En una bicicleta en movimiento, la energía química de los alimentos del ciclista se transforma en energía mecánica y también en energía térmica.<br>Por tanto, la energía puede transformarse de una forma a otra, pero no desaparece.",
+    "pista": "Busca la energía inicial y la energía final en cada caso.",
+    "formula": "$$\\text{energía inicial}\\rightarrow\\text{energía transformada}$$"
+  },
+  {
+    "asignatura": "Física 2º ESO",
+    "id": 2129,
+    "dificultad": "Alta",
+    "bloque": "Tema 3: La energía",
+    "enunciado": "Una máquina recibe $500\\ \\text{J}$ de energía y transforma $350\\ \\text{J}$ en energía útil. Calcula su rendimiento en porcentaje.",
+    "resolucion_latex": "El rendimiento se calcula comparando la energía útil con la energía total recibida:<br>$\\eta=\\frac{E_{útil}}{E_{recibida}}\\cdot 100$.<br>Sustituimos:<br>$\\eta=\\frac{350}{500}\\cdot 100=70\\%$.<br>El rendimiento de la máquina es del $70\\%$.",
+    "pista": "El rendimiento indica qué parte de la energía recibida se aprovecha realmente.",
+    "formula": "$$\\eta=\\frac{E_{útil}}{E_{recibida}}\\cdot 100$$"
+  },
+  {
+    "asignatura": "Física 2º ESO",
+    "id": 2130,
+    "dificultad": "Superior",
+    "bloque": "Tema 3: La energía",
+    "enunciado": "Ejercicio trampa: Un alumno dice que cuando una bombilla se calienta, se ha perdido energía. Explica el error usando el principio de conservación de la energía.",
+    "resolucion_latex": "El error está en pensar que la energía desaparece.<br>Según el principio de conservación de la energía, la energía no se crea ni se destruye, solo se transforma.<br>En una bombilla, parte de la energía eléctrica se transforma en luz, que es la energía útil buscada.<br>Otra parte se transforma en calor, que puede considerarse energía no útil en ese caso, pero no ha desaparecido.<br>Por tanto, la energía no se pierde: se transforma en otras formas de energía.",
+    "pista": "Que una energía no sea útil no significa que haya desaparecido.",
+    "formula": "$$E_{inicial}=E_{final}\\quad \\text{si no hay pérdidas fuera del sistema}$$"
+  },
+  {
+    "asignatura": "Física 2º ESO",
+    "id": 2131,
+    "dificultad": "Básica",
+    "bloque": "Tema 4: Calor y temperatura",
+    "enunciado": "Explica la diferencia entre calor y temperatura.",
+    "resolucion_latex": "La temperatura indica lo caliente o frío que está un cuerpo y se relaciona con la agitación de sus partículas.<br>El calor es energía que se transfiere de un cuerpo a otro cuando están a diferente temperatura.<br>El calor siempre pasa espontáneamente del cuerpo con mayor temperatura al cuerpo con menor temperatura.<br>Por tanto, temperatura y calor no son lo mismo: la temperatura es una medida del estado térmico, y el calor es energía en tránsito.",
+    "pista": "La temperatura se mide; el calor se transfiere.",
+    "formula": "$$\\text{calor}:\\ T_{alta}\\rightarrow T_{baja}$$"
+  },
+  {
+    "asignatura": "Física 2º ESO",
+    "id": 2132,
+    "dificultad": "Básica",
+    "bloque": "Tema 4: Calor y temperatura",
+    "enunciado": "Convierte $20\\ ^\\circ\\text{C}$ a kelvin.",
+    "resolucion_latex": "Para pasar de grados Celsius a kelvin usamos:<br>$T(K)=T(^\\circ\\text{C})+273$.<br>Sustituimos:<br>$T=20+273=293\\ \\text{K}$.<br>Por tanto, $20\\ ^\\circ\\text{C}$ equivalen a $293\\ \\text{K}$.",
+    "pista": "Para pasar de Celsius a kelvin, suma $273$.",
+    "formula": "$$T(K)=T(^\\circ\\text{C})+273$$"
+  },
+  {
+    "asignatura": "Física 2º ESO",
+    "id": 2133,
+    "dificultad": "Básica",
+    "bloque": "Tema 4: Calor y temperatura",
+    "enunciado": "Indica qué instrumento se usa para medir la temperatura y escribe dos escalas termométricas habituales.",
+    "resolucion_latex": "La temperatura se mide con un termómetro.<br>Dos escalas termométricas habituales son la escala Celsius, que se expresa en grados Celsius ($^\\circ\\text{C}$), y la escala Kelvin, que se expresa en kelvin ($\\text{K}$).<br>También existe la escala Fahrenheit, aunque se usa menos en ciencias en España.<br>Por tanto, el instrumento es el termómetro y dos escalas habituales son Celsius y Kelvin.",
+    "pista": "En ciencias se usa mucho la escala Kelvin, aunque en la vida diaria usamos Celsius.",
+    "formula": "$$^\\circ\\text{C} \\quad ; \\quad \\text{K}$$"
+  },
+  {
+    "asignatura": "Física 2º ESO",
+    "id": 2134,
+    "dificultad": "Media",
+    "bloque": "Tema 4: Calor y temperatura",
+    "enunciado": "Convierte $350\\ \\text{K}$ a grados Celsius.",
+    "resolucion_latex": "Para pasar de kelvin a grados Celsius usamos:<br>$T(^\\circ\\text{C})=T(K)-273$.<br>Sustituimos:<br>$T=350-273=77\\ ^\\circ\\text{C}$.<br>Por tanto, $350\\ \\text{K}$ equivalen a $77\\ ^\\circ\\text{C}$.",
+    "pista": "Para pasar de kelvin a Celsius, resta $273$.",
+    "formula": "$$T(^\\circ\\text{C})=T(K)-273$$"
+  },
+  {
+    "asignatura": "Física 2º ESO",
+    "id": 2135,
+    "dificultad": "Media",
+    "bloque": "Tema 4: Calor y temperatura",
+    "enunciado": "Clasifica los siguientes ejemplos según el tipo de propagación del calor: una cuchara metálica se calienta dentro de una sopa, el aire caliente sube en una habitación y el Sol calienta la Tierra.",
+    "resolucion_latex": "La cuchara metálica se calienta por conducción, porque el calor se transmite a través del metal.<br>El aire caliente sube por convección, porque el calor se transmite mediante el movimiento de un fluido.<br>El Sol calienta la Tierra por radiación, porque la energía llega mediante ondas electromagnéticas y no necesita un medio material.<br>Por tanto:<br>Cuchara: conducción.<br>Aire caliente: convección.<br>Sol-Tierra: radiación.",
+    "pista": "Conducción: contacto. Convección: movimiento de fluidos. Radiación: ondas, incluso en el vacío.",
+    "formula": "$$\\text{conducción} \\quad ; \\quad \\text{convección} \\quad ; \\quad \\text{radiación}$$"
+  },
+  {
+    "asignatura": "Física 2º ESO",
+    "id": 2136,
+    "dificultad": "Media",
+    "bloque": "Tema 4: Calor y temperatura",
+    "enunciado": "Explica por qué una barra metálica se nota más fría que una de madera aunque ambas estén a la misma temperatura.",
+    "resolucion_latex": "Aunque la barra metálica y la de madera estén a la misma temperatura, el metal conduce mejor el calor que la madera.<br>Cuando tocamos el metal, el calor de nuestra mano pasa rápidamente al metal, y por eso sentimos frío.<br>La madera conduce peor el calor, así que extrae menos calor de la mano en el mismo tiempo.<br>Por tanto, no es que el metal esté necesariamente más frío, sino que conduce mejor el calor.",
+    "pista": "La sensación térmica depende también de cómo se transmite el calor, no solo de la temperatura.",
+    "formula": "$$\\text{metal}\\rightarrow\\text{buen conductor térmico}$$"
+  },
+  {
+    "asignatura": "Física 2º ESO",
+    "id": 2137,
+    "dificultad": "Alta",
+    "bloque": "Tema 4: Calor y temperatura",
+    "enunciado": "Calcula el aumento de temperatura de un cuerpo que pasa de $18\\ ^\\circ\\text{C}$ a $45\\ ^\\circ\\text{C}$.",
+    "resolucion_latex": "El aumento de temperatura se calcula restando la temperatura inicial a la final:<br>$\\Delta T=T_f-T_i$.<br>Sustituimos:<br>$\\Delta T=45-18=27\\ ^\\circ\\text{C}$.<br>El aumento de temperatura es $27\\ ^\\circ\\text{C}$.",
+    "pista": "El cambio de temperatura se calcula con temperatura final menos temperatura inicial.",
+    "formula": "$$\\Delta T=T_f-T_i$$"
+  },
+  {
+    "asignatura": "Física 2º ESO",
+    "id": 2138,
+    "dificultad": "Alta",
+    "bloque": "Tema 4: Calor y temperatura",
+    "enunciado": "Un objeto está a $15\\ ^\\circ\\text{C}$ y se calienta hasta $330\\ \\text{K}$. Calcula el aumento de temperatura en grados Celsius.",
+    "resolucion_latex": "Primero pasamos la temperatura final a grados Celsius:<br>$T(^\\circ\\text{C})=T(K)-273$.<br>$T_f=330-273=57\\ ^\\circ\\text{C}$.<br>Ahora calculamos el aumento de temperatura:<br>$\\Delta T=T_f-T_i=57-15=42\\ ^\\circ\\text{C}$.<br>El aumento de temperatura es $42\\ ^\\circ\\text{C}$.",
+    "pista": "Antes de restar temperaturas, asegúrate de que están en la misma escala.",
+    "formula": "$$T(^\\circ\\text{C})=T(K)-273$$"
+  },
+  {
+    "asignatura": "Física 2º ESO",
+    "id": 2139,
+    "dificultad": "Alta",
+    "bloque": "Tema 4: Calor y temperatura",
+    "enunciado": "Explica por qué en una habitación el aire caliente tiende a subir y el aire frío tiende a bajar.",
+    "resolucion_latex": "Cuando el aire se calienta, sus partículas se mueven más y el aire se dilata, disminuyendo su densidad.<br>Al ser menos denso, el aire caliente asciende.<br>El aire frío, en cambio, es más denso y tiende a bajar.<br>Este movimiento del aire produce corrientes de convección, que permiten la propagación del calor en los gases.",
+    "pista": "El aire caliente es menos denso que el aire frío.",
+    "formula": "$$\\text{aire caliente}\\uparrow \\quad ; \\quad \\text{aire frío}\\downarrow$$"
+  },
+  {
+    "asignatura": "Física 2º ESO",
+    "id": 2140,
+    "dificultad": "Superior",
+    "bloque": "Tema 4: Calor y temperatura",
+    "enunciado": "Ejercicio trampa: Un alumno dice que un cuerpo con más temperatura siempre tiene más calor. Explica el error.",
+    "resolucion_latex": "El error está en confundir temperatura con calor.<br>La temperatura indica el estado térmico de un cuerpo, pero el calor es energía que se transfiere entre cuerpos a distinta temperatura.<br>No se dice correctamente que un cuerpo tiene calor; se dice que puede transferir o recibir calor.<br>Además, la cantidad de energía térmica depende también de la masa y del material, no solo de la temperatura.<br>Por tanto, mayor temperatura no significa automáticamente mayor cantidad total de energía térmica.",
+    "pista": "El calor no es algo que un cuerpo tenga almacenado como tal; es energía en transferencia.",
+    "formula": "$$\\text{calor}\\neq\\text{temperatura}$$"
+  },
+  {
+    "asignatura": "Física 2º ESO",
+    "id": 2141,
+    "dificultad": "Básica",
+    "bloque": "Tema 5: Luz y sonido",
+    "enunciado": "Indica si la luz y el sonido pueden propagarse en el vacío.",
+    "resolucion_latex": "La luz sí puede propagarse en el vacío, porque es una onda electromagnética y no necesita un medio material.<br>Por eso la luz del Sol puede llegar hasta la Tierra atravesando el espacio.<br><br>El sonido, en cambio, no puede propagarse en el vacío, porque necesita un medio material, como aire, agua o un sólido, para transmitirse.<br>Por tanto, la luz sí se propaga en el vacío, pero el sonido no.",
+    "pista": "Piensa en cómo nos llega la luz del Sol y en por qué en el espacio no se oyen sonidos.",
+    "formula": "$$\\text{luz: puede ir en el vacío} \\quad ; \\quad \\text{sonido: necesita medio material}$$"
+  },
+  {
+    "asignatura": "Física 2º ESO",
+    "id": 2142,
+    "dificultad": "Básica",
+    "bloque": "Tema 5: Luz y sonido",
+    "enunciado": "Explica qué significa que la luz se propaga en línea recta.",
+    "resolucion_latex": "Decir que la luz se propaga en línea recta significa que, en un medio homogéneo, los rayos de luz avanzan siguiendo trayectorias rectas.<br>Por eso se forman sombras cuando un objeto opaco bloquea el paso de la luz.<br>También por eso podemos representar la luz mediante rayos rectos en esquemas sencillos.",
+    "pista": "La formación de sombras es una prueba sencilla de que la luz viaja en línea recta.",
+    "formula": "$$\\text{luz}\\rightarrow\\text{rayos rectos en un medio homogéneo}$$"
+  },
+  {
+    "asignatura": "Física 2º ESO",
+    "id": 2143,
+    "dificultad": "Básica",
+    "bloque": "Tema 5: Luz y sonido",
+    "enunciado": "Clasifica los siguientes materiales como transparentes, translúcidos u opacos: vidrio limpio, papel vegetal, madera y agua limpia.",
+    "resolucion_latex": "Un material transparente deja pasar la luz y permite ver con claridad a través de él. El vidrio limpio y el agua limpia son transparentes.<br>Un material translúcido deja pasar parte de la luz, pero no permite ver con claridad. El papel vegetal es translúcido.<br>Un material opaco no deja pasar la luz. La madera es opaca.<br>Por tanto:<br>Transparentes: vidrio limpio y agua limpia.<br>Translúcido: papel vegetal.<br>Opaco: madera.",
+    "pista": "Pregúntate si se puede ver claramente a través del material, solo borroso o nada.",
+    "formula": "$$\\text{transparente} \\quad ; \\quad \\text{translúcido} \\quad ; \\quad \\text{opaco}$$"
+  },
+  {
+    "asignatura": "Física 2º ESO",
+    "id": 2144,
+    "dificultad": "Media",
+    "bloque": "Tema 5: Luz y sonido",
+    "enunciado": "El sonido viaja en el aire aproximadamente a $340\\ \\text{m/s}$. Si un trueno se oye $5\\ \\text{s}$ después de ver el relámpago, estima a qué distancia cayó el rayo.",
+    "resolucion_latex": "La luz del relámpago llega casi instantáneamente comparada con el sonido, así que usamos el tiempo que tarda el sonido.<br>La distancia se calcula con:<br>$s=v\\cdot t$.<br>Sustituimos:<br>$s=340\\cdot 5=1700\\ \\text{m}$.<br>Pasamos a kilómetros:<br>$1700\\ \\text{m}=1,7\\ \\text{km}$.<br>El rayo cayó aproximadamente a $1,7\\ \\text{km}$.",
+    "pista": "El retraso entre relámpago y trueno se debe a que el sonido viaja mucho más lento que la luz.",
+    "formula": "$$s=v\\cdot t$$"
+  },
+  {
+    "asignatura": "Física 2º ESO",
+    "id": 2145,
+    "dificultad": "Media",
+    "bloque": "Tema 5: Luz y sonido",
+    "enunciado": "Explica la diferencia entre reflexión y refracción de la luz.",
+    "resolucion_latex": "La reflexión ocurre cuando la luz choca con una superficie y rebota. Por ejemplo, un espejo refleja la luz.<br><br>La refracción ocurre cuando la luz cambia de dirección al pasar de un medio a otro, por ejemplo del aire al agua.<br>Esto sucede porque la luz cambia de velocidad al entrar en otro medio.<br>Por tanto, reflexión es rebote de la luz y refracción es cambio de dirección al cambiar de medio.",
+    "pista": "Reflexión: la luz rebota. Refracción: la luz cambia de dirección al pasar a otro medio.",
+    "formula": "$$\\text{reflexión: rebote} \\quad ; \\quad \\text{refracción: cambio de medio}$$"
+  },
+  {
+    "asignatura": "Física 2º ESO",
+    "id": 2146,
+    "dificultad": "Media",
+    "bloque": "Tema 5: Luz y sonido",
+    "enunciado": "Ordena estos colores del espectro visible desde menor a mayor frecuencia: violeta, rojo, verde y azul.",
+    "resolucion_latex": "En el espectro visible, la luz roja tiene menor frecuencia que la verde, la azul y la violeta.<br>La luz violeta es la de mayor frecuencia entre las opciones dadas.<br>Por tanto, de menor a mayor frecuencia:<br>rojo, verde, azul y violeta.",
+    "pista": "En el visible, el rojo está en la zona de menor frecuencia y el violeta en la de mayor frecuencia.",
+    "formula": "$$f_{rojo}<f_{verde}<f_{azul}<f_{violeta}$$"
+  },
+  {
+    "asignatura": "Física 2º ESO",
+    "id": 2147,
+    "dificultad": "Alta",
+    "bloque": "Tema 5: Luz y sonido",
+    "enunciado": "Un sonido recorre $1020\\ \\text{m}$ en el aire. Si la velocidad del sonido es $340\\ \\text{m/s}$, calcula cuánto tarda en llegar.",
+    "resolucion_latex": "Usamos la relación entre distancia, velocidad y tiempo:<br>$s=v\\cdot t$.<br>Despejamos el tiempo:<br>$t=\\frac{s}{v}$.<br>Sustituimos:<br>$t=\\frac{1020}{340}=3\\ \\text{s}$.<br>El sonido tarda $3\\ \\text{s}$ en llegar.",
+    "pista": "Si conoces la distancia y la velocidad, divide distancia entre velocidad.",
+    "formula": "$$t=\\frac{s}{v}$$"
+  },
+  {
+    "asignatura": "Física 2º ESO",
+    "id": 2148,
+    "dificultad": "Alta",
+    "bloque": "Tema 5: Luz y sonido",
+    "enunciado": "Explica por qué vemos un lápiz aparentemente doblado cuando está parcialmente sumergido en un vaso de agua.",
+    "resolucion_latex": "El lápiz parece doblado debido a la refracción de la luz.<br>La luz que viene de la parte sumergida del lápiz pasa del agua al aire. Al cambiar de medio, cambia su velocidad y también su dirección.<br>Nuestro cerebro interpreta que la luz ha viajado en línea recta, por eso la parte sumergida parece estar desplazada.<br>Por tanto, el lápiz no está realmente doblado: es un efecto óptico producido por la refracción.",
+    "pista": "Cuando la luz pasa del agua al aire, cambia de dirección.",
+    "formula": "$$\\text{agua}\\rightarrow\\text{aire}:\\ \\text{refracción de la luz}$$"
+  },
+  {
+    "asignatura": "Física 2º ESO",
+    "id": 2149,
+    "dificultad": "Alta",
+    "bloque": "Tema 5: Luz y sonido",
+    "enunciado": "Explica la diferencia entre tono, intensidad y timbre de un sonido usando ejemplos.",
+    "resolucion_latex": "El tono permite distinguir sonidos graves y agudos. Por ejemplo, un silbato produce un sonido agudo y un tambor grande produce un sonido grave.<br><br>La intensidad indica si un sonido es fuerte o débil. Por ejemplo, un grito tiene más intensidad que un susurro.<br><br>El timbre permite distinguir sonidos aunque tengan el mismo tono e intensidad. Por ejemplo, una guitarra y un piano pueden tocar la misma nota, pero suenan diferente por su timbre.",
+    "pista": "Tono: grave o agudo. Intensidad: fuerte o débil. Timbre: qué objeto o instrumento lo produce.",
+    "formula": "$$\\text{tono} \\quad ; \\quad \\text{intensidad} \\quad ; \\quad \\text{timbre}$$"
+  },
+  {
+    "asignatura": "Física 2º ESO",
+    "id": 2150,
+    "dificultad": "Superior",
+    "bloque": "Tema 5: Luz y sonido",
+    "enunciado": "Ejercicio trampa: Un alumno afirma que vemos los objetos porque los ojos emiten luz hacia ellos. Explica el error.",
+    "resolucion_latex": "El error está en pensar que los ojos emiten luz. En realidad, vemos los objetos porque la luz llega a nuestros ojos.<br>Un objeto luminoso, como una bombilla, emite luz propia.<br>Un objeto iluminado, como un libro, no emite luz propia, sino que refleja parte de la luz que recibe.<br>Cuando esa luz reflejada entra en nuestros ojos, podemos ver el objeto.<br>Por tanto, los ojos no emiten luz: reciben luz.",
+    "pista": "Para ver un objeto, debe llegar luz desde ese objeto hasta nuestros ojos.",
+    "formula": "$$\\text{objeto}\\rightarrow\\text{luz reflejada}\\rightarrow\\text{ojo}$$"
+  }
+]

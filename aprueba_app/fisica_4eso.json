@@ -1,0 +1,502 @@
+[
+  {
+    "asignatura": "Física 4º ESO",
+    "id": 4101,
+    "dificultad": "Básica",
+    "bloque": "Tema 1: Cinemática: MRU, MRUA, caída libre y gráficas",
+    "enunciado": "Un coche se mueve con velocidad constante de $20 \\text{ m/s}$ durante $15$ segundos. Calcula la distancia recorrida.",
+    "resolucion_latex": "Como el movimiento es rectilíneo uniforme, usamos:<br>$s=v\\cdot t$.<br>Sustituimos los datos:<br>$s=20\\cdot 15=300 \\text{ m}$.<br>Por tanto, el coche recorre $300 \\text{ m}$.",
+    "pista": "Si la velocidad es constante, basta con multiplicar la velocidad por el tiempo.",
+    "formula": "$$s=v\\cdot t$$"
+  },
+  {
+    "asignatura": "Física 4º ESO",
+    "id": 4102,
+    "dificultad": "Básica",
+    "bloque": "Tema 1: Cinemática: MRU, MRUA, caída libre y gráficas",
+    "enunciado": "Un ciclista recorre $600$ metros en $40$ segundos con velocidad constante. Calcula su velocidad media.",
+    "resolucion_latex": "La velocidad media se calcula dividiendo el espacio recorrido entre el tiempo empleado:<br>$v=\\frac{s}{t}$.<br>Sustituimos:<br>$v=\\frac{600}{40}=15 \\text{ m/s}$.<br>Por tanto, la velocidad media del ciclista es $15 \\text{ m/s}$.",
+    "pista": "La velocidad indica cuántos metros recorre por cada segundo.",
+    "formula": "$$v=\\frac{s}{t}$$"
+  },
+  {
+    "asignatura": "Física 4º ESO",
+    "id": 4103,
+    "dificultad": "Básica",
+    "bloque": "Tema 1: Cinemática: MRU, MRUA, caída libre y gráficas",
+    "enunciado": "Un móvil parte del reposo y alcanza una velocidad de $12 \\text{ m/s}$ en $4$ segundos. Calcula su aceleración.",
+    "resolucion_latex": "La aceleración se calcula como la variación de velocidad dividida entre el tiempo:<br>$a=\\frac{v_f-v_i}{t}$.<br>Como parte del reposo, $v_i=0$.<br>Sustituimos:<br>$a=\\frac{12-0}{4}=3 \\text{ m/s}^2$.<br>La aceleración es $3 \\text{ m/s}^2$.",
+    "pista": "Partir del reposo significa que la velocidad inicial es cero.",
+    "formula": "$$a=\\frac{v_f-v_i}{t}$$"
+  },
+  {
+    "asignatura": "Física 4º ESO",
+    "id": 4104,
+    "dificultad": "Media",
+    "bloque": "Tema 1: Cinemática: MRU, MRUA, caída libre y gráficas",
+    "enunciado": "Un coche parte del reposo con aceleración constante de $2 \\text{ m/s}^2$. Calcula la velocidad que tendrá después de $8$ segundos.",
+    "resolucion_latex": "En un movimiento uniformemente acelerado usamos:<br>$v_f=v_i+a\\cdot t$.<br>Como el coche parte del reposo, $v_i=0$.<br>Sustituimos:<br>$v_f=0+2\\cdot 8=16 \\text{ m/s}$.<br>La velocidad final será $16 \\text{ m/s}$.",
+    "pista": "Si el móvil parte del reposo, la velocidad final depende solo de la aceleración y del tiempo.",
+    "formula": "$$v_f=v_i+a\\cdot t$$"
+  },
+  {
+    "asignatura": "Física 4º ESO",
+    "id": 4105,
+    "dificultad": "Media",
+    "bloque": "Tema 1: Cinemática: MRU, MRUA, caída libre y gráficas",
+    "enunciado": "Un objeto parte del reposo con aceleración constante de $3 \\text{ m/s}^2$ durante $5$ segundos. Calcula el espacio recorrido.",
+    "resolucion_latex": "Como el objeto parte del reposo y tiene aceleración constante, usamos:<br>$s=v_i t+\\frac{1}{2}at^2$.<br>Como $v_i=0$, queda:<br>$s=\\frac{1}{2}at^2$.<br>Sustituimos:<br>$s=\\frac{1}{2}\\cdot 3\\cdot 5^2=1,5\\cdot 25=37,5 \\text{ m}$.<br>El objeto recorre $37,5 \\text{ m}$.",
+    "pista": "Cuando hay aceleración, el espacio no se calcula simplemente como velocidad por tiempo, salvo que la velocidad sea constante.",
+    "formula": "$$s=v_i t+\\frac{1}{2}at^2$$"
+  },
+  {
+    "asignatura": "Física 4º ESO",
+    "id": 4106,
+    "dificultad": "Media",
+    "bloque": "Tema 1: Cinemática: MRU, MRUA, caída libre y gráficas",
+    "enunciado": "Se deja caer una piedra desde lo alto de un puente. Despreciando el rozamiento del aire, calcula su velocidad después de $3$ segundos. Usa $g=9,8 \\text{ m/s}^2$.",
+    "resolucion_latex": "En una caída libre desde el reposo, la aceleración es la gravedad:<br>$g=9,8 \\text{ m/s}^2$.<br>Usamos:<br>$v=g\\cdot t$.<br>Sustituimos:<br>$v=9,8\\cdot 3=29,4 \\text{ m/s}$.<br>La piedra tendrá una velocidad de $29,4 \\text{ m/s}$ hacia abajo.",
+    "pista": "En caída libre, si el objeto se suelta desde el reposo, su velocidad aumenta por acción de la gravedad.",
+    "formula": "$$v=g\\cdot t$$"
+  },
+  {
+    "asignatura": "Física 4º ESO",
+    "id": 4107,
+    "dificultad": "Alta",
+    "bloque": "Tema 1: Cinemática: MRU, MRUA, caída libre y gráficas",
+    "enunciado": "Un coche circula a $25 \\text{ m/s}$ y frena uniformemente hasta detenerse en $5$ segundos. Calcula su aceleración y la distancia recorrida durante la frenada.",
+    "resolucion_latex": "Primero calculamos la aceleración:<br>$a=\\frac{v_f-v_i}{t}=\\frac{0-25}{5}=-5 \\text{ m/s}^2$.<br>La aceleración es negativa porque el coche está frenando.<br><br>Ahora calculamos la distancia recorrida usando la velocidad media:<br>$v_{media}=\\frac{v_i+v_f}{2}=\\frac{25+0}{2}=12,5 \\text{ m/s}$.<br>$s=v_{media}\\cdot t=12,5\\cdot 5=62,5 \\text{ m}$.<br>Por tanto, la aceleración es $-5 \\text{ m/s}^2$ y la distancia de frenado es $62,5 \\text{ m}$.",
+    "pista": "En una frenada, la velocidad final es cero y la aceleración sale negativa.",
+    "formula": "$$a=\\frac{v_f-v_i}{t} \\quad ; \\quad s=\\frac{v_i+v_f}{2}\\cdot t$$"
+  },
+  {
+    "asignatura": "Física 4º ESO",
+    "id": 4108,
+    "dificultad": "Alta",
+    "bloque": "Tema 1: Cinemática: MRU, MRUA, caída libre y gráficas",
+    "enunciado": "Un móvil parte del reposo y recorre $80$ metros en $8$ segundos con aceleración constante. Calcula su aceleración y su velocidad final.",
+    "resolucion_latex": "Como parte del reposo, usamos:<br>$s=\\frac{1}{2}at^2$.<br>Sustituimos:<br>$80=\\frac{1}{2}a\\cdot 8^2$.<br>$80=32a$.<br>$a=\\frac{80}{32}=2,5 \\text{ m/s}^2$.<br><br>Ahora calculamos la velocidad final:<br>$v_f=v_i+a t$.<br>Como $v_i=0$:<br>$v_f=2,5\\cdot 8=20 \\text{ m/s}$.<br>La aceleración es $2,5 \\text{ m/s}^2$ y la velocidad final es $20 \\text{ m/s}$.",
+    "pista": "Usa primero la ecuación del espacio para hallar la aceleración. Después calcula la velocidad final.",
+    "formula": "$$s=\\frac{1}{2}at^2 \\quad ; \\quad v_f=a t$$"
+  },
+  {
+    "asignatura": "Física 4º ESO",
+    "id": 4109,
+    "dificultad": "Alta",
+    "bloque": "Tema 1: Cinemática: MRU, MRUA, caída libre y gráficas",
+    "enunciado": "Se lanza verticalmente hacia arriba una pelota con velocidad inicial de $19,6 \\text{ m/s}$. Calcula el tiempo que tarda en alcanzar la altura máxima y la altura máxima alcanzada. Usa $g=9,8 \\text{ m/s}^2$.",
+    "resolucion_latex": "En la altura máxima, la velocidad final es cero:<br>$v_f=0$.<br>Usamos:<br>$v_f=v_i-g t$.<br>Sustituimos:<br>$0=19,6-9,8t$.<br>$9,8t=19,6 \\Rightarrow t=2 \\text{ s}$.<br><br>Ahora calculamos la altura máxima:<br>$h=v_i t-\\frac{1}{2}gt^2$.<br>$h=19,6\\cdot 2-\\frac{1}{2}\\cdot 9,8\\cdot 2^2$.<br>$h=39,2-19,6=19,6 \\text{ m}$.<br>La pelota tarda $2$ segundos en llegar a la altura máxima y alcanza $19,6 \\text{ m}$.",
+    "pista": "En el punto más alto, la pelota se detiene instantáneamente antes de empezar a bajar.",
+    "formula": "$$v_f=v_i-gt \\quad ; \\quad h=v_i t-\\frac{1}{2}gt^2$$"
+  },
+  {
+    "asignatura": "Física 4º ESO",
+    "id": 4110,
+    "dificultad": "Superior",
+    "bloque": "Tema 1: Cinemática: MRU, MRUA, caída libre y gráficas",
+    "enunciado": "Ejercicio trampa: Un alumno afirma que si un objeto se mueve durante más tiempo, necesariamente ha recorrido más distancia. Explica por qué esta afirmación no siempre es cierta usando un ejemplo físico.",
+    "resolucion_latex": "La afirmación no siempre es cierta porque la distancia recorrida depende de la velocidad y del tiempo, no solo del tiempo.<br>Por ejemplo, un coche parado durante $10$ minutos está moviéndose durante más tiempo que una moto que circula durante $5$ segundos, pero el coche no recorre ninguna distancia si su velocidad es cero.<br>En movimiento rectilíneo uniforme:<br>$s=v\\cdot t$.<br>Si $v=0$, entonces:<br>$s=0\\cdot t=0$.<br>Por tanto, aumentar el tiempo no garantiza recorrer más distancia si la velocidad cambia o es nula.",
+    "pista": "Pregúntate qué ocurre si un objeto está parado: pasa el tiempo, pero no avanza.",
+    "formula": "$$s=v\\cdot t$$"
+  },
+  {
+    "asignatura": "Física 4º ESO",
+    "id": 4111,
+    "dificultad": "Básica",
+    "bloque": "Tema 2: Dinámica: leyes de Newton y fuerzas",
+    "enunciado": "Calcula el peso de un cuerpo de masa $12 \\text{ kg}$ en la Tierra. Usa $g=9,8 \\text{ m/s}^2$.",
+    "resolucion_latex": "El peso se calcula multiplicando la masa por la gravedad:<br>$P=m\\cdot g$.<br>Sustituimos:<br>$P=12\\cdot 9,8=117,6 \\text{ N}$.<br>Por tanto, el peso del cuerpo es $117,6 \\text{ N}$.",
+    "pista": "La masa se mide en kg, pero el peso es una fuerza y se mide en newtons.",
+    "formula": "$$P=m\\cdot g$$"
+  },
+  {
+    "asignatura": "Física 4º ESO",
+    "id": 4112,
+    "dificultad": "Básica",
+    "bloque": "Tema 2: Dinámica: leyes de Newton y fuerzas",
+    "enunciado": "Un cuerpo de masa $5 \\text{ kg}$ recibe una fuerza neta de $20 \\text{ N}$. Calcula su aceleración.",
+    "resolucion_latex": "Aplicamos la segunda ley de Newton:<br>$F=m\\cdot a$.<br>Despejamos la aceleración:<br>$a=\\frac{F}{m}$.<br>Sustituimos:<br>$a=\\frac{20}{5}=4 \\text{ m/s}^2$.<br>La aceleración del cuerpo es $4 \\text{ m/s}^2$.",
+    "pista": "Una misma fuerza produce más aceleración si la masa es menor.",
+    "formula": "$$F=m\\cdot a$$"
+  },
+  {
+    "asignatura": "Física 4º ESO",
+    "id": 4113,
+    "dificultad": "Básica",
+    "bloque": "Tema 2: Dinámica: leyes de Newton y fuerzas",
+    "enunciado": "Sobre una caja actúan dos fuerzas horizontales: $30 \\text{ N}$ hacia la derecha y $10 \\text{ N}$ hacia la izquierda. Calcula la fuerza resultante.",
+    "resolucion_latex": "Tomamos como positiva la dirección hacia la derecha.<br>La fuerza hacia la derecha es $+30 \\text{ N}$ y la fuerza hacia la izquierda es $-10 \\text{ N}$.<br>Sumamos:<br>$F_R=30-10=20 \\text{ N}$.<br>La fuerza resultante es $20 \\text{ N}$ hacia la derecha.",
+    "pista": "Cuando dos fuerzas van en sentidos contrarios, se restan y queda el sentido de la mayor.",
+    "formula": "$$F_R=\\sum F$$"
+  },
+  {
+    "asignatura": "Física 4º ESO",
+    "id": 4114,
+    "dificultad": "Media",
+    "bloque": "Tema 2: Dinámica: leyes de Newton y fuerzas",
+    "enunciado": "Un bloque de $8 \\text{ kg}$ está sobre una superficie horizontal. Calcula la fuerza normal que ejerce la superficie sobre el bloque. Usa $g=9,8 \\text{ m/s}^2$.",
+    "resolucion_latex": "En una superficie horizontal, si no hay otras fuerzas verticales, la normal tiene el mismo valor que el peso.<br>Calculamos el peso:<br>$P=m\\cdot g=8\\cdot 9,8=78,4 \\text{ N}$.<br>Por tanto, la fuerza normal es:<br>$N=78,4 \\text{ N}$.",
+    "pista": "En una superficie horizontal sin fuerzas verticales extra, la normal compensa exactamente el peso.",
+    "formula": "$$N=P=m\\cdot g$$"
+  },
+  {
+    "asignatura": "Física 4º ESO",
+    "id": 4115,
+    "dificultad": "Media",
+    "bloque": "Tema 2: Dinámica: leyes de Newton y fuerzas",
+    "enunciado": "Una caja de $10 \\text{ kg}$ se mueve sobre una superficie horizontal con coeficiente de rozamiento $\\mu=0,2$. Calcula la fuerza de rozamiento. Usa $g=9,8 \\text{ m/s}^2$.",
+    "resolucion_latex": "La fuerza de rozamiento se calcula con:<br>$F_r=\\mu\\cdot N$.<br>En una superficie horizontal, $N=m\\cdot g$.<br>Calculamos la normal:<br>$N=10\\cdot 9,8=98 \\text{ N}$.<br>Ahora calculamos el rozamiento:<br>$F_r=0,2\\cdot 98=19,6 \\text{ N}$.<br>La fuerza de rozamiento es $19,6 \\text{ N}$ y se opone al movimiento.",
+    "pista": "Primero calcula la normal. En horizontal suele coincidir con el peso.",
+    "formula": "$$F_r=\\mu N$$"
+  },
+  {
+    "asignatura": "Física 4º ESO",
+    "id": 4116,
+    "dificultad": "Media",
+    "bloque": "Tema 2: Dinámica: leyes de Newton y fuerzas",
+    "enunciado": "Un objeto de $4 \\text{ kg}$ está colgado de una cuerda y permanece en reposo. Calcula la tensión de la cuerda. Usa $g=9,8 \\text{ m/s}^2$.",
+    "resolucion_latex": "Si el objeto está en reposo, la fuerza resultante es cero.<br>Las fuerzas verticales son el peso hacia abajo y la tensión hacia arriba.<br>Por tanto, la tensión debe igualar al peso:<br>$T=P=m\\cdot g$.<br>Sustituimos:<br>$T=4\\cdot 9,8=39,2 \\text{ N}$.<br>La tensión de la cuerda es $39,2 \\text{ N}$.",
+    "pista": "Si el cuerpo está quieto, las fuerzas están equilibradas.",
+    "formula": "$$T=P=m\\cdot g$$"
+  },
+  {
+    "asignatura": "Física 4º ESO",
+    "id": 4117,
+    "dificultad": "Alta",
+    "bloque": "Tema 2: Dinámica: leyes de Newton y fuerzas",
+    "enunciado": "Una fuerza horizontal de $50 \\text{ N}$ empuja una caja de $10 \\text{ kg}$ sobre una superficie con rozamiento de $15 \\text{ N}$. Calcula la aceleración de la caja.",
+    "resolucion_latex": "Primero calculamos la fuerza neta horizontal:<br>$F_R=50-15=35 \\text{ N}$.<br>Aplicamos la segunda ley de Newton:<br>$F_R=m\\cdot a$.<br>Despejamos la aceleración:<br>$a=\\frac{F_R}{m}$.<br>Sustituimos:<br>$a=\\frac{35}{10}=3,5 \\text{ m/s}^2$.<br>La aceleración de la caja es $3,5 \\text{ m/s}^2$.",
+    "pista": "No uses la fuerza aplicada directamente si hay rozamiento. Primero calcula la fuerza resultante.",
+    "formula": "$$F_R=F-F_r \\quad ; \\quad F_R=m\\cdot a$$"
+  },
+  {
+    "asignatura": "Física 4º ESO",
+    "id": 4118,
+    "dificultad": "Alta",
+    "bloque": "Tema 2: Dinámica: leyes de Newton y fuerzas",
+    "enunciado": "Un bloque de $6 \\text{ kg}$ está sobre un plano inclinado de $30^{\\circ}$ sin rozamiento. Calcula la componente del peso paralela al plano y la aceleración del bloque. Usa $g=9,8 \\text{ m/s}^2$.",
+    "resolucion_latex": "La componente del peso paralela al plano es:<br>$P_{\\parallel}=m\\cdot g\\cdot \\sin \\alpha$.<br>Sustituimos:<br>$P_{\\parallel}=6\\cdot 9,8\\cdot \\sin 30^{\\circ}$.<br>Como $\\sin 30^{\\circ}=0,5$:<br>$P_{\\parallel}=6\\cdot 9,8\\cdot 0,5=29,4 \\text{ N}$.<br><br>Como no hay rozamiento, esa es la fuerza resultante sobre el plano:<br>$F_R=m\\cdot a$.<br>$29,4=6a \\Rightarrow a=4,9 \\text{ m/s}^2$.<br>La componente paralela del peso es $29,4 \\text{ N}$ y la aceleración es $4,9 \\text{ m/s}^2$.",
+    "pista": "En un plano inclinado sin rozamiento, la fuerza que hace bajar al bloque es la componente paralela del peso.",
+    "formula": "$$P_{\\parallel}=mg\\sin \\alpha \\quad ; \\quad F_R=ma$$"
+  },
+  {
+    "asignatura": "Física 4º ESO",
+    "id": 4119,
+    "dificultad": "Alta",
+    "bloque": "Tema 2: Dinámica: leyes de Newton y fuerzas",
+    "enunciado": "Dos masas de $3 \\text{ kg}$ y $5 \\text{ kg}$ están unidas por una cuerda y se arrastran sobre una superficie horizontal sin rozamiento mediante una fuerza de $40 \\text{ N}$ aplicada a la masa de $5 \\text{ kg}$. Calcula la aceleración del sistema y la tensión de la cuerda.",
+    "resolucion_latex": "Primero consideramos las dos masas como un solo sistema.<br>Masa total:<br>$m_T=3+5=8 \\text{ kg}$.<br>Aplicamos la segunda ley de Newton:<br>$F=m_T\\cdot a$.<br>$40=8a \\Rightarrow a=5 \\text{ m/s}^2$.<br><br>Ahora calculamos la tensión usando la masa de $3 \\text{ kg}$. La única fuerza horizontal que tira de ella es la tensión:<br>$T=m\\cdot a=3\\cdot 5=15 \\text{ N}$.<br>La aceleración del sistema es $5 \\text{ m/s}^2$ y la tensión de la cuerda es $15 \\text{ N}$.",
+    "pista": "Primero estudia las dos masas juntas para hallar la aceleración. Después analiza una de las masas por separado para hallar la tensión.",
+    "formula": "$$F=(m_1+m_2)a \\quad ; \\quad T=m_1a$$"
+  },
+  {
+    "asignatura": "Física 4º ESO",
+    "id": 4120,
+    "dificultad": "Superior",
+    "bloque": "Tema 2: Dinámica: leyes de Newton y fuerzas",
+    "enunciado": "Ejercicio trampa: Un alumno dice que si un objeto se mueve hacia la derecha, necesariamente la fuerza resultante también debe apuntar hacia la derecha. Explica por qué esta afirmación es falsa usando el caso de un coche que frena.",
+    "resolucion_latex": "La afirmación es falsa porque la fuerza resultante no indica necesariamente hacia dónde se mueve un cuerpo, sino hacia dónde acelera.<br>Un coche puede moverse hacia la derecha y estar frenando. En ese caso, su velocidad apunta hacia la derecha, pero su aceleración apunta hacia la izquierda porque está disminuyendo la velocidad.<br>Según la segunda ley de Newton:<br>$F_R=m\\cdot a$.<br>Por tanto, la fuerza resultante tiene la misma dirección y sentido que la aceleración, no necesariamente que la velocidad.<br>En una frenada, el coche se mueve hacia delante, pero la fuerza resultante va hacia atrás.",
+    "pista": "La fuerza resultante está relacionada con la aceleración, no directamente con la velocidad.",
+    "formula": "$$F_R=m\\cdot a$$"
+  },
+  {
+    "asignatura": "Física 4º ESO",
+    "id": 4121,
+    "dificultad": "Básica",
+    "bloque": "Tema 3: Trabajo, energía y potencia",
+    "enunciado": "Calcula el trabajo realizado por una fuerza constante de $50 \\text{ N}$ que desplaza una caja $4 \\text{ m}$ en la misma dirección y sentido de la fuerza.",
+    "resolucion_latex": "El trabajo de una fuerza constante se calcula con:<br>$W=F\\cdot d\\cdot \\cos \\alpha$.<br>Como la fuerza y el desplazamiento tienen la misma dirección y sentido, $\\alpha=0^{\\circ}$ y $\\cos 0^{\\circ}=1$.<br>Sustituimos:<br>$W=50\\cdot 4\\cdot 1=200 \\text{ J}$.<br>El trabajo realizado es $200 \\text{ J}$.",
+    "pista": "Si la fuerza va en el mismo sentido que el movimiento, el trabajo es positivo.",
+    "formula": "$$W=F\\cdot d\\cdot \\cos \\alpha$$"
+  },
+  {
+    "asignatura": "Física 4º ESO",
+    "id": 4122,
+    "dificultad": "Básica",
+    "bloque": "Tema 3: Trabajo, energía y potencia",
+    "enunciado": "Calcula la energía cinética de un cuerpo de masa $3 \\text{ kg}$ que se mueve a $10 \\text{ m/s}$.",
+    "resolucion_latex": "La energía cinética se calcula con:<br>$E_c=\\frac{1}{2}mv^2$.<br>Sustituimos:<br>$E_c=\\frac{1}{2}\\cdot 3\\cdot 10^2$.<br>$E_c=1,5\\cdot 100=150 \\text{ J}$.<br>La energía cinética del cuerpo es $150 \\text{ J}$.",
+    "pista": "La energía cinética depende de la masa y del cuadrado de la velocidad.",
+    "formula": "$$E_c=\\frac{1}{2}mv^2$$"
+  },
+  {
+    "asignatura": "Física 4º ESO",
+    "id": 4123,
+    "dificultad": "Básica",
+    "bloque": "Tema 3: Trabajo, energía y potencia",
+    "enunciado": "Calcula la energía potencial gravitatoria de una mochila de $5 \\text{ kg}$ situada a $2$ metros de altura. Usa $g=9,8 \\text{ m/s}^2$.",
+    "resolucion_latex": "La energía potencial gravitatoria se calcula con:<br>$E_p=mgh$.<br>Sustituimos:<br>$E_p=5\\cdot 9,8\\cdot 2=98 \\text{ J}$.<br>La energía potencial gravitatoria de la mochila es $98 \\text{ J}$.",
+    "pista": "La energía potencial gravitatoria depende de la masa, la gravedad y la altura.",
+    "formula": "$$E_p=mgh$$"
+  },
+  {
+    "asignatura": "Física 4º ESO",
+    "id": 4124,
+    "dificultad": "Media",
+    "bloque": "Tema 3: Trabajo, energía y potencia",
+    "enunciado": "Un cuerpo de $4 \\text{ kg}$ se mueve a $6 \\text{ m/s}$ a una altura de $3$ metros. Calcula su energía cinética, su energía potencial y su energía mecánica total. Usa $g=9,8 \\text{ m/s}^2$.",
+    "resolucion_latex": "Calculamos primero la energía cinética:<br>$E_c=\\frac{1}{2}mv^2=\\frac{1}{2}\\cdot 4\\cdot 6^2=2\\cdot 36=72 \\text{ J}$.<br><br>Ahora calculamos la energía potencial:<br>$E_p=mgh=4\\cdot 9,8\\cdot 3=117,6 \\text{ J}$.<br><br>La energía mecánica es la suma de la energía cinética y la potencial:<br>$E_m=E_c+E_p=72+117,6=189,6 \\text{ J}$.<br>Por tanto, $E_c=72 \\text{ J}$, $E_p=117,6 \\text{ J}$ y $E_m=189,6 \\text{ J}$.",
+    "pista": "La energía mecánica total se obtiene sumando la energía de movimiento y la energía de altura.",
+    "formula": "$$E_m=E_c+E_p$$"
+  },
+  {
+    "asignatura": "Física 4º ESO",
+    "id": 4125,
+    "dificultad": "Media",
+    "bloque": "Tema 3: Trabajo, energía y potencia",
+    "enunciado": "Una grúa realiza un trabajo de $12000 \\text{ J}$ en $20$ segundos. Calcula la potencia desarrollada.",
+    "resolucion_latex": "La potencia se calcula dividiendo el trabajo entre el tiempo:<br>$P=\\frac{W}{t}$.<br>Sustituimos:<br>$P=\\frac{12000}{20}=600 \\text{ W}$.<br>La potencia desarrollada por la grúa es $600 \\text{ W}$.",
+    "pista": "La potencia mide la rapidez con la que se realiza un trabajo.",
+    "formula": "$$P=\\frac{W}{t}$$"
+  },
+  {
+    "asignatura": "Física 4º ESO",
+    "id": 4126,
+    "dificultad": "Media",
+    "bloque": "Tema 3: Trabajo, energía y potencia",
+    "enunciado": "Se deja caer una pelota desde una altura de $5$ metros. Despreciando el rozamiento del aire, calcula la velocidad con la que llega al suelo. Usa $g=9,8 \\text{ m/s}^2$.",
+    "resolucion_latex": "Aplicamos la conservación de la energía mecánica. La energía potencial inicial se transforma en energía cinética final:<br>$mgh=\\frac{1}{2}mv^2$.<br>La masa se cancela:<br>$gh=\\frac{1}{2}v^2$.<br>Despejamos:<br>$v=\\sqrt{2gh}$.<br>Sustituimos:<br>$v=\\sqrt{2\\cdot 9,8\\cdot 5}=\\sqrt{98}\\approx 9,9 \\text{ m/s}$.<br>La pelota llega al suelo con una velocidad aproximada de $9,9 \\text{ m/s}$.",
+    "pista": "Si no hay rozamiento, toda la energía potencial se transforma en energía cinética.",
+    "formula": "$$mgh=\\frac{1}{2}mv^2$$"
+  },
+  {
+    "asignatura": "Física 4º ESO",
+    "id": 4127,
+    "dificultad": "Alta",
+    "bloque": "Tema 3: Trabajo, energía y potencia",
+    "enunciado": "Un bloque de $10 \\text{ kg}$ se desplaza $6$ metros sobre una superficie horizontal. Se le aplica una fuerza de $40 \\text{ N}$ en el sentido del movimiento, pero actúa un rozamiento de $15 \\text{ N}$. Calcula el trabajo de la fuerza aplicada, el trabajo del rozamiento y el trabajo neto.",
+    "resolucion_latex": "Trabajo de la fuerza aplicada:<br>$W_F=F\\cdot d=40\\cdot 6=240 \\text{ J}$.<br><br>El rozamiento se opone al movimiento, por tanto su trabajo es negativo:<br>$W_r=-F_r\\cdot d=-15\\cdot 6=-90 \\text{ J}$.<br><br>El trabajo neto es la suma de los trabajos:<br>$W_{neto}=W_F+W_r=240-90=150 \\text{ J}$.<br>Por tanto, el trabajo aplicado es $240 \\text{ J}$, el trabajo del rozamiento es $-90 \\text{ J}$ y el trabajo neto es $150 \\text{ J}$.",
+    "pista": "El rozamiento realiza trabajo negativo porque va en sentido contrario al desplazamiento.",
+    "formula": "$$W_{neto}=W_1+W_2+\\cdots+W_n$$"
+  },
+  {
+    "asignatura": "Física 4º ESO",
+    "id": 4128,
+    "dificultad": "Alta",
+    "bloque": "Tema 3: Trabajo, energía y potencia",
+    "enunciado": "Un coche de $1000 \\text{ kg}$ aumenta su velocidad de $10 \\text{ m/s}$ a $20 \\text{ m/s}$. Calcula el trabajo neto realizado sobre el coche.",
+    "resolucion_latex": "Aplicamos el teorema de la energía cinética:<br>$W_{neto}=\\Delta E_c=E_{c,f}-E_{c,i}$.<br>Calculamos la energía cinética inicial:<br>$E_{c,i}=\\frac{1}{2}\\cdot 1000\\cdot 10^2=500\\cdot 100=50000 \\text{ J}$.<br>Calculamos la energía cinética final:<br>$E_{c,f}=\\frac{1}{2}\\cdot 1000\\cdot 20^2=500\\cdot 400=200000 \\text{ J}$.<br>Por tanto:<br>$W_{neto}=200000-50000=150000 \\text{ J}$.<br>El trabajo neto realizado sobre el coche es $150000 \\text{ J}$.",
+    "pista": "El trabajo neto equivale al cambio de energía cinética.",
+    "formula": "$$W_{neto}=\\Delta E_c=E_{c,f}-E_{c,i}$$"
+  },
+  {
+    "asignatura": "Física 4º ESO",
+    "id": 4129,
+    "dificultad": "Alta",
+    "bloque": "Tema 3: Trabajo, energía y potencia",
+    "enunciado": "Un objeto de $2 \\text{ kg}$ se lanza verticalmente hacia arriba con una velocidad de $14 \\text{ m/s}$. Usando conservación de la energía, calcula la altura máxima que alcanza. Usa $g=9,8 \\text{ m/s}^2$.",
+    "resolucion_latex": "En el punto más alto, toda la energía cinética inicial se ha transformado en energía potencial gravitatoria:<br>$\\frac{1}{2}mv^2=mgh$.<br>La masa se cancela:<br>$\\frac{1}{2}v^2=gh$.<br>Despejamos la altura:<br>$h=\\frac{v^2}{2g}$.<br>Sustituimos:<br>$h=\\frac{14^2}{2\\cdot 9,8}=\\frac{196}{19,6}=10 \\text{ m}$.<br>La altura máxima alcanzada es $10 \\text{ m}$.",
+    "pista": "En la altura máxima, la velocidad es cero y toda la energía cinética inicial se ha convertido en energía potencial.",
+    "formula": "$$\\frac{1}{2}mv^2=mgh$$"
+  },
+  {
+    "asignatura": "Física 4º ESO",
+    "id": 4130,
+    "dificultad": "Superior",
+    "bloque": "Tema 3: Trabajo, energía y potencia",
+    "enunciado": "Ejercicio trampa: Un alumno dice que si se realiza mucho trabajo sobre un objeto, necesariamente se está desarrollando mucha potencia. Explica por qué esta afirmación no siempre es cierta.",
+    "resolucion_latex": "La afirmación no siempre es cierta porque la potencia no depende solo del trabajo realizado, sino también del tiempo empleado en realizarlo.<br>La potencia se define como:<br>$P=\\frac{W}{t}$.<br>Por ejemplo, realizar un trabajo de $10000 \\text{ J}$ puede parecer mucho, pero si se tarda $1000$ segundos, la potencia es:<br>$P=\\frac{10000}{1000}=10 \\text{ W}$.<br>En cambio, realizar $10000 \\text{ J}$ en $10$ segundos implica:<br>$P=\\frac{10000}{10}=1000 \\text{ W}$.<br>Por tanto, para hablar de potencia hay que tener en cuenta tanto el trabajo como el tiempo.",
+    "pista": "La potencia mide lo rápido que se hace un trabajo, no solo cuánto trabajo se hace.",
+    "formula": "$$P=\\frac{W}{t}$$"
+  },
+  {
+    "asignatura": "Física 4º ESO",
+    "id": 4131,
+    "dificultad": "Básica",
+    "bloque": "Tema 4: Movimiento circular básico y fuerza centrípeta",
+    "enunciado": "Una rueda da $20$ vueltas en $10$ segundos. Calcula su frecuencia.",
+    "resolucion_latex": "La frecuencia es el número de vueltas por unidad de tiempo:<br>$f=\\frac{N}{t}$.<br>Sustituimos:<br>$f=\\frac{20}{10}=2 \\text{ Hz}$.<br>La frecuencia de la rueda es $2 \\text{ Hz}$.",
+    "pista": "La frecuencia indica cuántas vueltas se dan cada segundo.",
+    "formula": "$$f=\\frac{N}{t}$$"
+  },
+  {
+    "asignatura": "Física 4º ESO",
+    "id": 4132,
+    "dificultad": "Básica",
+    "bloque": "Tema 4: Movimiento circular básico y fuerza centrípeta",
+    "enunciado": "Una partícula describe un movimiento circular con periodo $T=4$ segundos. Calcula su frecuencia.",
+    "resolucion_latex": "La frecuencia y el periodo son magnitudes inversas:<br>$f=\\frac{1}{T}$.<br>Sustituimos:<br>$f=\\frac{1}{4}=0,25 \\text{ Hz}$.<br>La frecuencia del movimiento es $0,25 \\text{ Hz}$.",
+    "pista": "Si tarda mucho en dar una vuelta, la frecuencia será pequeña.",
+    "formula": "$$f=\\frac{1}{T}$$"
+  },
+  {
+    "asignatura": "Física 4º ESO",
+    "id": 4133,
+    "dificultad": "Básica",
+    "bloque": "Tema 4: Movimiento circular básico y fuerza centrípeta",
+    "enunciado": "Un objeto gira con radio $2$ m y velocidad angular $3 \\text{ rad/s}$. Calcula su velocidad lineal.",
+    "resolucion_latex": "La velocidad lineal se calcula con:<br>$v=\\omega r$.<br>Sustituimos:<br>$v=3\\cdot 2=6 \\text{ m/s}$.<br>La velocidad lineal del objeto es $6 \\text{ m/s}$.",
+    "pista": "Cuanto mayor sea el radio o la velocidad angular, mayor será la velocidad lineal.",
+    "formula": "$$v=\\omega r$$"
+  },
+  {
+    "asignatura": "Física 4º ESO",
+    "id": 4134,
+    "dificultad": "Media",
+    "bloque": "Tema 4: Movimiento circular básico y fuerza centrípeta",
+    "enunciado": "Una piedra atada a una cuerda gira con radio $0,5$ m y velocidad lineal $4 \\text{ m/s}$. Calcula su aceleración centrípeta.",
+    "resolucion_latex": "La aceleración centrípeta se calcula con:<br>$a_c=\\frac{v^2}{r}$.<br>Sustituimos:<br>$a_c=\\frac{4^2}{0,5}=\\frac{16}{0,5}=32 \\text{ m/s}^2$.<br>La aceleración centrípeta es $32 \\text{ m/s}^2$.",
+    "pista": "En un movimiento circular, aunque la rapidez sea constante, hay aceleración porque cambia la dirección de la velocidad.",
+    "formula": "$$a_c=\\frac{v^2}{r}$$"
+  },
+  {
+    "asignatura": "Física 4º ESO",
+    "id": 4135,
+    "dificultad": "Media",
+    "bloque": "Tema 4: Movimiento circular básico y fuerza centrípeta",
+    "enunciado": "Un cuerpo de $2 \\text{ kg}$ gira en una trayectoria circular de radio $1,5$ m con velocidad de $3 \\text{ m/s}$. Calcula la fuerza centrípeta.",
+    "resolucion_latex": "La fuerza centrípeta se calcula con:<br>$F_c=m\\cdot a_c=m\\frac{v^2}{r}$.<br>Sustituimos:<br>$F_c=2\\cdot \\frac{3^2}{1,5}=2\\cdot \\frac{9}{1,5}=2\\cdot 6=12 \\text{ N}$.<br>La fuerza centrípeta es $12 \\text{ N}$.",
+    "pista": "La fuerza centrípeta es la fuerza necesaria para mantener el cuerpo girando.",
+    "formula": "$$F_c=m\\frac{v^2}{r}$$"
+  },
+  {
+    "asignatura": "Física 4º ESO",
+    "id": 4136,
+    "dificultad": "Media",
+    "bloque": "Tema 4: Movimiento circular básico y fuerza centrípeta",
+    "enunciado": "Una noria da una vuelta completa cada $20$ segundos. Calcula su periodo, su frecuencia y su velocidad angular.",
+    "resolucion_latex": "El periodo es el tiempo que tarda en dar una vuelta completa:<br>$T=20 \\text{ s}$.<br><br>La frecuencia es:<br>$f=\\frac{1}{T}=\\frac{1}{20}=0,05 \\text{ Hz}$.<br><br>La velocidad angular es:<br>$\\omega=\\frac{2\\pi}{T}=\\frac{2\\pi}{20}=\\frac{\\pi}{10}\\approx 0,314 \\text{ rad/s}$.<br>Por tanto, $T=20 \\text{ s}$, $f=0,05 \\text{ Hz}$ y $\\omega\\approx 0,314 \\text{ rad/s}$.",
+    "pista": "Una vuelta completa equivale a $2\\pi$ radianes.",
+    "formula": "$$f=\\frac{1}{T} \\quad ; \\quad \\omega=\\frac{2\\pi}{T}$$"
+  },
+  {
+    "asignatura": "Física 4º ESO",
+    "id": 4137,
+    "dificultad": "Alta",
+    "bloque": "Tema 4: Movimiento circular básico y fuerza centrípeta",
+    "enunciado": "Un coche de $1200 \\text{ kg}$ toma una curva de radio $50$ m a una velocidad de $20 \\text{ m/s}$. Calcula la fuerza centrípeta necesaria.",
+    "resolucion_latex": "La fuerza centrípeta se calcula con:<br>$F_c=m\\frac{v^2}{r}$.<br>Sustituimos:<br>$F_c=1200\\cdot \\frac{20^2}{50}$.<br>$F_c=1200\\cdot \\frac{400}{50}=1200\\cdot 8=9600 \\text{ N}$.<br>La fuerza centrípeta necesaria es $9600 \\text{ N}$.",
+    "pista": "En una curva, la fuerza centrípeta apunta hacia el centro de la curva.",
+    "formula": "$$F_c=m\\frac{v^2}{r}$$"
+  },
+  {
+    "asignatura": "Física 4º ESO",
+    "id": 4138,
+    "dificultad": "Alta",
+    "bloque": "Tema 4: Movimiento circular básico y fuerza centrípeta",
+    "enunciado": "Un cuerpo gira con una velocidad angular de $5 \\text{ rad/s}$ en una circunferencia de radio $0,8$ m. Calcula su velocidad lineal y su aceleración centrípeta.",
+    "resolucion_latex": "Primero calculamos la velocidad lineal:<br>$v=\\omega r$.<br>$v=5\\cdot 0,8=4 \\text{ m/s}$.<br><br>Ahora calculamos la aceleración centrípeta:<br>$a_c=\\frac{v^2}{r}$.<br>$a_c=\\frac{4^2}{0,8}=\\frac{16}{0,8}=20 \\text{ m/s}^2$.<br>La velocidad lineal es $4 \\text{ m/s}$ y la aceleración centrípeta es $20 \\text{ m/s}^2$.",
+    "pista": "Primero pasa de velocidad angular a velocidad lineal. Luego usa esa velocidad para calcular la aceleración centrípeta.",
+    "formula": "$$v=\\omega r \\quad ; \\quad a_c=\\frac{v^2}{r}$$"
+  },
+  {
+    "asignatura": "Física 4º ESO",
+    "id": 4139,
+    "dificultad": "Alta",
+    "bloque": "Tema 4: Movimiento circular básico y fuerza centrípeta",
+    "enunciado": "Una masa de $0,5 \\text{ kg}$ gira atada a una cuerda de $1$ m de longitud con una frecuencia de $2 \\text{ Hz}$. Calcula su velocidad lineal y la tensión de la cuerda, suponiendo que la tensión actúa como fuerza centrípeta.",
+    "resolucion_latex": "Primero calculamos la velocidad angular:<br>$\\omega=2\\pi f=2\\pi\\cdot 2=4\\pi \\text{ rad/s}$.<br><br>Calculamos la velocidad lineal:<br>$v=\\omega r=4\\pi\\cdot 1=4\\pi \\approx 12,57 \\text{ m/s}$.<br><br>La tensión actúa como fuerza centrípeta:<br>$T=F_c=m\\frac{v^2}{r}$.<br>$T=0,5\\cdot \\frac{(12,57)^2}{1}$.<br>$T\\approx 0,5\\cdot 158,0=79,0 \\text{ N}$.<br>La velocidad lineal es aproximadamente $12,57 \\text{ m/s}$ y la tensión es aproximadamente $79,0 \\text{ N}$.",
+    "pista": "Si conoces la frecuencia, primero calcula la velocidad angular. Después puedes obtener la velocidad lineal.",
+    "formula": "$$\\omega=2\\pi f \\quad ; \\quad v=\\omega r \\quad ; \\quad F_c=m\\frac{v^2}{r}$$"
+  },
+  {
+    "asignatura": "Física 4º ESO",
+    "id": 4140,
+    "dificultad": "Superior",
+    "bloque": "Tema 4: Movimiento circular básico y fuerza centrípeta",
+    "enunciado": "Ejercicio trampa: Un alumno afirma que en un movimiento circular uniforme no hay aceleración porque la rapidez es constante. Explica el error.",
+    "resolucion_latex": "El error está en confundir rapidez con velocidad. En un movimiento circular uniforme, la rapidez se mantiene constante, pero la dirección de la velocidad cambia continuamente.<br>Como la velocidad es una magnitud vectorial, cambiar su dirección implica que hay aceleración.<br>Esa aceleración se llama aceleración centrípeta y apunta hacia el centro de la trayectoria circular.<br>Se calcula mediante:<br>$a_c=\\frac{v^2}{r}$.<br>Por tanto, sí hay aceleración aunque el módulo de la velocidad no cambie.",
+    "pista": "La velocidad no solo tiene valor numérico: también tiene dirección y sentido.",
+    "formula": "$$a_c=\\frac{v^2}{r}$$"
+  },
+  {
+    "asignatura": "Física 4º ESO",
+    "id": 4141,
+    "dificultad": "Básica",
+    "bloque": "Tema 5: Presión y fluidos",
+    "enunciado": "Calcula la presión que ejerce una fuerza de $200 \\text{ N}$ sobre una superficie de $4 \\text{ m}^2$.",
+    "resolucion_latex": "La presión se calcula dividiendo la fuerza entre la superficie sobre la que actúa:<br>$p=\\frac{F}{S}$.<br>Sustituimos:<br>$p=\\frac{200}{4}=50 \\text{ Pa}$.<br>La presión ejercida es $50 \\text{ Pa}$.",
+    "pista": "La presión aumenta si la fuerza aumenta o si la superficie sobre la que se reparte disminuye.",
+    "formula": "$$p=\\frac{F}{S}$$"
+  },
+  {
+    "asignatura": "Física 4º ESO",
+    "id": 4142,
+    "dificultad": "Básica",
+    "bloque": "Tema 5: Presión y fluidos",
+    "enunciado": "Una persona de peso $600 \\text{ N}$ está de pie sobre una superficie total de apoyo de $0,03 \\text{ m}^2$. Calcula la presión que ejerce sobre el suelo.",
+    "resolucion_latex": "Usamos la fórmula de la presión:<br>$p=\\frac{F}{S}$.<br>La fuerza que ejerce la persona sobre el suelo es su peso:<br>$F=600 \\text{ N}$.<br>Sustituimos:<br>$p=\\frac{600}{0,03}=20000 \\text{ Pa}$.<br>La presión ejercida sobre el suelo es $20000 \\text{ Pa}$.",
+    "pista": "En este caso, la fuerza que se aplica sobre el suelo es el peso de la persona.",
+    "formula": "$$p=\\frac{F}{S}$$"
+  },
+  {
+    "asignatura": "Física 4º ESO",
+    "id": 4143,
+    "dificultad": "Básica",
+    "bloque": "Tema 5: Presión y fluidos",
+    "enunciado": "Calcula la presión hidrostática a $5$ metros de profundidad en agua. Usa $\\rho=1000 \\text{ kg/m}^3$ y $g=9,8 \\text{ m/s}^2$.",
+    "resolucion_latex": "La presión hidrostática se calcula con:<br>$p=\\rho g h$.<br>Sustituimos:<br>$p=1000\\cdot 9,8\\cdot 5=49000 \\text{ Pa}$.<br>La presión hidrostática a $5$ metros de profundidad es $49000 \\text{ Pa}$.",
+    "pista": "Cuanto mayor sea la profundidad, mayor será la presión del líquido.",
+    "formula": "$$p=\\rho g h$$"
+  },
+  {
+    "asignatura": "Física 4º ESO",
+    "id": 4144,
+    "dificultad": "Media",
+    "bloque": "Tema 5: Presión y fluidos",
+    "enunciado": "Un submarinista se encuentra a $12$ metros de profundidad en el mar. Calcula la presión hidrostática que soporta debida al agua. Usa $\\rho=1030 \\text{ kg/m}^3$ y $g=9,8 \\text{ m/s}^2$.",
+    "resolucion_latex": "Usamos la fórmula de la presión hidrostática:<br>$p=\\rho g h$.<br>Sustituimos los datos:<br>$p=1030\\cdot 9,8\\cdot 12$.<br>Primero:<br>$1030\\cdot 9,8=10094$.<br>Luego:<br>$10094\\cdot 12=121128 \\text{ Pa}$.<br>La presión hidrostática debida al agua es $121128 \\text{ Pa}$.",
+    "pista": "No olvides que en el mar la densidad suele ser algo mayor que la del agua dulce.",
+    "formula": "$$p=\\rho g h$$"
+  },
+  {
+    "asignatura": "Física 4º ESO",
+    "id": 4145,
+    "dificultad": "Media",
+    "bloque": "Tema 5: Presión y fluidos",
+    "enunciado": "En una prensa hidráulica, el émbolo pequeño tiene una superficie de $0,02 \\text{ m}^2$ y recibe una fuerza de $100 \\text{ N}$. Si el émbolo grande tiene una superficie de $0,5 \\text{ m}^2$, calcula la fuerza que ejerce el émbolo grande.",
+    "resolucion_latex": "Aplicamos el principio de Pascal:<br>$\\frac{F_1}{S_1}=\\frac{F_2}{S_2}$.<br>Sustituimos:<br>$\\frac{100}{0,02}=\\frac{F_2}{0,5}$.<br>Calculamos la presión transmitida:<br>$\\frac{100}{0,02}=5000 \\text{ Pa}$.<br>Entonces:<br>$F_2=5000\\cdot 0,5=2500 \\text{ N}$.<br>El émbolo grande ejerce una fuerza de $2500 \\text{ N}$.",
+    "pista": "En una prensa hidráulica la presión se transmite por igual, pero la fuerza cambia según la superficie.",
+    "formula": "$$\\frac{F_1}{S_1}=\\frac{F_2}{S_2}$$"
+  },
+  {
+    "asignatura": "Física 4º ESO",
+    "id": 4146,
+    "dificultad": "Media",
+    "bloque": "Tema 5: Presión y fluidos",
+    "enunciado": "Un cuerpo de volumen $0,03 \\text{ m}^3$ está completamente sumergido en agua. Calcula el empuje que recibe. Usa $\\rho=1000 \\text{ kg/m}^3$ y $g=9,8 \\text{ m/s}^2$.",
+    "resolucion_latex": "Aplicamos el principio de Arquímedes:<br>$E=\\rho g V$.<br>Sustituimos:<br>$E=1000\\cdot 9,8\\cdot 0,03$.<br>$E=294 \\text{ N}$.<br>El cuerpo recibe un empuje hacia arriba de $294 \\text{ N}$.",
+    "pista": "El empuje equivale al peso del fluido desalojado por el cuerpo.",
+    "formula": "$$E=\\rho g V$$"
+  },
+  {
+    "asignatura": "Física 4º ESO",
+    "id": 4147,
+    "dificultad": "Alta",
+    "bloque": "Tema 5: Presión y fluidos",
+    "enunciado": "Un bloque pesa $500 \\text{ N}$ en el aire y recibe un empuje de $180 \\text{ N}$ al sumergirse en agua. Calcula su peso aparente dentro del agua e indica si se hunde o flota.",
+    "resolucion_latex": "El peso aparente se calcula restando el empuje al peso real:<br>$P_{aparente}=P-E$.<br>Sustituimos:<br>$P_{aparente}=500-180=320 \\text{ N}$.<br>Como el peso real es mayor que el empuje, el bloque no flota por sí solo: tiende a hundirse.<br>Por tanto, su peso aparente dentro del agua es $320 \\text{ N}$ y el bloque se hunde.",
+    "pista": "El empuje actúa hacia arriba y reduce el peso que parece tener el cuerpo dentro del fluido.",
+    "formula": "$$P_{aparente}=P-E$$"
+  },
+  {
+    "asignatura": "Física 4º ESO",
+    "id": 4148,
+    "dificultad": "Alta",
+    "bloque": "Tema 5: Presión y fluidos",
+    "enunciado": "Un objeto tiene un volumen de $0,04 \\text{ m}^3$ y una masa de $30 \\text{ kg}$. Se introduce completamente en agua. Calcula su peso, el empuje que recibe y determina si flota o se hunde. Usa $\\rho_{agua}=1000 \\text{ kg/m}^3$ y $g=9,8 \\text{ m/s}^2$.",
+    "resolucion_latex": "Calculamos el peso del objeto:<br>$P=m g=30\\cdot 9,8=294 \\text{ N}$.<br><br>Calculamos el empuje del agua:<br>$E=\\rho g V=1000\\cdot 9,8\\cdot 0,04=392 \\text{ N}$.<br><br>Comparamos ambas fuerzas:<br>$E=392 \\text{ N}$ y $P=294 \\text{ N}$.<br>Como el empuje es mayor que el peso, el objeto tiende a subir y flotará.<br>Por tanto, el peso es $294 \\text{ N}$, el empuje es $392 \\text{ N}$ y el objeto flota.",
+    "pista": "Compara el peso del objeto con el empuje. Si el empuje es mayor, el cuerpo flota.",
+    "formula": "$$P=mg \\quad ; \\quad E=\\rho g V$$"
+  },
+  {
+    "asignatura": "Física 4º ESO",
+    "id": 4149,
+    "dificultad": "Alta",
+    "bloque": "Tema 5: Presión y fluidos",
+    "enunciado": "En una prensa hidráulica se quiere levantar un coche de $12000 \\text{ N}$ usando un émbolo grande de superficie $1,2 \\text{ m}^2$. Si el émbolo pequeño tiene una superficie de $0,03 \\text{ m}^2$, calcula la fuerza mínima que debe aplicarse en el émbolo pequeño.",
+    "resolucion_latex": "Aplicamos el principio de Pascal:<br>$\\frac{F_1}{S_1}=\\frac{F_2}{S_2}$.<br>Datos:<br>$F_2=12000 \\text{ N}$, $S_2=1,2 \\text{ m}^2$, $S_1=0,03 \\text{ m}^2$.<br>Sustituimos:<br>$\\frac{F_1}{0,03}=\\frac{12000}{1,2}$.<br>Calculamos:<br>$\\frac{12000}{1,2}=10000 \\text{ Pa}$.<br>Entonces:<br>$F_1=10000\\cdot 0,03=300 \\text{ N}$.<br>La fuerza mínima que debe aplicarse en el émbolo pequeño es $300 \\text{ N}$.",
+    "pista": "La presión es la misma en ambos émbolos. Usa esa igualdad para hallar la fuerza desconocida.",
+    "formula": "$$\\frac{F_1}{S_1}=\\frac{F_2}{S_2}$$"
+  },
+  {
+    "asignatura": "Física 4º ESO",
+    "id": 4150,
+    "dificultad": "Superior",
+    "bloque": "Tema 5: Presión y fluidos",
+    "enunciado": "Ejercicio trampa: Un alumno afirma que un barco flota porque pesa poco. Explica por qué esta afirmación es incorrecta usando el principio de Arquímedes.",
+    "resolucion_latex": "La afirmación es incorrecta porque un barco puede pesar muchísimo y aun así flotar. Lo importante no es solo el peso, sino la relación entre el peso del barco y el empuje que recibe del agua.<br>Según el principio de Arquímedes, un cuerpo sumergido en un fluido recibe un empuje hacia arriba igual al peso del fluido que desaloja:<br>$E=\\rho g V$.<br>Un barco tiene una forma que le permite desalojar un gran volumen de agua. Al desalojar mucho volumen, recibe un empuje muy grande.<br>Flota cuando el empuje del agua iguala su peso:<br>$E=P$.<br>Por tanto, un barco no flota porque pese poco, sino porque su forma le permite desalojar suficiente agua para recibir un empuje igual a su peso.",
+    "pista": "Piensa en un barco enorme: pesa miles de toneladas, pero desplaza una cantidad enorme de agua.",
+    "formula": "$$E=\\rho g V \\quad ; \\quad \\text{flotación cuando } E=P$$"
+  }
+]

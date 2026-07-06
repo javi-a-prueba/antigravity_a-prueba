@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Carga Masiva — Física 2º Bach</title>
+    <style>
+        body { font-family: monospace; background: #0B0E14; color: #00f2fe; padding: 2rem; }
+        h1 { color: #ff8c00; margin-bottom: 1rem; }
+        #log { white-space: pre-wrap; line-height: 1.6; }
+        .ok  { color: #00fa9a; }
+        .err { color: #ff4b4b; }
+        .info{ color: #b8b8d0; }
+    </style>
+</head>
+<body>
+    <h1>🚀 Carga Masiva — Física 2º Bach</h1>
+    <p id="status" style="color:#ffd700;">Iniciando carga…</p>
+    <div id="log"></div>
+
+    <script>
+    const PROJECT_ID = "aprueba-webapp";
+    const logEl = document.getElementById('log');
+    const status = document.getElementById('status');
+
+    function log(msg, cls='info') {
+        logEl.innerHTML += `<span class="${cls}">${msg}\n</span>`;
+    }
+
+    const temasArray = [
+        "1. Interacción Gravitatoria (Campo y Potencial)",
+        "2. Movimiento de Planetas y Satélites",
+        "3. Interacción Electrostática (Ley de Coulomb y Gauss)",
+        "4. Campo Eléctrico y Potencial",
+        "5. Magnetismo y Fuentes de Campo",
+        "6. Inducción Electromagnética (Faraday y Lenz)",
+        "7. Movimiento Armónico Simple (M.A.S.)",
+        "8. Ondas y Fenómenos Ondulatorios",
+        "9. Óptica Geométrica (Espejos y Lentes)",
+        "10. Óptica Física (Naturaleza de la luz)",
+        "11. Física Relativista y Cuántica (Fotones / De Broglie)",
+        "12. Física Nuclear (Radiactividad y Energía de Enlace)"
+    ];
+
+    const docs = [
+        { id: "andalucia_fisica",            matiz: "Enfoque práctico en Inducción y Campo Magnético. Ojo con los signos en el flujo magnético",                           estrella: "Inducción Electromagnética" },
+        { id: "aragon_fisica",               matiz: "Problemas muy extensos de Gravitación. Exigen dibujo vectorial impecable en cada paso",                                estrella: "Interacción Gravitatoria" },
+        { id: "asturias_fisica",             matiz: "Obsesión por la Óptica Geométrica y el trazado de rayos. No vale solo el cálculo, el dibujo debe ser a escala",       estrella: "Óptica Geométrica" },
+        { id: "cantabria_fisica",            matiz: "Rigor en Física Moderna. Debes explicar perfectamente el Efecto Fotoeléctrico y la hipótesis de De Broglie",           estrella: "Física Cuántica" },
+        { id: "castilla-la-mancha_fisica",   matiz: "Cuidado con el bloque de Ondas. Piden siempre la ecuación de la onda armónica y desfases",                            estrella: "Ondas" },
+        { id: "cataluna_fisica",             matiz: "Contexto real. Suelen poner problemas de satélites actuales o aceleradores de partículas (CERN)",                      estrella: "Campo Eléctrico y Magnético" },
+        { id: "comunidad-valenciana_fisica", matiz: "Precisión en el M.A.S. y energías. Exigen distinguir entre energía cinética, potencial y mecánica con gráficas",      estrella: "Movimiento Armónico Simple" },
+        { id: "galicia_fisica",              matiz: "Justificación teórica obligatoria. Debes enunciar las leyes (Kepler, Newton, Faraday) antes de aplicarlas",            estrella: "Leyes de la Naturaleza" },
+        { id: "madrid_fisica",               matiz: "Foco total en Campo Gravitatorio y Física Nuclear (Periodo de semidesintegración)",                                    estrella: "Física Nuclear" },
+        { id: "pais-vasco_fisica",           matiz: "Interpretación energética. Priorizan el uso del Teorema de las Fuerzas Vivas en problemas de campos",                 estrella: "Trabajo y Energía" },
+        { id: "murcia_fisica",               matiz: "Interferencia y Difracción. Piden mucho detalle en la naturaleza ondulatoria de la luz",                               estrella: "Óptica Física" }
+    ];
+
+    async function uploadAll() {
+        let ok = 0, err = 0;
+        log(`Subiendo ${docs.length} documentos a la colección 'temarios'…\n`);
+
+        for (const d of docs) {
+            const url = `https://firestore.googleapis.com/v1/projects/${PROJECT_ID}/databases/(default)/documents/temarios/${d.id}`;
+            const body = {
+                fields: {
+                    lista_temas:   { arrayValue: { values: temasArray.map(t => ({ stringValue: t })) } },
+                    matiz_revisor: { stringValue: d.matiz },
+                    tema_estrella: { stringValue: d.estrella },
+                    curso:         { stringValue: "2_bachillerato" },
+                    asignatura:    { stringValue: "fisica" }
+                }
+            };
+            try {
+                const res  = await fetch(url, { method: "PATCH", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body) });
+                const json = await res.json();
+                if (json.error) { log(`❌ Error en ${d.id}: ${json.error.message}`, 'err'); err++; }
+                else             { log(`✅ Subido: ${d.id}`, 'ok'); ok++; }
+            } catch(e) {
+                log(`💥 Fetch falló para ${d.id}: ${e}`, 'err'); err++;
+            }
+        }
+        status.innerHTML = ok === docs.length
+            ? `<span style="color:#00fa9a">🎯 ¡Carga completa! ${ok}/${docs.length} documentos subidos con éxito.</span>`
+            : `<span style="color:#ffd700">⚠️ Carga parcial: ${ok} OK, ${err} errores. Revisa la consola.</span>`;
+    }
+
+    uploadAll();
+    </script>
+</body>
+</html>

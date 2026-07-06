@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Carga Masiva — Química 2º Bach</title>
+    <style>
+        body { font-family: monospace; background: #0B0E14; color: #00ff88; padding: 2rem; }
+        h1   { color: #00ff88; text-shadow: 0 0 20px #00ff8866; margin-bottom: 1rem; }
+        #log { white-space: pre-wrap; line-height: 1.7; }
+        .ok  { color: #00fa9a; }
+        .err { color: #ff4b4b; }
+        .inf { color: #b8b8d0; }
+    </style>
+</head>
+<body>
+    <h1>⚗️ Carga Masiva — Química 2º Bach</h1>
+    <p id="status" style="color:#ffd700;">Iniciando carga…</p>
+    <div id="log"></div>
+
+    <script>
+    const PROJECT_ID = "aprueba-webapp";
+    const logEl  = document.getElementById('log');
+    const status = document.getElementById('status');
+
+    function log(msg, cls = 'inf') {
+        logEl.innerHTML += `<span class="${cls}">${msg}\n</span>`;
+    }
+
+    const temasArray = [
+        "1. Modelo Mecánico-Cuántico y Configuración Electrónica",
+        "2. Sistema Periódico y Propiedades",
+        "3. Enlace Iónico y Metálico",
+        "4. Enlace Covalente y Geometría (RPECV)",
+        "5. Fuerzas Intermoleculares",
+        "6. Termoquímica (Hess y Enlaces)",
+        "7. Espontaneidad y Energía de Gibbs",
+        "8. Cinética Química y Catálisis",
+        "9. Equilibrio Químico (Kc y Kp)",
+        "10. Ácido-Base (pH y Valoraciones)",
+        "11. Reacciones Redox y Celdas Galvánicas",
+        "12. Química Orgánica e Isomería",
+        "13. Reactividad Orgánica y Química Verde (Sostenible)"
+    ];
+
+    const docs = [
+        {
+            id:     "andalucia_quimica",
+            matiz:  "Implacables con la formulación y estequiometría. Purezas, rendimientos y volúmenes en condiciones no estándar.",
+            estrella: "Reacciones Redox y Celdas Galvánicas"
+        },
+        {
+            id:     "aragon_quimica",
+            matiz:  "Rigor total en Equilibrio. Exigen tablas de moles (inicial, reacciona, equilibrio) impecables.",
+            estrella: "Equilibrio Químico (Kc y Kp)"
+        },
+        {
+            id:     "asturias_quimica",
+            matiz:  "Foco en Termodinámica. Ciclos de Born-Haber detallados y mecanismos de reacción orgánica.",
+            estrella: "Termoquímica (Hess y Enlaces)"
+        },
+        {
+            id:     "cantabria_quimica",
+            matiz:  "Precisión en estados. Penalizan si olvidas indicar el estado físico (s, l, g) en ecuaciones termoquímicas.",
+            estrella: "Espontaneidad y Energía de Gibbs"
+        },
+        {
+            id:     "castilla-la-mancha_quimica",
+            matiz:  "Justificación RPECV extrema. Debes contar pares de electrones y nombrar la geometría con precisión.",
+            estrella: "Enlace Covalente y Geometría (RPECV)"
+        },
+        {
+            id:     "cataluna_quimica",
+            matiz:  "Enfoque industrial y competencial. Síntesis del amoníaco, pilas de combustible e impacto ambiental.",
+            estrella: "Reactividad Orgánica y Química Verde (Sostenible)"
+        },
+        {
+            id:     "comunidad-valenciana_quimica",
+            matiz:  "Valoraciones y Pilas. Obligatorio el esquema de la pila indicando ánodo, cátodo y flujo de electrones.",
+            estrella: "Reacciones Redox y Celdas Galvánicas"
+        },
+        {
+            id:     "galicia_quimica",
+            matiz:  "Justificación teórica profunda. No vale el dato, hay que explicar detalladamente el «porqué».",
+            estrella: "Modelo Mecánico-Cuántico y Configuración Electrónica"
+        },
+        {
+            id:     "madrid_quimica",
+            matiz:  "Isomería y Orgánica estricta. Obligatorio nombrar y aplicar las reglas de Markovnikov o Saytzeff.",
+            estrella: "Química Orgánica e Isomería"
+        },
+        {
+            id:     "murcia_quimica",
+            matiz:  "Cinética Química. Determinación de órdenes de reacción y constante de velocidad a partir de tablas.",
+            estrella: "Cinética Química y Catálisis"
+        },
+        {
+            id:     "pais-vasco_quimica",
+            matiz:  "Interpretación gráfica. Curvas de valoración y diagramas de energía potencial vs coordenada de reacción.",
+            estrella: "Ácido-Base (pH y Valoraciones)"
+        }
+    ];
+
+    async function uploadAll() {
+        log(`Subiendo ${docs.length} documentos de Química a Firestore…\n`);
+        let ok = 0, err = 0;
+
+        for (const d of docs) {
+            const url  = `https://firestore.googleapis.com/v1/projects/${PROJECT_ID}/databases/(default)/documents/temarios/${d.id}`;
+            const body = {
+                fields: {
+                    lista_temas:   { arrayValue: { values: temasArray.map(t => ({ stringValue: t })) } },
+                    matiz_revisor: { stringValue: d.matiz },
+                    tema_estrella: { stringValue: d.estrella },
+                    curso:         { stringValue: "2_bachillerato" },
+                    asignatura:    { stringValue: "quimica" }
+                }
+            };
+            try {
+                const res  = await fetch(url, {
+                    method: "PATCH",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify(body)
+                });
+                const json = await res.json();
+                if (json.error) {
+                    log(`❌ Error en ${d.id}: ${json.error.message}`, 'err');
+                    err++;
+                } else {
+                    log(`✅ Subido: ${d.id}  ⭐ Estrella: ${d.estrella}`, 'ok');
+                    ok++;
+                }
+            } catch (e) {
+                log(`💥 Fetch falló para ${d.id}: ${e}`, 'err');
+                err++;
+            }
+        }
+
+        status.innerHTML = ok === docs.length
+            ? `<span style="color:#00fa9a">🎯 ¡Carga completa! ${ok}/${docs.length} documentos de Química subidos.</span>`
+            : `<span style="color:#ffd700">⚠️ Parcial: ${ok} OK, ${err} errores.</span>`;
+    }
+
+    uploadAll();
+    </script>
+</body>
+</html>

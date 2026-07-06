@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A-PRUEBA | Perfil del Alumno</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        :root {
+            --neon-math: #00f2fe;
+            --neon-physics: #ff4500;
+            --neon-chemistry: #00ff7f;
+        }
+
+        body {
+            background: #0B0E14;
+            color: #ffffff;
+            min-height: 100vh;
+            overflow-x: hidden;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+
+        /* Ambient Stars/Nebula */
+        .nebula {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            background:
+                radial-gradient(circle at 20% 30%, rgba(45, 110, 255, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 70%, rgba(138, 43, 226, 0.1) 0%, transparent 50%);
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        /* Navbar */
+        .navbar {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 80px;
+            padding: 0 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(10, 5, 25, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            z-index: 100;
+        }
+
+        .nav-brand {
+            font-size: 1.5rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            background: linear-gradient(90deg, #00f2fe 0%, #4facfe 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: #b8b8d0;
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: #00f2fe;
+            text-shadow: 0 0 10px rgba(0, 242, 254, 0.5);
+        }
+
+        /* Footer */
+        .footer {
+            margin-top: auto;
+            padding: 1.5rem 5%;
+            text-align: center;
+            background: rgba(10, 5, 25, 0.4);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            z-index: 100;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .footer p {
+            font-size: 0.85rem;
+            color: #8888a0;
+            margin: 0;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .footer-links a {
+            color: #a0a0b8;
+            text-decoration: none;
+            font-size: 0.8rem;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: #00f2fe;
+        }
+
+        /* Profile Layout */
+        .container {
+            max-width: 1200px;
+            margin: 120px auto 4rem;
+            padding: 0 2rem;
+            flex: 1;
+            z-index: 10;
+            width: 100%;
+        }
+
+        .header-section {
+            display: flex;
+            align-items: center;
+            gap: 3rem;
+            margin-bottom: 4rem;
+            background: rgba(20, 20, 35, 0.4);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 20px;
+            padding: 3rem;
+            backdrop-filter: blur(16px);
+        }
+
+        .rank-shield {
+            width: 150px;
+            height: 180px;
+            background: linear-gradient(135deg, #1a0b2e 0%, #4facfe 100%);
+            clip-path: polygon(50% 0%, 100% 20%, 100% 80%, 50% 100%, 0% 80%, 0% 20%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 0 50px rgba(79, 172, 254, 0.4);
+            position: relative;
+        }
+
+        .rank-shield::after {
+            content: '';
+            position: absolute;
+            width: 130px;
+            height: 160px;
+            background: rgba(5, 2, 10, 0.9);
+            clip-path: polygon(50% 0%, 100% 20%, 100% 80%, 50% 100%, 0% 80%, 0% 20%);
+            z-index: 1;
+        }
+
+        .rank-shield-icon {
+            z-index: 2;
+            font-size: 4rem;
+            color: #b9f2ff;
+            text-shadow: 0 0 20px rgba(0, 242, 254, 0.8);
+        }
+
+        .profile-info h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            color: #fff;
+        }
+
+        .profile-info p {
+            color: #a0a0b8;
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .stats-row {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .stat-box {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 1rem 1.5rem;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .stat-box h3 {
+            font-size: 0.9rem;
+            color: #b8b8d0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-box .value {
+            font-size: 1.8rem;
+            font-weight: 700;
+        }
+
+        .value.streak {
+            color: #ffa03a;
+            text-shadow: 0 0 15px rgba(255, 160, 58, 0.4);
+        }
+
+        .value.xp {
+            color: #00f2fe;
+            text-shadow: 0 0 15px rgba(0, 242, 254, 0.4);
+        }
+
+        /* Progress Section */
+        h2.section-title {
+            font-size: 1.8rem;
+            margin-bottom: 2rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding-bottom: 1rem;
+        }
+
+        .progress-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .subject-card {
+            background: rgba(20, 20, 35, 0.4);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 16px;
+            padding: 2rem;
+            backdrop-filter: blur(10px);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .subject-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 242, 254, 0.15);
+            border-color: rgba(0, 242, 254, 0.3);
+        }
+
+        .subject-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .subject-header h3 {
+            font-size: 1.2rem;
+        }
+
+        .subject-percent {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #00f2fe;
+        }
+
+        .progress-track {
+            width: 100%;
+            height: 8px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 1rem;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #00f2fe 0%, #4facfe 100%);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 242, 254, 0.5);
+        }
+
+        .subject-status {
+            font-size: 0.85rem;
+            color: #a0a0b8;
+            text-align: right;
+        }
+
+        /* Indicador de Brillo Estelar Prominente */
+        .streak-indicator {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(255, 215, 0, 0.1);
+            border: 1px solid rgba(255, 215, 0, 0.3);
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .streak-indicator:hover {
+            transform: scale(1.05);
+        }
+
+        .streak-icon {
+            font-size: 1.2rem;
+            transition: text-shadow 0.3s;
+        }
+
+        .streak-days {
+            font-weight: 700;
+            color: #ffd700;
+            font-size: 1rem;
+            letter-spacing: 1px;
+            text-shadow: 0 0 5px rgba(255, 215, 0, 0.5);
+        }
+
+        /* Panel Área de Tutores */
+        .tutor-panel {
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(0, 250, 154, 0.25);
+            border-radius: 16px;
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            padding: 2rem 2.5rem;
+            margin-top: 2rem;
+            box-shadow: 0 0 30px rgba(0, 250, 154, 0.07);
+        }
+        .tutor-panel-title {
+            color: #00fa9a;
+            font-size: 1rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .tutor-metric-row {
+            display: flex;
+            align-items: center;
+            gap: 1.2rem;
+            margin-bottom: 1.1rem;
+        }
+        .tutor-metric-label {
+            font-size: 0.85rem;
+            color: #b8b8d0;
+            width: 160px;
+            flex-shrink: 0;
+        }
+        .tutor-metric-bar-track {
+            flex: 1;
+            height: 6px;
+            background: rgba(255,255,255,0.07);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+        .tutor-metric-bar-fill {
+            height: 100%;
+            border-radius: 4px;
+            background: linear-gradient(90deg, #00fa9a, #00f2fe);
+            box-shadow: 0 0 8px rgba(0,250,154,0.4);
+            transition: width 1s ease-in-out;
+        }
+        .tutor-metric-val {
+            font-size: 0.82rem;
+            color: #00fa9a;
+            font-weight: 600;
+            width: 60px;
+            text-align: right;
+        }
+        .tutor-badge-row {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-top: 1.5rem;
+        }
+        .tutor-badge {
+            background: rgba(0,250,154,0.07);
+            border: 1px solid rgba(0,250,154,0.2);
+            border-radius: 50px;
+            padding: 0.4rem 1rem;
+            font-size: 0.78rem;
+            color: #a8f5d9;
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+        .tutor-notice {
+            margin-top: 1.5rem;
+            padding: 0.9rem 1.2rem;
+            background: rgba(0, 250, 154, 0.05);
+            border-left: 3px solid #00fa9a;
+            border-radius: 6px;
+            font-size: 0.82rem;
+            color: #b8b8d0;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nebula"></div>
+
+    <nav class="navbar">
+        <a href="index.html" class="nav-brand">A-PRUEBA</a>
+
+        <!-- Indicador de Brillo Estelar Global -->
+        <div class="streak-indicator" id="nav-streak" title="Brillo Estelar" onclick="openStreakModal()">
+            <span class="streak-icon" id="nav-streak-icon">⭐</span>
+            <span class="streak-days" id="nav-streak-days">15 Días</span>
+        </div>
+
+        <div class="nav-links">
+            <a href="index.html">Inicio</a>
+            <a href="mapa.html">Mapa</a>
+            <a href="perfil.html" class="active">Perfil</a>
+            <a href="config.html">Configuración</a>
+            <a href="#" class="btn-logout" style="color: #ff4b4b; border: 1px solid rgba(255,75,75,0.3); padding: 5px 15px; border-radius: 20px;">Salir</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="header-section">
+            <div class="rank-shield">
+                <div class="rank-shield-icon">💎</div>
+            </div>
+            <div class="profile-info">
+                <h1>Cadete Espacial</h1>
+                <p>Nivel: 2º Bachillerato | Perfil: Ambicioso</p>
+                <div class="stats-row">
+                    <div class="stat-box">
+                        <h3>Rango Actual</h3>
+                        <div class="value" style="color: #b9f2ff; text-shadow: 0 0 15px rgba(185, 242, 255, 0.5);">
+                            Diamante III</div>
+                    </div>
+                    <div class="stat-box">
+                        <h3>Brillo Estelar</h3>
+                        <div class="streak-count"
+                            style="display: flex; align-items: center; gap: 0.5rem; cursor: pointer;"
+                            onclick="openStreakModal()">
+                            <span id="profile-streak-icon"
+                                style="font-size: 1.5rem; transition: text-shadow 0.3s;">⭐</span>
+                            <span id="profile-streak-days"
+                                style="color: #ffd700; font-weight: 700; font-size: 1.8rem; text-shadow: 0 0 10px rgba(255,215,0,0.4);">15
+                                Días</span>
+                        </div>
+                    </div>
+                    <div class="stat-box">
+                        <h3>Experiencia</h3>
+                        <div class="value xp">12,450 XP</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="section-title">Progreso por Constelación (Asignatura)</h2>
+        <div class="progress-grid">
+            <div class="subject-card">
+                <div class="subject-header">
+                    <h3>Física - Dinámica</h3>
+                    <div class="subject-percent">85%</div>
+                </div>
+                <div class="progress-track">
+                    <div class="progress-fill" style="width: 85%;"></div>
+                </div>
+                <div class="subject-status">Nivel Oro alcanzado</div>
+            </div>
+
+            <div class="subject-card">
+                <div class="subject-header">
+                    <h3>Matemáticas - Álgebra</h3>
+                    <div class="subject-percent">60%</div>
+                </div>
+                <div class="progress-track">
+                    <div class="progress-fill"
+                        style="width: 60%; background: linear-gradient(90deg, #c0c0c0, #e0e0e0); box-shadow: 0 0 10px rgba(192, 192, 192, 0.5);">
+                    </div>
+                </div>
+                <div class="subject-status">Nivel Plata alcanzado</div>
+            </div>
+
+            <div class="subject-card">
+                <div class="subject-header">
+                    <h3>Química - Estequiometría</h3>
+                    <div class="subject-percent">100%</div>
+                </div>
+                <div class="progress-track">
+                    <div class="progress-fill"
+                        style="width: 100%; background: linear-gradient(90deg, #1a0b2e, #8a2be2); box-shadow: 0 0 15px rgba(138, 43, 226, 0.8);">
+                    </div>
+                </div>
+                <div class="subject-status">Supernova Maestra conquistada</div>
+            </div>
+        </div>
+
+        <!-- Área de Tutores -->
+        <h2 class="section-title">Área de Tutores</h2>
+        <div class="tutor-panel">
+            <div class="tutor-panel-title">👨‍👧 Reporte de Progreso Semanal</div>
+
+            <div class="tutor-metric-row">
+                <span class="tutor-metric-label">Ejercicios completados</span>
+                <div class="tutor-metric-bar-track">
+                    <div class="tutor-metric-bar-fill" id="tbar-ejercicios" style="width:0%"></div>
+                </div>
+                <span class="tutor-metric-val" id="tval-ejercicios">--</span>
+            </div>
+            <div class="tutor-metric-row">
+                <span class="tutor-metric-label">Tiempo de estudio</span>
+                <div class="tutor-metric-bar-track">
+                    <div class="tutor-metric-bar-fill" id="tbar-tiempo" style="width:0%; background: linear-gradient(90deg,#4facfe,#00f2fe);"></div>
+                </div>
+                <span class="tutor-metric-val" id="tval-tiempo">--</span>
+            </div>
+            <div class="tutor-metric-row">
+                <span class="tutor-metric-label">Dificultad percibida avg</span>
+                <div class="tutor-metric-bar-track">
+                    <div class="tutor-metric-bar-fill" id="tbar-dificultad" style="width:0%; background: linear-gradient(90deg,#f9a8d4,#8c52ff);"></div>
+                </div>
+                <span class="tutor-metric-val" id="tval-dificultad">--</span>
+            </div>
+            <div class="tutor-metric-row">
+                <span class="tutor-metric-label">Mejora respecto sem. ant.</span>
+                <div class="tutor-metric-bar-track">
+                    <div class="tutor-metric-bar-fill" id="tbar-mejora" style="width:0%; background: linear-gradient(90deg,#ffd700,#ffb199);"></div>
+                </div>
+                <span class="tutor-metric-val" id="tval-mejora" style="color:#ffd700;">+15%</span>
+            </div>
+
+            <div class="tutor-badge-row">
+                <div class="tutor-badge">✅ Salvavidas usados: <span id="tb-salvavidas">-</span></div>
+                <div class="tutor-badge">🏆 Total XP: <span id="tb-xp">-</span></div>
+                <div class="tutor-badge">&#9733; Rango: <span id="tb-rango">-</span></div>
+            </div>
+
+            <div class="tutor-notice">
+                📧 Se enviará un <strong>reporte detallado</strong> al correo del tutor cada <strong>lunes</strong>, con el resumen de actividad semanal, temas con mayor dificultad percibida y uso del Salvavidas.
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2026 A-PRUEBA. Todos los derechos reservados.</p>
+        <div class="footer-links">
+            <a href="#">Términos de Servicio</a>
+            <a href="#">Contacto para Padres</a>
+        </div>
+    </footer>
+
+    <script>
+        // Lógica de Brillo Estelar
+        document.addEventListener("DOMContentLoaded", function () {
+            let userStreak = parseInt(localStorage.getItem('userStreak')) || 15;
+
+            // Elementos Navbar
+            const navIcon = document.getElementById('nav-streak-icon');
+            const navDays = document.getElementById('nav-streak-days');
+
+            // Elementos Perfil
+            const profileIcon = document.getElementById('profile-streak-icon');
+            const profileDays = document.getElementById('profile-streak-days');
+
+            const glowIntensity = Math.min(50, userStreak * 2);
+            const textShadowStr = `0 0 ${glowIntensity}px #ffd700, 0 0 ${glowIntensity / 2}px #ff8c00`;
+            const animationStr = userStreak >= 10 ? "pulse-star 2s infinite alternate" : "none";
+
+            if (navIcon && navDays) {
+                navDays.innerText = userStreak + " Días";
+                navIcon.style.textShadow = textShadowStr;
+                navIcon.style.animation = animationStr;
+            }
+
+            if (profileIcon && profileDays) {
+                profileDays.innerText = userStreak + " Días";
+                profileIcon.style.textShadow = textShadowStr;
+                profileIcon.style.animation = animationStr;
+            }
+        });
+
+        // Telemetry Modal Logic
+        function openStreakModal() {
+            const streakModal = document.getElementById('streak-modal');
+            const daysEl = document.getElementById('streak-modal-days');
+            const barEl = document.getElementById('streak-modal-bar');
+            const nextEl = document.getElementById('streak-modal-next');
+            const msgEl = document.getElementById('streak-modal-msg');
+
+            let userStreak = parseInt(localStorage.getItem('userStreak')) || 15;
+            if (daysEl) daysEl.innerText = userStreak;
+
+            // Calculate next milestone
+            const milestones = [7, 14, 21, 30, 60, 90, 365];
+            let nextMilestone = milestones.find(m => m > userStreak) || (userStreak + 30);
+            let prevMilestone = milestones.slice().reverse().find(m => m <= userStreak) || 0;
+
+            let progressLevel = ((userStreak - prevMilestone) / (nextMilestone - prevMilestone)) * 100;
+            if (barEl) {
+                barEl.style.width = '0%';
+                setTimeout(() => { barEl.style.width = `${progressLevel}%`; }, 100);
+            }
+            if (nextEl) nextEl.innerText = `${nextMilestone} Días`;
+
+            // Text projection
+            let retention = Math.min(99, 40 + (userStreak * 2));
+            if (msgEl) msgEl.innerText = `La constancia actual proyecta una retención del temario del ${retention}%.`;
+
+            if (streakModal) streakModal.style.display = 'flex';
+        }
+
+        function closeStreakModal() {
+            document.getElementById('streak-modal').style.display = 'none';
+        }
+    </script>
+
+    <script type="module">
+        import { auth, db, doc, getDoc, onAuthStateChanged, signOut } from './firebase-config.js';
+
+        const RANKS = [
+            { name: 'Bronce I',    min: 0   },
+            { name: 'Bronce II',   min: 50  },
+            { name: 'Bronce III',  min: 100 },
+            { name: 'Plata I',     min: 200 },
+            { name: 'Plata II',    min: 350 },
+            { name: 'Plata III',   min: 500 },
+            { name: 'Oro I',       min: 750 },
+            { name: 'Oro II',      min: 1000},
+            { name: 'Oro III',     min: 1300},
+            { name: 'Diamante',    min: 1700},
+            { name: 'Supernova Maestra', min: 2500}
+        ];
+        function calcRank(xp) {
+            let rank = RANKS[0];
+            for(const r of RANKS) { if(xp >= r.min) rank = r; else break; }
+            return rank.name;
+        }
+
+        onAuthStateChanged(auth, async (user) => {
+            if (!user) { window.location.href = 'login.html'; return; }
+
+            document.querySelector('.btn-logout')?.addEventListener('click', (e) => {
+                e.preventDefault();
+                signOut(auth).then(() => { window.location.href = 'index.html'; });
+            });
+
+            try {
+                const snap = await getDoc(doc(db, 'usuarios', user.uid));
+                if (!snap.exists()) return;
+                const data = snap.data();
+                const stats = data.stats || {};
+                const totalXP = stats.total_aciertos || 0;
+                const tiempoMin = stats.tiempo_estudio || 0;
+                const salvavidas = data.salvavidas_usados || 0;
+
+                // Calcular dificultad media global
+                const temas = data.temas || {};
+                let diffSum = 0, diffCount = 0;
+                for(const t of Object.values(temas)) {
+                    diffSum += (t.dificultad_sum || 0);
+                    diffCount += (t.dificultad_count || 0);
+                }
+                const avgDiff = diffCount > 0 ? (diffSum / diffCount) : 0;
+
+                // Actualizar Área de Tutores
+                const MAX_XP_SEMANA = 30; // aciertos objetivo semanal
+                const MAX_TIEMPO = 120;   // minutos objetivo semanal
+
+                const setPct = (barId, valId, ratio, text) => {
+                    const bar = document.getElementById(barId);
+                    const val = document.getElementById(valId);
+                    const pct = Math.min(100, Math.round(ratio * 100));
+                    if (bar) setTimeout(() => bar.style.width = pct + '%', 200);
+                    if (val && text !== undefined) val.innerText = text;
+                };
+
+                setPct('tbar-ejercicios', 'tval-ejercicios', totalXP / MAX_XP_SEMANA, `${Math.floor(totalXP)} ej.`);
+                setPct('tbar-tiempo',     'tval-tiempo',     tiempoMin / MAX_TIEMPO,  `${tiempoMin} min`);
+                setPct('tbar-dificultad', 'tval-dificultad',  avgDiff / 5,            avgDiff > 0 ? avgDiff.toFixed(1) + '/5' : '--');
+                // Mejora: simulada hasta tener datos de semana anterior
+                setTimeout(() => { const b = document.getElementById('tbar-mejora'); if(b) b.style.width = '65%'; }, 200);
+
+                // Badges
+                const s = (id, v) => { const el = document.getElementById(id); if(el) el.innerText = v; };
+                s('tb-salvavidas', salvavidas);
+                s('tb-xp', Math.floor(totalXP) + ' XP');
+                s('tb-rango', calcRank(totalXP));
+
+            } catch(e) { console.error("Error cargando datos tutor:", e); }
+        });
+    </script>
+
+    <!-- Telemetry Modal -->
+    <div id="streak-modal"
+        style="display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(5, 2, 10, 0.95); backdrop-filter: blur(15px); -webkit-backdrop-filter: blur(15px); z-index: 2000; justify-content: center; align-items: center;">
+        <div
+            style="background: rgba(15, 10, 30, 0.85); border: 1px solid rgba(0, 242, 254, 0.3); box-shadow: 0 0 40px rgba(0, 242, 254, 0.1); border-radius: 12px; padding: 3rem 4rem; width: 90%; max-width: 500px; text-align: center; position: relative;">
+            <button onclick="closeStreakModal()"
+                style="position: absolute; top: 15px; right: 20px; background: transparent; border: none; color: #a0a0b8; font-size: 2rem; cursor: pointer; transition: color 0.3s;">&times;</button>
+
+            <h2
+                style="color: #00f2fe; font-size: 1rem; text-transform: uppercase; letter-spacing: 3px; font-weight: 300; margin-bottom: 2rem; border-bottom: 1px solid rgba(0, 242, 254, 0.2); padding-bottom: 1rem;">
+                Panel de Telemetría</h2>
+
+            <div style="margin-bottom: 2.5rem;">
+                <h3 id="streak-modal-days"
+                    style="color: #fff; font-size: 4.5rem; font-weight: 300; line-height: 1; margin-bottom: 0.5rem; text-shadow: 0 0 20px rgba(0,242,254,0.3);">
+                    15</h3>
+                <p style="color: #00f2fe; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 2px;">Días de
+                    Actividad Consecutiva</p>
+            </div>
+
+            <div style="margin-bottom: 2.5rem; text-align: left;">
+                <div
+                    style="display: flex; justify-content: space-between; margin-bottom: 0.5rem; font-size: 0.85rem; color: #a0a0b8;">
+                    <span>Progreso hasta el siguiente Hito</span>
+                    <span id="streak-modal-next">21 Días</span>
+                </div>
+                <div
+                    style="height: 4px; background: rgba(255, 255, 255, 0.1); border-radius: 2px; overflow: hidden; position: relative;">
+                    <div id="streak-modal-bar"
+                        style="height: 100%; width: 70%; background: #00f2fe; box-shadow: 0 0 10px #00f2fe; transition: width 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);">
+                    </div>
+                </div>
+            </div>
+
+            <div
+                style="background: rgba(0, 242, 254, 0.05); border-left: 3px solid #00f2fe; padding: 1rem; text-align: left;">
+                <p id="streak-modal-msg" style="color: #b8b8d0; font-size: 0.9rem; line-height: 1.5; margin: 0;">La
+                    constancia actual proyecta una retención del temario del 87%.</p>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        @keyframes pulse-star {
+            from {
+                transform: scale(1);
+            }
+
+            to {
+                transform: scale(1.2);
+            }
+        }
+    </style>
+    <!-- Auth Loading Overlay -->
+    <div id="authLoading"
+        style="position:fixed;top:0;left:0;width:100vw;height:100vh;background:#05010f;z-index:9999;display:flex;justify-content:center;align-items:center;flex-direction:column;color:#00f2fe;font-family:'Space Grotesk',sans-serif;">
+        <div
+            style="width:50px;height:50px;border:3px solid rgba(0,242,254,0.2);border-top-color:#00f2fe;border-radius:50%;animation:spin 1s linear infinite;margin-bottom:1rem;">
+        </div>
+        <style>
+            @keyframes spin {
+                100% {
+                    transform: rotate(360deg);
+                }
+            }
+        </style>
+        <p style="font-weight:600;letter-spacing:1px;">Autorizando coordenadas estelares...</p>
+    </div>
+    <script type="module">
+        import { auth, onAuthStateChanged, signOut } from './firebase-config.js';
+        onAuthStateChanged(auth, (user) => {
+            if (!user) {
+                window.location.href = 'login.html';
+            } else {
+                const loader = document.getElementById('authLoading');
+                if (loader) loader.style.display = 'none';
+            }
+        });
+
+        document.querySelector('.btn-logout')?.addEventListener('click', (e) => {
+            e.preventDefault();
+            signOut(auth).then(() => {
+                window.location.href = 'index.html';
+            }).catch(err => console.error(err));
+        });
+    </script>
+</body>
+
+</html>

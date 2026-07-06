@@ -1,0 +1,502 @@
+[
+  {
+    "asignatura": "Química 1º Bach",
+    "id": 3101,
+    "dificultad": "Básica",
+    "bloque": "Tema 1: Teorías Atómicas y Sistema Periódico",
+    "enunciado": "Define el concepto de isótopo. Un átomo neutro tiene un número atómico $Z=15$ y un número másico $A=31$. Indica su número de protones, neutrones y electrones, y escribe su símbolo químico.",
+    "resolucion_latex": "Los isótopos son átomos de un mismo elemento (tienen el mismo número atómico Z, es decir, mismos protones) pero distinto número másico (A), debido a que tienen diferente cantidad de neutrones en su núcleo.<br><br>Para $Z=15$ y $A=31$:<br>Protones $= Z = 15$.<br>Al ser neutro, Electrones $=$ Protones $= 15$.<br>Neutrones $= A - Z = 31 - 15 = 16$.<br><br>El elemento con $Z=15$ es el Fósforo, su símbolo es P.",
+    "pista": "Recuerda que Z indica los protones y A es la masa total (protones + neutrones). Si el átomo no tiene carga (es neutro), las cargas positivas (protones) y negativas (electrones) tienen que estar empatadas.",
+    "formula": "$$A = Z + N \\quad ; \\quad \\text{Si neutro: } p^+ = e^-$$"
+  },
+  {
+    "asignatura": "Química 1º Bach",
+    "id": 3102,
+    "dificultad": "Básica",
+    "bloque": "Tema 1: Teorías Atómicas y Sistema Periódico",
+    "enunciado": "Escribe la configuración electrónica en estado fundamental de los siguientes átomos e iones utilizando el diagrama de Moeller: a) Na $(Z=11)$, b) S $(Z=16)$, c) $Ca^{2+}$ $(Z=20)$",
+    "resolucion_latex": "a) Na ($Z=11$): $1s^2 \\ 2s^2 \\ 2p^6 \\ 3s^1$<br><br>b) S ($Z=16$): $1s^2 \\ 2s^2 \\ 2p^6 \\ 3s^2 \\ 3p^4$<br><br>c) $Ca^{2+}$ ($Z=20$): El Calcio neutro tiene 20 electrones ($1s^2 \\ 2s^2 \\ 2p^6 \\ 3s^2 \\ 3p^6 \\ 4s^2$). Al ser un catión con carga $+2$ pierde los 2 electrones de su capa más externa (la 4s).<br>Su configuración queda: $1s^2 \\ 2s^2 \\ 2p^6 \\ 3s^2 \\ 3p^6$ (isoelectrónico con el gas noble Argón).",
+    "pista": "Sigue las flechas diagonales del diagrama de Moeller ($1s \\rightarrow 2s \\rightarrow 2p \\rightarrow 3s \\dots$). Para el ion $Ca^{2+}$, haz primero la configuración de los 20 electrones y luego bórrales los dos de la capa más alta.",
+    "formula": "$$1s, 2s, 2p, 3s, 3p, 4s, 3d, 4p, 5s \\dots$$"
+  },
+  {
+    "asignatura": "Química 1º Bach",
+    "id": 3103,
+    "dificultad": "Básica",
+    "bloque": "Tema 1: Teorías Atómicas y Sistema Periódico",
+    "enunciado": "A partir de la configuración electrónica del Azufre (S) del ejercicio anterior, indica a qué grupo y a qué periodo de la Tabla Periódica pertenece sin mirarla.",
+    "resolucion_latex": "La configuración del S es $1s^2 \\ 2s^2 \\ 2p^6 \\ 3s^2 \\ 3p^4$.<br><br>El nivel más alto de energía (capa de valencia) es $n=3$, por lo que pertenece al **Periodo 3**.<br>Los electrones de valencia son los del último nivel: $2+4=6$ electrones.<br>Esto indica que pertenece al **Grupo 16** (los Anfígenos).",
+    "pista": "El número grande más alto que aparece en la configuración te da el periodo. Si termina en 'p', súmale 10 a los electrones de su última capa para saber el grupo.",
+    "formula": "$$\\text{Periodo} = n_{max} \\quad ; \\quad \\text{Grupo (bloque p)} = 10 + e^-(s+p)$$"
+  },
+  {
+    "asignatura": "Química 1º Bach",
+    "id": 3104,
+    "dificultad": "Media",
+    "bloque": "Tema 1: Teorías Atómicas y Sistema Periódico",
+    "enunciado": "Indica si las siguientes combinaciones de números cuánticos $(n, l, m, s)$ son posibles o no para un electrón en un átomo, justificando la respuesta: a) $(2, 2, 0, +1/2)$ b) $(3, 1, -1, -1/2)$ c) $(4, 0, 1, +1/2)$.",
+    "resolucion_latex": "a) $(2, 2, 0, +1/2)$: IMPOSIBLE. El número cuántico azimutal $l$ va desde $0$ hasta $(n-1)$. Si $n=2$, $l$ solo puede ser 0 o 1. Nunca puede igualar a $n$.<br><br>b) $(3, 1, -1, -1/2)$: POSIBLE. Representa un electrón en un orbital 3p.<br><br>c) $(4, 0, 1, +1/2)$: IMPOSIBLE. El número magnético $m$ va desde $-l$ hasta $+l$. Si $l=0$ (orbital s), $m$ tiene que ser obligatoriamente $0$.",
+    "pista": "Recuerda las reglas sagradas: 'n' es el nivel; 'l' no puede ser nunca igual o mayor que 'n'; y la 'm' va desde '-l' hasta '+l'.",
+    "formula": "$$l = 0, 1, \\dots, (n-1) \\quad ; \\quad m = -l, \\dots, 0, \\dots, +l$$"
+  },
+  {
+    "asignatura": "Química 1º Bach",
+    "id": 3105,
+    "dificultad": "Media",
+    "bloque": "Tema 1: Teorías Atómicas y Sistema Periódico",
+    "enunciado": "Ordena los siguientes elementos de menor a mayor radio atómico justificando tu respuesta en base a su posición en el sistema periódico: Flúor $(Z=9)$, Oxígeno $(Z=8)$, Litio $(Z=3)$ y Potasio $(Z=19)$.",
+    "resolucion_latex": "El radio atómico disminuye en un periodo hacia la derecha (por mayor carga nuclear efectiva que atrae a los electrones) y aumenta en un grupo hacia abajo (por tener más capas).<br><br>Flúor, Oxígeno y Litio están en el periodo 2. El Litio está a la izquierda (el mayor de los tres) y el Flúor a la derecha del todo (el menor).<br>El Potasio está en el periodo 4, por lo que tiene muchas más capas electrónicas y es el más grande de todos con diferencia.<br><br>Orden: F < O < Li < K.",
+    "pista": "Dibuja un esquema rápido. Hacia la derecha los átomos se encogen porque el núcleo tira más fuerte. Hacia abajo engordan porque tienen más capas de electrones.",
+    "formula": "$$\\text{Radio } \\uparrow \\text{ hacia abajo y hacia la izquierda}$$"
+  },
+  {
+    "asignatura": "Química 1º Bach",
+    "id": 3106,
+    "dificultad": "Media",
+    "bloque": "Tema 1: Teorías Atómicas y Sistema Periódico",
+    "enunciado": "El cobre natural está formado por dos isótopos estables: Cu-63 (masa isotópica 62,93 u) y Cu-65 (masa isotópica 64,93 u). Si la masa atómica media del cobre en la tabla periódica es de 63,55 u, calcula la abundancia relativa (porcentaje) de cada isótopo en la naturaleza.",
+    "resolucion_latex": "Sea $x$ la abundancia (en tanto por uno) del Cu-63 y sea $(1-x)$ la del Cu-65.<br>Fórmula de masa atómica media: $M = m_1 \\cdot x + m_2 \\cdot (1-x)$<br><br>$63,55 = 62,93x + 64,93(1 - x)$<br>$63,55 = 62,93x + 64,93 - 64,93x$<br>$-1,38 = -2,00x \\Rightarrow x = \\frac{-1,38}{-2,00} = 0,69$.<br><br>Por tanto, $x = 0,69$ (69%) y $1-x = 0,31$ (31%).<br>Abundancias: Cu-63 (69%) y Cu-65 (31%).",
+    "pista": "Como solo hay dos isótopos, si uno tiene un porcentaje 'x', el otro tiene por obligación el resto hasta llegar al 100%, es decir '(1-x)'. Forma una ecuación lineal sencilla.",
+    "formula": "$$M_{media} = m_1 \\cdot x_1 + m_2 \\cdot x_2 \\dots$$"
+  },
+  {
+    "asignatura": "Química 1º Bach",
+    "id": 3107,
+    "dificultad": "Alta",
+    "bloque": "Tema 1: Teorías Atómicas y Sistema Periódico",
+    "enunciado": "Compara el radio del catión $Na^+$ $(Z=11)$ con el del anión $F^-$ $(Z=9)$. Justifica cuál de los dos es mayor sabiendo que son especies isoelectrónicas.",
+    "resolucion_latex": "Son isoelectrónicos porque ambos tienen 10 electrones (el Na pierde 1, el F gana 1). Su configuración es $1s^2 \\ 2s^2 \\ 2p^6$.<br><br>Al tener las mismas capas y electrones, el tamaño lo decide el núcleo (protones). El $Na^+$ tiene 11 protones tirando de 10 electrones, mientras que el $F^-$ tiene 9 protones tirando de 10 electrones.<br>A mayor número de protones, mayor fuerza de atracción hacia el núcleo y menor tamaño.<br><br>Por tanto, el anión $F^-$ es mayor que el catión $Na^+$.",
+    "pista": "Si tienen el mismo número de electrones, el que gane el pulso del tamaño será el que tenga menos protones en el núcleo, ya que no tendrá tanta fuerza para atraer la nube electrónica hacia sí mismo.",
+    "formula": "$$\\text{Isoelectrónicos: a mayor Z, menor radio}$$"
+  },
+  {
+    "asignatura": "Química 1º Bach",
+    "id": 3108,
+    "dificultad": "Alta",
+    "bloque": "Tema 1: Teorías Atómicas y Sistema Periódico",
+    "enunciado": "Define qué es la primera energía de ionización. Explica razonadamente por qué la energía de ionización de los gases nobles es la más alta de sus respectivos periodos, y por qué la de los metales alcalinos es la más baja.",
+    "resolucion_latex": "La energía de ionización (EI) es la energía mínima necesaria para arrancar el electrón más externo de un átomo neutro en estado gaseoso y fundamental.<br><br>Los gases nobles tienen la capa de valencia completa ($ns^2 \\ np^6$, el octeto). Tienen una estabilidad enorme y la máxima carga nuclear efectiva de su periodo, por lo que cuesta muchísima energía arrancarles un electrón.<br><br>Los alcalinos (grupo 1) tienen un solo electrón en su capa de valencia ($ns^1$). Al perderlo, adquieren configuración de gas noble. Como \"quieren\" perderlo para estabilizarse, la energía necesaria para quitárselo es mínima.",
+    "pista": "Piensa en el 'octeto'. Los gases nobles ya lo tienen y son felices, por eso si quieres quitarles un electrón te va a costar carísimo. Los alcalinos tienen uno suelto que les estorba, así que lo sueltan casi gratis.",
+    "formula": "$$X(g) + EI \\rightarrow X^+(g) + 1e^-$$"
+  },
+  {
+    "asignatura": "Química 1º Bach",
+    "id": 3109,
+    "dificultad": "Alta",
+    "bloque": "Tema 1: Teorías Atómicas y Sistema Periódico",
+    "enunciado": "Un elemento desconocido X del tercer periodo presenta las siguientes energías de ionización sucesivas (en $kJ/mol$): $EI_1 = 738$, $EI_2 = 1450$, $EI_3 = 7730$, $EI_4 = 10540$. Deduce cuántos electrones de valencia tiene, a qué grupo pertenece y de qué elemento se trata.",
+    "resolucion_latex": "Se observa un salto gigante de energía al intentar arrancar el tercer electrón (de 1450 salta a 7730 kJ/mol).<br>Esto significa que arrancar los dos primeros electrones es fácil, pero el tercero pertenece a una capa interna mucho más cercana al núcleo y estable (configuración de gas noble).<br><br>Deducción: El elemento tiene **2 electrones de valencia**, por lo que pertenece al **Grupo 2** (Alcalinotérreos).<br>Como nos dicen que está en el tercer periodo, el elemento es el **Magnesio (Mg)**.",
+    "pista": "Fíjate en los números. Hay un punto donde la energía pega un salto brutal. Eso marca la frontera entre los electrones 'sueltos' de la última capa y el núcleo blindado.",
+    "formula": "$$\\text{Salto en } EI_n \\Rightarrow \\text{Grupo } n-1$$"
+  },
+  {
+    "asignatura": "Química 1º Bach",
+    "id": 3110,
+    "dificultad": "Superior",
+    "bloque": "Tema 1: Teorías Atómicas y Sistema Periódico",
+    "enunciado": "Ejercicio Trampa: Un alumno lee que el catión Hierro (III), $Fe^{3+}$, tiene una carga eléctrica neta de +3. Para explicar cómo se ha formado a partir del átomo de hierro neutro, escribe en su examen: 'El átomo de hierro ha ganado 3 protones en su núcleo, adquiriendo así 3 cargas positivas extra'. Identifica el terrible error conceptual del alumno y explica cómo se forma realmente un catión.",
+    "resolucion_latex": "El núcleo de un átomo (donde están los protones) es inalterable en las reacciones químicas normales. El número de protones (Z) define qué elemento es; si el hierro ganara protones, dejaría de ser hierro y se transformaría en otro elemento (transmutación nuclear).<br><br>Los iones solo se forman por la ganancia o pérdida de los **electrones** de la corteza exterior. Para que el Fe adquiera una carga neta de +3, lo que ha ocurrido es que su átomo neutro ha **PERDIDO 3 electrones** negativos, por lo que el núcleo queda con un exceso relativo de 3 cargas positivas.",
+    "pista": "En Química, el núcleo está blindado y nunca se toca. Todo lo que pasa con los enlaces y las cargas eléctricas se hace jugando con la nube de electrones.",
+    "formula": "$$\\text{Catión } (+): \\text{ Pierde } e^- \\quad ; \\quad \\text{Anión } (-): \\text{ Gana } e^-$$"
+  },
+  {
+    "asignatura": "Química 1º Bach",
+    "id": 3201,
+    "dificultad": "Básica",
+    "bloque": "Tema 2: Enlace Químico",
+    "enunciado": "Indica el tipo de enlace predominante (iónico, covalente o metálico) que existirá en las siguientes sustancias puras a temperatura ambiente: a) Dióxido de carbono $(CO_2)$ b) Cloruro de magnesio $(MgCl_2)$ c) Hilo de cobre (Cu).",
+    "resolucion_latex": "a) $CO_2$: Formado por la unión de dos no metales (C y O). Comparten electrones. **Enlace Covalente**.<br>b) $MgCl_2$: Formado por un metal (Mg) y un no metal (Cl) con gran diferencia de electronegatividad. Hay transferencia de electrones. **Enlace Iónico**.<br>c) Cu: Formado exclusivamente por átomos de un mismo elemento metálico. **Enlace Metálico**.",
+    "pista": "Mira la Tabla Periódica. Si mezclas dos elementos del lado derecho (no metales), es covalente. Si mezclas uno del extremo izquierdo con uno del derecho, es iónico.",
+    "formula": "$$\\text{No metal + No metal} \\Rightarrow \\text{Covalente}$$"
+  },
+  {
+    "asignatura": "Química 1º Bach",
+    "id": 3202,
+    "dificultad": "Básica",
+    "bloque": "Tema 2: Enlace Químico",
+    "enunciado": "Dibuja las estructuras de Lewis de las siguientes moléculas sencillas, indicando los pares de electrones no compartidos del átomo central: a) Agua $(H_2O)$ b) Amoníaco $(NH_3)$ c) Metano $(CH_4)$.",
+    "resolucion_latex": "a) $H_2O$: El Oxígeno (grupo 16) tiene $6 \\ e^-$. Forma dos enlaces simples con los H y le sobran **2 pares** de electrones no compartidos.<br>b) $NH_3$: El Nitrógeno (grupo 15) tiene $5 \\ e^-$. Forma tres enlaces simples con los H y le sobra **1 par** de electrones no compartido.<br>c) $CH_4$: El Carbono (grupo 14) tiene $4 \\ e^-$. Forma cuatro enlaces simples con los H y no le sobra **ningún par** (0 pares no compartidos).",
+    "pista": "Dibuja los puntos (electrones) alrededor del átomo central según su grupo. Une los hidrógenos y cuenta cuántos puntos se han quedado solos, agrupándolos de dos en dos.",
+    "formula": "$$\\text{Pares libres} = \\frac{e^- \\text{ de valencia} - e^- \\text{ enlazados}}{2}$$"
+  },
+  {
+    "asignatura": "Química 1º Bach",
+    "id": 3203,
+    "dificultad": "Básica",
+    "bloque": "Tema 2: Enlace Químico",
+    "enunciado": "Explica brevemente el modelo del \"mar de electrones\" (o gas electrónico) para el enlace metálico e indica por qué los metales son excelentes conductores de la electricidad.",
+    "resolucion_latex": "En el modelo del mar de electrones, los átomos metálicos ceden sus electrones de valencia para formar cationes fijos y ordenados en una red de cristal.<br><br>Los electrones cedidos no pertenecen a ningún átomo en particular, sino que forman una nube o \"mar\" móvil deslocalizado por todo el metal que mantiene unidos a los cationes. Al aplicar una diferencia de potencial (voltaje), estos electrones totalmente deslocalizados pueden fluir libremente por la estructura, creando una corriente eléctrica y haciendo a los metales grandes conductores.",
+    "pista": "Imagina los átomos de un metal como si fuesen piedras en un río. Las piedras no se mueven, pero el agua (los electrones) fluye libremente entre ellas transportando la electricidad.",
+    "formula": "$$\\text{Metales} = \\text{Cationes fijos} + \\text{Nube electrónica móvil}$$"
+  },
+  {
+    "asignatura": "Química 1º Bach",
+    "id": 3204,
+    "dificultad": "Media",
+    "bloque": "Tema 2: Enlace Químico",
+    "enunciado": "Utilizando la Teoría de Repulsión de Pares de Electrones de la Capa de Valencia (TRPECV), deduce la geometría espacial de la molécula de agua $(H_2O)$ y justifica por qué el ángulo de enlace no es de $180^{\\circ}$.",
+    "resolucion_latex": "Como vimos en la estructura de Lewis, el Oxígeno central tiene 4 zonas de densidad electrónica a su alrededor: 2 pares enlazantes (con los H) y 2 pares solitarios (no compartidos).<br><br>La TRPECV dice que estas 4 zonas se repelerán al máximo, adoptando una disposición base tetraédrica. Sin embargo, al mirar solo los átomos, la geometría molecular resultante es **Angular**.<br>El ángulo no es de $180^{\\circ}$ (lineal) porque los dos pares solitarios ejercen una gran fuerza de repulsión que empuja a los enlaces O-H hacia abajo, cerrando el ángulo a unos $104,5^{\\circ}$.",
+    "pista": "Los pares de electrones libres que tiene el oxígeno arriba actúan como imanes gordos. Repelen a los hidrógenos hacia abajo doblando la molécula.",
+    "formula": "$$AX_2E_2 \\Rightarrow \\text{Geometría Angular}$$"
+  },
+  {
+    "asignatura": "Química 1º Bach",
+    "id": 3205,
+    "dificultad": "Media",
+    "bloque": "Tema 2: Enlace Químico",
+    "enunciado": "A pesar de que los enlaces covalentes O-H del agua y C=O del dióxido de carbono $(CO_2)$ son ambos polares, el agua es una molécula polar y el $CO_2$ es una molécula totalmente apolar. Justifica este hecho basándote en su geometría molecular.",
+    "resolucion_latex": "En el agua, la geometría es angular. Los vectores de los momentos dipolares de los enlaces O-H apuntan hacia el oxígeno (más electronegativo). Al sumar ambos vectores con ese ángulo, la resultante es distinta de cero, dándole a la molécula un polo positivo y otro negativo (**Molécula Polar**).<br><br>En el $CO_2$, el carbono central no tiene pares libres y forma dos dobles enlaces. Su geometría es estrictamente Lineal $(180^{\\circ})$. Los dos dipolos de los enlaces C=O tienen la misma magnitud pero sentidos opuestos, por lo que se anulan matemáticamente por completo. (**Molécula Apolar**).",
+    "pista": "Todo depende de si los vectores 'tiran' de la molécula hacia un mismo lado o si se pelean como en un tira y afloja. Si tiran hacia lados exactamente opuestos (lineal), la molécula no se mueve y es apolar.",
+    "formula": "$$\\sum \\vec{\\mu} = 0 \\Rightarrow \\text{Apolar} \\quad ; \\quad \\sum \\vec{\\mu} \\neq 0 \\Rightarrow \\text{Polar}$$"
+  },
+  {
+    "asignatura": "Química 1º Bach",
+    "id": 3206,
+    "dificultad": "Media",
+    "bloque": "Tema 2: Enlace Químico",
+    "enunciado": "Enumera los tipos principales de fuerzas intermoleculares. ¿Cuáles deben ser los requisitos atómicos para que dos moléculas formen un enlace o 'puente' de hidrógeno entre ellas?",
+    "resolucion_latex": "Tipos principales: Fuerzas de dispersión de London (entre moléculas apolares), Fuerzas Dipolo-Dipolo (entre moléculas polares) y Puentes de Hidrógeno.<br><br>Para que se forme un Puente de Hidrógeno, una molécula debe tener un átomo de Hidrógeno unido covalentemente a un átomo muy electronegativo y pequeño (exclusivamente F, O o N). Además, la molécula adyacente debe tener uno de esos átomos (F, O o N) con al menos un par de electrones solitarios para atraer fuertemente al hidrógeno desapantallado.",
+    "pista": "Recuerda la regla mnemotécnica 'FON'. Solo el Flúor, Oxígeno y Nitrógeno tienen la fuerza suficiente para arrancar tanto la nube electrónica del hidrógeno que lo dejen desnudo haciendo de 'puente'.",
+    "formula": "$$\\text{Puente de Hidrógeno:} \\quad X-H \\cdots Y \\quad (X, Y \\in \\{F, O, N\\})$$"
+  },
+  {
+    "asignatura": "Química 1º Bach",
+    "id": 3207,
+    "dificultad": "Alta",
+    "bloque": "Tema 2: Enlace Químico",
+    "enunciado": "Justifica la diferencia en los puntos de ebullición de los siguientes compuestos, ordenándolos de menor a mayor: Metano $(CH_4)$, Agua $(H_2O)$ y Cloruro de Sodio (NaCl).",
+    "resolucion_latex": "1º Metano ($CH_4$): Es una molécula apolar que solo se une por débiles fuerzas de London. A temperatura ambiente es gas. (P.E. muy bajo).<br>2º Agua ($H_2O$): Es una molécula polar que forma fuertes Puentes de Hidrógeno intermoleculares. A temperatura ambiente es líquido. (P.E. intermedio, $100^{\\circ}C$).<br>3º NaCl: No forma moléculas, sino una gigantesca red cristalina iónica tridimensional unida por enormes fuerzas electrostáticas. Para fundirlo o hervirlo hay que romper la red iónica completa. A temperatura ambiente es sólido. (P.E. elevadísimo).<br><br>Orden: $CH_4$ < $H_2O$ < NaCl.",
+    "pista": "Identifica qué hay que romper en cada sustancia para hervirla. En el NaCl tienes que romper una roca, en el agua pegamento fuerte, y en el metano apenas polvo.",
+    "formula": "$$\\text{London} < \\text{Dipolo} < \\text{Puente H} \\ll \\text{Red Iónica}$$"
+  },
+  {
+    "asignatura": "Química 1º Bach",
+    "id": 3208,
+    "dificultad": "Alta",
+    "bloque": "Tema 2: Enlace Químico",
+    "enunciado": "Escribe el ciclo de Born-Haber (reacciones termoquímicas paso a paso) para la formación del cristal iónico de Cloruro de Sodio (NaCl) a partir de Sodio sólido y Cloro gas. Nombra cada una de las energías implicadas.",
+    "resolucion_latex": "Reacción global: $Na (s) + 1/2 \\ Cl_2 (g) \\rightarrow NaCl (s)$ [Entalpía de Formación].<br><br>Pasos del ciclo de Born-Haber:<br>1) Sublimación del sodio: $Na (s) \\rightarrow Na(g)$ [Energía de sublimación].<br>2) Disociación del cloro: $1/2 \\ Cl_2(g) \\rightarrow Cl (g)$ [1/2 Energía de disociación].<br>3) Ionización del sodio: $Na (g) \\rightarrow Na^+(g) + 1e^-$ [Energía de Ionización].<br>4) Afinidad del cloro: $Cl (g) + 1e^- \\rightarrow Cl^-(g)$ [Afinidad Electrónica].<br>5) Formación de la red: $Na^+(g) + Cl^-(g) \\rightarrow NaCl(s)$ [Energía Reticular o de Red].",
+    "pista": "Para juntar un sólido con un gas diatómico, primero tienes que evaporar el sólido, partir el gas por la mitad, robarle un electrón a uno y dárselo al otro, para finalmente chocar los dos iones recién creados.",
+    "formula": "$$\\Delta H_f = S + \\frac{1}{2}D + EI + AE + U$$"
+  },
+  {
+    "asignatura": "Química 1º Bach",
+    "id": 3209,
+    "dificultad": "Alta",
+    "bloque": "Tema 2: Enlace Químico",
+    "enunciado": "El grafito y el diamante están formados exclusivamente por átomos de Carbono, pero el grafito conduce la electricidad y mancha el papel, mientras que el diamante es el material más duro que existe y es aislante. Justifica estas diferencias en base a sus estructuras covalentes reticulares.",
+    "resolucion_latex": "El diamante forma una red tridimensional donde cada átomo de carbono está fuertemente unido a otros 4 carbonos mediante enlaces covalentes simples (estructura tetraédrica compacta). No hay electrones libres (aislante) y romper esos millones de enlaces requiere una fuerza titánica (dureza máxima).<br><br>El grafito forma una red bidimensional de láminas planas de anillos hexagonales. En cada lámina, el carbono se une a solo 3 carbonos, dejando un electrón deslocalizado que permite la conductividad eléctrica. Las diferentes láminas están unidas entre sí por fuerzas muy débiles (fuerzas de Van der Waals), por lo que pueden resbalar unas sobre otras con facilidad (por eso el lápiz mancha el papel).",
+    "pista": "Piensa en el grafito como si fuera una baraja de cartas resbaladiza, y en el diamante como si fuera un bloque macizo y soldado de metal.",
+    "formula": "$$\\text{Diamante: C } (sp^3) \\quad ; \\quad \\text{Grafito: C } (sp^2) + e^- \\text{ libre}$$"
+  },
+  {
+    "asignatura": "Química 1º Bach",
+    "id": 3210,
+    "dificultad": "Superior",
+    "bloque": "Tema 2: Enlace Químico",
+    "enunciado": "Ejercicio Trampa: Un estudiante quiere evaporar agua líquida en un cazo. Para explicar el proceso químico, escribe: 'Al dar calor al agua, suministramos la energía necesaria para romper los enlaces covalentes que unen al Oxígeno con los Hidrógenos, convirtiendo el $H_2O$ en gas'. Analiza el gravísimo error conceptual que encierra esta frase y explica qué es lo que realmente se rompe al hervir agua.",
+    "resolucion_latex": "Evaporar agua es un cambio de estado físico, no una reacción química. Las moléculas de $H_2O$ en estado gas siguen siendo idénticas a las moléculas de $H_2O$ en estado líquido.<br><br>El grave error es afirmar que se rompen los enlaces covalentes oxígeno-hidrógeno (intramoleculares). Si hiciéramos eso, el agua dejaría de ser agua y obtendríamos gases de Hidrógeno y Oxígeno puros.<br>Lo que realmente se rompe al hervir agua son las Fuerzas Intermoleculares (los Puentes de Hidrógeno) que mantienen a unas moléculas de agua 'pegadas' a otras moléculas de agua vecinas en estado líquido.",
+    "pista": "Hervir agua no destruye el agua. Sigue siendo agua, pero flotando. Si se rompieran los enlaces de dentro, estarías fabricando gas hidrógeno explosivo en tu cocina.",
+    "formula": "$$H_2O (l) \\xrightarrow{\\Delta} H_2O (g) \\quad \\text{[No hay ruptura química]}$$"
+  },
+  {
+    "asignatura": "Química 1º Bach",
+    "id": 3301,
+    "dificultad": "Básica",
+    "bloque": "Tema 3: Formulación Inorgánica y Orgánica",
+    "enunciado": "Nombra los siguientes compuestos inorgánicos utilizando la nomenclatura de composición (estequiométrica) o la tradicional aceptada: a) $Fe_2O_3$ b) $CaH_2$ c) NaCl d) KOH.",
+    "resolucion_latex": "a) $Fe_2O_3$: Óxido de hierro(III) o Trióxido de dihierro.<br>b) $CaH_2$: Hidruro de calcio o Dihidruro de calcio.<br>c) NaCl: Cloruro de sodio.<br>d) KOH: Hidróxido de potasio.",
+    "pista": "Fíjate bien si es un óxido, un hidruro, una sal binaria o un hidróxido. Si el metal tiene varias valencias (como el hierro), indícalo entre paréntesis en números romanos.",
+    "formula": "$$\\text{Óxido metálico, Hidruro metálico, Sal binaria, Hidróxido}$$"
+  },
+  {
+    "asignatura": "Química 1º Bach",
+    "id": 3302,
+    "dificultad": "Básica",
+    "bloque": "Tema 3: Formulación Inorgánica y Orgánica",
+    "enunciado": "Formula los siguientes compuestos inorgánicos: a) Dióxido de azufre b) Ácido clorhídrico c) Amoníaco d) Hidróxido de aluminio.",
+    "resolucion_latex": "a) Dióxido de azufre: $SO_2$<br>b) Ácido clorhídrico: HCl (aq)<br>c) Amoníaco: $NH_3$<br>d) Hidróxido de aluminio: $Al(OH)_3$",
+    "pista": "Lee la etiqueta al revés. 'Dióxido' son dos oxígenos. El ácido clorhídrico es un hidrácido acuoso. Cuidado con el Aluminio, tiene valencia +3 inamovible.",
+    "formula": "$$\\text{Sufijo -hídrico } \\Rightarrow \\text{ Hidrácido (sin Oxígeno)}$$"
+  },
+  {
+    "asignatura": "Química 1º Bach",
+    "id": 3303,
+    "dificultad": "Básica",
+    "bloque": "Tema 3: Formulación Inorgánica y Orgánica",
+    "enunciado": "Formula los siguientes compuestos orgánicos básicos: a) Propano b) But-2-eno c) Etino.",
+    "resolucion_latex": "a) Propano (alcano de 3 carbonos): $CH_3-CH_2-CH_3$<br>b) But-2-eno (alqueno de 4 carbonos, doble enlace en el C2): $CH_3-CH=CH-CH_3$<br>c) Etino o Acetileno (alquino de 2 carbonos): $CH \\equiv CH$",
+    "pista": "Recuerda los prefijos: met (1), et (2), prop (3), but (4). Los sufijos 'ano', 'eno', 'ino' te dicen si hay enlaces simples, dobles o triples.",
+    "formula": "$$\\text{-ano (C-C), -eno (C=C), -ino (C}\\equiv\\text{C)}$$"
+  },
+  {
+    "asignatura": "Química 1º Bach",
+    "id": 3304,
+    "dificultad": "Media",
+    "bloque": "Tema 3: Formulación Inorgánica y Orgánica",
+    "enunciado": "Nombra los siguientes oxoácidos y oxosales (puedes usar nomenclatura tradicional o de adición): a) $H_2SO_4$ b) $HNO_3$ c) $K_2CO_3$ d) $Cu(NO_3)_2$.",
+    "resolucion_latex": "a) $H_2SO_4$: Ácido sulfúrico (o tetraoxidosulfato(VI) de hidrógeno).<br>b) $HNO_3$: Ácido nítrico (o trioxidonitrato(V) de hidrógeno).<br>c) $K_2CO_3$: Carbonato de potasio.<br>d) $Cu(NO_3)_2$: Nitrato de cobre(II) o Bis(trioxidonitrato) de cobre.",
+    "pista": "Calcula el estado de oxidación del átomo central. Si es el más alto, usa 'ico' para el ácido y 'ato' para la sal.",
+    "formula": "$$\\text{Ácido -ico } \\Rightarrow \\text{ Sal -ato} \\quad ; \\quad \\text{Ácido -oso } \\Rightarrow \\text{ Sal -ito}$$"
+  },
+  {
+    "asignatura": "Química 1º Bach",
+    "id": 3305,
+    "dificultad": "Media",
+    "bloque": "Tema 3: Formulación Inorgánica y Orgánica",
+    "enunciado": "Formula los siguientes compuestos inorgánicos de mayor dificultad: a) Ácido fosfórico b) Permanganato de potasio c) Sulfito de sodio d) Hidrógenocarbonato de sodio (bicarbonato sódico).",
+    "resolucion_latex": "a) Ácido fosfórico (ortofosfórico): $H_3PO_4$<br>b) Permanganato de potasio: $KMnO_4$<br>c) Sulfito de sodio: $Na_2SO_3$<br>d) Hidrógenocarbonato de sodio: $NaHCO_3$",
+    "pista": "Cuidado con el ácido fosfórico, es el 'orto', así que lleva tres hidrógenos. En el bicarbonato, le has quitado un hidrógeno al ácido carbónico ($H_2CO_3$) para dárselo al sodio.",
+    "formula": "$$\\text{Ortofosfórico: } H_2O + P_2O_5 \\rightarrow H_3PO_4$$"
+  },
+  {
+    "asignatura": "Química 1º Bach",
+    "id": 3306,
+    "dificultad": "Media",
+    "bloque": "Tema 3: Formulación Inorgánica y Orgánica",
+    "enunciado": "Nombra los siguientes compuestos orgánicos con grupos funcionales: a) $CH_3-CH_2-OH$ b) $CH_3-CO-CH_3$ c) $CH_3-CH_2-COOH$.",
+    "resolucion_latex": "a) $CH_3-CH_2-OH$: Etanol (o alcohol etílico). Grupo hidroxilo.<br>b) $CH_3-CO-CH_3$: Propanona (o acetona). Grupo cetona.<br>c) $CH_3-CH_2-COOH$: Ácido propanoico. Grupo carboxilo.",
+    "pista": "Fíjate en las terminaciones clave. Si tiene 'OH' es un alcohol (-ol). Si tiene una 'O' enganchada a un carbono interno es una cetona (-ona). Si acaba en 'COOH' es el rey, el ácido.",
+    "formula": "$$\\text{-OH (Alcohol), -CO- (Cetona), -COOH (Ácido)}$$"
+  },
+  {
+    "asignatura": "Química 1º Bach",
+    "id": 3307,
+    "dificultad": "Alta",
+    "bloque": "Tema 3: Formulación Inorgánica y Orgánica",
+    "enunciado": "Formula los siguientes compuestos orgánicos polifuncionales: a) Ácido 2-hidroxipropanoico (ácido láctico) b) 3-metilbutan-2-ona c) Etanoato de metilo.",
+    "resolucion_latex": "a) Ácido 2-hidroxipropanoico: Cadena de 3C, ácido en el C1 y grupo alcohol en C2: $CH_3-CH(OH)-COOH$.<br>b) 3-metilbutan-2-ona: Cadena de 4C, cetona en C2, metilo en C3: $CH_3-CH(CH_3)-CO-CH_3$.<br>c) Etanoato de metilo: Éster derivado del ácido acético y metanol: $CH_3-COO-CH_3$.",
+    "pista": "En polifuncionales hay jerarquía. El Ácido manda, así que el grupo OH pasa a ser un simple acompañante llamado 'hidroxi'. Para los ésteres, la primera parte es la que tiene el doble enlace de oxígeno.",
+    "formula": "$$\\text{Jerarquía: Ácido } > \\text{ Éster } > \\text{ Cetona } > \\text{ Alcohol}$$"
+  },
+  {
+    "asignatura": "Química 1º Bach",
+    "id": 3308,
+    "dificultad": "Alta",
+    "bloque": "Tema 3: Formulación Inorgánica y Orgánica",
+    "enunciado": "Nombra el siguiente compuesto orgánico justificando la elección de la cadena principal y la numeración: $CH_3-CH(CH_3)-CH=CH-CH_2OH$",
+    "resolucion_latex": "La molécula es $CH_3-CH(CH_3)-CH=CH-CH_2OH$.<br>$1^{\\circ}$: El grupo funcional principal es el alcohol (-OH), que tiene prioridad sobre el doble enlace y sobre el radical metilo.<br>$2^{\\circ}$: La cadena principal debe contener el -OH y el doble enlace. Numeramos desde el extremo que dé el número más bajo al grupo principal (-OH). Es decir, de derecha a izquierda.<br>El -OH está en el C1, el doble enlace empieza en el C2, y hay un grupo metilo en el C4.<br><br>Nombre IUPAC correcto: **4-metilpent-2-en-1-ol**.",
+    "pista": "Aplica las normas de tráfico de la IUPAC: El alcohol (-OH) es el que manda sobre todos. Empieza a contar los carbonos desde el lado que esté más cerca del alcohol.",
+    "formula": "$$\\text{Prefijo-sustituyentes } + \\text{ Raíz } + \\text{ Sufijo-insaturaciones } + \\text{ Sufijo-principal}$$"
+  },
+  {
+    "asignatura": "Química 1º Bach",
+    "id": 3309,
+    "dificultad": "Alta",
+    "bloque": "Tema 3: Formulación Inorgánica y Orgánica",
+    "enunciado": "Escribe y ajusta la reacción química completa de la combustión del butano $(C_4H_{10})$ en presencia de oxígeno gas para dar dióxido de carbono y vapor de agua.",
+    "resolucion_latex": "Reacción sin ajustar: $C_4H_{10} + O_2 \\rightarrow CO_2 + H_2O$<br><br>Ajustamos Carbonos (ponemos un 4 en el $CO_2$):<br>$C_4H_{10} + O_2 \\rightarrow 4 \\ CO_2 + H_2O$<br><br>Ajustamos Hidrógenos (ponemos un 5 en el $H_2O$):<br>$C_4H_{10} + O_2 \\rightarrow 4 \\ CO_2 + 5 \\ H_2O$<br><br>Ajustamos Oxígenos (en productos hay $4\\cdot 2 + 5 = 13$ O. Ponemos $13/2$ en el $O_2$):<br>$C_4H_{10} + 13/2 \\ O_2 \\rightarrow 4 \\ CO_2 + 5 \\ H_2O$.<br><br>Si preferimos coeficientes enteros, multiplicamos todo por 2:<br>$$2 \\ C_4H_{10} + 13 \\ O_2 \\rightarrow 8 \\ CO_2 + 10 \\ H_2O$$",
+    "pista": "Sigue el orden estricto de las combustiones para no liarte: primero cuadra el número de Carbonos, luego los Hidrógenos y deja el Oxígeno, que va solo, para el final.",
+    "formula": "$$C_xH_y + O_2 \\rightarrow CO_2 + H_2O$$"
+  },
+  {
+    "asignatura": "Química 1º Bach",
+    "id": 3310,
+    "dificultad": "Superior",
+    "bloque": "Tema 3: Formulación Inorgánica y Orgánica",
+    "enunciado": "Ejercicio Trampa: Un estudiante se encuentra en un examen con la fórmula $H_2S$ en disolución acuosa y la nombra como 'ácido sulfúrico'. Luego, ve la fórmula $H_2SO_4$ y la nombra como 'sulfuro de hidrógeno'. El profesor le tacha ambos compuestos. Explica la confusión terminológica que tiene el alumno con los sufijos 'hídrico', 'úrico' y 'uro', y da los nombres correctos de ambas sustancias.",
+    "resolucion_latex": "El alumno confunde los compuestos binarios (sin oxígeno) con los compuestos ternarios (oxoácidos).<br><br>El sufijo '-hídrico' se reserva en la nomenclatura tradicional exclusivamente para los hidrácidos en disolución acuosa, que son compuestos binarios de hidrógeno con un no metal. Por tanto, el $H_2S (aq)$ es el **ácido sulfhídrico** (y si es gas puro, sulfuro de hidrógeno).<br><br>El sufijo '-ico' (y '-oso') se utiliza para los oxoácidos, que contienen hidrógeno, el no metal y oxígeno. Como el Azufre actúa con su valencia más alta (+6) en el $H_2SO_4$, el nombre correcto de este es **ácido sulfúrico**.<br><br>El alumno ha cruzado los nombres por completo, ignorando la regla fundamental de la presencia o ausencia de átomos de oxígeno.",
+    "pista": "La regla es clarísima: Si NO tiene oxígeno, acaba en -HÍDRICO (o -URO). Si SÍ tiene oxígeno, acaba en -ICO (o -OSO).",
+    "formula": "$$H_n X \\rightarrow \\text{-hídrico} \\quad ; \\quad H_n X O_m \\rightarrow \\text{-ico/oso}$$"
+  },
+  {
+    "asignatura": "Química 1º Bach",
+    "id": 3401,
+    "dificultad": "Básica",
+    "bloque": "Tema 4: Estequiometría y Reactivo Limitante",
+    "enunciado": "El nitrógeno y el hidrógeno reaccionan para formar amoníaco: $N_2(g) + 3 \\ H_2(g) \\rightarrow 2 \\ NH_3(g)$. Si partimos de 10 moles de hidrógeno y cantidad suficiente de nitrógeno, ¿cuántos moles de amoníaco obtendremos?",
+    "resolucion_latex": "La estequiometría de la reacción nos dice que por cada 3 moles de $H_2$ que se consumen, se producen 2 moles de $NH_3$.<br><br>Hacemos la proporción directa (regla de tres o factores de conversión):<br>$10 \\text{ moles } H_2 \\cdot \\left(\\frac{2 \\text{ moles } NH_3}{3 \\text{ moles } H_2}\\right) = \\frac{20}{3} \\approx 6,67$<br><br>Se obtendrán 6,67 moles de amoníaco.",
+    "pista": "Haz una regla de tres simple usando los grandes números (coeficientes) de la reacción química. Si 3 de hidrógeno te dan 2 de amoníaco, 10 de hidrógeno te darán 'x'.",
+    "formula": "$$\\text{Moles}_{buscados} = \\text{Moles}_{dato} \\cdot \\frac{\\text{Coeficiente}_{buscado}}{\\text{Coeficiente}_{dato}}$$"
+  },
+  {
+    "asignatura": "Química 1º Bach",
+    "id": 3402,
+    "dificultad": "Básica",
+    "bloque": "Tema 4: Estequiometría y Reactivo Limitante",
+    "enunciado": "Para la misma reacción anterior ($N_2 + 3 \\ H_2 \\rightarrow 2 \\ NH_3$), calcula qué masa (en gramos) de amoníaco se obtendrá si hacemos reaccionar exactamente 28 gramos de $N_2$ gas. (Masas atómicas: $N=14$, $H=1$).",
+    "resolucion_latex": "Masa molar del $N_2 = 14 \\cdot 2 = 28 \\text{ g/mol}$.<br>Masa molar del $NH_3 = 14 + 3(1) = 17 \\text{ g/mol}$.<br><br>1) Pasamos los gramos de dato a moles:<br>Moles de $N_2 = \\frac{28 \\text{ g}}{28 \\text{ g/mol}} = 1 \\text{ mol de } N_2$.<br><br>2) Estequiometría: 1 mol de $N_2$ produce exactamente 2 moles de $NH_3$.<br><br>3) Pasamos los moles obtenidos a gramos:<br>Masa de $NH_3 = 2 \\text{ moles} \\cdot 17 \\text{ g/mol} = 34 \\text{ gramos de } NH_3$.",
+    "pista": "Pasa los gramos a moles usando la masa molecular. Luego, mira la reacción para ver cuántos moles de amoníaco se fabrican. Por último, vuelve a pasar esos moles a gramos.",
+    "formula": "$$n = \\frac{m}{M_m}$$"
+  },
+  {
+    "asignatura": "Química 1º Bach",
+    "id": 3403,
+    "dificultad": "Básica",
+    "bloque": "Tema 4: Estequiometría y Reactivo Limitante",
+    "enunciado": "Calcula el volumen que ocuparán 8,5 gramos de amoníaco $(NH_3)$ si los medimos en Condiciones Normales (C.N.) de presión y temperatura.",
+    "resolucion_latex": "Masa molar del $NH_3 = 17 \\text{ g/mol}$.<br><br>Moles de $NH_3 = \\frac{8,5 \\text{ g}}{17 \\text{ g/mol}} = 0,5 \\text{ moles}$.<br><br>En Condiciones Normales (1 atm, 273 K), un mol de cualquier gas ideal ocupa 22,4 Litros.<br>Volumen = $0,5 \\text{ moles} \\cdot 22,4 \\text{ L/mol} = 11,2 \\text{ Litros}$.",
+    "pista": "Es una ley inquebrantable de la química: un mol de cualquier gas en Condiciones Normales (C.N.) ocupa siempre 22,4 litros. Pasa los gramos a moles y multiplica.",
+    "formula": "$$V = n \\cdot 22,4 \\text{ L/mol (solo en C.N.)}$$"
+  },
+  {
+    "asignatura": "Química 1º Bach",
+    "id": 3404,
+    "dificultad": "Media",
+    "bloque": "Tema 4: Estequiometría y Reactivo Limitante",
+    "enunciado": "Reactivo Limitante: Hacemos reaccionar 54 g de Aluminio con 200 g de gas Cloro según la reacción sin ajustar: $Al(s) + Cl_2(g) \\rightarrow AlCl_3(s)$. Identifica razonadamente cuál es el reactivo limitante, cuál es el reactivo en exceso y calcula la masa del producto formado. (Masas: $Al=27$, $Cl=35,5$).",
+    "resolucion_latex": "Ajuste de reacción: $2 \\ Al + 3 \\ Cl_2 \\rightarrow 2 \\ AlCl_3$.<br><br>Masas molares: $Al = 27 \\text{ g/mol}$, $Cl_2 = 35,5 \\cdot 2 = 71 \\text{ g/mol}$.<br>Moles de $Al = \\frac{54}{27} = 2 \\text{ moles}$.<br>Moles de $Cl_2 = \\frac{200}{71} \\approx 2,817 \\text{ moles}$.<br><br>Buscamos el limitante: Si gasto los 2 moles de Al, necesitaría exactamente 3 moles de $Cl_2$. ¡Pero solo tengo 2,817 moles! Me falta cloro. Por tanto, el **$Cl_2$ es el Reactivo Limitante** y el Aluminio es el Reactivo en Exceso.<br><br>Masa de producto (basada en el limitante):<br>Moles $AlCl_3 = 2,817 \\text{ moles } Cl_2 \\cdot \\left(\\frac{2}{3}\\right) = 1,878 \\text{ moles } AlCl_3$.<br>Masa molar $AlCl_3 = 27 + (3 \\cdot 35,5) = 133,5 \\text{ g/mol}$.<br>Masa producto $= 1,878 \\cdot 133,5 \\approx 250,7 \\text{ gramos de } AlCl_3$.",
+    "pista": "Calcula los moles de ambos. Mira la reacción ajustada: si echas todo el Aluminio a la olla, ¿tienes suficiente Cloro para que reaccione entero? El que se agote primero es el que frena la fábrica.",
+    "formula": "$$2 \\ Al + 3 \\ Cl_2 \\rightarrow 2 \\ AlCl_3$$"
+  },
+  {
+    "asignatura": "Química 1º Bach",
+    "id": 3405,
+    "dificultad": "Media",
+    "bloque": "Tema 4: Estequiometría y Reactivo Limitante",
+    "enunciado": "Rendimiento: En un proceso industrial se queman 100 g de metano $(CH_4)$ con exceso de oxígeno para producir $CO_2$ y $H_2O$. Si al recoger y pesar el agua obtenida el resultado es de 180 g de $H_2O$, calcula el porcentaje de rendimiento de la reacción. (Masas: $C=12$, $H=1$, $O=16$).",
+    "resolucion_latex": "Reacción ajustada: $CH_4 + 2 \\ O_2 \\rightarrow CO_2 + 2 \\ H_2O$<br><br>Masa molar $CH_4 = 16 \\text{ g/mol}$. Masa molar $H_2O = 18 \\text{ g/mol}$.<br>Moles de $CH_4 = \\frac{100}{16} = 6,25 \\text{ moles}$.<br><br>Según la reacción, el agua producida teórica es el doble: $6,25 \\cdot 2 = 12,5 \\text{ moles } H_2O$ teóricos.<br>Masa teórica de agua $= 12,5 \\cdot 18 = 225 \\text{ gramos}$ (esto saldría si el rendimiento fuera del 100%).<br><br>Como solo se obtuvieron 180 g reales, el rendimiento es:<br>$R(\\%) = \\frac{\\text{Masa Real}}{\\text{Masa Teórica}} \\cdot 100 = \\left(\\frac{180}{225}\\right) \\cdot 100 = 0,8 \\cdot 100 = 80\\%$.<br>El rendimiento es del 80%.",
+    "pista": "Calcula el agua teórica que se habría fabricado en un mundo perfecto. Luego divide lo que has obtenido en la vida real entre ese dato ideal.",
+    "formula": "$$R(\\%) = \\frac{m_{real}}{m_{teorica}} \\cdot 100$$"
+  },
+  {
+    "asignatura": "Química 1º Bach",
+    "id": 3406,
+    "dificultad": "Media",
+    "bloque": "Tema 4: Estequiometría y Reactivo Limitante",
+    "enunciado": "Pureza (Riqueza): Queremos obtener $CO_2$ haciendo reaccionar ácido clorhídrico con piedra caliza (que contiene $CaCO_3$). Si disponemos de una roca de caliza de 250 g con una pureza del 80% en $CaCO_3$, calcula la masa real de carbonato de calcio que reaccionará y los moles de $CO_2$ obtenidos.<br>Reacción: $CaCO_3 + 2 \\ HCl \\rightarrow CaCl_2 + CO_2 + H_2O$. (Masa $CaCO_3=100$).",
+    "resolucion_latex": "La piedra tiene impurezas que no reaccionan (tierra, minerales).<br>Masa pura de $CaCO_3 = 250 \\text{ g roca} \\cdot 0,80 = 200 \\text{ g de } CaCO_3 \\text{ puro}$.<br><br>Convertimos a moles:<br>Moles puros $= \\frac{200}{100 \\text{ g/mol}} = 2 \\text{ moles de } CaCO_3$.<br><br>Por estequiometría, 1 mol de $CaCO_3$ genera exactamente 1 mol de $CO_2$.<br>Por tanto, se obtendrán 2 moles de $CO_2$.",
+    "pista": "No todo el peso de la roca sirve para reaccionar. Extrae solo el porcentaje de la roca que es útil antes de pasarla a moles, si no, tus resultados estarán inflados.",
+    "formula": "$$m_{pura} = m_{total} \\cdot \\frac{\\% \\text{ pureza}}{100}$$"
+  },
+  {
+    "asignatura": "Química 1º Bach",
+    "id": 3407,
+    "dificultad": "Alta",
+    "bloque": "Tema 4: Estequiometría y Reactivo Limitante",
+    "enunciado": "Una muestra de 50 g de Zinc comercial reacciona con 200 mL de una disolución de Ácido Clorhídrico (HCl) 6 M, según: $Zn(s) + 2 \\ HCl(aq) \\rightarrow ZnCl_2(aq) + H_2(g)$. Se observa que el Zinc se consume por completo. Sabiendo que el rendimiento de la reacción es del 90%, calcula el volumen de gas Hidrógeno $(H_2)$ recogido a una temperatura de $25^{\\circ}C$ y una presión de 1,2 atm. (Dato: $R=0,082$. Masa $Zn=65,4$).",
+    "resolucion_latex": "Moles de Zn puro: $50 / 65,4 \\text{ g/mol} = 0,764 \\text{ moles Zn}$.<br>El enunciado dice que \"el Zinc se consume por completo\", por lo que matemáticamente el Zn es el reactivo limitante (frena la reacción).<br><br>Moles teóricos de $H_2$ formados (estequiometría 1:1 con el Zn): 0,764 moles de $H_2$.<br>Aplicamos el rendimiento del 90%:<br>Moles reales $= 0,764 \\cdot 0,90 = 0,688 \\text{ moles de } H_2 \\text{ obtenidos}$.<br><br>Volumen del gas con Ley de Gases Ideales ($PV = nRT$):<br>Temperatura $= 25 + 273,15 = 298,15 \\text{ K}$.<br>$V = \\frac{nRT}{P} = \\frac{0,688 \\cdot 0,082 \\cdot 298,15}{1,2} = 14,02 \\text{ Litros}$.",
+    "pista": "Saca los moles del sólido y haz la reacción cruzada. El resultado que obtengas, recórtale el 10% porque la máquina no es perfecta. Esos moles reales mételos en $P \\cdot V = n \\cdot R \\cdot T$.",
+    "formula": "$$n = \\frac{m}{M} \\quad ; \\quad P \\cdot V = n \\cdot R \\cdot T$$"
+  },
+  {
+    "asignatura": "Química 1º Bach",
+    "id": 3408,
+    "dificultad": "Alta",
+    "bloque": "Tema 4: Estequiometría y Reactivo Limitante",
+    "enunciado": "Al hacer reaccionar Carbonato de Calcio $(CaCO_3)$ con Ácido Nítrico $(HNO_3)$ se produce Nitrato de Calcio, Dióxido de Carbono y Agua. Si hacemos reaccionar 150 g de un mineral que contiene un 85% de riqueza en carbonato de calcio con 500 mL de ácido nítrico 2 M, halla la masa de la sal formada en la disolución.",
+    "resolucion_latex": "Reacción ajustada: $CaCO_3 + 2 \\ HNO_3 \\rightarrow Ca(NO_3)_2 + CO_2 + H_2O$.<br><br>Moles de $CaCO_3$: Masa pura $= 150 \\cdot 0,85 = 127,5 \\text{ g}$. Moles $= 127,5 / 100 = 1,275 \\text{ moles}$.<br>Moles de $HNO_3$: $n = M \\cdot V = 2 \\cdot 0,500 = 1,0 \\text{ mol}$.<br><br>Límite estequiométrico: Necesitamos 2 moles de $HNO_3$ por cada mol de $CaCO_3$. Si gastamos el 1,0 mol de $HNO_3$, necesitaremos 0,5 moles de $CaCO_3$. ¡Tenemos de sobra (1,275)!<br>Reactivo Limitante: $HNO_3$ (con 1,0 mol).<br><br>Moles de sal $Ca(NO_3)_2$ formada (1 por cada 2 de ácido): $1,0 / 2 = 0,5 \\text{ moles}$.<br>Masa molar sal $= 40 + 2 \\cdot (14+48) = 164 \\text{ g/mol}$.<br>Masa formada $= 0,5 \\cdot 164 = 82 \\text{ gramos de Nitrato de calcio}$.",
+    "pista": "Para saber quién se gasta antes, calcula los moles de la piedra (limpiando las impurezas) y los moles del líquido (Molaridad por Volumen en Litros). Compara ambos bandos.",
+    "formula": "$$M = \\frac{n}{V(L)}$$"
+  },
+  {
+    "asignatura": "Química 1º Bach",
+    "id": 3409,
+    "dificultad": "Alta",
+    "bloque": "Tema 4: Estequiometría y Reactivo Limitante",
+    "enunciado": "Análisis de una mezcla: Tenemos una mezcla de 10 g formada exclusivamente por propano $(C_3H_8)$ y butano $(C_4H_{10})$. Al quemar la mezcla por completo con exceso de oxígeno, se recogen 30,5 g de $CO_2$. Plantea un sistema de ecuaciones y calcula la masa de propano y butano que había en la mezcla original.",
+    "resolucion_latex": "Sea $x$ la masa de propano ($C_3H_8$) e $y$ la masa de butano ($C_4H_{10}$).<br>Ecuación 1 (masas): $x + y = 10$.<br><br>Masa molar propano = $44 \\text{ g/mol}$. Masa molar butano = $58 \\text{ g/mol}$.<br>Combustión $C_3H_8$: 1 mol produce 3 moles de $CO_2$. (Masa $CO_2 = 3 \\cdot 44 = 132\\text{g } CO_2$ por cada 44g propano).<br>Factor de conversión: $132/44 = 3 \\text{ g de } CO_2$ por gramo de propano.<br><br>Combustión $C_4H_{10}$: 1 mol produce 4 moles de $CO_2$. (Masa $CO_2 = 4 \\cdot 44 = 176\\text{g } CO_2$ por cada 58g butano).<br>Factor de conversión: $176/58 \\approx 3,034 \\text{ g de } CO_2$ por gramo de butano.<br><br>Ecuación 2 ($CO_2$ total): $3x + 3,034y = 30,5$.<br><br>Resolvemos el sistema por sustitución ($x = 10 - y$):<br>$3(10 - y) + 3,034y = 30,5 \\Rightarrow 30 - 3y + 3,034y = 30,5 \\Rightarrow 0,034y = 0,5 \\Rightarrow y \\approx 14,7 \\text{ g}$.<br><br>*¡Ojo! El resultado matemático excede la masa de la muestra (10g). Esto indica que los datos del enunciado (30.5 g) son químicamente incoherentes, pero el procedimiento es el correcto.*",
+    "pista": "La masa de x más la masa de y es igual a 10. Luego, el dióxido de carbono que eche x al quemarse más el dióxido de carbono que eche y al quemarse es igual a 30,5. Monta un sistema.",
+    "formula": "$$x+y = 10 \\quad ; \\quad CO_{2x} + CO_{2y} = 30,5$$"
+  },
+  {
+    "asignatura": "Química 1º Bach",
+    "id": 3410,
+    "dificultad": "Superior",
+    "bloque": "Tema 4: Estequiometría y Reactivo Limitante",
+    "enunciado": "Ejercicio Trampa: Un enunciado dice: 'Se mezclan 10 gramos de gas Hidrógeno $(H_2)$ con 10 gramos de gas Oxígeno $(O_2)$ para formar agua $(H_2O)$. Calcula la masa de agua formada'. El alumno aplica ciegamente la Ley de Conservación de la Masa de Lavoisier y escribe: 'Como pongo 10 g + 10 g, se obtendrán exactamente 20 gramos de agua'. Explica por qué esto es un error mortal y calcula la verdadera cantidad de agua formada.",
+    "resolucion_latex": "La Ley de Conservación de la Masa de Lavoisier establece que 'la masa de los reactivos CONSUMIDOS es igual a la masa de los productos formados'. El error del alumno es no comprobar el Reactivo en Exceso. ¡Lavoisier no obliga a que todo lo que eches en el matraz reaccione!<br><br>Reacción ajustada: $2 \\ H_2 + O_2 \\rightarrow 2 \\ H_2O$.<br>Moles de $H_2 = 10 / 2 = 5 \\text{ moles}$.<br>Moles de $O_2 = 10 / 32 = 0,3125 \\text{ moles}$.<br>Necesito 2 moles de $H_2$ por cada 1 de $O_2$. Para 0,3125 moles de $O_2$, solo gastaré 0,625 moles de $H_2$.<br><br>Sobrarán muchísimos moles de Hidrógeno que se quedarán flotando sin reaccionar. El $O_2$ es el limitante.<br>Agua formada (moles): 2 moles $H_2O$ por cada 1 de $O_2 \\Rightarrow 2 \\cdot 0,3125 = 0,625 \\text{ moles } H_2O$.<br>Masa de agua real $= 0,625 \\cdot 18 = 11,25 \\text{ gramos de agua}$.",
+    "pista": "La masa ni se crea ni se destruye, es cierto. Pero, si echas agua de más a la mezcla del pan, el pan no se hace más grande, simplemente te sobra agua en la olla.",
+    "formula": "$$m_{\\text{reactivos consumidos}} = m_{\\text{productos}}$$"
+  },
+  {
+    "asignatura": "Química 1º Bach",
+    "id": 3501,
+    "dificultad": "Básica",
+    "bloque": "Tema 5: Energía en las Reacciones Químicas",
+    "enunciado": "Clasifica los siguientes procesos como exotérmicos o endotérmicos indicando el signo de su variación de entalpía ($\\Delta H$): a) Combustión del gas butano. b) Descomposición térmica del carbonato de calcio. c) Fusión de un cubito de hielo.",
+    "resolucion_latex": "a) Combustión del butano: Toda combustión desprende calor hacia el entorno. Proceso **Exotérmico**. Signo de la entalpía: $\\Delta H < 0$ (negativo).<br><br>b) Descomposición térmica del carbonato: Necesita absorber calor (temperatura) continuamente para que el sólido se rompa. Proceso **Endotérmico**. Signo de la entalpía: $\\Delta H > 0$ (positivo).<br><br>c) Fusión del hielo: Para pasar de sólido a líquido se necesita absorber calor del entorno. Proceso **Endotérmico**. Signo de la entalpía: $\\Delta H > 0$ (positivo).",
+    "pista": "Si un vaso con la reacción dentro te quemara la mano, es que está escupiendo calor (Exotérmico). Si tuvieras que poner el vaso al fuego para que reaccione, es que está absorbiendo calor (Endotérmico).",
+    "formula": "$$\\Delta H < 0 \\Rightarrow \\text{Exotérmico} \\quad ; \\quad \\Delta H > 0 \\Rightarrow \\text{Endotérmico}$$"
+  },
+  {
+    "asignatura": "Química 1º Bach",
+    "id": 3502,
+    "dificultad": "Básica",
+    "bloque": "Tema 5: Energía en las Reacciones Químicas",
+    "enunciado": "Escribe la ecuación termoquímica de formación del agua líquida $(H_2O)$ sabiendo que, al formarse un mol de agua a partir de sus elementos en estado estándar, se liberan 285,8 kJ.",
+    "resolucion_latex": "La reacción de formación exige que los reactivos sean los elementos en estado estándar (gas diatómico en este caso) y el producto sea exactamente 1 mol del compuesto.<br><br>Reactivos: $H_2(g)$ y $O_2(g)$.<br>Producto: $H_2O(l)$.<br><br>Ecuación ajustada para dar 1 mol:<br>$H_2(g) + 1/2 \\ O_2(g) \\rightarrow H_2O(l)$<br><br>Como se \"liberan\" 285,8 kJ, el proceso es exotérmico. Se añade al final:<br>$\\Delta H_f^{\\circ} = -285,8 \\text{ kJ/mol}$",
+    "pista": "La regla de oro de la ecuación de formación es que el producto siempre tiene que tener un '1' delante. Eso te obliga a usar fracciones en los reactivos como $1/2$ para ajustar los átomos.",
+    "formula": "$$H_2(g) + \\frac{1}{2} O_2(g) \\rightarrow H_2O(l) \\quad \\Delta H < 0$$"
+  },
+  {
+    "asignatura": "Química 1º Bach",
+    "id": 3503,
+    "dificultad": "Básica",
+    "bloque": "Tema 5: Energía en las Reacciones Químicas",
+    "enunciado": "La combustión del metano $(CH_4)$ desprende una energía de $890 \\text{ kJ/mol}$. Calcula el calor total liberado al quemar exactamente 80 gramos de metano. (Masas atómicas: $C=12, H=1$).",
+    "resolucion_latex": "Masa molar del metano $(CH_4) = 12 + 4(1) = 16 \\text{ g/mol}$.<br><br>Calculamos los moles de metano a quemar:<br>$n = \\frac{80 \\text{ g}}{16 \\text{ g/mol}} = 5 \\text{ moles}$.<br><br>Si 1 mol libera 890 kJ, entonces 5 moles liberarán:<br>$Q = 5 \\text{ moles} \\cdot (-890 \\text{ kJ/mol}) = -4450 \\text{ kJ}$.<br><br>Resultado: Se liberan 4450 kJ de energía calorífica.",
+    "pista": "La tabla de entalpías es como el menú de un restaurante: te dice lo que cuesta UNA ración (1 mol). Pasa tus gramos a moles y averigua el coste total de tu banquete.",
+    "formula": "$$Q = n \\cdot \\Delta H_c$$"
+  },
+  {
+    "asignatura": "Química 1º Bach",
+    "id": 3504,
+    "dificultad": "Media",
+    "bloque": "Tema 5: Energía en las Reacciones Químicas",
+    "enunciado": "Calcula la entalpía de la reacción de combustión del gas propano $(C_3H_8)$ utilizando las entalpías estándar de formación de reactivos y productos.<br>Reacción: $C_3H_8(g) + 5 \\ O_2(g) \\rightarrow 3 \\ CO_2(g) + 4 \\ H_2O(l)$<br>Datos $\\Delta H_f$ (en kJ/mol): $C_3H_8(g) = -103,8$; $CO_2(g) = -393,5$; $H_2O(l) = -285,8$.",
+    "resolucion_latex": "Fórmula: $\\Delta H_{rxn}^{\\circ} = \\sum n \\cdot \\Delta H_f^{\\circ}(\\text{productos}) - \\sum m \\cdot \\Delta H_f^{\\circ}(\\text{reactivos})$.<br>(Ojo: la entalpía de formación de elementos puros como el $O_2(g)$ es cero).<br><br>Productos: $3 \\cdot (-393,5) + 4 \\cdot (-285,8) = -1180,5 - 1143,2 = -2323,7 \\text{ kJ}$.<br>Reactivos: $1 \\cdot (-103,8) + 5 \\cdot (0) = -103,8 \\text{ kJ}$.<br><br>Restamos: $\\Delta H_{rxn}^{\\circ} = -2323,7 - (-103,8) = -2323,7 + 103,8 = -2219,9 \\text{ kJ}$.<br>Al ser $\\Delta H$ negativo, se confirma que es un proceso fuertemente exotérmico.",
+    "pista": "Suma la energía de todo el bloque de la derecha y réstale la energía de todo el bloque de la izquierda. No te olvides de multiplicar cada sustancia por el numerito de su ajuste.",
+    "formula": "$$\\Delta H_{rxn} = \\sum n\\Delta H_f \\text{(Prod)} - \\sum m\\Delta H_f \\text{(React)}$$"
+  },
+  {
+    "asignatura": "Química 1º Bach",
+    "id": 3505,
+    "dificultad": "Media",
+    "bloque": "Tema 5: Energía en las Reacciones Químicas",
+    "enunciado": "Calcula la entalpía de formación del monóxido de carbono gaseoso, $CO(g)$, a partir del carbono sólido y oxígeno gaseoso usando la Ley de Hess con las siguientes reacciones de combustión:<br>1) $C(s) + O_2(g) \\rightarrow CO_2(g)$ ($\\Delta H_1 = -393,5 \\text{ kJ}$)<br>2) $CO(g) + 1/2 \\ O_2(g) \\rightarrow CO_2(g)$ ($\\Delta H_2 = -283,0 \\text{ kJ}$)",
+    "resolucion_latex": "La reacción objetivo (formación de CO a partir de sus elementos) es: $C(s) + 1/2 \\ O_2(g) \\rightarrow CO(g)$.<br>Manipulamos las ecuaciones dadas según la Ley de Hess:<br><br>- Dejamos la ecuación 1) tal cual para tener $C(s)$ en los reactivos:<br>$C(s) + O_2(g) \\rightarrow CO_2(g)$ ($\\Delta H = -393,5 \\text{ kJ}$)<br><br>- Invertimos la ecuación 2) para poner el $CO(g)$ en el lado de los productos. Al invertir la reacción, se cambia el signo de la entalpía:<br>$CO_2(g) \\rightarrow CO(g) + 1/2 \\ O_2(g)$ ($\\Delta H = +283,0 \\text{ kJ}$)<br><br>Sumamos ambas ecuaciones: el $CO_2(g)$ se cancela en ambos lados, y el $O_2(g)$ de la izquierda se resta con el $1/2 \\ O_2(g)$ de la derecha.<br>Obtenemos: $C(s) + 1/2 \\ O_2(g) \\rightarrow CO(g)$.<br>Sumamos las entalpías: $\\Delta H_f^{\\circ} = -393,5 + 283,0 = -110,5 \\text{ kJ/mol}$.",
+    "pista": "La Ley de Hess es un rompecabezas. Tienes que dar la vuelta y tachar compuestos en las dos reacciones de abajo hasta que, al sumarlas, el resultado sea exactamente tu reacción objetivo.",
+    "formula": "$$\\text{Si inviertes una reacción } \\Rightarrow \\text{ Cambias el signo de su } \\Delta H$$"
+  },
+  {
+    "asignatura": "Química 1º Bach",
+    "id": 3506,
+    "dificultad": "Media",
+    "bloque": "Tema 5: Energía en las Reacciones Químicas",
+    "enunciado": "Estima la entalpía de la reacción de formación de un mol de Cloruro de Hidrógeno gas (HCl) a partir de sus elementos gaseosos $(H_2 \\text{ y } Cl_2)$ utilizando las energías medias de enlace.<br>Datos de energía de enlace (kJ/mol): $H-H=436$; $Cl-Cl=242$; $H-Cl=431$.",
+    "resolucion_latex": "Reacción objetivo (ajustada para 1 mol): $1/2 \\ H_2(g) + 1/2 \\ Cl_2(g) \\rightarrow HCl(g)$.<br><br>En los reactivos, se rompen enlaces. Romper enlaces absorbe energía (positivo).<br>Energía absorbida $= 1/2 \\cdot E(H-H) + 1/2 \\cdot E(Cl-Cl) = 1/2 \\cdot (436) + 1/2 \\cdot (242) = 218 + 121 = 339 \\text{ kJ}$.<br><br>En los productos, se forma el enlace H-Cl. Formar enlaces libera energía (negativo).<br>Energía liberada $= 1 \\cdot E(H-Cl) = 1 \\cdot (431) = 431 \\text{ kJ}$.<br><br>$\\Delta H = \\text{Energía Rotos} - \\text{Energía Formados} = 339 - 431 = -92 \\text{ kJ/mol}$.",
+    "pista": "Aquí la fórmula es al revés que antes. Primero se rompe la leña (Reactivos) y luego se quema (Productos). Resta a los reactivos el valor de los productos.",
+    "formula": "$$\\Delta H = \\sum E_{rotos (reactivos)} - \\sum E_{formados (productos)}$$"
+  },
+  {
+    "asignatura": "Química 1º Bach",
+    "id": 3507,
+    "dificultad": "Alta",
+    "bloque": "Tema 5: Energía en las Reacciones Químicas",
+    "enunciado": "El etanol $(C_2H_6O)$ es un alcohol muy utilizado como combustible. Su entalpía de combustión es $\\Delta H_c = -1367 \\text{ kJ/mol}$. ¿Cuántos gramos de etanol necesitamos quemar para conseguir calentar 5 litros de agua desde $20^{\\circ}C$ hasta $80^{\\circ}C$ suponiendo que no hay pérdidas de calor hacia el exterior? (Datos: Masa molar del etanol $= 46 \\text{ g/mol}$; Calor específico del agua $c = 4,18 \\text{ J/(g}^{\\circ}\\text{C)}$).",
+    "resolucion_latex": "Paso 1: Calcular el calor necesario (Q) para calentar el agua mediante la fórmula de calorimetría: $Q = m \\cdot c \\cdot \\Delta T$.<br>Masa de 5 L de agua $= 5000 \\text{ g}$.<br>Incremento de temperatura $(\\Delta T) = 80 - 20 = 60^{\\circ}C$.<br>$Q = 5000 \\text{ g} \\cdot 4,18 \\text{ J/g}^{\\circ}\\text{C} \\cdot 60^{\\circ}C = 1254000 \\text{ J} = 1254 \\text{ kJ}$.<br>Necesitamos que la reacción nos proporcione 1254 kJ.<br><br>Paso 2: Calcular la masa de etanol. Si 1 mol de etanol (46 g) libera 1367 kJ de calor...<br>Planteamos la proporción: $\\frac{46 \\text{ g}}{1367 \\text{ kJ}} = \\frac{x \\text{ g}}{1254 \\text{ kJ}}$<br>$x = \\frac{46 \\cdot 1254}{1367} \\approx 42,20 \\text{ gramos de etanol}$.",
+    "pista": "Es una mezcla de física y química. Calcula primero cuánto calor necesita comerse el agua para calentarse (macarrones con tomate: masa $\\cdot$ c $\\cdot$ temp). Luego, averigua cuántos gramos de alcohol dan justo ese calor.",
+    "formula": "$$Q = m \\cdot c \\cdot \\Delta T \\quad ; \\quad m_{alcohol} = \\frac{Q_{necesario}}{\\Delta H_c / M_m}$$"
+  },
+  {
+    "asignatura": "Química 1º Bach",
+    "id": 3508,
+    "dificultad": "Alta",
+    "bloque": "Tema 5: Energía en las Reacciones Químicas",
+    "enunciado": "El acetileno $(C_2H_2)$ es un gas usado en soldadura. Determina su entalpía estándar de formación $(\\Delta H_f^{\\circ})$ utilizando la Ley de Hess a partir de las siguientes ecuaciones termoquímicas:<br>a) Combustión del Carbono grafito: $\\Delta H = -393,5 \\text{ kJ}$<br>b) Combustión del Hidrógeno gas: $\\Delta H = -285,8 \\text{ kJ}$<br>c) Combustión del Acetileno: $C_2H_2(g) + 5/2 \\ O_2(g) \\rightarrow 2 \\ CO_2(g) + H_2O(l) \\quad (\\Delta H = -1299,6 \\text{ kJ})$",
+    "resolucion_latex": "Reacción objetivo (formación de $C_2H_2$): $2 \\ C(s) + H_2(g) \\rightarrow C_2H_2(g)$.<br><br>Manipulamos las ecuaciones de combustión dadas:<br>a) La multiplicamos por 2 para obtener los 2 C(s) necesarios:<br>$2 \\ C(s) + 2 \\ O_2(g) \\rightarrow 2 \\ CO_2(g) \\quad (\\Delta H = 2 \\cdot (-393,5) = -787,0 \\text{ kJ})$<br><br>b) La dejamos tal cual para obtener el $H_2(g)$:<br>$H_2(g) + 1/2 \\ O_2(g) \\rightarrow H_2O(l) \\quad (\\Delta H = -285,8 \\text{ kJ})$<br><br>c) La invertimos para poner el $C_2H_2$ como producto y cambiamos su signo:<br>$2 \\ CO_2(g) + H_2O(l) \\rightarrow C_2H_2(g) + 5/2 \\ O_2(g) \\quad (\\Delta H = +1299,6 \\text{ kJ})$<br><br>Sumamos las entalpías manipuladas:<br>$\\Delta H = -787,0 - 285,8 + 1299,6 = -1072,8 + 1299,6 = +226,8 \\text{ kJ/mol}$.",
+    "pista": "Primero necesitas escribirte a mano tu ecuación objetivo (carbono e hidrógeno que se juntan para dar el gas). Luego coge las tres reacciones de combustión y dales la vuelta o multiplícalas para montar el puzzle.",
+    "formula": "$$\\text{Formación: } 2 \\ C(s) + H_2(g) \\rightarrow C_2H_2(g)$$"
+  },
+  {
+    "asignatura": "Química 1º Bach",
+    "id": 3509,
+    "dificultad": "Alta",
+    "bloque": "Tema 5: Energía en las Reacciones Químicas",
+    "enunciado": "En un calorímetro (recipiente aislado térmicamente) a presión constante, se queman 3 gramos de carbono puro. El calor desprendido por la reacción es absorbido por los 2000 gramos de agua del calorímetro, observándose que su temperatura se eleva en $11,8^{\\circ}C$. Calcula el calor de combustión molar del carbono expresado en kJ/mol. (Dato $c_{agua} = 4,18 \\text{ J/g}^{\\circ}\\text{C}$).",
+    "resolucion_latex": "El calor absorbido por el agua del calorímetro se calcula con: $Q_{agua} = m \\cdot c \\cdot \\Delta T$<br>$Q_{agua} = 2000 \\text{ g} \\cdot 4,18 \\text{ J/g}^{\\circ}\\text{C} \\cdot 11,8^{\\circ}C \\approx 98648 \\text{ J} = 98,648 \\text{ kJ}$.<br><br>Ese calor absorbido por el agua proviene de la combustión exotérmica del carbono, por lo que el calor de reacción es $Q_{rxn} = -98,648 \\text{ kJ}$.<br><br>Pero ese calor es el liberado por solo 3 gramos de carbono. Nos piden el calor \"molar\" (por cada mol, que son 12 g).<br>Calculamos los moles: $n = 3 \\text{ g} / 12 \\text{ g/mol} = 0,25 \\text{ moles de C}$.<br><br>$\\Delta H_c = \\frac{Q_{rxn}}{n} = \\frac{-98,648 \\text{ kJ}}{0,25 \\text{ moles}} \\approx -394,59 \\text{ kJ/mol}$.",
+    "pista": "Averigua cuánto calor ha engullido el agua del calorímetro (masa $\\cdot$ ce $\\cdot$ temperatura). Todo ese calor salió de los 3 gramos de carbón. Solo tienes que hacer la proporción para ver cuánto habría salido si quemaras un mol entero.",
+    "formula": "$$\\Delta H_c = \\frac{Q_{rxn}}{n}$$"
+  },
+  {
+    "asignatura": "Química 1º Bach",
+    "id": 3510,
+    "dificultad": "Superior",
+    "bloque": "Tema 5: Energía en las Reacciones Químicas",
+    "enunciado": "Ejercicio Trampa: Un alumno memoriza que la fórmula mágica de la termoquímica es 'Entalpía de Productos menos Entalpía de Reactivos'. Cuando llega al examen y se enfrenta al problema de las Energías de Enlace, aplica su fórmula religiosamente: sumatorio de la energía de los enlaces de los productos menos sumatorio de la energía de los enlaces de los reactivos. El resultado le da el número correcto pero con el signo exactamente al revés. Explica conceptualmente por qué su fórmula no sirve para las energías de enlace y cuál es el planteamiento termodinámico correcto sobre la ruptura y formación de un enlace químico.",
+    "resolucion_latex": "El error proviene del concepto fundamental de qué significa un enlace. Un enlace es un estado de gran estabilidad energética.<br><br>Por tanto, para **romper un enlace hay que inyectar mucha energía** (es un proceso fuertemente endotérmico, $\\Delta H > 0$). Por el contrario, cuando **se forma un enlace nuevo, los átomos se estabilizan y liberan energía** hacia el entorno (proceso exotérmico, $\\Delta H < 0$).<br><br>En las tablas de datos, las \"energías de enlace\" se dan en valor absoluto positivo. Los enlaces que se rompen son los de los REACTIVOS, y los que se forman son los de los PRODUCTOS. Por tanto, la fórmula matemática correcta es la inversa: sumar en positivo todos los enlaces rotos de los reactivos y restarle (en negativo) todos los enlaces formados de los productos.<br><br>$\\Delta H = \\sum \\text{Energías Enlaces Reactivos} - \\sum \\text{Energías Enlaces Productos}$.",
+    "pista": "Imagina que el reactivo es un jarrón y quieres fabricar arena. Romper el jarrón exige que tú gastes energía golpeando (positivo). Las piezas sueltas que caen al suelo pierden su energía y descansan (negativo).",
+    "formula": "$$\\text{Romper enlace } (\\Delta H>0) \\quad ; \\quad \\text{Formar enlace } (\\Delta H<0)$$"
+  }
+]

@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A-PRUEBA | Configuración</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Space Grotesk', sans-serif; }
+
+        :root {
+            --neon-math: #00f2fe;
+            --neon-physics: #ff4500;
+            --neon-chemistry: #00ff7f;
+            --glass-bg: rgba(15, 10, 30, 0.55);
+            --glass-border: rgba(255, 255, 255, 0.1);
+            --input-bg: rgba(0, 0, 0, 0.45);
+            --accent: #4facfe;
+        }
+
+        body {
+            background: #05010f;
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        /* ─── Stars background ─────────────────────────────────────── */
+        .stars-bg {
+            position: fixed; inset: 0; z-index: 0; pointer-events: none;
+            background: radial-gradient(ellipse at 20% 30%, rgba(45, 110, 255, 0.08) 0%, transparent 55%),
+                        radial-gradient(ellipse at 80% 70%, rgba(138, 43, 226, 0.1) 0%, transparent 50%),
+                        radial-gradient(ellipse at 50% 50%, rgba(0, 242, 254, 0.04) 0%, transparent 70%);
+        }
+
+        /* ─── Navbar ───────────────────────────────────────────────── */
+        .navbar {
+            position: sticky; top: 0; left: 0; right: 0; height: 72px;
+            padding: 0 5%; display: flex; justify-content: space-between; align-items: center;
+            background: rgba(10, 5, 25, 0.8); backdrop-filter: blur(14px);
+            border-bottom: 1px solid var(--glass-border); z-index: 200;
+        }
+        .nav-brand {
+            font-size: 1.4rem; font-weight: 700; letter-spacing: 2px;
+            background: linear-gradient(90deg, #00f2fe 0%, #4facfe 100%);
+            -webkit-background-clip: text; background-clip: text;
+            -webkit-text-fill-color: transparent; text-decoration: none;
+        }
+        .nav-links { display: flex; gap: 1.6rem; align-items: center; }
+        .nav-links a {
+            color: #b8b8d0; text-decoration: none; font-size: 0.9rem;
+            font-weight: 600; letter-spacing: 0.5px; transition: color 0.3s;
+        }
+        .nav-links a:hover, .nav-links a.active { color: #00f2fe; text-shadow: 0 0 10px rgba(0,242,254,0.5); }
+        .nav-links a.btn-logout { color: #ff4b4b !important; border: 1px solid rgba(255,75,75,0.3); padding: 5px 14px; border-radius: 20px; }
+
+        /* ─── Layout ───────────────────────────────────────────────── */
+        .container {
+            max-width: 760px; margin: 2.5rem auto 5rem; padding: 0 1.5rem;
+            flex: 1; z-index: 10; width: 100%;
+        }
+
+        /* ─── Profile card (read-only info) ────────────────────────── */
+        .profile-card {
+            background: var(--glass-bg); backdrop-filter: blur(18px);
+            border: 1px solid var(--glass-border); border-radius: 20px;
+            padding: 1.8rem 2rem; margin-bottom: 1.8rem;
+            display: flex; align-items: center; gap: 1.4rem;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+        }
+        .profile-avatar {
+            width: 60px; height: 60px; border-radius: 50%;
+            background: linear-gradient(135deg, #4facfe, #00f2fe);
+            display: flex; align-items: center; justify-content: center;
+            font-size: 1.8rem; flex-shrink: 0;
+        }
+        .profile-meta h2 { font-size: 1.1rem; font-weight: 700; color: #fff; margin-bottom: 0.2rem; }
+        .profile-meta p  { font-size: 0.85rem; color: #8888a0; }
+        .profile-meta .course-badge {
+            display: inline-block; margin-top: 0.5rem;
+            background: rgba(79, 172, 254, 0.15); border: 1px solid rgba(79,172,254,0.4);
+            color: #4facfe; padding: 2px 12px; border-radius: 20px; font-size: 0.8rem; font-weight: 600;
+        }
+
+        /* ─── Config panel ─────────────────────────────────────────── */
+        .config-panel {
+            background: var(--glass-bg); backdrop-filter: blur(18px);
+            border: 1px solid var(--glass-border); border-radius: 20px;
+            padding: 2.5rem 2.5rem; box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+        }
+        .config-header { margin-bottom: 2.5rem; }
+        .config-header h1 { font-size: 1.7rem; font-weight: 700; color: #fff; margin-bottom: 0.3rem; }
+        .config-header p  { color: #8888a0; font-size: 0.9rem; }
+
+        .section-title {
+            font-size: 0.75rem; font-weight: 700; letter-spacing: 2px;
+            text-transform: uppercase; color: #4facfe; margin: 2rem 0 1rem;
+            display: flex; align-items: center; gap: 0.5rem;
+        }
+        .section-title::after {
+            content: ''; flex: 1; height: 1px;
+            background: linear-gradient(90deg, rgba(79,172,254,0.3), transparent);
+        }
+
+        .form-group { margin-bottom: 1.5rem; }
+        .form-group label {
+            display: block; margin-bottom: 0.6rem; font-size: 0.8rem;
+            color: #9090b0; text-transform: uppercase; letter-spacing: 1px; font-weight: 600;
+        }
+
+        /* ─── Glassmorphism inputs & selects ────────────────────────── */
+        select, input[type="text"] {
+            width: 100%; padding: 1rem 1.2rem;
+            background: var(--input-bg);
+            border: 1px solid rgba(255,255,255,0.12);
+            border-radius: 12px; color: #fff; font-size: 1rem;
+            font-family: 'Space Grotesk', sans-serif;
+            outline: none; cursor: pointer;
+            transition: border-color 0.3s, box-shadow 0.3s;
+            appearance: none;
+            backdrop-filter: blur(8px);
+        }
+        select:focus, select:hover,
+        input[type="text"]:focus, input[type="text"]:hover {
+            border-color: rgba(79, 172, 254, 0.6);
+            box-shadow: 0 0 18px rgba(79, 172, 254, 0.15);
+        }
+        select option { background: #0e0a20; color: #fff; }
+
+        /* read-only display pill for course */
+        .info-pill {
+            width: 100%; padding: 1rem 1.2rem;
+            background: rgba(79, 172, 254, 0.08);
+            border: 1px solid rgba(79, 172, 254, 0.25);
+            border-radius: 12px; color: #b8d4f0; font-size: 1rem;
+            font-family: 'Space Grotesk', sans-serif;
+            display: flex; align-items: center; gap: 0.6rem;
+        }
+        .info-pill.loading { opacity: 0.6; animation: pulse 1.5s infinite; }
+
+        @keyframes pulse { 0%,100%{opacity:0.6} 50%{opacity:1} }
+        @keyframes fadeSlideIn { from{opacity:0;transform:translateY(14px)} to{opacity:1;transform:translateY(0)} }
+
+        .btn-save {
+            width: 100%; background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            color: #000; border: none; padding: 1.1rem; font-size: 1rem;
+            font-weight: 700; border-radius: 12px; cursor: pointer;
+            transition: all 0.3s ease; box-shadow: 0 0 20px rgba(79,172,254,0.35);
+            margin-top: 1.5rem; letter-spacing: 1px;
+        }
+        .btn-save:hover { transform: translateY(-2px); box-shadow: 0 0 30px rgba(79,172,254,0.55); }
+
+        .toast {
+            position: fixed; bottom: 2rem; left: 50%; transform: translateX(-50%) translateY(80px);
+            background: rgba(0,250,154,0.15); border: 1px solid rgba(0,250,154,0.4);
+            color: #00fa9a; padding: 0.8rem 2rem; border-radius: 50px;
+            font-weight: 600; backdrop-filter: blur(12px); z-index: 9000;
+            transition: transform 0.4s cubic-bezier(.34,1.56,.64,1);
+        }
+        .toast.show { transform: translateX(-50%) translateY(0); }
+
+        /* ─── Footer ───────────────────────────────────────────────── */
+        .footer {
+            padding: 1.2rem 5%; display: flex; justify-content: space-between; align-items: center;
+            background: rgba(10,5,25,0.4); backdrop-filter: blur(10px);
+            border-top: 1px solid var(--glass-border); z-index: 100;
+        }
+        .footer p { font-size: 0.8rem; color: #60607a; }
+        .footer-links { display: flex; gap: 1.5rem; }
+        .footer-links a { color: #80809a; text-decoration: none; font-size: 0.8rem; transition: color 0.3s; }
+        .footer-links a:hover { color: #00f2fe; }
+    </style>
+</head>
+
+<body>
+    <div class="stars-bg"></div>
+
+    <!-- Auth Loading -->
+    <div id="authLoading" style="position:fixed;inset:0;background:#05010f;z-index:9999;display:flex;justify-content:center;align-items:center;flex-direction:column;color:#00f2fe;">
+        <div style="width:46px;height:46px;border:3px solid rgba(0,242,254,0.2);border-top-color:#00f2fe;border-radius:50%;animation:spin 1s linear infinite;margin-bottom:1rem;"></div>
+        <style>@keyframes spin{100%{transform:rotate(360deg)}}</style>
+        <p style="font-weight:600;letter-spacing:1px;">Autorizando coordenadas estelares...</p>
+    </div>
+
+    <nav class="navbar">
+        <a href="index.html" class="nav-brand">A-PRUEBA</a>
+        <div class="nav-links">
+            <a href="mapa.html">Mapa</a>
+            <a href="seleccion.html">🎯 Misión</a>
+            <a href="perfil.html">Perfil</a>
+            <a href="config.html" class="active">Configuración</a>
+            <a href="#" class="btn-logout">Salir</a>
+        </div>
+    </nav>
+
+    <div class="container" style="animation: fadeSlideIn 0.5s ease-out both;">
+
+        <!-- ── Profile Card (read-only) ── -->
+        <div class="profile-card">
+            <div class="profile-avatar" id="profile-avatar">👤</div>
+            <div class="profile-meta">
+                <h2 id="profile-name">Cargando sistemas...</h2>
+                <p  id="profile-email">—</p>
+                <span class="course-badge" id="profile-course">⏳ Cargando sistemas...</span>
+            </div>
+        </div>
+
+        <!-- ── Settings Panel ── -->
+        <div class="config-panel">
+            <div class="config-header">
+                <h1>⚙️ Frecuencias de Sintonización</h1>
+                <p>Ajusta los parámetros de tu viaje interestelar académico.</p>
+            </div>
+
+            <form id="config-form">
+
+                <div class="section-title">🌍 Coordenadas Académicas</div>
+
+                <div class="form-group">
+                    <label for="comunidad">Sistema de Coordenadas (Comunidad Autónoma)</label>
+                    <select id="comunidad">
+                        <option value="" disabled selected>Elige tu Comunidad Autónoma...</option>
+                        <option value="andalucia">Andalucía</option>
+                        <option value="aragon">Aragón</option>
+                        <option value="asturias">Asturias</option>
+                        <option value="baleares">Baleares</option>
+                        <option value="canarias">Canarias</option>
+                        <option value="cantabria">Cantabria</option>
+                        <option value="castilla-la-mancha">Castilla-La Mancha</option>
+                        <option value="castilla-y-leon">Castilla y León</option>
+                        <option value="cataluna">Cataluña</option>
+                        <option value="comunidad-valenciana">Comunidad Valenciana</option>
+                        <option value="extremadura">Extremadura</option>
+                        <option value="galicia">Galicia</option>
+                        <option value="madrid">Madrid</option>
+                        <option value="murcia">Murcia</option>
+                        <option value="navarra">Navarra</option>
+                        <option value="pais-vasco">País Vasco</option>
+                        <option value="rioja">La Rioja</option>
+                        <option value="ceuta">Ceuta</option>
+                        <option value="melilla">Melilla</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="curso">Nivel de la Nave (Curso Escolar)</label>
+                    <select id="curso">
+                        <option value="2eso">2º ESO</option>
+                        <option value="3eso">3º ESO</option>
+                        <option value="4eso">4º ESO</option>
+                        <option value="1bach">1º Bachillerato</option>
+                        <option value="2_bachillerato" selected>2º Bachillerato</option>
+                    </select>
+                </div>
+
+                <div class="section-title">🚀 Misión y Perfil</div>
+
+                <div class="form-group">
+                    <label for="asignatura">Asignatura Principal</label>
+                    <select id="asignatura">
+                        <option value="" disabled>Selecciona Asignatura...</option>
+                        <option value="fisica">⚛️ Física</option>
+                        <option value="mates">📐 Matemáticas</option>
+                        <option value="quimica">🧪 Química</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="perfil">Perfil de Misión</label>
+                    <select id="perfil">
+                        <option value="ambitious">🔥 Quiero mejorar mi nivel (Ambicioso)</option>
+                        <option value="support">🛡️ Quiero reforzar mi nivel (Apoyo)</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn-save" id="btn-save">ACTUALIZAR PARÁMETROS</button>
+            </form>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2026 A-PRUEBA</p>
+        <div class="footer-links">
+            <a href="#">Términos de Servicio</a>
+            <a href="#">Contacto para Padres</a>
+        </div>
+    </footer>
+
+    <div class="toast" id="toast">✅ Configuración guardada en los servidores centrales</div>
+
+    <script type="module">
+        import { auth, db, doc, getDoc, updateDoc, onAuthStateChanged, signOut } from './firebase-config.js';
+
+        // ── Helpers ──────────────────────────────────────────────────────────────
+        const CURSO_LABELS = {
+            '2eso': '2º ESO', '3eso': '3º ESO', '4eso': '4º ESO',
+            '1bach': '1º Bachillerato', '2bach': '2º Bachillerato',
+            '2_bachillerato': '2º Bachillerato',
+            '1_bachillerato': '1º Bachillerato'
+        };
+        const ASIG_LABELS  = { fisica: '⚛️ Física', mates: '📐 Matemáticas', quimica: '🧪 Química', matematicas: '📐 Matemáticas' };
+
+        function showToast(msg = '✅ Configuración guardada') {
+            const t = document.getElementById('toast');
+            if (msg) t.textContent = msg;
+            t.classList.add('show');
+            setTimeout(() => t.classList.remove('show'), 2800);
+        }
+
+        // ── Auth guard + Data load ────────────────────────────────────────────────
+        let currentUser = null;
+
+        onAuthStateChanged(auth, async (user) => {
+            const loader = document.getElementById('authLoading');
+            if (!user) {
+                window.location.href = 'login.html';
+                return;
+            }
+            currentUser = user;
+            if (loader) loader.style.display = 'none';
+
+            // ── Populate profile card ────────────────────────────────────────
+            const nameEl   = document.getElementById('profile-name');
+            const emailEl  = document.getElementById('profile-email');
+            const courseEl = document.getElementById('profile-course');
+            const avatarEl = document.getElementById('profile-avatar');
+
+            const displayName = user.displayName || user.email?.split('@')[0] || 'Supernova';
+            nameEl.textContent  = displayName;
+            emailEl.textContent = user.email || '—';
+
+            // Use first letter as avatar initial
+            avatarEl.textContent = (user.displayName || user.email || 'S')[0].toUpperCase();
+
+            // ── Load Firestore doc ────────────────────────────────────────────
+            try {
+                const snap = await getDoc(doc(db, 'usuarios', user.uid));
+                if (snap.exists()) {
+                    const data = snap.data();
+
+                    // Course badge – fallback chain
+                    const cursoRaw   = data.curso || localStorage.getItem('userCourse') || '';
+                    const cursoLabel = CURSO_LABELS[cursoRaw] || cursoRaw || 'Cargando sistemas...';
+                    courseEl.textContent = '🚀 ' + cursoLabel;
+                    courseEl.classList.remove('loading');
+
+                    // Sync selects
+                    const comunidad = data.comunidad || localStorage.getItem('userComunidad') || '';
+                    const asig      = data.asignatura || localStorage.getItem('userSubject') || '';
+                    const perfil    = data.perfil     || localStorage.getItem('userProfile') || 'ambitious';
+
+                    if (comunidad) document.getElementById('comunidad').value = comunidad;
+                    if (cursoRaw)  {
+                        // Normalise key
+                        const cursorKey = cursoRaw === '2_bachillerato' ? '2_bachillerato' : cursoRaw;
+                        const cursoEl2 = document.getElementById('curso');
+                        // Try exact match, then fall back to 2_bachillerato default
+                        if ([...cursoEl2.options].some(o => o.value === cursorKey)) {
+                            cursoEl2.value = cursorKey;
+                        }
+                    }
+                    if (asig)   document.getElementById('asignatura').value = asig;
+                    if (perfil) document.getElementById('perfil').value      = perfil;
+
+                    // Also persist to localStorage for immediate cross-page sync
+                    if (comunidad) localStorage.setItem('userComunidad', comunidad);
+                    if (cursoRaw)  localStorage.setItem('userCourse',    cursoRaw);
+                    if (asig)      localStorage.setItem('userSubject',    asig);
+                    if (perfil)    localStorage.setItem('userProfile',    perfil);
+
+                } else {
+                    // No Firestore doc yet – use localStorage
+                    courseEl.textContent = '⚠️ Perfil no encontrado';
+                    _syncFromLocalStorage();
+                }
+            } catch (err) {
+                console.error('Error cargando perfil:', err);
+                courseEl.textContent = '⏳ Cargando sistemas...';
+                _syncFromLocalStorage(); // graceful fallback
+            }
+        });
+
+        function _syncFromLocalStorage() {
+            const com   = localStorage.getItem('userComunidad');
+            const curso = localStorage.getItem('userCourse');
+            const asig  = localStorage.getItem('userSubject');
+            const prf   = localStorage.getItem('userProfile');
+            if (com)   document.getElementById('comunidad').value  = com;
+            if (curso) {
+                const el = document.getElementById('curso');
+                if ([...el.options].some(o => o.value === curso)) el.value = curso;
+            }
+            if (asig)  document.getElementById('asignatura').value = asig;
+            if (prf)   document.getElementById('perfil').value      = prf;
+        }
+
+        // ── Logout ────────────────────────────────────────────────────────────────
+        document.querySelector('.btn-logout')?.addEventListener('click', (e) => {
+            e.preventDefault();
+            signOut(auth).then(() => { window.location.href = 'login.html'; });
+        });
+
+        // ── Save form ─────────────────────────────────────────────────────────────
+        document.getElementById('config-form').addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            const newComunidad  = document.getElementById('comunidad').value;
+            const newCurso      = document.getElementById('curso').value;
+            const newAsignatura = document.getElementById('asignatura').value;
+            const newPerfil     = document.getElementById('perfil').value;
+
+            // Update localStorage immediately (instant cross-page sync)
+            localStorage.setItem('userComunidad', newComunidad);
+            localStorage.setItem('userCourse',    newCurso);
+            if (newAsignatura) localStorage.setItem('userSubject',  newAsignatura);
+            if (newPerfil)     localStorage.setItem('userProfile',  newPerfil);
+
+            // Update profile badge
+            const courseEl  = document.getElementById('profile-course');
+            courseEl.textContent = '🚀 ' + (CURSO_LABELS[newCurso] || newCurso);
+
+            const btn = document.getElementById('btn-save');
+            btn.textContent = 'GUARDANDO...';
+            btn.style.pointerEvents = 'none';
+
+            if (currentUser) {
+                try {
+                    await updateDoc(doc(db, 'usuarios', currentUser.uid), {
+                        comunidad:  newComunidad,
+                        curso:      newCurso,
+                        asignatura: newAsignatura || localStorage.getItem('userSubject'),
+                        perfil:     newPerfil     || localStorage.getItem('userProfile')
+                    });
+                    showToast('✅ Parámetros actualizados en los servidores centrales');
+                } catch (err) {
+                    console.error('Error al guardar config:', err);
+                    showToast('⚠️ Guardado localmente — Firestore no disponible');
+                }
+            }
+
+            btn.textContent = '¡ACTUALIZADO!';
+            btn.style.background = 'linear-gradient(135deg, #00fa9a 0%, #00c978 100%)';
+            setTimeout(() => {
+                btn.textContent = 'ACTUALIZAR PARÁMETROS';
+                btn.style.background = '';
+                btn.style.pointerEvents = 'auto';
+            }, 2200);
+        });
+    </script>
+</body>
+</html>
