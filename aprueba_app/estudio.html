@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A-PRUEBA | Lección en Curso</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
     <script>
         window.MathJax = {
             tex: {
@@ -46,14 +45,34 @@
 
         /* Cinemáticas IA */
         @keyframes rocketLaunch {
-            0% { transform: translateY(0) scale(1); opacity: 1; }
-            40% { transform: translateY(-50px) scale(1.1); opacity: 1; }
-            100% { transform: translateY(-200px) scale(0.5); opacity: 0; }
+            0% {
+                transform: translateY(0) scale(1);
+                opacity: 1;
+            }
+
+            40% {
+                transform: translateY(-50px) scale(1.1);
+                opacity: 1;
+            }
+
+            100% {
+                transform: translateY(-200px) scale(0.5);
+                opacity: 0;
+            }
         }
+
         @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(10px); }
-            to { opacity: 1; transform: translateY(0); }
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
+
         .rocket-anim {
             position: absolute;
             font-size: 3rem;
@@ -137,8 +156,8 @@
             letter-spacing: 0.5px;
             backdrop-filter: blur(12px);
             -webkit-backdrop-filter: blur(12px);
-            border: 1px solid var(--current-neon, rgba(0,242,254,0.35));
-            box-shadow: 0 0 12px color-mix(in srgb, var(--current-neon,#00f2fe) 20%, transparent);
+            border: 1px solid var(--current-neon, rgba(0, 242, 254, 0.35));
+            box-shadow: 0 0 12px color-mix(in srgb, var(--current-neon, #00f2fe) 20%, transparent);
             transition: all 0.3s;
             display: flex;
             align-items: center;
@@ -146,8 +165,8 @@
         }
 
         .back-btn:hover {
-            background: color-mix(in srgb, var(--current-neon,#00f2fe) 15%, transparent);
-            box-shadow: 0 0 22px color-mix(in srgb, var(--current-neon,#00f2fe) 40%, transparent);
+            background: color-mix(in srgb, var(--current-neon, #00f2fe) 15%, transparent);
+            box-shadow: 0 0 22px color-mix(in srgb, var(--current-neon, #00f2fe) 40%, transparent);
             transform: translateX(-2px);
         }
 
@@ -923,7 +942,10 @@
         .salvavidas-modal {
             display: none;
             position: fixed;
-            top: 0; left: 0; width: 100vw; height: 100vh;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
             background: rgba(5, 2, 10, 0.90);
             backdrop-filter: blur(15px);
             z-index: 3000;
@@ -989,76 +1011,127 @@
                     </a>
                 </header>
 
-                <!-- El reproductor de vídeo principal ahora reside en el Modal de Teoría -->
+                <!-- Pestañas de Navegación -->
+                <div class="tab-buttons"
+                    style="display: flex; gap: 1rem; margin-bottom: 2rem; border-bottom: 1px solid rgba(0,242,254,0.2); padding-bottom: 1rem;">
+                    <button id="btn-tab-leccion" class="tab-btn" onclick="mostrarPestana('leccion')"
+                        style="background: rgba(0, 242, 254, 0.2); border: 1px solid #00f2fe; color: #00f2fe; font-size: 1.1rem; cursor: pointer; padding: 0.5rem 1.5rem; border-radius: 8px; font-weight: bold; transition: all 0.3s;">Lección
+                        Principal</button>
+                    <button id="btn-tab-apuntes" class="tab-btn" onclick="mostrarPestana('apuntes')"
+                        style="background: transparent; border: 1px solid transparent; color: #a0a0b8; font-size: 1.1rem; cursor: pointer; padding: 0.5rem 1.5rem; border-radius: 8px; font-weight: bold; transition: all 0.3s;">Apuntes
+                        📚</button>
+                </div>
+
+                <div id="content-apuntes" class="tab-content"
+                    style="display: none; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 3rem 2rem; text-align: center; margin-bottom: 2.5rem;">
+                    <h3 style="color: #00f2fe; margin-bottom: 1.5rem; font-size: 1.5rem;">Material de Apoyo</h3>
+                    <p style="color: #a0a0b8; margin-bottom: 2rem;">Descarga los apuntes oficiales de este tema en
+                        formato PDF.</p>
+                    <a id="btn-descargar-apuntes" class="btn-pdf" href="#" target="_blank"
+                        style="display: none; background: rgba(0, 242, 254, 0.1); border: 1px solid #00f2fe; color: #00f2fe; text-decoration: none; padding: 1rem 2rem; border-radius: 50px; font-weight: 600; font-size: 1.1rem; transition: all 0.3s; display: inline-flex; align-items: center; gap: 0.5rem;">
+                        📥 Descargar PDF del Tema
+                    </a>
+                    <p id="msg-no-apuntes" style="display: none; color: #ef473a; margin-top: 1rem; font-weight: bold;">
+                        No hay apuntes disponibles para este tema o asignatura.</p>
+                </div>
+
+                <script>
+                    function mostrarPestana(id) {
+                        const tabLeccion = document.getElementById('default-estudio-view');
+                        const tabApuntes = document.getElementById('content-apuntes');
+                        const btnLeccion = document.getElementById('btn-tab-leccion');
+                        const btnApuntes = document.getElementById('btn-tab-apuntes');
+
+                        if (id === 'apuntes') {
+                            tabLeccion.style.display = 'none';
+                            tabApuntes.style.display = 'block';
+                            btnApuntes.style.background = 'rgba(0, 242, 254, 0.2)';
+                            btnApuntes.style.borderColor = '#00f2fe';
+                            btnApuntes.style.color = '#00f2fe';
+                            btnLeccion.style.background = 'transparent';
+                            btnLeccion.style.borderColor = 'transparent';
+                            btnLeccion.style.color = '#a0a0b8';
+                        } else {
+                            tabLeccion.style.display = 'block';
+                            tabApuntes.style.display = 'none';
+                            btnLeccion.style.background = 'rgba(0, 242, 254, 0.2)';
+                            btnLeccion.style.borderColor = '#00f2fe';
+                            btnLeccion.style.color = '#00f2fe';
+                            btnApuntes.style.background = 'transparent';
+                            btnApuntes.style.borderColor = 'transparent';
+                            btnApuntes.style.color = '#a0a0b8';
+                        }
+                    }
+                </script>
 
                 <div id="default-estudio-view">
                     <section class="progression-section" style="margin-bottom: 2.5rem;">
-                    <h3 class="progression-title">Fases del Aprendizaje</h3>
-                    <div class="hex-container" style="justify-content: center; gap: 3rem;">
-                        <!-- Fase 1: Teoría -->
-                        <div class="hex-wrapper phase-wrapper theory" id="phase-theory">
-                            <div class="hex" onclick="completePhase('theory')">
-                                <div class="hex-inner" id="inner-theory">📖</div>
+                        <h3 class="progression-title">Fases del Aprendizaje</h3>
+                        <div class="hex-container" style="justify-content: center; gap: 3rem;">
+                            <!-- Fase 1: Teoría -->
+                            <div class="hex-wrapper phase-wrapper theory" id="phase-theory">
+                                <div class="hex" onclick="completePhase('theory')">
+                                    <div class="hex-inner" id="inner-theory">📖</div>
+                                </div>
+                                <span class="hex-label">Teoría</span>
                             </div>
-                            <span class="hex-label">Teoría</span>
-                        </div>
 
-                        <!-- Fase 2: Misiones -->
-                        <div class="hex-wrapper phase-wrapper practice" id="phase-exercises">
-                            <div class="hex"
-                                onclick="completePhase('exercises'); window.iniciarMisiones()">
-                                <div class="hex-inner" id="inner-exercises">✏️</div>
+                            <!-- Fase 2: Misiones -->
+                            <div class="hex-wrapper phase-wrapper practice" id="phase-exercises">
+                                <div class="hex" onclick="completePhase('exercises'); window.iniciarMisiones()">
+                                    <div class="hex-inner" id="inner-exercises">✏️</div>
+                                </div>
+                                <span class="hex-label">Misiones</span>
                             </div>
-                            <span class="hex-label">Misiones</span>
-                        </div>
 
-                        <!-- Fase 3: Reto Socrático -->
-                        <div class="hex-wrapper phase-wrapper challenge" id="phase-challenge">
-                            <div class="hex"
-                                onclick="completePhase('challenge'); document.getElementById('supernova-section').scrollIntoView({behavior: 'smooth'})">
-                                <div class="hex-inner" id="inner-challenge">🧠</div>
+                            <!-- Fase 3: Reto Socrático -->
+                            <div class="hex-wrapper phase-wrapper challenge" id="phase-challenge">
+                                <div class="hex"
+                                    onclick="completePhase('challenge'); document.getElementById('supernova-section').scrollIntoView({behavior: 'smooth'})">
+                                    <div class="hex-inner" id="inner-challenge">🧠</div>
+                                </div>
+                                <span class="hex-label">Reto Socrático</span>
                             </div>
-                            <span class="hex-label">Reto Socrático</span>
-                        </div>
-                    </div>
-                </section>
-
-                <div class="lesson-blocks">
-                    <div class="theory-box">
-                        <div class="theory-info">
-                            <h3>Teoría Clave</h3>
-                            <p>Apuntes estructurados y vídeo explicativo, generados dinámicamente según el temario
-                                oficial
-                                (BOE).</p>
-                        </div>
-                        <button class="btn-pdf" onclick="openTheoryModal()">▶️ Ver Vídeo y Teoría</button>
-                    </div>
-
-                    <!-- El grid de ejercicios se oculta ya que ahora se usa la interfaz modal de Misiones -->
-                    <section class="progression-section" id="exercises-section" style="display: none;">
-                        <h3 class="progression-title">Dominio Práctico (9 Ejercicios)</h3>
-                        <div class="exercises-grid">
                         </div>
                     </section>
-                </div>
 
-                <section class="progression-section" id="supernova-section" style="margin-top: 2rem;">
-                    <h3 class="progression-title">Reto Final Cúbico</h3>
-                    <div class="hex-container" style="justify-content: center;">
-                        <div class="hex-wrapper supernova-wrapper supernova">
-                            <span class="supernova-tooltip">Necesitas acertar todos los demás ejercicios para
-                                desbloquear este</span>
-                            <div class="hex">
-                                <div class="hex-inner">∞</div>
+                    <div class="lesson-blocks">
+                        <div class="theory-box">
+                            <div class="theory-info">
+                                <h3>Teoría Clave</h3>
+                                <p>Apuntes estructurados y vídeo explicativo, generados dinámicamente según el temario
+                                    oficial
+                                    (BOE).</p>
                             </div>
-                            <span class="hex-label">Reto Supernova</span>
+                            <button class="btn-pdf" onclick="openTheoryModal()">▶️ Ver Vídeo y Teoría</button>
                         </div>
+
+                        <!-- El grid de ejercicios se oculta ya que ahora se usa la interfaz modal de Misiones -->
+                        <section class="progression-section" id="exercises-section" style="display: none;">
+                            <h3 class="progression-title">Dominio Práctico (9 Ejercicios)</h3>
+                            <div class="exercises-grid">
+                            </div>
+                        </section>
                     </div>
-                </section>
+
+                    <section class="progression-section" id="supernova-section" style="margin-top: 2rem;">
+                        <h3 class="progression-title">Reto Final Cúbico</h3>
+                        <div class="hex-container" style="justify-content: center;">
+                            <div class="hex-wrapper supernova-wrapper supernova">
+                                <span class="supernova-tooltip">Necesitas acertar todos los demás ejercicios para
+                                    desbloquear este</span>
+                                <div class="hex">
+                                    <div class="hex-inner">∞</div>
+                                </div>
+                                <span class="hex-label">Reto Supernova</span>
+                            </div>
+                        </div>
+                    </section>
                 </div> <!-- Cierra default-estudio-view -->
 
                 <!-- Contenedor nativo para Misiones UI -->
-                <div id="misiones-inline-container" style="display: none; flex-direction: column; width: 100%; animation: fadeIn 0.3s ease;">
+                <div id="misiones-inline-container"
+                    style="display: none; flex-direction: column; width: 100%; animation: fadeIn 0.3s ease;">
                 </div>
 
                 <!-- Premium Unlock Trigger (Hidden Initially)
@@ -1100,16 +1173,25 @@
         <!-- Modal Salvavidas -->
         <div class="salvavidas-modal" id="salvavidas-modal">
             <div class="salvavidas-content">
-                <button onclick="document.getElementById('salvavidas-modal').style.display='none'" style="position: absolute; top: 15px; right: 20px; background: transparent; border: none; color: #a0a0b8; font-size: 2rem; cursor: pointer; transition: color 0.3s;">&times;</button>
-                <h2 style="color: #00fa9a; font-size: 1.2rem; text-transform: uppercase; letter-spacing: 3px; font-weight: 300; margin-bottom: 2rem; border-bottom: 1px solid rgba(0, 250, 154, 0.2); padding-bottom: 1rem;">Salvavidas de Emergencia 🛟</h2>
-                
-                <div class="video-container" style="height: 300px; margin-bottom: 1.5rem; border-color: rgba(0, 250, 154, 0.4); box-shadow: 0 0 20px rgba(0, 250, 154, 0.15);">
+                <button onclick="document.getElementById('salvavidas-modal').style.display='none'"
+                    style="position: absolute; top: 15px; right: 20px; background: transparent; border: none; color: #a0a0b8; font-size: 2rem; cursor: pointer; transition: color 0.3s;">&times;</button>
+                <h2
+                    style="color: #00fa9a; font-size: 1.2rem; text-transform: uppercase; letter-spacing: 3px; font-weight: 300; margin-bottom: 2rem; border-bottom: 1px solid rgba(0, 250, 154, 0.2); padding-bottom: 1rem;">
+                    Salvavidas de Emergencia 🛟</h2>
+
+                <div class="video-container"
+                    style="height: 300px; margin-bottom: 1.5rem; border-color: rgba(0, 250, 154, 0.4); box-shadow: 0 0 20px rgba(0, 250, 154, 0.15);">
                     <!-- Placeholder iframe -->
-                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/dQw4w9WgXcQ?controls=0" title="Salvavidas Video" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope;" allowfullscreen></iframe>
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/dQw4w9WgXcQ?controls=0"
+                        title="Salvavidas Video" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope;" allowfullscreen></iframe>
                 </div>
-                
-                <p style="color: #b8b8d0; font-size: 0.95rem; margin-bottom: 1rem;">Revisa esta explicación rápida. Si aciertas ahora, ganarás <strong>+0.5 XP</strong> en lugar de +1.0 XP.</p>
-                <button class="salvavidas-btn" onclick="document.getElementById('salvavidas-modal').style.display='none'">Entendido, volver al ejercicio</button>
+
+                <p style="color: #b8b8d0; font-size: 0.95rem; margin-bottom: 1rem;">Revisa esta explicación rápida. Si
+                    aciertas ahora, ganarás <strong>+0.5 XP</strong> en lugar de +1.0 XP.</p>
+                <button class="salvavidas-btn"
+                    onclick="document.getElementById('salvavidas-modal').style.display='none'">Entendido, volver al
+                    ejercicio</button>
             </div>
         </div>
 
@@ -1167,24 +1249,24 @@
                     '2bach': '2º Bach',
                     '2_bachillerato': '2º Bach'
                 };
-                
+
                 const rawSubject = localStorage.getItem('seleccion_asignatura') || 'fisica';
                 const asigName = asigTextos[rawSubject] || 'Física';
-                
+
                 let cursoRaw = localStorage.getItem('userCourse') || localStorage.getItem('curso') || '2_bachillerato';
                 const cursoName = cursoTextos[cursoRaw] || '2º Bach';
-                
+
                 const asigFullName = `${asigName} ${cursoName}`;
-                
+
                 const rawTemas = localStorage.getItem('seleccion_temas');
                 if (!rawTemas) {
                     grid.innerHTML = '<div style="color: #ef473a; grid-column: 1 / -1; text-align: center;">No has seleccionado temas para estudiar.</div>';
                     return;
                 }
-                
+
                 const temas = JSON.parse(rawTemas);
                 const temasTitulos = temas.map(t => t.titulo);
-                
+
                 if (temasTitulos.length === 0) return;
 
                 // FireStore "in" queries only support up to 10 items.
@@ -1220,7 +1302,7 @@
                 // Guardamos los ejercicios en una variable global para Misiones UI
                 window.ejerciciosMision = allExercises;
                 grid.innerHTML = '<div style="color: #a0a0b8; grid-column: 1 / -1; text-align: center;">Misiones listas para inicialización.</div>';
-                
+
             } catch (error) {
                 console.error("Error al cargar ejercicios de Firestore:", error);
                 const grid = document.querySelector('.exercises-grid');
@@ -1236,7 +1318,7 @@
         });
 
         // ── GUARDAR ACIERTO EN FIRESTORE ─────────────────────────────────────────
-        window.guardarProgresoAcierto = async function(puntos, usadoSalvavidas, tema, ejercicioId) {
+        window.guardarProgresoAcierto = async function (puntos, usadoSalvavidas, tema, ejercicioId) {
             if (!currentUser) return;
             try {
                 const userRef = doc(db, 'usuarios', currentUser.uid);
@@ -1270,7 +1352,7 @@
                     const completados = data.temas_completados || [];
 
                     const prevScore = ((data.aciertos || {})[temaKey]?.score) || 0;
-                    const newScore  = Math.min(100, prevScore + (puntos * 30));
+                    const newScore = Math.min(100, prevScore + (puntos * 30));
 
                     // Nueva lógica de progreso_temas
                     const pt = (data.progreso_temas || {})[temaKey] || {
@@ -1295,7 +1377,7 @@
                         [`progreso_temas.${temaKey}.porcentaje_acierto`]: porcentaje
                     };
                     await updateDoc(userRef, updates);
-                    
+
                     window.evaluarSupernova(temaKey, newIntentados, newAcertados, pt.supernova_desbloqueado);
                 }
             } catch (err) {
@@ -1304,7 +1386,7 @@
         };
 
         // ── GUARDAR FALLO EN FIRESTORE ──────────────────────────────────────────
-        window.guardarProgresoFallo = async function(tema, ejercicioId) {
+        window.guardarProgresoFallo = async function (tema, ejercicioId) {
             if (!currentUser) return;
             try {
                 const userRef = doc(db, 'usuarios', currentUser.uid);
@@ -1313,7 +1395,7 @@
                     const data = userSnap.data();
                     const temaKey = tema || 'general';
                     const temaStats = (data.temas || {})[temaKey] || { aciertos: 0, fallos: 0 };
-                    
+
                     let resueltos = data.ejercicios_resueltos || [];
                     if (ejercicioId) {
                         const yaResuelto = resueltos.find(r => r.id === ejercicioId);
@@ -1321,7 +1403,7 @@
                             resueltos.push({ id: ejercicioId, resultado: 'fallo', timestamp: Date.now() });
                         }
                     }
-                    
+
                     // Nueva lógica de progreso_temas
                     const pt = (data.progreso_temas || {})[temaKey] || {
                         ejercicios_intentados: 0,
@@ -1347,7 +1429,7 @@
         };
 
         // --- Guardar DIFICULTAD PERCIBIDA (1-5) ---
-        window.guardarDificultad = async function(tema, nivel) {
+        window.guardarDificultad = async function (tema, nivel) {
             if (!currentUser) return;
             try {
                 const userRef = doc(db, 'usuarios', currentUser.uid);
@@ -1369,7 +1451,7 @@
         };
 
         // --- Evaluar Supernova ---
-        window.evaluarSupernova = function(temaKey, intentados, aciertos, yaDesbloqueado) {
+        window.evaluarSupernova = function (temaKey, intentados, aciertos, yaDesbloqueado) {
             if (yaDesbloqueado) return; // Ya lo tiene desbloqueado
             // Solo evaluar cuando termina la fase práctica (9 ejercicios)
             // Si el test es más dinámico, >= 9 asegura que terminó la ronda base
@@ -1384,7 +1466,7 @@
             }
         };
 
-        window.guardarSupernova = async function(temaKey) {
+        window.guardarSupernova = async function (temaKey) {
             if (!currentUser) return;
             try {
                 // Obtenemos los temas completados actuales para añadir este
@@ -1405,7 +1487,7 @@
             }
         };
 
-        window.desbloquearSupernovaUI = function() {
+        window.desbloquearSupernovaUI = function () {
             const wrapper = document.querySelector('.supernova-wrapper');
             if (wrapper) {
                 wrapper.classList.remove('supernova');
@@ -1415,17 +1497,17 @@
             }
         };
 
-        window.mostrarModalSupernova = function(temaKey) {
+        window.mostrarModalSupernova = function (temaKey) {
             const overlay = document.createElement("div");
             overlay.className = "popup-overlay";
             const content = document.createElement("div");
             content.className = "popup-content";
-            
+
             const title = document.createElement("h3");
             title.innerText = "No has alcanzado el 80% óptimo.";
             title.style.color = "#ef473a";
             title.style.marginBottom = "1rem";
-            
+
             const p = document.createElement("p");
             p.innerText = "¿Quieres pasar al Reto Supernova de todas formas, o prefieres hacer un pequeño repaso de 3 ejercicios?";
             p.style.marginBottom = "2rem";
@@ -1470,8 +1552,8 @@
         // TÍTULO DINÁMICO & COLOR NEÓN DE ASIGNATURA
         // =============================================
         document.addEventListener('DOMContentLoaded', () => {
-            const urlParams  = new URLSearchParams(window.location.search);
-            const temaId     = urlParams.get('tema');
+            const urlParams = new URLSearchParams(window.location.search);
+            const temaId = urlParams.get('tema');
 
             // ── LIMPIEZA DE CACHÉ DE TEMA ──────────────────────────────────────────
             // Elimina cualquier dato de sesión anterior para evitar que el título
@@ -1484,14 +1566,14 @@
             // Si el alumno llega desde un nodo del mapa, la URL siempre lleva ?asig=
             // Si no hay parámetro en URL (acceso directo), lee localStorage como fallback.
             const asigFromUrl = urlParams.get('asig');
-            const asignatura  = asigFromUrl || localStorage.getItem('userSubject') || localStorage.getItem('asignatura') || 'mates';
+            const asignatura = asigFromUrl || localStorage.getItem('userSubject') || localStorage.getItem('asignatura') || 'mates';
 
             // Sincronizar: actualiza localStorage con la asignatura real de esta sesión
             // Esto evita que una sesión anterior "contamine" la siguiente.
             localStorage.setItem('userSubject', asignatura);
-            localStorage.setItem('asignatura',  asignatura);
+            localStorage.setItem('asignatura', asignatura);
 
-            const curso     = localStorage.getItem('userCourse')    || localStorage.getItem('curso')     || '2_bachillerato';
+            const curso = localStorage.getItem('userCourse') || localStorage.getItem('curso') || '2_bachillerato';
             const comunidad = localStorage.getItem('userComunidad') || localStorage.getItem('comunidad') || 'madrid';
 
             // -- COLOR NEON DE ASIGNATURA --
@@ -1499,9 +1581,9 @@
             // Tambien calcula su equivalente RGB para sombras y fondos (hexToRgb).
             // Se aplica antes de renderizar para evitar flasheos de color incorrecto.
             const neonMap = {
-                'fisica':   '#ff4500',
-                'mates':    '#00f2fe',
-                'quimica':  '#00ff88'
+                'fisica': '#ff4500',
+                'mates': '#00f2fe',
+                'quimica': '#00ff88'
             };
             const neonColor = neonMap[asignatura] || '#00f2fe';
             document.documentElement.style.setProperty('--current-neon', neonColor);
@@ -1518,14 +1600,14 @@
             // ── ICONOS Y ETIQUETAS POR ASIGNATURA (obligatorios según diseño) ──────
             // Matemáticas 📐 · Física ⚛️ · Química 🧪
             const asigData = {
-                'fisica':  { label: 'Física',       icon: '⚛️' },
-                'mates':   { label: 'Matemáticas',  icon: '📐' },
-                'quimica': { label: 'Química',      icon: '🧪' }
+                'fisica': { label: 'Física', icon: '⚛️' },
+                'mates': { label: 'Matemáticas', icon: '📐' },
+                'quimica': { label: 'Química', icon: '🧪' }
             };
             const { label: asigLabel, icon: asigIcon } = asigData[asignatura] || { label: 'Asignatura', icon: '📚' };
 
             const h1 = document.getElementById('estudio-titulo');
-            const p  = document.getElementById('estudio-subtitulo');
+            const p = document.getElementById('estudio-subtitulo');
 
             if (h1) h1.style.color = neonColor;
             if (h1) h1.style.textShadow = `0 0 18px ${neonColor}55`;
@@ -1546,11 +1628,18 @@
             // una vez que se ha resuelto desde temarios.js o Firestore.
             function setTitle(nombreTema, desc) {
                 if (h1) h1.innerText = `${asigIcon} ${asigLabel}  ›  ${nombreTema}`;
-                if (p)  p.innerText  = desc ? `${desc} • Lección Interactiva` : 'Lección Interactiva';
+                if (p) p.innerText = desc ? `${desc} • Lección Interactiva` : 'Lección Interactiva';
                 // Guardar en caché limpia para esta sesión
-                localStorage.setItem('tema_actual',  temaId   || '');
-                localStorage.setItem('tema_titulo',  nombreTema);
-                document.title = `A-PRUEBA | ${asigIcon} ${asigLabel} › ${nombreTema}`;
+                localStorage.setItem('tema_actual', temaId || '');
+                localStorage.setItem('tema_titulo', nombreTema);
+                document.title = `A-PRUEBA | ${asigIcon} ${asigLabel} • ${nombreTema}`;
+
+                // APLICAR LLAMADA AL BOTÓN DE APUNTES
+                if (typeof actualizarBotonApuntes === 'function') {
+                    actualizarBotonApuntes(nombreTema, asignatura);
+                } else if (window.actualizarBotonApuntes) {
+                    window.actualizarBotonApuntes(nombreTema, asignatura);
+                }
             }
 
             if (!temaId) {
@@ -1571,11 +1660,11 @@
                 // Extraer índice del id tipo f_fire_5
                 const match = temaId.match(/^[a-z]_fire_(\d+)$/);
                 const asigPrefix = asignatura === 'fisica' ? 'fisica' :
-                                   asignatura === 'mates'  ? 'matematicas' : 'quimica';
+                    asignatura === 'mates' ? 'matematicas' : 'quimica';
                 const comunidadNorm = comunidad.toLowerCase()
-                    .replace(/á/g,'a').replace(/é/g,'e').replace(/í/g,'i')
-                    .replace(/ó/g,'o').replace(/ú/g,'u').replace(/ñ/g,'n')
-                    .replace(/\s+/g,'-');
+                    .replace(/á/g, 'a').replace(/é/g, 'e').replace(/í/g, 'i')
+                    .replace(/ó/g, 'o').replace(/ú/g, 'u').replace(/ñ/g, 'n')
+                    .replace(/\s+/g, '-');
                 const docId = `${comunidadNorm}_${asigPrefix}`;
 
                 // Fetch REST (no auth needed, reglas de lectura abiertas)
@@ -1584,7 +1673,7 @@
                     .then(data => {
                         if (data.fields && data.fields.lista_temas) {
                             const lista = data.fields.lista_temas.arrayValue.values.map(v => v.stringValue);
-                            const idx   = match ? parseInt(match[1]) : -1;
+                            const idx = match ? parseInt(match[1]) : -1;
                             const nombreTema = (idx >= 0 && lista[idx]) ? lista[idx] : (temaId || 'Tema');
                             setTitle(nombreTema, '');
                         } else {

@@ -75,9 +75,9 @@ async function callSocraticTutor(userText) {
 
         // Obtener contexto del ejercicio activo
         const ejercicioActual = window.misionesActivas && window.misionesActivas[window.misionActualIndex]
-                                ? window.misionesActivas[window.misionActualIndex]
-                                : null;
-                                
+            ? window.misionesActivas[window.misionActualIndex]
+            : null;
+
         // Obtener texto del alumno si ha escrito algo en el textarea
         const textarea = document.getElementById("studentAnswerTextarea");
         const respuestaAlumno = textarea ? textarea.value.trim() : "";
@@ -95,13 +95,13 @@ async function callSocraticTutor(userText) {
         };
 
         const result = await window.socraticTutorCall(payload);
-        
+
         removeTypingIndicator();
 
         if (result && result.data && result.data.reply) {
             const aiText = result.data.reply;
             addMessageToChat("ai", aiText);
-            
+
             // Renderizar LaTeX si se devuelve
             if (window.MathJax) {
                 window.MathJax.typesetPromise([document.getElementById("chatMessages")]).catch(err => console.error(err));
@@ -127,10 +127,10 @@ async function callSocraticTutor(userText) {
 // Función global exportada para ser llamada desde preguntas.js (el popup test o fallos)
 window.triggerSocraticTutor = function (pregunta, opcionIncorrecta) {
     const simulatedMsg = `Me he equivocado. Pregunta: "${pregunta}". Mi respuesta fue: "${opcionIncorrecta}". Necesito entender mi error sin que me des la solución.`;
-    
+
     // Inyectamos visualmente
     addMessageToChat("user", `Me he equivocado en: "${pregunta}". Elegí: "${opcionIncorrecta}". ¿Por qué?`);
-    
+
     showTypingIndicator();
     callSocraticTutor(simulatedMsg);
 };
@@ -138,3 +138,87 @@ window.triggerSocraticTutor = function (pregunta, opcionIncorrecta) {
 window.downloadMissionPDF = function () {
     alert("Iniciando descarga: 'Misión_Física_Campo_Magnético.pdf'...");
 };
+/**
+ * Actualiza la URL del botón de apuntes según la asignatura y el tema
+ */
+function actualizarBotonApuntes(tituloDelTema, asignaturaActual) {
+    console.log("--- DEPILANDO BOTÓN APUNTES ---");
+    console.log("Título recibido:", tituloDelTema);
+
+    // Convertir asignatura a minúsculas por si acaso viene como "Quimica" o "FÍSICA"
+    const asignaturaLimpia = (asignaturaActual || "").toLowerCase().trim();
+    console.log("Asignatura recibida:", asignaturaLimpia);
+
+    const btn = document.getElementById("btn-descargar-apuntes");
+    const tabApuntes = document.getElementById("content-apuntes");
+    const msgNoApuntes = document.getElementById("msg-no-apuntes");
+
+    if (!btn) {
+        console.log("Error: No se encontró el botón en el DOM");
+        return;
+    }
+
+    // Nueva lógica robusta de extracción (Capa de persistencia)
+    const urlParams = new URLSearchParams(window.location.search);
+    const idUrl = urlParams.get('tema');
+
+    // Extraer desde seleccion_temas si existe (útil en modo selección sin params en URL)
+    let idSeleccion = null;
+    try {
+        const rawTemas = localStorage.getItem('seleccion_temas');
+        if (rawTemas) {
+            const temas = JSON.parse(rawTemas);
+            if (Array.isArray(temas) && temas.length > 0) {
+                idSeleccion = temas[0].id || temas[0].titulo;
+            }
+        }
+    } catch (e) { }
+
+    const idLocal = localStorage.getItem('tema_actual');
+
+    // Prioridad de extracción profunda: 1. URL, 2. Array de selección, 3. Variable actual, 4. Título visual
+    const identificadorReal = idUrl || idSeleccion || idLocal || tituloDelTema || "";
+    console.log("Identificador real evaluado:", identificadorReal);
+
+    // Extraer el primer bloque de números del identificador real
+    const match = identificadorReal.match(/\d+/);
+    const numeroTema = match ? match[0] : null;
+    console.log("Número extraído:", numeroTema);
+
+    if (!numeroTema) {
+        console.log("Fallo: No se encontró ningún número en el título.");
+        btn.style.display = "none";
+        if (msgNoApuntes) msgNoApuntes.style.display = "block";
+        return;
+    }
+
+    const bucket = "aprueba-e7242.firebasestorage.app";
+    let folder = "";
+    let fileName = "";
+    let hayApuntes = false;
+
+    // Lógica estricta para Química y Física de 2º Bach
+    if (asignaturaLimpia === "quimica") {
+        folder = "apuntes_quimica_2bach";
+        fileName = `2_bach_quimica_T${numeroTema}.pdf`;
+        hayApuntes = true;
+    } else if (asignaturaLimpia === "fisica") {
+        folder = "apuntes_fisica_2bach";
+        fileName = `2_bach_fisica_T${numeroTema}.pdf`;
+        hayApuntes = true;
+    }
+
+    if (hayApuntes) {
+        const path = encodeURIComponent(`${folder}/${fileName}`);
+        const finalUrl = `https://firebasestorage.googleapis.com/v0/b/${bucket}/o/${path}?alt=media`;
+        console.log("URL generada:", finalUrl);
+
+        btn.href = finalUrl;
+        btn.style.display = "inline-flex";
+        if (msgNoApuntes) msgNoApuntes.style.display = "none";
+    } else {
+        console.log("Aviso: La asignatura no es ni 'fisica' ni 'quimica', o no tiene apuntes habilitados.");
+        btn.style.display = "none";
+        if (msgNoApuntes) msgNoApuntes.style.display = "block";
+    }
+}
