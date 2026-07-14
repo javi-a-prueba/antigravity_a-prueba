@@ -1553,7 +1553,24 @@
         // =============================================
         document.addEventListener('DOMContentLoaded', () => {
             const urlParams = new URLSearchParams(window.location.search);
-            const temaId = urlParams.get('tema');
+            let temaId = urlParams.get('tema');
+            let tituloUrl = urlParams.get('titulo');
+
+            // Fallback de temaId si viene desde seleccion.html sin params
+            if (!temaId) {
+                try {
+                    const seleccion = JSON.parse(localStorage.getItem('seleccion_temas') || "[]");
+                    if (seleccion.length > 0) {
+                        const first = seleccion[0];
+                        if (typeof first === 'object' && first !== null) {
+                            temaId = first.id;
+                            if (!tituloUrl) tituloUrl = first.titulo;
+                        } else if (typeof first === 'string') {
+                            temaId = first;
+                        }
+                    }
+                } catch(e) {}
+            }
 
             // ── LIMPIEZA DE CACHÉ DE TEMA ──────────────────────────────────────────
             // Elimina cualquier dato de sesión anterior para evitar que el título
@@ -1604,7 +1621,21 @@
                 'mates': { label: 'Matemáticas', icon: '📐' },
                 'quimica': { label: 'Química', icon: '🧪' }
             };
-            const { label: asigLabel, icon: asigIcon } = asigData[asignatura] || { label: 'Asignatura', icon: '📚' };
+            const { label: asigLabelRaw, icon: asigIcon } = asigData[asignatura] || { label: 'Asignatura', icon: '📚' };
+
+            // OBTENER NOMBRE DEL CURSO PARA EL BREADCRUMB
+            const cursoTextos = {
+                '1_bachillerato': '1º Bachillerato',
+                '1bach': '1º Bachillerato',
+                '2_bachillerato': '2º Bachillerato',
+                '2bach': '2º Bachillerato',
+                '4eso': '4º ESO',
+                '3eso': '3º ESO',
+                '2eso': '2º ESO'
+            };
+            const userCourseRaw = localStorage.getItem('userCourse') || localStorage.getItem('curso') || '2_bachillerato';
+            const cursoName = cursoTextos[userCourseRaw] || '2º Bachillerato';
+            const asigLabel = `${cursoName} - ${asigLabelRaw}`;
 
             const h1 = document.getElementById('estudio-titulo');
             const p = document.getElementById('estudio-subtitulo');
@@ -1621,6 +1652,10 @@
                 btnVolver.innerHTML = `${asigIcon} Volver al Mapa`;
                 btnVolver.style.borderColor = neonColor;
                 btnVolver.style.color = neonColor;
+                btnVolver.onclick = (e) => {
+                    e.preventDefault();
+                    window.location.href = 'mapa.html';
+                };
             }
 
             // ── FORMATO DE TÍTULO: [Icono] [Asignatura]  ›  [Nombre del Tema] ─────
@@ -1647,9 +1682,16 @@
                 return;
             }
 
-            // Intenta con obtenerTemario (local BOE)
             let resolved = false;
-            if (typeof obtenerTemario === 'function') {
+
+            // Prioridad absoluta: Si el título viene en la URL, se usa directamente.
+            if (tituloUrl) {
+                setTitle(tituloUrl, '');
+                resolved = true;
+            }
+
+            // Intenta con obtenerTemario (local BOE)
+            if (!resolved && typeof obtenerTemario === 'function') {
                 const temas = obtenerTemario(curso, asignatura, comunidad);
                 const found = temas.find(t => t.id === temaId);
                 if (found) { setTitle(found.titulo, found.desc); resolved = true; }
@@ -1657,8 +1699,8 @@
 
             // Si el tema viene de Firestore (id = f_fire_X / m_fire_X), consult Firestore
             if (!resolved) {
-                // Extraer índice del id tipo f_fire_5
-                const match = temaId.match(/^[a-z]_fire_(\d+)$/);
+                // Extraer índice del id tipo f_fire_5 o fisica_fire_0
+                const match = (temaId || "").match(/^[a-zA-Z]+_fire_(\d+)$/);
                 const asigPrefix = asignatura === 'fisica' ? 'fisica' :
                     asignatura === 'mates' ? 'matematicas' : 'quimica';
                 const comunidadNorm = comunidad.toLowerCase()

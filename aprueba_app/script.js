@@ -176,14 +176,24 @@ function actualizarBotonApuntes(tituloDelTema, asignaturaActual) {
 
     const idLocal = localStorage.getItem('tema_actual');
 
-    // Prioridad de extracción profunda: 1. URL, 2. Array de selección, 3. Variable actual, 4. Título visual
-    const identificadorReal = idUrl || idSeleccion || idLocal || tituloDelTema || "";
-    console.log("Identificador real evaluado:", identificadorReal);
-
-    // Extraer el primer bloque de números del identificador real
-    const match = identificadorReal.match(/\d+/);
-    const numeroTema = match ? match[0] : null;
-    console.log("Número extraído:", numeroTema);
+    // Extraer el número de tema. Prioridad 1: el título del tema (ej. "Tema 1: Cinemática")
+    let numeroTema = null;
+    let match = (tituloDelTema || "").match(/\d+/);
+    
+    if (match) {
+        numeroTema = match[0];
+    } else {
+        // Fallback a los IDs (ej. f_fire_5 -> Tema 6, fisica_fire_0 -> Tema 1)
+        const fallbackId = idUrl || idSeleccion || idLocal || "";
+        const fireMatch = fallbackId.match(/_fire_(\d+)/);
+        if (fireMatch) {
+            numeroTema = (parseInt(fireMatch[1], 10) + 1).toString();
+        } else {
+            match = fallbackId.match(/\d+/);
+            if (match) numeroTema = match[0];
+        }
+    }
+    console.log("Número extraído final:", numeroTema);
 
     if (!numeroTema) {
         console.log("Fallo: No se encontró ningún número en el título.");
@@ -206,6 +216,78 @@ function actualizarBotonApuntes(tituloDelTema, asignaturaActual) {
         folder = "apuntes_fisica_2bach";
         fileName = `2_bach_fisica_T${numeroTema}.pdf`;
         hayApuntes = true;
+    } else if (asignaturaLimpia.toLowerCase() === "matematicas" || asignaturaLimpia.toLowerCase() === "mates") {
+        folder = "apuntes_mates_2bach";
+        fileName = `2_bach_mates_T${numeroTema}.pdf`;
+        hayApuntes = true;
+    }
+
+    // Sobrescribir con la lógica de otros cursos
+    const cursoLogico = localStorage.getItem('userCourse') || localStorage.getItem('curso') || '';
+    if (String(cursoLogico).includes('1')) {
+        if (asignaturaLimpia === "quimica") {
+            folder = "apuntes_quimica_1bach";
+            fileName = `1_bach_quimica_T${numeroTema}.pdf`;
+            hayApuntes = true;
+        } else if (asignaturaLimpia === "fisica") {
+            folder = "apuntes_fisica_1bach";
+            fileName = `1_bach_fisica_T${numeroTema}.pdf`;
+            hayApuntes = true;
+        } else if (asignaturaLimpia.toLowerCase() === "matematicas" || asignaturaLimpia.toLowerCase() === "mates") {
+            folder = "apuntes_mates_1bach";
+            fileName = `1_bach_mates_T${numeroTema}.pdf`;
+            hayApuntes = true;
+        } else {
+            hayApuntes = false;
+        }
+    } else if (String(cursoLogico).includes('4')) {
+        if (asignaturaLimpia === "quimica") {
+            folder = "apuntes_quimica_4eso";
+            fileName = `4_eso_quimica_T${numeroTema}.pdf`;
+            hayApuntes = true;
+        } else if (asignaturaLimpia === "fisica") {
+            folder = "apuntes_fisica_4eso";
+            fileName = `4_eso_fisica_T${numeroTema}.pdf`;
+            hayApuntes = true;
+        } else if (asignaturaLimpia.toLowerCase() === "matematicas" || asignaturaLimpia.toLowerCase() === "mates") {
+            folder = "apuntes_mates_4eso";
+            fileName = `4_eso_mates_T${numeroTema}.pdf`;
+            hayApuntes = true;
+        } else {
+            hayApuntes = false;
+        }
+    } else if (String(cursoLogico).includes('3')) {
+        if (asignaturaLimpia === "quimica") {
+            folder = "apuntes_quimica_3eso";
+            fileName = `3_eso_quimica_T${numeroTema}.pdf`;
+            hayApuntes = true;
+        } else if (asignaturaLimpia === "fisica") {
+            folder = "apuntes_fisica_3eso";
+            fileName = `3_eso_fisica_T${numeroTema}.pdf`;
+            hayApuntes = true;
+        } else if (asignaturaLimpia.toLowerCase() === "matematicas" || asignaturaLimpia.toLowerCase() === "mates") {
+            folder = "apuntes_mates_3eso";
+            fileName = `3_eso_mates_T${numeroTema}.pdf`;
+            hayApuntes = true;
+        } else {
+            hayApuntes = false;
+        }
+    } else if (String(cursoLogico).includes('2eso')) {
+        if (asignaturaLimpia === "quimica") {
+            folder = "apuntes_quimica_2eso";
+            fileName = `2_eso_quimica_T${numeroTema}.pdf`;
+            hayApuntes = true;
+        } else if (asignaturaLimpia === "fisica") {
+            folder = "apuntes_fisica_2eso";
+            fileName = `2_eso_fisica_T${numeroTema}.pdf`;
+            hayApuntes = true;
+        } else if (asignaturaLimpia.toLowerCase() === "matematicas" || asignaturaLimpia.toLowerCase() === "mates") {
+            folder = "apuntes_mates_2eso";
+            fileName = `2_eso_mates_T${numeroTema}.pdf`;
+            hayApuntes = true;
+        } else {
+            hayApuntes = false;
+        }
     }
 
     if (hayApuntes) {

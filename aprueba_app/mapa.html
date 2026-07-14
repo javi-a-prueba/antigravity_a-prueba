@@ -1061,10 +1061,11 @@
                     star.style.animationDelay = `-${delay}s`;
 
                     if (statusClass !== 'locked') {
-                        const asigActiva = localStorage.getItem('userSubject') || 'mates';
+                        // Capturamos la asignatura real en la que estamos (id = const-fisica, const-mates, const-quimica)
+                        const asigActiva = id.replace('const-', '');
                         star.onclick = () => {
                             localStorage.setItem('userSubject', asigActiva);
-                            window.location.href = `estudio.html?tema=${tema.id}&asig=${asigActiva}`;
+                            window.location.href = `estudio.html?tema=${tema.id}&asig=${asigActiva}&titulo=${encodeURIComponent(tema.titulo)}`;
                         };
                     }
                     
