@@ -36,7 +36,7 @@ async function fetchIA(promptText) {
     if (!apiKey) {
         return "[Error] API Key no configurada globalmente.";
     }
-    const AI_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${apiKey}`;
+    const AI_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent?key=${apiKey}`;
     try {
         const response = await fetch(AI_URL, {
             method: "POST",

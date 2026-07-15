@@ -1159,9 +1159,9 @@
                     </div>
                 </div>
 
-                <div class="chat-input" onsubmit="event.preventDefault()">
-                    <input type="text" placeholder="Pregunta a tu Tutor..." id="chatInput">
-                    <button onclick="document.getElementById('chatInput').value=''">
+                <div class="chat-input">
+                    <input type="text" placeholder="Pregunta a tu Tutor..." id="chatInput" autocomplete="off">
+                    <button id="chatSendBtn" type="button" title="Enviar mensaje">
                         <svg class="send-icon" viewBox="0 0 24 24">
                             <path d="M22 2L11 13M22 2L15 22L11 13L2 9L22 2Z" />
                         </svg>
@@ -1209,14 +1209,11 @@
     <script src="temarios.js"></script>
     <!-- Preguntas Interactividad Script -->
     <script src="preguntas.js"></script>
-    <!-- IA Script -->
-    <script src="script.js"></script>
+    <!-- IA Script (módulo ES para poder importar firebase-config.js) -->
+    <script type="module" src="script.js"></script>
 
     <script type="module">
-        import { auth, db, doc, updateDoc, onAuthStateChanged, getDoc, collection, query, where, getDocs, functions, httpsCallable } from './firebase-config.js';
-        import { signOut } from './firebase-config.js';
-
-        window.socraticTutorCall = httpsCallable(functions, 'socraticTutor');
+        import { auth, db, doc, updateDoc, onAuthStateChanged, getDoc, collection, query, where, getDocs, signOut } from './firebase-config.js';
 
         let currentUser = null;
         let timeStart = Date.now();
@@ -1270,7 +1267,6 @@
                 if (temasTitulos.length === 0) return;
 
                 // FireStore "in" queries only support up to 10 items.
-                // We'll chunk if necessary, though typical selection is 1-3 themes.
                 const allExercises = [];
                 const chunks = [];
                 for (let i = 0; i < temasTitulos.length; i += 10) {
@@ -1299,16 +1295,54 @@
                     return;
                 }
 
-                // Guardamos los ejercicios en una variable global para Misiones UI
-                window.ejerciciosMision = allExercises;
-                grid.innerHTML = '<div style="color: #a0a0b8; grid-column: 1 / -1; text-align: center;">Misiones listas para inicialización.</div>';
+                // ── ADAPTACIÓN POR COMUNIDAD AUTÓNOMA ─────────────────────────
+                // Leer comunidadAutonoma del perfil del usuario en Firestore
+                let comunidadAutonoma = 'Madrid';
+                try {
+                    const userSnap = await getDoc(doc(db, 'usuarios', currentUser.uid));
+                    if (userSnap.exists()) {
+                        comunidadAutonoma = userSnap.data().comunidadAutonoma || 'Madrid';
+                    }
+                } catch (e) {
+                    console.warn('[AdaptCA] No se pudo leer el perfil del usuario:', e.message);
+                }
+
+                let ejerciciosFinales = allExercises;
+
+                if (comunidadAutonoma && typeof window.adaptarEjerciciosParaCA === 'function') {
+                    // Mostrar spinner de adaptación
+                    grid.innerHTML = `
+                        <div style="color: #a78bfa; grid-column: 1 / -1; text-align: center; padding: 2rem;">
+                            <div style="font-size: 2rem; margin-bottom: 0.5rem;">🗺️</div>
+                            <div style="font-size: 1rem; font-weight: 600; letter-spacing: 1px;">
+                                Adaptando ejercicios para <strong>${comunidadAutonoma}</strong>...
+                            </div>
+                            <div style="font-size: 0.8rem; color: #6b7280; margin-top: 0.4rem;">
+                                El tutor IA está personalizando los enunciados a tu región
+                            </div>
+                        </div>`;
+
+                    ejerciciosFinales = await window.adaptarEjerciciosParaCA(allExercises, comunidadAutonoma);
+
+                    // Badge informativo tras la adaptación
+                    console.log(`[AdaptCA] ✅ ${ejerciciosFinales.length} ejercicios adaptados para "${comunidadAutonoma}"`);
+                }
+
+                // Guardamos los ejercicios (adaptados o no) para Misiones UI
+                window.ejerciciosMision = ejerciciosFinales;
+                grid.innerHTML = comunidadAutonoma
+                    ? `<div style="color: #a78bfa; grid-column: 1 / -1; text-align: center; font-size:0.85rem;">
+                           🗺️ Ejercicios adaptados para <strong>${comunidadAutonoma}</strong>. ¡A por ellos!
+                       </div>`
+                    : '<div style="color: #a0a0b8; grid-column: 1 / -1; text-align: center;">Misiones listas para inicialización.</div>';
 
             } catch (error) {
-                console.error("Error al cargar ejercicios de Firestore:", error);
+                console.error('Error al cargar ejercicios de Firestore:', error);
                 const grid = document.querySelector('.exercises-grid');
                 if (grid) grid.innerHTML = '<div style="color: #ef473a; grid-column: 1 / -1; text-align: center;">Ocurrió un error de red al cargar los ejercicios. Inténtalo más tarde.</div>';
             }
         }
+
 
         document.querySelector('.btn-logout')?.addEventListener('click', (e) => {
             e.preventDefault();

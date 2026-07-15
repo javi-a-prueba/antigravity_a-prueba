@@ -2,55 +2,112 @@ const { onCall, HttpsError } = require("firebase-functions/v2/https");
 const { defineSecret } = require('firebase-functions/params');
 const { GoogleGenAI } = require('@google/genai');
 
-const geminiApiKey = defineSecret('GEMINI_API_KEY');
+const apiKey = "AIzaSyCQUIiCH7WjmZm5gHpWNwPA01LbtgAUPwU";
 
-exports.socraticTutor = onCall({ secrets: [geminiApiKey] }, async (request) => {
+exports.socraticTutor = onCall({}, async (request) => {
     // Verificación de seguridad: solo usuarios autenticados
     if (!request.auth) {
         throw new HttpsError('unauthenticated', 'El tutor socrático solo está disponible para usuarios autenticados.');
     }
 
-    const { enunciado, resolucion_latex, pista, mensaje, historial } = request.data;
+    const { enunciado, resolucion_latex, pista, mensaje, historial, curso, asignatura, respuestaAlumno } = request.data;
+
+    // Validación mínima
+    if (!mensaje || typeof mensaje !== 'string' || mensaje.trim() === '') {
+        throw new HttpsError('invalid-argument', 'El campo "mensaje" es obligatorio.');
+    }
 
     // Inicializar Gemini de forma segura
-    const fallbackKey = "AQ.Ab8RN6LFwYGukIzyH0d8l4BQqmgiaaX8n3xdrHp5OHufvIUxIg";
-    const ai = new GoogleGenAI({ apiKey: geminiApiKey.value() || fallbackKey });
+    if (!apiKey) {
+        console.error("La API Key no está configurada.");
+        throw new HttpsError('internal', 'La clave de API del tutor no está configurada.');
+    }
 
-    const systemPrompt = `Eres un Tutor Socrático experto. NUNCA des la respuesta final directa. Guía al alumno paso a paso. Haz solo UNA pregunta o da UNA pista por mensaje. Si el alumno se equivoca, hazle dudar para que descubra su error. Refuerza positivamente. Tu estructura debe ser: [Validación] -> [Explicación breve] -> [Pregunta guía].
+    const ai = new GoogleGenAI({ apiKey });
 
-Contexto Oculto (NO LE DES LA SOLUCIÓN AL ALUMNO):
-El alumno está resolviendo: ${enunciado || "Desconocido"}
-La solución a la que debe llegar es: ${resolucion_latex || "Desconocida"}
-Usa esta pista si se atasca: ${pista || "Desconocida"}`;
+    // ── System Prompt Socrático ───────────────────────────────────────
+    const systemPrompt = `Eres ARIA, el Tutor Socrático de A-PRUEBA, una plataforma de estudio para estudiantes españoles de ${curso || "ESO y Bachillerato"} en las asignaturas de Física, Matemáticas y Química.
 
-    // Reconstruir el historial limitándolo a los últimos 10 mensajes (por costo y relevancia)
-    let recentHistory = (historial || []).slice(-10).map(msg => ({
+REGLAS ABSOLUTAS — NUNCA las rompas:
+1. JAMÁS des la respuesta final o la solución completa al alumno.
+2. Haz SOLO UNA pregunta o da UNA pista por mensaje. Nada más.
+3. Si el alumno te pide directamente la respuesta, responde con empatía pero redirige con una pregunta guía.
+4. Usa lenguaje cercano, positivo y motivador. El alumno tiene entre 12 y 18 años.
+5. Si el alumno escribe en español, responde siempre en español.
+6. Cuando uses fórmulas o expresiones matemáticas, usa notación LaTeX entre $...$ (inline) o $$...$$ (bloque).
+
+MÉTODO SOCRÁTICO — Estructura de respuesta:
+[Validación breve del esfuerzo del alumno] → [Explicación o pista conceptual de 1-2 frases] → [Una sola pregunta guía que le haga pensar el siguiente paso]
+
+CONTEXTO DEL EJERCICIO ACTUAL (no lo reveles al alumno):
+- Asignatura: ${asignatura || "Desconocida"}
+- Nivel: ${curso || "Desconocido"}
+- Enunciado: ${enunciado || "No hay ejercicio activo en este momento."}
+- Solución oficial (NUNCA la reveles): ${resolucion_latex || "Desconocida"}
+- Pista disponible: ${pista || "Sin pista adicional."}
+${respuestaAlumno ? `- Respuesta actual del alumno en su cuaderno: "${respuestaAlumno}"` : ""}
+
+Recuerda: tu misión es que el alumno llegue a la solución por sus propios razonamientos, sintiendo que él mismo lo ha descubierto.`;
+
+    // ── Reconstruir historial ─────────────────────────────────────────
+    // Limitamos a los últimos 12 mensajes (6 turnos) para controlar costes
+    let recentHistory = (historial || []).slice(-12).map(msg => ({
         role: msg.role === 'user' ? 'user' : 'model',
         parts: [{ text: msg.parts && msg.parts[0] ? msg.parts[0].text : (msg.content || "") }]
     }));
 
-    // Si el último mensaje en el historial ya es el mensaje del usuario (porque el frontend lo añadió),
-    // no lo duplicamos. Si no está, lo añadimos.
-    const lastMessage = recentHistory.length > 0 ? recentHistory[recentHistory.length - 1] : null;
-    if (!lastMessage || lastMessage.role !== 'user' || lastMessage.parts[0].text !== mensaje) {
-        recentHistory.push({ role: "user", parts: [{ text: mensaje }] });
+    // Asegurarnos de que el mensaje actual del usuario está al final
+    const lastMsg = recentHistory.length > 0 ? recentHistory[recentHistory.length - 1] : null;
+    if (!lastMsg || lastMsg.role !== 'user' || lastMsg.parts[0].text !== mensaje.trim()) {
+        recentHistory.push({ role: "user", parts: [{ text: mensaje.trim() }] });
     }
 
-    const contents = [...recentHistory];
-
+    // ── Llamada a Gemini ──────────────────────────────────────────────
     try {
         const response = await ai.models.generateContent({
-            model: "gemini-1.5-flash",
-            contents: contents,
+            model: "gemini-3.5-flash",
+            contents: recentHistory,
             config: {
                 systemInstruction: systemPrompt,
-                temperature: 0.7
+                temperature: 0.75,
+                maxOutputTokens: 512
             }
         });
-        const responseText = response.text; // En el nuevo SDK genai es response.text (getter)
+
+        // Extraer texto de respuesta de forma robusta (compatible con @google/genai v2.x)
+        let responseText = "";
+        if (typeof response.text === 'function') {
+            responseText = response.text();
+        } else if (typeof response.text === 'string') {
+            responseText = response.text;
+        } else if (response.candidates && response.candidates[0]) {
+            const candidate = response.candidates[0];
+            if (candidate.content && candidate.content.parts && candidate.content.parts[0]) {
+                responseText = candidate.content.parts[0].text || "";
+            }
+        }
+
+        if (!responseText) {
+            console.error("Gemini devolvió una respuesta vacía. Raw response:", JSON.stringify(response));
+            throw new HttpsError('internal', 'El tutor recibió una respuesta vacía del modelo de IA.');
+        }
+
         return { reply: responseText };
+
     } catch (error) {
-        console.error("Error Gemini:", error);
-        throw new HttpsError('internal', 'Error al procesar la respuesta del tutor.');
+        // Si es un HttpsError lo relanzamos directamente
+        if (error instanceof HttpsError) throw error;
+
+        console.error("Error al llamar a Gemini API:", error.message || error);
+
+        // Dar mensajes de error específicos según el tipo
+        if (error.message && error.message.includes('API_KEY')) {
+            throw new HttpsError('permission-denied', 'La API Key de Gemini no es válida. Configura el secret GEMINI_API_KEY en Firebase.');
+        }
+        if (error.message && error.message.includes('quota')) {
+            throw new HttpsError('resource-exhausted', 'Límite de uso de la IA alcanzado. Inténtalo en unos minutos.');
+        }
+
+        throw new HttpsError('internal', `Error al procesar la respuesta del tutor: ${error.message}`);
     }
 });
