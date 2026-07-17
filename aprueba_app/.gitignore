@@ -1,0 +1,20 @@
+# ── Secretos — NUNCA subir a Git ──────────────────────────────────
+.env
+.env.local
+.env.*.local
+
+# ── Dependencias Node.js ───────────────────────────────────────────
+node_modules/
+
+# ── Firebase ───────────────────────────────────────────────────────
+.firebase/
+firebase-debug.log
+firestore-debug.log
+
+# ── Sistema operativo ─────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+
+# ── Editores ──────────────────────────────────────────────────────
+.vscode/settings.json
+*.swp

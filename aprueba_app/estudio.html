@@ -1310,29 +1310,17 @@
                 let ejerciciosFinales = allExercises;
 
                 if (comunidadAutonoma && typeof window.adaptarEjerciciosParaCA === 'function') {
-                    // Mostrar spinner de adaptación
-                    grid.innerHTML = `
-                        <div style="color: #a78bfa; grid-column: 1 / -1; text-align: center; padding: 2rem;">
-                            <div style="font-size: 2rem; margin-bottom: 0.5rem;">🗺️</div>
-                            <div style="font-size: 1rem; font-weight: 600; letter-spacing: 1px;">
-                                Adaptando ejercicios para <strong>${comunidadAutonoma}</strong>...
-                            </div>
-                            <div style="font-size: 0.8rem; color: #6b7280; margin-top: 0.4rem;">
-                                El tutor IA está personalizando los enunciados a tu región
-                            </div>
-                        </div>`;
-
-                    ejerciciosFinales = await window.adaptarEjerciciosParaCA(allExercises, comunidadAutonoma);
-
-                    // Badge informativo tras la adaptación
-                    console.log(`[AdaptCA] ✅ ${ejerciciosFinales.length} ejercicios adaptados para "${comunidadAutonoma}"`);
+                    // Lanzar adaptación en segundo plano (fire-and-forget)
+                    window.adaptarEjerciciosParaCA(allExercises, comunidadAutonoma);
+                    console.log(`[AdaptCA] 🚀 Adaptación en segundo plano iniciada para "${comunidadAutonoma}"`);
                 }
 
-                // Guardamos los ejercicios (adaptados o no) para Misiones UI
-                window.ejerciciosMision = ejerciciosFinales;
+                // Guardamos los ejercicios (adaptándose en background) para Misiones UI
+                window.ejerciciosMision = allExercises;
+                
                 grid.innerHTML = comunidadAutonoma
                     ? `<div style="color: #a78bfa; grid-column: 1 / -1; text-align: center; font-size:0.85rem;">
-                           🗺️ Ejercicios adaptados para <strong>${comunidadAutonoma}</strong>. ¡A por ellos!
+                           🗺️ Preparando misión para <strong>${comunidadAutonoma}</strong>. ¡Inicia cuando quieras!
                        </div>`
                     : '<div style="color: #a0a0b8; grid-column: 1 / -1; text-align: center;">Misiones listas para inicialización.</div>';
 

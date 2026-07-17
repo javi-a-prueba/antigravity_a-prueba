@@ -134,7 +134,31 @@ function renderMisionActiva() {
     questionDiv.style.lineHeight = "1.7";
     questionDiv.style.color = "#ffffff";
     questionDiv.style.marginBottom = "2rem";
-    questionDiv.innerHTML = `<p>${ejercicio.enunciado.replace(/\\n/g, '<br>').replace(/\n/g, '<br>')}</p>`;
+
+    const isPendingAdaptation = window.isAdaptingCA && window.comunidadAutonomaTarget && ejercicio.adaptado_para_ca !== window.comunidadAutonomaTarget;
+    const comunidadUsuario = localStorage.getItem('userComunidad') || localStorage.getItem('comunidad') || window.comunidadAutonomaTarget || 'tu Comunidad Autónoma';
+
+    if (isPendingAdaptation) {
+        questionDiv.innerHTML = `
+            <div style="text-align:center; padding: 2rem; color: var(--current-neon, #00f2fe); background: rgba(0,242,254,0.05); border-radius: 12px; border: 1px dashed rgba(0,242,254,0.3);">
+                <div style="font-size: 2.5rem; margin-bottom: 1rem; animation: pulseLoading 1.5s infinite;">⏳</div>
+                <div style="font-weight: bold; font-size: 1.1rem; animation: pulseLoading 1.5s infinite;">
+                    Adaptando ejercicio a las normativas de tu Comunidad Autónoma (${comunidadUsuario})...
+                </div>
+                <div style="font-size: 0.85rem; color: #a0a0b8; margin-top: 0.5rem;">
+                    La Inteligencia Artificial está generando el contenido. Un momento...
+                </div>
+            </div>`;
+        if (!document.getElementById('pulse-loading-style')) {
+            const style = document.createElement('style');
+            style.id = 'pulse-loading-style';
+            style.innerHTML = `@keyframes pulseLoading { 0% { opacity: 0.5; } 50% { opacity: 1; } 100% { opacity: 0.5; } }`;
+            document.head.appendChild(style);
+        }
+    } else {
+        questionDiv.innerHTML = `<p>${ejercicio.enunciado.replace(/\\\\n/g, '<br>').replace(/\\n/g, '<br>')}</p>`;
+    }
+    
     content.appendChild(questionDiv);
 
     // --- TEXTAREA DEL ALUMNO ---
@@ -427,6 +451,12 @@ Respuesta del alumno: ${textarea.value}`;
     actionZone.appendChild(btnEvaluar);
     actionZone.appendChild(evalResultContainer);
     
+    if (isPendingAdaptation) {
+        studentAnswerWrapper.style.display = "none";
+        supportZone.style.display = "none";
+        actionZone.style.display = "none";
+    }
+
     content.appendChild(actionZone);
     content.appendChild(navZone);
     container.appendChild(content);

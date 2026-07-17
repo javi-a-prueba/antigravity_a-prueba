@@ -1,8 +1,17 @@
 rules_version = '2';
 service cloud.firestore {
   match /databases/{database}/documents {
+
+    // Subcolección de adaptaciones por CC.AA. — acceso público de lectura/escritura
+    // para que el servidor Node.js pueda cachear las adaptaciones via REST API Key.
+    match /ejercicios_base/{ejercicioId}/adaptaciones/{ccaa} {
+      allow read, write: if true;
+    }
+
+    // El resto de colecciones requiere autenticación de usuario
     match /{document=**} {
       allow read, write: if request.auth != null;
     }
+
   }
-}
+}

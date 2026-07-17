@@ -87,10 +87,13 @@ async function callSocraticTutor(userText) {
         const payload = {
             curso:           localStorage.getItem('userCourse') || localStorage.getItem('curso') || 'Desconocido',
             asignatura:      ejercicioActual?.asignatura || localStorage.getItem('seleccion_asignatura') || 'General',
+            comunidad:       localStorage.getItem('userComunidad') || localStorage.getItem('comunidad') || window.comunidadAutonomaTarget || 'Desconocida',
             bloque:          ejercicioActual?.bloque          || 'General',
-            enunciado:       ejercicioActual?.enunciado       || 'No hay un ejercicio activo. El alumno tiene una pregunta general.',
-            pista:           ejercicioActual?.pista           || 'Sin pista específica.',
-            resolucion_latex: ejercicioActual?.resolucion_latex || 'Sin resolución oficial.',
+            ejercicioActual: {
+                enunciado:        ejercicioActual?.enunciado       || 'No hay un ejercicio activo. El alumno tiene una pregunta general.',
+                resolucion_latex: ejercicioActual?.resolucion_latex || 'Sin resolución oficial.',
+                pista:            ejercicioActual?.pista           || 'Sin pista específica.'
+            },
             respuestaAlumno,
             mensaje:         userText,
             historial:       chatHistory.slice(-12),
@@ -148,13 +151,17 @@ async function adaptarEjercicio(ejercicio, comunidadAutonoma) {
             method:  'POST',
             headers: { 'Content-Type': 'application/json' },
             body:    JSON.stringify({
-                enunciado:        ejercicio.enunciado,
-                resolucion_latex: ejercicio.resolucion_latex,
-                pista:            ejercicio.pista    || '',
-                formula:          ejercicio.formula  || '',
-                asignatura:       ejercicio.asignatura || '',
-                curso:            localStorage.getItem('userCourse') || '',
-                comunidadAutonoma,
+                // Nuevo formato con caché de Firestore
+                exerciseId:       ejercicio.id_doc || null,
+                originalExercise: {
+                    enunciado:        ejercicio.enunciado,
+                    resolucion_latex: ejercicio.resolucion_latex,
+                    pista:            ejercicio.pista    || '',
+                    formula:          ejercicio.formula  || '',
+                    asignatura:       ejercicio.asignatura || '',
+                    curso:            localStorage.getItem('userCourse') || '',
+                },
+                comunidadAutonoma: localStorage.getItem('userComunidad') || localStorage.getItem('comunidad') || comunidadAutonoma || 'Madrid',
             }),
         });
 
@@ -165,7 +172,17 @@ async function adaptarEjercicio(ejercicio, comunidadAutonoma) {
         if (data.fallback) {
             // El servidor devolvió el ejercicio original (falló Gemini internamente)
             console.warn('[AdaptCA] Gemini falló, usando ejercicio original:', data.error);
-            return ejercicio;
+            return {
+                ...ejercicio,
+                adaptado_para_ca: comunidadAutonoma,
+                fallback_usado: true
+            };
+        }
+
+        if (data.fromCache) {
+            console.log(`[AdaptCA] 💾 Caché hit para "${ejercicio.id_doc}" (${comunidadAutonoma})`);
+        } else {
+            console.log(`[AdaptCA] 🤖 Nuevo ejercicio generado por Gemini para "${ejercicio.id_doc}" (${comunidadAutonoma})`);
         }
 
         // Devolvemos el ejercicio enriquecido con los campos adaptados
@@ -179,11 +196,16 @@ async function adaptarEjercicio(ejercicio, comunidadAutonoma) {
             resolucion_latex_original: ejercicio.resolucion_latex,
             pista_original:          ejercicio.pista,
             adaptado_para_ca:        comunidadAutonoma,
+            adaptacion_desde_cache:  data.fromCache ?? false,
         };
 
     } catch (err) {
         console.warn('[AdaptCA] Error de red, usando ejercicio original:', err.message);
-        return ejercicio; // Fallback silencioso
+        return {
+            ...ejercicio,
+            adaptado_para_ca: comunidadAutonoma,
+            fallback_usado: true
+        };
     }
 }
 
@@ -199,15 +221,45 @@ window.triggerSocraticTutor = function (pregunta, opcionIncorrecta) {
     callSocraticTutor(msg);
 };
 
-/** Adapta un array de ejercicios en paralelo para una CA dada */
+/** Adapta un array de ejercicios en segundo plano para evitar saturación de la API */
 window.adaptarEjerciciosParaCA = async function (ejercicios, comunidadAutonoma) {
     if (!comunidadAutonoma || !ejercicios?.length) return ejercicios;
-    console.log(`[AdaptCA] Adaptando ${ejercicios.length} ejercicios para "${comunidadAutonoma}"...`);
-    const adaptados = await Promise.all(
-        ejercicios.map(ej => adaptarEjercicio(ej, comunidadAutonoma))
-    );
-    console.log('[AdaptCA] Adaptación completada.');
-    return adaptados;
+    console.log(`[AdaptCA] Adaptando ${ejercicios.length} ejercicios en segundo plano para "${comunidadAutonoma}"...`);
+    
+    window.isAdaptingCA = true;
+    window.comunidadAutonomaTarget = comunidadAutonoma;
+    
+    const delay = ms => new Promise(res => setTimeout(res, ms));
+
+    for (let i = 0; i < ejercicios.length; i++) {
+        const ej = ejercicios[i];
+        
+        // Evitamos re-adaptar si ya está adaptado
+        if (ej.adaptado_para_ca === comunidadAutonoma) continue;
+
+        const adaptado = await adaptarEjercicio(ej, comunidadAutonoma);
+        
+        // Modificamos el objeto in-place para que la Misión UI lo vea al instante
+        Object.assign(ej, adaptado);
+
+        // Forzar re-render si el alumno está viendo este mismo ejercicio en la Misión
+        if (window.misionesActivas && window.misionActualIndex !== undefined) {
+            const currentMisionEj = window.misionesActivas[window.misionActualIndex];
+            if (currentMisionEj && currentMisionEj.id_doc === ej.id_doc) {
+                if (typeof window.renderMisionActiva === 'function') {
+                    console.log(`[AdaptCA] 🔄 Refrescando UI para el ejercicio ${ej.id_doc}`);
+                    window.renderMisionActiva();
+                }
+            }
+        }
+        
+        // Throttling: esperamos 1000ms antes de pedir el siguiente
+        await delay(1000);
+    }
+
+    window.isAdaptingCA = false;
+    console.log('[AdaptCA] Adaptación en segundo plano completada.');
+    return ejercicios;
 };
 
 /** Descarga PDF de misión (placeholder) */
