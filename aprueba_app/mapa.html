@@ -779,6 +779,30 @@
                 <p>Alcanza Supernova Maestra para desafío épico</p>
             </div>
         </div>
+
+        <br>
+        <h3>🛰️ Material de Apoyo</h3>
+
+        <!-- Botones de Recursos Generales -->
+        <a id="btn-mapa-formulario" href="#" target="_blank" style="text-decoration: none; display: none;">
+            <div class="mission-item" style="cursor: pointer; border-color: rgba(255, 215, 0, 0.4);">
+                <div class="mission-icon" style="color: #ffd700;">📜</div>
+                <div class="mission-info">
+                    <h4 style="color: #fff;">Formulario</h4>
+                    <p>Descarga las fórmulas clave</p>
+                </div>
+            </div>
+        </a>
+
+        <a id="btn-mapa-apuntes" href="#" target="_blank" style="text-decoration: none; display: none;">
+            <div class="mission-item" style="cursor: pointer; border-color: rgba(138, 43, 226, 0.4);">
+                <div class="mission-icon" style="color: #8a2be2;">📚</div>
+                <div class="mission-info">
+                    <h4 style="color: #fff;">Manual / Apuntes</h4>
+                    <p>Apuntes completos del curso</p>
+                </div>
+            </div>
+        </a>
     </aside>
 
     <!-- Controles de Zoom manual -->
@@ -925,6 +949,46 @@
                 consejoPEl.innerText = window.currentQuimicaConsejo;
             } else {
                 consejoEl.style.display = 'none';
+            }
+
+            // ── Enlaces a Formularios y Apuntes Generales ────────────────────────
+            const bucket = 'aprueba-e7242.firebasestorage.app';
+            const cursoLogico = localStorage.getItem('userCourse') || localStorage.getItem('curso') || '';
+            const TABLE = {
+                '2eso': { quimica: 'apuntes_quimica_2eso', fisica: 'apuntes_fisica_2eso', matematicas: 'apuntes_mates_2eso' },
+                '3eso': { quimica: 'apuntes_quimica_3eso', fisica: 'apuntes_fisica_3eso', matematicas: 'apuntes_mates_3eso' },
+                '4eso': { quimica: 'apuntes_quimica_4eso', fisica: 'apuntes_fisica_4eso', matematicas: 'apuntes_mates_4eso' },
+                '1bach': { quimica: 'apuntes_quimica_1bach', fisica: 'apuntes_fisica_1bach', matematicas: 'apuntes_mates_1bach' },
+                '2bach': { quimica: 'apuntes_quimica_2bach', fisica: 'apuntes_fisica_2bach', matematicas: 'apuntes_mates_2bach' },
+            };
+            const cursoKey = Object.keys(TABLE).find(k => cursoLogico.includes(k)) || '2bach';
+            const asigKey  = subject === 'mates' ? 'matematicas' : subject;
+            const folder   = TABLE[cursoKey]?.[asigKey];
+
+            const btnFormulario = document.getElementById('btn-mapa-formulario');
+            const btnApuntes    = document.getElementById('btn-mapa-apuntes');
+
+            if (folder && btnFormulario && btnApuntes) {
+                const asigPrefix = subject === 'mates' ? 'matematicas' : subject;
+                let formName = `${asigPrefix}_${cursoKey}_formulario.pdf`;
+                let manualName = `${asigPrefix}_${cursoKey}_manual.pdf`;
+                
+                // En 2º de bachillerato los manuales tienen el sufijo _evau_manual
+                if (cursoKey === '2bach') {
+                    manualName = `${asigPrefix}_2bach_evau_manual.pdf`; 
+                }
+
+                const encodedForm = encodeURIComponent(`${folder}/${formName}`);
+                const encodedManual = encodeURIComponent(`${folder}/${manualName}`);
+
+                btnFormulario.href = `https://firebasestorage.googleapis.com/v0/b/${bucket}/o/${encodedForm}?alt=media`;
+                btnFormulario.style.display = 'block';
+
+                btnApuntes.href = `https://firebasestorage.googleapis.com/v0/b/${bucket}/o/${encodedManual}?alt=media`;
+                btnApuntes.style.display = 'block';
+            } else {
+                if (btnFormulario) btnFormulario.style.display = 'none';
+                if (btnApuntes) btnApuntes.style.display = 'none';
             }
         };
 
